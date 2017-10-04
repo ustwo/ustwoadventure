@@ -34,7 +34,7 @@ p{
 
 #tagline{
 	font-size: 32px;
-	margin: 0 0 0 0;
+	margin: 10px 0 0 0;
 	font-weight: 400;
 }
 
@@ -49,13 +49,13 @@ ul#companies {
 	margin: 0 0 40px 0;
 
 	columns: 2;
-	column-gap: 15em;
+	column-gap: 12em;
 	column-width: 200px;
   -webkit-columns: 2;
-	-webkit-column-gap: 15em;
+	-webkit-column-gap: 12em;
 	-webkit-column-width: 200px;
   -moz-columns: 2;
-	-moz-column-gap: 15em;
+	-moz-column-gap: 12em;
 	-moz-column-width: 200px;
 }
 
