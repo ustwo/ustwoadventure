@@ -1,27 +1,14 @@
 body{
 	background: #F8F8F8;
-	font-family: helvetica, arial, sans-serif;
+	font-family: 'Px', sans-serif;
   -webkit-font-smoothing: antialiased;
 	font-weight: 800;
 }
 
 p{
-	font-size: 21px;
 	color: #F32D94;
 	letter-spacing: -0.2px;
 	line-height: 35px;
-	margin: 20px 0 0 0;
-}
-
-#logo{
-	width: 50%;
-	display: inline-block;
-	vertical-align: top;
-	padding: 10px 0;
-}
-
-#logo_image{
-	max-width: 350px;
 }
 
 .wrapper{
@@ -32,6 +19,23 @@ p{
 
 // #header{
 	background-color: #F32D94;
+}
+
+#logo{
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px 0 0 0;
+}
+
+#logo_image{
+	max-width: 350px;
+}
+
+#tagline{
+	font-size: 30px;
+	margin: 0 0 0 0;
+	font-weight: 400;
 }
 
 #companies{
@@ -73,13 +77,12 @@ ul#companies li a:active {
 }
 
 .contact{
-	font-family: 'Px', sans-serif;
 	width: 49%;
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 0px;
 	font-weight: 400;
-	margin-top: 40px;
+	margin-top: 60px;
 }
 
 .contact a{
