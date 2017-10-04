@@ -87,7 +87,6 @@ ul#companies li a:active {
 .contact a{
 	text-decoration: none;
 	color: #ED0082;
-	padding-bottom: 60px;
 	font-size: 28px;
 	line-height: 48px;
 }
@@ -99,6 +98,17 @@ text-align: right;
 .contact.bottom {
 	text-align: left;
 	display: none;
+	padding-bottom: 60px;
+}
+
+.icon{
+	padding: 10px;
+	vertical-align: middle;
+}
+
+.icon img{
+	vertical-align: middle;
+	max-height: 30px;
 }
 
 #footer{
