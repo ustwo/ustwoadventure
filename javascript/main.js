@@ -27,7 +27,7 @@
     },
     {
       "name": "Immersive Rehab",
-      "url": "https://wwwimmersiverehab.com."
+      "url": "https://www.immersiverehab.com"
     },
     {
       "name": "Parasym Health",
