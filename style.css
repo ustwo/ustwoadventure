@@ -152,7 +152,7 @@ text-align: right;
 @media (max-width: 767px){
 
 	.wrapper{
-		margin: auto;
+		padding: 0 20px;
 	}
 
 	ul#companies li a {
