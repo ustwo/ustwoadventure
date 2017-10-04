@@ -33,7 +33,7 @@ p{
 }
 
 #tagline{
-	font-size: 30px;
+	font-size: 32px;
 	margin: 0 0 0 0;
 	font-weight: 400;
 }
@@ -46,7 +46,7 @@ p{
 
 ul#companies {
 	padding: 30px 0 0 0;
-	margin: 0;
+	margin: 0 0 30px 0;
 }
 
 ul#companies li {
@@ -63,7 +63,6 @@ ul#companies li a {
 	letter-spacing: -0.7px;
 	line-height: 42px;
 	text-transform: uppercase;
-	padding-bottom: 30px;
 }
 
 ul#companies li a:hover {
