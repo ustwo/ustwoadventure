@@ -1,0 +1,170 @@
+body{
+	background: #F8F8F8;
+	font-family: helvetica, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+	font-weight: 800;
+}
+
+p{
+font-size: 21px;
+color: #F32D94;
+letter-spacing: -0.2px;
+line-height: 35px;
+margin: 20px 0 0 0;
+}
+
+#logo{
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px 0;
+}
+
+#logo_image{
+	max-width: 350px;
+}
+
+.wrapper{
+	max-width: 1233px;
+	margin: auto;
+	padding: 0 20px;
+}
+
+// #header{
+	background-color: #F32D94;
+}
+
+#companies{
+	margin: 70px 0 0 0;
+	padding: 20px 0 0 0;
+	width: 55%;
+}
+
+ul#companies {
+	padding: 30px 0 0 0;
+	margin: 0;
+}
+
+ul#companies li {
+	margin: 0 0 0 0;
+}
+
+ul#companies li a {
+	text-decoration: none;
+	font-size: 40px;
+	font-family: futura-pt, sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	color: #F32D94;
+	letter-spacing: -0.7px;
+	line-height: 40px;
+	text-transform: uppercase;
+}
+
+ul#companies li a:hover {
+	position: relative;
+             top: -1px;
+}
+
+ul#companies li a:active {
+	position: relative;
+						 top: -1px;
+}
+
+#contact{
+	font-family: 'Px', sans-serif;
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	padding-top: 0px;
+	font-weight: 400;
+	margin-top: 40px;
+}
+
+#contact a{
+	text-decoration: none;
+	color: #ED0082;
+	padding-bottom: 80px;
+	font-size: 30px;
+}
+
+#footer{
+	height: 300px;
+	width: 100%;
+	bottom: 0;
+	position:fixed;
+	overflow: visible;
+	z-index: -1;
+}
+
+
+@media (min-width: 1920px) {
+
+
+}
+
+
+@media (max-width: 1080px){
+
+
+}
+
+
+@media (max-width: 767px){
+
+	.wrapper{
+		margin: auto;
+	}
+
+	ul#companies li a {
+		font-size: 34px;
+	}
+
+	p{
+		font-size: 16px;
+		line-height: 1.75em;
+	}
+
+	#companies{
+		margin: 35px 0 0 0;
+		width: 100%;
+	}
+
+}
+
+
+@media (max-width: 375px){
+
+	#logo_image{
+		max-width: 300px;
+	}
+
+	.wrapper{
+		padding: 0 25px;
+	}
+
+	#contact{
+		display: block;
+		margin-top: 50px;
+	}
+
+}
+
+
+	@media (max-width: 320px){
+
+		#logo_image{
+			max-width: 200px;
+		}
+
+		ul#companies li a {
+			font-size: 28px;
+			line-height: 35px;
+		}
+
+		#contact a{
+			font-size: 26px;
+		}
+
+}
