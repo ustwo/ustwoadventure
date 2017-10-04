@@ -6,11 +6,11 @@ body{
 }
 
 p{
-font-size: 21px;
-color: #F32D94;
-letter-spacing: -0.2px;
-line-height: 35px;
-margin: 20px 0 0 0;
+	font-size: 21px;
+	color: #F32D94;
+	letter-spacing: -0.2px;
+	line-height: 35px;
+	margin: 20px 0 0 0;
 }
 
 #logo{
@@ -59,6 +59,7 @@ ul#companies li a {
 	letter-spacing: -0.7px;
 	line-height: 40px;
 	text-transform: uppercase;
+	padding-bottom: 30px;
 }
 
 ul#companies li a:hover {
@@ -71,22 +72,30 @@ ul#companies li a:active {
 						 top: -1px;
 }
 
-#contact{
+.contact{
 	font-family: 'Px', sans-serif;
 	width: 49%;
 	display: inline-block;
 	vertical-align: top;
-	text-align: left;
 	padding-top: 0px;
 	font-weight: 400;
 	margin-top: 40px;
 }
 
-#contact a{
+.contact a{
 	text-decoration: none;
 	color: #ED0082;
 	padding-bottom: 80px;
 	font-size: 30px;
+}
+
+.contact.top {
+text-align: right;
+}
+
+.contact.bottom {
+	text-align: left;
+	display: none;
 }
 
 #footer{
@@ -110,6 +119,17 @@ ul#companies li a:active {
 
 }
 
+@media (max-width: 960px){
+
+	.contact.top{
+		display: none;
+	}
+
+	.contact.bottom{
+		display: block;
+	}
+
+}
 
 @media (max-width: 767px){
 
@@ -144,7 +164,7 @@ ul#companies li a:active {
 		padding: 0 25px;
 	}
 
-	#contact{
+	.contact{
 		display: block;
 		margin-top: 50px;
 	}
@@ -163,7 +183,7 @@ ul#companies li a:active {
 			line-height: 35px;
 		}
 
-		#contact a{
+		.contact a{
 			font-size: 26px;
 		}
 
