@@ -46,7 +46,7 @@ p{
 
 ul#companies {
 	padding: 30px 0 0 0;
-	margin: 0 0 30px 0;
+	margin: 0 0 40px 0;
 }
 
 ul#companies li {
@@ -88,7 +88,8 @@ ul#companies li a:active {
 	text-decoration: none;
 	color: #ED0082;
 	padding-bottom: 80px;
-	font-size: 30px;
+	font-size: 28px;
+	line-height: 48px;
 }
 
 .contact.top {
