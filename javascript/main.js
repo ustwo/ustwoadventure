@@ -3,7 +3,7 @@
   const portfolioArray = [
     {
       "name": "Tribe",
-      "url": "https://www.wearetribe.com"
+      "url": "http://www.wearetribe.com"
     },
     {
       "name": "Combo",
@@ -11,15 +11,15 @@
     },
     {
       "name": "23 Code Street",
-      "url": "https://www.23codestreet.com"
+      "url": "http://www.23codestreet.com"
     },
     {
       "name": "Bel-Air",
-      "url": "https://www.bel-air.co"
+      "url": "http://www.bel-air.co"
     },
     {
       "name": "Comuzi",
-      "url": "https://www.comuzi.xyz"
+      "url": "http://www.comuzi.xyz"
     },
     {
       "name": "Easle",
@@ -35,7 +35,7 @@
     },
     {
       "name": "Sanctus",
-      "url": "https://www.sanctus.io"
+      "url": "http://www.sanctus.io"
     },
     {
       "name": "Sidestory",
@@ -107,7 +107,7 @@
     },
     {
       "name": "Run an Empire",
-      "url": "https://www.runanempire.com"
+      "url": "http://www.runanempire.com"
     },
   ];
 
