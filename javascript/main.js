@@ -31,7 +31,7 @@
     },
     {
       "name": "Parasym Health",
-      "url": "https://www.parasym.co"
+      "url": "http://www.parasym.co"
     },
     {
       "name": "Sanctus",
@@ -43,7 +43,7 @@
     },
     {
       "name": "Everyday",
-      "url": "https://www.everyday.studio"
+      "url": "http://www.everyday.studio"
     },
     {
       "name": "Tray",
