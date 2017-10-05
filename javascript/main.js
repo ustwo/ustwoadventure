@@ -39,7 +39,7 @@
     },
     {
       "name": "Sidestory",
-      "url": "https://www.sidestory.co"
+      "url": "https://sidestory.co"
     },
     {
       "name": "Everyday",
