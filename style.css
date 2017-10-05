@@ -130,6 +130,19 @@ text-align: right;
 	z-index: -1;
 }
 
+#fourohfour{
+	padding-top: 60px;
+	text-decoration: none;
+	font-size: 40px;
+	font-family: futura-pt, 'Px', sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	color: #F32D94;
+	letter-spacing: -0.7px;
+	line-height: 1.15;
+	text-transform: uppercase;
+}
+
 
 @media (min-width: 1920px) {
 
