@@ -99,7 +99,7 @@
     },
     {
       "name": "Pausable",
-      "url": "https://www.pausable.com"
+      "url": "https://www.pauseable.com"
     },
     {
       "name": "Over",
