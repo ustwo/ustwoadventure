@@ -129,6 +129,10 @@
       "name": "Studio Something",
       "url": "http://studiosomething.co/"
     },
+    {
+      "name": "Raise Your Hands",
+      "url": "https://www.raiseyourhands.org.uk/"
+    },
   ];
 
   function shufflePortfolioArray() {
