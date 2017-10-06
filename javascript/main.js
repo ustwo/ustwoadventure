@@ -98,7 +98,7 @@
       "url": "https://www.pilcro.com"
     },
     {
-      "name": "Pausable",
+      "name": "Pauseable",
       "url": "http://www.pauseable.com"
     },
     {
