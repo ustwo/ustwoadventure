@@ -109,6 +109,14 @@
       "name": "Run an Empire",
       "url": "http://www.runanempire.com"
     },
+    {
+      "name": "Brother Cycles",
+      "url": "https://www.brothercycles.com/"
+    },
+    {
+      "name": "Paul James",
+      "url": "http://pauljamess.com/"
+    },
   ];
 
   function shufflePortfolioArray() {
