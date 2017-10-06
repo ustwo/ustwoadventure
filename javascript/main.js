@@ -3,7 +3,7 @@
   const portfolioArray = [
     {
       "name": "Tribe",
-      "url": "http://www.wearetribe.com"
+      "url": "https://wearetribe.co/"
     },
     {
       "name": "Combo",
