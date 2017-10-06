@@ -121,6 +121,14 @@
       "name": "Gather Data",
       "url": "https://gatherdata.co/"
     },
+    {
+      "name": "Innovators Hub",
+      "url": "http://innovatorshub.co/"
+    },
+    {
+      "name": "Studio Something",
+      "url": "http://studiosomething.co/"
+    },
   ];
 
   function shufflePortfolioArray() {
