@@ -117,6 +117,10 @@
       "name": "Paul James",
       "url": "http://pauljamess.com/"
     },
+    {
+      "name": "Gather Data",
+      "url": "https://gatherdata.co/"
+    },
   ];
 
   function shufflePortfolioArray() {
