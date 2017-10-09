@@ -35,7 +35,7 @@
     },
     {
       "name": "Sanctus",
-      "url": "http://www.sanctus.io"
+      "url": "http://sanctus.io"
     },
     {
       "name": "Sidestory",
