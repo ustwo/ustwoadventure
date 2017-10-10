@@ -133,6 +133,10 @@
       "name": "Raise Your Hands",
       "url": "https://www.raiseyourhands.org.uk/"
     },
+    {
+      "name": "Kate Rees Coaching",
+      "url": "https://www.katereescoaching.com/"
+    },
   ];
 
   function shufflePortfolioArray() {
