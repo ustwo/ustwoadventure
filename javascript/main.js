@@ -137,6 +137,10 @@
       "name": "Kate Rees Coaching",
       "url": "https://www.katereescoaching.com/"
     },
+    {
+      "name": "Grae Matta Foundation",
+      "url": "http://graematta.com/"
+    },
   ];
 
   function shufflePortfolioArray() {
