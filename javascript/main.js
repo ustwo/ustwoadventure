@@ -141,6 +141,10 @@
       "name": "Grae Matta Foundation",
       "url": "http://graematta.com/"
     },
+    {
+      "name": "No Mayo",
+      "url": "http://www.no-mayo.digital/"
+    },
   ];
 
   function shufflePortfolioArray() {
