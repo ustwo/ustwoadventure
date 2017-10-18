@@ -138,7 +138,7 @@
       "url": "https://www.katereescoaching.com/"
     },
     {
-      "name": "Grae Matta",
+      "name": "Grae Matta Foundation",
       "url": "http://graematta.com/"
     },
     {
