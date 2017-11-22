@@ -148,8 +148,10 @@ input[type=text], input[type=email], select {
 	display: none;
 }
 
-.thankyou{
+#copy_back{
 	text-align: center;
+	line-height: 20px;
+	padding-top: 100px;
 }
 
 #companies{
