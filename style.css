@@ -101,6 +101,11 @@ p.floorlink{
 	label { min-width: 150px; display: inline-block; }
 	input { display: table-cell; }
 
+	input {
+	    -webkit-appearance: none;
+			-webkit-border-radius:0;
+    	border-radius:0;
+	}
 
 input[type=text], input[type=email], select {
 		width: 100%;
