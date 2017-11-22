@@ -1,5 +1,4 @@
 body{
-	background: #F8F8F8;
 	font-family: 'Px', sans-serif;
   -webkit-font-smoothing: antialiased;
 	font-weight: 800;
@@ -15,10 +14,6 @@ p{
 	max-width: 1100px;
 	margin: auto;
 	padding: 0 40px;
-}
-
-// #header{
-	background-color: #F32D94;
 }
 
 #header{
@@ -40,6 +35,72 @@ p{
 	font-size: 34px;
 	margin: 10px 0 0 0;
 	font-weight: 400;
+}
+
+#copy{
+	padding-top: 80px;
+	font-weight: 400;
+}
+
+.floorlink{
+	padding: 1px 5px;
+	margin: 2px 5px 0 0;
+	background-color: #F32D94;
+}
+
+a.floorlink{
+  border-style: solid;
+  border-width: 3px;
+}
+
+p.floorlink{
+	color: #ffffff;
+}
+
+.head{
+	font-family: futura-pt, sans-serif;
+	font-style: normal;
+	font-size: 40px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.description{
+	font-size: 30px;
+	padding-top: 40px;
+}
+
+.form{
+	padding: 60px 0 60px 0;
+	text-align: center;
+	font-size: 20px;
+	color: #F32D94;
+}
+
+form  { }
+	.form div     { }
+	label { min-width: 150px; text-align: right; display: inline-block; margin-right: 15px;}
+	input { display: table-cell; }
+
+
+input[type=text], input[type=email], select {
+		width: 50%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #f32d94;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    margin: 10px 2px;
+    cursor: pointer;
+		font-size: 16px;
 }
 
 #companies{
@@ -96,7 +157,7 @@ ul#companies li a:active {
 
 .contact a{
 	text-decoration: none;
-	color: #ED0082;
+	color: #FFFFFF;
 	font-size: 28px;
 	line-height: 48px;
 }
@@ -142,6 +203,8 @@ text-align: right;
 	line-height: 1.15;
 	text-transform: uppercase;
 }
+
+
 
 
 @media (min-width: 1920px) {
@@ -197,6 +260,18 @@ text-align: right;
 		margin: 35px 0 0 0;
 		width: 100%;
 	}
+
+}
+
+
+@media (max-width: 500px){
+
+	label { text-align: left; }
+
+	.form { width: 100%; text-align: left; }
+
+	input[type=text], input[type=email], select {
+			width: 100%; }
 
 }
 
