@@ -75,8 +75,7 @@ p.floorlink{
 .formdiv{
 	display: inline-block;
 	width: 40%;
-	padding-left: 25px;
-	padding-top: 10px;
+	padding-left: 31px;
 }
 
 .description{
@@ -99,7 +98,6 @@ p.floorlink{
 
 	.form div     { }
 	label { min-width: 150px; display: inline-block; }
-	input { display: table-cell; }
 
 	input {
 	    -webkit-appearance: none;
@@ -320,7 +318,7 @@ text-align: right;
 }
 
 
-@media (max-width: 620px){
+@media (max-width: 650px){
 
 	#copy{
 		width: 100%;
