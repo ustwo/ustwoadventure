@@ -183,4 +183,4 @@
 
   // Turn these into workable raw HTML to inject into a list
 
-  $("input").prop('required',true);
+  
