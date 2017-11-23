@@ -99,11 +99,18 @@ p.floorlink{
 	.form div     { }
 	label { min-width: 150px; display: inline-block; }
 
-	input {
-	    -webkit-appearance: none;
-			-webkit-border-radius:0;
-    	border-radius:0;
-	}
+input {
+	-webkit-appearance: none;
+	-webkit-border-radius:0;
+  border-radius:0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
 
 input[type=text], input[type=email], select {
 		width: 100%;
