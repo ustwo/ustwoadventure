@@ -75,7 +75,7 @@ p.floorlink{
 .formdiv{
 	display: inline-block;
 	width: 40%;
-	padding-left: 31px;
+	padding-left: 33px;
 }
 
 .description{
@@ -325,7 +325,7 @@ text-align: right;
 }
 
 
-@media (max-width: 650px){
+@media (max-width: 680px){
 
 	#copy{
 		width: 100%;
