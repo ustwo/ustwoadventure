@@ -72,6 +72,13 @@ p.floorlink{
 	padding-right: 22px;
 }
 
+.teamphoto{
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	padding-top: 30px;
+}
+
 .formdiv{
 	display: inline-block;
 	width: 40%;
@@ -156,12 +163,6 @@ input[type=text], input[type=email], select {
 
 .hidden{
 	display: none;
-}
-
-#copy_back{
-	text-align: center;
-	line-height: 20px;
-	padding-top: 200px;
 }
 
 #companies{
@@ -339,6 +340,7 @@ text-align: right;
 	}
 
 	.form{
+		padding-top: 50px;
 		text-align: left;
 	}
 
