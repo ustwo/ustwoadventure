@@ -149,6 +149,10 @@
       "name": "Morrama",
       "url": "http://www.morrama.com/"
     },
+    {
+      "name": "Mr Bingo",
+      "url": "http://mr.bingo/"
+    },
   ];
 
   function shufflePortfolioArray() {
