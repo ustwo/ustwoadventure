@@ -335,6 +335,11 @@ text-align: right;
 
 	.description{
 		font-size: 26px;
+		padding-top: 20px;
+	}
+
+	.teamphoto{
+		padding-top: 20px;
 	}
 
 	.formdiv{
