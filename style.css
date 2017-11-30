@@ -90,9 +90,9 @@ p.floorlink{
 	padding-top: 25px;
 }
 
-a.description{
-  color: inherit;
-}
+a.homelink:visited{
+  color: #F32D94;
+	}
 
 .form{
 	padding: 80px 0 30px 0;
