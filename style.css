@@ -333,6 +333,10 @@ text-align: right;
 		padding-right: 0;
 	}
 
+	.description{
+		font-size: 26px;
+	}
+
 	.formdiv{
 		width: 100%;
 		padding-left: 0;
