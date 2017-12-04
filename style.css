@@ -90,6 +90,10 @@ p.floorlink{
 	padding-top: 25px;
 }
 
+a.homelink{
+  color: #F32D94;
+	}
+
 a.homelink:visited{
   color: #F32D94;
 	}
