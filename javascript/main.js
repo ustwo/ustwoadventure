@@ -14,10 +14,6 @@
       "url": "http://www.23codestreet.com"
     },
     {
-      "name": "Bel-Air",
-      "url": "http://www.bel-air.co"
-    },
-    {
       "name": "Comuzi",
       "url": "http://www.comuzi.xyz"
     },
