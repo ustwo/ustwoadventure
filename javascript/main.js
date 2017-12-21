@@ -18,6 +18,10 @@
       "url": "http://www.comuzi.xyz"
     },
     {
+      "name": "Dubzoo",
+      "url": "http://www.dubzoo.com"
+    },
+    {
       "name": "Ayla",
       "url": "http://www.aylafurniture.com/"
     },
