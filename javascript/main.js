@@ -14,6 +14,10 @@
       "url": "http://www.23codestreet.com"
     },
     {
+      "name": "The Art of Ping Pong",
+      "url": "http://www.theartofpingpong.co.uk/"
+    },
+    {
       "name": "Comuzi",
       "url": "http://www.comuzi.xyz"
     },
