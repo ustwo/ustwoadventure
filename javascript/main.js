@@ -130,8 +130,8 @@
       "url": "https://gatherdata.co/"
     },
     {
-      "name": "Innovators Hub",
-      "url": "http://innovatorshub.co/"
+      "name": "OH",
+      "url": "https://www.ohthisway.co.uk/"
     },
     {
       "name": "Studio Something",
