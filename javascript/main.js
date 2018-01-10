@@ -131,7 +131,7 @@
     },
     {
       "name": "OH",
-      "url": "https://www.ohthisway.co.uk/"
+      "url": "http://www.ohthisway.co.uk/"
     },
     {
       "name": "Studio Something",
