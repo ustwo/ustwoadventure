@@ -229,16 +229,7 @@
 
   }
 
-    var $grid = $('.grid').isotope({
-    itemSelector: '.grid-item',
-    getSortData: {
-      name: '.name',
-      category: '[data-category]'
-    },
-    // layout mode options
-    vertical: {
-    }
-  });
+  
 
 
   const listElements = createListElementsFromArray(shufflePortfolioArray());
