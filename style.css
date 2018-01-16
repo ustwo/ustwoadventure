@@ -17,7 +17,7 @@ p{
 }
 
 #header{
-	padding-top: 40px;
+	padding-top: 35px;
 }
 
 #logo{
@@ -42,18 +42,15 @@ p{
 	font-weight: 400;
 }
 
-.floorlink{
-	padding: 1px 5px;
-	margin: 2px 5px 0 0;
+.button{
+	padding: 2px 5px;
 	background-color: #F32D94;
+	cursor: pointer;
 }
 
-a.floorlink{
+a.button{
   border-style: solid;
   border-width: 3px;
-}
-
-p.floorlink{
 	color: #ffffff;
 }
 
@@ -173,6 +170,13 @@ input[type=text], input[type=email], select {
 	display: none;
 }
 
+#selectors{
+	padding-top: 55px;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
 #companies{
 	margin: 70px 0 0 0;
 	padding: 20px 0 0 0;
@@ -180,7 +184,7 @@ input[type=text], input[type=email], select {
 }
 
 ul#companies {
-	padding: 80px 0 0 0;
+	padding: 40px 0 0 0;
 	margin: 0 0 40px 0;
 
 	columns: 2;
@@ -243,7 +247,7 @@ text-align: right;
 }
 
 .icon{
-	padding: 10px;
+	padding: 10px 0 10px 15px;
 	vertical-align: middle;
 }
 
@@ -322,6 +326,10 @@ text-align: right;
 		padding-top: 0px;
 	}
 
+	#selectors{
+		font-size: 22px;
+	}
+
 	ul#companies li a {
 		font-size: 34px;
 	}
@@ -349,6 +357,10 @@ text-align: right;
 
 	.teamphoto{
 		padding-top: 20px;
+	}
+
+	a.button{
+	  border-width: 2px;
 	}
 
 	.formdiv{
@@ -394,7 +406,7 @@ text-align: right;
 		}
 
 		ul#companies li a {
-			font-size: 28px;
+			font-size: 26px;
 			line-height: 35px;
 		}
 

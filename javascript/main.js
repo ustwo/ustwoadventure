@@ -132,6 +132,11 @@
       "tags": "Floor"
     },
     {
+      "name": "Creative Mentor Network",
+      "url": "http://creativementornetwork.org/",
+      "tags": "Floor"
+    },
+    {
       "name": "Pauseable",
       "url": "http://www.pauseable.com",
       "tags": "Fund"
@@ -203,6 +208,8 @@
     },
   ];
 
+
+
   function shufflePortfolioArray() {
 
     const a = portfolioArray;
@@ -223,20 +230,40 @@
 
     return a.map(function (el) {
 
-      return "<li class='portfolio_item " + el.tags + "'><a href='"+ el.url + "' target='_blank'>" + el.name + "</a></li>"
+      return "<li class='portfolio_item' data-filter='" + el.tags + "'><a href='"+ el.url + "' target='_blank'>" + el.name + "</a></li>"
 
     });
 
   }
 
-  
 
+  $(document).ready(function () {
 
-  const listElements = createListElementsFromArray(shufflePortfolioArray());
-  $('ul#companies').html(listElements);
+    const listElements = createListElementsFromArray(shufflePortfolioArray());
+    $('ul#companies').html(listElements);
 
-  // Construct UI blocks through the portfolio array
+    $('a.filter-button-group').on('click', function (e) {
 
-  // Call shufflePortfolioArray()
+      var filterString = $(e.target).data('filter');
+      console.log(filterString);
 
-  // Turn these into workable raw HTML to inject into a list
+      // cycle through all the items in the portfolio portfolio
+
+      $('.portfolio_item').each(function (idx, el) {
+
+        var fStrings = $(el).data('filter').split(' ');
+        var shouldDisplay = fStrings.includes(filterString);
+
+        if (filterString == "*") {
+
+          shouldDisplay = true;
+
+        }
+
+        $(el).css('display', (shouldDisplay == true ? 'block' : 'none'));
+
+      });
+
+    });
+
+  });
