@@ -54,6 +54,20 @@ a.button{
 	color: #ffffff;
 }
 
+.is_checked{
+		padding: 2px 5px;
+		background-color: #ffffff;
+		color: #F32D94;
+		cursor: pointer;
+		border-width: 3px;
+}
+
+a.is_checked{
+  border-style: solid;
+  border-width: 3px;
+	color: #F32D94;
+}
+
 .head{
 	font-family: futura-pt, sans-serif;
 	font-style: normal;
