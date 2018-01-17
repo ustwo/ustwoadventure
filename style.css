@@ -255,10 +255,6 @@ text-align: right;
 		padding-top: 0px;
 	}
 
-	#selectors{
-		font-size: 22px;
-	}
-
 	ul#companies li a {
 		font-size: 34px;
 	}
@@ -280,7 +276,7 @@ text-align: right;
 	}
 
 	#selectors{
-		font-size: 20px;
+		font-size: 21px;
 	}
 
 	ul#companies li a {
