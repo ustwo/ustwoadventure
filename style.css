@@ -160,22 +160,34 @@ a.homelink:visited{
 }
 
 ul#companies {
-	padding: 40px 0 60px 0;
+	padding: 40px 0 40px 0;
 	margin: 0 0 40px 0;
 }
 
-ul#companies.twocolumns {
+ul#companies{
 	columns: 2;
 	-webkit-columns: 2;
 	-moz-columns: 2;
 	width: 95%;
 }
 
-ul#companies li {
+ul#companies.onecolumn{
+	columns: 1;
+	-webkit-columns: 1;
+	-moz-columns: 1;
+}
+
+ul#companies.twocolumns{
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+}
+
+ul#companies li{
 	margin: 0 0 0 0;
 }
 
-ul#companies li a {
+ul#companies li a{
 	text-decoration: none;
 	font-size: 40px;
 	font-family: futura-pt, sans-serif;
@@ -245,7 +257,14 @@ ul#companies li a:active {
 		padding: 0 10px 0 0;
 	}
 
-	ul#companies.twocolumns {
+	ul#companies{
+		columns: 1;
+		-webkit-columns: 1;
+		-moz-columns: 1;
+		width: 100%;
+	}
+
+	ul#companies.twocolumns{
 		columns: 1;
 		-webkit-columns: 1;
 		-moz-columns: 1;
