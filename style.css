@@ -199,7 +199,6 @@ ul#companies li a:active {
 .contact.bottom {
 	text-align: left;
 	display: none;
-	/* padding-bottom: 60px; */
 }
 
 #footer{
@@ -351,7 +350,6 @@ ul#companies li a:active {
 
 	.contact{
 		display: block;
-		margin-top: 50px;
 	}
 
 	.contact a{
