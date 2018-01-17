@@ -158,11 +158,6 @@ a.homelink:visited{
 	line-height: 1.15;
 }
 
-.contact.bottom {
-	text-align: left;
-	display: none;
-}
-
 #companies{
 	margin: 70px 0 0 0;
 	padding: 20px 0 0 0;
@@ -219,6 +214,11 @@ ul#companies li a:active {
 						 top: -2px;
 }
 
+.contact.bottom {
+	text-align: left;
+	display: none;
+}
+
 #footer{
 	height: 300px;
 	width: 100%;
@@ -256,10 +256,6 @@ ul#companies li a:active {
 
 
 @media (max-width: 1000px) {
-
-	.icon{
-		padding: 0 10px 0 0;
-	}
 
 	ul#companies{
 		columns: 1;
@@ -322,7 +318,7 @@ ul#companies li a:active {
 	}
 
 	.icon{
-		padding: 20px 0 10px 15px;
+		padding: 20px 0 10px 10px;
 	}
 
 	.icon img{
