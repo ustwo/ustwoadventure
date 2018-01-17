@@ -53,7 +53,7 @@ a.join{
 	padding-top: 40px;
 	font-weight: 400;
 	display: inline-block;
-	width: 80%;
+	width: 85%;
 	vertical-align: top;
 	padding-right: 22px;
 	line-height: 1.15;
@@ -123,14 +123,9 @@ a.homelink:visited{
 	line-height: 1.8;
 }
 
-#leftButton{
-	/* border-left: 0px; */
-}
-
 #companies{
 	margin: 70px 0 0 0;
 	padding: 20px 0 0 0;
-	width: 55%;
 }
 
 ul#companies {
@@ -292,6 +287,15 @@ text-align: right;
 	#copy{
 		width: 100%;
 		padding-right: 0;
+		padding-top: 30px;
+	}
+
+	#separator{
+		margin-top: 40px;
+	}
+
+	#selectors{
+		padding-top: 40px;
 	}
 
 	#selectors{
