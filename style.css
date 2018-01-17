@@ -284,6 +284,7 @@ text-align: right;
 
 	ul#companies li a {
 		line-height: 0.95;
+		font-size: 28px;
 	}
 
 	ul#companies li {
@@ -323,6 +324,10 @@ text-align: right;
 		max-width: 300px;
 	}
 
+	ul#companies li a {
+		font-size: 27px;
+	}
+
 	.wrapper{
 		padding: 0 25px;
 	}
@@ -347,7 +352,6 @@ text-align: right;
 
 		ul#companies li a {
 			font-size: 26px;
-			line-height: 35px;
 		}
 
 		.contact a{
