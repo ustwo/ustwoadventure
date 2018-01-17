@@ -50,8 +50,24 @@ a.join{
 }
 
 #copy{
-	padding-top: 80px;
+	padding-top: 40px;
 	font-weight: 400;
+	display: inline-block;
+	width: 80%;
+	vertical-align: top;
+	padding-right: 22px;
+	line-height: 1.15;
+}
+
+.description{
+	font-size: 22px;
+	padding-top: 20px;
+}
+
+#separator{
+	margin-top: 50px;
+	height: 4px;
+	background-color: #F32D94;
 }
 
 .button{
@@ -88,18 +104,6 @@ a.is_checked{
 	text-transform: uppercase;
 }
 
-#copy{
-	display: inline-block;
-	width: 50%;
-	vertical-align: top;
-	padding-right: 22px;
-}
-
-.description{
-	font-size: 30px;
-	padding-top: 25px;
-}
-
 a.homelink{
   color: #F32D94;
 }
@@ -113,10 +117,14 @@ a.homelink:visited{
 }
 
 #selectors{
-	padding-top: 55px;
+	padding-top: 50px;
 	font-size: 24px;
 	font-weight: 400;
 	line-height: 1.8;
+}
+
+#leftButton{
+	border-left: 0px;
 }
 
 #companies{
@@ -284,7 +292,6 @@ text-align: right;
 	#copy{
 		width: 100%;
 		padding-right: 0;
-		padding-top: 60px;
 	}
 
 	#selectors{
@@ -300,27 +307,11 @@ text-align: right;
 	}
 
 	.description{
-		font-size: 26px;
-		padding-top: 20px;
-	}
-
-	.teamphoto{
-		padding-top: 20px;
+		font-size: 18px;
 	}
 
 	a.button{
 	  border-width: 2px;
-	}
-
-	.formdiv{
-		width: 100%;
-		padding-left: 0;
-		padding-top: 10px;
-	}
-
-	.form{
-		padding-top: 50px;
-		text-align: left;
 	}
 
 }
