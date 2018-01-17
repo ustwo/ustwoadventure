@@ -207,12 +207,12 @@ text-align: right;
 }
 
 #footer{
-	height: 300px;
+	align-items: center;
+	text-align: center;
 	width: 100%;
-	bottom: 0;
-	position:fixed;
-	overflow: visible;
-	z-index: -1;
+	padding-top: 30px;
+	padding-bottom: 90px;
+	opacity: 0.9;
 }
 
 #fourohfour{

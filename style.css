@@ -224,8 +224,9 @@ ul#companies li a:active {
 	align-items: center;
 	text-align: center;
 	width: 100%;
-	padding-top: 0px;
-	padding-bottom: 70px;
+	padding-top: 30px;
+	padding-bottom: 90px;
+	opacity: 0.9;
 }
 
 #fourohfour{
