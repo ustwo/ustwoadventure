@@ -244,10 +244,14 @@
 
     $('a.filter-button-group').on('click', function (e) {
 
+      var descriptor = $(e.target).data('descriptorstring')
+      $('#descriptor').empty();
+      $('#descriptor').append(descriptor);
+
       var filterString = $(e.target).data('filter');
       console.log(filterString);
 
-      // cycle through all the items in the portfolio portfolio
+      // cycle through all the items in the portfolio
 
       $('.portfolio_item').each(function (idx, el) {
 
@@ -267,6 +271,7 @@
     });
 
   });
+
 
 
     $(".button").click(function(){

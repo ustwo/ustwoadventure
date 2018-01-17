@@ -17,7 +17,7 @@ p{
 }
 
 #header{
-	padding-top: 35px;
+	padding-top: 30px;
 }
 
 #logo{
@@ -37,15 +37,44 @@ p{
 	font-weight: 400;
 }
 
-.join{
+.contact{
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 0px;
+	font-weight: 400;
+	margin-top: 60px;
+}
+
+.contact a{
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 28px;
+	line-height: 50px;
+}
+
+.contact.top {
+text-align: right;
+}
+
+.icon{
+	padding: 10px 0 10px 15px;
+	vertical-align: middle;
+}
+
+.icon img{
+	vertical-align: middle;
+	max-height: 25px;
+}
+
+.nav{
 	padding: 2px 5px;
 	background-color: #F32D94;
 	cursor: pointer;
 }
 
-a.join{
+a.nav{
   border-style: solid;
-  border-width: 3px;
 	color: #ffffff;
 }
 
@@ -61,6 +90,7 @@ a.join{
 
 .description{
 	font-size: 22px;
+	font-weight: 400;
 	padding-top: 20px;
 }
 
@@ -123,6 +153,12 @@ a.homelink:visited{
 	line-height: 1.8;
 }
 
+#descriptor{
+	padding-top: 40px;
+	font-size: 26px;
+	line-height: 1.15;
+}
+
 #companies{
 	margin: 70px 0 0 0;
 	padding: 20px 0 0 0;
@@ -165,40 +201,10 @@ ul#companies li a:active {
 						 top: -2px;
 }
 
-.contact{
-	width: 49%;
-	display: inline-block;
-	vertical-align: top;
-	padding-top: 0px;
-	font-weight: 400;
-	margin-top: 60px;
-}
-
-.contact a{
-	text-decoration: none;
-	color: #FFFFFF;
-	font-size: 28px;
-	line-height: 50px;
-}
-
-.contact.top {
-text-align: right;
-}
-
 .contact.bottom {
 	text-align: left;
 	display: none;
 	padding-bottom: 60px;
-}
-
-.icon{
-	padding: 10px 0 10px 15px;
-	vertical-align: middle;
-}
-
-.icon img{
-	vertical-align: middle;
-	max-height: 25px;
 }
 
 #footer{
@@ -312,6 +318,10 @@ text-align: right;
 
 	.description{
 		font-size: 18px;
+	}
+
+	#descriptor{
+		font-size: 20px;
 	}
 
 	a.button{
