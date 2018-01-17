@@ -54,12 +54,12 @@
     {
       "name": "Sanctus",
       "url": "http://sanctus.io",
-      "tags": "Floor"
+      "tags": "Floor Fund"
     },
     {
       "name": "Sidestory",
       "url": "https://sidestory.co",
-      "tags": "Floor"
+      "tags": "Floor Fund"
     },
     {
       "name": "Everyday",
@@ -104,7 +104,7 @@
     {
       "name": "Amaliah",
       "url": "https://www.amaliah.com",
-      "tags": ""
+      "tags": "Fund"
     },
     {
       "name": "Mayku",
