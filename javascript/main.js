@@ -278,3 +278,14 @@
       $(".button").not(this).removeClass('is_checked');
       $(this).addClass("is_checked");
   });
+
+
+
+  $(".onecolumn").click(function(){
+    $("ul#companies").css({"columns": "1", "-webkit-columns": "1", "-moz-columns": "1"});
+  });
+
+  $(".twocolumns").click(function(){
+    $("ul#companies").css({"columns": "2", "-webkit-columns": "2", "-moz-columns": "2"});
+  });
+  
