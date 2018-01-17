@@ -280,12 +280,11 @@
   });
 
 
-  // 
-  // $(".onecolumn").click(function(){
-  //   $("ul#companies").css({"columns": "1", "-webkit-columns": "1", "-moz-columns": "1"});
-  // });
-  //
-  // $(".twocolumns").click(function(){
-  //   $("ul#companies").css({"columns": "2", "-webkit-columns": "2", "-moz-columns": "2"});
-  // });
-  //
+
+  $(".onecolumn").click(function(){
+    $("ul#companies").addClass("onecolumn").removeClass("twocolumns");
+  });
+
+  $(".twocolumns").click(function(){
+    $("ul#companies").addClass("twocolumns").removeClass("onecolumn");;
+  });
