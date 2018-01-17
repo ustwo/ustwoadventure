@@ -154,7 +154,7 @@ a.homelink:visited{
 }
 
 #descriptor{
-	padding-top: 40px;
+	padding-top: 50px;
 	font-size: 26px;
 	line-height: 1.15;
 }
@@ -245,14 +245,6 @@ ul#companies li a:active {
 
 @media (max-width: 1000px){
 
-	.contact.top{
-		display: none;
-	}
-
-	.contact.bottom{
-		display: block;
-	}
-
 	.icon{
 		padding: 0 10px 0 0;
 	}
@@ -289,6 +281,14 @@ ul#companies li a:active {
 
 
 @media (max-width: 660px){
+
+	.contact.top{
+		display: none;
+	}
+
+	.contact.bottom{
+		display: block;
+	}
 
 	#copy{
 		width: 100%;
