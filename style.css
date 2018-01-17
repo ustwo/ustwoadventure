@@ -39,7 +39,7 @@ p{
 	vertical-align: top;
 	padding-top: 0px;
 	font-weight: 400;
-	margin-top: 60px;
+	margin-top: 30px;
 }
 
 .contact a{
@@ -55,7 +55,6 @@ text-align: right;
 
 .icon{
 	padding: 10px 0 10px 15px;
-	vertical-align: middle;
 }
 
 .icon img{
@@ -200,7 +199,7 @@ ul#companies li a:active {
 .contact.bottom {
 	text-align: left;
 	display: none;
-	padding-bottom: 60px;
+	/* padding-bottom: 60px; */
 }
 
 #footer{
@@ -284,6 +283,19 @@ ul#companies li a:active {
 
 	.contact.bottom{
 		display: block;
+	}
+
+	.contact a{
+		font-size: 24px;
+	}
+
+	.icon{
+		padding: 20px 0 10px 15px;
+	}
+
+	.icon img{
+		vertical-align: middle;
+		max-height: 25px;
 	}
 
 	#copy{
