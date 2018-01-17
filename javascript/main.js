@@ -24,7 +24,7 @@
     {
       "name": "Comuzi",
       "url": "http://www.comuzi.xyz",
-      "tags": ""
+      "tags": "Floor"
     },
     {
       "name": "Dubzoo",
