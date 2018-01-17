@@ -165,7 +165,7 @@ a.homelink:visited{
 
 ul#companies {
 	padding: 40px 0 40px 0;
-	margin: 0 0 40px 0;
+	margin: 0 0 20px 0;
 }
 
 ul#companies{
@@ -221,12 +221,11 @@ ul#companies li a:active {
 }
 
 #footer{
-	height: 300px;
+	align-items: center;
+	text-align: center;
 	width: 100%;
-	bottom: 0;
-	position:fixed;
-	overflow: visible;
-	z-index: -1;
+	padding-top: 0px;
+	padding-bottom: 70px;
 }
 
 #fourohfour{
