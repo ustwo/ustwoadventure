@@ -37,6 +37,18 @@ p{
 	font-weight: 400;
 }
 
+.join{
+	padding: 2px 5px;
+	background-color: #F32D94;
+	cursor: pointer;
+}
+
+a.join{
+  border-style: solid;
+  border-width: 3px;
+	color: #ffffff;
+}
+
 #copy{
 	padding-top: 80px;
 	font-weight: 400;
