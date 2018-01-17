@@ -17,7 +17,7 @@ p{
 }
 
 #header{
-	padding-top: 35px;
+	padding-top: 10px;
 }
 
 #logo{
@@ -176,7 +176,7 @@ input[type=text], input[type=email], select {
 	vertical-align: top;
 	padding-top: 0px;
 	font-weight: 400;
-	margin-top: 60px;
+	margin-top: 30px;
 }
 
 .contact a{

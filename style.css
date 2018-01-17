@@ -53,8 +53,8 @@ p{
 	line-height: 50px;
 }
 
-.contact.top {
-text-align: right;
+.contact.top{
+	text-align: right;
 }
 
 .icon{
@@ -158,6 +158,11 @@ a.homelink:visited{
 	line-height: 1.15;
 }
 
+.contact.bottom {
+	text-align: left;
+	display: none;
+}
+
 #companies{
 	margin: 70px 0 0 0;
 	padding: 20px 0 0 0;
@@ -212,11 +217,6 @@ ul#companies li a:hover {
 ul#companies li a:active {
 	position: relative;
 						 top: -2px;
-}
-
-.contact.bottom {
-	text-align: left;
-	display: none;
 }
 
 #footer{
