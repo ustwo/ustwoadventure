@@ -63,9 +63,9 @@ a.button{
 }
 
 a.is_checked{
-  border-style: solid;
-  border-width: 3px;
-	color: #F32D94;
+	  border-style: solid;
+	  border-width: 3px;
+		color: #F32D94;
 }
 
 .head{
@@ -276,6 +276,10 @@ text-align: right;
 		width: 100%;
 		padding-right: 0;
 		padding-top: 60px;
+	}
+
+	#selectors{
+		font-size: 20px;
 	}
 
 	ul#companies li a {
