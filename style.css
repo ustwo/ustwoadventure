@@ -333,7 +333,7 @@ ul#companies li a:active {
 	#copy{
 		width: 100%;
 		padding-right: 0;
-		padding-top: 10px;
+		padding-top: 15px;
 	}
 
 	.separator{
@@ -345,7 +345,7 @@ ul#companies li a:active {
 	}
 
 	.contact.bottom{
-		margin-top: 10px;
+		margin-top: 15px;
 	}
 
 	#footer{
