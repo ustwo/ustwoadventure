@@ -87,6 +87,12 @@ a.button{
 	padding-top: 25px;
 }
 
+.separator{
+	margin-top: 45px;
+	height: 4px;
+	background-color: #F32D94;
+}
+
 a.homelink{
   color: #F32D94;
 	}
@@ -210,9 +216,12 @@ text-align: right;
 	align-items: center;
 	text-align: center;
 	width: 100%;
-	padding-top: 30px;
-	padding-bottom: 90px;
-	opacity: 0.9;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.footerlogo img{
+	max-height: 40px;
 }
 
 #fourohfour{
@@ -285,6 +294,10 @@ text-align: right;
 	.description{
 		font-size: 26px;
 		padding-top: 20px;
+	}
+
+	.separator.bottom{
+		margin-top: 0px;
 	}
 
 	.teamphoto{
