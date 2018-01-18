@@ -88,7 +88,7 @@ a.nav{
 }
 
 .description{
-	font-size: 23px;
+	font-size: 26px;
 	font-weight: 400;
 	padding-top: 20px;
 }
@@ -369,7 +369,7 @@ ul#companies li a:active {
 	}
 
 	.description{
-		font-size: 19px;
+		font-size: 20px;
 	}
 
 	a.button{
