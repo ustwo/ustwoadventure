@@ -78,7 +78,7 @@ a.nav{
 }
 
 #copy{
-	padding-top: 40px;
+	padding-top: 35px;
 	font-weight: 400;
 	display: inline-block;
 	width: 85%;
@@ -93,8 +93,8 @@ a.nav{
 	padding-top: 20px;
 }
 
-#separator{
-	margin-top: 50px;
+.separator{
+	margin-top: 45px;
 	height: 4px;
 	background-color: #F32D94;
 }
@@ -146,25 +146,25 @@ a.homelink:visited{
 }
 
 #selectors{
-	padding-top: 50px;
+	padding-top: 45px;
 	font-size: 24px;
 	font-weight: 400;
 	line-height: 1.8;
 }
 
 #descriptor{
-	padding-top: 45px;
+	padding-top: 40px;
 	font-size: 26px;
 	line-height: 1.15;
 }
 
 #companies{
-	margin: 70px 0 0 0;
+	margin: 65px 0 0 0;
 	padding: 20px 0 0 0;
 }
 
 ul#companies {
-	padding: 40px 0 40px 0;
+	padding: 35px 0 40px 0;
 	margin: 0 0 20px 0;
 }
 
@@ -224,9 +224,12 @@ ul#companies li a:active {
 	align-items: center;
 	text-align: center;
 	width: 100%;
-	padding-top: 30px;
-	padding-bottom: 90px;
-	opacity: 0.9;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.footerlogo img{
+	max-height: 40px;
 }
 
 #fourohfour{
@@ -333,7 +336,7 @@ ul#companies li a:active {
 		padding-top: 30px;
 	}
 
-	#separator{
+	.separator{
 		margin-top: 40px;
 	}
 
