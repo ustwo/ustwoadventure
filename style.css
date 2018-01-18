@@ -292,11 +292,11 @@ ul#companies li a:active {
 	}
 
 	#descriptor{
-		padding-top: 40px;
+		padding-top: 30px;
 	}
 
 	ul#companies {
-		padding: 30px 0 40px 0;
+		padding: 20px 0 40px 0;
 	}
 
 	#companies{
@@ -333,7 +333,7 @@ ul#companies li a:active {
 	#copy{
 		width: 100%;
 		padding-right: 0;
-		padding-top: 30px;
+		padding-top: 10px;
 	}
 
 	.separator{
