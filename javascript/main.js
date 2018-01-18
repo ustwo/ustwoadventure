@@ -210,6 +210,11 @@
       "name": "Seed and Spark",
       "url": "https://www.seedandspark.com/",
       "tags": "Fund"
+    },
+    {
+      "name": "Loop",
+      "url": "http://loopsocial.co/",
+      "tags": "Floor"
     }
   ];
 
