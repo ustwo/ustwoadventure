@@ -206,6 +206,11 @@
       "url": "http://mr.bingo/",
       "tags": "Floor"
     },
+    {
+      "name": "Seed and Spark",
+      "url": "https://www.seedandspark.com/",
+      "tags": "Fund"
+    }
   ];
 
 
