@@ -340,6 +340,19 @@ ul#companies li a:active {
 		margin-top: 40px;
 	}
 
+	.separator.bottom{
+		margin-top: 0px;
+	}
+
+	.contact.bottom{
+		margin-top: 10px;
+	}
+
+	#footer{
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
 	#selectors{
 		padding-top: 40px;
 	}
