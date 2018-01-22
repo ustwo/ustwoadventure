@@ -41,6 +41,10 @@ p{
 	padding-top: 35px;
 	font-weight: 400;
 	width: 85%;
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 22px;
+	font-size: 26px;
 }
 
 .button{
@@ -64,14 +68,8 @@ a.button{
 	padding-top: 25px;
 }
 
-#copy{
-	display: inline-block;
-	vertical-align: top;
-	padding-right: 22px;
-	font-size: 26px;
-}
-
 .answer{
+	padding-top: 5px;
 	font-size: 26px;
 	font-weight: 400;
 }
@@ -121,7 +119,7 @@ text-align: right;
 .contact.bottom {
 	text-align: left;
 	display: none;
-	padding-bottom: 60px;
+	width: 100%;
 }
 
 .icon{
@@ -185,17 +183,6 @@ a.nav{
 
 @media (max-width: 1000px){
 
-	.contact.top{
-		display: none;
-	}
-
-	.contact.bottom{
-		display: block;
-	}
-
-	.icon{
-		padding: 0 10px 0 0;
-	}
 
 }
 
@@ -218,15 +205,41 @@ a.nav{
 
 @media (max-width: 660px){
 
+	.contact.top{
+		display: none;
+	}
+
+	.contact.bottom{
+		display: block;
+		margin-top: 15px;
+	}
+
+	.contact a{
+		font-size: 24px;
+	}
+
+	.icon{
+		padding: 20px 0 10px 10px;
+	}
+
+	.icon img{
+		vertical-align: middle;
+		max-height: 25px;
+	}
+
 	#copy{
 		width: 100%;
 		padding-right: 0;
-		padding-top: 60px;
+		padding-top: 15px;
+		font-size: 20px;
+	}
+
+	.question{
+		font-size: 26px;
 	}
 
 	.answer{
-		font-size: 26px;
-		padding-top: 20px;
+		font-size: 22px;
 	}
 
 	.separator.bottom{
@@ -239,17 +252,6 @@ a.nav{
 
 	a.button{
 	  border-width: 2px;
-	}
-
-	.formdiv{
-		width: 100%;
-		padding-left: 0;
-		padding-top: 10px;
-	}
-
-	.form{
-		padding-top: 50px;
-		text-align: left;
 	}
 
 }
@@ -267,7 +269,6 @@ a.nav{
 
 	.contact{
 		display: block;
-		margin-top: 50px;
 	}
 
 	.contact a{

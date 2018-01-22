@@ -314,6 +314,7 @@ ul#companies li a:active {
 
 	.contact.bottom{
 		display: block;
+		margin-top: 15px;
 	}
 
 	.contact a{
@@ -341,10 +342,6 @@ ul#companies li a:active {
 
 	.separator.bottom{
 		margin-top: 0px;
-	}
-
-	.contact.bottom{
-		margin-top: 15px;
 	}
 
 	#footer{
