@@ -1,64 +1,3 @@
-body{
-	font-family: 'Px', sans-serif;
-  -webkit-font-smoothing: antialiased;
-	font-weight: 800;
-}
-
-p{
-	color: #F32D94;
-	letter-spacing: -0.2px;
-	line-height: 35px;
-}
-
-a{
-	color: #F32D94;
-	text-decoration: none;
-}
-
-.wrapper{
-	max-width: 1100px;
-	margin: auto;
-	padding: 0 40px;
-}
-
-#header{
-	padding-top: 10px;
-}
-
-#logo{
-	width: 50%;
-	display: inline-block;
-	vertical-align: top;
-	padding: 10px 0 0 0;
-}
-
-#logo_image{
-	max-width: 300px;
-}
-
-#tagline{
-	font-size: 34px;
-	margin: 10px 0 0 0;
-	font-weight: 400;
-}
-
-#copy{
-	padding-top: 80px;
-	font-weight: 400;
-}
-
-.button{
-	padding: 2px 5px;
-	background-color: #F32D94;
-	cursor: pointer;
-}
-
-a.button{
-  border-style: solid;
-  border-width: 3px;
-	color: #ffffff;
-}
-
 .head{
 	font-family: futura-pt, sans-serif;
 	font-style: normal;
@@ -67,7 +6,7 @@ a.button{
 	text-transform: uppercase;
 }
 
-#copy{
+#floorcopy{
 	display: inline-block;
 	width: 50%;
 	vertical-align: top;
@@ -84,12 +23,13 @@ a.button{
 .formdiv{
 	display: inline-block;
 	width: 40%;
-	padding-left: 32px;
+	padding-left: 74px;
 }
 
 .description{
 	font-size: 30px;
 	padding-top: 25px;
+	line-height: 1.05;
 }
 
 .separator{
@@ -107,7 +47,7 @@ a.homelink:visited{
 	}
 
 .form{
-	padding: 80px 0 30px 0;
+	padding: 10px 0 30px 0;
 	text-align: center;
 	font-size: 20px;
 	color: #F32D94;
@@ -181,66 +121,6 @@ input[type=text], input[type=email], select {
 	display: none;
 }
 
-.contact{
-	width: 49%;
-	display: inline-block;
-	vertical-align: top;
-	padding-top: 0px;
-	font-weight: 400;
-	margin-top: 30px;
-}
-
-.contact a{
-	text-decoration: none;
-	color: #FFFFFF;
-	font-size: 28px;
-	line-height: 50px;
-}
-
-.contact.top {
-text-align: right;
-}
-
-.contact.bottom {
-	text-align: left;
-	display: none;
-	padding-bottom: 60px;
-}
-
-.icon{
-	padding: 10px 0 10px 15px;
-	vertical-align: middle;
-}
-
-.icon img{
-	vertical-align: middle;
-	max-height: 25px;
-}
-
-#footer{
-	align-items: center;
-	text-align: center;
-	width: 100%;
-	padding-top: 80px;
-	padding-bottom: 80px;
-}
-
-.footerlogo img{
-	max-height: 40px;
-}
-
-#fourohfour{
-	padding-top: 60px;
-	text-decoration: none;
-	font-size: 40px;
-	font-family: futura-pt, 'Px', sans-serif;
-	font-style: normal;
-	font-weight: 800;
-	color: #F32D94;
-	letter-spacing: -0.7px;
-	line-height: 1.15;
-	text-transform: uppercase;
-}
 
 
 @media (min-width: 1920px) {
@@ -251,38 +131,44 @@ text-align: right;
 
 @media (max-width: 1080px){
 
+	.formdiv{
+		padding-left: 66px;
+	}
 
 }
 
 
 @media (max-width: 1000px){
 
-	.contact.top{
-		display: none;
-	}
-
-	.contact.bottom{
-		display: block;
-	}
-
-	.icon{
-		padding: 0 10px 0 0;
+	.formdiv{
+		padding-left: 60px;
 	}
 
 }
 
-@media (max-width: 767px){
 
-	.wrapper{
-		margin: auto;
+@media (max-width: 940px){
+
+	.formdiv{
+		padding-left: 50px;
 	}
 
-	#header{
-		padding-top: 0px;
+}
+
+
+@media (max-width: 840px){
+
+	.formdiv{
+		padding-left: 40px;
 	}
 
-	#selectors{
-		font-size: 22px;
+}
+
+
+@media (max-width: 740px){
+
+	.formdiv{
+		padding-left: 32px;
 	}
 
 }
@@ -290,27 +176,9 @@ text-align: right;
 
 @media (max-width: 660px){
 
-	#copy{
+	#floorcopy{
 		width: 100%;
 		padding-right: 0;
-		padding-top: 60px;
-	}
-
-	.description{
-		font-size: 26px;
-		padding-top: 20px;
-	}
-
-	.separator.bottom{
-		margin-top: 0px;
-	}
-
-	.teamphoto{
-		padding-top: 20px;
-	}
-
-	a.button{
-	  border-width: 2px;
 	}
 
 	.formdiv{
@@ -322,6 +190,19 @@ text-align: right;
 	.form{
 		padding-top: 50px;
 		text-align: left;
+	}
+
+	.description{
+		font-size: 26px;
+		padding-top: 20px;
+	}
+
+	.teamphoto{
+		padding-top: 20px;
+	}
+
+	a.button{
+	  border-width: 2px;
 	}
 
 }

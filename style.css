@@ -1,107 +1,3 @@
-body{
-	font-family: 'Px', sans-serif;
-  -webkit-font-smoothing: antialiased;
-	font-weight: 800;
-}
-
-p{
-	color: #F32D94;
-	letter-spacing: -0.2px;
-	line-height: 35px;
-}
-
-a{
-	color: #F32D94;
-	text-decoration: none;
-}
-
-.wrapper{
-	max-width: 1100px;
-	margin: auto;
-	padding: 0 40px;
-}
-
-#header{
-	padding-top: 10px;
-}
-
-#logo{
-	width: 50%;
-	display: inline-block;
-	vertical-align: top;
-	padding: 10px 0 0 0;
-}
-
-#logo_image{
-	max-width: 300px;
-}
-
-#tagline{
-	font-size: 34px;
-	margin: 10px 0 0 0;
-	font-weight: 400;
-}
-
-.contact{
-	width: 49%;
-	display: inline-block;
-	vertical-align: top;
-	padding-top: 0px;
-	font-weight: 400;
-	margin-top: 30px;
-}
-
-.contact a{
-	font-size: 28px;
-	line-height: 50px;
-}
-
-.contact.top{
-	text-align: right;
-}
-
-.icon{
-	padding: 10px 0 10px 15px;
-}
-
-.icon img{
-	vertical-align: middle;
-	max-height: 25px;
-}
-
-.nav{
-	padding: 2px 5px;
-	background-color: #F32D94;
-	cursor: pointer;
-}
-
-a.nav{
-  border-style: solid;
-	color: #ffffff;
-}
-
-#copy{
-	padding-top: 35px;
-	font-weight: 400;
-	display: inline-block;
-	width: 85%;
-	vertical-align: top;
-	padding-right: 22px;
-	line-height: 1.15;
-}
-
-.description{
-	font-size: 26px;
-	font-weight: 400;
-	padding-top: 20px;
-}
-
-.separator{
-	margin-top: 45px;
-	height: 4px;
-	background-color: #F32D94;
-}
-
 .button{
 	padding: 2px 5px;
 	background-color: #F32D94;
@@ -136,20 +32,7 @@ a.is_checked{
 	text-transform: uppercase;
 }
 
-a.homelink{
-  color: #F32D94;
-}
-
-a.homelink:visited{
-  color: #F32D94;
-}
-
-.hidden{
-	display: none;
-}
-
 #selectors{
-	padding-top: 45px;
 	font-size: 24px;
 	font-weight: 400;
 	line-height: 1.8;
@@ -216,37 +99,6 @@ ul#companies li a:active {
 						 top: -2px;
 }
 
-.contact.bottom {
-	text-align: left;
-	display: none;
-	width: 100%;
-}
-
-#footer{
-	align-items: center;
-	text-align: center;
-	width: 100%;
-	padding-top: 80px;
-	padding-bottom: 80px;
-}
-
-.footerlogo img{
-	max-height: 40px;
-}
-
-#fourohfour{
-	padding-top: 60px;
-	text-decoration: none;
-	font-size: 40px;
-	font-family: futura-pt, 'Px', sans-serif;
-	font-style: normal;
-	font-weight: 800;
-	color: #F32D94;
-	letter-spacing: -0.7px;
-	line-height: 1.15;
-	text-transform: uppercase;
-}
-
 
 
 @media (min-width: 1920px) {
@@ -281,14 +133,6 @@ ul#companies li a:active {
 
 @media (max-width: 767px){
 
-	.wrapper{
-		margin: auto;
-	}
-
-	#header{
-		padding-top: 0px;
-	}
-
 	ul#companies li a {
 		font-size: 34px;
 	}
@@ -311,51 +155,6 @@ ul#companies li a:active {
 
 @media (max-width: 660px){
 
-	.contact.top{
-		display: none;
-	}
-
-	.contact.bottom{
-		display: block;
-		margin-top: 15px;
-	}
-
-	.contact a{
-		font-size: 24px;
-	}
-
-	.icon{
-		padding: 20px 0 10px 10px;
-	}
-
-	.icon img{
-		vertical-align: middle;
-		max-height: 25px;
-	}
-
-	#copy{
-		width: 100%;
-		padding-right: 0;
-		padding-top: 15px;
-	}
-
-	.separator{
-		margin-top: 35px;
-	}
-
-	.separator.bottom{
-		margin-top: 0px;
-	}
-
-	#footer{
-		padding-top: 70px;
-		padding-bottom: 70px;
-	}
-
-	#selectors{
-		padding-top: 35px;
-	}
-
 	#selectors{
 		font-size: 21px;
 	}
@@ -368,10 +167,6 @@ ul#companies li a:active {
 		margin: 8px 0 0 0;
 	}
 
-	.description{
-		font-size: 20px;
-	}
-
 	a.button{
 	  border-width: 2px;
 	}
@@ -381,37 +176,14 @@ ul#companies li a:active {
 
 @media (max-width: 375px){
 
-	#logo_image{
-		max-width: 300px;
-	}
-
-	.wrapper{
-		padding: 0 25px;
-	}
-
-	.contact{
-		display: block;
-	}
-
-	.contact a{
-		font-size: 24px;
-	}
 
 }
 
 
 	@media (max-width: 320px){
 
-		#logo_image{
-			max-width: 200px;
-		}
-
 		ul#companies li a {
 			font-size: 26px;
-		}
-
-		.contact a{
-			font-size: 22px;
 		}
 
 }
