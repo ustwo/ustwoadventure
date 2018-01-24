@@ -36,13 +36,9 @@
 	line-height: 1.1;
 }
 
-a.homelink{
-  color: #F32D94;
-	}
-
-a.homelink:visited{
-  color: #F32D94;
-	}
+.description a{
+	text-decoration: underline;
+}
 
 .form{
 	padding: 10px 0 30px 0;
