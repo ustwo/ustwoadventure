@@ -18,7 +18,7 @@ a{
 .wrapper{
 	max-width: 1100px;
 	margin: auto;
-	padding: 0 40px;
+	padding: 10px 40px;
 }
 
 #header{
@@ -146,6 +146,10 @@ a.nav{
 }
 
 @media (max-width: 660px){
+
+	.wrapper{
+		padding-top: 0;
+	}
 
 	.contact.top{
 		display: none;
