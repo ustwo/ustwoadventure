@@ -284,9 +284,9 @@
 
 
 
-    $(".button").click(function(){
-      $(".button").not(this).removeClass('is_checked');
-      $(this).addClass("is_checked");
+  $(".button").click(function(){
+    $(".button").not(this).removeClass('is_checked');
+    $(this).addClass("is_checked");
   });
 
 
@@ -298,3 +298,17 @@
   $(".twocolumns").click(function(){
     $("ul#companies").addClass("twocolumns").removeClass("onecolumn");;
   });
+
+
+
+
+  $(document).ready(function () {
+
+
+    if (window.location.pathname == "/index.html") {
+
+      history.replaceState({}, 'ustwo Adventure', '/' );
+
+  }
+
+});
