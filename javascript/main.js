@@ -301,13 +301,11 @@
 
 
 
-
   $(document).ready(function () {
 
+    if (document.location.pathname == "/index.html") {
 
-    if (window.location.pathname == "/index.html") {
-
-      history.replaceState({}, 'ustwo Adventure', '/' );
+      history.replaceState( {} , 'ustwo Adventure', '/' );
 
   }
 
