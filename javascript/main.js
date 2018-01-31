@@ -303,7 +303,7 @@
 
   $(document).ready(function () {
 
-    if (document.location.pathname == "/index.html") {
+    if (window.location.pathname == "/") {
 
       history.replaceState( {} , 'ustwo Adventure', '/' );
 
