@@ -215,6 +215,11 @@
       "name": "Loop",
       "url": "http://loopsocial.co/",
       "tags": "Floor"
+    },
+    {
+      "name": "Lecture in Progress",
+      "url": "https://lectureinprogress.com/",
+      "tags": "Foundation"
     }
   ];
 
