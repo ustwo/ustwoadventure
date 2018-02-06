@@ -167,7 +167,7 @@
       "tags": ""
     },
     {
-      "name": "OH This Way",
+      "name": "OH",
       "url": "https://www.ohthisway.co.uk/",
       "tags": "Foundation"
     },
