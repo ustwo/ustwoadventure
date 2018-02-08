@@ -241,19 +241,14 @@
       a[i - 1] = a[j];
       a[j] = x;
     }
-
     return a;
-
   }
 
+
   function createListElementsFromArray(a) {
-
     return a.map(function (el) {
-
       return "<li class='portfolio_item' data-filter='" + el.tags + "'><a href='"+ el.url + "' target='_blank'>" + el.name + "</a></li>"
-
     });
-
   }
 
 
@@ -279,18 +274,15 @@
         var shouldDisplay = fStrings.includes(filterString);
 
         if (filterString == "*") {
-
           shouldDisplay = true;
-
         }
 
         $(el).css('display', (shouldDisplay == true ? 'block' : 'none'));
 
       });
-
     });
-
   });
+
 
   $(".button").click(function(){
     $(".button").not(this).removeClass('is_checked');
@@ -309,7 +301,6 @@
       if (!el) return;
       el.click();
    }
-
   });
 
 
