@@ -287,13 +287,6 @@
 
 
 
-  $(".button").click(function(){
-    $(".button").not(this).removeClass('is_checked');
-    $(this).addClass("is_checked");
-  });
-
-
-
   $(document).ready(function () {
     if (window.location.hash){
       var hash = window.location.hash.substring(1);
@@ -323,4 +316,12 @@
     if (window.location.search.indexOf('ref=') > -1) {
       history.replaceState( {} , 'ustwo Adventure', '/${hash}' );
     }
+  });
+
+
+
+  $(".button").click(function(){
+    $(".button").not(this).removeClass('is_checked');
+    $(this).addClass("is_checked");
+    history.replaceState( {} , 'ustwo Adventure', '/' );
   });
