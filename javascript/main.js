@@ -1,15 +1,15 @@
-  // Collect all the portfolios into an array
+venture  // Collect all the portfolios into an array
 
   const portfolioArray = [
     {
       "name": "Tribe",
       "url": "https://wearetribe.co/",
-      "tags": "Floor Fund"
+      "tags": "playground fund"
     },
     {
       "name": "Combo",
       "url": "https://www.combostudio.co",
-      "tags": "Floor"
+      "tags": "playground"
     },
     {
       "name": "23 Code Street",
@@ -19,27 +19,27 @@
     {
       "name": "The Art of Ping Pong",
       "url": "http://www.theartofpingpong.co.uk/",
-      "tags": "Floor"
+      "tags": "playground"
     },
     {
       "name": "Comuzi",
       "url": "http://www.comuzi.xyz",
-      "tags": "Floor"
+      "tags": "playground"
     },
     {
       "name": "Dubzoo",
       "url": "http://www.dubzoo.com",
-      "tags": "Floor"
+      "tags": "playground"
     },
     {
       "name": "Ayla",
       "url": "http://www.aylafurniture.com/",
-      "tags": "Floor"
+      "tags": "playground"
     },
     {
       "name": "Easle",
       "url": "https://www.easle.co",
-      "tags": "Floor Fund"
+      "tags": "playground fund"
     },
     {
       "name": "Immersive Rehab",
@@ -49,112 +49,112 @@
     {
       "name": "Parasym Health",
       "url": "http://www.parasym.co",
-      "tags": "Floor"
+      "tags": "playground"
     },
     {
       "name": "Sanctus",
       "url": "http://sanctus.io",
-      "tags": "Floor Fund"
+      "tags": "playground fund"
     },
     {
       "name": "Sidestory",
       "url": "https://sidestory.co",
-      "tags": "Floor Fund"
+      "tags": "playground fund"
     },
     {
       "name": "Everyday",
       "url": "http://www.everyday.studio",
-      "tags": "Floor"
+      "tags": "playground"
     },
     {
       "name": "Tray",
       "url": "https://www.tray.io",
-      "tags": "Floor Fund"
+      "tags": "playground fund"
     },
     {
       "name": "Uptree",
       "url": "https://www.uptree.co",
-      "tags": "Floor Fund"
+      "tags": "playground fund"
     },
     {
       "name": "Dojo",
       "url": "https://www.dojoapp.co",
-      "tags": "Fund"
+      "tags": "fund"
     },
     {
       "name": "Hoop",
       "url": "https://www.hoop.co.uk",
-      "tags": "Fund"
+      "tags": "fund"
     },
     {
       "name": "Wayfindr",
       "url": "https://www.wayfindr.net",
-      "tags": "Venture"
+      "tags": "venture"
     },
     {
       "name": "Everpress",
       "url": "https://www.everpress.com",
-      "tags": "Fund"
+      "tags": "fund"
     },
     {
       "name": "Curiscope",
       "url": "https://www.curiscope.com",
-      "tags": "Fund"
+      "tags": "fund"
     },
     {
       "name": "Amaliah",
       "url": "https://www.amaliah.com",
-      "tags": "Fund"
+      "tags": "fund"
     },
     {
       "name": "Mayku",
       "url": "https://www.mayku.me",
-      "tags": "Fund"
+      "tags": "fund"
     },
     {
       "name": "Marvel",
       "url": "https://www.marvelapp.com",
-      "tags": "Fund"
+      "tags": "fund"
     },
     {
       "name": "Dice",
       "url": "https://www.dice.fm",
-      "tags": "Fund Venture"
+      "tags": "fund venture"
     },
     {
       "name": "ustwo Games",
       "url": "https://www.ustwogames.co.uk",
-      "tags": "Venture"
+      "tags": "venture"
     },
     {
       "name": "Pilcro",
       "url": "https://www.pilcro.com",
-      "tags": "Floor"
+      "tags": "playground"
     },
     {
       "name": "Creative Mentor Network",
       "url": "http://creativementornetwork.org/",
-      "tags": "Floor"
+      "tags": "playground"
     },
     {
       "name": "Pauseable",
       "url": "http://www.pauseable.com",
-      "tags": "Fund"
+      "tags": "fund"
     },
     {
       "name": "Over",
       "url": "https://www.madewithover.com",
-      "tags": "Fund"
+      "tags": "fund"
     },
     {
       "name": "Run an Empire",
       "url": "http://www.runanempire.com",
-      "tags": "Fund"
+      "tags": "fund"
     },
     {
       "name": "Brother Cycles",
       "url": "https://www.brothercycles.com/",
-      "tags": "Fund"
+      "tags": "fund"
     },
     {
       "name": "Paul James",
@@ -169,7 +169,7 @@
     {
       "name": "OH",
       "url": "https://www.ohthisway.co.uk/",
-      "tags": "Foundation"
+      "tags": "foundation"
     },
     {
       "name": "Studio Something",
@@ -179,7 +179,7 @@
     {
       "name": "Raise Your Hands",
       "url": "https://www.raiseyourhands.org.uk/",
-      "tags": "Floor"
+      "tags": "playground"
     },
     {
       "name": "Kate Rees Coaching",
@@ -189,42 +189,42 @@
     {
       "name": "Grae Matta Foundation",
       "url": "http://graematta.com/",
-      "tags": "Floor"
+      "tags": "playground"
     },
     {
       "name": "No Mayo",
       "url": "http://www.no-mayo.digital/",
-      "tags": "Floor"
+      "tags": "playground"
     },
     {
       "name": "Morrama",
       "url": "http://www.morrama.com/",
-      "tags": "Floor"
+      "tags": "playground"
     },
     {
       "name": "Mr Bingo",
       "url": "http://mr.bingo/",
-      "tags": "Floor"
+      "tags": "playground"
     },
     {
       "name": "Seed and Spark",
       "url": "https://www.seedandspark.com/",
-      "tags": "Fund"
+      "tags": "fund"
     },
     {
       "name": "Loop",
       "url": "http://loopsocial.co/",
-      "tags": "Floor"
+      "tags": "playground"
     },
     {
       "name": "Lecture in Progress",
       "url": "https://lectureinprogress.com/",
-      "tags": "Foundation"
+      "tags": "foundation"
     },
     {
       "name": "UNRD",
       "url": "http://unrd.co/",
-      "tags": "Floor"
+      "tags": "playground"
     }
   ];
 
@@ -236,7 +236,7 @@
 
     var j, x, i;
     for (i = a.length; i; i--) {
-      j = Math.floor(Math.random() * i);
+      j = Math.playground(Math.random() * i);
       x = a[i - 1];
       a[i - 1] = a[j];
       a[j] = x;
@@ -292,27 +292,24 @@
 
   });
 
-
-
   $(".button").click(function(){
     $(".button").not(this).removeClass('is_checked');
     $(this).addClass("is_checked");
   });
 
 
-  // // If URL contains #filterString .click() button associated with it on pageload
-  //
-  // $(document).ready(function () {
-  //
-  //   if ($.urlParam == #filterString) {
-  //     $(function(){
-  //       $(".button").find(`[data-filter="filterString"'${current}']`).click();
-  //       // $(e.target).data('filter').click();
-  //     });
-  //
-  //   }
-  //
-  // });
+  $(document).ready(function () {
+    if (window.location.hash){
+      var hash = window.location.hash.substring(1);
+      if (!hash) return;
+      var array = $(".button-group").find(`[data-filter='${hash.toLowercase()}']`);
+      if (!array || !array.length) return;
+      var el = array[0];
+      if (!el) return;
+      el.click();
+   }
+
+  });
 
 
 
