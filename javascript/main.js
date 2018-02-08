@@ -300,7 +300,20 @@
   });
 
 
-  // If URL contains #filterString .click() button associated with it on pageload
+  // // If URL contains #filterString .click() button associated with it on pageload
+  //
+  // $(document).ready(function () {
+  //
+  //   if ($.urlParam == #filterString) {
+  //     $(function(){
+  //       $(".button").find(`[data-filter="filterString"'${current}']`).click();
+  //       // $(e.target).data('filter').click();
+  //     });
+  //
+  //   }
+  //
+  // });
+
 
 
   $(".onecolumn").click(function(){
