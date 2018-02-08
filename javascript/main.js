@@ -300,7 +300,7 @@
   });
 
 
-  // If URL contains filterString click button on pageload
+  // If URL contains #filterString .click() button associated with it on pageload
 
 
   $(".onecolumn").click(function(){
@@ -315,7 +315,7 @@
 
   $(document).ready(function () {
 
-    if (window.location.pathname == "/?ref") {
+    if (window.location.pathname == "/") {
 
       history.replaceState( {} , 'ustwo Adventure', '/' );
 
