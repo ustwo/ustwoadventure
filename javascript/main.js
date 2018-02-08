@@ -290,7 +290,6 @@
   $(".button").click(function(){
     $(".button").not(this).removeClass('is_checked');
     $(this).addClass("is_checked");
-    history.replaceState( {} , 'ustwo Adventure', '/' );
   });
 
 
