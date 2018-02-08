@@ -245,11 +245,13 @@
   }
 
 
+
   function createListElementsFromArray(a) {
     return a.map(function (el) {
       return "<li class='portfolio_item' data-filter='" + el.tags + "'><a href='"+ el.url + "' target='_blank'>" + el.name + "</a></li>"
     });
   }
+
 
 
   $(document).ready(function () {
@@ -284,11 +286,13 @@
   });
 
 
+
   $(".button").click(function(){
     $(".button").not(this).removeClass('is_checked');
     $(this).addClass("is_checked");
     history.replaceState( {} , 'ustwo Adventure', `/` );
   });
+
 
 
   $(document).ready(function () {
