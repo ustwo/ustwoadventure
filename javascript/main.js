@@ -300,6 +300,8 @@
   });
 
 
+  // If URL contains filterString click button on pageload
+
 
   $(".onecolumn").click(function(){
     $("ul#companies").addClass("onecolumn").removeClass("twocolumns");
@@ -313,7 +315,7 @@
 
   $(document).ready(function () {
 
-    if (window.location.pathname == "/") {
+    if (window.location.pathname == "/?ref") {
 
       history.replaceState( {} , 'ustwo Adventure', '/' );
 
