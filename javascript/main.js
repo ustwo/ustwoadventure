@@ -319,7 +319,7 @@
 
 
   $(document).ready(function () {
-     // if (window.location.search.indexOf('ref=') > -1) {
+     if (window.location.search.indexOf('ref=') > -1) {
       history.replaceState( {} , 'ustwo Adventure', '/' );
-    // }
+    }
   });
