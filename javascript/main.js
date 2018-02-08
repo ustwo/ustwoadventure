@@ -1,4 +1,4 @@
-venture  // Collect all the portfolios into an array
+// Collect all the portfolios into an array
 
   const portfolioArray = [
     {
