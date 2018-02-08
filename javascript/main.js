@@ -324,11 +324,8 @@ venture  // Collect all the portfolios into an array
 
 
   $(document).ready(function () {
-
-    if (window.location.pathname == "/") {
-
-      history.replaceState( {} , 'ustwo Adventure', '/' );
-
-  }
-
-});
+    var hash = window.location.hash;
+    if (window.location.search.indexOf('ref=') > -1) {
+      history.replaceState( {} , 'ustwo Adventure', `/${hash}` );
+    }
+  });
