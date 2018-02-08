@@ -302,7 +302,7 @@
     if (window.location.hash){
       var hash = window.location.hash.substring(1);
       if (!hash) return;
-      var array = $(".button-group").find(`[data-filter='${hash.toLowercase()}']`);
+      var array = $(".button-group").find(`[data-filter='${hash}.toLowercase()']`);
       if (!array || !array.length) return;
       var el = array[0];
       if (!el) return;
