@@ -319,7 +319,6 @@
 
 
   $(document).ready(function () {
-    var hash = window.location.hash;
     if (window.location.search.indexOf('ref=') > -1) {
       history.replaceState( {} , 'ustwo Adventure', '/' );
     }
