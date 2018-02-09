@@ -43,6 +43,10 @@ a.is_checked{
 	line-height: 1.15;
 }
 
+#descriptor a{
+	text-decoration: underline;
+}
+
 #companies{
 	margin: 65px 0 0 0;
 	padding: 20px 0 0 0;
