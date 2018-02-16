@@ -152,24 +152,6 @@ input[type=text], input[type=email], select {
 
 @media (max-width: 840px){
 
-	.formdiv{
-		padding-left: 40px;
-	}
-
-}
-
-
-@media (max-width: 740px){
-
-	.formdiv{
-		padding-left: 32px;
-	}
-
-}
-
-
-@media (max-width: 660px){
-
 	#copy{
 		padding-top: 20px;
 	}
