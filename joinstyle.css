@@ -1,13 +1,13 @@
+#copy{
+	padding-top: 30px;
+}
+
 .head{
 	font-family: futura-pt, sans-serif;
 	font-style: normal;
 	font-size: 40px;
 	font-weight: 800;
 	text-transform: uppercase;
-}
-
-#copy{
-	font-size: 26px;
 }
 
 #floorcopy{
