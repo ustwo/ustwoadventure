@@ -1,13 +1,13 @@
-#copy{
-	padding-top: 30px;
-}
-
 .head{
 	font-family: futura-pt, sans-serif;
 	font-style: normal;
 	font-size: 40px;
 	font-weight: 800;
 	text-transform: uppercase;
+}
+
+#copy{
+	font-size: 26px;
 }
 
 #floorcopy{
@@ -18,6 +18,7 @@
 }
 
 .teamphoto{
+	padding-bottom: 20px;
 	width: 100%;
 	height: auto;
 	max-width: 100%;
@@ -151,6 +152,15 @@ input[type=text], input[type=email], select {
 
 
 @media (max-width: 840px){
+
+	.formdiv{
+		padding-left: 40px;
+	}
+
+}
+
+
+@media (max-width: 800px){
 
 	#copy{
 		padding-top: 20px;
