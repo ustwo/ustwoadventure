@@ -58,6 +58,7 @@ a{
   text-align: left;
   display: none;
   width: 100%;
+	padding-bottom: 15px;
 }
 
 .icon{
@@ -94,6 +95,10 @@ a.nav{
 	font-size: 26px;
 	font-weight: 400;
 	padding-top: 20px;
+}
+
+#copy.description{
+	padding-top: 0px;
 }
 
 .separator{
