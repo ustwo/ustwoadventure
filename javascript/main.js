@@ -225,6 +225,11 @@
       "name": "UNRD",
       "url": "http://unrd.co/",
       "tags": "playground"
+    },
+    {
+      "name": "Curate Labs",
+      "url": "https://curatelabs.co/",
+      "tags": "playground"
     }
   ];
 
