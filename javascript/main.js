@@ -230,6 +230,16 @@
       "name": "Curate Labs",
       "url": "https://curatelabs.co/",
       "tags": "playground"
+    },
+    {
+      "name": "Remote Zoo",
+      "url": "https://www.remotezoo.com/",
+      "tags": "playground"
+    },
+    {
+      "name": "Tom Gaul",
+      "url": "http://www.tomgaul.com/",
+      "tags": "playground"
     }
   ];
 
