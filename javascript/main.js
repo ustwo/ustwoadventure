@@ -240,6 +240,11 @@
       "name": "Tom Gaul",
       "url": "http://www.tomgaul.com/",
       "tags": "playground"
+    },
+    {
+      "name": "Design Club",
+      "url": "http://designclub.org.uk/",
+      "tags": "foundation"
     }
   ];
 
