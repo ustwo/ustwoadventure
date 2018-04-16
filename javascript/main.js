@@ -245,6 +245,11 @@
       "name": "Design Club",
       "url": "http://designclub.org.uk/",
       "tags": "foundation"
+    },
+    {
+      "name": "Suvera",
+      "url": "http://suvera.co.uk/",
+      "tags": ""
     }
   ];
 
