@@ -250,6 +250,11 @@
       "name": "Suvera",
       "url": "http://suvera.co.uk/",
       "tags": ""
+    },
+    {
+      "name": "Kyra",
+      "url": "https://kyra.com/",
+      "tags": "fund"
     }
   ];
 
