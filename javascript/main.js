@@ -168,7 +168,7 @@
     },
     {
       "name": "OH",
-      "url": "https://ohthisway.co.uk/get-inspired/ustwo-to-become-a-patron-of-oh/",
+      "url": "https://ohthisway.co.uk/",
       "tags": "foundation"
     },
     {
