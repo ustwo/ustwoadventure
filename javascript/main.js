@@ -182,11 +182,6 @@
       "tags": "playground"
     },
     {
-      "name": "Kate Rees Coaching",
-      "url": "https://www.katereescoaching.com/",
-      "tags": ""
-    },
-    {
       "name": "Grae Matta Foundation",
       "url": "http://graematta.com/",
       "tags": "playground"
