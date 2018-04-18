@@ -255,6 +255,11 @@
       "name": "Onlicar",
       "url": "https://www.onlicar.com/",
       "tags": "playground"
+    },
+    {
+      "name": "Alix Fox",
+      "url": "https://twitter.com/AlixFox",
+      "tags": "playground"
     }
   ];
 
