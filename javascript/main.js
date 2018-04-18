@@ -250,6 +250,11 @@
       "name": "Kyra",
       "url": "https://kyra.com/",
       "tags": "fund"
+    },
+    {
+      "name": "Onlicar",
+      "url": "https://www.onlicar.com/",
+      "tags": "playground"
     }
   ];
 
