@@ -58,8 +58,8 @@
       "tags": "playground",
       "image": "images/team_assets/dubzoo_image.jpg",
       "logo": "images/team_assets/dubzoo_logo.jpg",
-      "line": "Make fans everywhere",
-      "copy": "We’re helping musicians, artists, DJs and producers market themselves better on the move, and spend more time on creating ."
+      "line": "Grow your fanbase, mindfully",
+      "copy": "We’re helping music makers learn to market themselves better on social media with daily tips and inspirations, to mindfully find and engage new audiences."
     },
     {
       "name": "Ayla",
