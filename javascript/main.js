@@ -8,8 +8,8 @@
       "tags": "playground fund",
       "image": "images/team_assets/tribe_image.jpg",
       "logo": "images/team_assets/tribe_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Nutrition for athletes and an amazing community",
+      "copy": "We’re supporting the fast growing everyday athlete market with our natural sports nutrition products, to help our TRIBE train stronger and live better. The strong community behind us supports a social mission to counter human trafficking."
     },
     {
       "name": "Combo",
@@ -18,8 +18,8 @@
       "tags": "playground",
       "image": "images/team_assets/combo_image.jpg",
       "logo": "images/team_assets/combo_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "An AR and VR studio",
+      "copy": "Focusing on developing AR and VR content using modern frameworks, we’ve learned lots building experiments and are now making mobile games."
     },
     {
       "name": "23 Code Street",
@@ -28,8 +28,8 @@
       "tags": "",
       "image": "images/team_assets/23codestreet_image.jpg",
       "logo": "images/team_assets/23codestreet_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "A coding school for women and social enterprise",
+      "copy": "A community an school where for every paying student on our courses we teach a disadvantaged woman in the slums of India."
     },
     {
       "name": "The Art of Ping Pong",
@@ -38,8 +38,8 @@
       "tags": "playground",
       "image": "images/team_assets/theartofpingpong_image.jpg",
       "logo": "images/team_assets/theartofpingpong_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "A collaborative art concept",
+      "copy": "We create fun and colourful ping pong artworks for events, exhibitions and special projects, while raising money for charity. By colliding all the colour of art with the fun of table tennis we’re creating the most spirited ping pong brand on the planet."
     },
     {
       "name": "Comuzi",
@@ -48,8 +48,8 @@
       "tags": "playground",
       "image": "images/team_assets/comuzi_image.jpg",
       "logo": "images/team_assets/comuzi_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Creative technology and research",
+      "copy": "We are a experimental research firm, working at the intersection of emerging technology and culture."
     },
     {
       "name": "Dubzoo",
@@ -58,8 +58,8 @@
       "tags": "playground",
       "image": "images/team_assets/dubzoo_image.jpg",
       "logo": "images/team_assets/dubzoo_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Make fans everywhere",
+      "copy": "We’re helping musicians, artists, DJs and producers market themselves better on the move, and spend more time on creating ."
     },
     {
       "name": "Ayla",
@@ -68,8 +68,8 @@
       "tags": "playground",
       "image": "images/team_assets/ayla_image.jpg",
       "logo": "images/team_assets/ayla_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Creating furniture without compromise",
+      "copy": "We’ve designed and made furniture in our studio since 2012, from bespoke pieces to our products we sell online. With influences ranging from deco interiors, mid-century furniture, and industrial design, all of our work has form, function and sustainability in mind. "
     },
     {
       "name": "Easle",
@@ -78,8 +78,8 @@
       "tags": "playground fund",
       "image": "images/team_assets/easle_image.jpg",
       "logo": "images/team_assets/easle_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "A freelancer platform getting artists hired",
+      "copy": "We find the best work for the best artists. Our creators are vetted by industry experts, and we take care of all the tedious paperwork like timesheets, contracts and invoices."
     },
     {
       "name": "Immersive Rehab",
@@ -88,8 +88,8 @@
       "tags": "",
       "image": "images/team_assets/immersiverehab_image.jpg",
       "logo": "images/team_assets/immersiverehab_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Virtual Reality rehabilitation experiences",
+      "copy": "Focusing on the creation and development of interactive physiotherapy environments and games in Virtual Reality. We are providing an engaging and motivating solution to the current limitations of rehabilitation."
     },
     {
       "name": "Parasym Health",
@@ -98,8 +98,8 @@
       "tags": "playground",
       "image": "images/team_assets/parasymhealth_image.jpg",
       "logo": "images/team_assets/parasymhealth_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Bioelectric Treatment for chronic diseases",
+      "copy": "We make medical devices that stimulate the vagus nerve via an ear-clip, using these electrical signals to correct dysfunctions that cause chronic illnesses like tinnitus."
     },
     {
       "name": "Sanctus",
@@ -108,8 +108,8 @@
       "tags": "playground fund",
       "image": "images/team_assets/sanctus_image.jpg",
       "logo": "images/team_assets/sanctus_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Changing the perception of mental health",
+      "copy": "We believe mental health should be viewed like your physical health, and are on a mission to make it accessible. We work with businesses to help them create an open environment where mental health is accepted, and create content to further this goal."
     },
     {
       "name": "Sidestory",
@@ -118,8 +118,8 @@
       "tags": "playground fund",
       "image": "images/team_assets/sidestory_image.jpg",
       "logo": "images/team_assets/sidestory_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Curated immersive experiences, led by insiders",
+      "copy": "A SideStory Experience is just you and the Insider discovering a particular neighbourhood or theme in great detail: they'll show you hidden gems and introduce you to the key movers and shakers in the industry, from food to architecture to art."
     },
     {
       "name": "Everyday",
@@ -128,8 +128,8 @@
       "tags": "playground",
       "image": "images/team_assets/everyday_image.jpg",
       "logo": "images/team_assets/everyday_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "A multi-disciplinary studio specialising in film",
+      "copy": "From feature length documentaries to original snapchat campaign for brands, we’re your guys for the production of moving image."
     },
     {
       "name": "Tray",
@@ -138,8 +138,8 @@
       "tags": "playground fund",
       "image": "images/team_assets/tray_image.jpg",
       "logo": "images/team_assets/tray_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "A beautiful integration platform for cloud apps",
+      "copy": "We’ve made a secure and easy to use tool to let you automate any process across any cloud stack, without limits. From simple processes to multi step workflows with conditional logic, we’ve got you covered."
     },
     {
       "name": "Uptree",
@@ -148,8 +148,8 @@
       "tags": "playground fund",
       "image": "images/team_assets/uptree_image.jpg",
       "logo": "images/team_assets/uptree_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "A career mobility platform for school students",
+      "copy": "We are providing students with an online resource to find early career events, internship and jobs to launch their future pathway."
     },
     {
       "name": "Dojo",
@@ -158,8 +158,8 @@
       "tags": "fund",
       "image": "images/team_assets/dojo_image.jpg",
       "logo": "images/team_assets/dojo_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "The best places and events in your city",
+      "copy": "With editorial selections, high quality reviews, and insider info, our magazine style guide tells you whats going on daily and weekly, so you know what to enjoy."
     },
     {
       "name": "Hoop",
@@ -168,8 +168,8 @@
       "tags": "fund",
       "image": "images/team_assets/hoop_image.jpg",
       "logo": "images/team_assets/hoop_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Find the best things going on for kids",
+      "copy": "The tool families need to search for events and activities that their kids will love, along with curated content."
     },
     {
       "name": "Wayfindr",
@@ -178,8 +178,8 @@
       "tags": "venture",
       "image": "images/team_assets/wayfindr_image.jpg",
       "logo": "images/team_assets/wayfindr_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Empowering vision impaired people",
+      "copy": "We’re empowering vision impaired people to overcome isolation, by setting the standard for audio based navigation. We have developed the world's first internationally-approved standard for accessible audio navigation."
     },
     {
       "name": "Everpress",
@@ -188,8 +188,8 @@
       "tags": "fund",
       "image": "images/team_assets/everpress_image.jpg",
       "logo": "images/team_assets/everpress_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Design and sell beautiful merchandise easily",
+      "copy": "The best way to create and share campaigns for clothing design, risk free and high quality. We’re enabling the newest wave of influencers to sell products to millions of consumers around the world."
     },
     {
       "name": "Curiscope",
@@ -198,8 +198,8 @@
       "tags": "fund",
       "image": "images/team_assets/curiscope_image.jpg",
       "logo": "images/team_assets/curiscope_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Educational experiences built for all ages",
+      "copy": "We’re creating products using immersive technology like 360° video and AR to let you explore the depths of the ocean or the human body, and unleash your curiosity."
     },
     {
       "name": "Amaliah",
@@ -208,8 +208,8 @@
       "tags": "fund",
       "image": "images/team_assets/amaliah_image.jpg",
       "logo": "images/team_assets/amaliah_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Amplifying the voices of muslim women",
+      "copy": "We create content that is culturally relevant to Muslim women across fashion, beauty, topical issues, lifestyle and more."
     },
     {
       "name": "Mayku",
@@ -218,8 +218,8 @@
       "tags": "fund",
       "image": "images/team_assets/mayku_image.jpg",
       "logo": "images/team_assets/mayku_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Make beautiful things with the FormBox",
+      "copy": "The most compact vacuum former ever made, letting you start a production line from your desktop. There's no end to the things you can make, It lets you bring your ideas into the world, fast."
     },
     {
       "name": "Marvel",
@@ -228,8 +228,8 @@
       "tags": "fund",
       "image": "images/team_assets/marvel_image.jpg",
       "logo": "images/team_assets/marvel_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Mobile and web prototyping for designers",
+      "copy": "Design in Marvel or other tools, add your interactions and gestures to make the designs come to life, and collaborate with your team. We’ve built the best way for designers to to their thing."
     },
     {
       "name": "Dice",
@@ -238,8 +238,8 @@
       "tags": "fund venture",
       "image": "images/team_assets/dice_image.jpg",
       "logo": "images/team_assets/dice_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Tickets to the best gigs, with style",
+      "copy": "Every feature on DICE is designed for discovery and to make going out easy. We bring you closer to the artists you love. Every event on the app is handpicked by our team, with great copy and design to boot."
     },
     {
       "name": "ustwo Games",
@@ -248,8 +248,8 @@
       "tags": "venture",
       "image": "images/team_assets/ustwogames_image.jpg",
       "logo": "images/team_assets/ustwogames_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Independent studio making beautiful games",
+      "copy": "We’re a mobile games studio making interactive entertainment which challenges the medium, with a strong focus on user experience and elegance in presentation."
     },
     {
       "name": "Pilcro",
@@ -258,8 +258,8 @@
       "tags": "playground",
       "image": "images/team_assets/pilcro_image.jpg",
       "logo": "images/team_assets/pilcro_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Integrated tools to work better together",
+      "copy": "In our tools, users can integrate with G Suite to collaborate on documents, automate design flows for text, and send files, all in a creative and easy way."
     },
     {
       "name": "Creative Mentor Network",
@@ -268,8 +268,8 @@
       "tags": "playground",
       "image": "images/team_assets/creativementornetwork_image.jpg",
       "logo": "images/team_assets/creativementornetwork_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Training mentors and connecting them to diverse young talent",
+      "copy": "We work with schools across London to connect young people from diverse backgrounds with the creative industries. Our program is making the creative world more inclusive."
     },
     {
       "name": "Pauseable",
@@ -278,8 +278,8 @@
       "tags": "fund",
       "image": "images/team_assets/pauseable_image.jpg",
       "logo": "images/team_assets/pauseable_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Mindfulness in motion",
+      "copy": "We’re creating tools to bring mindfulness to everyone everywhere, through interactive meditation, unlocking an oasis of calm via a series of simple movements."
     },
     {
       "name": "Over",
@@ -288,8 +288,8 @@
       "tags": "fund",
       "image": "images/team_assets/over_image.jpg",
       "logo": "images/team_assets/over_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Inspiring the world to create",
+      "copy": "At Over, we believe that no matter who or where you are, you should be able to pick up your phone, open our app and design whatever you need. We want creating to be fast and easy, but most importantly we want it to be fun."
     },
     {
       "name": "Run an Empire",
@@ -298,8 +298,8 @@
       "tags": "fund",
       "image": "images/team_assets/runanempire_image.jpg",
       "logo": "images/team_assets/runanempire_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "A real world strategy running game",
+      "copy": "The most fun way to get on the road. Race against people in the real world to control territory in your area, and claim land in the name of your empire."
     },
     {
       "name": "Brother Cycles",
@@ -308,8 +308,8 @@
       "tags": "fund",
       "image": "images/team_assets/brothercycles_image.jpg",
       "logo": "images/team_assets/brothercycles_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Beautiful bikes, designed in London",
+      "copy": "Our frames are designed by us, are handmade by experienced frame builders out of the best materials, and can be ridden all day, whether in the city, on the track or out in the wild."
     },
     {
       "name": "Paul James",
@@ -318,8 +318,8 @@
       "tags": "",
       "image": "images/team_assets/pauljames_image.jpg",
       "logo": "images/team_assets/pauljames_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Solving problems by design",
+      "copy": "I design and build products that solve problems, splitting my time between own ventures, and projects I care about for clients."
     },
     {
       "name": "Gather Data",
@@ -328,8 +328,8 @@
       "tags": "",
       "image": "images/team_assets/gather_image.jpg",
       "logo": "images/team_assets/gather_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Data integrations, designed for developers",
+      "copy": "We help enterprises integrate disparate data across their organization. Our product is is an API integration layer that allows you to create complex pipelines like authentication for your customers, and bring all your data into one place."
     },
     {
       "name": "OH",
@@ -338,8 +338,8 @@
       "tags": "foundation",
       "image": "images/team_assets/oh_image.jpg",
       "logo": "images/team_assets/oh_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Alternative education for creative people",
+      "copy": "OH is built on ambition, community, and collaboration. We work alongside industry partners to uncover new ways of working and equip the next generation of creative and digital leaders."
     },
     {
       "name": "Studio Something",
@@ -348,8 +348,8 @@
       "tags": "",
       "image": "images/team_assets/studiosomething_image.jpg",
       "logo": "images/team_assets/studiosomething_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Ideas people genuinely like",
+      "copy": "We’re a creative business that thrives on partnerships and collaboration, working with brands that have vision and aren’t afraid to do things differently to get noticed. We make ads, but have an entrepreneurial spirit and believe in making a difference. That’s why we also create brands, products and (some) things. We are thinkers, but also doers."
     },
     {
       "name": "Raise Your Hands",
@@ -358,8 +358,8 @@
       "tags": "playground",
       "image": "images/team_assets/raiseyourhands_image.jpg",
       "logo": "images/team_assets/raiseyourhands_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Doing Good, Feeling Good",
+      "copy": "Our mission is to provide a sustainable source of funding for exceptional small charities working with young people. We believe charity needs a fresh approach. Giving shouldn't mean hassle and guilt for people who just want to help out, so we’ve created a platform and community that’s different."
     },
     {
       "name": "Grae Matta Foundation",
@@ -368,8 +368,8 @@
       "tags": "playground",
       "image": "images/team_assets/graematta_image.jpg",
       "logo": "images/team_assets/graematta_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Sustainable mental health initiatives",
+      "copy": "We're a non-profit dedicated to improving mental health in higher education & the workplace, through collaboration, research and awareness."
     },
     {
       "name": "No Mayo",
@@ -378,8 +378,8 @@
       "tags": "playground",
       "image": "images/team_assets/nomayo_image.jpg",
       "logo": "images/team_assets/nomayo_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Software development studio",
+      "copy": "We build experiential technology and custom software for our clients and ourselves."
     },
     {
       "name": "Morrama",
@@ -388,8 +388,8 @@
       "tags": "playground",
       "image": "images/team_assets/morrama_image.jpg",
       "logo": "images/team_assets/morrama_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Beautiful product design",
+      "copy": "We are an industrial design agency offering design services to both startups and established businesses worldwide. We believe in designing not just beautiful products, but unique and meaningful experiences that help define and strengthen the companies brand."
     },
     {
       "name": "Mr Bingo",
@@ -398,8 +398,8 @@
       "tags": "playground",
       "image": "images/team_assets/mrbingo_image.jpg",
       "logo": "images/team_assets/mrbingo_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Illustrator, artist and speaker",
+      "copy": "I was a commercial illustrator for 15 years, working with some big clients, and in 2015 I decided to launch a kickstarter to fund a book about my Hate Mail project. I decided around this period to never work for clients ever again and focus on being some sort of artist, which I’ve done ever since."
     },
     {
       "name": "Seed and Spark",
@@ -408,8 +408,8 @@
       "tags": "fund",
       "image": "images/team_assets/seedandspark_image.jpg",
       "logo": "images/team_assets/seedandspark_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Look through different lenses",
+      "copy": "A new kind of streaming service where perspective matters, combining streaming for audiences with crowdfunding for creators. Our mission is to create an entertainment landscape that reflects what we actually look like."
     },
     {
       "name": "Loop",
@@ -418,8 +418,8 @@
       "tags": "playground",
       "image": "images/team_assets/loop_image.jpg",
       "logo": "images/team_assets/loop_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "See who’s social",
+      "copy": "We’re making a social location app that allows you to see who’s there before you arrive. It’s a way to see the exact location of your various micro tribes, and keep you in the loop by being notified when you are near your friends giving you more opportunities to connect."
     },
     {
       "name": "Lecture in Progress",
@@ -428,8 +428,8 @@
       "tags": "foundation",
       "image": "images/team_assets/lectureinprogress_image.jpg",
       "logo": "images/team_assets/lectureinprogress_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Inspiring and informing the next generation of creatives",
+      "copy": "We’re empowering emerging talent with information and first-hand accounts that demystify the workings of the creative world. By focusing on the people, projects and places that make the industry, we’re delivering visibility on how work unfolds, where it happens, and the breadth of roles that exist."
     },
     {
       "name": "UNRD",
@@ -438,8 +438,8 @@
       "tags": "playground",
       "image": "images/team_assets/unrd_image.jpg",
       "logo": "images/team_assets/unrd_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "A new type of immersive entertainment experience",
+      "copy": "We’re creating a new genre of entertainment by combining Hollywood quality plots with modern storytelling techniques. Immersive stories that utilise the full potential of your smartphone, all in real-time. Our mission is to create the world's leading mobile-first entertainment brand."
     },
     {
       "name": "Curate Labs",
@@ -448,8 +448,8 @@
       "tags": "playground",
       "image": "images/team_assets/curatelabs_image.jpg",
       "logo": "images/team_assets/curatelabs_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Design for wellbeing",
+      "copy": "We are a creative content studio that focus on sustainable, ethical design. Predominantly a creative duo, we also manage two annual publications; Curate Magazine & The Annual Digest. Other ventures include a series of travel guides, a sustainable cosmetics range and a platform connecting charities with passionate volunteers."
     },
     {
       "name": "Remote Zoo",
@@ -458,8 +458,8 @@
       "tags": "playground",
       "image": "images/team_assets/remotezoo_image.jpg",
       "logo": "images/team_assets/remotezoo_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Finding people jobs to do anywhere",
+      "copy": "We’re helping people get out of the 9-to-5 grind and match them with meaningful work that can be done anywhere: at home, in a coffee shop or at a beautiful beach bar overlooking crystal clear waves."
     },
     {
       "name": "Tom Gaul",
@@ -468,8 +468,8 @@
       "tags": "playground",
       "image": "images/team_assets/tomgaul_image.jpg",
       "logo": "images/team_assets/tomgaul_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Design and illustration",
+      "copy": "I’m a designer and illustrator, working for a number of clients. At the same time I’m constantly filling my sketchbook and illustrating doodles of the characters you find in London, which I’ve created a book of."
     },
     {
       "name": "Design Club",
@@ -478,8 +478,8 @@
       "tags": "foundation",
       "image": "images/team_assets/designclub_image.jpg",
       "logo": "images/team_assets/designclub_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Helping children and young people become design thinkers",
+      "copy": "We believe that the future needs people-centred designers to help make the world a better place, so we’ve created educational resources and clubs to nurture empathy, collaboration, and problem-solving skills in children and young people everywhere."
     },
     {
       "name": "Suvera",
@@ -488,8 +488,8 @@
       "tags": "",
       "image": "images/team_assets/suvera_image.jpg",
       "logo": "images/team_assets/suvera_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "A new way to manage your prescriptions",
+      "copy": "We are a group medical students, designers, and computer scientists who are creating the best tools to help people live healthier and happier lives."
     },
     {
       "name": "Kyra",
@@ -498,8 +498,8 @@
       "tags": "fund",
       "image": "images/team_assets/kyra_image.jpg",
       "logo": "images/team_assets/kyra_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "New age digital media for young people",
+      "copy": "We are reimagining TV for the digital world. We make TV quality, brand safe, original content franchises that brands can use to speak to an already engaged audience."
     },
     {
       "name": "Onlicar",
@@ -508,8 +508,8 @@
       "tags": "playground",
       "image": "images/team_assets/onlicar_image.jpg",
       "logo": "images/team_assets/onlicar_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Fleet management on autopilot",
+      "copy": "We believe in smarter fleet management, and we’re reinventing the entire software stack to make it happen. Our product delivers improved efficiency, better productivity and more insights for businesses that need to manage their vehicles."
     },
     {
       "name": "Alix Fox",
@@ -518,8 +518,8 @@
       "tags": "playground",
       "image": "images/team_assets/alixfox_image.jpg",
       "logo": "images/team_assets/alixfox_logo.jpg",
-      "line": "",
-      "copy": ""
+      "line": "Writer, broadcaster and sex educator",
+      "copy": "I'm a freelance journalist & broadcaster who specialises in sex & relationships education. I work for BBC Radio 1, The Guardian, Brook charity, Grazia, The Modern Mann podcast, VICE... I've got fingers in more pies than a clumsy baker."
     }
   ];
 
