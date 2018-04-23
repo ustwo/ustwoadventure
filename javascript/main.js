@@ -338,7 +338,7 @@
       "tags": "foundation",
       "image": "images/team_assets/oh_image.jpg",
       "logo": "images/team_assets/oh_logo.jpg",
-      "line": "Alternative education for  creative people",
+      "line": "Alternative education for creative people",
       "copy": "OH is built on ambition, community, and collaboration. We work alongside industry partners to uncover new ways of working and equip the next generation of creative and digital leaders."
     },
     {
