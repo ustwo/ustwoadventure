@@ -227,7 +227,7 @@
   z-index: 2;
 }
 
-@media (min-width: 768px){
+@media (min-width: 579px){
   .modal {
     height: 500px;
   }
