@@ -46,7 +46,7 @@
       "url": "http://www.comuzi.xyz",
       "tidyurl": "comuzi.xyz",
       "tags": "playground",
-      "image": "images/team_assets/comuzi_image.jpg",
+      "image": "images/team_assets/comuzi_image.gif",
       "logo": "images/team_assets/comuzi_logo.png",
       "line": "Creative technology and research",
       "copy": "We are a experimental research firm, working at the intersection of emerging technology and culture."
@@ -317,7 +317,7 @@
       "tidyurl": "pauljamess.com",
       "tags": "",
       "image": "images/team_assets/pauljames_image.jpg",
-      "logo": "images/team_assets/pauljames_logo.png",
+      "logo": "",
       "line": "Solving problems by design",
       "copy": "I design and build products that solve problems, splitting my time between own ventures, and projects I care about for clients."
     },
@@ -467,7 +467,7 @@
       "tidyurl": "tomgaul.com",
       "tags": "playground",
       "image": "images/team_assets/tomgaul_image.jpg",
-      "logo": "images/team_assets/tomgaul_logo.png",
+      "logo": "",
       "line": "Design and illustration",
       "copy": "I’m a designer and illustrator, working for a number of clients. At the same time I’m constantly filling my sketchbook and illustrating doodles of the characters you find in London, which I’ve created a book of."
     },
@@ -517,7 +517,7 @@
       "tidyurl": "twitter.com/AlixFox",
       "tags": "playground",
       "image": "images/team_assets/alixfox_image.jpg",
-      "logo": "images/team_assets/alixfox_logo.png",
+      "logo": "",
       "line": "Writer, broadcaster and sex educator",
       "copy": "I'm a freelance journalist & broadcaster who specialises in sex & relationships education. I work for BBC Radio 1, The Guardian, Brook charity, Grazia, The Modern Mann podcast, VICE... I've got fingers in more pies than a clumsy baker."
     }
@@ -562,7 +562,7 @@
     var list = shufflePortfolioArray();
 
     return list.map(function(el) {
-      return "<div id='modal-" + kebabCase(el.name) + "'><div class='modal-inner'><div class='modal-details'><h2>" + el.name + "</h2><a class='modal-site-link' href='" + el.url + "'>" + el.tidyurl + "</a><p class='line'>" + el.line + "</p><p class='copy'>" + el.copy + "</p></div><div class='modal-image'><img class='modal-image-background' src='" + el.image + "' /><img class='modal-image-logo' src='" + el.logo + "' /></div></div></div>"
+      return "<div id='modal-" + kebabCase(el.name) + "'><div class='modal-inner'><div class='modal-details'><h2>" + el.name + "</h2><a class='modal-site-link' href='" + el.url + "' target='_blank'>" + el.tidyurl + "</a><p class='line'>" + el.line + "</p><p class='copy'>" + el.copy + "</p></div><div class='modal-image'><img class='modal-image-background' src='" + el.image + "' /><img class='modal-image-logo' src='" + el.logo + "' /></div></div></div>"
     });
   }
 
