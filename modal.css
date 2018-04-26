@@ -105,11 +105,11 @@
 	-webkit-box-ordinal-group: initial;
   -ms-flex-order: initial;
   order: 2;
-  overflow: auto;
 }
 
 .modal-details {
   padding: 40px;
+  overflow: auto;
 }
 
 /* Text styles inside details */
@@ -186,6 +186,7 @@
   z-index: 2;
 }
 
+
 @media (max-width: 579px){
   .modal {
     height: 100%;
@@ -210,6 +211,7 @@
 	  order: 2;
     padding: 30px;
 	}
+
 	.modal-image {
 		order: 1;
 	}
