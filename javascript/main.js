@@ -48,7 +48,7 @@
       "tags": "playground",
       "image": "images/team_assets/comuzi_image.gif",
       "logo": "images/team_assets/comuzi_logo.png",
-      "line": "Creative technology and research",
+      "line": "Emerging technology research",
       "copy": "We are a experimental research firm, working at the intersection of emerging technology and culture."
     },
     {
