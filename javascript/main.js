@@ -8,8 +8,8 @@
       "tags": "playground fund",
       "image": "images/team_assets/tribe_image.jpg",
       "logo": "images/team_assets/tribe_logo.png",
-      "line": "Nutrition for athletes and an amazing community",
-      "copy": "We’re supporting the fast growing everyday athlete market with our natural sports nutrition products, to help our TRIBE train stronger and live better. The strong community behind us supports a social mission to counter human trafficking."
+      "line": "Natural sports nutrition and an amazing community.",
+      "copy": "We are a community of 50,000+ athletes brought together by a love of nature and a shared spirit for adventure. TRIBE was inspired by a 1,000 mile run across Europe to fight human trafficking. A journey that set us on a mission to change the world of sports nutrition."
     },
     {
       "name": "Combo",
@@ -258,8 +258,8 @@
       "tags": "playground",
       "image": "images/team_assets/pilcro_image.jpg",
       "logo": "images/team_assets/pilcro_logo.png",
-      "line": "Integrated tools to work better together",
-      "copy": "In our tools, users can integrate with G Suite to collaborate on documents, automate design flows for text, and send files, all in a creative and easy way."
+      "line": "A faster way to make branded content",
+      "copy": "Pilcro is a free tool that helps teams create branded documents and presentations, by keeping all brand assets in one fast-access shared space."
     },
     {
       "name": "Creative Mentor Network",
