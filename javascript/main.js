@@ -439,7 +439,7 @@
       "image": "images/team_assets/unrd_image.jpg",
       "logo": "images/team_assets/unrd_logo.png",
       "line": "A new type of immersive entertainment experience",
-      "copy": "We’re creating a new genre of entertainment by combining Hollywood quality plots with modern storytelling techniques. Immersive stories that utilise the full potential of your smartphone, all in real-time. Our mission is to create the world's leading mobile-first entertainment brand."
+      "copy": "We’re on a mission to create the world's leading mobile-first entertainment brand, by combining Hollywood quality plots with mobile storytelling techniques that utilise the full potential of smartphones. Stories are delivered in real time, through messages, videos, photos and voice notes."
     },
     {
       "name": "Curate Labs",

@@ -183,7 +183,7 @@
 }
 
 
-@media (max-width: 850px){
+@media (max-width: 860px){
 
   .modal {
     width: 95%;
@@ -212,7 +212,7 @@
 @media (max-width: 640px){
 
   .modal{
-    height: 80%;
+    height: 75%;
   }
 
   .modal-details h2{
@@ -229,6 +229,10 @@
 
   .modal-details p{
     font-size: 17px;
+  }
+
+  .modal-image-logo{
+    max-width: 140px;
   }
 
 }
@@ -255,7 +259,6 @@
   }
 
   .modal-image-logo{
-    max-width: 140px;
     max-height: 55px;
   }
 
