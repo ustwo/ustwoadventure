@@ -650,14 +650,15 @@
   });
 
 
-  $(document).ready(function () {
+  $(document).ready(function(){
     if (window.location.search) return;
     if (window.location.pathname == "/") {
       history.replaceState( {} , 'ustwo Adventure', '/' );
     }
   });
 
-  $("#close-modal").click(function(){
+  $(".close-modal").click(function(){
+    if (window.location.pathname == "/") {
       history.replaceState( {} , 'ustwo Adventure', '/' );
-      console.log("log!");
+    }
   });
