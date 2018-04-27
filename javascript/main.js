@@ -651,14 +651,15 @@
 
 
   $(document).ready(function(){
-    if (window.location.search) return;
+    // if (window.location.search) return;
     if (window.location.pathname == "/") {
       history.replaceState( {} , 'ustwo Adventure', '/' );
     }
   });
 
-  $(".close-modal").click(function(){
-    if (window.location.pathname == "/") {
-      history.replaceState( {} , 'ustwo Adventure', '/' );
-    }
-  });
+  // $("a.close-modal").click(function(){
+  //   console.log('beeb');
+  //   if (window.location.pathname == "/") {
+  //     history.replaceState( {} , 'ustwo Adventure', '/' );
+  //   }
+  // });
