@@ -629,7 +629,7 @@
       var companyName, val;
       for (var i=0; i<parameters.length;i++) {
         val = parameters[i].split('=');
-        if (val[0] == 'company') {
+        if (val[0] == 'team') {
           companyName = val[1];
         }
       }
@@ -648,10 +648,13 @@
   $(".twocolumns").click(function(){
     $("ul#companies").addClass("twocolumns").removeClass("onecolumn");;
   });
+  
 
+  $('#modal1').hide(400, function(){window.location.hash = '';});
 
 
   $(document).ready(function () {
+    if (window.location.search) return;
     if (window.location.pathname == "/") {
       history.replaceState( {} , 'ustwo Adventure', '/' );
     }
