@@ -429,7 +429,7 @@
       "image": "images/team_assets/lectureinprogress_image.jpg",
       "logo": "images/team_assets/lectureinprogress_logo.png",
       "line": "Inspiring and informing the next generation of creatives",
-      "copy": "We’re empowering emerging talent with information and first-hand accounts that demystify the workings of the creative world. By focusing on the people, projects and places that make the industry, we’re delivering visibility on how work unfolds, where it happens, and the breadth of roles that exist."
+      "copy": "We’re empowering emerging talent with information and first-hand accounts that demystify the creative world. By focusing on the people, projects and places that make the industry, we’re delivering visibility on how work unfolds, where it happens, and the breadth of roles that exist."
     },
     {
       "name": "UNRD",
@@ -595,6 +595,11 @@
         $(el).css('display', (shouldDisplay == true ? 'block' : 'none'));
 
       });
+
+      if (window.location.pathname == "/") {
+        history.replaceState( {} , 'ustwo Adventure', '/#filterstring' );
+      }
+
     });
   });
 
