@@ -623,16 +623,19 @@
       el.click();
    }
 
-    // if (window.location.search){
-    //   var query = window.location.search.substring(1);
-    //   if (!query) return;
-    //   var array = $(".portfolio_item").find(`[data-filter='${query.toLowerCase()}']`);
-    //   if (!array || !array.length) return;
-    //   var el = array[0];
-    //   if (!el) return;
-    //   el.click();
-    // }
-    
+    if (window.location.search){
+      var query = window.location.search.substring(1);
+      var parameters = query.split('&');
+      var companyName, val;
+      for (var i=0; i<parameters.length;i++) {
+        val = parameters[i].split('=');
+        if (val[0] == 'company') {
+          companyName = val[1];
+        }
+      }
+      if (!companyName) return;
+      $('#modal-' + companyName ).modal()
+    }
 
   });
 
@@ -648,8 +651,8 @@
 
 
 
-  // $(document).ready(function () {
-  //   if (window.location.pathname == "/") {
-  //     history.replaceState( {} , 'ustwo Adventure', '/' );
-  //   }
-  // });
+  $(document).ready(function () {
+    if (window.location.pathname == "/") {
+      history.replaceState( {} , 'ustwo Adventure', '/' );
+    }
+  });
