@@ -637,6 +637,8 @@
       $('#modal-' + companyName ).modal()
     }
 
+    $('#modal-' + companyName ).hide(400, function(){window.location.hash = '';});
+
   });
 
 
@@ -648,9 +650,6 @@
   $(".twocolumns").click(function(){
     $("ul#companies").addClass("twocolumns").removeClass("onecolumn");;
   });
-  
-
-  $('#modal1').hide(400, function(){window.location.hash = '';});
 
 
   $(document).ready(function () {
