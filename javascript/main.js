@@ -657,7 +657,7 @@
     }
   });
 
-  $(".close-modal ").click(function(){
+  $("#close-modal").click(function(){
       history.replaceState( {} , 'ustwo Adventure', '/' );
       console.log("log!");
   });
