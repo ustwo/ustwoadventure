@@ -651,7 +651,7 @@
 
 
   $(document).ready(function () {
-    // if (window.location.search) return;
+    if (window.location.search) return;
     if (window.location.pathname == "/") {
       history.replaceState( {} , 'ustwo Adventure', '/' );
     }
