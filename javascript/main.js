@@ -596,9 +596,9 @@
 
       });
 
-      if (window.location.pathname == "/") {
-        history.replaceState( {} , 'ustwo Adventure', `/#${filterString}` );
-      }
+      // if (window.location.pathname == "/") {
+      //   history.replaceState( {} , 'ustwo Adventure', `/#${filterString}` );
+      // }
 
     });
   });
