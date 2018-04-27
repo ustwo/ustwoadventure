@@ -637,8 +637,6 @@
       $('#modal-' + companyName ).modal()
     }
 
-    $('#modal-' + companyName ).hide(400, function(){window.location.hash = '';});
-
   });
 
 
@@ -653,8 +651,13 @@
 
 
   $(document).ready(function () {
-    if (window.location.search) return;
+    // if (window.location.search) return;
     if (window.location.pathname == "/") {
       history.replaceState( {} , 'ustwo Adventure', '/' );
     }
+  });
+
+  $(".close-modal ").click(function(){
+      history.replaceState( {} , 'ustwo Adventure', '/' );
+      console.log("log!");
   });
