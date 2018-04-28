@@ -183,7 +183,7 @@
 }
 
 
-@media (max-width: 860px){
+@media (max-width: 880px){
 
   .modal {
     width: 95%;
@@ -212,7 +212,7 @@
 @media (max-width: 640px){
 
   .modal{
-    height: 75%;
+    height: 65%;
   }
 
   .modal-details h2{
@@ -274,14 +274,26 @@
 }
 
 
-@media (max-width: 579px){
+@media (max-width: 379px){
 
   .modal-details{
     padding: 25px;
   }
 
   .modal-details h2{
-    font-size: 46px;
+    font-size: 44px;
+  }
+
+  .modal-site-link{
+    font-size: 20px;
+  }
+
+  .modal .line{
+    font-size: 20px;
+  }
+
+  .modal-details p{
+    font-size: 16px;
   }
 
   .modal-image-logo{
