@@ -122,6 +122,7 @@
   display: block;
   font-size: 24px;
   text-decoration: underline;
+  display: inline-block;
 }
 
 .modal-details p,
