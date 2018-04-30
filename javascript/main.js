@@ -562,7 +562,7 @@
     var list = shufflePortfolioArray();
 
     return list.map(function(el) {
-      return "<div id='modal-" + kebabCase(el.name) + "'><div class='modal-inner'><div class='modal-details'><h2>" + el.name + "</h2><a class='modal-site-link' href='" + el.url + "' target='_blank'>" + el.tidyurl + "</a><p class='line'>" + el.line + "</p><p class='copy'>" + el.copy + "</p></div><div class='modal-image'><img class='modal-image-background' src='" + el.image + "' /><img class='modal-image-logo' src='" + el.logo + "' /></div></div></div>"
+      return "<div id='modal-" + kebabCase(el.name) + "'><div class='modal-inner'><div class='modal-details'><h2>" + el.name + "</h2><a class='modal-site-link' href='" + el.url + "' target='_blank'>" + el.tidyurl + "</a><p class='line'>" + el.line + "</p><p class='copy'>" + el.copy + "</p></div><div class='modal-image'><img class='modal-image-background' img src='' data-src='" + el.image + "' /><img class='modal-image-logo' src='" + el.logo + "' /></div></div></div>"
     });
   }
 
@@ -571,6 +571,7 @@
 
     const listElements = createListElementsFromArray(shufflePortfolioArray());
     $('ul#companies').html(listElements);
+    $("img").unveil();
     $('div#modals').html(createModals());
 
     $('a.filter-button-group').on('click', function (e) {
