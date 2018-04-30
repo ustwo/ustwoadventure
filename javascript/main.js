@@ -562,17 +562,9 @@
     var list = shufflePortfolioArray();
 
     return list.map(function(el) {
-      return "<div id='modal-" + kebabCase(el.name) + "'><div class='modal-inner'><div class='modal-details'><h2>" + el.name + "</h2><a class='modal-site-link' href='" + el.url + "' target='_blank'>" + el.tidyurl + "</a><p class='line'>" + el.line + "</p><p class='copy'>" + el.copy + "</p></div><div class='modal-image lazy_load'><img class='modal-image-background' src='" + el.image + "' /><img class='modal-image-logo' src='" + el.logo + "' /></div></div></div>"
+      return "<div id='modal-" + kebabCase(el.name) + "'><div class='modal-inner'><div class='modal-details'><h2>" + el.name + "</h2><a class='modal-site-link' href='" + el.url + "' target='_blank'>" + el.tidyurl + "</a><p class='line'>" + el.line + "</p><p class='copy'>" + el.copy + "</p></div><div class='modal-image'><img class='modal-image-background' src='" + el.image + "' /><img class='modal-image-logo' src='" + el.logo + "' /></div></div></div>"
     });
   }
-
-
-  $('.modal').on("modal:open", function () {
-    $('.lazy_load').each(function(){
-        var img = $(this);
-        img.attr('src', img.data('src'));
-    });
-  });
 
 
   $(document).ready(function () {
