@@ -574,6 +574,7 @@
     $('ul#companies').html(listElements);
     $('div#modals').html(createModals());
     $("img").unveil();
+    
     $('.portfolio_item').on('click',function() {
       setTimeout(function() {
         $(window).trigger('resize')
