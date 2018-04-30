@@ -567,7 +567,7 @@
   }
 
 
-  $('.modal').on("$.modal.OPEN", function () {
+  $('.modal').on("modal:open", function () {
     $('.lazy_load').each(function(){
         var img = $(this);
         img.attr('src', img.data('src'));
