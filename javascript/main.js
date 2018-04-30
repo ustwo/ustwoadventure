@@ -565,7 +565,7 @@
       return "<div id='modal-" + kebabCase(el.name) + "'><div class='modal-inner'><div class='modal-details'><h2>" + el.name + "</h2><a class='modal-site-link' href='" + el.url + "' target='_blank'>" + el.tidyurl + "</a><p class='line'>" + el.line + "</p><p class='copy'>" + el.copy + "</p></div><div class='modal-image'><img class='modal-image-background' src='images/team.jpg' data-src='" + el.image + "' /><img class='modal-image-logo' src='" + el.logo + "' /></div></div></div>"
     });
   }
-  
+
 
 
   $(document).ready(function () {
@@ -579,6 +579,8 @@
         $(window).trigger('resize')
       }, 1);
     });
+
+    $("img").trigger("unveil");
 
     $('a.filter-button-group').on('click', function (e) {
 
