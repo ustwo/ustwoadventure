@@ -419,7 +419,7 @@
       "image": "images/team_assets/loop_image.jpg",
       "logo": "images/team_assets/loop_logo.png",
       "line": "See who’s social",
-      "copy": "We’re making a social location app that allows you to see who’s there before you arrive. It’s a way to see the exact location of your various micro tribes, and keep you in the loop by being notified when you are near your friends giving you more opportunities to connect."
+      "copy": "We’re making a social location app that automatically checks you and your friends in and out of social hotspots. Use it to see who's at your gym, a favourite restaurant, or a bar before stepping outside your home. Our Mission is to facilitate real life experiences with the people in your life."
     },
     {
       "name": "Lecture in Progress",
@@ -489,7 +489,7 @@
       "image": "images/team_assets/suvera_image.jpg",
       "logo": "images/team_assets/suvera_logo.png",
       "line": "A new way to manage your prescriptions",
-      "copy": "We are a group medical students, designers, and computer scientists who are creating the best tools to help people live healthier and happier lives."
+      "copy": "We are a group of medical students, designers, and computer scientists who are creating the best tools to help people live healthier and happier lives."
     },
     {
       "name": "Kyra",
@@ -562,9 +562,18 @@
     var list = shufflePortfolioArray();
 
     return list.map(function(el) {
-      return "<div id='modal-" + kebabCase(el.name) + "'><div class='modal-inner'><div class='modal-details'><h2>" + el.name + "</h2><a class='modal-site-link' href='" + el.url + "' target='_blank'>" + el.tidyurl + "</a><p class='line'>" + el.line + "</p><p class='copy'>" + el.copy + "</p></div><div class='modal-image'><img class='modal-image-background' src='" + el.image + "' /><img class='modal-image-logo' src='" + el.logo + "' /></div></div></div>"
+      return "<div id='modal-" + kebabCase(el.name) + "'><div class='modal-inner'><div class='modal-details'><h2>" + el.name + "</h2><a class='modal-site-link' href='" + el.url + "' target='_blank'>" + el.tidyurl + "</a><p class='line'>" + el.line + "</p><p class='copy'>" + el.copy + "</p></div><div class='modal-image lazy_load'><img class='modal-image-background' src='" + el.image + "' /><img class='modal-image-logo' src='" + el.logo + "' /></div></div></div>"
     });
   }
+
+
+  $('.modal').on("$.modal.OPEN", function () {
+    $('.lazy_load').each(function(){
+        var img = $(this);
+        img.attr('src', img.data('src'));
+    });
+  });
+
 
   $(document).ready(function () {
 
