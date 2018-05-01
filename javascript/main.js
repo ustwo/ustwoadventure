@@ -18,8 +18,8 @@
       "tags": "playground",
       "image": "images/team_assets/combo_image.jpg",
       "logo": "images/team_assets/combo_logo.png",
-      "line": "An AR and VR studio",
-      "copy": "Focusing on developing AR and VR content using modern frameworks, we’ve learned lots building experiments and are now making mobile games."
+      "line": "An AR studio",
+      "copy": "Focusing on developing AR content using modern frameworks, we’ve learned lots building experiments and are now making mobile games."
     },
     {
       "name": "23 Code Street",
@@ -581,7 +581,7 @@
       }, 1);
     });
 
-    // $("img").trigger("unveil");
+    $("img").trigger("unveil");
 
     $('a.filter-button-group').on('click', function (e) {
 
