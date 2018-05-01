@@ -389,7 +389,7 @@
       "image": "images/team_assets/morrama_image.jpg",
       "logo": "images/team_assets/morrama_logo.png",
       "line": "Beautiful product design",
-      "copy": "We are an industrial design agency offering design services to both startups and established businesses worldwide. We believe in designing not just beautiful products, but unique and meaningful experiences that help define and strengthen the companies brand."
+      "copy": "We are an industrial design agency offering design services to both startups and established businesses worldwide. We believe in designing not just beautiful products, but unique and meaningful experiences that help define and strengthen a company's brand."
     },
     {
       "name": "Mr Bingo",
