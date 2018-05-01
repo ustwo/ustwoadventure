@@ -581,7 +581,7 @@
       }, 1);
     });
 
-    // $("img").trigger("unveil");
+    $("img").trigger("unveil");
 
     $('a.filter-button-group').on('click', function (e) {
 
