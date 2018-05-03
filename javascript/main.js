@@ -414,7 +414,7 @@
       "image": "images/team_assets/morrama_image.jpg",
       "logo": "images/team_assets/morrama_logo.png",
       "line": "Beautiful product design",
-      "copy": "We are an industrial design agency offering design services to both startups and established businesses worldwide. We believe in designing not just beautiful products, but unique and meaningful experiences that help define and strengthen the companies brand."
+      "copy": "We are an industrial design agency offering design services to both startups and established businesses worldwide. We believe in designing not just beautiful products, but unique and meaningful experiences that help define and strengthen a company's brand."
     },
     {
       "name": "Mr Bingo",
@@ -444,7 +444,7 @@
       "image": "images/team_assets/loop_image.jpg",
       "logo": "images/team_assets/loop_logo.png",
       "line": "See who’s social",
-      "copy": "We’re making a social location app that allows you to see who’s there before you arrive. It’s a way to see the exact location of your various micro tribes, and keep you in the loop by being notified when you are near your friends giving you more opportunities to connect."
+      "copy": "We’re making a social location app that automatically checks you and your friends in and out of social hotspots. Use it to see who's at your gym, a favourite restaurant, or a bar before stepping outside your home. Our Mission is to facilitate real life experiences with the people in your life."
     },
     {
       "name": "Lecture in Progress",
@@ -454,7 +454,7 @@
       "image": "images/team_assets/lectureinprogress_image.jpg",
       "logo": "images/team_assets/lectureinprogress_logo.png",
       "line": "Inspiring and informing the next generation of creatives",
-      "copy": "We’re empowering emerging talent with information and first-hand accounts that demystify the workings of the creative world. By focusing on the people, projects and places that make the industry, we’re delivering visibility on how work unfolds, where it happens, and the breadth of roles that exist."
+      "copy": "We’re empowering emerging talent with information and first-hand accounts that demystify the creative world. By focusing on the people, projects and places that make the industry, we’re delivering visibility on how work unfolds, where it happens, and the breadth of roles that exist."
     },
     {
       "name": "UNRD",
@@ -464,7 +464,7 @@
       "image": "images/team_assets/unrd_image.jpg",
       "logo": "images/team_assets/unrd_logo.png",
       "line": "A new type of immersive entertainment experience",
-      "copy": "We’re creating a new genre of entertainment by combining Hollywood quality plots with modern storytelling techniques. Immersive stories that utilise the full potential of your smartphone, all in real-time. Our mission is to create the world's leading mobile-first entertainment brand."
+      "copy": "We’re on a mission to create the world's leading mobile-first entertainment brand, by combining Hollywood quality plots with mobile storytelling techniques that utilise the full potential of smartphones. Stories are delivered in real time, through messages, videos, photos and voice notes."
     },
     {
       "name": "Curate Labs",
@@ -518,7 +518,7 @@
       "image": "images/team_assets/suvera_image.jpg",
       "logo": "images/team_assets/suvera_logo.png",
       "line": "A new way to manage your prescriptions",
-      "copy": "We are a group medical students, designers, and computer scientists who are creating the best tools to help people live healthier and happier lives."
+      "copy": "We are a group of medical students, designers, and computer scientists who are creating the best tools to help people live healthier and happier lives."
     },
     {
       "name": "Kyra",
@@ -585,11 +585,9 @@
     return a;
   }
 
-
-
   function createListElementsFromArray(a) {
     return a.map(function (el) {
-      return "<li class='portfolio_item' data-filter='" + el.tags + "'><a href='"+ el.url + "' target='_blank'>" + el.name + "</a></li>"
+      return "<li class='portfolio_item' data-filter='" + el.tags + "'><a target='_blank' href='#modal-" + kebabCase(el.name) + "'  rel='modal:open'>" + el.name + "</a></li>"
     });
   }
 
@@ -696,8 +694,8 @@
   });
 
 
-
-  $(document).ready(function () {
+  $(document).ready(function(){
+    // if (window.location.search) return;
     if (window.location.pathname == "/") {
       history.replaceState( {} , 'ustwo Adventure', '/' );
     }
