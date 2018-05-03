@@ -59,7 +59,7 @@ const portfolioArray = [
     "image": "images/team_assets/dubzoo_image.jpg",
     "logo": "images/team_assets/dubzoo_logo.png",
     "line": "Grow your fanbase, mindfully",
-    "copy": "We’re helping music makers learn to market themselves better on social media with daily tips and inspirations, to mindfully find and engage new audiences."
+    "copy": "We’re teaching music makers around the world how to market themselves effectively and track their growth with daily social media tips and data."
   },
   {
     "name": "Ayla",
