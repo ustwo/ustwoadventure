@@ -8,8 +8,13 @@
       "tags": "playground fund",
       "image": "images/team_assets/tribe_image.jpg",
       "logo": "images/team_assets/tribe_logo.png",
+<<<<<<< HEAD
       "line": "Nutrition for athletes and an amazing community",
       "copy": "We’re supporting the fast growing everyday athlete market with our natural sports nutrition products, to help our TRIBE train stronger and live better. The strong community behind us supports a social mission to counter human trafficking."
+=======
+      "line": "Natural sports nutrition and an amazing community.",
+      "copy": "We are a community of 50,000+ athletes brought together by a love of nature and a shared spirit for adventure. TRIBE was inspired by a 1,000 mile run across Europe to fight human trafficking. A journey that set us on a mission to change the world of sports nutrition."
+>>>>>>> modal-staging
     },
     {
       "name": "Combo",
@@ -18,8 +23,13 @@
       "tags": "playground",
       "image": "images/team_assets/combo_image.jpg",
       "logo": "images/team_assets/combo_logo.png",
+<<<<<<< HEAD
       "line": "An AR and VR studio",
       "copy": "Focusing on developing AR and VR content using modern frameworks, we’ve learned lots building experiments and are now making mobile games."
+=======
+      "line": "An AR studio",
+      "copy": "Focusing on developing AR content using modern frameworks, we’ve learned lots building experiments and are now making mobile games."
+>>>>>>> modal-staging
     },
     {
       "name": "23 Code Street",
@@ -46,9 +56,15 @@
       "url": "http://www.comuzi.xyz",
       "tidyurl": "comuzi.xyz",
       "tags": "playground",
+<<<<<<< HEAD
       "image": "images/team_assets/comuzi_image.jpg",
       "logo": "images/team_assets/comuzi_logo.png",
       "line": "Creative technology and research",
+=======
+      "image": "images/team_assets/comuzi_image.gif",
+      "logo": "images/team_assets/comuzi_logo.png",
+      "line": "Emerging technology research",
+>>>>>>> modal-staging
       "copy": "We are a experimental research firm, working at the intersection of emerging technology and culture."
     },
     {
@@ -258,8 +274,13 @@
       "tags": "playground",
       "image": "images/team_assets/pilcro_image.jpg",
       "logo": "images/team_assets/pilcro_logo.png",
+<<<<<<< HEAD
       "line": "Integrated tools to work better together",
       "copy": "In our tools, users can integrate with G Suite to collaborate on documents, automate design flows for text, and send files, all in a creative and easy way."
+=======
+      "line": "A faster way to make branded content",
+      "copy": "Pilcro is a free tool that helps teams create branded documents and presentations, by keeping all brand assets in one fast-access shared space."
+>>>>>>> modal-staging
     },
     {
       "name": "Creative Mentor Network",
@@ -317,6 +338,7 @@
       "tidyurl": "pauljamess.com",
       "tags": "",
       "image": "images/team_assets/pauljames_image.jpg",
+<<<<<<< HEAD
       "logo": "images/team_assets/pauljames_logo.png",
       "line": "Solving problems by design",
       "copy": "I design and build products that solve problems, splitting my time between own ventures, and projects I care about for clients."
@@ -467,7 +489,11 @@
       "tidyurl": "tomgaul.com",
       "tags": "playground",
       "image": "images/team_assets/tomgaul_image.jpg",
+<<<<<<< HEAD
       "logo": "images/team_assets/tomgaul_logo.png",
+=======
+      "logo": "",
+>>>>>>> modal-staging
       "line": "Design and illustration",
       "copy": "I’m a designer and illustrator, working for a number of clients. At the same time I’m constantly filling my sketchbook and illustrating doodles of the characters you find in London, which I’ve created a book of."
     },
@@ -517,11 +543,28 @@
       "tidyurl": "twitter.com/AlixFox",
       "tags": "playground",
       "image": "images/team_assets/alixfox_image.jpg",
+<<<<<<< HEAD
       "logo": "images/team_assets/alixfox_logo.png",
+=======
+      "logo": "",
+>>>>>>> modal-staging
       "line": "Writer, broadcaster and sex educator",
       "copy": "I'm a freelance journalist & broadcaster who specialises in sex & relationships education. I work for BBC Radio 1, The Guardian, Brook charity, Grazia, The Modern Mann podcast, VICE... I've got fingers in more pies than a clumsy baker."
     }
   ];
+
+
+  function kebabCase(string) {
+    if (typeof string !== "string") {
+      return string;
+    }
+
+    return string
+      .trim()
+      .replace(/\W|[_]/g, "-")
+      .replace(/-{2,}/, "-")
+      .toLowerCase();
+  };
 
 
 
@@ -544,6 +587,14 @@
   function createListElementsFromArray(a) {
     return a.map(function (el) {
       return "<li class='portfolio_item' data-filter='" + el.tags + "'><a href='"+ el.url + "' target='_blank'>" + el.name + "</a></li>"
+    });
+  }
+
+  function createModals() {
+    var list = shufflePortfolioArray();
+
+    return list.map(function(el) {
+      return "<div id='modal-" + kebabCase(el.name) + "'><div class='modal-inner'><div class='modal-details'><h2>" + el.name + "</h2><a class='modal-site-link' href='" + el.url + "' target='_blank'>" + el.tidyurl + "</a><p class='line'>" + el.line + "</p><p class='copy'>" + el.copy + "</p></div><div class='modal-image'><img class='modal-image-background' src='' data-src='" + el.image + "' /><img class='modal-image-logo' src='" + el.logo + "' /></div></div></div>"
     });
   }
 
