@@ -340,6 +340,9 @@
       "image": "images/team_assets/pauljames_image.jpg",
 <<<<<<< HEAD
       "logo": "images/team_assets/pauljames_logo.png",
+=======
+      "logo": "",
+>>>>>>> modal-staging
       "line": "Solving problems by design",
       "copy": "I design and build products that solve problems, splitting my time between own ventures, and projects I care about for clients."
     },
@@ -604,6 +607,16 @@
 
     const listElements = createListElementsFromArray(shufflePortfolioArray());
     $('ul#companies').html(listElements);
+    $('div#modals').html(createModals());
+    $("img").unveil();
+
+    $('.portfolio_item').on('click',function() {
+      setTimeout(function() {
+        $(window).trigger('resize')
+      }, 1);
+    });
+
+    $("img").trigger("unveil");
 
     $('a.filter-button-group').on('click', function (e) {
 
@@ -628,6 +641,11 @@
         $(el).css('display', (shouldDisplay == true ? 'block' : 'none'));
 
       });
+
+      // if (window.location.pathname == "/") {
+      //   history.replaceState( {} , 'ustwo Adventure', `/#${filterString}` );
+      // }
+
     });
   });
 
@@ -650,6 +668,21 @@
       if (!el) return;
       el.click();
    }
+
+    if (window.location.search){
+      var query = window.location.search.substring(1);
+      var parameters = query.split('&');
+      var companyName, val;
+      for (var i=0; i<parameters.length;i++) {
+        val = parameters[i].split('=');
+        if (val[0] == 'team') {
+          companyName = val[1];
+        }
+      }
+      if (!companyName) return;
+      $('#modal-' + companyName ).modal()
+    }
+
   });
 
 
@@ -669,3 +702,10 @@
       history.replaceState( {} , 'ustwo Adventure', '/' );
     }
   });
+
+  // $("a.close-modal").click(function(){
+  //   console.log('beeb');
+  //   if (window.location.pathname == "/") {
+  //     history.replaceState( {} , 'ustwo Adventure', '/' );
+  //   }
+  // });
