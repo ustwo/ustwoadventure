@@ -520,6 +520,16 @@ const portfolioArray = [
     "logo": "",
     "line": "Writer, broadcaster and sex educator",
     "copy": "I'm a freelance journalist & broadcaster who specialises in sex & relationships education. I work for BBC Radio 1, The Guardian, Brook charity, Grazia, The Modern Mann podcast, VICE... I've got fingers in more pies than a clumsy baker."
+  },
+  {
+    "name": "Metier",
+    "url": "https://www.metierdigital.com/",
+    "tidyurl": "metierdigital.com",
+    "tags": "playground",
+    "image": "images/team_assets/metier_image.jpg",
+    "logo": "images/team_assets/metier_logo.png",
+    "line": "We build prototypes",
+    "copy": "We're a small studio that helps people build and quickly test their digital businesses. And because we've been on the journey, we coach new founders on how to be their own boss."
   }
 ];
 
