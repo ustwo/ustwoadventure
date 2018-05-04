@@ -1,6 +1,7 @@
 body{
 	font-family: 'Px', sans-serif;
   -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	font-weight: 800;
 }
 
