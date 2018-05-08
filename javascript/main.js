@@ -38,8 +38,8 @@ const portfolioArray = [
     "tags": "playground",
     "image": "images/team_assets/theartofpingpong_image.jpg",
     "logo": "images/team_assets/theartofpingpong_logo.png",
-    "line": "A collaborative art concept",
-    "copy": "We create fun and colourful ping pong artworks for events, exhibitions and special projects, while raising money for charity. By colliding all the colour of art with the fun of table tennis we’re creating the most spirited ping pong brand on the planet."
+    "line": "The most spirited ping pong brand on the planet",
+    "copy": "By colliding all the colour of art with the fun of table tennis, we celebrate the popularity and subculture of ping pong – creating beautiful products and engaging events, exhibitions and charity campaigns."
   },
   {
     "name": "Comuzi",
