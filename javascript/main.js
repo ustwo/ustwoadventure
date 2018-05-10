@@ -530,6 +530,16 @@ const portfolioArray = [
     "logo": "images/team_assets/metier_logo.png",
     "line": "We build prototypes",
     "copy": "We're a small studio that helps people build and quickly test their digital businesses. And because we've been on the journey, we coach new founders on how to be their own boss."
+  },
+  {
+    "name": "Lovesong",
+    "url": "http://studiolovesong.com/",
+    "tidyurl": "studiolovesong.com",
+    "tags": "playground",
+    "image": "images/team_assets/lovesong_image.jpg",
+    "logo": "images/team_assets/lovesong_logo.png",
+    "line": "A design and creative technology studio.",
+    "copy": "We blend established and emerging technologies to create interactive product and installation design, and generative and algorithmic arts. Our values are optimism, curiosity, and inventiveness."
   }
 ];
 
