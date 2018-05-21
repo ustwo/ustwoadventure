@@ -117,11 +117,28 @@ a.nav{
 	text-align: center;
 	width: 100%;
 	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-bottom: 70px;
 }
 
 .footerlogo img{
 	max-height: 40px;
+}
+
+#copyright{
+	font-size: 13px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	opacity: 0.9;
+}
+
+#copyright p{
+	line-height: 25px;
+}
+
+#copyright a{
+	font-weight: 800;
+	text-decoration: underline;
 }
 
 #fourohfour{
@@ -200,7 +217,11 @@ a.nav{
 
 	#footer{
 		padding-top: 70px;
-		padding-bottom: 70px;
+		padding-bottom: 60px;
+	}
+
+	#copyright{
+		font-size: 12px;
 	}
 
 }
