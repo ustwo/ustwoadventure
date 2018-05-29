@@ -115,11 +115,11 @@ const portfolioArray = [
     "name": "Sidestory",
     "url": "https://sidestory.co",
     "tidyurl": "sidestory.co",
-    "tags": "playground fund",
+    "tags": "fund",
     "image": "images/team_assets/sidestory_image.jpg",
     "logo": "images/team_assets/sidestory_logo.png",
     "line": "Curated immersive experiences, led by insiders",
-    "copy": "A SideStory Experience is just you and the Insider discovering a particular neighbourhood or theme in great detail: they'll show you hidden gems and introduce you to the key movers and shakers in the industry, from food to architecture to art."
+    "copy": "Now owned by <a href='http://twitter.com/ustwoadventure' target='_blank' style='color: #444; text-decoration:  underline;'>Mr & Mrs Smith</a>. A SideStory Experience is just you and the Insider discovering a particular neighbourhood or theme in great detail: they'll show you hidden gems and introduce you to the key movers and shakers in the industry, from food to architecture to art."
   },
   {
     "name": "Everyday",
@@ -375,7 +375,7 @@ const portfolioArray = [
     "name": "No Mayo",
     "url": "http://www.no-mayo.digital/",
     "tidyurl": "no-mayo.digital",
-    "tags": "playground",
+    "tags": "",
     "image": "images/team_assets/nomayo_image.jpg",
     "logo": "images/team_assets/nomayo_logo.png",
     "line": "Software development studio",
