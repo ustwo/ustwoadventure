@@ -49,7 +49,7 @@ const portfolioArray = [
     "image": "images/team_assets/comuzi_image.gif",
     "logo": "images/team_assets/comuzi_logo.png",
     "line": "Emerging technology research",
-    "copy": "We are a experimental research firm, working at the intersection of emerging technology and culture."
+    "copy": "We are a experimental research agency, working at the intersection of emerging technology and culture."
   },
   {
     "name": "Dubzoo",
