@@ -540,6 +540,16 @@ const portfolioArray = [
     "logo": "images/team_assets/lovesong_logo.png",
     "line": "A design and creative technology studio.",
     "copy": "We blend established and emerging technologies to create interactive product and installation design, and generative and algorithmic arts. Our values are optimism, curiosity, and inventiveness."
+  },
+  {
+    "name": "Superhi",
+    "url": "https://www.superhi.com/?utm_campaign=ustwo_adventure_sh_profile&utm_medium=promo&utm_source=ustwo_adventure",
+    "tidyurl": "superhi.com",
+    "tags": "playground",
+    "image": "images/team_assets/superhi_image.jpg",
+    "logo": "images/team_assets/superhi_logo.png",
+    "line": "Online Courses For Creative People To Learn + Grow",
+    "copy": "A community of inspiring people from over 50 countries learning new tech skills to complement and enhance what they're already great at. Courses = Foundation HTML, CSS + Javascript, WordPress Design + Development, Advanced CSS + Javascript, Ruby on Rails, React.js"
   }
 ];
 
