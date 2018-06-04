@@ -195,6 +195,14 @@ input[type=text], input[type=email], select {
 
 }
 
+@media (max-width: 425px){
+
+	.head{
+		font-size: 38px;
+	}
+
+}
+
 
 @media (max-width: 375px){
 
@@ -206,13 +214,8 @@ input[type=text], input[type=email], select {
 		padding: 0 25px;
 	}
 
-	.contact{
-		display: block;
-		margin-top: 50px;
-	}
-
-	.contact a{
-		font-size: 24px;
+	.head{
+		font-size: 38px;
 	}
 
 }
@@ -222,10 +225,6 @@ input[type=text], input[type=email], select {
 
 		#logo_image{
 			max-width: 200px;
-		}
-
-		.contact a{
-			font-size: 22px;
 		}
 
 }
