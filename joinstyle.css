@@ -94,6 +94,10 @@ input[type=button], input[type=submit], input[type=reset] {
 		font-family: 'Px', sans-serif;
 }
 
+::placeholder{
+	color: #f32d94;
+}
+
 textarea{
 	width: 100%;
 	padding: 10px 10px;
@@ -212,10 +216,6 @@ input[type=text], input[type=email], select {
 
 	.wrapper{
 		padding: 0 25px;
-	}
-
-	.head{
-		font-size: 38px;
 	}
 
 }
