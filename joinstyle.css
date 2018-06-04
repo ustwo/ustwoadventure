@@ -32,7 +32,6 @@
 }
 
 .description{
-	font-size: 30px;
 	padding-top: 25px;
 	line-height: 1.1;
 }
@@ -183,7 +182,6 @@ input[type=text], input[type=email], select {
 	}
 
 	.description{
-		font-size: 26px;
 		padding-top: 20px;
 	}
 
