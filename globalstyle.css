@@ -48,7 +48,7 @@ a{
 
 .contact a{
 	font-size: 28px;
-	line-height: 49px;
+	line-height: 45px;
 }
 
 .contact.top{
@@ -99,7 +99,7 @@ a.nav{
 }
 
 #copy.description{
-	padding-top: 0px;
+	padding-top: 15px;
 }
 
 .separator{
