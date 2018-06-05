@@ -167,6 +167,10 @@ a.nav{
 		padding-top: 0px;
 	}
 
+	.description{
+		font-size: 22px;
+	}
+
 }
 
 @media (max-width: 660px){
