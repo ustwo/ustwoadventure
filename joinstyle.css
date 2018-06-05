@@ -181,7 +181,7 @@ input[type=text], input[type=email], select {
 	}
 
 	.form{
-		padding-top: 40px;
+		padding-top: 0px;
 		text-align: left;
 	}
 
@@ -211,7 +211,7 @@ input[type=text], input[type=email], select {
 @media (max-width: 375px){
 
 	#logo_image{
-		max-width: 300px;
+		max-width: 280px;
 	}
 
 	.wrapper{
