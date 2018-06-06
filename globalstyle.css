@@ -223,6 +223,10 @@ a.nav{
 		margin-top: 35px;
 	}
 
+	.separator.top{
+		margin: 35px 0;
+	}
+
 	.separator.bottom{
 		margin-top: 0px;
 	}
