@@ -691,6 +691,7 @@ $(".twocolumns").click(function(){
 });
 
 
+
 $(document).ready(function(){
   // if (window.location.search) return;
   if (window.location.pathname == "/") {
