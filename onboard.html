@@ -82,23 +82,18 @@
 
     <p class="head" style="padding-bottom: 20px;">Welcome to the Fampany</p>
     <div id="signup">
-      <!-- Begin MailChimp Signup Form -->
-      <div id="embed_onboard">
-        <div id="embed_onboard_scroll">
-          <div class="field-group description" style="padding-top:0px;">
-          	<p><label for="EMAIL"style="line-height: 1.3;">Fill in the below to add people to our systems</label></p>
-          	<input type="email" placeholder="email here..." value="" name="EMAIL" class="required email" id="EMAIL">
-            <input type="text" placeholder="and what's the password?" value="" name="PASSWORD" class="required password" id="passwordfield">
+      <form action="thank-you">
+        <div id="embed_onboard">
+          <div id="embed_onboard_scroll">
+            <div class="field-group description" style="padding-top:0px;">
+            	<p><label for="EMAIL"style="line-height: 1.3;">Fill in the below to add people to our systems</label></p>
+            	<input required type="email" placeholder="email here..." value="" name="EMAIL" class="email" id="EMAIL">
+              <input required type="text" placeholder="and what's the password?" value="" name="PASSWORD" class="password" id="passwordfield">
+            </div>
+            <div class="clear" style="margin-top:10px;"><input type="submit" value="Submit" name="Submit" id="embedded-submit" class="button" style="margin-top: 17px"></div>
           </div>
-        	<div id="mce-responses" class="clear">
-        		<div class="response" id="error-response" style="display:none; color: #f32d94"></div>
-        		<div class="response" id="success-response" style="display:none; color: #f32d94"></div>
-        	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div class="clear" style="margin-top:10px;"><input type="submit" value="Submit" name="Submit" id="embedded-submit" class="button" style="margin-top: 17px"></div>
         </div>
-      </div>
-      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-      <!--End mc_embed_signup-->
+      </form>
     </div>
 
   <div class="separator bottom" style="margin-top: 45px;">
