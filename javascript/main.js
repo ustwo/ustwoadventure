@@ -550,6 +550,16 @@ const portfolioArray = [
     "logo": "images/team_assets/superhi_logo.png",
     "line": "Online Courses For Creative People To Learn + Grow",
     "copy": "A community of inspiring people from over 50 countries learning new tech skills to complement and enhance what they're already great at. Courses = Foundation HTML, CSS + Javascript, WordPress Design + Development, Advanced CSS + Javascript, Ruby on Rails, React.js"
+  },
+  {
+    "name": "Fieldwork Facility",
+    "url": "http://www.fieldworkfacility.com/",
+    "tidyurl": "fieldworkfacility.com",
+    "tags": "playground",
+    "image": "images/team_assets/fieldworkfacility_image.jpg",
+    "logo": "images/team_assets/fieldworkfacility_logo.png",
+    "line": "A design studio for uncharted territories",
+    "copy": "We're an independent & inter-disciplinary design studio, working across designing both communications and experiences. We've got a particular interest in how emerging technologies can create new relationships between the two fields."
   }
 ];
 
