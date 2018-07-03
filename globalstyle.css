@@ -22,7 +22,7 @@ a{
 	padding: 10px 40px;
 }
 
-#header{
+header{
 	padding-top: 10px;
 }
 
@@ -112,7 +112,7 @@ a.nav{
   margin-bottom: 45px;
 }
 
-#footer{
+#footer_logo{
 	align-items: center;
 	text-align: center;
 	width: 100%;
@@ -163,7 +163,7 @@ a.nav{
 		margin: auto;
 	}
 
-	#header{
+	header{
 		padding-top: 0px;
 	}
 
@@ -231,7 +231,7 @@ a.nav{
 		margin-top: 0px;
 	}
 
-	#footer{
+	#footer_logo{
 		padding-top: 70px;
 		padding-bottom: 60px;
 	}
