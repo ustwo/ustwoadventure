@@ -21,16 +21,16 @@ const portfolioArray = [
     "line": "An AR studio",
     "copy": "Focusing on developing AR content using modern frameworks, we’ve learned lots building experiments and are now making mobile games."
   },
-  {
-    "name": "23 Code Street",
-    "url": "http://www.23codestreet.com",
-    "tidyurl": "23codestreet.com",
-    "tags": "",
-    "image": "images/team_assets/23codestreet_image.jpg",
-    "logo": "images/team_assets/23codestreet_logo.png",
-    "line": "A coding school for all women",
-    "copy": "A community and school where for every paying student on our courses we teach digital skills to a disadvantaged woman in the slums of India."
-  },
+  // {
+  //   "name": "23 Code Street",
+  //   "url": "http://www.23codestreet.com",
+  //   "tidyurl": "23codestreet.com",
+  //   "tags": "",
+  //   "image": "images/team_assets/23codestreet_image.jpg",
+  //   "logo": "images/team_assets/23codestreet_logo.png",
+  //   "line": "A coding school for all women",
+  //   "copy": "A community and school where for every paying student on our courses we teach digital skills to a disadvantaged woman in the slums of India."
+  // },
   {
     "name": "The Art of Ping Pong",
     "url": "http://www.theartofpingpong.co.uk/",
