@@ -560,6 +560,16 @@ const portfolioArray = [
     "logo": "images/team_assets/fieldworkfacility_logo.png",
     "line": "A design studio for uncharted territories",
     "copy": "We're an independent & inter-disciplinary design studio, working across designing both communications and experiences. We've got a particular interest in how emerging technologies can create new relationships between the two fields."
+  },
+  {
+    "name": "Red Ninja",
+    "url": "https://redninja.co.uk",
+    "tidyurl": "redninja.co.uk",
+    "tags": "",
+    "image": "images/team_assets/redninja_image.jpg",
+    "logo": "images/team_assets/redninja_logo.png",
+    "line": "We design the future",
+    "copy": "We're a design led R&D technology company. Our human-centred approach brings together tech and humanity to create products with a positive impact. Currently pivoting to scale our Smart City and Digital Health applications."
   }
 ];
 
