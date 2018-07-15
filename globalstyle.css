@@ -60,6 +60,10 @@ nav a{
 	cursor: pointer;
 }
 
+nav p{
+	margin: -1px 0 0 0;
+}
+
 #socials{
 	display: inline;
 }
@@ -223,16 +227,12 @@ nav a{
 		font-size: 20px;
 	}
 
-	.separator{
-		margin-top: 35px;
-	}
-
 	.separator.top{
-		margin: 35px 0;
+		margin: 33px 0 35px 0;
 	}
 
 	.separator.bottom{
-		margin-top: 0px;
+		margin-top: 30px;
 	}
 
 	#footer_logo{
