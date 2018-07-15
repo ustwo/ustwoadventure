@@ -719,9 +719,14 @@ $(document).ready(function(){
   }
 });
 
-// $("a.close-modal").click(function(){
-//   console.log('beeb');
-//   if (window.location.pathname == "/") {
-//     history.replaceState( {} , 'ustwo Adventure', '/' );
-//   }
-// });
+
+// initialise carousel
+
+$(document).ready(function(){
+  $slideshow = $('.carousel').slick({
+    dots: true,
+  });
+  $('.slide').click(function() {
+    $slideshow.slick('slickNext');
+  });
+});

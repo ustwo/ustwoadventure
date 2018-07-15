@@ -32,6 +32,13 @@
 <link rel="stylesheet" href="globalstyle.css">
 <link rel="stylesheet" href="joinstyle.css">
 
+<link rel="stylesheet" href="javascript/slick/slick.css"/>
+<link rel="stylesheet" href="javascript/slick/slick-theme.css"/>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
+
 <link rel="icon" href="images/Favicon.png" type="image/x-icon">
 
 <!--[if lt IE 9]>
@@ -47,30 +54,17 @@
 
     <header>
       <div id="logo">
-        <a href="index.html"><img src="images/logo_LeftAligned.png" id="logo_image"/>
+        <a href="index.html"><img src="images/logo_LeftAligned.png" id="logo_image"/></a>
       </div>
-      <div class="contact top">
-        <a href="http://instagram.com/ustwoadventure" target="_blank" class="icon"><img src="images/icon_instagram.png" /></a>
-        <a href="http://twitter.com/ustwoadventure" target="_blank" class="icon"><img src="images/icon_twitter.png" /></a>
-        <p>
-          <a href="join.html" class="nav">Join</a>
-        </p>
-        <p>
-          <a href="mailto:helloadventure@ustwo.com" target="_blank" class="nav">Contact</a>
-        </p>
-        <p>
-          <a href="https://medium.com/ustwoadventure" target="_blank" class="nav">Blog</a>
-        </p>
-      </div>
-      <div class="contact bottom">
-        <p>
-          <a href="join.html" class="nav" style="margin-right: 5px;">Join</a>
-          <a href="mailto:helloadventure@ustwo.com" target="_blank" class="nav join" style="margin-right: 5px;">Contact</a>
-          <a href="https://medium.com/ustwoadventure" target="_blank" class="nav">Blog</a>
+      <nav>
+        <div id="socials">
           <a href="http://instagram.com/ustwoadventure" target="_blank" class="icon"><img src="images/icon_instagram.png" /></a>
-          <a href="http://twitter.com/ustwoadventure" target="_blank" class="icon"><img src="images/icon_twitter.png" /></a>
-        </p>
-      </div>
+          <a href="http://twitter.com/ustwoadventure" target="_blank" class="icon" style="padding-right: 0;"><img src="images/icon_twitter.png" /></a>
+        </div>
+        <p> <a href="join.html" class="nav">Join</a> </p>
+        <p> <a href="mailto:helloadventure@ustwo.com" target="_blank" class="nav">Contact</a> </p>
+        <p> <a href="https://medium.com/ustwoadventure" target="_blank" class="nav">Blog</a> </p>
+      </nav>
       <p id="copy" class="description">
         ustwo Adventure exists to help good people build good companies. We do this in four ways—housing teams in our playground, investing with our fun’d, engaging in philanthropy, and launching own ventures.
       </p>
@@ -78,7 +72,8 @@
       </div>
     </header>
 
-    <body>
+    <section>
+
       <div id="floorcopy">
         <p class="head">
           We're building a utopia for the most exciting teams
@@ -87,7 +82,7 @@
           We believe that the best ideas are born collaboratively—it's in our DNA.
         </p>
         <p class="description">
-          The Playground, housed within our London studio, is home to a <a class="homelink" href="/#playground">diverse set of teams</a> at the forefront of creativity. It offers workspace with the the bells and whistles, alongside support and the best community around.
+          The Playground, housed within our London studio, is home to a <a class="homelink" href="/#playground">diverse set of teams</a> at the forefront of creativity. Adventure offers workspace with all the bells and whistles, alongside support and the best community around.
         </p>
         <p class="description">
           We're currently looking for small, ambitious and impactful companies or individuals to join our factory of serendipity.
@@ -95,9 +90,13 @@
         <p class="description">
           Is that you? Complete the form :)
         </p>
-        <p class="description">
-          <img class="teamphoto" src="images/team.jpg" />
-        </p>
+
+        <!-- <div class="carousel"> -->
+          <div class="slide"><img class="teamphoto" src="images/team1.jpg"/></div>
+          <!-- <div class="slide"><img class="teamphoto" src="images/team2.jpg"/></div>
+          <div class="slide"><img class="teamphoto" src="images/team3.jpg"/></div>
+        </div> -->
+
       </div>
 
       <div class="formdiv">
@@ -128,9 +127,11 @@
           </div>
         </form>
       </div>
-    </body>
+
+    </section>
 
     <footer>
+
       <div class="separator bottom">
       </div>
       <div id="footer_logo">
@@ -145,6 +146,7 @@
         <a href="https://www.iubenda.com/privacy-policy/50030836" class="iubenda-nostyle no-brand iubenda-embed " title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>.
         </p>
       </div>
+
     </footer>
 
     </div>
@@ -154,5 +156,7 @@
 
   <script src="javascript/jquery.min.js"></script>
   <script src="javascript/main.js"></script>
+  <script src="javascript/slick/slick.min.js"></script>
+
 </body>
 </html>

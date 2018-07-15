@@ -24,6 +24,7 @@ a{
 
 header{
 	padding-top: 10px;
+	overflow: hidden;
 }
 
 #logo{
@@ -31,39 +32,42 @@ header{
 	display: inline-block;
 	vertical-align: top;
 	padding: 10px 0 0 0;
+	float: left;
 }
 
 #logo_image{
 	max-width: 300px;
 }
 
-.contact{
+nav{
 	width: 49%;
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 0px;
 	font-weight: 400;
 	margin-top: 30px;
+	text-align: right;
+	float: right;
+	overflow: hidden;
 }
 
-.contact a{
+nav a{
 	font-size: 28px;
 	line-height: 45px;
+	border-style: solid;
+	color: #ffffff;
+	padding: 2px 5px;
+	background-color: #F32D94;
+	cursor: pointer;
 }
 
-.contact.top{
-	text-align: right;
-}
-
-.contact.bottom{
-  text-align: left;
-  display: none;
-  width: 100%;
-	padding-bottom: 15px;
+#socials{
+	display: inline;
 }
 
 .icon{
-	margin: 10px 0 10px 15px;
+	margin: 10px 0 10px 0px;
+	background-color: transparent;
 }
 
 .icon img{
@@ -71,19 +75,8 @@ header{
 	max-height: 25px;
 }
 
-.nav{
-	padding: 2px 5px;
-	background-color: #F32D94;
-	cursor: pointer;
-}
-
-a.nav{
-  border-style: solid;
-	color: #ffffff;
-}
-
 #copy{
-	padding-top: 35px;
+	padding-top: 15px;
 	font-weight: 400;
 	display: inline-block;
 	width: 85%;
@@ -96,10 +89,6 @@ a.nav{
 	font-size: 26px;
 	font-weight: 400;
 	padding-top: 20px;
-}
-
-#copy.description{
-	padding-top: 15px;
 }
 
 .separator{
@@ -171,7 +160,7 @@ a.nav{
 		padding-top: 0px;
 	}
 
-	#copy.description{
+	#copy{
 		padding-top: 5px;
 	}
 
@@ -187,26 +176,34 @@ a.nav{
 		padding-top: 0;
 	}
 
-	.contact.top{
-		display: none;
+	#logo{
+		float: none;
 	}
 
-	.contact.bottom{
+	nav{
 		display: block;
 		margin-top: 15px;
+		float: none;
+		text-align: left;
+		width: 310px;
+		padding-bottom: 5px;
 	}
 
-	.contact a{
+	nav a{
 		font-size: 24px;
+		margin-right: 5px;
 	}
 
-	.icon{
-		margin: 20px 0 10px 12px;
+	nav p{
+		display: inline;
+	}
+
+	#socials{
+		float: right;
 	}
 
 	.icon img{
 		vertical-align: middle;
-		max-height: 25px;
 	}
 
 	#copy{
@@ -252,25 +249,17 @@ a.nav{
 		padding: 0 25px;
 	}
 
-	.contact{
-		display: block;
-	}
-
-	.contact a{
-		font-size: 24px;
-	}
-
 }
 
 
-	@media (max-width: 320px){
+@media (max-width: 320px){
 
-		#logo_image{
-			max-width: 200px;
-		}
+	#logo_image{
+		max-width: 200px;
+	}
 
-		.contact a{
-			font-size: 22px;
-		}
+	nav a{
+		font-size: 22px;
+	}
 
 }
