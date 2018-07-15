@@ -23,7 +23,7 @@ a{
 }
 
 header{
-	padding-top: 10px;
+	margin-top: 40px;
 	overflow: hidden;
 }
 
@@ -45,7 +45,6 @@ nav{
 	vertical-align: top;
 	padding-top: 0px;
 	font-weight: 400;
-	margin-top: 30px;
 	text-align: right;
 	float: right;
 	overflow: hidden;
@@ -144,6 +143,14 @@ nav a{
 	text-transform: uppercase;
 }
 
+
+@media (max-width: 1200px){
+
+	header{
+		margin-top: 30px;
+	}
+
+}
 
 
 @media (max-width: 800px){
