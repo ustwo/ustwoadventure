@@ -171,8 +171,13 @@ nav p{
 		padding-top: 0px;
 	}
 
+	nav a{
+		font-size: 26px;
+		line-height: 42px;
+	}
+
 	#copy{
-		padding-top: 5px;
+		padding-top: 15px;
 	}
 
 	.description{
