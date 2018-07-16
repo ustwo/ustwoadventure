@@ -255,7 +255,7 @@ const portfolioArray = [
     "name": "Pilcro",
     "url": "https://www.pilcro.com",
     "tidyurl": "pilcro.com",
-    "tags": "playground",
+    "tags": "",
     "image": "images/team_assets/pilcro_image.jpg",
     "logo": "images/team_assets/pilcro_logo.png",
     "line": "A faster way to make branded content",
