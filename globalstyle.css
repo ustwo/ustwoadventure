@@ -184,6 +184,10 @@ nav p{
 		font-size: 22px;
 	}
 
+	.separator.top{
+		margin: 40px 0;
+	}
+
 }
 
 @media (max-width: 660px){
