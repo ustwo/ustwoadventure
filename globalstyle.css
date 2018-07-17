@@ -119,13 +119,14 @@ nav p{
 #copyright{
 	font-size: 13px;
 	font-weight: 400;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	margin-top: 0px;
 	opacity: 0.9;
 }
 
 #copyright p{
 	line-height: 25px;
+	text-align: center;
 }
 
 #copyright a{
@@ -250,6 +251,16 @@ nav p{
 	}
 
 }
+
+
+@media (max-width:470px) {
+
+	#copyright p{
+		text-align: left;
+	}
+
+}
+
 
 @media (max-width: 375px){
 
