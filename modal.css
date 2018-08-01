@@ -183,6 +183,18 @@
   z-index: 2;
 }
 
+/* Soundwaves */
+
+#modal-soundwaves .modal-details h2{
+  font-size: 50px;
+}
+@media (max-width: 980px){
+  #modal-soundwaves .modal-details h2{
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+}
+
 
 @media (max-width: 880px){
 

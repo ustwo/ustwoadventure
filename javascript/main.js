@@ -570,6 +570,16 @@ const portfolioArray = [
     "logo": "images/team_assets/redninja_logo.png",
     "line": "We design the future",
     "copy": "We're a design led R&D technology company. Our human-centred approach brings together tech and humanity to create products with a positive impact. Currently pivoting to scale our Smart City and Digital Health applications."
+  },
+  {
+    "name": "Soundwaves",
+    "url": "https://soundwavesartfoundation.com/",
+    "tidyurl": "soundwavesartfoundation.com",
+    "tags": "playground",
+    "image": "images/team_assets/soundwaves_image.jpg",
+    "logo": "images/team_assets/soundwaves_logo.png",
+    "line": "Song inspired art",
+    "copy": "limited edition art created by digitally manipulating, shaping and coloring sound waves generated in the studio recording of legendary songs. signed by collaborating music icons and sold to benefit charitable causes."
   }
 ];
 
