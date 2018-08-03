@@ -163,6 +163,10 @@ ul#companies li a:active {
 		padding-top: 25px;
 	}
 
+	#descriptor.description{
+		font-size: 20px
+	}
+
 	ul#companies{
 		padding: 15px 0 30px 0;
 	}
