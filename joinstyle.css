@@ -124,7 +124,7 @@ input[type=text], input[type=email], select {
 }
 
 
-@media (max-width: 1080px){
+@media (max-width: 1135px){
 
 	.formdiv{
 		padding-left: 66px;
@@ -133,7 +133,7 @@ input[type=text], input[type=email], select {
 }
 
 
-@media (max-width: 1000px){
+@media (max-width: 1030px){
 
 	.formdiv{
 		padding-left: 60px;
