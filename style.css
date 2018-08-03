@@ -173,6 +173,7 @@ ul#companies li a:active {
 
 	ul#companies li a {
 		line-height: 0.95;
+		font-size: 32px;
 	}
 
 	ul#companies li {
@@ -186,13 +187,20 @@ ul#companies li a:active {
 }
 
 
-@media (max-width: 375px){
+@media (max-width: 360px){
 
+	#socials{
+		display: none;
+	}
 
 }
 
 
-	@media (max-width: 320px){
+	@media (max-width: 330px){
+
+		#selectors{
+			font-size: 19px;
+		}
 
 		ul#companies li a {
 			font-size: 26px;

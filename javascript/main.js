@@ -579,8 +579,18 @@ const portfolioArray = [
     "image": "images/team_assets/soundwaves_image.jpg",
     "logo": "images/team_assets/soundwaves_logo.png",
     "line": "Song inspired art",
-    "copy": "limited edition art created by digitally manipulating, shaping and coloring sound waves generated in the studio recording of legendary songs. signed by collaborating music icons and sold to benefit charitable causes."
+    "copy": "Limited edition art created by digitally manipulating, shaping and coloring sound waves generated in the studio recording of legendary songs. signed by collaborating music icons and sold to benefit charitable causes."
   }
+  // {
+  //   "name": "Creative Conscience",
+  //   "url": "https://www.creativeconscience.org.uk/",
+  //   "tidyurl": "creativeconscience.org.uk",
+  //   "tags": "foundation",
+  //   "image": "images/team_assets/creativeconscience_image.jpg",
+  //   "logo": "images/team_assets/creativeconscience_logo.png",
+  //   "line": "Inspiring creatives to create impact",
+  //   "copy": "We're building is a global movement to improve the communities we live and work in, helping to transform the wider world. We do this with our annual global awards scheme, events, education, talks and workshops, all with the aim of providing practical tools to create positive impact."
+  // }
 ];
 
 

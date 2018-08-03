@@ -208,6 +208,8 @@
     hyphens: auto;
   }
 
+}
+
 
 @media (max-width: 767px){
 
@@ -261,7 +263,7 @@
   }
 
   .modal-details h2{
-    font-size: 46px;
+    font-size: 44px;
   }
 
   .modal-site-link{
@@ -300,7 +302,7 @@
   }
 
   .modal-details h2{
-    font-size: 44px;
+    font-size: 40px;
   }
 
   .modal-site-link{
