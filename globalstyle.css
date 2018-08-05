@@ -235,7 +235,7 @@ nav p {
 
 @media (max-width: 375px) {
   #logo_image {
-    max-width: 280px;
+    max-width: 250px;
   }
   .wrapper {
     padding: 0 25px;
