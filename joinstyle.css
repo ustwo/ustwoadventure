@@ -148,6 +148,10 @@ input[type=text], input[type=email], select {
     width: 100%;
     padding-right: 0;
   }
+  .head {
+    font-size: 38px;
+    line-height: 32px;
+  }
   .formdiv {
     width: 100%;
     padding-left: 0;
@@ -171,7 +175,7 @@ input[type=text], input[type=email], select {
 
 @media (max-width: 425px) {
   .head {
-    font-size: 38px;
+    font-size: 34px;
   }
   .form {
     font-size: 18px;
