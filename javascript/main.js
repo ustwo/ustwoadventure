@@ -265,7 +265,7 @@ const portfolioArray = [
     "name": "Creative Mentor Network",
     "url": "http://creativementornetwork.org/",
     "tidyurl": "creativementornetwork.org",
-    "tags": "playground foundation",
+    "tags": "foundation",
     "image": "images/team_assets/creativementornetwork_image.jpg",
     "logo": "images/team_assets/creativementornetwork_logo.png",
     "line": "Training mentors and connecting them to diverse young talent",
