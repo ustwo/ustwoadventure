@@ -183,18 +183,12 @@ input[type=text], input[type=email], select {
 }
 
 @media (max-width: 375px) {
-  #logo_image {
-    max-width: 280px;
-  }
   .wrapper {
     padding: 0 25px;
   }
 }
 
 @media (max-width: 320px) {
-  #logo_image {
-    max-width: 200px;
-  }
   .head {
     font-size: 30px;
   }

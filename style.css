@@ -162,12 +162,6 @@ ul#companies li a:active {
   }
 }
 
-@media (max-width: 360px) {
-  #socials {
-    display: none;
-  }
-}
-
 @media (max-width: 330px) {
   #selectors {
     font-size: 19px;

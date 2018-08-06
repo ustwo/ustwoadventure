@@ -245,6 +245,12 @@ nav p {
   }
 }
 
+@media (max-width: 360px) {
+  #socials {
+    display: none;
+  }
+}
+
 @media (max-width: 320px) {
   #logo_image {
     max-width: 200px;
