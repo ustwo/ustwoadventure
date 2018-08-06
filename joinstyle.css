@@ -195,4 +195,7 @@ input[type=text], input[type=email], select {
   #logo_image {
     max-width: 200px;
   }
+  .head {
+    font-size: 30px;
+  }
 }
