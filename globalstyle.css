@@ -60,6 +60,13 @@ nav a {
   cursor: pointer;
 }
 
+nav .join {
+  border-style: solid;
+  border-width: 3px;
+  color: #f32d94;
+  background-color: #fff;
+}
+
 #socials {
   display: inline;
 }
@@ -196,11 +203,14 @@ nav a {
     display: inline;
   }
   #socials {
-    float: right;
-    margin-right: 28px;
+    float: left;
+    margin-right: 12px;
   }
   .icon img {
     vertical-align: middle;
+  }
+  .icon.medium {
+    padding-left: 0px;
   }
   #copy {
     width: 100%;
