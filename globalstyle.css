@@ -52,16 +52,12 @@ nav {
 
 nav a {
   font-size: 28px;
-  line-height: 45px;
+  line-height: 47px;
   border-style: solid;
   color: #ffffff;
   padding: 2px 5px;
   background-color: #F32D94;
   cursor: pointer;
-}
-
-nav p {
-  margin: -1px 0 0 0;
 }
 
 #socials {
@@ -78,8 +74,12 @@ nav p {
   max-height: 25px;
 }
 
+.icon.medium img {
+  max-height: 23px;
+}
+
 #copy {
-  padding-top: 15px;
+  padding-top: 25px;
   font-weight: 400;
   display: inline-block;
   width: 85%;
@@ -168,9 +168,6 @@ nav p {
     font-size: 26px;
     line-height: 42px;
   }
-  #copy {
-    padding-top: 20px;
-  }
   .description {
     font-size: 22px;
   }
@@ -200,6 +197,7 @@ nav p {
   }
   #socials {
     float: right;
+    margin-right: 28px;
   }
   .icon img {
     vertical-align: middle;
@@ -245,7 +243,7 @@ nav p {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 335px) {
   #socials {
     display: none;
   }
