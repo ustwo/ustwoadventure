@@ -451,16 +451,16 @@ const portfolioArray = [
     "line": "Design for wellbeing",
     "copy": "We are a creative content studio that focus on sustainable, ethical design. Predominantly a creative duo, we also manage two annual publications; Curate Magazine & The Annual Digest. Other ventures include a series of travel guides, a sustainable cosmetics range and a platform connecting charities with passionate volunteers."
   },
-  {
-    "name": "Remote Zoo",
-    "url": "https://www.remotezoo.com/",
-    "tidyurl": "remotezoo.com",
-    "tags": "playground",
-    "image": "images/team_assets/remotezoo_image.jpg",
-    "logo": "images/team_assets/remotezoo_logo.png",
-    "line": "Finding people jobs to do anywhere",
-    "copy": "We’re helping people get out of the 9-to-5 grind and match them with meaningful work that can be done anywhere: at home, in a coffee shop or at a beautiful beach bar overlooking crystal clear waves."
-  },
+  // {
+  //   "name": "Remote Zoo",
+  //   "url": "https://www.remotezoo.com/",
+  //   "tidyurl": "remotezoo.com",
+  //   "tags": "playground",
+  //   "image": "images/team_assets/remotezoo_image.jpg",
+  //   "logo": "images/team_assets/remotezoo_logo.png",
+  //   "line": "Finding people jobs to do anywhere",
+  //   "copy": "We’re helping people get out of the 9-to-5 grind and match them with meaningful work that can be done anywhere: at home, in a coffee shop or at a beautiful beach bar overlooking crystal clear waves."
+  // },
   {
     "name": "Tom Gaul",
     "url": "http://www.tomgaul.com/",
