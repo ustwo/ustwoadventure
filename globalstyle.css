@@ -204,7 +204,7 @@ nav .join {
   }
   #socials {
     float: left;
-    margin-right: 12px;
+    margin-right: 15px;
   }
   .icon img {
     vertical-align: middle;
@@ -253,17 +253,11 @@ nav .join {
   }
 }
 
-@media (max-width: 335px) {
-  #socials {
-    display: none;
-  }
-}
-
 @media (max-width: 320px) {
   #logo_image {
     max-width: 200px;
   }
   nav a {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
