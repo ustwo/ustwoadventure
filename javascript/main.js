@@ -361,16 +361,16 @@ const portfolioArray = [
     "line": "Doing Good, Feeling Good",
     "copy": "Our mission is to provide a sustainable source of funding for exceptional small charities working with young people. We believe charity needs a fresh approach. Giving shouldn't mean hassle and guilt for people who just want to help out, so we’ve created a platform and community that’s different."
   },
-  {
-    "name": "Grae Matta Foundation",
-    "url": "http://graematta.com/",
-    "tidyurl": "graematta.com",
-    "tags": "playground",
-    "image": "images/team_assets/graematta_image.jpg",
-    "logo": "images/team_assets/graematta_logo.png",
-    "line": "Sustainable mental health initiatives",
-    "copy": "We're a non-profit dedicated to improving mental health in higher education & the workplace, through collaboration, research and awareness."
-  },
+  // {
+  //   "name": "Grae Matta Foundation",
+  //   "url": "http://graematta.com/",
+  //   "tidyurl": "graematta.com",
+  //   "tags": "playground",
+  //   "image": "images/team_assets/graematta_image.jpg",
+  //   "logo": "images/team_assets/graematta_logo.png",
+  //   "line": "Sustainable mental health initiatives",
+  //   "copy": "We're a non-profit dedicated to improving mental health in higher education & the workplace, through collaboration, research and awareness."
+  // },
   {
     "name": "No Mayo",
     "url": "http://www.no-mayo.digital/",
