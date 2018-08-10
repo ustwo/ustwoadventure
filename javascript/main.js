@@ -49,7 +49,7 @@ const portfolioArray = [
     "image": "images/team_assets/comuzi_image.gif",
     "logo": "images/team_assets/comuzi_logo.png",
     "line": "Emerging technology research",
-    "copy": "We are a experimental research agency, working at the intersection of emerging technology and culture."
+    "copy": "We are an experimental R&D agency, working at the intersection of emerging technology and humans."
   },
   {
     "name": "Dubzoo",
@@ -135,7 +135,7 @@ const portfolioArray = [
     "name": "Tray",
     "url": "https://www.tray.io",
     "tidyurl": "tray.io",
-    "tags": "playground fund",
+    "tags": "fund",
     "image": "images/team_assets/tray_image.jpg",
     "logo": "images/team_assets/tray_logo.png",
     "line": "A beautiful integration platform for cloud apps",
@@ -321,16 +321,16 @@ const portfolioArray = [
     "line": "Solving problems by design",
     "copy": "I design and build products that solve problems, splitting my time between own ventures, and projects I care about for clients."
   },
-  {
-    "name": "Gather Data",
-    "url": "https://gatherdata.co/",
-    "tidyurl": "gatherdata.co",
-    "tags": "",
-    "image": "images/team_assets/gather_image.jpg",
-    "logo": "images/team_assets/gather_logo.png",
-    "line": "Data integrations, designed for developers",
-    "copy": "We help enterprises integrate disparate data across their organization. Our product is is an API integration layer that allows you to create complex pipelines like authentication for your customers, and bring all your data into one place."
-  },
+  // {
+  //   "name": "Gather Data",
+  //   "url": "https://gatherdata.co/",
+  //   "tidyurl": "gatherdata.co",
+  //   "tags": "",
+  //   "image": "images/team_assets/gather_image.jpg",
+  //   "logo": "images/team_assets/gather_logo.png",
+  //   "line": "Data integrations, designed for developers",
+  //   "copy": "We help enterprises integrate disparate data across their organization. Our product is is an API integration layer that allows you to create complex pipelines like authentication for your customers, and bring all your data into one place."
+  // },
   {
     "name": "OH",
     "url": "https://ohthisway.co.uk/",
@@ -371,16 +371,16 @@ const portfolioArray = [
   //   "line": "Sustainable mental health initiatives",
   //   "copy": "We're a non-profit dedicated to improving mental health in higher education & the workplace, through collaboration, research and awareness."
   // },
-  {
-    "name": "No Mayo",
-    "url": "http://www.no-mayo.digital/",
-    "tidyurl": "no-mayo.digital",
-    "tags": "",
-    "image": "images/team_assets/nomayo_image.jpg",
-    "logo": "images/team_assets/nomayo_logo.png",
-    "line": "Software development studio",
-    "copy": "We build experiential technology and custom software for our clients and ourselves."
-  },
+  // {
+  //   "name": "No Mayo",
+  //   "url": "http://www.no-mayo.digital/",
+  //   "tidyurl": "no-mayo.digital",
+  //   "tags": "",
+  //   "image": "images/team_assets/nomayo_image.jpg",
+  //   "logo": "images/team_assets/nomayo_logo.png",
+  //   "line": "Software development studio",
+  //   "copy": "We build experiential technology and custom software for our clients and ourselves."
+  // },
   {
     "name": "Morrama",
     "url": "http://www.morrama.com/",
@@ -393,7 +393,7 @@ const portfolioArray = [
   },
   {
     "name": "Mr Bingo",
-    "url": "http://mr.bingo/",
+    "url": "https://mr.bingo/",
     "tidyurl": "mr.bingo",
     "tags": "playground",
     "image": "images/team_assets/mrbingo_image.jpg",
@@ -461,16 +461,16 @@ const portfolioArray = [
   //   "line": "Finding people jobs to do anywhere",
   //   "copy": "We’re helping people get out of the 9-to-5 grind and match them with meaningful work that can be done anywhere: at home, in a coffee shop or at a beautiful beach bar overlooking crystal clear waves."
   // },
-  {
-    "name": "Tom Gaul",
-    "url": "http://www.tomgaul.com/",
-    "tidyurl": "tomgaul.com",
-    "tags": "playground",
-    "image": "images/team_assets/tomgaul_image.jpg",
-    "logo": "",
-    "line": "Design and illustration",
-    "copy": "I’m a designer and illustrator, working for a number of clients. At the same time I’m constantly filling my sketchbook and illustrating doodles of the characters you find in London, which I’ve created a book of."
-  },
+  // {
+  //   "name": "Tom Gaul",
+  //   "url": "http://www.tomgaul.com/",
+  //   "tidyurl": "tomgaul.com",
+  //   "tags": "",
+  //   "image": "images/team_assets/tomgaul_image.jpg",
+  //   "logo": "",
+  //   "line": "Design and illustration",
+  //   "copy": "I’m a designer and illustrator, working for a number of clients. At the same time I’m constantly filling my sketchbook and illustrating doodles of the characters you find in London, which I’ve created a book of."
+  // },
   {
     "name": "Design Club",
     "url": "http://designclub.org.uk/",
@@ -580,17 +580,37 @@ const portfolioArray = [
     "logo": "images/team_assets/soundwaves_logo.png",
     "line": "Song inspired art",
     "copy": "Limited edition art created by digitally manipulating, shaping and coloring sound waves generated in the studio recording of legendary songs. signed by collaborating music icons and sold to benefit charitable causes."
+  },
+  {
+    "name": "Creative Conscience",
+    "url": "https://www.creativeconscience.org.uk/",
+    "tidyurl": "creativeconscience.org.uk",
+    "tags": "foundation",
+    "image": "images/team_assets/creativeconscience_image.jpg",
+    "logo": "images/team_assets/creativeconscience_logo.png",
+    "line": "Inspiring creatives to create impact",
+    "copy": "We're building is a global movement to improve the communities we live and work in. We do this with our annual awards scheme, events, education, talks and workshops, all aiming to provide practical tools to create positive impact."
+  },
+  {
+    "name": "LookLook",
+    "url": "https://www.looklook.co.uk/",
+    "tidyurl": "looklook.co.uk",
+    "tags": "playground",
+    "image": "images/team_assets/looklook_image.jpg",
+    "logo": "images/team_assets/looklook_logo.png",
+    "line": "Agents of Engagement",
+    "copy": "We bridge the gap between strategic marketing campaigns and the customer, through the creation of engaging experiences and rich content that’s infinitely sharable."
+  },
+  {
+    "name": "WePresent",
+    "url": "https://wepresent.wetransfer.com/",
+    "tidyurl": "wepresent.wetransfer.com",
+    "tags": "playground",
+    "image": "images/team_assets/wepresent_image.jpg",
+    "logo": "images/team_assets/wepresent_logo.png",
+    "line": "Unexpected stories about creative minds",
+    "copy": "We’re interested in the weird and wonderful ways that creative minds work, and how they shape our world. We showcase the best art, photography, music and more from around the world, and delve into the messy and magical process behind it."
   }
-  // {
-  //   "name": "Creative Conscience",
-  //   "url": "https://www.creativeconscience.org.uk/",
-  //   "tidyurl": "creativeconscience.org.uk",
-  //   "tags": "foundation",
-  //   "image": "images/team_assets/creativeconscience_image.jpg",
-  //   "logo": "images/team_assets/creativeconscience_logo.png",
-  //   "line": "Inspiring creatives to create impact",
-  //   "copy": "We're building is a global movement to improve the communities we live and work in, helping to transform the wider world. We do this with our annual global awards scheme, events, education, talks and workshops, all with the aim of providing practical tools to create positive impact."
-  // }
 ];
 
 
@@ -632,7 +652,7 @@ function createModals() {
   var list = shufflePortfolioArray();
 
   return list.map(function(el) {
-    return "<div id='modal-" + kebabCase(el.name) + "'><div class='modal-inner'><div class='modal-details'><h2>" + el.name + "</h2><a class='modal-site-link' href='" + el.url + "' target='_blank'>" + el.tidyurl + "</a><p class='line'>" + el.line + "</p><p class='copy'>" + el.copy + "</p></div><div class='modal-image'><img class='modal-image-background' src='' data-src='" + el.image + "' /><img class='modal-image-logo' src='" + el.logo + "' /></div></div></div>"
+    return "<div id='modal-" + kebabCase(el.name) + "'> <div class='modal-inner'> <div class='modal-details'><h2>" + el.name + "</h2><a class='modal-site-link' href='" + el.url + "' target='_blank'>" + el.tidyurl + "</a><p class='line'>" + el.line + "</p><p class='copy'>" + el.copy + "</p> </div><div class='modal-image'><img class='modal-image-background' src='' data-src='" + el.image + "' /><a href='" + el.url + "' target='_blank'><img class='modal-image-logo' src='" + el.logo + "' /></a></div></div></div>"
   });
 }
 
