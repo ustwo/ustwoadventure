@@ -536,7 +536,7 @@ const portfolioArray = [
     "url": "http://studiolovesong.com/",
     "tidyurl": "studiolovesong.com",
     "tags": "playground",
-    "image": "images/team_assets/lovesong_image.jpg",
+    "image": "images/team_assets/lovesong_image.png",
     "logo": "images/team_assets/lovesong_logo.png",
     "line": "A design and creative technology studio.",
     "copy": "We blend established and emerging technologies to create interactive product and installation design, and generative and algorithmic arts. Our values are optimism, curiosity, and inventiveness."
