@@ -30,7 +30,7 @@
 }
 
 #ring.times {
-  font-family: initial;
+  font-family: times;
 }
 
 #ring:hover {
@@ -90,6 +90,10 @@ $NUMBER_OF_LETTERS: 9;
 
   #ring {
     height: 120px;
+  }
+
+  #ring ul {
+    font-size: 64px;
   }
 
   .column1 {
