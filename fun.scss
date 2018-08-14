@@ -63,8 +63,17 @@ $NUMBER_OF_LETTERS: 9;
   li:nth-child(#{$i}) {
     transform: translate(-50%, -50%)
     rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
-    translateY(-180px)
+    translateY(-170px)
     rotateX(90deg);
+  }
+
+  @media (max-width: 850px) {
+    li:nth-child(#{$i}) {
+      transform: translate(-50%, -50%)
+      rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
+      translateY(-120px)
+      rotateX(90deg);
+    }
   }
 }
 
@@ -75,4 +84,22 @@ $NUMBER_OF_LETTERS: 9;
   100% {
     transform: rotateX(-100deg) rotate(-360deg);
   }
+}
+
+@media (max-width: 650px) {
+
+  #ring {
+    height: 120px;
+  }
+
+  .column1 {
+    float: none;
+    width: 100%;
+  }
+
+  .column2 {
+    float: none;
+    width: 100%;
+  }
+
 }
