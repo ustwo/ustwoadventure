@@ -2,6 +2,26 @@
 #experiments {
   font-family: futura-pt;
   color: #f32d94;
+  overflow: hidden;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+}
+
+.column2 {
+  float: right;
+  width: 50%;
+}
+
+#ring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  overflow: hidden;
+  transform: rotate(-10deg);
 }
 
 #ring.clear {
@@ -13,19 +33,20 @@
   font-family: initial;
 }
 
-#ring {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 250px;
-  overflow: hidden;
-  transform: rotate(-10deg);
+#ring:hover {
+  -webkit-text-stroke: 1.5px;
+  -webkit-text-fill-color: transparent;
+}
+
+#ring.clear:hover {
+  -webkit-text-stroke: 0px;
+  -webkit-text-fill-color: #f32d94;
 }
 
 #ring ul {
   margin: 0;
   list-style: none;
-  font-size: 74px;
+  font-size: 72px;
   transform-style: preserve-3d;
   animation: three-dimensions-circle 15s linear infinite;
 }
@@ -42,7 +63,7 @@ $NUMBER_OF_LETTERS: 9;
   li:nth-child(#{$i}) {
     transform: translate(-50%, -50%)
     rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
-    translateY(-210px)
+    translateY(-180px)
     rotateX(90deg);
   }
 }
