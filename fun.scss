@@ -1,13 +1,23 @@
+
 #experiments {
   font-family: futura-pt;
   color: #f32d94;
+}
+
+#ring.clear {
+  -webkit-text-stroke: 1.5px;
+  -webkit-text-fill-color: transparent;
+}
+
+#ring.times {
+  font-family: initial;
 }
 
 #ring {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 250px;
   overflow: hidden;
   transform: rotate(-10deg);
 }
@@ -15,7 +25,7 @@
 #ring ul {
   margin: 0;
   list-style: none;
-  font-size: 86px;
+  font-size: 74px;
   transform-style: preserve-3d;
   animation: three-dimensions-circle 15s linear infinite;
 }
@@ -26,11 +36,14 @@
   left: 50%;
 }
 
-// 1 through N
-// rotate(#{$i * (360/N) - (360/N)}
-@for $i from 1 through 9 {
+$NUMBER_OF_LETTERS: 9;
+
+@for $i from 1 through $NUMBER_OF_LETTERS {
   li:nth-child(#{$i}) {
-    transform: translate(-50%, -50%) rotate(#{$i * 40 - 40}deg) translateY(-260px) rotateX(90deg);
+    transform: translate(-50%, -50%)
+    rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
+    translateY(-210px)
+    rotateX(90deg);
   }
 }
 
