@@ -17,5 +17,5 @@ window.ondevicemotion = function(event) {
   var y = event.accelerationIncludingGravity.y;
   var z = event.accelerationIncludingGravity.z;
 
-  $("span.stretch").css("transform", "scale(" + x/102 + "," + y/100 +")");
+  $("span.stretch").css("transform", "scale(" + x + "," + y +")");
 }
