@@ -148,5 +148,12 @@ span.stretch {
     -moz-transform: scale(2,1);
     -ms-transform: scale(2,1);
     -o-transform: scale(2,1);
-  transition-duration:  0.1s;
+}
+
+@media (pointer: coarse) {
+
+  span.stretch {
+    transition-duration:  0.2s;
+  }
+
 }
