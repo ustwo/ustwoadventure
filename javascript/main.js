@@ -610,6 +610,16 @@ const portfolioArray = [
     "logo": "images/team_assets/wepresent_logo.png",
     "line": "Unexpected stories about creative minds",
     "copy": "We’re interested in the weird and wonderful ways that creative minds work, and how they shape our world. We showcase the best art, photography, music and more from around the world, and delve into the messy and magical process behind it."
+  },
+  {
+    "name": "Loveshark",
+    "url": "https://loveshark.io/",
+    "tidyurl": "loveshark.io",
+    "tags": "playground",
+    "image": "images/team_assets/loveshark_image.png",
+    "logo": "images/team_assets/loveshark_logo.png",
+    "line": "Social Augmented Reality Games",
+    "copy": "We're making mobile AR games for friends to play together in real life."
   }
 ];
 
