@@ -113,8 +113,8 @@ $NUMBER_OF_LETTERS: 9;
 
 .stretch {
   font-size: 64px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   -webkit-text-stroke: 1.5px;
   -webkit-text-fill-color: transparent;
 }
@@ -147,6 +147,6 @@ span.stretch {
 @media (max-width: 860px) {
   .stretch {
     font-size: 56px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 }
