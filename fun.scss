@@ -1,7 +1,12 @@
 
 #experiments {
   font-family: futura-pt;
+  font-size: 72px;
   color: #f32d94;
+  overflow: hidden;
+}
+
+#rings {
   overflow: hidden;
 }
 
@@ -15,43 +20,39 @@
   width: 50%;
 }
 
-#ring {
+.ring {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 220px;
+  height: 250px;
   overflow: hidden;
   transform: rotate(-10deg);
 }
 
-#ring.clear {
+.ring.clear {
   -webkit-text-stroke: 1.5px;
   -webkit-text-fill-color: transparent;
 }
 
-#ring.times {
-  font-family: times;
-}
-
-#ring:hover {
+.ring:hover {
   -webkit-text-stroke: 1.5px;
   -webkit-text-fill-color: transparent;
 }
 
-#ring.clear:hover {
+.ring.clear:hover {
   -webkit-text-stroke: 0px;
   -webkit-text-fill-color: #f32d94;
 }
 
-#ring ul {
+.ring ul {
   margin: 0;
   list-style: none;
-  font-size: 72px;
+
   transform-style: preserve-3d;
   animation: three-dimensions-circle 15s linear infinite;
 }
 
-#ring li {
+.ring li {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -85,16 +86,7 @@ $NUMBER_OF_LETTERS: 9;
   }
 }
 
-@media (max-width: 650px) {
-
-  #ring {
-    height: 120px;
-    transform: rotate(-7deg);
-  }
-
-  #ring ul {
-    font-size: 64px;
-  }
+@media (max-width: 660px) {
 
   .column1 {
     float: none;
@@ -106,14 +98,54 @@ $NUMBER_OF_LETTERS: 9;
     width: 100%;
   }
 
-  #ring.times {
-    -webkit-text-stroke: 1.5px;
-    -webkit-text-fill-color: transparent;
+  .ring {
+    height: 120px;
+    transform: rotate(-7deg);
   }
 
-  #ring.times.clear {
-    -webkit-text-stroke: 0px;
-    -webkit-text-fill-color: #f32d94;
+  .ring ul {
+    font-size: 64px;
   }
 
+}
+
+
+
+
+
+
+.stretch {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.stretch.clear {
+  margin-top: 35px;
+  margin-bottom: 10px;
+  -webkit-text-stroke: 1.5px;
+  -webkit-text-fill-color: transparent;
+}
+
+.stretch:hover {
+  -webkit-text-stroke: 1.5px;
+  -webkit-text-fill-color: transparent;
+}
+
+.stretch.clear:hover {
+  -webkit-text-stroke: 0px;
+  -webkit-text-fill-color: #f32d94;
+}
+
+.stretch p {
+  text-align: center;
+  line-height: initial;
+}
+
+span.stretch {
+  display: inline-block;
+  transform: scale(2,1);
+    -webkit-transform: scale(2,1);
+    -moz-transform: scale(2,1);
+    -ms-transform: scale(2,1);
+    -o-transform: scale(2,1);
 }
