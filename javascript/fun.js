@@ -8,7 +8,7 @@ $document.mousemove(function(e) {
     var valueX = pageX;
     var valueY = 255 - pageY;
 
-    $("span.stretch").css("transform", "scale(" + valueX/102 + "," + valueY/100 +")");
+    $("span.stretch").css("transform", "scale(" + valueX/100 + "," + valueY/100 +")");
 });
 
 
