@@ -114,22 +114,13 @@ $NUMBER_OF_LETTERS: 9;
 .stretch {
   font-size: 64px;
   margin-top: 30px;
-  margin-bottom: 0px;
-}
-
-.stretch.clear {
   margin-bottom: 10px;
   -webkit-text-stroke: 1.5px;
   -webkit-text-fill-color: transparent;
 }
 
 .stretch:hover {
-  -webkit-text-stroke: 1.5px;
-  -webkit-text-fill-color: transparent;
-}
-
-.stretch.clear:hover {
-  -webkit-text-stroke: 0px;
+  -webkit-text-stroke: 0;
   -webkit-text-fill-color: #f32d94;
 }
 
