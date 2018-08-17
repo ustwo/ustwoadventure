@@ -22,7 +22,7 @@ window.ondevicemotion = function(event) {
   var y = event.accelerationIncludingGravity.y;
   var z = event.accelerationIncludingGravity.z;
 
-  $("span.stretch").css("transform", "scale(" + (x+3)/5 + "," + 1 +")");
+  $("span.stretch").css("transform", "scale(" + (x+10)/5 + "," + 1 +")");
 
   $("span.stretch.clear").css("transform", "scale(" + (x+3)/5 + "," + ((-y)+3)/5 +")");
 }
