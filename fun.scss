@@ -197,7 +197,7 @@ span.stretch {
 
 
 @media (pointer: coarse) {
-  #grid, #move , .separator.bottom:nth-last-child(-n+2) {
+  #grid, #move , .separator.bottom:nth-last-child(-n+3) {
     display: none;
   }
 }
