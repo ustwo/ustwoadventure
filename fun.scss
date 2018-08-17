@@ -185,11 +185,19 @@ span.stretch {
 
 
 
-
-
 .move {
     margin-top: 50px;
     top: 50%;
     text-align: center;
     width: 100%;
+}
+
+
+
+
+
+@media (pointer: coarse) {
+  #grid, #move {
+    display: none;
+  }
 }
