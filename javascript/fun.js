@@ -9,7 +9,7 @@ $document.mousemove(function(e) {
     var valueY = 122.5 - pageY;
     var valueX2 = pageX + 50;
 
-    $(".letter span.stretch").css({"transform": "scale(" + valueX2/50 + "," + 1 +")", "margin-left": + (valueX2-50)/2.5 + "px", "margin-right": (valueX2-50)/2.5});
+    $(".letter span.stretch").css({"transform": "scale(" + valueX2/50 + "," + 1 +")", "margin-left": (valueX2-50)/2.5, "margin-right": (valueX2-50)/2.5});
 
     $("span.stretch.clear").css("transform", "scale(" + valueX/50 + "," + valueY/25 +")");
 });
@@ -18,7 +18,7 @@ window.ondevicemotion = function(event) {
   var y = event.accelerationIncludingGravity.y;
   var z = event.accelerationIncludingGravity.z;
 
-  $(".letter span.stretch").css({"transform": "scale(" + (x+5)/5 + "," + 1 +")",  "margin-left": + (x)/2.5 + "px", "margin-right": (x)/2.5});
+  $(".letter span.stretch").css({"transform": "scale(" + (x+5)/5 + "," + 1 +")",  "margin-left": x, "margin-right": x});
 
   $("span.stretch.clear").css("transform", "scale(" + (x+3)/5 + "," + ((-y)+3)/5 +")");
 }
