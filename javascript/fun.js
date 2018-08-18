@@ -36,6 +36,7 @@ for (var i = 0; i < chars.length; i++) {
     $(".move").append("<span class='letter" + i + "'>" + chars[i] + "</span>");
     $(".letter" + i).css({
         "position":"relative",
+        "transition-duration":"0.1s"
     });
 }
 $(document).on("mousemove", function (e) {
