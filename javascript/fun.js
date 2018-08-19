@@ -18,7 +18,7 @@ window.ondevicemotion = function(event) {
   var y = event.accelerationIncludingGravity.y;
   var z = event.accelerationIncludingGravity.z;
 
-  $(".letter span.stretch").css("transform", "scale(" + (x+5)/5 + "," + 1 +")");
+  $(".letter span.stretch").css({"transform": "scale(" + (x+5)/5 + "," + 1 +")", "margin-left": x, "margin-right": x});
 
   $("span.stretch.clear").css("transform", "scale(" + (x+3)/5 + "," + ((-y)+3)/5 +")");
 }
@@ -60,7 +60,6 @@ $(document).on("mousemove", function (e) {
                     });
                 }
             }
-
             if (disty > 12 || disty < -12) {
                 if (y < $(".letter" + i).offset().top + 6) {
                     $(".letter" + i).css({
