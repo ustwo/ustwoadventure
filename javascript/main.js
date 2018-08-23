@@ -629,7 +629,7 @@ const portfolioArray = [
     "image": "images/team_assets/limbic_image.png",
     "logo": "images/team_assets/limbic_logo.png",
     "line": "Humanising Computing",
-    "copy": "We've created an SDK to solve for emotional intelligence using our AI models. We want to enable products that interact with your user as naturally as interactions between two humans."
+    "copy": "We've created an SDK for emotional intelligence. Using AI models we want to enable products that interact with users as naturally as the interactions between two humans."
   }
 ];
 
