@@ -26,10 +26,6 @@ window.ondevicemotion = function(event) {
 
 
 
-
-
-
-
 var chars = $(".move").html().split('');
 $(".move").empty();
 for (var i = 0; i < chars.length; i++) {
@@ -39,6 +35,11 @@ for (var i = 0; i < chars.length; i++) {
         "transition-duration":"0.1s"
     });
 }
+$( "#move span" ).mouseover(function() {
+
+});
+
+
 $(document).on("mousemove", function (e) {
     for (var i = 0; i < chars.length; i++) {
         var x = e.pageX,

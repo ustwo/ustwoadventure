@@ -620,6 +620,16 @@ const portfolioArray = [
     "logo": "images/team_assets/loveshark_logo.png",
     "line": "Social Augmented Reality Games",
     "copy": "We're making mobile AR games for friends to play together in real life."
+  },
+  {
+    "name": "Limbic",
+    "url": "https://limbic.ai/",
+    "tidyurl": "limbic.ai",
+    "tags": "fund",
+    "image": "images/team_assets/limbic_image.png",
+    "logo": "images/team_assets/limbic_logo.png",
+    "line": "Humanising Computing",
+    "copy": "We've created an SDK to solve for emotional intelligence using our AI models. We want to enable products that interact with your user as naturally as interactions between two humans."
   }
 ];
 
