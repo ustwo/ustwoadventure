@@ -780,13 +780,15 @@ $(document).ready(function(){
 });
 
 
-// initialise carousel
+// // initialise carousel
+// $(document).ready(function(){
+//   $slideshow = $('.carousel').slick({
+//     dots: true,
+//   });
+//   $('.slide').click(function() {
+//     $slideshow.slick('slickNext');
+//   });
+// });
 
-$(document).ready(function(){
-  $slideshow = $('.carousel').slick({
-    dots: true,
-  });
-  $('.slide').click(function() {
-    $slideshow.slick('slickNext');
-  });
-});
+
+console.log("hi! :)")
