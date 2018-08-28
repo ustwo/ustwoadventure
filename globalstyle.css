@@ -1,8 +1,9 @@
 body {
   font-family: 'Px', sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 800;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 40px;
 }
 
 p {
@@ -16,41 +17,30 @@ a {
   text-decoration: none;
 }
 
-.wrapper {
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 40px;
-}
-
 header {
   margin-top: 40px;
   overflow: hidden;
 }
 
-#logo {
+header h1 {
   width: 50%;
-  display: inline-block;
-  vertical-align: top;
   padding: 10px 0 0 0;
   float: left;
 }
 
-#logo_image {
+header h1 img {
   max-width: 300px;
 }
 
-nav {
+header nav {
   width: 49%;
-  display: inline-block;
-  vertical-align: top;
   padding-top: 0px;
-  font-weight: 400;
   text-align: right;
   float: right;
   overflow: hidden;
 }
 
-nav a {
+header nav a {
   font-size: 28px;
   line-height: 47px;
   border-style: solid;
@@ -60,15 +50,11 @@ nav a {
   cursor: pointer;
 }
 
-nav .join {
+header nav a.join {
   border-style: solid;
   border-width: 3px;
   color: #f32d94;
   background-color: #fff;
-}
-
-#socials {
-  display: inline;
 }
 
 .icon {
@@ -125,7 +111,6 @@ nav .join {
 
 #copyright {
   font-size: 13px;
-  font-weight: 400;
   margin-bottom: 20px;
   margin-top: 0px;
   opacity: 0.9;
@@ -168,10 +153,10 @@ nav .join {
   header {
     padding-top: 0px;
   }
-  #logo {
+  header h1 {
     padding-top: 0px;
   }
-  nav a {
+  header nav a {
     font-size: 26px;
     line-height: 42px;
   }
@@ -184,10 +169,10 @@ nav .join {
 }
 
 @media (max-width: 660px) {
-  #logo {
+  header h1 {
     float: none;
   }
-  nav {
+  header nav {
     display: block;
     margin-top: 15px;
     float: none;
@@ -195,11 +180,11 @@ nav .join {
     width: 310px;
     padding-bottom: 5px;
   }
-  nav a {
+  header nav a {
     font-size: 24px;
     margin-right: 7px;
   }
-  nav p {
+  header nav p {
     display: inline;
   }
   #socials {
@@ -242,7 +227,7 @@ nav .join {
 }
 
 @media (max-width: 375px) {
-  #logo_image {
+  header h1 img {
     max-width: 250px;
   }
   .wrapper {
@@ -254,10 +239,10 @@ nav .join {
 }
 
 @media (max-width: 320px) {
-  #logo_image {
+  header h1 img {
     max-width: 200px;
   }
-  nav a {
+  header nav a {
     font-size: 20px;
   }
 }

@@ -102,14 +102,6 @@ ul#companies li a:hover {
   -ms-text-fill-color: transparent;
 }
 
-ul#companies li a:active {
-  position: relative;
-    top: -2px;
-}
-
-@media (min-width: 1920px) {}
-
-@media (max-width: 1080px) {}
 
 @media (max-width: 1000px) {
   ul#companies {
