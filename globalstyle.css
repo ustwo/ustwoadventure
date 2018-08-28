@@ -145,9 +145,6 @@ header nav a.join {
 }
 
 @media (max-width: 800px) {
-  .wrapper {
-    margin: auto;
-  }
   header {
     padding-top: 0px;
   }
@@ -228,7 +225,7 @@ header nav a.join {
   header h1 img {
     max-width: 250px;
   }
-  .wrapper {
+  body {
     padding: 0 25px;
   }
   .description {
