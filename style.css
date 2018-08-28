@@ -10,18 +10,12 @@ a.button {
   color: #ffffff;
 }
 
-.is_checked {
+a.is_checked {
   padding: 2px 5px;
   background-color: #ffffff;
   color: #F32D94;
   cursor: pointer;
-  border-width: 3px;
-}
-
-a.is_checked {
-  border-style: solid;
-  border-width: 3px;
-  color: #F32D94;
+  border: 3px solid;
 }
 
 .head {
@@ -86,7 +80,6 @@ ul#companies li a {
   font-family: futura-pt, sans-serif;
   font-style: normal;
   font-weight: 800;
-  color: #F32D94;
   letter-spacing: -0.7px;
   line-height: 1.15;
   text-transform: uppercase;
