@@ -638,7 +638,6 @@ function kebabCase(string) {
   if (typeof string !== "string") {
     return string;
   }
-
   return string
     .trim()
     .replace(/\W|[_]/g, "-")
@@ -743,7 +742,6 @@ $(document).ready(function() {
     if (!el) return;
     el.click();
  }
-
   if (window.location.search) {
     var query = window.location.search.substring(1);
     var parameters = query.split('&');
@@ -757,7 +755,6 @@ $(document).ready(function() {
     if (!companyName) return;
     $('#modal-' + companyName ).modal()
   }
-
 });
 
 
@@ -773,7 +770,7 @@ $(".twocolumns").click(function() {
 
 
 $(document).ready(function() {
-  // if (window.location.search) return;
+  // if (window.location.search) return;         // Keep Queries
   if (window.location.pathname == "/") {
     history.replaceState( {} , 'ustwo Adventure', '/' );
   }
