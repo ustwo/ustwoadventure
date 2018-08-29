@@ -54,18 +54,6 @@
   background-image: url('images/modal_exit.svg');
 }
 
-.modal-spinner {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  padding: 12px 16px;
-  border-radius: 5px;
-  background-color: #111;
-  height: 20px
-}
-
 /* Adventure styles */
 
 #modals {
@@ -84,9 +72,6 @@
 }
 
 .modal-details, .modal-image {
-  /* -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1; */
   box-sizing: border-box;
   height: 100%;
   width: 50%;
@@ -116,9 +101,11 @@
   margin-bottom: 5px;
 }
 
-.modal-site-link {
+.modal-details .modal-site-link {
   display: block;
   font-size: 24px;
+  font-weight: 700;
+  color: #333;
   text-decoration: underline;
   display: inline-block;
 }
