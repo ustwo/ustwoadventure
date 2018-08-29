@@ -39,20 +39,20 @@ header nav {
   overflow: hidden;
 }
 
-header nav a {
+header nav a, header nav p a:first-child {
   font-size: 28px;
   line-height: 47px;
   border-style: solid;
-  color: #fff !important;
+  color: #ffffff;
   padding: 2px 5px;
   background-color: #F32D94;
   cursor: pointer;
 }
 
-header nav a.join {
+header nav p a.join {
   border-style: solid;
   border-width: 3px;
-  color: #f32d94 !important;
+  color: #f32d94;
   background-color: #fff;
 }
 
@@ -151,7 +151,7 @@ header nav a.join {
   header h1 {
     padding-top: 0px;
   }
-  header nav a {
+  header nav a, header nav p a:first-child {
     font-size: 26px;
     line-height: 42px;
   }
@@ -175,7 +175,7 @@ header nav a.join {
     width: 310px;
     padding-bottom: 5px;
   }
-  header nav a {
+  header nav a, header nav p a:first-child {
     font-size: 24px;
     margin-right: 7px;
   }
@@ -237,7 +237,7 @@ header nav a.join {
   header h1 img {
     max-width: 200px;
   }
-  header nav a {
+  header nav a, header nav p a:first-child {
     font-size: 20px;
   }
 }
