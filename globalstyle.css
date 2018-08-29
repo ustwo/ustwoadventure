@@ -39,20 +39,20 @@ header nav {
   overflow: hidden;
 }
 
-header nav a, header nav p a:first-child {
+header nav a {
   font-size: 28px;
   line-height: 47px;
   border-style: solid;
-  color: #fff;
+  color: #fff !important;
   padding: 2px 5px;
   background-color: #F32D94;
   cursor: pointer;
 }
 
-header nav p a.join {
+header nav a.join {
   border-style: solid;
   border-width: 3px;
-  color: #f32d94;
+  color: #f32d94 !important;
   background-color: #fff;
 }
 
