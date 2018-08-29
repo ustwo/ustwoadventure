@@ -678,7 +678,7 @@ function createModals() {
 
 
 
-$(document).ready(function () {
+$(document).ready(function() {
 
   const listElements = createListElementsFromArray(shufflePortfolioArray());
   $('ul#companies').html(listElements);
@@ -693,7 +693,7 @@ $(document).ready(function () {
 
   $("img").trigger("unveil");
 
-  $('a.filter-button-group').on('click', function (e) {
+  $('a.filter-button-group').on('click', function(e) {
 
     var descriptor = $(e.target).data('descriptorstring')
     $('#descriptor').empty();
@@ -704,7 +704,7 @@ $(document).ready(function () {
 
     // cycle through all the items in the portfolio
 
-    $('.portfolio_item').each(function (idx, el) {
+    $('.portfolio_item').each(function(idx, el) {
 
       var fStrings = $(el).data('filter').split(' ');
       var shouldDisplay = fStrings.includes(filterString);
@@ -726,15 +726,15 @@ $(document).ready(function () {
 
 
 
-$(".button").click(function(){
+$(".button").click(function() {
   $(".button").not(this).removeClass('is_checked');
   $(this).addClass("is_checked");
 });
 
 
 
-$(document).ready(function () {
-  if (window.location.hash){
+$(document).ready(function() {
+  if (window.location.hash) {
     var hash = window.location.hash.substring(1);
     if (!hash) return;
     var array = $(".button-group").find(`[data-filter='${hash.toLowerCase()}']`);
@@ -744,7 +744,7 @@ $(document).ready(function () {
     el.click();
  }
 
-  if (window.location.search){
+  if (window.location.search) {
     var query = window.location.search.substring(1);
     var parameters = query.split('&');
     var companyName, val;
@@ -762,17 +762,17 @@ $(document).ready(function () {
 
 
 
-$(".onecolumn").click(function(){
+$(".onecolumn").click(function() {
   $("ul#companies").addClass("onecolumn").removeClass("twocolumns");
 });
 
-$(".twocolumns").click(function(){
+$(".twocolumns").click(function() {
   $("ul#companies").addClass("twocolumns").removeClass("onecolumn");;
 });
 
 
 
-$(document).ready(function(){
+$(document).ready(function() {
   // if (window.location.search) return;
   if (window.location.pathname == "/") {
     history.replaceState( {} , 'ustwo Adventure', '/' );

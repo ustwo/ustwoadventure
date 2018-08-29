@@ -4,6 +4,7 @@
   font-size: 40px;
   font-weight: 800;
   text-transform: uppercase;
+  line-height: 0.9;
 }
 
 #floorcopy {
@@ -40,7 +41,6 @@
   padding: 10px 0 30px 0;
   text-align: center;
   font-size: 20px;
-  color: #F32D94;
   width: 100%;
   text-align: right;
 }
@@ -48,8 +48,6 @@
 .form-group {
   padding-bottom: 25px;
 }
-
-.form div {}
 
 label {
   min-width: 150px;
@@ -117,7 +115,6 @@ input[type=text], input[type=email], select {
   display: none;
 }
 
-@media (min-width: 1920px) {}
 
 @media (max-width: 1135px) {
   .formdiv {
