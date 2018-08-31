@@ -739,9 +739,10 @@ $(document).ready(function() {
       var companyName, val;
       for (var i=0; i<parameters.length;i++) {
           val = parameters[i].split('=');
-          if (val[0] == 'team') {
-              companyName = val[1];
-          }
+          companyName = val[0];
+        }
+        if (val[0] == 'team') {
+            companyName = val[1];
         }
       if (!companyName) return;
       $('#modal-' + companyName ).modal();
@@ -754,14 +755,6 @@ $(".onecolumn").click(function() {
 });
 $(".twocolumns").click(function() {
     $("ul#companies").addClass("twocolumns").removeClass("onecolumn");
-});
-
-
-$(document).ready(function() {
-  // if (window.location.search) return;         // Keep Queries
-  if (window.location.pathname == "/") {
-    history.replaceState( {} , 'ustwo Adventure', '/' );
-  }
 });
 
 
