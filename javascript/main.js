@@ -678,6 +678,14 @@ $(document).ready(function() {
     const listElements = createListElementsFromArray(shufflePortfolioArray());
     $('ul#companies').html(listElements);
     $('div#modals').html(createModals());
+
+    $('ul li a').click(function (e) {
+        let id = $(this).attr('href');
+            id = id.split('#modal-');
+            id =  id[1];
+        history.replaceState("", document.title, window.location.pathname + "?" + id);
+    });
+
     $("img").unveil();
     $("img").trigger("unveil");
 
@@ -709,10 +717,6 @@ $(document).ready(function() {
             }
             $(el).css('display', (shouldDisplay == true ? 'block' : 'none'));
         });
-        // remove hash on load
-        // if (window.location.pathname == "/") {
-        //     history.replaceState( {} , 'ustwo Adventure', `/#${filterString}` );
-        // }
     });
 });
 
@@ -741,13 +745,21 @@ $(document).ready(function() {
           val = parameters[i].split('=');
           companyName = val[0];
         }
-        if (val[0] == 'team') {
-            companyName = val[1];
-        }
+      if (val[0] == 'team') {
+          companyName = val[1];
+      }
       if (!companyName) return;
       $('#modal-' + companyName ).modal();
   }
 });
+
+
+// When modal is opened {
+//   var companyURL = #modal-companyURL
+//   companyURL.split()
+//   window.location.search = companyURL;
+// }
+
 
 
 $(".onecolumn").click(function() {
