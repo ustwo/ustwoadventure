@@ -744,7 +744,7 @@ $(document).ready(function() {
       for (var i=0; i<parameters.length;i++) {
           val = parameters[i].split('=');
           companyName = val[0];
-        }
+      }
       if (val[0] == 'team') {
           companyName = val[1];
       }
