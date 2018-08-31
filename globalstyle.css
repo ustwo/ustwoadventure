@@ -1,6 +1,6 @@
 body {
   font-family: 'Px', sans-serif;
-  color: #F32D94;
+  color: #f32d94;
   -webkit-font-smoothing: antialiased;
   max-width: 1100px;
   margin: auto;
@@ -12,7 +12,7 @@ p {
 }
 
 a, a:visited {
-  color: #F32D94;
+  color: #f32d94;
   text-decoration: none;
 }
 
@@ -33,7 +33,7 @@ header h1 img {
 
 header nav {
   width: 49%;
-  padding-top: 0px;
+  padding-top: 0;
   text-align: right;
   float: right;
   overflow: hidden;
@@ -43,9 +43,9 @@ header nav a, header nav p a:first-child {
   font-size: 28px;
   line-height: 47px;
   border-style: solid;
-  color: #ffffff;
+  color: #fff;
   padding: 2px 5px;
-  background-color: #F32D94;
+  background-color: #f32d94;
   cursor: pointer;
 }
 
@@ -57,7 +57,7 @@ header nav p a.join {
 }
 
 .icon {
-  margin: 10px 0 10px 0px;
+  margin: 10px 0 10px 0;
   background-color: transparent;
 }
 
@@ -89,7 +89,7 @@ header nav p a.join {
 .separator {
   margin-top: 45px;
   height: 4px;
-  background-color: #F32D94;
+  background-color: #f32d94;
 }
 
 .separator.top {
@@ -146,10 +146,10 @@ header nav p a.join {
 
 @media (max-width: 800px) {
   header {
-    padding-top: 0px;
+    padding-top: 0;
   }
   header h1 {
-    padding-top: 0px;
+    padding-top: 0;
   }
   header nav a, header nav p a:first-child {
     font-size: 26px;
@@ -215,7 +215,7 @@ header nav p a.join {
   }
 }
 
-@media (max-width:470px) {
+@media (max-width: 470px) {
   #copyright p {
     text-align: left;
   }
