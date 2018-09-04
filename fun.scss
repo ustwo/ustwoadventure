@@ -154,37 +154,6 @@ span.stretch {
 
 
 
-
-
-
-#grid {
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 170px;
-
-  text-align: center;
-
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-#grid p {
-  line-height: 60px;
-}
-
-#grid p:hover {
-  -webkit-text-stroke: 1.5px;
-  -webkit-text-fill-color: transparent;
-}
-
-
-
-
-
-
-
 .move {
     font-size: 56px;
     margin-top: 50px;
@@ -196,10 +165,8 @@ span.stretch {
 
 
 
-
-
 @media (pointer: coarse) {
-  #grid, #move , .separator.bottom:nth-last-child(-n+3) {
+  #grid, #move , .separator.bottom:nth-last-child(-n+2) {
     display: none;
   }
 }
