@@ -1,4 +1,4 @@
-// Collect all the portfolios into an array
+/* jshint esversion: 6 */
 
 const portfolioArray = [
   {
