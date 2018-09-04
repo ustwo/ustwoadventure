@@ -630,6 +630,16 @@ const portfolioArray = [
     "logo": "images/team_assets/limbic_logo.png",
     "line": "Humanising Computing",
     "copy": "We've created an SDK for emotional intelligence. Using AI models we want to enable products that interact with users as naturally as the interactions between two humans."
+  },
+  {
+    "name": "Creative Hustle",
+    "url": "https://creativehustle.org",
+    "tidyurl": "creativehustle.org",
+    "tags": "foundation",
+    "image": "images/team_assets/creativehustle_image.jpg",
+    "logo": "images/team_assets/creativehustle_logo.png",
+    "line": "A launchpad for creatives & techies of colour",
+    "copy": "We are a non-profit organisation dedicated to help young creatives and techies of colour grow. Through awarding micro-grants, we aim to plant seeds to help young creative and techies progress further in their craft or discipline."
   }
 ];
 
@@ -754,14 +764,6 @@ $(document).ready(function() {
 });
 
 
-// When modal is opened {
-//   var companyURL = #modal-companyURL
-//   companyURL.split()
-//   window.location.search = companyURL;
-// }
-
-
-
 $(".onecolumn").click(function() {
     $("ul#companies").addClass("onecolumn").removeClass("twocolumns");
 });
@@ -770,15 +772,21 @@ $(".twocolumns").click(function() {
 });
 
 
-// // initialise carousel
-// $(document).ready(function(){
-//   $slideshow = $('.carousel').slick({
-//     dots: true,
-//   });
-//   $('.slide').click(function() {
-//     $slideshow.slick('slickNext');
-//   });
-// });
+// initialise carousel
+$(document).ready(function(){
+  $slideshow = $('.carousel').slick({
+    dots: true,
+  });
+  $('.slide').click(function() {
+    $slideshow.slick('slickNext');
+  });
+  $slideshow2 = $('.carousel2').slick({
+    dots: true,
+  });
+  $('.slide2').click(function() {
+    $slideshow2.slick('slickNext');
+  });
+});
 
 
 console.log("hi! :)");

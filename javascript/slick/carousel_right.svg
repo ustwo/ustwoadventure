@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="18px" height="29px" viewBox="0 0 18 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
-    <title>Group</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-        <g id="Artboard-Copy-7" transform="translate(-241.000000, -64.000000)" stroke="#FFFFFF" stroke-width="4">
-            <g id="Group" transform="translate(250.000000, 78.500000) scale(-1, 1) translate(-250.000000, -78.500000) translate(244.000000, 67.000000)">
-                <path d="M11.5,0.5 L0.893398282,11.1066017" id="Line"></path>
-                <path d="M11.5,22.5 L0.5,11.5" id="Line-Copy"></path>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg height="29" viewBox="0 0 18 29" width="18" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="#fff" stroke-linecap="square" stroke-width="4" transform="matrix(-1 0 0 1 15 3)"><path d="m11.5.5-10.60660172 10.6066017"/><path d="m11.5 22.5-11-11"/></g></svg>
