@@ -630,7 +630,7 @@ const portfolioArray = [
     "logo": "images/team_assets/limbic_logo.png",
     "line": "Humanising Computing",
     "copy": "We've created an SDK for emotional intelligence. Using AI models we want to enable products that interact with users as naturally as the interactions between two humans."
-  }
+  },
   // {
   //   "name": "Creative Hustle",
   //   "url": "https://creativehustle.org",
@@ -640,7 +640,17 @@ const portfolioArray = [
   //   "logo": "images/team_assets/creativehustle_logo.png",
   //   "line": "A launchpad for creatives & techies of colour",
   //   "copy": "We are a non-profit organisation dedicated to help young creatives and techies of colour grow. Through awarding micro-grants, we aim to plant seeds to help young creative and techies progress further in their craft or discipline."
-  // }
+  // },
+  {
+    "name": "DivInc",
+    "url": "http://wearedivinc.com/",
+    "tidyurl": "wearedivinc.com",
+    "tags": "foundation",
+    "image": "images/team_assets/divinc_image.jpg",
+    "logo": "images/team_assets/divinc_logo.png",
+    "line": "Helping the overlooked solve the problems that others miss",
+    "copy": "We work with high schools across London helping young people from underestimated backgrounds to found their own startups and gain investment by inspiring, equipping and funding them."
+  }
 ];
 
 
