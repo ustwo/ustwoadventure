@@ -645,7 +645,7 @@ const portfolioArray = [
     "name": "Bounce Cinema",
     "url": "https://bouncecinema.com",
     "tidyurl": "bouncecinema.com",
-    "tags": "floor foundations",
+    "tags": "floor foundation",
     "image": "images/team_assets/bouncecinema_image.jpg",
     "logo": "images/team_assets/bouncecinema_logo.png",
     "line": "Showcasing and supporting emerging film talent",
