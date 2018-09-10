@@ -642,6 +642,16 @@ const portfolioArray = [
   //   "copy": "We are a non-profit organisation dedicated to help young creatives and techies of colour grow. Through awarding micro-grants, we aim to plant seeds to help young creative and techies progress further in their craft or discipline."
   // },
   {
+    "name": "Bounce Cinema",
+    "url": "https://bouncecinema.com",
+    "tidyurl": "bouncecinema.com",
+    "tags": "floor foundations",
+    "image": "images/team_assets/bouncecinema_image.jpg",
+    "logo": "images/team_assets/bouncecinema_logo.png",
+    "line": "Showcasing and supporting emerging film talent",
+    "copy": "We put on pop-up film events, run workshops, and fund productions. Our aim is to showcase, educate and nurture the next generation of filmmakers."
+  },
+  {
     "name": "DivInc",
     "url": "http://wearedivinc.com/",
     "tidyurl": "wearedivinc.com",
