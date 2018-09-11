@@ -138,6 +138,10 @@ header nav p a.join {
   text-transform: uppercase;
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 @media (max-width: 1200px) {
   header {
     margin-top: 30px;
