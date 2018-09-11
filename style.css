@@ -10,6 +10,10 @@ a.button {
   color: #ffffff;
 }
 
+a.button:hover {
+  border: 3px solid #f32d94;
+}
+
 a.is_checked {
   padding: 2px 5px;
   background-color: #ffffff;
