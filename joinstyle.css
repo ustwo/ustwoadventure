@@ -180,12 +180,6 @@ input[type=text], input[type=email], select {
   }
 }
 
-@media (max-width: 375px) {
-  .wrapper {
-    padding: 0 25px;
-  }
-}
-
 @media (max-width: 320px) {
   .head {
     font-size: 30px;
