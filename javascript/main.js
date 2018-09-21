@@ -660,6 +660,16 @@ const portfolioArray = [
     "logo": "images/team_assets/divinc_logo.png",
     "line": "Helping the overlooked solve the problems that others miss",
     "copy": "We work with high schools across London helping young people from underestimated backgrounds to found their own startups and gain investment by inspiring, equipping and funding them."
+  },
+  {
+    "name": "The Hot Breakfast",
+    "url": "https://www.thehotbreakfast.com/",
+    "tidyurl": "thehotbreakfast.com",
+    "tags": "playground",
+    "image": "images/team_assets/hotbreakfast_image.jpg",
+    "logo": "images/team_assets/hotbreakfast_logo.png",
+    "line": "Meet inspiring people. Share breakfast & wisdom. Feed your ideas.",
+    "copy": "We're a hub that connects and supports inspiring Londoners, designed to enable purposeful people to create more impact, more effectively and more enjoyably."
   }
 ];
 
