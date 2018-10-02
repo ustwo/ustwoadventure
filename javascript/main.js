@@ -249,7 +249,7 @@ const portfolioArray = [
     "image": "images/team_assets/ustwogames_image.jpg",
     "logo": "images/team_assets/ustwogames_logo.png",
     "line": "Independent studio making beautiful games",
-    "copy": "We’re a mobile games studio making interactive entertainment which challenges the medium, with a strong focus on user experience and elegance in presentation."
+    "copy": "We’re a mobile games studio making interactive entertainment that challenges the medium, with a strong focus on user experience and elegance in presentation."
   },
   {
     "name": "Pilcro",
