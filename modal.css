@@ -189,7 +189,7 @@
     width: 95%;
   }
   .modal-details h2 {
-    font-size: 52px;
+    font-size: 56px;
     word-wrap: break-word;
     hyphens: auto;
   }
@@ -200,7 +200,7 @@
     width: 100%;
   }
   .modal-details h2 {
-    font-size: 48px;
+    font-size: 52px;
   }
 }
 
@@ -234,7 +234,7 @@
     order: 1;
   }
   .modal-details h2 {
-    font-size: 44px;
+    font-size: 46px;
   }
   .modal-site-link {
     font-size: 22px;
@@ -262,7 +262,7 @@
     padding: 25px;
   }
   .modal-details h2 {
-    font-size: 40px;
+    font-size: 42px;
   }
   .modal-site-link {
     font-size: 20px;

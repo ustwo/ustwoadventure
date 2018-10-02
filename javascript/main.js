@@ -269,7 +269,7 @@ const portfolioArray = [
     "image": "images/team_assets/creativementornetwork_image.jpg",
     "logo": "images/team_assets/creativementornetwork_logo.png",
     "line": "Training mentors and connecting them to diverse young talent",
-    "copy": "We work with schools across London to connect young people from diverse backgrounds with the creative industries. Our program is making the creative world more inclusive."
+    "copy": "We work with schools to connect young people from diverse backgrounds with the creative industries. Our program is making the creative world more inclusive."
   },
   {
     "name": "Pauseable",
