@@ -165,8 +165,126 @@ span.stretch {
 
 
 
+
+#slice {
+	background: white;
+	color: #f32d94;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main {
+	position: relative;
+}
+
+.text {
+	display: flex;
+	font-size: 15vw;
+	font-weight: bold;
+	line-height: 1em;
+}
+
+.text--2,
+.text--3,
+.text--4,
+.text--5 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.text--1 {
+	clip-path: polygon(0 0, 100% 0, 100% 20%, 0% 20%);
+}
+
+.text--2 {
+	clip-path: polygon(0 20%, 100% 20%, 100% 40%, 0% 40%);
+}
+.text--3 {
+	clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0% 60%);
+}
+.text--4 {
+	clip-path: polygon(0 60%, 100% 60%, 100% 80%, 0% 80%);
+}
+.text--5 {
+	clip-path: polygon(0 80%, 100% 80%, 100% 100%, 0% 100%);
+}
+
+
+.text__half--left {
+	transform-origin: center left;
+	transform: scalex(2);
+}
+
+.text__half--right {
+	transform-origin: center right;
+	transform: scalex(0);
+}
+
+.text--1 {
+	.text__half--left {
+		animation: shrink 1s ease-in-out infinite;
+	}
+	.text__half--right {
+		animation: grow 1s ease-in-out infinite;
+	}
+}
+
+.text--2 {
+	.text__half--left {
+		animation: shrink 1s ease-in-out .025s infinite;
+	}
+	.text__half--right {
+		animation: grow 1s ease-in-out .025s infinite;
+	}
+}
+
+.text--3 {
+	.text__half--left {
+		animation: shrink 1s ease-in-out .05s infinite;
+	}
+	.text__half--right {
+		animation: grow 1s ease-in-out .05s infinite;
+	}
+}
+
+.text--4 {
+	.text__half--left {
+		animation: shrink 1s ease-in-out .075s infinite;
+	}
+	.text__half--right {
+		animation: grow 1s ease-in-out .075s infinite;
+	}
+}
+
+.text--5 {
+	.text__half--left {
+		animation: shrink 1s ease-in-out .1s infinite;
+	}
+	.text__half--right {
+		animation: grow 1s ease-in-out .1s infinite;
+	}
+}
+
+
+@keyframes shrink {
+    to {transform: scalex(0)}
+}
+
+@keyframes grow {
+    to {transform: scalex(2)}
+}
+
+
+
+
 @media (pointer: coarse) {
-  #grid, #move , .separator.bottom:nth-last-child(-n+2) {
+  #grid, #move, .separator.bottom:nth-last-child(-n+2) {
     display: none;
   }
 }
