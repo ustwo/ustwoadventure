@@ -236,8 +236,8 @@
   .modal-details h2 {
     font-size: 46px;
   }
-  .modal-site-link {
-    font-size: 20px;
+  .modal-details .modal-site-link {
+    font-size: 22px;
   }
   .modal .line {
     font-size: 20px;
@@ -264,8 +264,8 @@
   .modal-details h2 {
     font-size: 42px;
   }
-  .modal-site-link {
-    font-size: 18px;
+  .modal-details .modal-site-link {
+    font-size: 20px;
   }
   .modal .line {
     font-size: 18px;
