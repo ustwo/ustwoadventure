@@ -150,9 +150,6 @@ ul#companies li a:hover {
   ul#companies li {
     margin: 8px 0 0 0;
   }
-  a.button {
-    border-width: 2px;
-  }
 }
 
 @media (max-width: 330px) {
