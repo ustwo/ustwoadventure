@@ -98,7 +98,7 @@
   font-weight: 800;
   color: #F32D94;
   text-transform: uppercase;
-  font-size: 54px;
+  font-size: 60px;
   margin-bottom: 6px;
   -webkit-text-stroke: 1px;
   -webkit-text-fill-color: transparent;
@@ -174,7 +174,7 @@
 /* Soundwaves */
 
 #modal-soundwaves .modal-details h2 {
-  font-size: 50px;
+  font-size: 52px;
 }
 @media (max-width: 980px) {
   #modal-soundwaves .modal-details h2 {
