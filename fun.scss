@@ -171,7 +171,8 @@ span.stretch {
 	color: #f32d94;
 }
 
-.wrapper {
+.slicewrapper {
+  margin-top: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -183,7 +184,7 @@ span.stretch {
 
 .text {
 	display: flex;
-	font-size: 15vw;
+	font-size: 10vw;
 	font-weight: bold;
 	line-height: 1em;
 }

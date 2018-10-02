@@ -87,7 +87,7 @@
 }
 
 .modal-details {
-  padding: 40px;
+  padding: 35px;
   overflow: auto;
 }
 
@@ -99,7 +99,9 @@
   color: #F32D94;
   text-transform: uppercase;
   font-size: 54px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+  -webkit-text-stroke: 1px;
+  -webkit-text-fill-color: transparent;
 }
 
 .modal-details .modal-site-link {
@@ -180,6 +182,7 @@
     hyphens: auto;
   }
 }
+
 
 @media (max-width: 880px) {
   .modal {
