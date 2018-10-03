@@ -670,6 +670,16 @@ const portfolioArray = [
     "logo": "images/team_assets/hotbreakfast_logo.png",
     "line": "Meet inspiring people. Share breakfast & wisdom. Feed your ideas.",
     "copy": "We're a hub that connects and supports inspiring Londoners, designed to enable purposeful people to create more impact, more effectively and more enjoyably."
+  },
+  {
+    "name": "Pondermed",
+    "url": "http://www.pondermed.com/",
+    "tidyurl": "pondermed.com",
+    "tags": "playground",
+    "image": "images/team_assets/pondermed_image.jpg",
+    "logo": "images/team_assets/pondermed_logo.png",
+    "line": "Breaking down the big ideas in healthcare",
+    "copy": "I am a doctor in Emergency Medicine and a podcaster. My podcast is a place where I explore interesting narratives in healthcare ranging from the important and inspiring to the controversial and bizarre."
   }
 ];
 
