@@ -214,7 +214,7 @@ header nav p a.join {
 
 @media (max-width: 470px) {
   header {
-    margin-top: 20px;
+    margin-top: 25px;
   }
   #copyright p {
     text-align: left;
