@@ -250,7 +250,7 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 500px) {
   .modal {
     height: 100%;
     width: 100%;
