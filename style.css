@@ -87,7 +87,6 @@ ul#companies li a {
   letter-spacing: -0.7px;
   line-height: 1.15;
   text-transform: uppercase;
-  transition: 0.05s;
 }
 
 ul#companies li a:hover {
