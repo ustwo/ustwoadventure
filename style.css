@@ -90,11 +90,11 @@ ul#companies li a {
 }
 
 ul#companies li a:hover {
-  -webkit-text-stroke: 1.5px;
+  -webkit-text-stroke: 1px;
   -webkit-text-fill-color: transparent;
-  -moz-text-stroke: 1.5px;
+  -moz-text-stroke: 1px;
   -moz-text-fill-color: transparent;
-  -ms-text-stroke: 1.5px;
+  -ms-text-stroke: 1px;
   -ms-text-fill-color: transparent;
 }
 

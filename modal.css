@@ -102,6 +102,10 @@
   margin-bottom: 6px;
   -webkit-text-stroke: 1px;
   -webkit-text-fill-color: transparent;
+  -moz-text-stroke: 1px;
+  -moz-text-fill-color: transparent;
+  -ms-text-stroke: 1px;
+  -ms-text-fill-color: transparent;
 }
 
 .modal-details .modal-site-link {
