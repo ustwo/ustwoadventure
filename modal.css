@@ -296,19 +296,22 @@
 }
 
 @media only screen
+  and (pointer: coarse)
   and (device-width : 414px)
   and (device-height : 896px)
   and (-webkit-device-pixel-ratio : 2)
   ,
-  (device-width : 375px)
+  (pointer: coarse)
+  and (device-width : 375px)
   and (device-height : 812px)
   and (-webkit-device-pixel-ratio : 3)
   ,
-  (device-width : 414px)
+  (pointer: coarse)
+  and (device-width : 414px)
   and (device-height : 896px)
   and (-webkit-device-pixel-ratio : 3)
   ,
-  (max-width: 500px) and (min-height: 750px)
+  (pointer: coarse) and (max-width: 500px) and (min-height: 750px)
   {
     .modal {
       height: 85%;
