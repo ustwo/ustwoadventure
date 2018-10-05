@@ -90,7 +90,6 @@
   padding: 35px;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  position: fixed;
 }
 
 /* Text styles inside details */
