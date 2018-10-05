@@ -295,7 +295,7 @@
   }
 }
 
-@media only screen
+/* @media only screen
   and (device-width : 414px)
   and (device-height : 896px)
   and (-webkit-device-pixel-ratio : 2) {
@@ -329,9 +329,9 @@
       bottom: 0;
       left: 0;
     }
-  }
+  } */
 
-@media (max-width: 500px) and (min-height: 600px) {
+@media (max-width: 500px) {
   .modal {
     height: 90%;
     position: fixed;
