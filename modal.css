@@ -89,7 +89,6 @@
 .modal-details {
   padding: 35px;
   overflow: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 /* Text styles inside details */
