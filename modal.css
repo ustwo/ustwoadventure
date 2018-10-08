@@ -295,8 +295,7 @@
   }
 }
 
-@media (pointer: coarse) and (max-width: 500px) and (min-height: 750px) and (min-device-pixel-ratio: 2)
-  {
+@media (pointer: coarse) and (max-width: 500px) and (min-height: 750px) and (min-device-pixel-ratio: 2) {
     .modal {
       height: 85%;
       position: fixed;
