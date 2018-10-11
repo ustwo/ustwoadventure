@@ -711,7 +711,9 @@ function shufflePortfolioArray() {
 
 function createListElementsFromArray(a) {
     return a.map(function (el) {
-        return "<li class='portfolio_item' data-filter='" + el.tags + "'><a target='_blank' href='#modal-" + kebabCase(el.name) + "'  rel='modal:open'>" + el.name + "</a></li>";
+        return "<li class='portfolio_item' data-filter='" + el.tags + "'>" +
+                  "<a target='_blank' href='#modal-" + kebabCase(el.name) + "'  rel='modal:open'>" + el.name + "</a>" +
+               "</li>";
     });
 }
 
@@ -719,7 +721,20 @@ function createListElementsFromArray(a) {
 function createModals() {
     var list = shufflePortfolioArray ();
     return list.map(function (el) {
-      return "<div id='modal-" + kebabCase(el.name) + "'> <div class='modal-inner'> <div class='modal-details'><h2>" + el.name + "</h2><a class='modal-site-link' href='" + el.url + "' target='_blank'>" + el.tidyurl + "</a><p class='line'>" + el.line + "</p><p class='copy'>" + el.copy + "</p> </div><div class='modal-image'><img class='modal-image-background' src='' data-src='" + el.image + "' /><a href='" + el.url + "' target='_blank'><img class='modal-image-logo' src='" + el.logo + "' /></a></div></div></div>";
+      return "<div id='modal-" + kebabCase(el.name) + "'>" +
+                "<div class='modal-inner'>" +
+                  "<div class='modal-details'>" +
+                    "<h2>" + el.name + "</h2>" +
+                    "<a class='modal-site-link' href='" + el.url + "' target='_blank'>" + el.tidyurl + "</a>" +
+                    "<p class='line'>" + el.line + "</p>" +
+                    "<p class='copy'>" + el.copy + "</p>" +
+                  "</div>" +
+                  "<div class='modal-image'>" +
+                    "<img class='modal-image-background' src='' data-src='" + el.image + "' />" +
+                    "<a href='" + el.url + "' target='_blank'> <img class='modal-image-logo' src='" + el.logo + "'/> </a>" +
+                  "</div>" +
+                "</div>" +
+              "</div>";
     });
 }
 
