@@ -717,14 +717,14 @@ function createListElementsFromArray(a) {
 
 
 function createModals() {
-    var list = shufflePortfolioArray();
-    return list.map(function(el) {
+    var list = shufflePortfolioArray ();
+    return list.map(function (el) {
       return "<div id='modal-" + kebabCase(el.name) + "'> <div class='modal-inner'> <div class='modal-details'><h2>" + el.name + "</h2><a class='modal-site-link' href='" + el.url + "' target='_blank'>" + el.tidyurl + "</a><p class='line'>" + el.line + "</p><p class='copy'>" + el.copy + "</p> </div><div class='modal-image'><img class='modal-image-background' src='' data-src='" + el.image + "' /><a href='" + el.url + "' target='_blank'><img class='modal-image-logo' src='" + el.logo + "' /></a></div></div></div>";
     });
 }
 
 
-$(document).ready(function() {
+$(document).ready(function () {
     const listElements = createListElementsFromArray(shufflePortfolioArray());
     $('ul#companies').html(listElements);
     $('div#modals').html(createModals());
@@ -739,27 +739,26 @@ $(document).ready(function() {
     $("img").unveil();
     $("img").trigger("unveil");
 
-    $('.portfolio_item').on('click',function() {
-        setTimeout(function() {
+    $('.portfolio_item').on('click',function () {
+        setTimeout(function () {
             $(window).trigger('resize');
         }, 1);
     });
 
-    $('a.filter-button-group').on('click', function(e) {
+    $('a.filter-button-group').on ('click', function (e) {
         // Change #descriptor
         var descriptor = $(e.target).data('descriptorstring');
         $('#descriptor').empty();
         $('#descriptor').append(descriptor);
         // Hash
         var filterString = $(e.target).data('filter');
-        console.log(filterString);
         if (filterString != "*") {
             window.location.hash = filterString;
         } else {
             history.replaceState("", document.title, window.location.pathname);
         }
         // Do the filtering
-        $('.portfolio_item').each(function(idx, el) {
+        $('.portfolio_item').each(function (idx, el) {
             var fStrings = $(el).data('filter').split(' ');
             var shouldDisplay = fStrings.includes(filterString);
             if (filterString == "*") {
@@ -771,13 +770,13 @@ $(document).ready(function() {
 });
 
 
-$(".button").click(function() {
+$(".button").click(function () {
     $(".button").not(this).removeClass('is_checked');
     $(this).addClass("is_checked");
 });
 
 
-$(document).ready(function() {
+$(document).ready(function () {
     if (window.location.hash) {
         var hash = window.location.hash.substring(1);
         if (!hash) return;
@@ -804,26 +803,26 @@ $(document).ready(function() {
 });
 
 
-$(".onecolumn").click(function() {
+$(".onecolumn").click(function () {
     $("ul#companies").addClass("onecolumn").removeClass("twocolumns");
 });
-$(".twocolumns").click(function() {
+$(".twocolumns").click(function () {
     $("ul#companies").addClass("twocolumns").removeClass("onecolumn");
 });
 
 
 // initialise carousel
-$(document).ready(function(){
+$(document).ready(function () {
   $slideshow = $('.carousel').slick({
     dots: true,
   });
-  $('.slide').click(function() {
+  $('.slide').click(function () {
     $slideshow.slick('slickNext');
   });
   $slideshow2 = $('.carousel2').slick({
     dots: true,
   });
-  $('.slide2').click(function() {
+  $('.slide2').click(function () {
     $slideshow2.slick('slickNext');
   });
 });
