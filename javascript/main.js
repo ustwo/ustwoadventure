@@ -712,7 +712,7 @@ function shufflePortfolioArray() {
 function createListElementsFromArray(a) {
   return a.map(function (el) {
     return "<li class='portfolio_item' data-filter='" + el.tags + "'>" +
-             "<a target='_blank' href='#modal-" + kebabCase(el.name) + "'  rel='modal:open'>" + el.name + "</a>" +
+             "<a target='_blank' href='#modal-" + kebabCase(el.name) + "' rel='modal:open'>" + el.name + "</a>" +
            "</li>";
   });
 }
