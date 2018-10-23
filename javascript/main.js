@@ -449,7 +449,7 @@ const portfolioArray = [
     "image": "images/team_assets/curatelabs_image.jpg",
     "logo": "images/team_assets/curatelabs_logo.png",
     "line": "Design for wellbeing",
-    "copy": "We are a creative content studio that focus on sustainable, ethical design. Predominantly a creative duo, we also manage two annual publications; Curate Magazine & The Annual Digest. Other ventures include a series of travel guides, a sustainable cosmetics range and a platform connecting charities with passionate volunteers."
+    "copy": "A creative content studio that focus on sustainable and ethical design. Predominantly a creative duo, Curate also manage two annual publications; Curate Magazine & The Annual Digest. They are also behind the platform Wandering Through, a series of travel guides for conscious travellers."
   },
   // {
   //   "name": "Remote Zoo",
