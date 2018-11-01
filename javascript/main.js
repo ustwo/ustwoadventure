@@ -680,6 +680,16 @@ const portfolioArray = [
     "logo": "images/team_assets/pondermed_logo.png",
     "line": "Breaking down the big ideas in healthcare",
     "copy": "I am a doctor in Emergency Medicine and a podcaster. My podcast is a place where I explore interesting narratives in healthcare ranging from the important and inspiring to the controversial and bizarre."
+  },
+  {
+    "name": "Notepad",
+    "url": "https://notepadstudio.com/",
+    "tidyurl": "notepadstudio.com",
+    "tags": "playground",
+    "image": "images/team_assets/notepad_image.jpg",
+    "logo": "images/team_assets/notepad_logo.png",
+    "line": "We build brands for startups",
+    "copy": "We're a brand design studio based in Birmingham and London. Most of the world’s best ideas start life as a quick sketch or scribble in a notepad. It's our mission to find the world’s best business ideas and develop them into brands that challenge the status quo and move the world forward."
   }
 ];
 
