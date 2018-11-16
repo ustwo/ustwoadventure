@@ -697,7 +697,7 @@ const portfolioArray = [
     "tidyurl": "wholesome.design",
     "tags": "playground",
     "image": "images/team_assets/wholesome_image.png",
-    "logo": "",
+    "logo": "images/team_assets/wholesome_logo.png",
     "line": "Experiments for living well with technology",
     "copy": "We're a studio learning how we live well with technology. Technologists haven't worked that out yet. Our experiments focus on balancing attention and intention. We experiment with our own ideas and work with startups to make theirs."
   }
