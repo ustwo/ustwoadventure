@@ -692,7 +692,7 @@ const portfolioArray = [
     "copy": "We're a brand design studio based in Birmingham and London. Most of the world’s best ideas start life as a quick sketch or scribble in a notepad. It's our mission to find the world’s best business ideas and develop them into brands that challenge the status quo and move the world forward."
   },
   {
-    "name": "The Wholesome Tech Company",
+    "name": "Wholesome Tech Co",
     "url": "https://www.wholesome.design",
     "tidyurl": "wholesome.design",
     "tags": "playground",
