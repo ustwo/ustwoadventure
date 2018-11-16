@@ -690,6 +690,16 @@ const portfolioArray = [
     "logo": "images/team_assets/notepad_logo.png",
     "line": "We build brands for startups",
     "copy": "We're a brand design studio based in Birmingham and London. Most of the world’s best ideas start life as a quick sketch or scribble in a notepad. It's our mission to find the world’s best business ideas and develop them into brands that challenge the status quo and move the world forward."
+  },
+  {
+    "name": "The Wholesome Tech Company",
+    "url": "https://www.wholesome.design",
+    "tidyurl": "wholesome.design",
+    "tags": "playground",
+    "image": "images/team_assets/wholesome_image.png",
+    "logo": "",
+    "line": "Experiments for living well with technology",
+    "copy": "We're a studio learning how we live well with technology. Technologists haven't worked that out yet. Our experiments focus on balancing attention and intention. We experiment with our own ideas and work with startups to make theirs."
   }
 ];
 
