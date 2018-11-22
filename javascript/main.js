@@ -732,7 +732,7 @@ function shufflePortfolioArray() {
 function createListElementsFromArray(a) {
   return a.map(function (el) {
     return `<li class="portfolio_item" data-filter="${ el.tags }">
-             <a href="#modal-${ kebabCase(el.name) }" target="_blank" rel="modal:open"> ${ el.name } </a>
+              <a href="#modal-${ kebabCase(el.name) }" target="_blank" rel="modal:open"> ${ el.name } </a>
            </li>`;
   });
 }
@@ -815,7 +815,7 @@ $(document).ready(function () {
   if (window.location.hash) {
     var hash = window.location.hash.substring(1);
     if (!hash) return;
-    var array = $(".button-group").find(`[data-filter='${hash.toLowerCase()}']`);
+    var array = $(".button-group").find(`[data-filter='${ hash.toLowerCase() }']`);
     if (!array || !array.length) return;
     var el = array[0];
     if (!el) return;
