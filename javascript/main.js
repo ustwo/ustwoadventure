@@ -825,7 +825,7 @@ $(document).ready(function () {
     var query = window.location.search.substring(1);
     var parameters = query.split('&');
     var companyName, val;
-    for (var i=0; i<parameters.length;i++) {
+    for (var i=0; i<parameters.length; i++) {
       val = parameters[i].split('=');
       companyName = val[0];
     }
@@ -847,20 +847,20 @@ $(".twocolumns").click(function () {
 
 
 // initialise carousel
-$(document).ready(function () {
-  $slideshow = $('.carousel').slick({
-    dots: true,
-  });
-  $('.slide').click(function () {
-    $slideshow.slick('slickNext');
-  });
-  $slideshow2 = $('.carousel2').slick({
-    dots: true,
-  });
-  $('.slide2').click(function () {
-    $slideshow2.slick('slickNext');
-  });
-});
+// $(document).ready(function () {
+//   $slideshow = $('.carousel').slick({
+//     dots: true,
+//   });
+//   $('.slide').click(function () {
+//     $slideshow.slick('slickNext');
+//   });
+//   $slideshow2 = $('.carousel2').slick({
+//     dots: true,
+//   });
+//   $('.slide2').click(function () {
+//     $slideshow2.slick('slickNext');
+//   });
+// });
 
 
 console.log("hi! :)");
