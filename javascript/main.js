@@ -846,21 +846,4 @@ $(".twocolumns").click(function () {
 });
 
 
-// initialise carousel
-// $(document).ready(function () {
-//   $slideshow = $('.carousel').slick({
-//     dots: true,
-//   });
-//   $('.slide').click(function () {
-//     $slideshow.slick('slickNext');
-//   });
-//   $slideshow2 = $('.carousel2').slick({
-//     dots: true,
-//   });
-//   $('.slide2').click(function () {
-//     $slideshow2.slick('slickNext');
-//   });
-// });
-
-
 console.log("hi! :)");
