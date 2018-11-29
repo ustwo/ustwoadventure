@@ -61,16 +61,16 @@ const portfolioArray = [
     "line": "Grow your fanbase, mindfully",
     "copy": "We’re teaching music makers around the world how to market themselves effectively and track their growth with daily social media tips and data."
   },
-  {
-    "name": "Ayla",
-    "url": "http://www.aylafurniture.com/",
-    "tidyurl": "aylafurniture.com",
-    "tags": "playground",
-    "image": "images/team_assets/ayla_image.jpg",
-    "logo": "images/team_assets/ayla_logo.png",
-    "line": "Creating furniture without compromise",
-    "copy": "We’ve designed and made furniture in our studio since 2012, from bespoke pieces to our products we sell online. With influences ranging from deco interiors, mid-century furniture, and industrial design, all of our work has form, function and sustainability in mind. "
-  },
+  // {
+  //   "name": "Ayla",
+  //   "url": "http://www.aylafurniture.com/",
+  //   "tidyurl": "aylafurniture.com",
+  //   "tags": "playground",
+  //   "image": "images/team_assets/ayla_image.jpg",
+  //   "logo": "images/team_assets/ayla_logo.png",
+  //   "line": "Creating furniture without compromise",
+  //   "copy": "We’ve designed and made furniture in our studio since 2012, from bespoke pieces to our products we sell online. With influences ranging from deco interiors, mid-century furniture, and industrial design, all of our work has form, function and sustainability in mind. "
+  // },
   {
     "name": "Easle",
     "url": "https://www.easle.co",
