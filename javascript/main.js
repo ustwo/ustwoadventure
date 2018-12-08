@@ -705,144 +705,144 @@ const portfolioArray = [
 
 
 function kebabCase(string) {
-  if (typeof string !== "string") {
-    return string;
-  }
-  return string
-    .trim()
-    .replace(/\W|[_]/g, "-")
-    .replace(/-{2,}/, "-")
-    .toLowerCase();
+    if (typeof string !== "string") {
+        return string;
+    }
+    return string
+        .trim()
+        .replace(/\W|[_]/g, "-")
+        .replace(/-{2,}/, "-")
+        .toLowerCase();
 }
 
 
 function shufflePortfolioArray() {
-  const a = portfolioArray;
-  var j, x, i;
-  for (i = a.length; i; i--) {
-    j = Math.floor(Math.random() * i);
-    x = a[i - 1];
-    a[i - 1] = a[j];
-    a[j] = x;
-  }
-  return a;
+    const a = portfolioArray;
+    var j, x, i;
+    for (i = a.length; i; i--) {
+        j = Math.floor(Math.random() * i);
+        x = a[i - 1];
+        a[i - 1] = a[j];
+        a[j] = x;
+    }
+    return a;
 }
 
 
 function createListElementsFromArray(a) {
-  return a.map(function (el) {
-    return `<li class="portfolio_item" data-filter="${ el.tags }">
-                <a href="#modal-${ kebabCase(el.name) }" target="_blank" rel="modal:open"> ${ el.name } </a>
-           </li>`;
-  });
+    return a.map(function (el) {
+        return `<li class="portfolio_item" data-filter="${ el.tags }">
+                    <a href="#modal-${ kebabCase(el.name) }" target="_blank" rel="modal:open"> ${ el.name } </a>
+               </li>`;
+    });
 }
 
 
 function createModals() {
-  var list = shufflePortfolioArray ();
-  return list.map(function (el) {
-    return `<div id="modal-${ kebabCase(el.name) }">
-                <div class="modal-inner">
-                    <div class="modal-details">
-                        <h2>${ el.name }</h2>
-                        <a class="modal-site-link" href="${ el.url }" target="_blank">${ el.tidyurl }</a>
-                        <p class="line">${ el.line }</p>
-                        <p class="copy">${ el.copy }</p>
+    var list = shufflePortfolioArray ();
+    return list.map(function (el) {
+        return `<div id="modal-${ kebabCase(el.name) }">
+                    <div class="modal-inner">
+                        <div class="modal-details">
+                            <h2>${ el.name }</h2>
+                            <a class="modal-site-link" href="${ el.url }" target="_blank">${ el.tidyurl }</a>
+                            <p class="line">${ el.line }</p>
+                            <p class="copy">${ el.copy }</p>
+                        </div>
+                        <div class="modal-image">
+                            <img class="modal-image-background" src="" data-src="${ el.image }"/>
+                            <a href="${ el.url }" target="_blank"> <img class="modal-image-logo" src="${ el.logo }"/> </a>
+                        </div>
                     </div>
-                    <div class="modal-image">
-                        <img class="modal-image-background" src="" data-src="${ el.image }"/>
-                        <a href="${ el.url }" target="_blank"> <img class="modal-image-logo" src="${ el.logo }"/> </a>
-                    </div>
-                </div>
-            </div>`;
-    });
+                </div>`;
+      });
 }
 
 
 $(document).ready(function () {
-  const listElements = createListElementsFromArray(shufflePortfolioArray());
-  $('ul#companies').html(listElements);
-  $('div#modals').html(createModals());
+    const listElements = createListElementsFromArray(shufflePortfolioArray());
+    $('ul#companies').html(listElements);
+    $('div#modals').html(createModals());
 
-  $('ul li a').click(function (e) {
-      let id = $(this).attr('href');
-          id = id.split('#modal-');
-          id =  id[1];
-      history.replaceState("", document.title, window.location.pathname + "?" + id);
+    $('ul li a').click(function (e) {
+        let id = $(this).attr('href');
+            id = id.split('#modal-');
+            id =  id[1];
+        history.replaceState("", document.title, window.location.pathname + "?" + id);
     });
 
-  $("img").unveil();
-  $("img").trigger("unveil");
+    $("img").unveil();
+    $("img").trigger("unveil");
 
-  $('.portfolio_item').on('click',function () {
-    setTimeout(function () {
-      $(window).trigger('resize');
-    }, 1);
-  });
-
-  $('a.filter-button-group').on ('click', function (e) {
-    // Change #descriptor
-    var descriptor = $(e.target).data('descriptorstring');
-    $('#descriptor').empty();
-    $('#descriptor').append(descriptor);
-    // Hash
-    var filterString = $(e.target).data('filter');
-    if (filterString != "*") {
-      window.location.hash = filterString;
-    } else {
-      history.replaceState("", document.title, window.location.pathname);
-    }
-    // Do the filtering
-    $('.portfolio_item').each(function (idx, el) {
-      var fStrings = $(el).data('filter').split(' ');
-      var shouldDisplay = fStrings.includes(filterString);
-      if (filterString == "*") {
-          shouldDisplay = true;
-      }
-      $(el).css('display', (shouldDisplay == true ? 'block' : 'none'));
+    $('.portfolio_item').on('click',function () {
+        setTimeout(function () {
+            $(window).trigger('resize');
+        }, 1);
     });
-  });
+
+    $('a.filter-button-group').on ('click', function (e) {
+        // Change #descriptor
+        var descriptor = $(e.target).data('descriptorstring');
+        $('#descriptor').empty();
+        $('#descriptor').append(descriptor);
+        // Hash
+        var filterString = $(e.target).data('filter');
+        if (filterString != "*") {
+            window.location.hash = filterString;
+        } else {
+            history.replaceState("", document.title, window.location.pathname);
+        }
+        // Do the filtering
+        $('.portfolio_item').each(function (idx, el) {
+            var fStrings = $(el).data('filter').split(' ');
+            var shouldDisplay = fStrings.includes(filterString);
+            if (filterString == "*") {
+                shouldDisplay = true;
+            }
+            $(el).css('display', (shouldDisplay == true ? 'block' : 'none'));
+        });
+    });
 });
 
 
 $(".button").click(function () {
-  $(".button").not(this).removeClass('is_checked');
-  $(this).addClass("is_checked");
+    $(".button").not(this).removeClass('is_checked');
+    $(this).addClass("is_checked");
 });
 
 
 $(document).ready(function () {
-  if (window.location.hash) {
-    var hash = window.location.hash.substring(1);
-    if (!hash) return;
-    var array = $(".button-group").find(`[data-filter='${hash.toLowerCase()}']`);
-    if (!array || !array.length) return;
-    var el = array[0];
-    if (!el) return;
-    el.click();
-  }
-  if (window.location.search) {
-    var query = window.location.search.substring(1);
-    var parameters = query.split('&');
-    var companyName, val;
-    for (var i=0; i<parameters.length; i++) {
-      val = parameters[i].split('=');
-      companyName = val[0];
+    if (window.location.hash) {
+      var hash = window.location.hash.substring(1);
+        if (!hash) return;
+        var array = $(".button-group").find(`[data-filter='${hash.toLowerCase()}']`);
+        if (!array || !array.length) return;
+        var el = array[0];
+        if (!el) return;
+        el.click();
     }
-    if (val[0] == 'team') {
-      companyName = val[1];
+    if (window.location.search) {
+        var query = window.location.search.substring(1);
+        var parameters = query.split('&');
+        var companyName, val;
+        for (var i=0; i<parameters.length; i++) {
+            val = parameters[i].split('=');
+            companyName = val[0];
+        }
+        if (val[0] == 'team') {
+            companyName = val[1];
+        }
+        if (!companyName) return;
+        $('#modal-' + companyName ).modal();
     }
-    if (!companyName) return;
-    $('#modal-' + companyName ).modal();
-  }
 });
 
 
 $(".onecolumn").click(function () {
-  $("ul#companies").addClass("onecolumn").removeClass("twocolumns");
+    $("ul#companies").addClass("onecolumn").removeClass("twocolumns");
 });
 $(".twocolumns").click(function () {
-  $("ul#companies").addClass("twocolumns").removeClass("onecolumn");
+    $("ul#companies").addClass("twocolumns").removeClass("onecolumn");
 });
 
 
