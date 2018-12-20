@@ -716,8 +716,7 @@ function kebabCase(string) {
 }
 
 
-function shufflePortfolioArray() {
-    const a = portfolioArray;
+function shuffle(a) {
     var j, x, i;
     for (i = a.length; i; i--) {
         j = Math.floor(Math.random() * i);
@@ -729,42 +728,42 @@ function shufflePortfolioArray() {
 }
 
 
-function createListElementsFromArray(a) {
-    return a.map(function (el) {
+function createList(a) {
+    return a.map(function(el) {
         return `<li class="portfolio_item" data-filter="${ el.tags }">
-                    <a href="#modal-${ kebabCase(el.name) }" target="_blank" rel="modal:open"> ${ el.name } </a>
+                  <a href="#modal-${ kebabCase(el.name) }" target="_blank" rel="modal:open"> ${ el.name }</a>
                </li>`;
     });
 }
 
 
 function createModals() {
-    var list = shufflePortfolioArray ();
-    return list.map(function (el) {
+    const list = portfolioArray;
+    return list.map(function(el) {
         return `<div id="modal-${ kebabCase(el.name) }">
-                    <div class="modal-inner">
-                        <div class="modal-details">
-                            <h2>${ el.name }</h2>
-                            <a class="modal-site-link" href="${ el.url }" target="_blank">${ el.tidyurl }</a>
-                            <p class="line">${ el.line }</p>
-                            <p class="copy">${ el.copy }</p>
-                        </div>
-                        <div class="modal-image">
-                            <img class="modal-image-background" src="" data-src="${ el.image }"/>
-                            <a href="${ el.url }" target="_blank"> <img class="modal-image-logo" src="${ el.logo }"/> </a>
-                        </div>
+                  <div class="modal-inner">
+                    <div class="modal-details">
+                      <h2>${ el.name }</h2>
+                      <a class="modal-site-link" href="${ el.url }" target="_blank">${ el.tidyurl }</a>
+                      <p class="line">${ el.line }</p>
+                      <p class="copy">${ el.copy }</p>
                     </div>
+                    <div class="modal-image">
+                      <img class="modal-image-background" src="" data-src="${ el.image }"/>
+                      <a href="${ el.url }" target="_blank"> <img class="modal-image-logo" src="${ el.logo }"/> </a>
+                    </div>
+                  </div>
                 </div>`;
       });
 }
 
 
-$(document).ready(function () {
-    const listElements = createListElementsFromArray(shufflePortfolioArray());
+$(document).ready(function() {
+    const listElements = createList(shuffle(portfolioArray));
     $('ul#companies').html(listElements);
     $('div#modals').html(createModals());
 
-    $('ul li a').click(function (e) {
+    $('ul li a').click(function(e) {
         let id = $(this).attr('href');
             id = id.split('#modal-');
             id =  id[1];
@@ -774,28 +773,28 @@ $(document).ready(function () {
     $("img").unveil();
     $("img").trigger("unveil");
 
-    $('.portfolio_item').on('click',function () {
-        setTimeout(function () {
+    $('.portfolio_item').on('click',function() {
+        setTimeout(function() {
             $(window).trigger('resize');
         }, 1);
     });
 
-    $('a.filter-button-group').on ('click', function (e) {
+    $('a.filter-button-group').on ('click', function(e) {
         // Change #descriptor
-        var descriptor = $(e.target).data('descriptorstring');
+        const descriptor = $(e.target).data('descriptorstring');
         $('#descriptor').empty();
         $('#descriptor').append(descriptor);
         // Hash
-        var filterString = $(e.target).data('filter');
+        const filterString = $(e.target).data('filter');
         if (filterString != "*") {
             window.location.hash = filterString;
         } else {
             history.replaceState("", document.title, window.location.pathname);
         }
         // Do the filtering
-        $('.portfolio_item').each(function (idx, el) {
-            var fStrings = $(el).data('filter').split(' ');
-            var shouldDisplay = fStrings.includes(filterString);
+        $('.portfolio_item').each(function(idx, el) {
+            const fStrings = $(el).data('filter').split(' ');
+            let shouldDisplay = fStrings.includes(filterString);
             if (filterString == "*") {
                 shouldDisplay = true;
             }
@@ -805,13 +804,13 @@ $(document).ready(function () {
 });
 
 
-$(".button").click(function () {
+$(".button").click(function() {
     $(".button").not(this).removeClass('is_checked');
     $(this).addClass("is_checked");
 });
 
 
-$(document).ready(function () {
+$(document).ready(function() {
     if (window.location.hash) {
       var hash = window.location.hash.substring(1);
         if (!hash) return;
@@ -838,10 +837,10 @@ $(document).ready(function () {
 });
 
 
-$(".onecolumn").click(function () {
+$(".onecolumn").click(function() {
     $("ul#companies").addClass("onecolumn").removeClass("twocolumns");
 });
-$(".twocolumns").click(function () {
+$(".twocolumns").click(function() {
     $("ul#companies").addClass("twocolumns").removeClass("onecolumn");
 });
 
