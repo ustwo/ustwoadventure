@@ -760,12 +760,12 @@ function createModals() {
 
 $(document).ready(function() {
     const listElements = createList(shuffle(portfolioArray));
-    $('ul#companies').html(listElements);
-    $('div#modals').html(createModals());
+    $("ul#companies").html(listElements);
+    $("div#modals").html(createModals());
 
-    $('ul li a').click(function(e) {
-        let id = $(this).attr('href');
-            id = id.split('#modal-');
+    $("ul li a").click(function(e) {
+        let id = $(this).attr("href");
+            id = id.split("#modal-");
             id =  id[1];
         history.replaceState("", document.title, window.location.pathname + "?" + id);
     });
@@ -773,40 +773,38 @@ $(document).ready(function() {
     $("img").unveil();
     $("img").trigger("unveil");
 
-    $('.portfolio_item').on('click',function() {
+    $(".portfolio_item").on("click",function() {
         setTimeout(function() {
-            $(window).trigger('resize');
+            $(window).trigger("resize");
         }, 1);
     });
 
-    $('a.filter-button-group').on ('click', function(e) {
+    $("a.filter-button-group").on ("click", function(e) {
         // Change #descriptor
-        const descriptor = $(e.target).data('descriptorstring');
-        $('#descriptor').empty();
-        $('#descriptor').append(descriptor);
+        const descriptor = $(e.target).data("descriptorstring");
+        $("#descriptor").html(descriptor);
         // Hash
-        const filterString = $(e.target).data('filter');
+        const filterString = $(e.target).data("filter");
         if (filterString != "*") {
             window.location.hash = filterString;
         } else {
             history.replaceState("", document.title, window.location.pathname);
         }
         // Do the filtering
-        $('.portfolio_item').each(function(idx, el) {
-            const fStrings = $(el).data('filter').split(' ');
+        $(".portfolio_item").each(function(idx, el) {
+            const fStrings = $(el).data("filter").split(" ");
             let shouldDisplay = fStrings.includes(filterString);
             if (filterString == "*") {
                 shouldDisplay = true;
             }
-            $(el).css('display', (shouldDisplay == true ? 'block' : 'none'));
+            $(el).css("display", (shouldDisplay == true ? "block" : "none"));
         });
     });
 });
 
 
 $(".button").click(function() {
-    $(".button").not(this).removeClass('is_checked');
-    $(this).addClass("is_checked");
+    $(this).addClass("is_checked").siblings().removeClass("is_checked");
 });
 
 
@@ -822,17 +820,17 @@ $(document).ready(function() {
     }
     if (window.location.search) {
         var query = window.location.search.substring(1);
-        var parameters = query.split('&');
+        var parameters = query.split("&");
         var companyName, val;
         for (var i=0; i<parameters.length; i++) {
-            val = parameters[i].split('=');
+            val = parameters[i].split("=");
             companyName = val[0];
         }
-        if (val[0] == 'team') {
+        if (val[0] == "team") {
             companyName = val[1];
         }
         if (!companyName) return;
-        $('#modal-' + companyName ).modal();
+        $("#modal-" + companyName).modal();
     }
 });
 
