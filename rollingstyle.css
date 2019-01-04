@@ -1,0 +1,56 @@
+.head {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 0.9;
+}
+
+#floorcopy {
+  width: 75%;
+  margin: 30px auto 30px auto;
+}
+
+.copy {
+  padding-top: 25px;
+  line-height: 1.1;
+  font-size: 22px;
+}
+
+.copy a {
+  text-decoration: underline;
+}
+
+.subtitle {
+  padding-top: 25px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+@media (max-width: 800px) {
+  #floorcopy {
+    width: 100%;
+    padding-right: 0;
+  }
+  .head {
+    font-size: 38px;
+    line-height: 32px;
+  }
+  .copy {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .head {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 320px) {
+  .head {
+    font-size: 30px;
+  }
+}
