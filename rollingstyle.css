@@ -14,7 +14,7 @@
 }
 
 .copy {
-  padding-top: 20px;
+  padding-top: 25px;
   line-height: 1.1;
   font-size: 22px;
 }
@@ -28,7 +28,7 @@
   font-size: 22px;
   font-weight: bold;
   color: #333;
-  margin-bottom: -5px;
+  margin-bottom: -10px;
 }
 
 .separator.thin {
@@ -49,6 +49,7 @@
     margin-top: 20px;
   }
   .copy {
+    padding-top: 20px;
     font-size: 20px;
   }
   .subtitle {
