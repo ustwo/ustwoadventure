@@ -28,6 +28,12 @@
   font-size: 22px;
   font-weight: bold;
   color: #333;
+  margin-bottom: -5px;
+}
+
+.separator.thin {
+  height: 2px;
+  margin: 30px 0 0 0;
 }
 
 
@@ -43,11 +49,14 @@
     margin-top: 20px;
   }
   .copy {
-    padding-top: 20px;
     font-size: 20px;
   }
   .subtitle {
     font-size: 20px;
+  }
+  .separator.thin {
+    height: 2px;
+    margin: 30px 0 30px 0;
   }
 }
 
@@ -59,10 +68,10 @@
   #floorcopy {
     margin: 0 auto 0 auto;
   }
-.copy {
+  .copy {
     font-size: 18px;
   }
-.subtitle {
+  .subtitle {
     font-size: 18px;
   }
 }
