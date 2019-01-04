@@ -36,6 +36,10 @@
   margin: 30px 0 0 0;
 }
 
+span.date {
+  font-size: 28px;
+}
+
 
 @media (max-width: 800px) {
   #floorcopy {
@@ -59,6 +63,9 @@
     height: 2px;
     margin: 30px 0 30px 0;
   }
+  span.date {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -74,5 +81,8 @@
   }
   .subtitle {
     font-size: 18px;
+  }
+  span.date {
+    font-size: 20px;
   }
 }
