@@ -92,12 +92,6 @@ ul#companies li a {
 ul#companies li a:hover {
   background: #f32d94;
   color: white;
-  /* -webkit-text-stroke: 1px;
-  -webkit-text-fill-color: transparent;
-  -moz-text-stroke: 1px;
-  -moz-text-fill-color: transparent;
-  -ms-text-stroke: 1px;
-  -ms-text-fill-color: transparent; */
 }
 
 
