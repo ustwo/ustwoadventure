@@ -61,16 +61,6 @@ const portfolioArray = [
     line: "Grow your fanbase, mindfully",
     copy: "We’re teaching music makers around the world how to market themselves effectively and track their growth with daily social media tips and data."
   },
-  // {
-  //   name: "Ayla",
-  //   url: "http://www.aylafurniture.com/",
-  //   tidyurl: "aylafurniture.com",
-  //   tags: "playground",
-  //   image: "images/team_assets/ayla_image.jpg",
-  //   logo: "images/team_assets/ayla_logo.png",
-  //   line: "Creating furniture without compromise",
-  //   copy: "We’ve designed and made furniture in our studio since 2012, from bespoke pieces to our products we sell online. With influences ranging from deco interiors, mid-century furniture, and industrial design, all of our work has form, function and sustainability in mind. "
-  // },
   {
     name: "Easle",
     url: "https://www.easle.co",
@@ -321,16 +311,6 @@ const portfolioArray = [
     line: "Solving problems by design",
     copy: "I design and build products that solve problems, splitting my time between own ventures, and projects I care about for clients."
   },
-  // {
-  //   name: "Gather Data",
-  //   url: "https://gatherdata.co/",
-  //   tidyurl: "gatherdata.co",
-  //   tags: "",
-  //   image: "images/team_assets/gather_image.jpg",
-  //   logo: "images/team_assets/gather_logo.png",
-  //   line: "Data integrations, designed for developers",
-  //   copy: "We help enterprises integrate disparate data across their organization. Our product is is an API integration layer that allows you to create complex pipelines like authentication for your customers, and bring all your data into one place."
-  // },
   {
     name: "OH",
     url: "https://ohthisway.co.uk/",
@@ -361,26 +341,6 @@ const portfolioArray = [
     line: "Doing Good, Feeling Good",
     copy: "Our mission is to provide a sustainable source of funding for exceptional small charities working with young people. We believe charity needs a fresh approach. Giving shouldn't mean hassle and guilt for people who just want to help out, so we’ve created a platform and community that’s different."
   },
-  // {
-  //   name: "Grae Matta Foundation",
-  //   url: "http://graematta.com/",
-  //   tidyurl: "graematta.com",
-  //   tags: "playground",
-  //   image: "images/team_assets/graematta_image.jpg",
-  //   logo: "images/team_assets/graematta_logo.png",
-  //   line: "Sustainable mental health initiatives",
-  //   copy: "We're a non-profit dedicated to improving mental health in higher education & the workplace, through collaboration, research and awareness."
-  // },
-  // {
-  //   name: "No Mayo",
-  //   url: "http://www.no-mayo.digital/",
-  //   tidyurl: "no-mayo.digital",
-  //   tags: "",
-  //   image: "images/team_assets/nomayo_image.jpg",
-  //   logo: "images/team_assets/nomayo_logo.png",
-  //   line: "Software development studio",
-  //   copy: "We build experiential technology and custom software for our clients and ourselves."
-  // },
   {
     name: "Morrama",
     url: "http://www.morrama.com/",
@@ -435,7 +395,7 @@ const portfolioArray = [
     name: "UNRD",
     url: "http://unrd.co/",
     tidyurl: "unrd.co",
-    tags: "playground",
+    tags: "",
     image: "images/team_assets/unrd_image.jpg",
     logo: "images/team_assets/unrd_logo.png",
     line: "A new type of immersive entertainment experience",
@@ -451,26 +411,6 @@ const portfolioArray = [
     line: "Design for wellbeing",
     copy: "A creative content studio that focus on sustainable and ethical design. Predominantly a creative duo, Curate also manage two annual publications; Curate Magazine & The Annual Digest. They are also behind the platform Wandering Through, a series of travel guides for conscious travellers."
   },
-  // {
-  //   name: "Remote Zoo",
-  //   url: "https://www.remotezoo.com/",
-  //   tidyurl: "remotezoo.com",
-  //   tags: "playground",
-  //   image: "images/team_assets/remotezoo_image.jpg",
-  //   logo: "images/team_assets/remotezoo_logo.png",
-  //   line: "Finding people jobs to do anywhere",
-  //   copy: "We’re helping people get out of the 9-to-5 grind and match them with meaningful work that can be done anywhere: at home, in a coffee shop or at a beautiful beach bar overlooking crystal clear waves."
-  // },
-  // {
-  //   name: "Tom Gaul",
-  //   url: "http://www.tomgaul.com/",
-  //   tidyurl: "tomgaul.com",
-  //   tags: "",
-  //   image: "images/team_assets/tomgaul_image.jpg",
-  //   logo: "",
-  //   line: "Design and illustration",
-  //   copy: "I’m a designer and illustrator, working for a number of clients. At the same time I’m constantly filling my sketchbook and illustrating doodles of the characters you find in London, which I’ve created a book of."
-  // },
   {
     name: "Design Club",
     url: "http://designclub.org.uk/",
@@ -571,16 +511,6 @@ const portfolioArray = [
     line: "We design the future",
     copy: "We're a design led R&D technology company. Our human-centred approach brings together tech and humanity to create products with a positive impact. Currently pivoting to scale our Smart City and Digital Health applications."
   },
-  // {
-  //   name: "Soundwaves",
-  //   url: "https://soundwavesartfoundation.com/",
-  //   tidyurl: "soundwavesartfoundation.com",
-  //   tags: "playground",
-  //   image: "images/team_assets/soundwaves_image.jpg",
-  //   logo: "images/team_assets/soundwaves_logo.png",
-  //   line: "Song inspired art",
-  //   copy: "Limited edition art created by digitally manipulating, shaping and coloring sound waves generated in the studio recording of legendary songs. signed by collaborating music icons and sold to benefit charitable causes."
-  // },
   {
     name: "Creative Conscience",
     url: "https://www.creativeconscience.org.uk/",
