@@ -704,42 +704,33 @@ const portfolioArray = [
 ];
 
 
-function kebabCase(string) {
-    if (typeof string !== "string") {
-        return string;
-    }
-    return string
-        .trim()
-        .replace(/\W|[_]/g, "-")
-        .replace(/-{2,}/, "-")
-        .toLowerCase();
-}
+const kebabCase = string => {
+    return string.replace(/([a-z])([A-Z])/g, "$1-$2")
+                 .replace(/\s+/g, '-')
+                 .toLowerCase();
+};
 
 
-function shuffle(a) {
-    var j, x, i;
-    for (i = a.length; i; i--) {
-        j = Math.floor(Math.random() * i);
-        x = a[i - 1];
-        a[i - 1] = a[j];
-        a[j] = x;
+const shuffle = a => {
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
     }
     return a;
-}
+};
 
 
-function createList(a) {
-    return a.map(function(el) {
+const createList = a => {
+    return a.map(el => {
         return `<li class="portfolio_item" data-filter="${ el.tags }">
                   <a href="#modal-${ kebabCase(el.name) }" target="_blank" rel="modal:open"> ${ el.name }</a>
                </li>`;
     });
-}
+};
 
 
-function createModals() {
-    const list = portfolioArray;
-    return list.map(function(el) {
+const createModals = a => {
+    return a.map(el => {
         return `<div id="modal-${ kebabCase(el.name) }">
                   <div class="modal-inner">
                     <div class="modal-details">
@@ -755,13 +746,12 @@ function createModals() {
                   </div>
                 </div>`;
       });
-}
+};
 
 
 $(document).ready(function() {
-    const listElements = createList(shuffle(portfolioArray));
-    $("ul#companies").html(listElements);
-    $("div#modals").html(createModals());
+    $("ul#companies").html(createList(shuffle(portfolioArray)));
+    $("div#modals").html(createModals(portfolioArray));
 
     $("ul li a").click(function(e) {
         let id = $(this).attr("href");
