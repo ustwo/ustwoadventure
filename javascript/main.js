@@ -710,7 +710,6 @@ const kebabCase = string => {
                  .toLowerCase();
 };
 
-
 const shuffle = a => {
     for (let i = a.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -719,15 +718,13 @@ const shuffle = a => {
     return a;
 };
 
-
 const createList = a => {
     return a.map(el => {
         return `<li class="portfolio_item" data-filter="${ el.tags }">
                   <a href="#modal-${ kebabCase(el.name) }" target="_blank" rel="modal:open"> ${ el.name }</a>
-               </li>`;
+                </li>`;
     });
 };
-
 
 const createModals = a => {
     return a.map(el => {
@@ -750,10 +747,14 @@ const createModals = a => {
 
 
 $(document).ready(function() {
-    $("ul#companies").html(createList(shuffle(portfolioArray)));
-    $("div#modals").html(createModals(portfolioArray));
 
-    $("ul li a").click(function(e) {
+    const companiesList = createList(shuffle(portfolioArray));
+    const companiesModals = createModals(portfolioArray);
+
+    $("ul#companies").html(companiesList);
+    $("div#modals").html(companiesModals);
+
+    $("ul li a").click(function() {
         let id = $(this).attr("href");
             id = id.split("#modal-");
             id =  id[1];
@@ -763,7 +764,7 @@ $(document).ready(function() {
     $("img").unveil();
     $("img").trigger("unveil");
 
-    $(".portfolio_item").on("click",function() {
+    $(".portfolio_item").on("click", function() {
         setTimeout(function() {
             $(window).trigger("resize");
         }, 1);
@@ -790,6 +791,7 @@ $(document).ready(function() {
             $(el).css("display", (shouldDisplay == true ? "block" : "none"));
         });
     });
+
 });
 
 
@@ -831,6 +833,3 @@ $(".onecolumn").click(function() {
 $(".twocolumns").click(function() {
     $("ul#companies").addClass("twocolumns").removeClass("onecolumn");
 });
-
-
-console.log("hi! :)");
