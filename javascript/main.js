@@ -18,7 +18,7 @@ const portfolioArray = [
     tags: "playground",
     image: "images/team_assets/combo_image.jpg",
     logo: "images/team_assets/combo_logo.png",
-    line: "An AR studio",
+    line: "An AR games studio",
     copy: "Focusing on developing AR content using modern frameworks, we’ve learned lots building experiments and are now making mobile games."
   },
   // {
@@ -687,7 +687,7 @@ $(document).ready(function() {
     $("ul li a").click(function() {
         let id = $(this).attr("href");
             id = id.split("#modal-");
-            id =  id[1];
+            id = id[1];
         history.replaceState("", document.title, window.location.pathname + "?" + id);
     });
 
