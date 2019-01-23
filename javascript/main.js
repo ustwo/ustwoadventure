@@ -648,32 +648,29 @@ const shuffle = a => {
     return a;
 };
 
-const createList = a => {
-    return a.map(el => {
-        return `<li class="portfolio_item" data-filter="${ el.tags }">
-                  <a href="#modal-${ kebabCase(el.name) }" target="_blank" rel="modal:open"> ${ el.name }</a>
-                </li>`;
-    });
-};
+const createList = a => a.map(obj => {
+    return `<li class="portfolio_item" data-filter="${ obj.tags }">
+              <a href="#modal-${ kebabCase(obj.name) }" target="_blank" rel="modal:open"> ${ obj.name }</a>
+            </li>`;
+});
 
-const createModals = a => {
-    return a.map(el => {
-        return `<div id="modal-${ kebabCase(el.name) }">
-                  <div class="modal-inner">
-                    <div class="modal-details">
-                      <h2>${ el.name }</h2>
-                      <a class="modal-site-link" href="${ el.url }" target="_blank">${ el.tidyurl }</a>
-                      <p class="line">${ el.line }</p>
-                      <p class="copy">${ el.copy }</p>
-                    </div>
-                    <div class="modal-image">
-                      <img class="modal-image-background" src="" data-src="${ el.image }"/>
-                      <a href="${ el.url }" target="_blank"> <img class="modal-image-logo" src="${ el.logo }"/> </a>
-                    </div>
-                  </div>
-                </div>`;
-      });
-};
+
+const createModals = a => a.map(obj => {
+    return `<div id="modal-${ kebabCase(obj.name) }">
+              <div class="modal-inner">
+                <div class="modal-details">
+                  <h2>${ obj.name }</h2>
+                  <a class="modal-site-link" href="${ obj.url }" target="_blank">${ obj.tidyurl }</a>
+                  <p class="line">${ obj.line }</p>
+                  <p class="copy">${ obj.copy }</p>
+                </div>
+                <div class="modal-image">
+                  <img class="modal-image-background" src="" data-src="${ obj.image }"/>
+                  <a href="${ obj.url }" target="_blank"> <img class="modal-image-logo" src="${ obj.logo }"/> </a>
+                </div>
+              </div>
+            </div>`;
+});
 
 
 $(document).ready(function() {
