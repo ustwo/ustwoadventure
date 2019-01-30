@@ -1,5 +1,3 @@
-/* jshint esversion: 6 */
-
 const portfolioArray = [
   {
     name: "Tribe",
@@ -729,7 +727,7 @@ $(".button").click(function() {
 
 $(document).ready(function() {
     if (window.location.hash) {
-      var hash = window.location.hash.substring(1);
+        var hash = window.location.hash.substring(1);
         if (!hash) return;
         var array = $(".button-group").find(`[data-filter='${hash.toLowerCase()}']`);
         if (!array || !array.length) return;
