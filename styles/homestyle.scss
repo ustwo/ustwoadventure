@@ -1,0 +1,71 @@
+.home-content {
+    h1 {
+        margin: 0 0 140px auto;
+        max-width: 685px;
+    }
+
+    .top-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .path-for-companies {
+        h2 {
+            max-width: 420px
+        }
+
+        p {
+            max-width: 580px
+        }
+    }
+
+    .latest-investment {
+        margin-top: 100px;
+
+        p.tag {
+            margin-bottom: 8px;
+            margin-left: -20px;
+
+            font-size: 16px;
+            line-height: 1;
+            padding: 4px;
+            background-color: #f32d94;
+            color: #fff;
+            width: max-content;
+        }
+
+        img {
+            width: 350px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 64px;
+            -webkit-text-stroke: 1px;
+            -webkit-text-stroke-color: #f32d94;
+            -webkit-text-fill-color: transparent;
+
+            margin-top: -30px;
+            margin-bottom: 0;
+            text-align: right;
+
+            z-index: 2;
+        }
+
+        p.copy {
+            text-align: right;
+            max-width: 350px;
+        }
+
+        &:hover {
+            h1 {
+                -webkit-text-stroke: 1px;
+                -webkit-text-stroke-color: #fff;
+                -webkit-text-fill-color: #fff;
+                background-color: #f32d94;
+            }
+        }
+    }
+}
