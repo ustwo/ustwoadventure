@@ -109,36 +109,92 @@ header {
         $NUMBER_OF_LETTERS: 9;
 
         ul {
+            position: relative;
             margin: 0;
             list-style: none;
 
             transform-style: preserve-3d;
             animation: three-dimensions-circle 16s linear infinite;
-            position: relative;
-        }
 
-        li {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-
-            font-family: "futura-pt", futura, sans-serif;
-            font-size: 52px;
-            font-weight: bold;
-            color: #f32d94;
-
-            @for $i from 1 through $NUMBER_OF_LETTERS {
-                &:nth-child(#{$i}) {
-                    animation: circle-orbit-#{$i} 16s linear infinite;
+            @keyframes three-dimensions-circle {
+                0% {
+                    transform: rotateX(-100deg) rotate(0);
+                }
+                100% {
+                    transform: rotateX(-100deg) rotate(-360deg);
                 }
             }
 
-            -webkit-text-stroke: 1.2px;
-            -webkit-text-fill-color: #f32d94;
+            li {
+                position: absolute;
+                top: 50%;
+                left: 50%;
 
-            &:hover {
-                -webkit-text-stroke: 0px;
-                -webkit-text-fill-color: #f32d94;
+                font-family: "futura-pt", futura, sans-serif;
+                font-size: 52px;
+                font-weight: bold;
+                color: #f32d94;
+
+                -webkit-text-stroke: 1.2px;
+
+                &:hover {
+                    -webkit-text-stroke: 0px;
+                    -webkit-text-fill-color: #f32d94;
+                }
+
+                @for $i from 1 through $NUMBER_OF_LETTERS {
+                    &:nth-child(#{$i}) {
+                        transform: translate(-50%, -50%)
+                        rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
+                        translateY(-120px)
+                        rotateX(90deg);
+                    }
+                    @media (max-width: 860px) {
+                        &:nth-child(#{$i}) {
+                            transform: translate(-50%, -50%)
+                            rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
+                            translateY(-120px)
+                            rotateX(90deg);
+                        }
+                    }
+                }
+
+                @for $i from 1 through $NUMBER_OF_LETTERS {
+                    &:nth-child(#{$i}) {
+                        animation: circle-orbit-#{$i} 16s linear infinite;
+                    }
+                }
+
+                @for $i from 1 through 3 {
+                    &:nth-child(#{$i}) {
+                        -webkit-text-fill-color: #fff;
+                    }
+                    @keyframes circle-orbit-#{$i} {
+                        #{($i - 1) * (100 / ($NUMBER_OF_LETTERS / 2)) + 50}% {
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+                }
+                @for $i from 4 through 7 {
+                    &:nth-child(#{$i}) {
+                        -webkit-text-fill-color: transparent;
+                    }
+                    @keyframes circle-orbit-#{$i} {
+                        #{($i - 4) * (100 / ($NUMBER_OF_LETTERS / 2)) + 18}% {
+                            -webkit-text-fill-color: #fff;
+                        }
+                    }
+                }
+                @for $i from 8 through 9 {
+                    &:nth-child(#{$i}) {
+                        -webkit-text-fill-color: #fff;
+                    }
+                    @keyframes circle-orbit-#{$i} {
+                        #{($i - 8) * (100 / ($NUMBER_OF_LETTERS / 2)) + 6}% {
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+                }
             }
         }
 
@@ -149,40 +205,6 @@ header {
             img {
                 max-width: 80px;
                 transform: rotate(10deg);
-            }
-        }
-
-        @for $i from 1 through $NUMBER_OF_LETTERS {
-            li:nth-child(#{$i}) {
-                transform: translate(-50%, -50%)
-                rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
-                translateY(-120px)
-                rotateX(90deg);
-            }
-            @media (max-width: 860px) {
-                li:nth-child(#{$i}) {
-                    transform: translate(-50%, -50%)
-                    rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
-                    translateY(-120px)
-                    rotateX(90deg);
-                }
-            }
-        }
-
-        @keyframes three-dimensions-circle {
-            0% {
-                transform: rotateX(-100deg) rotate(0);
-            }
-            100% {
-                transform: rotateX(-100deg) rotate(-360deg);
-            }
-        }
-
-        @for $i from 1 through $NUMBER_OF_LETTERS {
-            @keyframes circle-orbit-#{$i} {
-                #{($i - 1) * (100 / ($NUMBER_OF_LETTERS / 2)) + 25}% {
-                    -webkit-text-fill-color: transparent;
-                }
             }
         }
 
