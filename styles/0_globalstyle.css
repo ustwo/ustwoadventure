@@ -111,7 +111,7 @@ header .logo li {
   font-weight: bold;
   color: #f32d94;
   -webkit-text-stroke: 1.2px;
-  -webkit-text-fill-color: #fff;
+  -webkit-text-fill-color: #f32d94;
 }
 
 header .logo li:nth-child(1) {
@@ -265,110 +265,56 @@ header .logo li:nth-child(9) {
 }
 
 @keyframes circle-orbit-1 {
-  11.11111% {
-    -webkit-text-fill-color: #fff;
-  }
-  -38.88889% {
+  25% {
     -webkit-text-fill-color: transparent;
-  }
-  -88.88889% {
-    -webkit-text-fill-color: #fff;
   }
 }
 
 @keyframes circle-orbit-2 {
-  22.22222% {
-    -webkit-text-fill-color: #fff;
-  }
-  -27.77778% {
+  47.22222% {
     -webkit-text-fill-color: transparent;
-  }
-  -77.77778% {
-    -webkit-text-fill-color: #fff;
   }
 }
 
 @keyframes circle-orbit-3 {
-  33.33333% {
-    -webkit-text-fill-color: #fff;
-  }
-  -16.66667% {
+  69.44444% {
     -webkit-text-fill-color: transparent;
-  }
-  -66.66667% {
-    -webkit-text-fill-color: #fff;
   }
 }
 
 @keyframes circle-orbit-4 {
-  44.44444% {
-    -webkit-text-fill-color: #fff;
-  }
-  -5.55556% {
+  91.66667% {
     -webkit-text-fill-color: transparent;
-  }
-  -55.55556% {
-    -webkit-text-fill-color: #fff;
   }
 }
 
 @keyframes circle-orbit-5 {
-  55.55556% {
-    -webkit-text-fill-color: #fff;
-  }
-  5.55556% {
+  113.88889% {
     -webkit-text-fill-color: transparent;
-  }
-  -44.44444% {
-    -webkit-text-fill-color: #fff;
   }
 }
 
 @keyframes circle-orbit-6 {
-  66.66667% {
-    -webkit-text-fill-color: #fff;
-  }
-  16.66667% {
+  136.11111% {
     -webkit-text-fill-color: transparent;
-  }
-  -33.33333% {
-    -webkit-text-fill-color: #fff;
   }
 }
 
 @keyframes circle-orbit-7 {
-  77.77778% {
-    -webkit-text-fill-color: #fff;
-  }
-  27.77778% {
+  158.33333% {
     -webkit-text-fill-color: transparent;
-  }
-  -22.22222% {
-    -webkit-text-fill-color: #fff;
   }
 }
 
 @keyframes circle-orbit-8 {
-  88.88889% {
-    -webkit-text-fill-color: #fff;
-  }
-  38.88889% {
+  180.55556% {
     -webkit-text-fill-color: transparent;
-  }
-  -11.11111% {
-    -webkit-text-fill-color: #fff;
   }
 }
 
 @keyframes circle-orbit-9 {
-  100% {
-    -webkit-text-fill-color: #fff;
-  }
-  50% {
+  202.77778% {
     -webkit-text-fill-color: transparent;
-  }
-  0% {
-    -webkit-text-fill-color: #fff;
   }
 }
 
