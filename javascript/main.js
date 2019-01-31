@@ -257,8 +257,8 @@ const footerADV = document.querySelectorAll("footer .left .ADV span");
 
 footerADV.forEach(letter => {
     letter.addEventListener("mouseover", () => {
-        const x = 25 * (Math.floor(Math.random() * 5)) - 50;
-        const y = 25 * (Math.floor(Math.random() * 5)) - 50;
+        const x = 10 * (Math.floor(Math.random() * 5)) - 10;
+        const y = 10 * (Math.floor(Math.random() * 5)) - 10;
 
         letter.style.transform = `translate(${x}px, ${y}px)`;
     });
