@@ -97,8 +97,80 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    img {
-        max-width: 230px;
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        width: 260px;
+        overflow: hidden;
+        transform: rotate(-10deg);
+
+        ul {
+            margin: 0;
+            list-style: none;
+
+            transform-style: preserve-3d;
+            animation: three-dimensions-circle 16s linear infinite;
+            position: relative;
+        }
+
+        li {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            font-family: "futura-pt", futura, sans-serif;
+            font-size: 52px;
+            font-weight: bold;
+            color: #f32d94;
+
+            -webkit-text-stroke: 1.2px;
+            -webkit-text-fill-color: #fff;
+
+            &:hover {
+                -webkit-text-stroke: 0px;
+                -webkit-text-fill-color: #f32d94;
+            }
+        }
+
+        a {
+            position: absolute;
+            top: 35%;
+
+            img {
+                max-width: 80px;
+                transform: rotate(10deg);
+            }
+        }
+
+        $NUMBER_OF_LETTERS: 9;
+        @for $i from 1 through $NUMBER_OF_LETTERS {
+            li:nth-child(#{$i}) {
+                transform: translate(-50%, -50%)
+                rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
+                translateY(-120px)
+                rotateX(90deg);
+            }
+            @media (max-width: 860px) {
+                li:nth-child(#{$i}) {
+                    transform: translate(-50%, -50%)
+                    rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
+                    translateY(-120px)
+                    rotateX(90deg);
+                }
+            }
+        }
+
+        @keyframes three-dimensions-circle {
+            0% {
+                transform: rotateX(-100deg) rotate(0);
+            }
+            100% {
+                transform: rotateX(-100deg) rotate(-360deg);
+            }
+        }
+
     }
 
     nav {
@@ -207,86 +279,6 @@ footer {
     }
 
 }
-
-
-
-
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    width: 260px;
-    overflow: hidden;
-    transform: rotate(-10deg);
-
-    ul {
-        margin: 0;
-        list-style: none;
-
-        transform-style: preserve-3d;
-        animation: three-dimensions-circle 16s linear infinite;
-        position: relative;
-    }
-
-    li {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-
-        font-family: "futura-pt", futura, sans-serif;
-        font-size: 52px;
-        font-weight: bold;
-        color: #f32d94;
-
-        -webkit-text-stroke: 1.2px;
-        -webkit-text-fill-color: #fff;
-
-        &:hover {
-            -webkit-text-stroke: 0px;
-            -webkit-text-fill-color: #f32d94;
-        }
-    }
-
-    a {
-        position: absolute;
-        top: 35%;
-
-        img {
-            max-width: 80px;
-            transform: rotate(10deg);
-        }
-    }
-
-    $NUMBER_OF_LETTERS: 9;
-    @for $i from 1 through $NUMBER_OF_LETTERS {
-        li:nth-child(#{$i}) {
-            transform: translate(-50%, -50%)
-            rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
-            translateY(-120px)
-            rotateX(90deg);
-        }
-        @media (max-width: 860px) {
-            li:nth-child(#{$i}) {
-                transform: translate(-50%, -50%)
-                rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
-                translateY(-120px)
-                rotateX(90deg);
-            }
-        }
-    }
-
-    @keyframes three-dimensions-circle {
-        0% {
-            transform: rotateX(-100deg) rotate(0);
-        }
-        100% {
-            transform: rotateX(-100deg) rotate(-360deg);
-        }
-    }
-
-}
-
 
 
 
