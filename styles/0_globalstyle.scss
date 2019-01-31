@@ -90,7 +90,7 @@ a.button {
 
 
 header {
-    margin: 65px 0 160px 0;
+    margin: 65px 0 170px 0;
 
     display: flex;
     flex-direction: row;
@@ -105,6 +105,8 @@ header {
         width: 260px;
         overflow: hidden;
         transform: rotate(-10deg);
+
+        $NUMBER_OF_LETTERS: 9;
 
         ul {
             margin: 0;
@@ -125,6 +127,12 @@ header {
             font-weight: bold;
             color: #f32d94;
 
+            @for $i from 1 through $NUMBER_OF_LETTERS {
+                &:nth-child(#{$i}) {
+                    animation: circle-orbit-#{$i} 16s linear infinite;
+                }
+            }
+
             -webkit-text-stroke: 1.2px;
             -webkit-text-fill-color: #fff;
 
@@ -144,7 +152,6 @@ header {
             }
         }
 
-        $NUMBER_OF_LETTERS: 9;
         @for $i from 1 through $NUMBER_OF_LETTERS {
             li:nth-child(#{$i}) {
                 transform: translate(-50%, -50%)
@@ -168,6 +175,20 @@ header {
             }
             100% {
                 transform: rotateX(-100deg) rotate(-360deg);
+            }
+        }
+
+        @for $i from 1 through $NUMBER_OF_LETTERS {
+            @keyframes circle-orbit-#{$i} {
+                #{$i * (100/$NUMBER_OF_LETTERS)}% {
+                    -webkit-text-fill-color: #fff;
+                }
+                #{$i * (100/$NUMBER_OF_LETTERS) - 50}% {
+                    -webkit-text-fill-color: transparent;
+                }
+                #{$i * (100/$NUMBER_OF_LETTERS) - 100}% {
+                    -webkit-text-fill-color: #fff;
+                }
             }
         }
 
