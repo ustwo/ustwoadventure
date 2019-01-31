@@ -8,64 +8,147 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
 
-    .path-for-companies {
-        h2 {
-            max-width: 420px
+        .path-for-companies {
+            h2 {
+                max-width: 420px
+            }
+
+            p {
+                max-width: 580px
+            }
         }
 
-        p {
-            max-width: 580px
-        }
-    }
+        .latest-investment {
+            margin-top: 120px;
 
-    .latest-investment {
-        margin-top: 100px;
+            p.tag {
+                margin-bottom: 8px;
+                margin-left: -25px;
 
-        p.tag {
-            margin-bottom: 8px;
-            margin-left: -20px;
-
-            font-size: 16px;
-            line-height: 1;
-            padding: 4px;
-            background-color: #f32d94;
-            color: #fff;
-            width: max-content;
-        }
-
-        img {
-            width: 350px;
-            height: 300px;
-            object-fit: cover;
-        }
-
-        h1 {
-            font-size: 64px;
-            -webkit-text-stroke: 1px;
-            -webkit-text-stroke-color: #f32d94;
-            -webkit-text-fill-color: transparent;
-
-            margin-top: -30px;
-            margin-bottom: 0;
-            text-align: right;
-
-            z-index: 2;
-        }
-
-        p.copy {
-            text-align: right;
-            max-width: 350px;
-        }
-
-        &:hover {
-            h1 {
-                -webkit-text-stroke: 1px;
-                -webkit-text-stroke-color: #fff;
-                -webkit-text-fill-color: #fff;
+                font-size: 16px;
+                line-height: 1;
+                padding: 4px;
                 background-color: #f32d94;
+                color: #fff;
+                width: max-content;
+            }
+
+            img {
+                width: 350px;
+                height: 300px;
+                object-fit: cover;
+            }
+
+            h1 {
+                font-size: 64px;
+                -webkit-text-stroke: 1.5px;
+                -webkit-text-stroke-color: #f32d94;
+                -webkit-text-fill-color: transparent;
+
+                width: max-content;
+                margin-top: -30px;
+                margin-bottom: 0;
+                text-align: right;
+            }
+
+            p.copy {
+                text-align: right;
+                max-width: 350px;
+            }
+
+            &:hover {
+                h1 {
+                    -webkit-text-stroke: 1px;
+                    -webkit-text-stroke-color: #fff;
+                    -webkit-text-fill-color: #fff;
+                    background-color: #f32d94;
+                }
             }
         }
     }
+
+    .our-portfolio {
+        margin:  auto 0 auto;
+
+        p {
+            max-width: 410px;
+        }
+    }
+
+    .portfolio-preview {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin: 20px auto 100px auto;
+
+        .portfolio-item {
+            &:nth-child(1) {
+                margin-top: 180px;
+            }
+            &:nth-child(2) {
+                margin-top: 55px;
+            }
+            &:nth-child(3) {
+                margin-top: 480px;
+            }
+            &:nth-child(4) {
+                margin-top: 310px;
+            }
+            &:nth-child(5) {
+                margin-top: -160px;
+            }
+
+            p.name {
+                font-size: 22px;
+                font-weight: 800;
+                color: #f32d94;
+                text-align: right;
+                text-transform: uppercase;
+            }
+
+            img {
+                margin: 3px 0 5px 0;
+
+                width: 230px;
+                height: 290px;
+                object-fit: cover;
+            }
+
+            p.copy {
+                max-width: 230px;
+            }
+
+            &:hover {
+                p.name {
+                    font-style: italic;
+                    color: #fff;
+                    background-color: #f32d94;
+                }
+            }
+        }
+    }
+
+    .bottom-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .collective-genius {
+            p {
+                max-width: 570px;
+            }
+        }
+
+        img {
+            margin-top: 100px;
+
+            width: 460px;
+            height: 275px;
+            object-fit: cover;
+        }
+    }
+
 }

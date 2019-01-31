@@ -248,19 +248,18 @@ const createModals = a => a.map(obj => {
 
 
 
-$(document).ready(function() {
 
-    const companiesList = createList(shuffle(portfolioArray));
-    const companiesModals = createModals(portfolioArray);
+const companiesList = createList(shuffle(portfolioArray));
+const companiesModals = createModals(portfolioArray);
 
-    $("ul#companies").html(companiesList);
-    $("div#modals").html(companiesModals);
 
-    $("ul li a").click(function() {
-        let id = $(this).attr("href");
-            id = id.split("#modal-");
-            id = id[1];
-        history.replaceState("", document.title, window.location.pathname + "?" + id);
+const footerADV = document.querySelectorAll("footer .left .ADV span");
+
+footerADV.forEach(letter => {
+    letter.addEventListener("mouseover", () => {
+        const x = 25 * (Math.floor(Math.random() * 5)) - 50;
+        const y = 25 * (Math.floor(Math.random() * 5)) - 50;
+
+        letter.style.transform = `translate(${x}px, ${y}px)`;
     });
-
 });

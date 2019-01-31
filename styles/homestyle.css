@@ -9,21 +9,21 @@
   justify-content: space-between;
 }
 
-.home-content .path-for-companies h2 {
+.home-content .top-row .path-for-companies h2 {
   max-width: 420px;
 }
 
-.home-content .path-for-companies p {
+.home-content .top-row .path-for-companies p {
   max-width: 580px;
 }
 
-.home-content .latest-investment {
-  margin-top: 100px;
+.home-content .top-row .latest-investment {
+  margin-top: 120px;
 }
 
-.home-content .latest-investment p.tag {
+.home-content .top-row .latest-investment p.tag {
   margin-bottom: 8px;
-  margin-left: -20px;
+  margin-left: -25px;
   font-size: 16px;
   line-height: 1;
   padding: 4px;
@@ -32,31 +32,109 @@
   width: max-content;
 }
 
-.home-content .latest-investment img {
+.home-content .top-row .latest-investment img {
   width: 350px;
   height: 300px;
   object-fit: cover;
 }
 
-.home-content .latest-investment h1 {
+.home-content .top-row .latest-investment h1 {
   font-size: 64px;
-  -webkit-text-stroke: 1px;
+  -webkit-text-stroke: 1.5px;
   -webkit-text-stroke-color: #f32d94;
   -webkit-text-fill-color: transparent;
+  width: max-content;
   margin-top: -30px;
   margin-bottom: 0;
   text-align: right;
-  z-index: 2;
 }
 
-.home-content .latest-investment p.copy {
+.home-content .top-row .latest-investment p.copy {
   text-align: right;
   max-width: 350px;
 }
 
-.home-content .latest-investment:hover h1 {
+.home-content .top-row .latest-investment:hover h1 {
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: #fff;
   -webkit-text-fill-color: #fff;
   background-color: #f32d94;
+}
+
+.home-content .our-portfolio {
+  margin: auto 0 auto;
+}
+
+.home-content .our-portfolio p {
+  max-width: 410px;
+}
+
+.home-content .portfolio-preview {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto 100px auto;
+}
+
+.home-content .portfolio-preview .portfolio-item:nth-child(1) {
+  margin-top: 180px;
+}
+
+.home-content .portfolio-preview .portfolio-item:nth-child(2) {
+  margin-top: 55px;
+}
+
+.home-content .portfolio-preview .portfolio-item:nth-child(3) {
+  margin-top: 480px;
+}
+
+.home-content .portfolio-preview .portfolio-item:nth-child(4) {
+  margin-top: 310px;
+}
+
+.home-content .portfolio-preview .portfolio-item:nth-child(5) {
+  margin-top: -160px;
+}
+
+.home-content .portfolio-preview .portfolio-item p.name {
+  font-size: 22px;
+  font-weight: 800;
+  color: #f32d94;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.home-content .portfolio-preview .portfolio-item img {
+  margin: 3px 0 5px 0;
+  width: 230px;
+  height: 290px;
+  object-fit: cover;
+}
+
+.home-content .portfolio-preview .portfolio-item p.copy {
+  max-width: 230px;
+}
+
+.home-content .portfolio-preview .portfolio-item:hover p.name {
+  font-style: italic;
+  color: #fff;
+  background-color: #f32d94;
+}
+
+.home-content .bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-content .bottom-row .collective-genius p {
+  max-width: 570px;
+}
+
+.home-content .bottom-row img {
+  margin-top: 100px;
+  width: 460px;
+  height: 275px;
+  object-fit: cover;
 }
