@@ -105,6 +105,26 @@ header {
         width: 260px;
         overflow: hidden;
         transform: rotate(-10deg);
+        transition: transform 3s;
+
+        a {
+            position: absolute;
+            top: 35%;
+
+            img {
+                max-width: 80px;
+                transform: rotate(10deg);
+                transition: transform 3s;
+            }
+        }
+
+        &:hover {
+            transform: rotate(10deg);
+
+            img {
+                transform: rotate(-10deg);
+            }
+        }
 
         $NUMBER_OF_LETTERS: 9;
 
@@ -134,13 +154,7 @@ header {
                 font-size: 52px;
                 font-weight: bold;
                 color: #f32d94;
-
                 -webkit-text-stroke: 1.2px;
-
-                &:hover {
-                    -webkit-text-stroke: 0px;
-                    -webkit-text-fill-color: #f32d94;
-                }
 
                 @for $i from 1 through $NUMBER_OF_LETTERS {
                     &:nth-child(#{$i}) {
@@ -195,16 +209,6 @@ header {
                         }
                     }
                 }
-            }
-        }
-
-        a {
-            position: absolute;
-            top: 35%;
-
-            img {
-                max-width: 80px;
-                transform: rotate(10deg);
             }
         }
 

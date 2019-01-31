@@ -92,6 +92,26 @@ header .logo {
   width: 260px;
   overflow: hidden;
   transform: rotate(-10deg);
+  transition: transform 3s;
+}
+
+header .logo a {
+  position: absolute;
+  top: 35%;
+}
+
+header .logo a img {
+  max-width: 80px;
+  transform: rotate(10deg);
+  transition: transform 3s;
+}
+
+header .logo:hover {
+  transform: rotate(10deg);
+}
+
+header .logo:hover img {
+  transform: rotate(-10deg);
 }
 
 header .logo ul {
@@ -120,11 +140,6 @@ header .logo ul li {
   font-weight: bold;
   color: #f32d94;
   -webkit-text-stroke: 1.2px;
-}
-
-header .logo ul li:hover {
-  -webkit-text-stroke: 0px;
-  -webkit-text-fill-color: #f32d94;
 }
 
 header .logo ul li:nth-child(1) {
@@ -341,16 +356,6 @@ header .logo ul li:nth-child(9) {
   28.22222% {
     -webkit-text-fill-color: transparent;
   }
-}
-
-header .logo a {
-  position: absolute;
-  top: 35%;
-}
-
-header .logo a img {
-  max-width: 80px;
-  transform: rotate(10deg);
 }
 
 header nav a {
