@@ -99,7 +99,7 @@ header .logo {
   width: 240px;
   overflow: hidden;
   transform: rotate(-10deg);
-  transition: transform 8s cubic-bezier(0.6, 0, 0.5, 1);
+  transition: transform 10s cubic-bezier(0.6, 0, 0.5, 1);
 }
 
 header .logo img {
@@ -107,15 +107,15 @@ header .logo img {
   top: 35%;
   max-width: 80px;
   transform: rotate(10deg);
-  transition: transform 8s cubic-bezier(0.6, 0, 0.5, 1);
+  transition: transform 10s cubic-bezier(0.6, 0, 0.5, 1);
 }
 
 header .logo:hover {
-  transform: rotate(-345deg);
+  transform: rotate(335deg);
 }
 
 header .logo:hover img {
-  transform: rotate(345deg);
+  transform: rotate(-335deg);
 }
 
 header .logo ul {
