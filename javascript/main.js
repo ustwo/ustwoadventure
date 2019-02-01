@@ -260,12 +260,17 @@ const companiesModals = createModals(portfolioArray);
 const logoAdventure = document.querySelector("header .logo");
 const logoUstwo = document.querySelector("header .logo img");
 
-window.ondevicemotion = e => {
+window.addEventListener("deviceorientation", handleOrientation, true);
+function handleOrientation(e) {
     const deviceTilt = (window.innerHeight > window.innerWidth) ?
-        e.accelerationIncludingGravity.x : e.accelerationIncludingGravity.y;
-    logoAdventure.style.transform = `rotate(${deviceTilt}deg)`;
-    logoUstwo.style.transform = `rotate(${-deviceTilt}deg)`;
-};
+    e.alpha : e.beta;
+
+    logoAdventure.style.transitionDuration = "5s";
+    logoUstwo.style.transitionDuration = "5s";
+    logoAdventure.style.transform = `rotate(${(deviceTilt - 10)}deg)`;
+    logoUstwo.style.transform = `rotate(${-(deviceTilt - 10)}deg)`;
+}
+
 
 
 const footerADV = document.querySelectorAll("footer .left .ADV span");
