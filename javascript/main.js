@@ -263,7 +263,7 @@ const logoUstwo = document.querySelector("header .logo img");
 window.addEventListener("deviceorientation", handleOrientation, true);
 function handleOrientation(e) {
     const deviceTilt = (window.innerHeight > window.innerWidth) ?
-    e.alpha : e.beta;
+    e.gamma : e.gamma - 90;
 
     logoAdventure.style.transitionDuration = "5s";
     logoUstwo.style.transitionDuration = "5s";
