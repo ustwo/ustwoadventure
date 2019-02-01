@@ -257,6 +257,17 @@ const companiesList = createList(shuffle(portfolioArray));
 const companiesModals = createModals(portfolioArray);
 
 
+const logoAdventure = document.querySelector("header .logo");
+const logoUstwo = document.querySelector("header .logo img");
+
+window.ondevicemotion = e => {
+    const deviceTilt = (window.innerHeight > window.innerWidth) ?
+        e.accelerationIncludingGravity.x : e.accelerationIncludingGravity.y;
+    logoAdventure.style.transform = `rotate(${deviceTilt}deg)`;
+    logoUstwo.style.transform = `rotate(${-deviceTilt}deg)`;
+};
+
+
 const footerADV = document.querySelectorAll("footer .left .ADV span");
 
 footerADV.forEach(letter => {
