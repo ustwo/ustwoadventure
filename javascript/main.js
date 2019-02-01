@@ -1,211 +1,211 @@
 const portfolioArray = [
-  {
-    name: "Tribe",
-    url: "https://wearetribe.co/",
-    tidyurl: "wearetribe.co",
-    image: "images/team_assets/tribe_image.jpg",
-    logo: "images/team_assets/tribe_logo.png",
-    line: "Natural sports nutrition and an amazing community.",
-    copy: "We are a community of 50,000+ athletes brought together by a love of nature and a shared spirit for adventure. TRIBE was inspired by a 1,000 mile run across Europe to fight human trafficking. A journey that set us on a mission to change the world of sports nutrition."
-  },
-  {
-    name: "Easle",
-    url: "https://www.easle.co",
-    tidyurl: "easle.co",
-    image: "images/team_assets/easle_image.jpg",
-    logo: "images/team_assets/easle_logo.png",
-    line: "A freelancer platform getting artists hired",
-    copy: "We find the best work for the best artists. Our creators are vetted by industry experts, and we take care of all the tedious paperwork like timesheets, contracts and invoices."
-  },
-  {
-    name: "Sanctus",
-    url: "http://sanctus.io",
-    tidyurl: "sanctus.io",
-    image: "images/team_assets/sanctus_image.jpg",
-    logo: "images/team_assets/sanctus_logo.png",
-    line: "Changing the perception of mental health",
-    copy: "We believe mental health should be viewed like your physical health, and are on a mission to make it accessible. We work with businesses to help them create an open environment where mental health is accepted, and create content to further this goal."
-  },
-  {
-    name: "Sidestory",
-    url: "https://sidestory.co",
-    tidyurl: "sidestory.co",
-    image: "images/team_assets/sidestory_image.jpg",
-    logo: "images/team_assets/sidestory_logo.png",
-    line: "Curated immersive experiences, led by insiders",
-    copy: "Now owned by <a href='https://www.mrandmrssmith.com/' target='_blank' style='color: #444; text-decoration:  underline;'>Mr & Mrs Smith</a>. A SideStory Experience is just you and the Insider discovering a particular neighbourhood or theme in great detail: they'll show you hidden gems and introduce you to the key movers and shakers in the industry, from food to architecture to art."
-  },
-  {
-    name: "Tray",
-    url: "https://www.tray.io",
-    tidyurl: "tray.io",
-    image: "images/team_assets/tray_image.jpg",
-    logo: "images/team_assets/tray_logo.png",
-    line: "A beautiful integration platform for cloud apps",
-    copy: "We’ve made a secure and easy to use tool to let you automate any process across any cloud stack, without limits. From simple processes to multi step workflows with conditional logic, we’ve got you covered."
-  },
-  {
-    name: "Uptree",
-    url: "https://www.uptree.co",
-    tidyurl: "uptree.co",
-    image: "images/team_assets/uptree_image.jpg",
-    logo: "images/team_assets/uptree_logo.png",
-    line: "A career mobility platform for school students",
-    copy: "We are providing students with an online resource to find early career events, internship and jobs to launch their future pathway."
-  },
-  {
-    name: "Dojo",
-    url: "https://www.dojoapp.co",
-    tidyurl: "dojoapp.co",
-    image: "images/team_assets/dojo_image.jpg",
-    logo: "images/team_assets/dojo_logo.png",
-    line: "The best places and events in your city",
-    copy: "With editorial selections, high quality reviews, and insider info, our magazine style guide tells you whats going on daily and weekly, so you know what to enjoy."
-  },
-  {
-    name: "Hoop",
-    url: "https://www.hoop.co.uk",
-    tidyurl: "hoop.co.uk",
-    image: "images/team_assets/hoop_image.jpg",
-    logo: "images/team_assets/hoop_logo.png",
-    line: "Find the best things going on for kids",
-    copy: "The tool families need to search for events and activities that their kids will love, along with curated content."
-  },
-  {
-    name: "Wayfindr",
-    url: "https://www.wayfindr.net",
-    tidyurl: "wayfindr.net",
-    image: "images/team_assets/wayfindr_image.jpg",
-    logo: "images/team_assets/wayfindr_logo.png",
-    line: "Empowering vision impaired people",
-    copy: "We’re empowering vision impaired people to overcome isolation, by setting the standard for audio based navigation. We have developed the world's first internationally-approved standard for accessible audio navigation."
-  },
-  {
-    name: "Everpress",
-    url: "https://www.everpress.com",
-    tidyurl: "everpress.com",
-    image: "images/team_assets/everpress_image.jpg",
-    logo: "images/team_assets/everpress_logo.png",
-    line: "Design and sell beautiful merchandise easily",
-    copy: "The best way to create and share campaigns for clothing design, risk free and high quality. We’re enabling the newest wave of influencers to sell products to millions of consumers around the world."
-  },
-  {
-    name: "Curiscope",
-    url: "https://www.curiscope.com",
-    tidyurl: "curiscope.com",
-    image: "images/team_assets/curiscope_image.jpg",
-    logo: "images/team_assets/curiscope_logo.png",
-    line: "Educational experiences built for all ages",
-    copy: "We’re creating products using immersive technology like 360° video and AR to let you explore the depths of the ocean or the human body, and unleash your curiosity."
-  },
-  {
-    name: "Amaliah",
-    url: "https://www.amaliah.com",
-    tidyurl: "amaliah.com",
-    image: "images/team_assets/amaliah_image.jpg",
-    logo: "images/team_assets/amaliah_logo.png",
-    line: "Amplifying the voices of muslim women",
-    copy: "We create content that is culturally relevant to Muslim women across fashion, beauty, topical issues, lifestyle and more."
-  },
-  {
-    name: "Mayku",
-    url: "https://www.mayku.me",
-    tidyurl: "mayku.me",
-    image: "images/team_assets/mayku_image.jpg",
-    logo: "images/team_assets/mayku_logo.png",
-    line: "Make beautiful things with the FormBox",
-    copy: "The most compact vacuum former ever made, letting you start a production line from your desktop. There's no end to the things you can make, It lets you bring your ideas into the world, fast."
-  },
-  {
-    name: "Marvel",
-    url: "https://www.marvelapp.com",
-    tidyurl: "marvelapp.com",
-    image: "images/team_assets/marvel_image.jpg",
-    logo: "images/team_assets/marvel_logo.png",
-    line: "Mobile and web prototyping for designers",
-    copy: "Design in Marvel or other tools, add your interactions and gestures to make the designs come to life, and collaborate with your team. We’ve built the best way for designers to to their thing."
-  },
-  {
-    name: "Dice",
-    url: "https://www.dice.fm",
-    tidyurl: "dice.fm",
-    image: "images/team_assets/dice_image.jpg",
-    logo: "images/team_assets/dice_logo.png",
-    line: "Tickets to the best gigs, with style",
-    copy: "Every feature on DICE is designed for discovery and to make going out easy. We bring you closer to the artists you love. Every event on the app is handpicked by our team, with great copy and design to boot."
-  },
-  {
-    name: "Pauseable",
-    url: "http://www.pauseable.com",
-    tidyurl: "pauseable.com",
-    image: "images/team_assets/pauseable_image.jpg",
-    logo: "images/team_assets/pauseable_logo.png",
-    line: "Mindfulness in motion",
-    copy: "We’re creating tools to bring mindfulness to everyone everywhere, through interactive meditation, unlocking an oasis of calm via a series of simple movements."
-  },
-  {
-    name: "Over",
-    url: "https://www.madewithover.com",
-    tidyurl: "madewithover.com",
-    image: "images/team_assets/over_image.jpg",
-    logo: "images/team_assets/over_logo.png",
-    line: "Inspiring the world to create",
-    copy: "At Over, we believe that no matter who or where you are, you should be able to pick up your phone, open our app and design whatever you need. We want creating to be fast and easy, but most importantly we want it to be fun."
-  },
-  {
-    name: "Run an Empire",
-    url: "http://www.runanempire.com",
-    tidyurl: "runanempire.com",
-    image: "images/team_assets/runanempire_image.jpg",
-    logo: "images/team_assets/runanempire_logo.png",
-    line: "A real world strategy running game",
-    copy: "The most fun way to get on the road. Race against people in the real world to control territory in your area, and claim land in the name of your empire."
-  },
-  {
-    name: "Brother Cycles",
-    url: "https://www.brothercycles.com/",
-    tidyurl: "brothercycles.com",
-    image: "images/team_assets/brothercycles_image.jpg",
-    logo: "images/team_assets/brothercycles_logo.png",
-    line: "Beautiful bikes, designed in London",
-    copy: "Our frames are designed by us, are handmade by experienced frame builders out of the best materials, and can be ridden all day, whether in the city, on the track or out in the wild."
-  },
-  {
-    name: "Seed and Spark",
-    url: "https://www.seedandspark.com/",
-    tidyurl: "seedandspark.com",
-    image: "images/team_assets/seedandspark_image.jpg",
-    logo: "images/team_assets/seedandspark_logo.png",
-    line: "Look through different lenses",
-    copy: "A new kind of streaming service where perspective matters, combining streaming for audiences with crowdfunding for creators. Our mission is to create an entertainment landscape that reflects what we actually look like."
-  },
-  {
-    name: "Kyra",
-    url: "https://kyra.com/",
-    tidyurl: "kyra.com",
-    image: "images/team_assets/kyra_image.jpg",
-    logo: "images/team_assets/kyra_logo.png",
-    line: "New age digital media for young people",
-    copy: "We are reimagining TV for the digital world. We make TV quality, brand safe, original content franchises that brands can use to speak to an already engaged audience."
-  },
-  {
-    name: "Superhi",
-    url: "https://www.superhi.com/?utm_campaign=ustwo_adventure_sh_profile&utm_medium=promo&utm_source=ustwo_adventure",
-    tidyurl: "superhi.com",
-    image: "images/team_assets/superhi_image.jpg",
-    logo: "images/team_assets/superhi_logo.png",
-    line: "Online Courses For Creative People To Learn + Grow",
-    copy: "A community of inspiring people from over 50 countries learning new tech skills to complement and enhance what they're already great at. Courses = Foundation HTML, CSS + Javascript, WordPress Design + Development, Advanced CSS + Javascript, Ruby on Rails, React.js"
-  },
-  {
-    name: "Limbic",
-    url: "https://limbic.ai/",
-    tidyurl: "limbic.ai",
-    image: "images/team_assets/limbic_image.png",
-    logo: "images/team_assets/limbic_logo.png",
-    line: "Humanising Computing",
-    copy: "We've created an SDK for emotional intelligence. Using AI models we want to enable products that interact with users as naturally as the interactions between two humans."
-  }
+    {
+        name: "Tribe",
+        url: "https://wearetribe.co/",
+        tidyurl: "wearetribe.co",
+        image: "images/team_assets/fund/tribe_image.jpg",
+        logo: "images/team_assets/fund/tribe_logo.png",
+        line: "Natural sports nutrition and an amazing community.",
+        copy: "We are a community of 50,000+ athletes brought together by a love of nature and a shared spirit for adventure. TRIBE was inspired by a 1,000 mile run across Europe to fight human trafficking. A journey that set us on a mission to change the world of sports nutrition."
+    },
+    {
+        name: "Easle",
+        url: "https://www.easle.co",
+        tidyurl: "easle.co",
+        image: "images/team_assets/fund/easle_image.jpg",
+        logo: "images/team_assets/fund/easle_logo.png",
+        line: "A freelancer platform getting artists hired",
+        copy: "We find the best work for the best artists. Our creators are vetted by industry experts, and we take care of all the tedious paperwork like timesheets, contracts and invoices."
+    },
+    {
+        name: "Sanctus",
+        url: "http://sanctus.io",
+        tidyurl: "sanctus.io",
+        image: "images/team_assets/fund/sanctus_image.jpg",
+        logo: "images/team_assets/fund/sanctus_logo.png",
+        line: "Changing the perception of mental health",
+        copy: "We believe mental health should be viewed like your physical health, and are on a mission to make it accessible. We work with businesses to help them create an open environment where mental health is accepted, and create content to further this goal."
+    },
+    {
+        name: "Sidestory",
+        url: "https://sidestory.co",
+        tidyurl: "sidestory.co",
+        image: "images/team_assets/fund/sidestory_image.jpg",
+        logo: "images/team_assets/fund/sidestory_logo.png",
+        line: "Curated immersive experiences, led by insiders",
+        copy: "Now owned by <a href='https://www.mrandmrssmith.com/' target='_blank' style='color: #444; text-decoration:  underline;'>Mr & Mrs Smith</a>. A SideStory Experience is just you and the Insider discovering a particular neighbourhood or theme in great detail: they'll show you hidden gems and introduce you to the key movers and shakers in the industry, from food to architecture to art."
+    },
+    {
+        name: "Tray",
+        url: "https://www.tray.io",
+        tidyurl: "tray.io",
+        image: "images/team_assets/fund/tray_image.jpg",
+        logo: "images/team_assets/fund/tray_logo.png",
+        line: "A beautiful integration platform for cloud apps",
+        copy: "We’ve made a secure and easy to use tool to let you automate any process across any cloud stack, without limits. From simple processes to multi step workflows with conditional logic, we’ve got you covered."
+    },
+    {
+        name: "Uptree",
+        url: "https://www.uptree.co",
+        tidyurl: "uptree.co",
+        image: "images/team_assets/fund/uptree_image.jpg",
+        logo: "images/team_assets/fund/uptree_logo.png",
+        line: "A career mobility platform for school students",
+        copy: "We are providing students with an online resource to find early career events, internship and jobs to launch their future pathway."
+    },
+    {
+        name: "Dojo",
+        url: "https://www.dojoapp.co",
+        tidyurl: "dojoapp.co",
+        image: "images/team_assets/fund/dojo_image.jpg",
+        logo: "images/team_assets/fund/dojo_logo.png",
+        line: "The best places and events in your city",
+        copy: "With editorial selections, high quality reviews, and insider info, our magazine style guide tells you whats going on daily and weekly, so you know what to enjoy."
+    },
+    {
+        name: "Hoop",
+        url: "https://www.hoop.co.uk",
+        tidyurl: "hoop.co.uk",
+        image: "images/team_assets/fund/hoop_image.jpg",
+        logo: "images/team_assets/fund/hoop_logo.png",
+        line: "Find the best things going on for kids",
+        copy: "The tool families need to search for events and activities that their kids will love, along with curated content."
+    },
+    {
+        name: "Wayfindr",
+        url: "https://www.wayfindr.net",
+        tidyurl: "wayfindr.net",
+        image: "images/team_assets/fund/wayfindr_image.jpg",
+        logo: "images/team_assets/fund/wayfindr_logo.png",
+        line: "Empowering vision impaired people",
+        copy: "We’re empowering vision impaired people to overcome isolation, by setting the standard for audio based navigation. We have developed the world's first internationally-approved standard for accessible audio navigation."
+    },
+    {
+        name: "Everpress",
+        url: "https://www.everpress.com",
+        tidyurl: "everpress.com",
+        image: "images/team_assets/fund/everpress_image.jpg",
+        logo: "images/team_assets/fund/everpress_logo.png",
+        line: "Design and sell beautiful merchandise easily",
+        copy: "The best way to create and share campaigns for clothing design, risk free and high quality. We’re enabling the newest wave of influencers to sell products to millions of consumers around the world."
+    },
+    {
+        name: "Curiscope",
+        url: "https://www.curiscope.com",
+        tidyurl: "curiscope.com",
+        image: "images/team_assets/fund/curiscope_image.jpg",
+        logo: "images/team_assets/fund/curiscope_logo.png",
+        line: "Educational experiences built for all ages",
+        copy: "We’re creating products using immersive technology like 360° video and AR to let you explore the depths of the ocean or the human body, and unleash your curiosity."
+    },
+    {
+        name: "Amaliah",
+        url: "https://www.amaliah.com",
+        tidyurl: "amaliah.com",
+        image: "images/team_assets/fund/amaliah_image.jpg",
+        logo: "images/team_assets/fund/amaliah_logo.png",
+        line: "Amplifying the voices of muslim women",
+        copy: "We create content that is culturally relevant to Muslim women across fashion, beauty, topical issues, lifestyle and more."
+    },
+    {
+        name: "Mayku",
+        url: "https://www.mayku.me",
+        tidyurl: "mayku.me",
+        image: "images/team_assets/fund/mayku_image.jpg",
+        logo: "images/team_assets/fund/mayku_logo.png",
+        line: "Make beautiful things with the FormBox",
+        copy: "The most compact vacuum former ever made, letting you start a production line from your desktop. There's no end to the things you can make, It lets you bring your ideas into the world, fast."
+    },
+    {
+        name: "Marvel",
+        url: "https://www.marvelapp.com",
+        tidyurl: "marvelapp.com",
+        image: "images/team_assets/fund/marvel_image.jpg",
+        logo: "images/team_assets/fund/marvel_logo.png",
+        line: "Mobile and web prototyping for designers",
+        copy: "Design in Marvel or other tools, add your interactions and gestures to make the designs come to life, and collaborate with your team. We’ve built the best way for designers to to their thing."
+    },
+    {
+        name: "Dice",
+        url: "https://www.dice.fm",
+        tidyurl: "dice.fm",
+        image: "images/team_assets/fund/dice_image.jpg",
+        logo: "images/team_assets/fund/dice_logo.png",
+        line: "Tickets to the best gigs, with style",
+        copy: "Every feature on DICE is designed for discovery and to make going out easy. We bring you closer to the artists you love. Every event on the app is handpicked by our team, with great copy and design to boot."
+    },
+    {
+        name: "Pauseable",
+        url: "http://www.pauseable.com",
+        tidyurl: "pauseable.com",
+        image: "images/team_assets/fund/pauseable_image.jpg",
+        logo: "images/team_assets/fund/pauseable_logo.png",
+        line: "Mindfulness in motion",
+        copy: "We’re creating tools to bring mindfulness to everyone everywhere, through interactive meditation, unlocking an oasis of calm via a series of simple movements."
+    },
+    {
+        name: "Over",
+        url: "https://www.madewithover.com",
+        tidyurl: "madewithover.com",
+        image: "images/team_assets/fund/over_image.jpg",
+        logo: "images/team_assets/fund/over_logo.png",
+        line: "Inspiring the world to create",
+        copy: "At Over, we believe that no matter who or where you are, you should be able to pick up your phone, open our app and design whatever you need. We want creating to be fast and easy, but most importantly we want it to be fun."
+    },
+    {
+        name: "Run an Empire",
+        url: "http://www.runanempire.com",
+        tidyurl: "runanempire.com",
+        image: "images/team_assets/fund/runanempire_image.jpg",
+        logo: "images/team_assets/fund/runanempire_logo.png",
+        line: "A real world strategy running game",
+        copy: "The most fun way to get on the road. Race against people in the real world to control territory in your area, and claim land in the name of your empire."
+    },
+    {
+        name: "Brother Cycles",
+        url: "https://www.brothercycles.com/",
+        tidyurl: "brothercycles.com",
+        image: "images/team_assets/fund/brothercycles_image.jpg",
+        logo: "images/team_assets/fund/brothercycles_logo.png",
+        line: "Beautiful bikes, designed in London",
+        copy: "Our frames are designed by us, are handmade by experienced frame builders out of the best materials, and can be ridden all day, whether in the city, on the track or out in the wild."
+    },
+    {
+        name: "Seed and Spark",
+        url: "https://www.seedandspark.com/",
+        tidyurl: "seedandspark.com",
+        image: "images/team_assets/fund/seedandspark_image.jpg",
+        logo: "images/team_assets/fund/seedandspark_logo.png",
+        line: "Look through different lenses",
+        copy: "A new kind of streaming service where perspective matters, combining streaming for audiences with crowdfunding for creators. Our mission is to create an entertainment landscape that reflects what we actually look like."
+    },
+    {
+        name: "Kyra",
+        url: "https://kyra.com/",
+        tidyurl: "kyra.com",
+        image: "images/team_assets/fund/kyra_image.jpg",
+        logo: "images/team_assets/fund/kyra_logo.png",
+        line: "New age digital media for young people",
+        copy: "We are reimagining TV for the digital world. We make TV quality, brand safe, original content franchises that brands can use to speak to an already engaged audience."
+    },
+    {
+        name: "Limbic",
+        url: "https://limbic.ai/",
+        tidyurl: "limbic.ai",
+        image: "images/team_assets/fund/limbic_image.png",
+        logo: "images/team_assets/fund/limbic_logo.png",
+        line: "Humanising Computing",
+        copy: "We've created an SDK for emotional intelligence. Using AI models we want to enable products that interact with users as naturally as the interactions between two humans."
+    },
+    {
+        name: "Superhi",
+        url: "https://www.superhi.com/?utm_campaign=ustwo_adventure_sh_profile&utm_medium=promo&utm_source=ustwo_adventure",
+        tidyurl: "superhi.com",
+        image: "images/team_assets/fund/superhi_image.jpg",
+        logo: "images/team_assets/fund/superhi_logo.png",
+        line: "Online Courses For Creative People To Learn + Grow",
+        copy: "A community of inspiring people from over 50 countries learning new tech skills to complement and enhance what they're already great at. Courses = Foundation HTML, CSS + Javascript, WordPress Design + Development, Advanced CSS + Javascript, Ruby on Rails, React.js"
+    }
 ];
 
 
@@ -232,20 +232,22 @@ const createList = a => a.map(obj => {
 });
 
 const createModals = a => a.map(obj => {
-    return `<div id="modal-${ kebabCase(obj.name) }">
-              <div class="modal-inner">
+    return `
+        <div id="modal-${ kebabCase(obj.name) }">
+            <div class="modal-inner">
                 <div class="modal-details">
-                  <h2>${ obj.name }</h2>
-                  <a class="modal-site-link" href="${ obj.url }" target="_blank">${ obj.tidyurl }</a>
-                  <p class="line">${ obj.line }</p>
-                  <p class="copy">${ obj.copy }</p>
+                    <h2>${ obj.name }</h2>
+                    <a class="modal-site-link" href="${ obj.url }" target="_blank">${ obj.tidyurl }</a>
+                    <p class="line">${ obj.line }</p>
+                    <p class="copy">${ obj.copy }</p>
                 </div>
                 <div class="modal-image">
-                  <img class="modal-image-background" src="" data-src="${ obj.image }"/>
-                  <a href="${ obj.url }" target="_blank"> <img class="modal-image-logo" src="${ obj.logo }"/> </a>
+                    <img class="modal-image-background" src="" data-src="${ obj.image }"/>
+                    <a href="${ obj.url }" target="_blank"> <img class="modal-image-logo" src="${ obj.logo }"/> </a>
                 </div>
-              </div>
-            </div>`;
+            </div>
+        </div>
+    `;
 });
 
 

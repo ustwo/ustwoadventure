@@ -11,11 +11,11 @@
 
         .path-for-companies {
             h2 {
-                max-width: 420px
+                max-width: 420px;
             }
 
             p {
-                max-width: 580px
+                max-width: 510px;
             }
         }
 
@@ -23,8 +23,8 @@
             margin-top: 120px;
 
             p.tag {
-                margin-bottom: 8px;
-                margin-left: -25px;
+                margin-bottom: 10px;
+                margin-left: -28px;
 
                 font-size: 16px;
                 line-height: 1;
@@ -72,7 +72,7 @@
         margin:  auto 0 auto;
 
         p {
-            max-width: 410px;
+            max-width: 450px;
         }
     }
 
@@ -102,6 +102,8 @@
             }
 
             p.name {
+                margin-bottom: 0;
+
                 font-size: 22px;
                 font-weight: 800;
                 color: #f32d94;
@@ -138,7 +140,7 @@
 
         .collective-genius {
             p {
-                max-width: 570px;
+                max-width: 520px;
             }
         }
 

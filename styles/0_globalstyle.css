@@ -35,6 +35,7 @@ h2 {
 p {
   letter-spacing: -0.2px;
   line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 b {
@@ -48,7 +49,6 @@ a, a:visited {
 
 a.button {
   display: inline-block;
-  margin-top: 20px;
   margin-right: 20px;
   padding: 10px 40px 10px 15px;
   box-sizing: border-box;
@@ -89,29 +89,26 @@ header .logo {
   justify-content: center;
   align-items: center;
   height: 80px;
-  width: 260px;
+  width: 240px;
   overflow: hidden;
   transform: rotate(-10deg);
-  transition: transform 3s;
+  transition: transform 8s;
 }
 
-header .logo a {
+header .logo img {
   position: absolute;
   top: 35%;
-}
-
-header .logo a img {
   max-width: 80px;
   transform: rotate(10deg);
-  transition: transform 3s;
+  transition: transform 8s;
 }
 
 header .logo:hover {
-  transform: rotate(10deg);
+  transform: rotate(20deg);
 }
 
 header .logo:hover img {
-  transform: rotate(-10deg);
+  transform: rotate(-20deg);
 }
 
 header .logo ul {
@@ -143,92 +140,92 @@ header .logo ul li {
 }
 
 header .logo ul li:nth-child(1) {
-  transform: translate(-50%, -50%) rotate(0deg) translateY(-120px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(0deg) translateY(-115px) rotateX(90deg);
 }
 
 @media (max-width: 860px) {
   header .logo ul li:nth-child(1) {
-    transform: translate(-50%, -50%) rotate(0deg) translateY(-120px) rotateX(90deg);
+    transform: translate(-50%, -50%) rotate(0deg) translateY(-10px) rotateX(90deg);
   }
 }
 
 header .logo ul li:nth-child(2) {
-  transform: translate(-50%, -50%) rotate(40deg) translateY(-120px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(40deg) translateY(-115px) rotateX(90deg);
 }
 
 @media (max-width: 860px) {
   header .logo ul li:nth-child(2) {
-    transform: translate(-50%, -50%) rotate(40deg) translateY(-120px) rotateX(90deg);
+    transform: translate(-50%, -50%) rotate(40deg) translateY(-10px) rotateX(90deg);
   }
 }
 
 header .logo ul li:nth-child(3) {
-  transform: translate(-50%, -50%) rotate(80deg) translateY(-120px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(80deg) translateY(-115px) rotateX(90deg);
 }
 
 @media (max-width: 860px) {
   header .logo ul li:nth-child(3) {
-    transform: translate(-50%, -50%) rotate(80deg) translateY(-120px) rotateX(90deg);
+    transform: translate(-50%, -50%) rotate(80deg) translateY(-10px) rotateX(90deg);
   }
 }
 
 header .logo ul li:nth-child(4) {
-  transform: translate(-50%, -50%) rotate(120deg) translateY(-120px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(120deg) translateY(-115px) rotateX(90deg);
 }
 
 @media (max-width: 860px) {
   header .logo ul li:nth-child(4) {
-    transform: translate(-50%, -50%) rotate(120deg) translateY(-120px) rotateX(90deg);
+    transform: translate(-50%, -50%) rotate(120deg) translateY(-10px) rotateX(90deg);
   }
 }
 
 header .logo ul li:nth-child(5) {
-  transform: translate(-50%, -50%) rotate(160deg) translateY(-120px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(160deg) translateY(-115px) rotateX(90deg);
 }
 
 @media (max-width: 860px) {
   header .logo ul li:nth-child(5) {
-    transform: translate(-50%, -50%) rotate(160deg) translateY(-120px) rotateX(90deg);
+    transform: translate(-50%, -50%) rotate(160deg) translateY(-10px) rotateX(90deg);
   }
 }
 
 header .logo ul li:nth-child(6) {
-  transform: translate(-50%, -50%) rotate(200deg) translateY(-120px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(200deg) translateY(-115px) rotateX(90deg);
 }
 
 @media (max-width: 860px) {
   header .logo ul li:nth-child(6) {
-    transform: translate(-50%, -50%) rotate(200deg) translateY(-120px) rotateX(90deg);
+    transform: translate(-50%, -50%) rotate(200deg) translateY(-10px) rotateX(90deg);
   }
 }
 
 header .logo ul li:nth-child(7) {
-  transform: translate(-50%, -50%) rotate(240deg) translateY(-120px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(240deg) translateY(-115px) rotateX(90deg);
 }
 
 @media (max-width: 860px) {
   header .logo ul li:nth-child(7) {
-    transform: translate(-50%, -50%) rotate(240deg) translateY(-120px) rotateX(90deg);
+    transform: translate(-50%, -50%) rotate(240deg) translateY(-10px) rotateX(90deg);
   }
 }
 
 header .logo ul li:nth-child(8) {
-  transform: translate(-50%, -50%) rotate(280deg) translateY(-120px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(280deg) translateY(-115px) rotateX(90deg);
 }
 
 @media (max-width: 860px) {
   header .logo ul li:nth-child(8) {
-    transform: translate(-50%, -50%) rotate(280deg) translateY(-120px) rotateX(90deg);
+    transform: translate(-50%, -50%) rotate(280deg) translateY(-10px) rotateX(90deg);
   }
 }
 
 header .logo ul li:nth-child(9) {
-  transform: translate(-50%, -50%) rotate(320deg) translateY(-120px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(320deg) translateY(-115px) rotateX(90deg);
 }
 
 @media (max-width: 860px) {
   header .logo ul li:nth-child(9) {
-    transform: translate(-50%, -50%) rotate(320deg) translateY(-120px) rotateX(90deg);
+    transform: translate(-50%, -50%) rotate(320deg) translateY(-10px) rotateX(90deg);
   }
 }
 
@@ -396,7 +393,7 @@ footer a:hover {
 
 footer .left .ADV {
   font-family: "Futura-pt";
-  font-size: 36px;
+  font-size: 42px;
   line-height: 1;
   letter-spacing: -5px;
   color: #f32d94;

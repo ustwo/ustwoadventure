@@ -38,6 +38,7 @@ h2 {
 p {
     letter-spacing: -0.2px;
     line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 b {
@@ -54,7 +55,6 @@ a, a:visited {
 
 a.button {
     display: inline-block;
-    margin-top: 20px;
     margin-right: 20px;
 
     padding: 10px 40px 10px 15px;
@@ -102,27 +102,24 @@ header {
         justify-content: center;
         align-items: center;
         height: 80px;
-        width: 260px;
+        width: 240px;
         overflow: hidden;
         transform: rotate(-10deg);
-        transition: transform 3s;
-
-        a {
-            position: absolute;
-            top: 35%;
+        transition: transform 8s;
 
             img {
+                position: absolute;
+                top: 35%;
                 max-width: 80px;
                 transform: rotate(10deg);
-                transition: transform 3s;
+                transition: transform 8s;
             }
-        }
 
         &:hover {
-            transform: rotate(10deg);
+            transform: rotate(20deg);
 
             img {
-                transform: rotate(-10deg);
+                transform: rotate(-20deg);
             }
         }
 
@@ -160,14 +157,14 @@ header {
                     &:nth-child(#{$i}) {
                         transform: translate(-50%, -50%)
                         rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
-                        translateY(-120px)
+                        translateY(-115px)
                         rotateX(90deg);
                     }
                     @media (max-width: 860px) {
                         &:nth-child(#{$i}) {
                             transform: translate(-50%, -50%)
                             rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
-                            translateY(-120px)
+                            translateY(-10px)
                             rotateX(90deg);
                         }
                     }
@@ -268,7 +265,7 @@ footer {
     .left {
         .ADV {
             font-family: "Futura-pt";
-            font-size: 36px;
+            font-size: 42px;
             line-height: 1;
             letter-spacing: -5px;
             color: #f32d94;
