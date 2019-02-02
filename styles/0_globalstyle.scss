@@ -126,7 +126,7 @@ header {
         overflow: hidden;
 
         transform: rotate(-10deg);
-        transition: transform 12s cubic-bezier(0.2, 0, 0.4, 1);
+        transition: transform 12s;
 
         img {
             position: absolute;
@@ -134,7 +134,7 @@ header {
             max-width: 80px;
 
             transform: rotate(10deg);
-            transition: transform 12s cubic-bezier(0.2, 0, 0.4, 1);
+            transition: transform 12s;
         }
 
         &:hover {
