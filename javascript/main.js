@@ -266,8 +266,8 @@ window.addEventListener("deviceorientation", e => {
 
     logoAdventure.style.transition = "transform 8s cubic-bezier(0.6, 0, 0.5, 1)";
     logoUstwo.style.transition = "transform 8s cubic-bezier(0.6, 0, 0.5, 1)";
-    logoAdventure.style.transform = `rotate(${-(tilt + 10)}deg)`;
-    logoUstwo.style.transform = `rotate(${(tilt + 10)}deg)`;
+    logoAdventure.style.transform = `rotate(${-((tilt * 0.8) + 10)}deg)`;
+    logoUstwo.style.transform = `rotate(${((tilt * 0.8) + 10)}deg)`;
 }, true);
 
 
