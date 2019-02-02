@@ -177,7 +177,7 @@ header {
                         animation: circle-orbit-#{$i} 16s linear infinite;
                     }
                 }
-                
+
                 @for $i from 8 through 9 {
                     &:nth-child(#{$i}) {
                         -webkit-text-fill-color: #fff;
@@ -288,11 +288,12 @@ footer {
             position: absolute;
             bottom: 0px;
             left: 0px;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
 
             font-size: 14px;
 
             p {
+                margin: 0;
                 line-height: 1.8;
             }
 
@@ -311,7 +312,7 @@ footer {
         justify-content: space-between;
 
         p {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
 
             color: #f32d94;
             font-weight: 800;
