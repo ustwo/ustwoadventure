@@ -115,7 +115,7 @@ header .logo {
   width: 230px;
   overflow: hidden;
   transform: rotate(-10deg);
-  transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
+  transition: transform 12s cubic-bezier(0.2, 0, 0.4, 1);
 }
 
 header .logo img {
@@ -123,15 +123,17 @@ header .logo img {
   top: 35%;
   max-width: 80px;
   transform: rotate(10deg);
-  transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
+  transition: transform 12s cubic-bezier(0.2, 0, 0.4, 1);
 }
 
 header .logo:hover {
   transform: rotate(335deg);
+  transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
 }
 
 header .logo:hover img {
   transform: rotate(-335deg);
+  transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
 }
 
 header .logo ul {
@@ -338,6 +340,10 @@ header nav a:hover, header nav a:visited:hover {
 header nav a:last-child, header nav a:visited:last-child {
   text-decoration: line-through;
   pointer-events: none;
+}
+
+.content-wrapper {
+  min-height: 38vh;
 }
 
 .separator {

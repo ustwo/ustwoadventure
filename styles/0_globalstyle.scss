@@ -126,7 +126,7 @@ header {
         overflow: hidden;
 
         transform: rotate(-10deg);
-        transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
+        transition: transform 12s cubic-bezier(0.2, 0, 0.4, 1);
 
         img {
             position: absolute;
@@ -134,14 +134,16 @@ header {
             max-width: 80px;
 
             transform: rotate(10deg);
-            transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
+            transition: transform 12s cubic-bezier(0.2, 0, 0.4, 1);
         }
 
         &:hover {
             transform: rotate(335deg);
+            transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
 
             img {
                 transform: rotate(-335deg);
+                transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
             }
         }
 
@@ -245,6 +247,13 @@ header {
         }
 
     }
+}
+
+
+
+
+.content-wrapper {
+    min-height: 38vh;
 }
 
 
