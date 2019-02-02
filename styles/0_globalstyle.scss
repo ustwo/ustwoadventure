@@ -109,7 +109,7 @@ header {
         justify-content: center;
         align-items: center;
         height: 80px;
-        width: 240px;
+        width: 230px;
         overflow: hidden;
 
         transform: rotate(-10deg);
@@ -166,7 +166,7 @@ header {
                     &:nth-child(#{$i}) {
                         transform: translate(-50%, -50%)
                         rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
-                        translateY(-115px)
+                        translateY(-110px)
                         rotateX(90deg);
                     }
                 }
@@ -218,7 +218,7 @@ header {
             margin-left: 60px;
 
             font-size: 20px;
-            line-height: 1.5;
+            line-height: 1.6;
             color: #646464;
 
             &:hover {
@@ -332,8 +332,12 @@ footer {
 
 }
 
-@media (max-width: 800px) {
-
+@media (max-width: 950px) {
+    footer {
+        .right {
+            width: 65%;
+        }
+    }
 }
 
 @media (max-width: 780px) {

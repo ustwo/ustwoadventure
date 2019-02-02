@@ -96,7 +96,7 @@ header .logo {
   justify-content: center;
   align-items: center;
   height: 80px;
-  width: 240px;
+  width: 230px;
   overflow: hidden;
   transform: rotate(-10deg);
   transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
@@ -147,39 +147,39 @@ header .logo ul li {
 }
 
 header .logo ul li:nth-child(1) {
-  transform: translate(-50%, -50%) rotate(0deg) translateY(-115px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(0deg) translateY(-110px) rotateX(90deg);
 }
 
 header .logo ul li:nth-child(2) {
-  transform: translate(-50%, -50%) rotate(40deg) translateY(-115px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(40deg) translateY(-110px) rotateX(90deg);
 }
 
 header .logo ul li:nth-child(3) {
-  transform: translate(-50%, -50%) rotate(80deg) translateY(-115px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(80deg) translateY(-110px) rotateX(90deg);
 }
 
 header .logo ul li:nth-child(4) {
-  transform: translate(-50%, -50%) rotate(120deg) translateY(-115px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(120deg) translateY(-110px) rotateX(90deg);
 }
 
 header .logo ul li:nth-child(5) {
-  transform: translate(-50%, -50%) rotate(160deg) translateY(-115px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(160deg) translateY(-110px) rotateX(90deg);
 }
 
 header .logo ul li:nth-child(6) {
-  transform: translate(-50%, -50%) rotate(200deg) translateY(-115px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(200deg) translateY(-110px) rotateX(90deg);
 }
 
 header .logo ul li:nth-child(7) {
-  transform: translate(-50%, -50%) rotate(240deg) translateY(-115px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(240deg) translateY(-110px) rotateX(90deg);
 }
 
 header .logo ul li:nth-child(8) {
-  transform: translate(-50%, -50%) rotate(280deg) translateY(-115px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(280deg) translateY(-110px) rotateX(90deg);
 }
 
 header .logo ul li:nth-child(9) {
-  transform: translate(-50%, -50%) rotate(320deg) translateY(-115px) rotateX(90deg);
+  transform: translate(-50%, -50%) rotate(320deg) translateY(-110px) rotateX(90deg);
 }
 
 header .logo ul li:nth-child(1) {
@@ -311,7 +311,7 @@ header .logo ul li:nth-child(7) {
 header nav a {
   margin-left: 60px;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #646464;
 }
 
@@ -396,6 +396,12 @@ footer .right p {
 footer .right a {
   display: block;
   margin-bottom: 10px;
+}
+
+@media (max-width: 950px) {
+  footer .right {
+    width: 65%;
+  }
 }
 
 @media (max-width: 780px) {
