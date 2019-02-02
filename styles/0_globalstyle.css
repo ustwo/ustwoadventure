@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-  font-family: "futura-pt", sans-serif;
+  font-family: "futura-pt", "futura", sans-serif;
   font-style: normal;
   font-size: 52px;
   line-height: 1.05;
@@ -385,7 +385,7 @@ footer .left .copyright a {
 }
 
 footer .right {
-  width: 55%;
+  width: 53%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -467,7 +467,7 @@ footer .right a {
     padding: 0 30px;
   }
   header {
-    margin: 45px 0 170px 0;
+    margin: 45px 0 120px 0;
   }
   header .logo {
     height: 65px;
