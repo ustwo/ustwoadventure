@@ -1,7 +1,7 @@
 body {
     max-width: 1100px;
     margin: auto;
-    padding: 0 40px;
+    padding: 0 60px;
 
     font-family: 'Px', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -115,14 +115,16 @@ header {
         transform: rotate(-10deg);
         transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
 
-            img {
-                position: absolute;
-                top: 35%;
-                max-width: 80px;
+        $NUMBER_OF_LETTERS: 9;
 
-                transform: rotate(10deg);
-                transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
-            }
+        img {
+            position: absolute;
+            top: 35%;
+            max-width: 80px;
+
+            transform: rotate(10deg);
+            transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
+        }
 
         &:hover {
             transform: rotate(335deg);
@@ -131,8 +133,6 @@ header {
                 transform: rotate(-335deg);
             }
         }
-
-        $NUMBER_OF_LETTERS: 9;
 
         ul {
             position: relative;
@@ -160,7 +160,7 @@ header {
                 font-size: 52px;
                 font-weight: bold;
                 color: #f32d94;
-                -webkit-text-stroke: 1.2px;
+                -webkit-text-stroke: 1.2px #f32d94;
 
                 @for $i from 1 through $NUMBER_OF_LETTERS {
                     &:nth-child(#{$i}) {
@@ -168,14 +168,6 @@ header {
                         rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
                         translateY(-115px)
                         rotateX(90deg);
-                    }
-                    @media (max-width: 860px) {
-                        &:nth-child(#{$i}) {
-                            transform: translate(-50%, -50%)
-                            rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
-                            translateY(-100px)
-                            rotateX(90deg);
-                        }
                     }
                 }
 
@@ -185,6 +177,16 @@ header {
                     }
                 }
 
+                @for $i from 8 through 9 {
+                    &:nth-child(#{$i}) {
+                        -webkit-text-fill-color: #fff;
+                    }
+                    @keyframes circle-orbit-#{$i} {
+                        #{($i - 8) * (100 / ($NUMBER_OF_LETTERS / 2)) + 6}% {
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+                }
                 @for $i from 1 through 3 {
                     &:nth-child(#{$i}) {
                         -webkit-text-fill-color: #fff;
@@ -205,16 +207,6 @@ header {
                         }
                     }
                 }
-                @for $i from 8 through 9 {
-                    &:nth-child(#{$i}) {
-                        -webkit-text-fill-color: #fff;
-                    }
-                    @keyframes circle-orbit-#{$i} {
-                        #{($i - 8) * (100 / ($NUMBER_OF_LETTERS / 2)) + 6}% {
-                            -webkit-text-fill-color: transparent;
-                        }
-                    }
-                }
             }
         }
 
@@ -226,6 +218,7 @@ header {
             margin-left: 60px;
 
             font-size: 20px;
+            line-height: 1.5;
             color: #646464;
 
             &:hover {
@@ -309,8 +302,7 @@ footer {
     }
 
     .right {
-        width: 50%;
-        margin-right: 10px;
+        width: 55%;
 
         display: flex;
         flex-direction: row;
@@ -336,55 +328,96 @@ footer {
 
 
 
-@media (max-width: 1200px) {
-    header {
-        margin-top: 40px;
-    }
+@media (max-width: 1150px) {
+
 }
 
 @media (max-width: 800px) {
-    header nav a {
 
+}
+
+@media (max-width: 780px) {
+
+    body {
+        padding: 0 40px;
     }
-    .separator {
-        margin: 40px 0;
+
+    header {
+        .logo {
+            height: 70px;
+            width: 190px;
+
+            img {
+                width: 70px;
+            }
+
+            ul li {
+                font-size: 48px;
+                $NUMBER_OF_LETTERS: 9;
+                @for $i from 1 through $NUMBER_OF_LETTERS {
+                    &:nth-child(#{$i}) {
+                        transform: translate(-50%, -50%)
+                        rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
+                        translateY(-90px)
+                        rotateX(90deg);
+                    }
+                }
+            }
+        }
+
+        nav a {
+            margin-left: 40px;
+            font-size: 18px;
+        }
+    }
+
+}
+
+@media (max-width: 600px) {
+    header nav a {
+        margin-left: 25px;
     }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 565px) {
     header {
-        h1 {
+        .logo {
+            height: 65px;
+            width: 170px;
 
+            img {
+                width: 65px;
+            }
+
+            ul li {
+                font-size: 46px;
+                $NUMBER_OF_LETTERS: 9;
+                @for $i from 1 through $NUMBER_OF_LETTERS {
+                    &:nth-child(#{$i}) {
+                        transform: translate(-50%, -50%)
+                        rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
+                        translateY(-80px)
+                        rotateX(90deg);
+                    }
+                }
+            }
         }
-        nav{
 
-        }
-        a {
-
+        nav a {
+            display: block;
+            text-align: right;
         }
     }
 }
 
 @media (max-width: 470px) {
-    header {
-        margin-top: 25px;
-    }
+
 }
 
 @media (max-width: 375px) {
-    header img {
-        max-width: 250px;
-    }
-    body {
-        padding: 0 25px;
-    }
+
 }
 
 @media (max-width: 320px) {
-    header img {
-        max-width: 200px;
-    }
-    header nav a {
 
-    }
 }
