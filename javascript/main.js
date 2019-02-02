@@ -266,8 +266,8 @@ function handleOrientation(e) {
 
     logoAdventure.style.transitionDuration = "3s";
     logoUstwo.style.transitionDuration = "3s";
-    logoAdventure.style.transform = `rotate(${-(tilt - 10)}deg)`;
-    logoUstwo.style.transform = `rotate(${(tilt - 10)}deg)`;
+    logoAdventure.style.transform = `rotate(${-tilt + 10}deg)`;
+    logoUstwo.style.transform = `rotate(${tilt + 10}deg)`;
 }
 
 
