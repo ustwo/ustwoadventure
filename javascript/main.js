@@ -257,18 +257,19 @@ const companiesList = createList(shuffle(portfolioArray));
 const companiesModals = createModals(portfolioArray);
 
 
+
 const logoAdventure = document.querySelector("header .logo");
 const logoUstwo = document.querySelector("header .logo img");
 
-window.addEventListener("deviceorientation", handleOrientation, true);
-function handleOrientation(e) {
+window.addEventListener("deviceorientation", e => {
     const tilt = (window.innerHeight > window.innerWidth) ? e.gamma : e.beta;
 
     logoAdventure.style.transitionDuration = "4s";
     logoUstwo.style.transitionDuration = "4s";
     logoAdventure.style.transform = `rotate(${-(tilt + 10)}deg)`;
     logoUstwo.style.transform = `rotate(${(tilt + 10)}deg)`;
-}
+}, true);
+
 
 
 const footerADV = document.querySelectorAll("footer .left .ADV span");
