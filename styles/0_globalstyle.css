@@ -37,6 +37,10 @@ p {
   line-height: 1.5;
 }
 
+p:not(:first-of-type) {
+  margin-top: 20px;
+}
+
 b {
   font-weight: 700;
 }
@@ -308,18 +312,18 @@ header .logo ul li:nth-child(7) {
   }
 }
 
-header nav a {
+header nav a, header nav a:visited {
   margin-left: 60px;
   font-size: 20px;
   line-height: 1.6;
   color: #646464;
 }
 
-header nav a:hover {
+header nav a:hover, header nav a:visited:hover {
   font-style: italic;
 }
 
-header nav a:last-child {
+header nav a:last-child, header nav a:visited:last-child {
   text-decoration: line-through;
   pointer-events: none;
 }
@@ -472,7 +476,7 @@ footer .right a {
     width: 65px;
   }
   header .logo ul li {
-    font-size: 46px;
+    font-size: 44px;
   }
   header .logo ul li:nth-child(1) {
     transform: translate(-50%, -50%) rotate(0deg) translateY(-80px) rotateX(90deg);

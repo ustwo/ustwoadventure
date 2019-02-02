@@ -40,6 +40,10 @@ p {
     line-height: 1.5;
 }
 
+p:not(:first-of-type) {
+    margin-top: 20px;
+}
+
 b {
     font-weight: 700;
 }
@@ -214,7 +218,7 @@ header {
 
     nav {
 
-        a {
+        a, a:visited {
             margin-left: 60px;
 
             font-size: 20px;
@@ -400,7 +404,7 @@ footer {
             }
 
             ul li {
-                font-size: 46px;
+                font-size: 44px;
                 $NUMBER_OF_LETTERS: 9;
                 @for $i from 1 through $NUMBER_OF_LETTERS {
                     &:nth-child(#{$i}) {
