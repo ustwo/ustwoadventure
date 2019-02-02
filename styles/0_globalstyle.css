@@ -452,6 +452,12 @@ footer .right a {
 }
 
 @media (max-width: 565px) {
+  body {
+    padding: 0 30px;
+  }
+  header {
+    margin: 45px 0 170px 0;
+  }
   header .logo {
     height: 65px;
     width: 170px;
