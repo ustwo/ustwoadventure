@@ -53,9 +53,6 @@ a, a:visited {
     color: #333;
 }
 
-
-
-
 a.button {
     display: inline-block;
     margin-top: 20px;
@@ -119,8 +116,6 @@ header {
         transform: rotate(-10deg);
         transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
 
-        $NUMBER_OF_LETTERS: 9;
-
         img {
             position: absolute;
             top: 35%;
@@ -166,6 +161,8 @@ header {
                 color: #f32d94;
                 -webkit-text-stroke: 1.2px #f32d94;
 
+                $NUMBER_OF_LETTERS: 9;
+
                 @for $i from 1 through $NUMBER_OF_LETTERS {
                     &:nth-child(#{$i}) {
                         transform: translate(-50%, -50%)
@@ -180,7 +177,7 @@ header {
                         animation: circle-orbit-#{$i} 16s linear infinite;
                     }
                 }
-
+                
                 @for $i from 8 through 9 {
                     &:nth-child(#{$i}) {
                         -webkit-text-fill-color: #fff;

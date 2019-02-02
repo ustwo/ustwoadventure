@@ -50,6 +50,7 @@
 }
 
 .home-content .top-row .latest-investment p.copy {
+  margin-top: 0;
   text-align: right;
   max-width: 350px;
 }
@@ -114,6 +115,7 @@
 }
 
 .home-content .portfolio-preview .portfolio-item p.copy {
+  margin-top: 0;
   max-width: 230px;
 }
 
