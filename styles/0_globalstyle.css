@@ -201,39 +201,39 @@ header .logo ul li:nth-child(9) {
 }
 
 header .logo ul li:nth-child(1) {
-  animation: circle-orbit-1 16s steps(2, end) infinite;
+  animation: circle-orbit-1 16s steps(1, end) infinite;
 }
 
 header .logo ul li:nth-child(2) {
-  animation: circle-orbit-2 16s steps(2, end) infinite;
+  animation: circle-orbit-2 16s steps(1, end) infinite;
 }
 
 header .logo ul li:nth-child(3) {
-  animation: circle-orbit-3 16s steps(2, end) infinite;
+  animation: circle-orbit-3 16s steps(1, end) infinite;
 }
 
 header .logo ul li:nth-child(4) {
-  animation: circle-orbit-4 16s steps(2, end) infinite;
+  animation: circle-orbit-4 16s steps(1, end) infinite;
 }
 
 header .logo ul li:nth-child(5) {
-  animation: circle-orbit-5 16s steps(2, end) infinite;
+  animation: circle-orbit-5 16s steps(1, end) infinite;
 }
 
 header .logo ul li:nth-child(6) {
-  animation: circle-orbit-6 16s steps(2, end) infinite;
+  animation: circle-orbit-6 16s steps(1, end) infinite;
 }
 
 header .logo ul li:nth-child(7) {
-  animation: circle-orbit-7 16s steps(2, end) infinite;
+  animation: circle-orbit-7 16s steps(1, end) infinite;
 }
 
 header .logo ul li:nth-child(8) {
-  animation: circle-orbit-8 16s steps(2, end) infinite;
+  animation: circle-orbit-8 16s steps(1, end) infinite;
 }
 
 header .logo ul li:nth-child(9) {
-  animation: circle-orbit-9 16s steps(2, end) infinite;
+  animation: circle-orbit-9 16s steps(1, end) infinite;
 }
 
 header .logo ul li:nth-child(8) {
