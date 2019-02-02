@@ -188,7 +188,7 @@ header {
 
                 @for $i from 1 through $NUMBER_OF_LETTERS {
                     &:nth-child(#{$i}) {
-                        animation: circle-orbit-#{$i} 16s steps(1, end) infinite;
+                        animation: circle-orbit-#{$i} 16s linear infinite;
                     }
                 }
 
