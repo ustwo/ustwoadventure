@@ -44,16 +44,17 @@
   -webkit-text-stroke-color: #f32d94;
   -webkit-text-fill-color: transparent;
   width: max-content;
+  max-width: 350px;
   margin-top: -30px;
   margin-bottom: 0;
-  margin-right: 3px;
+  padding: 0 5px;
   text-align: right;
   transition: transform 0.25s, box-shadow 0.25s;
 }
 
 .home-content .top-row .latest-investment p.copy {
   margin-top: 0;
-  margin-right: 3px;
+  margin-right: 5px;
   text-align: right;
   max-width: 350px;
 }
