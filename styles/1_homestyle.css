@@ -36,6 +36,7 @@
   width: 350px;
   height: 300px;
   object-fit: cover;
+  transition: transform 0.25s, box-shadow 0.25s;
 }
 
 .home-content .top-row .latest-investment h1 {
@@ -59,13 +60,18 @@
   max-width: 350px;
 }
 
+.home-content .top-row .latest-investment:hover img {
+  box-shadow: -5px 5px 0px 0px #f32d94;
+  transform: translate(5px, -5px);
+}
+
 .home-content .top-row .latest-investment:hover h1 {
   -webkit-text-stroke: 0px;
   -webkit-text-stroke-color: #fff;
   -webkit-text-fill-color: #fff;
   background-color: #f32d94;
-  box-shadow: -6px 6px 0px 0px #64646440;
-  transform: translate(6px, -6px);
+  box-shadow: -7px 7px 0px 0px #333;
+  transform: translate(7px, -7px);
 }
 
 .home-content .our-portfolio {
