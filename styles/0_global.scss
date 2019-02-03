@@ -268,35 +268,38 @@ header {
 
 
 .portfolio-item {
-    p.name {
-        margin-bottom: 0;
-        padding-right: 3px;
+    height: max-content;
 
+    p.name {
         font-size: 22px;
         font-weight: 800;
+        line-height: 1.7;
         color: #f32d94;
         text-align: right;
         text-transform: uppercase;
+        transition: transform 0.1s;
     }
 
     img {
-        margin: 3px 0 5px 0;
-
         width: 230px;
         height: 290px;
         object-fit: cover;
+        transition: transform 0.1s, box-shadow 0.1s;
     }
 
     p.copy {
-        margin-top: 0;
+        margin-top: 5px;
         max-width: 230px;
     }
 
     &:hover {
         p.name {
             font-style: italic;
-            color: #fff;
-            background-color: #f32d94;
+            transform: translate(0px, -5px);
+        }
+        img {
+            box-shadow: -0px 5px 0px 0px #f32d94;
+            transform: translate(0px, -5px);
         }
     }
 }
