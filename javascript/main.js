@@ -262,7 +262,7 @@ const logoAdventure = document.querySelector("header .logo");
 const logoUstwo = document.querySelector("header .logo img");
 
 window.addEventListener("deviceorientation", e => {
-    const tilt = (window.innerHeight > window.innerWidth) ? e.gamma : e.beta;
+    const tilt = (window.innerHeight > window.innerWidth) ? e.gamma / 2 : e.beta;
 
     logoAdventure.style.transition = "transform 9s cubic-bezier(0.6, 0, 0.5, 1)";
     logoUstwo.style.transition = "transform 9s cubic-bezier(0.6, 0, 0.5, 1)";
