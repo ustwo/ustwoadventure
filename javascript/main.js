@@ -263,15 +263,27 @@ const companiesModals = createModals(portfolioArray);
 const logoAdventure = document.querySelector("header .logo");
 const logoUstwo = document.querySelector("header .logo img");
 
-window.addEventListener("deviceorientation", e => {
-    const tilt = (window.innerHeight > window.innerWidth) ? e.gamma / 2 : e.beta;
-    const cappedTilt = Math.max(-45, Math.min(25, tilt));
+// window.addEventListener("deviceorientation", e => {
+//     const tilt = (window.innerHeight > window.innerWidth) ? e.gamma / 2 : e.beta;
+//     const cappedTilt = Math.max(-45, Math.min(25, tilt));
+//
+//     logoAdventure.style.transition = "transform 6s cubic-bezier(0.6, 0, 0.5, 1)";
+//     logoUstwo.style.transition = "transform 6s cubic-bezier(0.6, 0, 0.5, 1)";
+//     logoAdventure.style.transform = `rotate(${-(cappedTilt + 10)}deg)`;
+//     logoUstwo.style.transform = `rotate(${(cappedTilt + 10)}deg)`;
+// }, true);
 
-    logoAdventure.style.transition = "transform 6s cubic-bezier(0.6, 0, 0.5, 1)";
-    logoUstwo.style.transition = "transform 6s cubic-bezier(0.6, 0, 0.5, 1)";
+window.ondevicemotion = e => {
+    const tiltAcc = (window.innerHeight > window.innerWidth) ?
+    e.accelerationIncludingGravity.x : e.accelerationIncludingGravity.y;
+    const tiltDeg = tiltAcc * 18.35;
+    const cappedTilt = Math.max(-45, Math.min(25, tiltDeg));
+
+    logoAdventure.style.transition = "transform 8s cubic-bezier(0.6, 0, 0.5, 1)";
+    logoUstwo.style.transition = "transform 8s cubic-bezier(0.6, 0, 0.5, 1)";
     logoAdventure.style.transform = `rotate(${-(cappedTilt + 10)}deg)`;
     logoUstwo.style.transform = `rotate(${(cappedTilt + 10)}deg)`;
-}, true);
+};
 
 
 
