@@ -145,6 +145,14 @@ header {
                 transform: rotate(-335deg);
                 transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
             }
+
+            @media (pointer: coarse) {
+                transform: rotate(10deg);
+
+                img {
+                    transform: rotate(-10deg);
+                }
+            }
         }
 
         ul {

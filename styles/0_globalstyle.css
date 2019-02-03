@@ -136,6 +136,15 @@ header .logo:hover img {
   transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
 }
 
+@media (pointer: coarse) {
+  header .logo:hover {
+    transform: rotate(10deg);
+  }
+  header .logo:hover img {
+    transform: rotate(-10deg);
+  }
+}
+
 header .logo ul {
   position: relative;
   margin: 0;
