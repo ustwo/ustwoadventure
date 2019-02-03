@@ -61,8 +61,8 @@
 }
 
 .home-content .top-row .latest-investment:hover img {
-  box-shadow: -5px 5px 0px 0px #f32d94;
-  transform: translate(5px, -5px);
+  box-shadow: -4px 4px 0px 0px #f32d94;
+  transform: translate(4px, -4px);
 }
 
 .home-content .top-row .latest-investment:hover h1 {
@@ -108,34 +108,6 @@
 
 .home-content .portfolio-preview .portfolio-item:nth-child(5) {
   margin-top: -190px;
-}
-
-.home-content .portfolio-preview .portfolio-item p.name {
-  margin-bottom: 0;
-  padding-right: 3px;
-  font-size: 22px;
-  font-weight: 800;
-  color: #f32d94;
-  text-align: right;
-  text-transform: uppercase;
-}
-
-.home-content .portfolio-preview .portfolio-item img {
-  margin: 3px 0 5px 0;
-  width: 230px;
-  height: 290px;
-  object-fit: cover;
-}
-
-.home-content .portfolio-preview .portfolio-item p.copy {
-  margin-top: 0;
-  max-width: 230px;
-}
-
-.home-content .portfolio-preview .portfolio-item:hover p.name {
-  font-style: italic;
-  color: #fff;
-  background-color: #f32d94;
 }
 
 .home-content .bottom-row {

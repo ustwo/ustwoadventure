@@ -267,6 +267,43 @@ header {
 
 
 
+.portfolio-item {
+    p.name {
+        margin-bottom: 0;
+        padding-right: 3px;
+
+        font-size: 22px;
+        font-weight: 800;
+        color: #f32d94;
+        text-align: right;
+        text-transform: uppercase;
+    }
+
+    img {
+        margin: 3px 0 5px 0;
+
+        width: 230px;
+        height: 290px;
+        object-fit: cover;
+    }
+
+    p.copy {
+        margin-top: 0;
+        max-width: 230px;
+    }
+
+    &:hover {
+        p.name {
+            font-style: italic;
+            color: #fff;
+            background-color: #f32d94;
+        }
+    }
+}
+
+
+
+
 .separator {
     margin: 120px 0 60px 0;
     height: 4px;

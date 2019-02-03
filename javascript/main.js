@@ -225,9 +225,11 @@ const shuffle = a => {
 
 const createList = a => a.map(obj => {
     return `
-        <li class="portfolio_item">
-            <a href="#modal-${ kebabCase(obj.name) }" target="_blank" rel="modal:open"> ${ obj.name }</a>
-        </li>
+        <a class="portfolio-item" href="#modal-${ kebabCase(obj.name) }" target="_blank" rel="modal:open">
+            <p class="name">${ obj.name }</p>
+            <img data-src="${ obj.image }">
+            <p class="copy">${ obj.copy }</p>
+        </a>
     `;
 });
 
