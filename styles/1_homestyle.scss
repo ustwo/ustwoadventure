@@ -49,21 +49,28 @@
                 width: max-content;
                 margin-top: -30px;
                 margin-bottom: 0;
+                margin-right: 3px;
                 text-align: right;
+
+                transition: transform 0.3s, box-shadow 0.3s;
             }
 
             p.copy {
                 margin-top: 0;
+                margin-right: 3px;
                 text-align: right;
                 max-width: 350px;
             }
 
             &:hover {
                 h1 {
-                    -webkit-text-stroke: 1px;
+                    -webkit-text-stroke: 0px;
                     -webkit-text-stroke-color: #fff;
                     -webkit-text-fill-color: #fff;
+
                     background-color: #f32d94;
+                    box-shadow: -6px 6px 0px 0px #64646440;
+                    transform: translate(6px, -6px);
                 }
             }
         }
