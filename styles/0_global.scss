@@ -302,6 +302,16 @@ header {
             transform: translate(0px, -5px);
         }
     }
+
+    &:focus {
+        p.name {
+            transform: translate(0px, -2px);
+        }
+        img {
+            box-shadow: -0px 2px 0px 0px #f32d94;
+            transform: translate(0px, -2px);
+        }
+    }
 }
 
 

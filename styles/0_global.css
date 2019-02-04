@@ -391,6 +391,15 @@ header nav a:last-child, header nav a:visited:last-child {
   transform: translate(0px, -5px);
 }
 
+.portfolio-item:focus p.name {
+  transform: translate(0px, -2px);
+}
+
+.portfolio-item:focus img {
+  box-shadow: -0px 2px 0px 0px #f32d94;
+  transform: translate(0px, -2px);
+}
+
 .separator {
   margin: 120px 0 60px 0;
   height: 4px;

@@ -5,7 +5,7 @@ const portfolioArray = [
         tidyurl: "wearetribe.co",
         image: "images/team_assets/fund/tribe_image.jpg",
         logo: "images/team_assets/fund/tribe_logo.png",
-        line: "Natural sports nutrition and an amazing community.",
+        line: "Natural sports nutrition and an amazing community",
         copy: "We are a community of 50,000+ athletes brought together by a love of nature and a shared spirit for adventure. TRIBE was inspired by a 1,000 mile run across Europe to fight human trafficking. A journey that set us on a mission to change the world of sports nutrition."
     },
     {
@@ -19,7 +19,7 @@ const portfolioArray = [
     },
     {
         name: "Sanctus",
-        url: "http://sanctus.io",
+        url: "https://sanctus.io",
         tidyurl: "sanctus.io",
         image: "images/team_assets/fund/sanctus_image.jpg",
         logo: "images/team_assets/fund/sanctus_logo.png",
@@ -70,15 +70,6 @@ const portfolioArray = [
         logo: "images/team_assets/fund/hoop_logo.png",
         line: "Find the best things going on for kids",
         copy: "The tool families need to search for events and activities that their kids will love, along with curated content."
-    },
-    {
-        name: "Wayfindr",
-        url: "https://www.wayfindr.net",
-        tidyurl: "wayfindr.net",
-        image: "images/team_assets/fund/wayfindr_image.jpg",
-        logo: "images/team_assets/fund/wayfindr_logo.png",
-        line: "Empowering vision impaired people",
-        copy: "We’re empowering vision impaired people to overcome isolation, by setting the standard for audio based navigation. We have developed the world's first internationally-approved standard for accessible audio navigation."
     },
     {
         name: "Everpress",
@@ -136,7 +127,7 @@ const portfolioArray = [
     },
     {
         name: "Pauseable",
-        url: "http://www.pauseable.com",
+        url: "https://www.pauseable.com",
         tidyurl: "pauseable.com",
         image: "images/team_assets/fund/pauseable_image.jpg",
         logo: "images/team_assets/fund/pauseable_logo.png",
@@ -154,7 +145,7 @@ const portfolioArray = [
     },
     {
         name: "Run an Empire",
-        url: "http://www.runanempire.com",
+        url: "https://www.runanempire.com",
         tidyurl: "runanempire.com",
         image: "images/team_assets/fund/runanempire_image.jpg",
         logo: "images/team_assets/fund/runanempire_logo.png",
@@ -176,7 +167,7 @@ const portfolioArray = [
         tidyurl: "seedandspark.com",
         image: "images/team_assets/fund/seedandspark_image.jpg",
         logo: "images/team_assets/fund/seedandspark_logo.png",
-        line: "Look through different lenses",
+        line: "Look through different lenses",
         copy: "A new kind of streaming service where perspective matters, combining streaming for audiences with crowdfunding for creators. Our mission is to create an entertainment landscape that reflects what we actually look like."
     },
     {
@@ -185,7 +176,7 @@ const portfolioArray = [
         tidyurl: "kyra.com",
         image: "images/team_assets/fund/kyra_image.jpg",
         logo: "images/team_assets/fund/kyra_logo.png",
-        line: "New age digital media for young people",
+        line: "A new age TV network",
         copy: "We are reimagining TV for the digital world. We make TV quality, brand safe, original content franchises that brands can use to speak to an already engaged audience."
     },
     {
@@ -209,6 +200,27 @@ const portfolioArray = [
 ];
 
 
+const lzy = (offset = 400) => {
+    const images = document.querySelectorAll("[data-src]");
+    const observer = new IntersectionObserver(onIntersection, {
+        rootMargin: `${offset}px ${offset}px`,
+        threshold: 0.01
+    });
+    function loadImage(imageEl) {
+        imageEl.setAttribute("src", imageEl.getAttribute("data-src"));
+        imageEl.removeAttribute("data-src");
+    }
+    images.forEach(image => observer.observe(image));
+    function onIntersection(entries) {
+        entries.forEach(entry => {
+            if (entry.intersectionRatio > 0) {
+                observer.unobserve(entry.target);
+                loadImage(entry.target);
+            }
+        });
+    }
+};
+
 const kebabCase = string => {
     return string.replace(/([a-z])([A-Z])/g, "$1-$2")
                  .replace(/[\s_]+/g, "-")
@@ -223,12 +235,12 @@ const shuffle = a => {
     return a;
 };
 
-const createList = a => a.map(obj => {
+const createPortfolioItems = a => a.map(obj => {
     return `
         <a class="portfolio-item" href="#modal-${ kebabCase(obj.name) }" target="_blank" rel="modal:open">
             <p class="name">${ obj.name }</p>
             <img data-src="${ obj.image }">
-            <p class="copy">${ obj.copy }</p>
+            <p class="copy">${ obj.line }</p>
         </a>
     `;
 });
@@ -254,9 +266,35 @@ const createModals = a => a.map(obj => {
 
 
 
+const latestInvestment = portfolioArray[portfolioArray.length - 1];
+const latestInvestmentContainer = document.querySelector(".latest-investment");
 
-const companiesList = createList(shuffle(portfolioArray));
-const companiesModals = createModals(portfolioArray);
+latestInvestmentContainer.innerHTML = `
+    <a href="portfolio.html/?${ latestInvestment.name }">
+        <p class="tag">Latest investment:</p>
+        <img src="${ latestInvestment.image }">
+        <h1>${ latestInvestment.name }</h1>
+        <p class="copy">${ latestInvestment.line }</p>
+    </a>
+`;
+
+
+
+const portfolioMinusLatest = portfolioArray.slice(0, portfolioArray.length - 1);
+const portfolioPreviewItems = shuffle(portfolioMinusLatest).slice(0, 5);
+const portfolioPreview = createPortfolioItems(portfolioPreviewItems);
+const portfolioPreviewContainer = document.querySelector(".portfolio-preview");
+
+portfolioPreviewContainer.innerHTML = portfolioPreview.join("");
+
+
+
+const portfolioItems = createPortfolioItems(shuffle(portfolioArray));
+const portfolioModals = createModals(portfolioArray);
+
+
+
+lzy();
 
 
 

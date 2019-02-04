@@ -74,6 +74,16 @@
   transform: translate(7px, -7px);
 }
 
+.home-content .top-row .latest-investment:focus img {
+  box-shadow: -2px 2px 0px 0px #f32d94;
+  transform: translate(2px, -2px);
+}
+
+.home-content .top-row .latest-investment:focus h1 {
+  box-shadow: -3px 3px 0px 0px #646464;
+  transform: translate(3px, -3px);
+}
+
 .home-content .our-portfolio {
   margin: auto 0 auto;
 }
