@@ -303,7 +303,7 @@ const logoUstwo = document.querySelector("header .logo img");
 
 window.ondeviceorientation = e => {
     const tilt = (window.innerHeight > window.innerWidth) ? e.gamma / 2 : e.beta;
-    const cappedTilt = Math.max(-45, Math.min(25, tilt));
+    const cappedTilt = Math.max(-45, Math.min(20, tilt));
 
     logoAdventure.style.transition = "transform 3s cubic-bezier(0.6, 0, 0.5, 1)";
     logoUstwo.style.transition = "transform 3s cubic-bezier(0.6, 0, 0.5, 1)";
