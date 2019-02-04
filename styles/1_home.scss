@@ -39,11 +39,11 @@
                 height: 300px;
                 object-fit: cover;
 
-                transition: transform 0.2s, box-shadow 0.2s;
+                transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
             }
 
             h1 {
-                font-size: 64px;
+                font-size: 62px;
                 -webkit-text-stroke: 1.5px;
                 -webkit-text-stroke-color: #f32d94;
                 -webkit-text-fill-color: transparent;
@@ -70,6 +70,7 @@
                 img {
                     box-shadow: -4px 4px 0px 0px #f32d94;
                     transform: translate(4px, -4px);
+                    filter: brightness(103%);
                 }
 
                 h1 {
@@ -78,7 +79,7 @@
                     -webkit-text-fill-color: #fff;
 
                     background-color: #f32d94;
-                    box-shadow: -7px 7px 0px 0px #646464;
+                    box-shadow: -7px 7px 0px -1px #646464;
                     transform: translate(7px, -7px);
                 }
             }
