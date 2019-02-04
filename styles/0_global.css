@@ -115,14 +115,12 @@ header .logo {
   align-items: center;
   height: 80px;
   width: 230px;
-  overflow: hidden;
   transform: rotate(-10deg);
   transition: transform 12s;
 }
 
 header .logo img {
   position: absolute;
-  top: 35%;
   max-width: 80px;
   transform: rotate(10deg);
   transition: transform 12s;

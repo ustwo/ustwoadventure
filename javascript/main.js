@@ -122,7 +122,7 @@ const portfolioArray = [
         tidyurl: "dice.fm",
         image: "images/team_assets/fund/dice_image.jpg",
         logo: "images/team_assets/fund/dice_logo.png",
-        line: "Tickets to the best gigs, with style",
+        line: "Tickets to the best gigs, festivals and parties",
         copy: "Every feature on DICE is designed for discovery and to make going out easy. We bring you closer to the artists you love. Every event on the app is handpicked by our team, with great copy and design to boot."
     },
     {
@@ -268,6 +268,7 @@ const createModals = a => a.map(obj => {
 
 const latestInvestment = portfolioArray[portfolioArray.length - 1];
 const latestInvestmentContainer = document.querySelector(".latest-investment");
+
 if (latestInvestmentContainer) {
     latestInvestmentContainer.innerHTML = `
         <a href="portfolio.html/?${ latestInvestment.name }">
@@ -285,6 +286,7 @@ const portfolioMinusLatest = portfolioArray.slice(0, portfolioArray.length - 1);
 const portfolioPreviewItems = shuffle(portfolioMinusLatest).slice(0, 5);
 const portfolioPreview = createPortfolioItems(portfolioPreviewItems);
 const portfolioPreviewContainer = document.querySelector(".portfolio-preview");
+
 if (portfolioPreviewContainer) {
     portfolioPreviewContainer.innerHTML = portfolioPreview.join("");
 }
