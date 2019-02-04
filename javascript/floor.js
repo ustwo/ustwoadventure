@@ -3,7 +3,6 @@ const floorArray = [
     name: "Tribe",
     url: "https://wearetribe.co/",
     tidyurl: "wearetribe.co",
-    tags: "playground fund",
     image: "images/team_assets/tribe_image.jpg",
     logo: "images/team_assets/tribe_logo.png",
     line: "Natural sports nutrition and an amazing community.",
@@ -13,7 +12,6 @@ const floorArray = [
     name: "Combo",
     url: "https://www.combostudio.co",
     tidyurl: "combostudio.co",
-    tags: "playground",
     image: "images/team_assets/combo_image.jpg",
     logo: "images/team_assets/combo_logo.png",
     line: "An AR games studio",
@@ -23,7 +21,7 @@ const floorArray = [
   //   name: "23 Code Street",
   //   url: "http://www.23codestreet.com",
   //   tidyurl: "23codestreet.com",
-  //   tags: "playground",
+  //
   //   image: "images/team_assets/23codestreet_image.jpg",
   //   logo: "images/team_assets/23codestreet_logo.png",
   //   line: "A coding school for all women",
@@ -33,7 +31,6 @@ const floorArray = [
     name: "The Art of Ping Pong",
     url: "http://www.theartofpingpong.co.uk/",
     tidyurl: "theartofpingpong.co.uk",
-    tags: "playground",
     image: "images/team_assets/theartofpingpong_image.jpg",
     logo: "images/team_assets/theartofpingpong_logo.png",
     line: "The most spirited ping pong brand on the planet",
@@ -43,7 +40,6 @@ const floorArray = [
     name: "Comuzi",
     url: "http://www.comuzi.xyz",
     tidyurl: "comuzi.xyz",
-    tags: "playground",
     image: "images/team_assets/comuzi_image.gif",
     logo: "images/team_assets/comuzi_logo.png",
     line: "Emerging technology research",
@@ -53,7 +49,6 @@ const floorArray = [
     name: "Dubzoo",
     url: "http://www.dubzoo.com",
     tidyurl: "dubzoo.com",
-    tags: "playground",
     image: "images/team_assets/dubzoo_image.jpg",
     logo: "images/team_assets/dubzoo_logo.png",
     line: "Grow your fanbase, mindfully",
@@ -63,7 +58,6 @@ const floorArray = [
     name: "Easle",
     url: "https://www.easle.co",
     tidyurl: "easle.co",
-    tags: "playground fund",
     image: "images/team_assets/easle_image.jpg",
     logo: "images/team_assets/easle_logo.png",
     line: "A freelancer platform getting artists hired",
@@ -73,7 +67,6 @@ const floorArray = [
     name: "Immersive Rehab",
     url: "https://www.immersiverehab.com",
     tidyurl: "immersiverehab.com",
-    tags: "",
     image: "images/team_assets/immersiverehab_image.jpg",
     logo: "images/team_assets/immersiverehab_logo.png",
     line: "Virtual Reality rehabilitation experiences",
@@ -83,7 +76,6 @@ const floorArray = [
     name: "Parasym Health",
     url: "http://www.parasym.co",
     tidyurl: "parasym.co",
-    tags: "playground",
     image: "images/team_assets/parasymhealth_image.jpg",
     logo: "images/team_assets/parasymhealth_logo.png",
     line: "Bioelectric Treatment for chronic diseases",
@@ -93,7 +85,6 @@ const floorArray = [
     name: "Sanctus",
     url: "http://sanctus.io",
     tidyurl: "sanctus.io",
-    tags: "playground fund",
     image: "images/team_assets/sanctus_image.jpg",
     logo: "images/team_assets/sanctus_logo.png",
     line: "Changing the perception of mental health",
@@ -103,7 +94,6 @@ const floorArray = [
     name: "Sidestory",
     url: "https://sidestory.co",
     tidyurl: "sidestory.co",
-    tags: "fund",
     image: "images/team_assets/sidestory_image.jpg",
     logo: "images/team_assets/sidestory_logo.png",
     line: "Curated immersive experiences, led by insiders",
@@ -113,7 +103,6 @@ const floorArray = [
     name: "Everyday",
     url: "http://www.everyday.studio",
     tidyurl: "everyday.studio",
-    tags: "playground",
     image: "images/team_assets/everyday_image.jpg",
     logo: "images/team_assets/everyday_logo.png",
     line: "A multi-disciplinary studio specialising in film",
@@ -123,7 +112,6 @@ const floorArray = [
     name: "Tray",
     url: "https://www.tray.io",
     tidyurl: "tray.io",
-    tags: "fund",
     image: "images/team_assets/tray_image.jpg",
     logo: "images/team_assets/tray_logo.png",
     line: "A beautiful integration platform for cloud apps",
@@ -133,7 +121,6 @@ const floorArray = [
     name: "Uptree",
     url: "https://www.uptree.co",
     tidyurl: "uptree.co",
-    tags: "playground fund",
     image: "images/team_assets/uptree_image.jpg",
     logo: "images/team_assets/uptree_logo.png",
     line: "A career mobility platform for school students",
@@ -143,7 +130,6 @@ const floorArray = [
     name: "Wayfindr",
     url: "https://www.wayfindr.net",
     tidyurl: "wayfindr.net",
-    tags: "venture",
     image: "images/team_assets/wayfindr_image.jpg",
     logo: "images/team_assets/wayfindr_logo.png",
     line: "Empowering vision impaired people",
@@ -153,7 +139,6 @@ const floorArray = [
     name: "Amaliah",
     url: "https://www.amaliah.com",
     tidyurl: "amaliah.com",
-    tags: "fund",
     image: "images/team_assets/amaliah_image.jpg",
     logo: "images/team_assets/amaliah_logo.png",
     line: "Amplifying the voices of muslim women",
@@ -163,7 +148,6 @@ const floorArray = [
     name: "Dice",
     url: "https://www.dice.fm",
     tidyurl: "dice.fm",
-    tags: "fund venture",
     image: "images/team_assets/dice_image.jpg",
     logo: "images/team_assets/dice_logo.png",
     line: "Tickets to the best gigs, with style",
@@ -173,7 +157,6 @@ const floorArray = [
     name: "Pilcro",
     url: "https://www.pilcro.com",
     tidyurl: "pilcro.com",
-    tags: "",
     image: "images/team_assets/pilcro_image.jpg",
     logo: "images/team_assets/pilcro_logo.png",
     line: "A faster way to make branded content",
@@ -183,7 +166,6 @@ const floorArray = [
     name: "Creative Mentor Network",
     url: "http://creativementornetwork.org/",
     tidyurl: "creativementornetwork.org",
-    tags: "foundation",
     image: "images/team_assets/creativementornetwork_image.jpg",
     logo: "images/team_assets/creativementornetwork_logo.png",
     line: "Training mentors and connecting them to diverse young talent",
@@ -193,7 +175,6 @@ const floorArray = [
     name: "Paul James",
     url: "http://pauljamess.com/",
     tidyurl: "pauljamess.com",
-    tags: "",
     image: "images/team_assets/pauljames_image.jpg",
     logo: "",
     line: "Solving problems by design",
@@ -203,7 +184,6 @@ const floorArray = [
     name: "Raise Your Hands",
     url: "https://www.raiseyourhands.org.uk/",
     tidyurl: "raiseyourhands.org.uk",
-    tags: "playground",
     image: "images/team_assets/raiseyourhands_image.jpg",
     logo: "images/team_assets/raiseyourhands_logo.png",
     line: "Doing Good, Feeling Good",
@@ -213,7 +193,6 @@ const floorArray = [
     name: "Morrama",
     url: "http://www.morrama.com/",
     tidyurl: "morrama.com",
-    tags: "playground",
     image: "images/team_assets/morrama_image.jpg",
     logo: "images/team_assets/morrama_logo.png",
     line: "Beautiful product design",
@@ -223,7 +202,6 @@ const floorArray = [
     name: "Mr Bingo",
     url: "https://mr.bingo/",
     tidyurl: "mr.bingo",
-    tags: "playground",
     image: "images/team_assets/mrbingo_image.jpg",
     logo: "images/team_assets/mrbingo_logo.png",
     line: "Illustrator, artist and speaker",
@@ -233,7 +211,6 @@ const floorArray = [
     name: "Loop",
     url: "http://loopsocial.co/",
     tidyurl: "loopsocial.co",
-    tags: "playground",
     image: "images/team_assets/loop_image.jpg",
     logo: "images/team_assets/loop_logo.png",
     line: "See who’s social",
@@ -243,7 +220,6 @@ const floorArray = [
     name: "UNRD",
     url: "http://unrd.co/",
     tidyurl: "unrd.co",
-    tags: "",
     image: "images/team_assets/unrd_image.jpg",
     logo: "images/team_assets/unrd_logo.png",
     line: "A new type of immersive entertainment experience",
@@ -253,7 +229,6 @@ const floorArray = [
     name: "Curate Labs",
     url: "https://curatelabs.co/",
     tidyurl: "curatelabs.co",
-    tags: "playground",
     image: "images/team_assets/curatelabs_image.jpg",
     logo: "images/team_assets/curatelabs_logo.png",
     line: "Design for wellbeing",
@@ -263,7 +238,6 @@ const floorArray = [
     name: "Suvera",
     url: "http://suvera.co.uk/",
     tidyurl: "suvera.co.uk",
-    tags: "",
     image: "images/team_assets/suvera_image.jpg",
     logo: "images/team_assets/suvera_logo.png",
     line: "A new way to manage your prescriptions",
@@ -273,7 +247,6 @@ const floorArray = [
     name: "Onlicar",
     url: "https://www.onlicar.com/",
     tidyurl: "onlicar.com",
-    tags: "playground",
     image: "images/team_assets/onlicar_image.jpg",
     logo: "images/team_assets/onlicar_logo.png",
     line: "Fleet management on autopilot",
@@ -283,7 +256,6 @@ const floorArray = [
     name: "Alix Fox",
     url: "https://twitter.com/AlixFox/",
     tidyurl: "twitter.com/AlixFox",
-    tags: "playground",
     image: "images/team_assets/alixfox_image.jpg",
     logo: "",
     line: "Writer, broadcaster and sex educator",
@@ -293,7 +265,6 @@ const floorArray = [
     name: "Metier",
     url: "https://www.metierdigital.com/",
     tidyurl: "metierdigital.com",
-    tags: "playground",
     image: "images/team_assets/metier_image.jpg",
     logo: "images/team_assets/metier_logo.png",
     line: "We build prototypes",
@@ -303,7 +274,6 @@ const floorArray = [
     name: "Lovesong",
     url: "http://studiolovesong.com/",
     tidyurl: "studiolovesong.com",
-    tags: "playground",
     image: "images/team_assets/lovesong_image.png",
     logo: "images/team_assets/lovesong_logo.png",
     line: "A design and creative technology studio.",
@@ -313,7 +283,6 @@ const floorArray = [
     name: "Superhi",
     url: "https://www.superhi.com/?utm_campaign=ustwo_adventure_sh_profile&utm_medium=promo&utm_source=ustwo_adventure",
     tidyurl: "superhi.com",
-    tags: "playground",
     image: "images/team_assets/superhi_image.jpg",
     logo: "images/team_assets/superhi_logo.png",
     line: "Online Courses For Creative People To Learn + Grow",
@@ -323,7 +292,6 @@ const floorArray = [
     name: "Fieldwork Facility",
     url: "http://www.fieldworkfacility.com/",
     tidyurl: "fieldworkfacility.com",
-    tags: "playground",
     image: "images/team_assets/fieldworkfacility_image.jpg",
     logo: "images/team_assets/fieldworkfacility_logo.png",
     line: "A design studio for uncharted territories",
@@ -333,7 +301,6 @@ const floorArray = [
     name: "LookLook",
     url: "https://www.looklook.co.uk/",
     tidyurl: "looklook.co.uk",
-    tags: "playground",
     image: "images/team_assets/looklook_image.jpg",
     logo: "images/team_assets/looklook_logo.png",
     line: "Agents of Engagement",
@@ -343,7 +310,6 @@ const floorArray = [
     name: "WePresent",
     url: "https://wepresent.wetransfer.com/",
     tidyurl: "wepresent.wetransfer.com",
-    tags: "playground",
     image: "images/team_assets/wepresent_image.jpg",
     logo: "images/team_assets/wepresent_logo.png",
     line: "Unexpected stories about creative minds",
@@ -353,7 +319,6 @@ const floorArray = [
     name: "Loveshark",
     url: "https://loveshark.io/",
     tidyurl: "loveshark.io",
-    tags: "playground",
     image: "images/team_assets/loveshark_image.png",
     logo: "images/team_assets/loveshark_logo.png",
     line: "Social Augmented Reality Games",
@@ -363,7 +328,6 @@ const floorArray = [
     name: "Bounce Cinema",
     url: "https://bouncecinema.com",
     tidyurl: "bouncecinema.com",
-    tags: "floor foundation",
     image: "images/team_assets/bouncecinema_image.jpg",
     logo: "images/team_assets/bouncecinema_logo.png",
     line: "Showcasing and supporting emerging film talent",
@@ -373,7 +337,6 @@ const floorArray = [
     name: "The Hot Breakfast",
     url: "https://www.thehotbreakfast.com/",
     tidyurl: "thehotbreakfast.com",
-    tags: "playground",
     image: "images/team_assets/hotbreakfast_image.jpg",
     logo: "images/team_assets/hotbreakfast_logo.png",
     line: "Meet inspiring people. Share breakfast & wisdom. Feed your ideas.",
@@ -383,7 +346,6 @@ const floorArray = [
     name: "Pondermed",
     url: "http://www.pondermed.com/",
     tidyurl: "pondermed.com",
-    tags: "playground",
     image: "images/team_assets/pondermed_image.jpg",
     logo: "images/team_assets/pondermed_logo.png",
     line: "Breaking down the big ideas in healthcare",
@@ -393,7 +355,6 @@ const floorArray = [
     name: "Notepad",
     url: "https://notepadstudio.com/",
     tidyurl: "notepadstudio.com",
-    tags: "playground",
     image: "images/team_assets/notepad_image.jpg",
     logo: "images/team_assets/notepad_logo.png",
     line: "We build brands for startups",
@@ -403,7 +364,6 @@ const floorArray = [
     name: "Wholesome Tech Co",
     url: "https://www.wholesome.design",
     tidyurl: "wholesome.design",
-    tags: "playground",
     image: "images/team_assets/wholesome_image.png",
     logo: "images/team_assets/wholesome_logo.png",
     line: "Experiments for living well with technology",
@@ -451,87 +411,17 @@ const createModals = a => a.map(obj => {
 });
 
 
-$(document).ready(function() {
-
-    const companiesList = createList(shuffle(floorArray));
-    const companiesModals = createModals(floorArray);
-
-    $("ul#companies").html(companiesList);
-    $("div#modals").html(companiesModals);
-
-    $("ul li a").click(function() {
-        let id = $(this).attr("href");
-            id = id.split("#modal-");
-            id = id[1];
-        history.replaceState("", document.title, window.location.pathname + "?" + id);
-    });
-
-    $(".portfolio_item").on("click", function() {
-        setTimeout(function() {
-            $(window).trigger("resize");
-        }, 1);
-    });
-
-    $("a.filter-button-group").on ("click", function(e) {
-        // Change #descriptor
-        const descriptor = $(e.target).data("descriptorstring");
-        $("#descriptor").html(descriptor);
-        // Hash
-        const filterString = $(e.target).data("filter");
-        if (filterString != "*") {
-            window.location.hash = filterString;
-        } else {
-            history.replaceState("", document.title, window.location.pathname);
-        }
-        // Do the filtering
-        $(".portfolio_item").each(function(idx, el) {
-            const fStrings = $(el).data("filter").split(" ");
-            let shouldDisplay = fStrings.includes(filterString);
-            if (filterString == "*") {
-                shouldDisplay = true;
-            }
-            $(el).css("display", (shouldDisplay == true ? "block" : "none"));
-        });
-    });
-
-});
-
-
-$(".button").click(function() {
-    $(this).addClass("is_checked").siblings().removeClass("is_checked");
-});
-
-
-$(document).ready(function() {
-    if (window.location.hash) {
-        var hash = window.location.hash.substring(1);
-        if (!hash) return;
-        var array = $(".button-group").find(`[data-filter='${hash.toLowerCase()}']`);
-        if (!array || !array.length) return;
-        var el = array[0];
-        if (!el) return;
-        el.click();
+if (window.location.search) {
+    var query = window.location.search.substring(1);
+    var parameters = query.split("&");
+    var companyName, val;
+    for (var i = 0; i < parameters.length; i++) {
+        val = parameters[i].split("=");
+        companyName = val[0];
     }
-    if (window.location.search) {
-        var query = window.location.search.substring(1);
-        var parameters = query.split("&");
-        var companyName, val;
-        for (var i=0; i<parameters.length; i++) {
-            val = parameters[i].split("=");
-            companyName = val[0];
-        }
-        if (val[0] == "team") {
-            companyName = val[1];
-        }
-        if (!companyName) return;
-        $("#modal-" + companyName).modal();
+    if (val[0] == "team") {
+        companyName = val[1];
     }
-});
-
-
-$(".onecolumn").click(function() {
-    $("ul#companies").addClass("onecolumn").removeClass("twocolumns");
-});
-$(".twocolumns").click(function() {
-    $("ul#companies").addClass("twocolumns").removeClass("onecolumn");
-});
+    if (!companyName) return;
+    $("#modal-" + companyName).modal();
+}
