@@ -268,15 +268,16 @@ const createModals = a => a.map(obj => {
 
 const latestInvestment = portfolioArray[portfolioArray.length - 1];
 const latestInvestmentContainer = document.querySelector(".latest-investment");
-
-latestInvestmentContainer.innerHTML = `
-    <a href="portfolio.html/?${ latestInvestment.name }">
-        <p class="tag">Latest investment:</p>
-        <img src="${ latestInvestment.image }">
-        <h1>${ latestInvestment.name }</h1>
-        <p class="copy">${ latestInvestment.line }</p>
-    </a>
-`;
+if (latestInvestmentContainer) {
+    latestInvestmentContainer.innerHTML = `
+        <a href="portfolio.html/?${ latestInvestment.name }">
+            <p class="tag">Latest investment:</p>
+            <img src="${ latestInvestment.image }">
+            <h1>${ latestInvestment.name }</h1>
+            <p class="copy">${ latestInvestment.line }</p>
+        </a>
+    `;
+}
 
 
 
@@ -284,8 +285,9 @@ const portfolioMinusLatest = portfolioArray.slice(0, portfolioArray.length - 1);
 const portfolioPreviewItems = shuffle(portfolioMinusLatest).slice(0, 5);
 const portfolioPreview = createPortfolioItems(portfolioPreviewItems);
 const portfolioPreviewContainer = document.querySelector(".portfolio-preview");
-
-portfolioPreviewContainer.innerHTML = portfolioPreview.join("");
+if (portfolioPreviewContainer) {
+    portfolioPreviewContainer.innerHTML = portfolioPreview.join("");
+}
 
 
 
