@@ -251,13 +251,13 @@ const createModals = a => a.map(obj => {
             <div class="modal-inner">
                 <div class="modal-details">
                     <h2>${ obj.name }</h2>
-                    <a class="modal-site-link" href="${ obj.url }" target="_blank">${ obj.tidyurl }</a>
+                    <a class="site-link" href="${ obj.url }" target="_blank">${ obj.tidyurl }</a>
                     <p class="line">${ obj.line }</p>
                     <p class="copy">${ obj.copy }</p>
                 </div>
                 <div class="modal-image">
-                    <img class="modal-image-background" src="" data-src="${ obj.image }"/>
-                    <a href="${ obj.url }" target="_blank"> <img class="modal-image-logo" src="${ obj.logo }"/> </a>
+                    <img class="background" src="" data-src="${ obj.image }"/>
+                    <a href="${ obj.url }" target="_blank"> <img class="logo" src="${ obj.logo }"/> </a>
                 </div>
             </div>
         </div>
@@ -271,7 +271,7 @@ const latestInvestmentContainer = document.querySelector(".latest-investment");
 
 if (latestInvestmentContainer) {
     latestInvestmentContainer.innerHTML = `
-        <a href="portfolio.html/?${ latestInvestment.name }">
+        <a href="#modal-${ kebabCase(latestInvestment.name) }" target="_blank" rel="modal:open">
             <p class="tag">Latest investment:</p>
             <img src="${ latestInvestment.image }">
             <h1>${ latestInvestment.name }</h1>
@@ -294,7 +294,15 @@ if (portfolioPreviewContainer) {
 
 
 const portfolioItems = createPortfolioItems(shuffle(portfolioArray));
+
+
+
+const modalContainer = document.querySelector(".modal-container");
 const portfolioModals = createModals(portfolioArray);
+
+if (modalContainer) {
+    modalContainer.innerHTML = portfolioModals.join("");
+}
 
 
 

@@ -1,3 +1,7 @@
+.modal-container {
+  display: none;
+}
+
 .blocker {
   position: fixed;
   top: 0;
@@ -20,11 +24,11 @@
   display: inline-block;
   height: 100%;
   vertical-align: middle;
-  margin-right: -0.05em
+  margin-right: -0.05em;
 }
 
 .blocker.behind {
-  background-color: transparent
+  background-color: transparent;
 }
 
 .modal {
@@ -51,59 +55,39 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url('images/modal_exit.svg');
+  background-image: url("../images/modal_exit.svg");
 }
 
-/* Adventure styles */
-
-#modals {
-  display: none;
-}
-
-.modal-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.modal .modal-inner {
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
   height: 100%;
 }
 
-.modal-details, .modal-image {
+.modal .modal-inner .modal-details, .modal .modal-inner .modal-image {
   box-sizing: border-box;
   height: 100%;
   width: 50%;
 }
 
-/* KEEP THIS!! FIXES MODAL INNER ORDER FOR SOME REASON */
-}
-
-.modal-details {
-  -webkit-box-ordinal-group: initial;
-  -ms-flex-order: initial;
-  order: 2;
-}
-
-.modal-details {
+.modal .modal-inner .modal-details {
   padding: 35px;
   overflow: auto;
 }
 
-/* Text styles inside details */
-
-.modal-details h2 {
+.modal .modal-inner .modal-details h2 {
+  margin-bottom: 6px;
   font-family: futura-pt, 'Px', sans-serif;
   font-weight: 800;
   color: #F32D94;
   text-transform: uppercase;
   font-size: 60px;
-  margin-bottom: 6px;
+  line-height: 1;
 }
 
-.modal-details .modal-site-link {
+.modal .modal-inner .modal-details a.site-link {
   display: block;
+  margin-bottom: 20px;
   font-size: 24px;
   font-weight: 700;
   color: #333;
@@ -111,30 +95,28 @@
   display: inline-block;
 }
 
-.modal-details p, .modal-site-link {
-  color: #444;
-  margin-bottom: 20px;
+.modal .modal-inner .modal-details a.site-link:hover {
+  font-style: italic;
 }
 
-.modal-details p {
+.modal .modal-inner .modal-details p {
   font-size: 18px;
   line-height: 1.6;
   font-weight: normal;
+  color: #646464;
 }
 
-.modal .line {
+.modal .modal-inner .modal-details p.line {
+  margin-bottom: 20px;
   font-size: 24px;
   line-height: 1.2;
 }
 
-.modal .copy {
+.modal .modal-inner .modal-details p.copy {
   font-style: italic;
-  margin-bottom: 0;
 }
 
-/* End */
-
-.modal-image {
+.modal .modal-inner .modal-image {
   position: relative;
   -webkit-box-ordinal-group: initial;
   -ms-flex-order: initial;
@@ -142,25 +124,15 @@
   overflow: hidden;
 }
 
-.modal-image:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -1px;
-  left: 0;
-  bottom: 0;
-  background-color: #F32D94;
-  opacity: .55;
-}
-
-.modal-image-background {
+.modal .modal-inner .modal-image img.background {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: 50% 50%;
+  filter: brightness(90%);
 }
 
-.modal-image-logo {
+.modal .modal-inner .modal-image img.logo {
   position: absolute;
   bottom: 25px;
   left: 25px;
@@ -169,35 +141,22 @@
   z-index: 2;
 }
 
-/* Soundwaves */
-
-#modal-soundwaves .modal-details h2 {
-  font-size: 52px;
-}
-@media (max-width: 980px) {
-  #modal-soundwaves .modal-details h2 {
-    word-wrap: break-word;
-    hyphens: auto;
-  }
-}
-
-
 @media (max-width: 880px) {
   .modal {
     width: 95%;
   }
-  .modal-details h2 {
+  .modal .modal-details h2 {
     font-size: 56px;
     word-wrap: break-word;
     hyphens: auto;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 780px) {
   .modal {
     width: 100%;
   }
-  .modal-details h2 {
+  .modal .modal-details h2 {
     font-size: 52px;
   }
 }
@@ -207,43 +166,34 @@
     height: 90%;
     width: 90%;
   }
-  .modal-inner {
+  .modal .modal-inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .modal-details, .modal-image {
+  .modal .modal-inner .modal-details, .modal .modal-inner .modal-image {
     height: 50%;
     width: 100%;
   }
-  .modal-image:after {
-    top: -1px;
-    left: -1px;
-  }
-  .modal-image-logo {
-    max-height: 55px;
-  }
-  .modal-details {
+  .modal .modal-inner .modal-details {
     order: 2;
     padding: 30px;
   }
-  .modal-image {
-    order: 1;
-  }
-  .modal-details h2 {
+  .modal .modal-inner .modal-details h2 {
     font-size: 46px;
   }
-  .modal-details .modal-site-link {
-    font-size: 24px;
-  }
-  .modal .line {
+  .modal .modal-inner .modal-details p.line {
     font-size: 20px;
   }
-  .modal-details p {
+  .modal .modal-inner .modal-details p.copy {
     font-size: 17px;
   }
-  .modal-image-logo {
+  .modal .modal-inner .modal-image {
+    order: 1;
+  }
+  .modal .modal-inner .modal-image img.logo {
+    max-height: 55px;
     max-width: 140px;
   }
 }
@@ -254,10 +204,7 @@
     width: 100%;
     position: relative;
   }
-  .modal-image-logo {
-    display: none;
-  }
-  .modal-details h2 {
+  .modal .modal-details h2 {
     color: #fff;
     position: absolute;
     top: 50%;
@@ -265,22 +212,20 @@
     z-index: 5;
     -webkit-text-stroke: 1px;
     -webkit-text-fill-color: transparent;
-    -moz-text-stroke: 1px;
-    -moz-text-fill-color: transparent;
-    -ms-text-stroke: 1px;
-    -ms-text-fill-color: transparent;
   }
-  .modal-site-link {
+  .modal .modal-details a.site-link {
     margin-bottom: 25px;
   }
+  .modal .modal-image img.logo {
+    display: none;
+  }
 }
-
 
 @media (max-width: 379px) {
   .modal-details {
     padding: 25px;
   }
-  .modal-details .modal-site-link {
+  .modal-details a.site-link {
     font-size: 22px;
   }
   .modal .line {
@@ -295,15 +240,11 @@
   }
 }
 
-@media
-(pointer: coarse) and (max-width: 500px) and (min-height: 750px),
-(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio : 2),
-(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio : 3),
-(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio : 3) {
-    .modal {
-      height: 85%;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-    }
+@media (pointer: coarse) and (max-width: 500px) and (min-height: 750px), (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2), (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3), (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+  .modal {
+    height: 85%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
   }
+}
