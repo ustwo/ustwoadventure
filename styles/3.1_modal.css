@@ -211,6 +211,9 @@
     margin-bottom: 20px;
     font-size: 22px;
   }
+  .modal .modal-inner .modal-details p.line {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 379px) {
