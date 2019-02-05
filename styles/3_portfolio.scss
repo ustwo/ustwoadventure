@@ -1,4 +1,6 @@
 .portfolio-content {
+    --itemWidth: 225px;
+    --itemHeight: 285px;
 
     h1 {
         max-width: 400px;
@@ -8,28 +10,24 @@
         width: 100%;
 
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: repeat(auto-fit, var(--itemWidth));
         grid-gap: 3rem;
         justify-content: space-between;
     }
 
     .portfolio-item {
-        --width: 225px;
-        --height: 285px;
-
         p.name {
             font-size: 20px;
-            max-width: var(--width);
+            max-width: var(--itemWidth);
         }
 
         img {
-            width: var(--width);
-            height: var(--height);
+            width: var(--itemWidth);
+            height: var(--itemHeight);
         }
 
         p.copy {
-            max-width: var(--width);
+            max-width: var(--itemWidth);
         }
     }
-
 }

@@ -6,7 +6,7 @@ const portfolioArray = [
         image: "images/team_assets/fund/tribe_image.jpg",
         logo: "images/team_assets/fund/tribe_logo.png",
         line: "Natural sports nutrition & an amazing community",
-        copy: "We are a community of 50,000+ athletes brought together by a love of nature and a shared spirit for adventure. TRIBE was inspired by a 1,000 mile run across Europe to fight human trafficking. A journey that set us on a mission to change the world of sports nutrition."
+        copy: "We are a community of 50,000+ athletes brought together by a love of nature and a spirit for adventure. TRIBE was inspired by a 1,000 mile run across Europe to fight human trafficking. A journey that set us on a mission to change the world of sports nutrition."
     },
     {
         name: "Easle",
