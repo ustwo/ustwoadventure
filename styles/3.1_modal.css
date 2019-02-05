@@ -68,6 +68,7 @@
   box-sizing: border-box;
   height: 100%;
   width: 50%;
+  overflow-x: hidden;
 }
 
 .modal .modal-inner .modal-details {
@@ -118,8 +119,6 @@
 
 .modal .modal-inner .modal-image {
   position: relative;
-  -webkit-box-ordinal-group: initial;
-  -ms-flex-order: initial;
   order: 1;
   overflow: hidden;
 }
