@@ -3,6 +3,10 @@
   max-width: 685px;
 }
 
+.home-content p:not(:first-of-type) {
+  margin-top: 15px;
+}
+
 .home-content .top-row {
   display: flex;
   flex-direction: row;

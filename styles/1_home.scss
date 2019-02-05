@@ -4,6 +4,10 @@
         max-width: 685px;
     }
 
+    p:not(:first-of-type) {
+        margin-top: 15px;
+    }
+
     .top-row {
         display: flex;
         flex-direction: row;
