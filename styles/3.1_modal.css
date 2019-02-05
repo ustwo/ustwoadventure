@@ -216,6 +216,9 @@
   .modal .modal-inner .modal-details {
     padding: 25px;
   }
+  .modal .modal-inner .modal-details a.site-link {
+    font-size: 20px;
+  }
   .modal .modal-inner .modal-details p.line {
     font-size: 18px;
   }

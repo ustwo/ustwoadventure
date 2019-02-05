@@ -176,7 +176,7 @@
         width: 90%;
 
         .modal-inner {
-        flex-direction: column;
+            flex-direction: column;
 
             .modal-details, .modal-image {
                 height: 50%;
@@ -243,6 +243,10 @@
         .modal-inner {
             .modal-details {
                 padding: 25px;
+
+                a.site-link {
+                    font-size: 20px;
+                }
 
                 p.line {
                     font-size: 18px;
