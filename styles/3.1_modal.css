@@ -145,7 +145,7 @@
   .modal {
     width: 95%;
   }
-  .modal .modal-details h2 {
+  .modal .modal-inner .modal-details h2 {
     font-size: 56px;
     word-wrap: break-word;
     hyphens: auto;
@@ -156,7 +156,7 @@
   .modal {
     width: 100%;
   }
-  .modal .modal-details h2 {
+  .modal .modal-inner .modal-details h2 {
     font-size: 52px;
   }
 }
@@ -204,37 +204,26 @@
     width: 100%;
     position: relative;
   }
-  .modal .modal-details h2 {
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, calc(-100% - 20px));
-    z-index: 5;
-    -webkit-text-stroke: 1px;
-    -webkit-text-fill-color: transparent;
+  .modal .modal-inner .modal-details h2 {
+    font-size: 36px;
   }
-  .modal .modal-details a.site-link {
+  .modal .modal-inner .modal-details a.site-link {
     margin-bottom: 25px;
-  }
-  .modal .modal-image img.logo {
-    display: none;
+    font-size: 22px;
   }
 }
 
 @media (max-width: 379px) {
-  .modal-details {
+  .modal .modal-inner .modal-details {
     padding: 25px;
   }
-  .modal-details a.site-link {
-    font-size: 22px;
-  }
-  .modal .line {
+  .modal .modal-inner .modal-details p.line {
     font-size: 18px;
   }
-  .modal-details p {
+  .modal .modal-inner .modal-details p.copy {
     font-size: 16px;
   }
-  .modal-image-logo {
+  .modal .modal-inner .modal-image img.logo {
     max-width: 120px;
     max-height: 50px;
   }
