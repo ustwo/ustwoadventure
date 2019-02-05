@@ -1,6 +1,5 @@
 .portfolio-content {
   --itemWidth: 225px;
-  --itemHeight: 285px;
 }
 
 .portfolio-content h1 {
@@ -22,7 +21,7 @@
 
 .portfolio-content .portfolio-item img {
   width: var(--itemWidth);
-  height: var(--itemHeight);
+  height: calc(var(--itemWidth) * 1.27);
 }
 
 .portfolio-content .portfolio-item p.copy {
