@@ -1,0 +1,35 @@
+.portfolio-content {
+
+    h1 {
+        max-width: 400px;
+    }
+
+    .portfolio-container {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 3rem;
+        justify-content: space-between;
+    }
+
+    .portfolio-item {
+        --width: 225px;
+        --height: 285px;
+
+        p.name {
+            font-size: 20px;
+            max-width: var(--width);
+        }
+
+        img {
+            width: var(--width);
+            height: var(--height);
+        }
+
+        p.copy {
+            max-width: var(--width);
+        }
+    }
+
+}

@@ -5,7 +5,7 @@ const portfolioArray = [
         tidyurl: "wearetribe.co",
         image: "images/team_assets/fund/tribe_image.jpg",
         logo: "images/team_assets/fund/tribe_logo.png",
-        line: "Natural sports nutrition and an amazing community",
+        line: "Natural sports nutrition & an amazing community",
         copy: "We are a community of 50,000+ athletes brought together by a love of nature and a shared spirit for adventure. TRIBE was inspired by a 1,000 mile run across Europe to fight human trafficking. A journey that set us on a mission to change the world of sports nutrition."
     },
     {
@@ -32,7 +32,7 @@ const portfolioArray = [
         tidyurl: "sidestory.co",
         image: "images/team_assets/fund/sidestory_image.jpg",
         logo: "images/team_assets/fund/sidestory_logo.png",
-        line: "Curated immersive experiences, led by insiders",
+        line: "Curated experiences, led by insiders",
         copy: "Now owned by <a href='https://www.mrandmrssmith.com/' target='_blank' style='color: #444; text-decoration:  underline;'>Mr & Mrs Smith</a>. A SideStory Experience is just you and the Insider discovering a particular neighbourhood or theme in great detail: they'll show you hidden gems and introduce you to the key movers and shakers in the industry, from food to architecture to art."
     },
     {
@@ -113,7 +113,7 @@ const portfolioArray = [
         tidyurl: "marvelapp.com",
         image: "images/team_assets/fund/marvel_image.jpg",
         logo: "images/team_assets/fund/marvel_logo.png",
-        line: "Mobile and web prototyping for designers",
+        line: "A prototyping tool for designers",
         copy: "Design in Marvel or other tools, add your interactions and gestures to make the designs come to life, and collaborate with your team. We’ve built the best way for designers to to their thing."
     },
     {
@@ -194,7 +194,7 @@ const portfolioArray = [
         tidyurl: "superhi.com",
         image: "images/team_assets/fund/superhi_image.jpg",
         logo: "images/team_assets/fund/superhi_logo.png",
-        line: "Online Courses For Creative People To Learn + Grow",
+        line: "Online Courses For Creative People",
         copy: "A community of inspiring people from over 50 countries learning new tech skills to complement and enhance what they're already great at"
     }
 ];
@@ -256,7 +256,7 @@ const createModals = a => a.map(obj => {
                     <p class="copy">${ obj.copy }</p>
                 </div>
                 <div class="modal-image">
-                    <img class="background" src="" data-src="${ obj.image }"/>
+                    <img class="background" data-src="${ obj.image }"/>
                     <a href="${ obj.url }" target="_blank"> <img class="logo" src="${ obj.logo }"/> </a>
                 </div>
             </div>
@@ -294,7 +294,11 @@ if (portfolioPreviewContainer) {
 
 
 const portfolioItems = createPortfolioItems(shuffle(portfolioArray));
+const portfolioContainer = document.querySelector(".portfolio-container");
 
+if (portfolioContainer) {
+    portfolioContainer.innerHTML = portfolioItems.join("");
+}
 
 
 const modalContainer = document.querySelector(".modal-container");
