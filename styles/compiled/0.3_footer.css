@@ -112,7 +112,7 @@ footer .right a {
 		flex-direction: column-reverse;
 	}
 	footer .left {
-		margin-top: 30px;
+		margin-top: 32px;
 		height: initial;
 		width: 80%;
 		flex-direction: row-reverse;
