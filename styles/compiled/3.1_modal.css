@@ -162,8 +162,8 @@
 
 @media (max-width: 640px) {
 	.modal {
-		height: 90%;
-		width: 90%;
+		height: calc(100% - 100px);
+		width: calc(100% - 100px);
 	}
 	.modal .modal-inner {
 		flex-direction: column;
@@ -196,9 +196,8 @@
 
 @media (max-width: 500px) {
 	.modal {
-		height: 100%;
-		width: 100%;
-		position: relative;
+		height: calc(100% - 50px);
+		width: calc(100% - 50px);
 	}
 	.modal .modal-inner .modal-details h2 {
 		display: none;
@@ -213,6 +212,11 @@
 }
 
 @media (max-width: 379px) {
+	.modal {
+		height: 100%;
+		width: 100%;
+		position: relative;
+	}
 	.modal .modal-inner .modal-details {
 		padding: 25px;
 	}

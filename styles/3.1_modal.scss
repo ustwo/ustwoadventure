@@ -166,8 +166,8 @@
 
 
     @media (max-width: 640px) {
-        height: 90%;
-        width: 90%;
+        height: calc(100% - 100px);
+        width: calc(100% - 100px);
 
         .modal-inner {
             flex-direction: column;
@@ -206,9 +206,8 @@
     }
 
     @media (max-width: 500px) {
-        height: 100%;
-        width: 100%;
-        position: relative;
+        height: calc(100% - 50px);
+        width: calc(100% - 50px);
 
         .modal-inner {
             .modal-details {
@@ -230,6 +229,10 @@
 
 
     @media (max-width: 379px) {
+        height: 100%;
+        width: 100%;
+        position: relative;
+
         .modal-inner {
             .modal-details {
                 padding: 25px;
