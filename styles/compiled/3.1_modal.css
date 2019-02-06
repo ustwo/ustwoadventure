@@ -201,11 +201,11 @@
 		position: relative;
 	}
 	.modal .modal-inner .modal-details h2 {
-		font-size: 36px;
+		display: none;
 	}
 	.modal .modal-inner .modal-details a.site-link {
 		margin-bottom: 18px;
-		font-size: 22px;
+		font-size: 26px;
 	}
 	.modal .modal-inner .modal-details p.line {
 		margin-bottom: 12px;

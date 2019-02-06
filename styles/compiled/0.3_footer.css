@@ -144,6 +144,9 @@ footer .right a {
 }
 
 @media (max-width: 450px) {
+	footer .left .ADV {
+		font-size: 38px;
+	}
 	footer .left .copyright {
 		font-size: 0.8em;
 	}
