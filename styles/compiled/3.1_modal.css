@@ -219,6 +219,9 @@
 	.modal .modal-inner .modal-details {
 		padding: 22px;
 	}
+	.modal .modal-inner .modal-details a.site-link {
+		margin-bottom: 15px;
+	}
 	.modal .modal-inner .modal-details p.line {
 		font-size: 18px;
 	}
@@ -240,6 +243,7 @@
 
 @media (pointer: coarse) and (max-width: 500px) and (min-height: 750px), (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2), (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3), (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
 	.modal {
+		width: 100%;
 		height: 85%;
 		position: fixed;
 		bottom: 0;
