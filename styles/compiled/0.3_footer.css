@@ -93,16 +93,16 @@ footer .right a {
 		height: 138px;
 	}
 	footer .right p {
-		margin-bottom: 12px;
+		margin-bottom: 13px;
 	}
 	footer .right a {
-		margin-bottom: 8px;
+		margin-bottom: 9px;
 	}
 }
 
 @media (max-width: 700px) {
 	footer {
-		font-size: 14px;
+		margin: 65px 0 35px 0;
 		flex-direction: column-reverse;
 	}
 	footer .left {
@@ -127,7 +127,7 @@ footer .right a {
 
 @media (max-width: 575px) {
 	footer {
-		margin: 65px 0 35px 0;
+		margin: 65px 0 25px 0;
 	}
 	footer .left {
 		width: 97%;
