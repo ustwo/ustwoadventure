@@ -1,0 +1,84 @@
+footer {
+	margin: 165px 0 55px 0;
+	font-size: 16px;
+	color: #646464;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	position: relative;
+}
+
+footer .separator {
+	margin-bottom: 60px;
+	height: 4px;
+	width: 100%;
+	flex-shrink: 0;
+	background-color: #f32d94;
+}
+
+footer a, footer a:visited {
+	color: #646464;
+	width: max-content;
+}
+
+footer a:hover {
+	font-style: italic;
+}
+
+footer .left .ADV {
+	font-family: "Futura-pt";
+	font-size: 42px;
+	line-height: 1;
+	letter-spacing: -5px;
+	color: #f32d94;
+}
+
+footer .left .ADV span {
+	display: inline-block;
+	transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+footer .left .copyright {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+
+footer .left .copyright p {
+	margin: 0;
+	line-height: 1.8;
+}
+
+footer .left .copyright a {
+	text-decoration: underline;
+}
+
+footer .right {
+	width: 52%;
+	margin-right: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+footer .right p {
+	margin-bottom: 15px;
+	color: #f32d94;
+	font-weight: 800;
+}
+
+footer .right a {
+	display: block;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 950px) {
+	footer .right {
+		width: 65%;
+	}
+}

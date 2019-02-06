@@ -1,6 +1,6 @@
 body {
     margin: auto;
-    width: 85%;
+    padding: 0 60px;
     max-width: 1100px;
 
     font-family: 'Px', sans-serif;
@@ -105,160 +105,9 @@ a.button {
 
 
 
-
-header {
-    margin: 65px 0 170px 0;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 80px;
-        width: 230px;
-
-        transform: rotate(-10deg);
-        transition: transform 12s;
-
-        img {
-            position: absolute;
-            max-width: 80px;
-
-            transform: rotate(10deg);
-            transition: transform 12s;
-        }
-
-        &:hover {
-            transform: rotate(335deg);
-            transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
-
-            img {
-                transform: rotate(-335deg);
-                transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
-            }
-
-            @media (pointer: coarse) {
-                transform: rotate(10deg);
-
-                img {
-                    transform: rotate(-10deg);
-                }
-            }
-        }
-
-        ul {
-            position: relative;
-            margin: 0;
-            list-style: none;
-
-            transform-style: preserve-3d;
-            animation: three-dimensions-circle 16s linear infinite;
-
-            @keyframes three-dimensions-circle {
-                0% {
-                    transform: rotateX(-100deg) rotate(0);
-                }
-                100% {
-                    transform: rotateX(-100deg) rotate(-360deg);
-                }
-            }
-
-            li {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-
-                font-family: "futura-pt", futura, sans-serif;
-                font-size: 52px;
-                font-weight: bold;
-                color: #f32d94;
-                -webkit-text-stroke: 1.2px #f32d94;
-
-                $NUMBER_OF_LETTERS: 9;
-
-                @for $i from 1 through $NUMBER_OF_LETTERS {
-                    &:nth-child(#{$i}) {
-                        transform: translate(-50%, -50%)
-                        rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
-                        translateY(-110px)
-                        rotateX(90deg);
-                    }
-                }
-
-                @for $i from 1 through $NUMBER_OF_LETTERS {
-                    &:nth-child(#{$i}) {
-                        animation: circle-orbit-#{$i} 16s linear infinite;
-                    }
-                }
-
-                @for $i from 8 through 9 {
-                    &:nth-child(#{$i}) {
-                        -webkit-text-fill-color: #fff;
-                    }
-                    @keyframes circle-orbit-#{$i} {
-                        #{($i - 8) * (100 / ($NUMBER_OF_LETTERS / 2)) + 6}% {
-                            -webkit-text-fill-color: transparent;
-                        }
-                    }
-                }
-                @for $i from 1 through 3 {
-                    &:nth-child(#{$i}) {
-                        -webkit-text-fill-color: #fff;
-                    }
-                    @keyframes circle-orbit-#{$i} {
-                        #{($i - 1) * (100 / ($NUMBER_OF_LETTERS / 2)) + 50}% {
-                            -webkit-text-fill-color: transparent;
-                        }
-                    }
-                }
-                @for $i from 4 through 7 {
-                    &:nth-child(#{$i}) {
-                        -webkit-text-fill-color: transparent;
-                    }
-                    @keyframes circle-orbit-#{$i} {
-                        #{($i - 4) * (100 / ($NUMBER_OF_LETTERS / 2)) + 18}% {
-                            -webkit-text-fill-color: #fff;
-                        }
-                    }
-                }
-            }
-        }
-
-    }
-
-    nav {
-
-        a, a:visited {
-            margin-left: 60px;
-
-            font-size: 20px;
-            line-height: 1.6;
-            color: #646464;
-
-            &:hover {
-                font-style: italic;
-            }
-
-            &:last-child {
-                text-decoration: line-through;
-                pointer-events: none;
-            }
-        }
-
-    }
-}
-
-
-
-
 .content-wrapper {
     min-height: 38vh;
 }
-
 
 
 
@@ -312,240 +161,38 @@ header {
 
 
 
-
-footer {
-    margin: 165px 0 55px 0;
-
-    font-size: 16px;
-    color: #646464;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-
-    position: relative;
-
-    .separator {
-        margin-bottom: 60px;
-        height: 4px;
-        width: 100%;
-        flex-shrink: 0;
-        background-color: #f32d94;
-    }
-
-    a, a:visited {
-        color: #646464;
-
-        width: max-content;
-    }
-
-    a:hover {
-        font-style: italic;
-    }
-
-    .left {
-        .ADV {
-            font-family: "Futura-pt";
-            font-size: 42px;
-            line-height: 1;
-            letter-spacing: -5px;
-            color: #f32d94;
-
-            span {
-                display: inline-block;
-                transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            }
-        }
-
-        .copyright {
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-            margin-bottom: 5px;
-
-            font-size: 14px;
-
-            p {
-                margin: 0;
-                line-height: 1.8;
-            }
-
-            a {
-                text-decoration: underline;
-            }
-        }
-    }
-
-    .right {
-        width: 52%;
-        margin-right: 10px;
-
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-
-        p {
-            margin-bottom: 15px;
-
-            color: #f32d94;
-            font-weight: 800;
-        }
-
-        a {
-            display: block;
-            margin-bottom: 10px;
-        }
-    }
-
-}
-
-
-
-
-
 @media (max-width: 1150px) {
 
 }
 
 @media (max-width: 950px) {
-    footer {
-        .right {
-            width: 65%;
-        }
-    }
+
 }
 
 @media (max-width: 780px) {
-    header {
-        .logo {
-            height: 70px;
-            width: 190px;
-
-            img {
-                width: 70px;
-            }
-
-            ul li {
-                font-size: 48px;
-                $NUMBER_OF_LETTERS: 9;
-                @for $i from 1 through $NUMBER_OF_LETTERS {
-                    &:nth-child(#{$i}) {
-                        transform: translate(-50%, -50%)
-                        rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
-                        translateY(-90px)
-                        rotateX(90deg);
-                    }
-                }
-            }
-        }
-
-        nav a {
-            margin-left: 40px;
-            font-size: 18px;
-        }
+    body {
+       padding: 0 40px;
     }
 }
 
 @media (max-width: 600px) {
-    header {
-        margin: 50px 0 120px 0;
 
-        .logo {
-            height: 65px;
-            width: 175px;
-
-            img {
-                width: 67px;
-            }
-
-            ul li {
-                font-size: 46px;
-                $NUMBER_OF_LETTERS: 9;
-                @for $i from 1 through $NUMBER_OF_LETTERS {
-                    &:nth-child(#{$i}) {
-                        transform: translate(-50%, -50%)
-                        rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
-                        translateY(-85px)
-                        rotateX(90deg);
-                    }
-                }
-            }
-        }
-
-        nav a {
-            margin-left: 25px;
-        }
-    }
 }
 
 @media (max-width: 565px) {
-    header {
-        margin: 30px 0 120px 0;
 
-        nav a {
-            display: block;
-            text-align: right;
-        }
-    }
 }
 
 @media (max-width: 425px) {
-    header {
-        .logo {
-            height: 65px;
-            width: 170px;
-
-            img {
-                width: 65px;
-            }
-
-            ul li {
-                font-size: 44px;
-                $NUMBER_OF_LETTERS: 9;
-                @for $i from 1 through $NUMBER_OF_LETTERS {
-                    &:nth-child(#{$i}) {
-                        transform: translate(-50%, -50%)
-                        rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
-                        translateY(-80px)
-                        rotateX(90deg);
-                    }
-                }
-            }
-        }
+    body {
+        padding: 0 30px;
     }
 }
 
 @media (max-width: 374px) {
-    header {
-        margin: 25px 0 120px 0;
 
-        .logo {
-            height: 55px;
-            width: 145px;
+}
 
-            img {
-                width: 60px;
-            }
+@media (max-width: 320px) {
 
-            ul li {
-                font-size: 38px;
-                $NUMBER_OF_LETTERS: 9;
-                @for $i from 1 through $NUMBER_OF_LETTERS {
-                    &:nth-child(#{$i}) {
-                        transform: translate(-50%, -50%)
-                        rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
-                        translateY(-70px)
-                        rotateX(90deg);
-                    }
-                }
-            }
-        }
-
-        nav a {
-            font-size: 17px;
-        }
-    }
 }
