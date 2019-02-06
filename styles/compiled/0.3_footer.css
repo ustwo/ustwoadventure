@@ -127,7 +127,7 @@ footer .right a {
 
 @media (max-width: 575px) {
 	footer .left {
-		width: 100%;
+		width: 98%;
 	}
 	footer .right {
 		width: 100%;
@@ -160,7 +160,7 @@ footer .right a {
 
 @media (max-width: 375px) {
 	footer .right {
-		width: 95%;
+		width: 98%;
 	}
 	footer .right .find-us a {
 		margin-right: 12px;
@@ -168,6 +168,9 @@ footer .right a {
 }
 
 @media (max-width: 335px) {
+	footer .left {
+		width: 100%;
+	}
 	footer .right {
 		width: 100%;
 	}
