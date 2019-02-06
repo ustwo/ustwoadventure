@@ -159,7 +159,7 @@ footer .right a {
 		flex-wrap: wrap;
 	}
 	footer .right .find-us {
-		margin: 25px 0 28px 0;
+		margin-top: 25px;
 	}
 	footer .right .find-us a {
 		display: inline;
