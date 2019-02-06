@@ -217,7 +217,7 @@
 		width: calc(100% - 35px);
 	}
 	.modal .modal-inner .modal-details {
-		padding: 22px;
+		padding: 20px 22px;
 	}
 	.modal .modal-inner .modal-details a.site-link {
 		margin-bottom: 15px;
