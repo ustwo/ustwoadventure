@@ -1,7 +1,7 @@
 body {
-    max-width: 1100px;
     margin: auto;
-    padding: 0 60px;
+    width: 85%;
+    max-width: 1100px;
 
     font-family: 'Px', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -313,27 +313,27 @@ header {
 
 
 
-.separator {
-    margin: 120px 0 60px 0;
-    height: 4px;
-    background-color: #f32d94;
-}
-
-
-
-
 footer {
-    margin: 55px 0 55px 0;
+    margin: 165px 0 55px 0;
 
     font-size: 16px;
     color: #646464;
 
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
 
     position: relative;
+
+    .separator {
+        margin-bottom: 60px;
+        height: 4px;
+        width: 100%;
+        flex-shrink: 0;
+        background-color: #f32d94;
+    }
 
     a, a:visited {
         color: #646464;
@@ -419,11 +419,6 @@ footer {
 }
 
 @media (max-width: 780px) {
-
-    body {
-        padding: 0 40px;
-    }
-
     header {
         .logo {
             height: 70px;
@@ -452,23 +447,53 @@ footer {
             font-size: 18px;
         }
     }
-
 }
 
 @media (max-width: 600px) {
-    header nav a {
-        margin-left: 25px;
+    header {
+        margin: 50px 0 120px 0;
+
+        .logo {
+            height: 65px;
+            width: 175px;
+
+            img {
+                width: 67px;
+            }
+
+            ul li {
+                font-size: 46px;
+                $NUMBER_OF_LETTERS: 9;
+                @for $i from 1 through $NUMBER_OF_LETTERS {
+                    &:nth-child(#{$i}) {
+                        transform: translate(-50%, -50%)
+                        rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
+                        translateY(-85px)
+                        rotateX(90deg);
+                    }
+                }
+            }
+        }
+
+        nav a {
+            margin-left: 25px;
+        }
     }
 }
 
 @media (max-width: 565px) {
-    body {
-        padding: 0 30px;
-    }
-
     header {
         margin: 30px 0 120px 0;
 
+        nav a {
+            display: block;
+            text-align: right;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    header {
         .logo {
             height: 65px;
             width: 170px;
@@ -490,22 +515,37 @@ footer {
                 }
             }
         }
-
-        nav a {
-            display: block;
-            text-align: right;
-        }
     }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 374px) {
+    header {
+        margin: 25px 0 120px 0;
 
-}
+        .logo {
+            height: 55px;
+            width: 145px;
 
-@media (max-width: 375px) {
+            img {
+                width: 60px;
+            }
 
-}
+            ul li {
+                font-size: 38px;
+                $NUMBER_OF_LETTERS: 9;
+                @for $i from 1 through $NUMBER_OF_LETTERS {
+                    &:nth-child(#{$i}) {
+                        transform: translate(-50%, -50%)
+                        rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
+                        translateY(-70px)
+                        rotateX(90deg);
+                    }
+                }
+            }
+        }
 
-@media (max-width: 320px) {
-
+        nav a {
+            font-size: 17px;
+        }
+    }
 }

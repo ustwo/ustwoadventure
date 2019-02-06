@@ -247,7 +247,7 @@ const createPortfolioItems = a => a.map(obj => {
 
 const createModals = a => a.map(obj => {
     return `
-        <div id="modal-${ kebabCase(obj.name) }">
+        <div id="modal-${ kebabCase(obj.name) }" class="modal">
             <div class="modal-inner">
                 <div class="modal-details">
                     <h2>${ obj.name }</h2>
