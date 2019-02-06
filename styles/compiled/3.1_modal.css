@@ -213,8 +213,8 @@
 
 @media (max-width: 379px) {
 	.modal {
-		height: calc(100% - 40px);
-		width: calc(100% - 35px);
+		height: calc(100% - 42px);
+		width: calc(100% - 37px);
 	}
 	.modal .modal-inner .modal-details {
 		padding: 20px 22px;
