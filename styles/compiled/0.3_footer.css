@@ -1,12 +1,12 @@
 .separator {
-	margin: 85px 0 60px 0;
+	margin-top: 85px;
 	height: 4px;
 	background-color: #f32d94;
 }
 
 @media (max-width: 525px) {
 	.separator {
-		margin: 75px 0 45px 0;
+		margin-top: 75px;
 	}
 }
 
@@ -98,12 +98,6 @@ footer .right a {
 	footer .left {
 		height: 138px;
 	}
-	footer .right p {
-		margin-bottom: 13px;
-	}
-	footer .right a {
-		margin-bottom: 9px;
-	}
 }
 
 @media (max-width: 700px) {
@@ -112,7 +106,7 @@ footer .right a {
 		flex-direction: column-reverse;
 	}
 	footer .left {
-		margin-top: 32px;
+		margin-top: 40px;
 		height: initial;
 		width: 80%;
 		flex-direction: row-reverse;
@@ -133,7 +127,7 @@ footer .right a {
 
 @media (max-width: 575px) {
 	footer {
-		margin: 65px 0 25px 0;
+		margin: 55px 0 25px 0;
 	}
 	footer .left {
 		width: 97%;

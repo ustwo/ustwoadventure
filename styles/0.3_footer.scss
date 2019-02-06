@@ -1,11 +1,11 @@
 .separator {
-    margin: 85px 0 60px 0;
+    margin-top: 85px;
     height: 4px;
     background-color: #f32d94;
 
 
     @media (max-width: 525px) {
-        margin: 75px 0 45px 0;
+        margin-top: 75px;
     }
 }
 
@@ -104,16 +104,6 @@ footer {
         .left {
             height: 138px;
         }
-
-        .right {
-            p {
-                margin-bottom: 13px;
-            }
-
-            a {
-                margin-bottom: 9px;
-            }
-        }
     }
 
 
@@ -123,7 +113,7 @@ footer {
         flex-direction: column-reverse;
 
         .left {
-            margin-top: 32px;
+            margin-top: 40px;
             height: initial;
             width: 80%;
 
@@ -149,7 +139,7 @@ footer {
 
 
     @media (max-width: 575px) {
-        margin: 65px 0 25px 0;
+        margin: 55px 0 25px 0;
 
         .left {
             width: 97%;
@@ -208,7 +198,7 @@ footer {
 
     @media (max-width: 335px) {
         font-size: 14px;
-        
+
         .left {
             width: 100%;
         }
