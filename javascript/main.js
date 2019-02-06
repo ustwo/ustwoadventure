@@ -6,7 +6,7 @@ const portfolioArray = [
         image: "images/team_assets/fund/tribe_image.jpg",
         logo: "images/team_assets/fund/tribe_logo.png",
         line: "Natural sports nutrition & an amazing community",
-        copy: "We are a community of 50,000+ athletes brought together by a love of nature and a spirit for adventure. TRIBE was inspired by a 1,000 mile run across Europe to fight human trafficking. A journey that set us on a mission to change the world of sports nutrition."
+        copy: "We are a community of 50,000+ athletes brought together by a love of nature and a spirit for adventure. TRIBE was inspired by a 1,000 mile run across Europe to fight human trafficking, which set us on a mission to change the world of sports nutrition."
     },
     {
         name: "Easle",
@@ -24,7 +24,7 @@ const portfolioArray = [
         image: "images/team_assets/fund/sanctus_image.jpg",
         logo: "images/team_assets/fund/sanctus_logo.png",
         line: "Changing the perception of mental health",
-        copy: "We believe mental health should be viewed like your physical health, and are on a mission to make it accessible. We work with businesses to help them create an open environment where mental health is accepted, and create content to further this goal."
+        copy: "We believe mental health should be viewed like physical health, and are on a mission to make it accessible. We work with businesses to help them create an open environment where mental health is cared for."
     },
     {
         name: "Sidestory",
@@ -33,7 +33,7 @@ const portfolioArray = [
         image: "images/team_assets/fund/sidestory_image.jpg",
         logo: "images/team_assets/fund/sidestory_logo.png",
         line: "Curated experiences, led by insiders",
-        copy: "Now owned by <a href='https://www.mrandmrssmith.com/' target='_blank' style='color: #444; text-decoration:  underline;'>Mr & Mrs Smith</a>. A SideStory Experience is just you and the Insider discovering a particular neighbourhood or theme in great detail: they'll show you hidden gems and introduce you to the key movers and shakers in the industry, from food to architecture to art."
+        copy: "A SideStory Experience is just you and the Insider discovering a particular neighbourhood or theme in great detail: they'll show you hidden gems and introduce you to the key movers and shakers, from food to architecture to art."
     },
     {
         name: "Tray",

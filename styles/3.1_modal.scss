@@ -166,7 +166,7 @@
 
 
     @media (max-width: 640px) {
-        height: calc(100% - 100px);
+        height: calc(100% - 110px);
         width: calc(100% - 100px);
 
         .modal-inner {
@@ -206,7 +206,7 @@
     }
 
     @media (max-width: 500px) {
-        height: calc(100% - 50px);
+        height: calc(100% - 60px);
         width: calc(100% - 50px);
 
         .modal-inner {
@@ -229,8 +229,8 @@
 
 
     @media (max-width: 379px) {
-        height: calc(100% - 30px);
-        width: calc(100% - 30px);
+        height: calc(100% - 40px);
+        width: calc(100% - 35px);
 
         .modal-inner {
             .modal-details {
@@ -253,8 +253,8 @@
     }
 
     @media (max-width: 325px) {
-        height: calc(100% - 30px);
-        width: calc(100% - 30px);
+        height: 100%;
+        width: 100%;
     }
 
     @media
