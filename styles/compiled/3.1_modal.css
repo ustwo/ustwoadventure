@@ -213,9 +213,8 @@
 
 @media (max-width: 379px) {
 	.modal {
-		height: 100%;
-		width: 100%;
-		position: relative;
+		height: calc(100% - 30px);
+		width: calc(100% - 30px);
 	}
 	.modal .modal-inner .modal-details {
 		padding: 25px;
@@ -229,6 +228,13 @@
 	.modal .modal-inner .modal-image img.logo {
 		max-width: 120px;
 		max-height: 50px;
+	}
+}
+
+@media (max-width: 325px) {
+	.modal {
+		height: calc(100% - 30px);
+		width: calc(100% - 30px);
 	}
 }
 

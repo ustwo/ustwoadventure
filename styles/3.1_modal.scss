@@ -229,9 +229,8 @@
 
 
     @media (max-width: 379px) {
-        height: 100%;
-        width: 100%;
-        position: relative;
+        height: calc(100% - 30px);
+        width: calc(100% - 30px);
 
         .modal-inner {
             .modal-details {
@@ -251,6 +250,11 @@
                 max-height: 50px;
             }
         }
+    }
+
+    @media (max-width: 325px) {
+        height: calc(100% - 30px);
+        width: calc(100% - 30px);
     }
 
     @media
