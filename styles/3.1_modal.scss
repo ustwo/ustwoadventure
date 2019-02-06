@@ -58,7 +58,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
-        background-image: url('../../images/modal_exit.svg');
+        background-image: url("../../images/modal_exit.svg");
     }
 
     .modal-inner {
@@ -144,12 +144,8 @@
 
     }
 
-}
 
-
-
-@media (max-width: 880px) {
-    .modal {
+    @media (max-width: 880px) {
         width: 95%;
 
         .modal-inner .modal-details h2 {
@@ -158,20 +154,18 @@
             hyphens: auto;
         }
     }
-}
 
-@media (max-width: 780px) {
-    .modal {
+
+    @media (max-width: 780px) {
         width: 100%;
 
         .modal-inner .modal-details h2 {
             font-size: 52px;
         }
     }
-}
 
-@media (max-width: 640px) {
-    .modal {
+
+    @media (max-width: 640px) {
         height: 90%;
         width: 90%;
 
@@ -210,10 +204,8 @@
             }
         }
     }
-}
 
-@media (max-width: 500px) {
-    .modal {
+    @media (max-width: 500px) {
         height: 100%;
         width: 100%;
         position: relative;
@@ -235,11 +227,9 @@
             }
         }
     }
-}
 
 
-@media (max-width: 379px) {
-    .modal {
+    @media (max-width: 379px) {
         .modal-inner {
             .modal-details {
                 padding: 22px;
@@ -263,17 +253,17 @@
             }
         }
     }
-}
 
-@media
-(pointer: coarse) and (max-width: 500px) and (min-height: 750px),
-(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio : 2),
-(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio : 3),
-(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio : 3) {
-    .modal {
+    @media
+    (pointer: coarse) and (max-width: 500px) and (min-height: 750px),
+    (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio : 2),
+    (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio : 3),
+    (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio : 3) {
         height: 85%;
         position: fixed;
         bottom: 0;
         left: 0;
     }
+
+
 }
