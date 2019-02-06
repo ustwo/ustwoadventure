@@ -177,6 +177,9 @@ footer .right a {
 }
 
 @media (max-width: 335px) {
+	footer {
+		font-size: 14px;
+	}
 	footer .left {
 		width: 100%;
 	}
