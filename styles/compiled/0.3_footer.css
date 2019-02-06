@@ -126,6 +126,9 @@ footer .right a {
 }
 
 @media (max-width: 575px) {
+	footer {
+		margin: 65px 0 35px 0;
+	}
 	footer .left {
 		width: 97%;
 	}
