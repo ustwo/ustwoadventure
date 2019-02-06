@@ -1,5 +1,11 @@
+.separator {
+	margin: 85px 0 60px 0;
+	height: 4px;
+	background-color: #f32d94;
+}
+
 footer {
-	margin: 165px 0 55px 0;
+	margin: 65px 0 55px 0;
 	font-size: 16px;
 	color: #646464;
 	display: flex;
@@ -10,14 +16,6 @@ footer {
 	position: relative;
 }
 
-footer .separator {
-	margin-bottom: 60px;
-	height: 4px;
-	width: 100%;
-	flex-shrink: 0;
-	background-color: #f32d94;
-}
-
 footer a, footer a:visited {
 	color: #646464;
 	width: max-content;
@@ -25,6 +23,13 @@ footer a, footer a:visited {
 
 footer a:hover {
 	font-style: italic;
+}
+
+footer .left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 155px;
 }
 
 footer .left .ADV {
@@ -41,11 +46,8 @@ footer .left .ADV span {
 }
 
 footer .left .copyright {
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
 	margin-bottom: 5px;
-	font-size: 14px;
+	font-size: 0.85em;
 }
 
 footer .left .copyright p {
@@ -77,8 +79,96 @@ footer .right a {
 	margin-bottom: 10px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
 	footer .right {
 		width: 65%;
+	}
+}
+
+@media (max-width: 780px) {
+	footer {
+		font-size: 15px;
+	}
+	footer .left {
+		height: 138px;
+	}
+	footer .right p {
+		margin-bottom: 12px;
+	}
+	footer .right a {
+		margin-bottom: 8px;
+	}
+}
+
+@media (max-width: 700px) {
+	footer {
+		font-size: 14px;
+		flex-direction: column-reverse;
+	}
+	footer .left {
+		margin-top: 30px;
+		height: initial;
+		width: 80%;
+		flex-direction: row-reverse;
+	}
+	footer .left .copyright {
+		display: inline;
+	}
+	footer .right {
+		width: 80%;
+	}
+	footer .right p {
+		margin-bottom: 10px;
+	}
+	footer .right a {
+		margin-bottom: 6px;
+	}
+}
+
+@media (max-width: 575px) {
+	footer .left {
+		width: 100%;
+	}
+	footer .right {
+		width: 100%;
+	}
+	footer .right p {
+		margin-bottom: 10px;
+	}
+	footer .right a {
+		margin-bottom: 6px;
+	}
+}
+
+@media (max-width: 450px) {
+	footer .left .copyright {
+		font-size: 0.8em;
+	}
+	footer .right {
+		margin-right: 0;
+		width: 82%;
+		flex-wrap: wrap;
+	}
+	footer .right .find-us {
+		margin-top: 25px;
+	}
+	footer .right .find-us a {
+		display: inline;
+		margin-right: 15px;
+	}
+}
+
+@media (max-width: 375px) {
+	footer .right {
+		width: 95%;
+	}
+	footer .right .find-us a {
+		margin-right: 12px;
+	}
+}
+
+@media (max-width: 335px) {
+	footer .right {
+		width: 100%;
 	}
 }
