@@ -105,6 +105,10 @@
 	margin: 20px auto 100px auto;
 }
 
+.home-content .portfolio-preview p.copy {
+	margin-top: 5px;
+}
+
 .home-content .portfolio-preview .portfolio-item:nth-child(1) {
 	margin-top: 180px;
 }

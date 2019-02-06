@@ -118,6 +118,10 @@
 
         margin: 20px auto 100px auto;
 
+        p.copy {
+            margin-top: 5px;
+        }
+
         .portfolio-item {
             &:nth-child(1) {
                 margin-top: 180px;
