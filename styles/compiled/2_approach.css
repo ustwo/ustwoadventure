@@ -8,7 +8,7 @@
 
 .approach-content .writing {
 	margin: auto;
-	max-width: 800px;
+	max-width: 780px;
 }
 
 .approach-content .writing a {
@@ -64,7 +64,7 @@
 	top: -0px;
 	left: 0px;
 	opacity: 0;
-	transition: top 0.1s, left 0.1s;
+	transition: top 0.15s, left 0.15s;
 }
 
 .approach-content .stages div p.stage-title {
@@ -77,12 +77,11 @@
 	line-height: 1.6;
 }
 
-.approach-content .stages div:hover h2.number {
-	color: #646464;
+.approach-content .stages div:hover h2.number, .approach-content .stages div.scrolled h2.number {
 	font-style: italic;
 }
 
-.approach-content .stages div:hover h2.number::after {
+.approach-content .stages div:hover h2.number::after, .approach-content .stages div.scrolled h2.number::after {
 	opacity: 1;
 	top: -4px;
 	left: -4px;

@@ -34,8 +34,8 @@ h2 {
 
 blockquote {
 	font-style: italic;
-	font-size: 32px;
-	line-height: 1.7;
+	font-size: 36px;
+	line-height: 1.6;
 	text-align: center;
 	color: #646464;
 }
@@ -78,7 +78,7 @@ a.button.internal {
 }
 
 a.button.internal:hover {
-	background-position: calc(100% - 11px) 50%;
+	background-position: calc(100% - 10px) 50%;
 }
 
 a.button.back {

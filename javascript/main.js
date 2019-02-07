@@ -259,7 +259,7 @@ const createModals = a => a.map(obj => {
                 </div>
                 <div class="modal-image">
                     <img class="background" data-src="${ obj.image }"/>
-                    <a href="${ obj.url }" target="_blank"> <img class="logo" src="${ obj.logo }"/> </a>
+                    <a href="${ obj.url }" target="_blank"> <img class="logo" data-src="${ obj.logo }"/> </a>
                 </div>
             </div>
         </div>
@@ -276,7 +276,7 @@ if (latestInvestmentContainer) {
     latestInvestmentContainer.innerHTML = `
         <a href="#modal-${ kebabCase(latestInvestment.name) }" target="_blank" rel="modal:open">
             <p class="tag">Latest investment:</p>
-            <img src="${ latestInvestment.image }">
+            <img data-src="${ latestInvestment.image }">
             <h1>${ latestInvestment.name }</h1>
             <p class="copy">${ latestInvestment.line }</p>
         </a>
@@ -326,18 +326,15 @@ lzy();
 const logoRing = document.querySelector("header .logo");
 const logoUstwo = document.querySelector("header .logo img");
 
-const tiltLogo = tilt => {
-    logoRing.style.transform = `rotate(${-(tilt + 10)}deg)`;
-    logoUstwo.style.transform = `rotate(${(tilt + 10)}deg)`;
-};
-
 window.ondeviceorientation = e => {
     logoRing.style.transition = "transform 4s cubic-bezier(0.6, 0, 0.5, 1)";
     logoUstwo.style.transition = "transform 4s cubic-bezier(0.6, 0, 0.5, 1)";
 
     const tilt = (window.innerHeight > window.innerWidth) ? e.gamma : e.beta;
     const cappedTilt = Math.max(-45, Math.min(25, tilt));
-    tiltLogo(cappedTilt);
+
+    logoRing.style.transform = `rotate(${-(cappedTilt + 10)}deg)`;
+    logoUstwo.style.transform = `rotate(${(cappedTilt + 10)}deg)`;
 };
 
 
@@ -356,3 +353,30 @@ footerADVLetters.forEach(letter => {
     letter.addEventListener("mouseover", () => moveLetter());
     letter.addEventListener("click", () => moveLetter());
 });
+
+
+
+
+const approachStages = document.querySelectorAll(".stages div");
+const approachNumberScroll = () => {
+    const observer = new IntersectionObserver(onIntersection, {
+        rootMargin: "-25%",
+        threshold: 0.5
+    });
+    function numberScroll(number) {
+        number.classList.add("scrolled");
+    }
+    approachStages.forEach(number => observer.observe(number));
+    function onIntersection(entries) {
+        entries.forEach(entry => {
+            if (entry.intersectionRatio > 0) {
+                observer.unobserve(entry.target);
+                numberScroll(entry.target);
+            }
+        });
+    }
+};
+
+if (approachStages && window.innerWidth < 450) {
+    approachNumberScroll();
+}
