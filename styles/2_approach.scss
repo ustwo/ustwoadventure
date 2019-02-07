@@ -39,7 +39,7 @@
         div {
             width: 33%;
             min-width: 200px;
-            max-width: 300px;
+            max-width: 290px;
             position: relative;
 
             margin-bottom: 70px;
@@ -53,7 +53,7 @@
                 font-family: "futura-pt", "futura", sans-serif;
                 font-size: 72px;
                 opacity: 0.85;
-                -webkit-text-stroke: 1px;
+                -webkit-text-stroke: 1.2px;
                 -webkit-text-fill-color: transparent;
 
                 position: relative;
@@ -82,10 +82,14 @@
                 line-height: 1.6;
             }
 
-            &:hover h2.number::after {
-                opacity: 1;
-                top: -4px;
-                left: -4px;
+            &:hover h2.number {
+                color: #646464;
+
+                &::after {
+                    opacity: 1;
+                    top: -4px;
+                    left: -4px;
+                }
             }
         }
 
