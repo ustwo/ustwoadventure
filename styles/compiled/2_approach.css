@@ -26,7 +26,7 @@
 }
 
 .approach-content .stages {
-	margin: 80px auto 0 auto;
+	margin: 90px auto 0 auto;
 	max-width: 1050px;
 	display: flex;
 	flex-direction: row;
@@ -74,12 +74,13 @@
 
 .approach-content .stages div p.stage-copy {
 	margin-top: 10px;
+	line-height: 1.6;
 }
 
 .approach-content .stages div:hover h2.number::after {
 	opacity: 1;
 	top: -4px;
-	left: 4px;
+	left: -4px;
 }
 
 .approach-content .stages div.stage-cta {
