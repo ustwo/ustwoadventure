@@ -318,7 +318,7 @@ const logoAdventure = document.querySelector("header .logo");
 const logoUstwo = document.querySelector("header .logo img");
 
 window.ondeviceorientation = e => {
-    const tilt = (window.innerHeight > window.innerWidth) ? e.gamma : e.beta;
+    const tilt = (window.innerHeight > window.innerWidth) ? e.gamma / 2 : e.beta;
     const cappedTilt = Math.max(-45, Math.min(20, tilt));
 
     logoAdventure.style.transition = "transform 6s cubic-bezier(0.6, 0, 0.5, 1)";
@@ -330,9 +330,9 @@ window.ondeviceorientation = e => {
 
 
 
-const footerADV = document.querySelectorAll("footer .left .ADV span");
+const footerADVLetters = document.querySelectorAll("footer .left .ADV span");
 
-footerADV.forEach(letter => {
+footerADVLetters.forEach(letter => {
     const moveLetter = () => {
         const x = 10 * (Math.floor(Math.random() * 4)) - 10;
         const y = 10 * (Math.floor(Math.random() * 4)) - 10;
