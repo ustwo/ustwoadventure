@@ -293,6 +293,7 @@ header nav a:last-child, header nav a:visited:last-child {
 	}
 	header nav a {
 		display: block;
+		margin-bottom: 1px;
 		text-align: right;
 	}
 }

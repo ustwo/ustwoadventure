@@ -208,10 +208,10 @@ const lzy = (offset = 400) => {
         rootMargin: `${offset}px ${offset}px`,
         threshold: 0.01
     });
-    function loadImage(imageEl) {
+    const loadImage = imageEl => {
         imageEl.setAttribute("src", imageEl.getAttribute("data-src"));
         imageEl.removeAttribute("data-src");
-    }
+    };
     images.forEach(image => observer.observe(image));
     function onIntersection(entries) {
         entries.forEach(entry => {
@@ -363,9 +363,9 @@ const approachNumberScroll = () => {
         rootMargin: "-25%",
         threshold: 0.5
     });
-    function numberScroll(number) {
+    const numberScroll = number => {
         number.classList.add("scrolled");
-    }
+    };
     approachStages.forEach(number => observer.observe(number));
     function onIntersection(entries) {
         entries.forEach(entry => {
