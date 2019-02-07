@@ -17,7 +17,8 @@
 }
 
 .approach-content .stages {
-	margin-top: 80px;
+	margin: 80px auto 0 auto;
+	max-width: 1050px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -42,7 +43,6 @@
 	font-size: 72px;
 	-webkit-text-stroke: 1px;
 	-webkit-text-fill-color: transparent;
-	opacity: 0.6;
 }
 
 .approach-content .stages div p.stage-title {
@@ -51,6 +51,14 @@
 
 .approach-content .stages div p.stage-copy {
 	margin-top: 10px;
+}
+
+.approach-content .stages div:hover h2.number {
+	-webkit-text-stroke: 0;
+	-webkit-text-fill-color: #f32d94;
+	transform: scale(1.05);
+	transform-origin: bottom left;
+	transition: transform 0.2s;
 }
 
 .approach-content .stages div.stage-cta {
