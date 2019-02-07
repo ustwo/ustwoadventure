@@ -1,0 +1,69 @@
+.approach-content {
+    h1 {
+        max-width: 400px;
+    }
+
+    p:not(:first-child) {
+        margin-top: 50px;
+    }
+
+    blockquote {
+        margin: 70px auto 70px auto;
+        text-align: center;
+    }
+
+    .writing {
+        margin: auto;
+        max-width: 800px;
+    }
+
+    .stages {
+        margin-top: 80px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        div {
+            width: 33%;
+            min-width: 200px;
+            max-width: 300px;
+            position: relative;
+
+            margin-bottom: 70px;
+
+            h2.number {
+                position: absolute;
+                top: -5px;
+                left: -23px;
+                z-index: -1;
+
+                font-family: "futura-pt", "futura", sans-serif;
+                font-size: 72px;
+                -webkit-text-stroke: 1px;
+                -webkit-text-fill-color: transparent;
+                opacity: 0.6;
+            }
+
+            p.stage-title {
+                font-weight: 700;
+            }
+
+            p.stage-copy {
+                margin-top: 10px;
+            }
+        }
+
+        div.stage-cta {
+            margin-top: 25px;
+
+            a.button {
+                display: block;
+                width: max-content;
+            }
+        }
+
+    }
+}

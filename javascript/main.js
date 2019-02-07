@@ -323,6 +323,7 @@ window.addEventListener("deviceorientation", e => {
 
     const tilt = (window.innerHeight > window.innerWidth) ? e.gamma : e.beta;
     const cappedTilt = Math.max(-45, Math.min(25, tilt));
+    
     logoRing.style.transform = `rotate(${-(cappedTilt + 10)}deg)`;
     logoUstwo.style.transform = `rotate(${(cappedTilt + 10)}deg)`;
 });
