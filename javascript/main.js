@@ -316,16 +316,18 @@ lzy();
 
 const logoRing = document.querySelector("header .logo");
 const logoUstwo = document.querySelector("header .logo img");
+const tiltLogo = tilt => {
+    logoRing.style.transform = `rotate(${-(tilt + 10)}deg)`;
+    logoUstwo.style.transform = `rotate(${(tilt + 10)}deg)`;
+};
 
 window.addEventListener("deviceorientation", e => {
     logoRing.style.transition = "transform 4s cubic-bezier(0.6, 0, 0.5, 1)";
     logoUstwo.style.transition = "transform 4s cubic-bezier(0.6, 0, 0.5, 1)";
-
+    
     const tilt = (window.innerHeight > window.innerWidth) ? e.gamma : e.beta;
     const cappedTilt = Math.max(-45, Math.min(25, tilt));
-    
-    logoRing.style.transform = `rotate(${-(cappedTilt + 10)}deg)`;
-    logoUstwo.style.transform = `rotate(${(cappedTilt + 10)}deg)`;
+    tiltLogo(cappedTilt);
 });
 
 
