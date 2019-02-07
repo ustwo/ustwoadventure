@@ -1,3 +1,17 @@
+// const modalLinks = document.querySelectorAll(".portfolio-item");
+// modalLinks.forEach(modalLink => {
+//     modalLink.addEventListener("click", e => {
+//         const modalHref = modalLink.href;
+//         const modalId = modalHref.substr(modalHref.indexOf("#"), modalHref.length);
+//         const modal = document.querySelector(modalId);
+//         modal.style.display = "block";
+//         e.preventDefault();
+//     });
+// });
+
+
+
+
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
     define(['exports'], factory);
