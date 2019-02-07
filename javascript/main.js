@@ -200,6 +200,8 @@ const portfolioArray = [
 ];
 
 
+
+
 const lzy = (offset = 400) => {
     const images = document.querySelectorAll("[data-src]");
     const observer = new IntersectionObserver(onIntersection, {
@@ -266,6 +268,7 @@ const createModals = a => a.map(obj => {
 
 
 
+
 const latestInvestment = portfolioArray[portfolioArray.length - 1];
 const latestInvestmentContainer = document.querySelector(".latest-investment");
 
@@ -282,6 +285,7 @@ if (latestInvestmentContainer) {
 
 
 
+
 const portfolioMinusLatest = portfolioArray.slice(0, portfolioArray.length - 1);
 const portfolioPreviewItems = shuffle(portfolioMinusLatest).slice(0, 5);
 const portfolioPreview = createPortfolioItems(portfolioPreviewItems);
@@ -293,12 +297,15 @@ if (portfolioPreviewContainer) {
 
 
 
+
 const portfolioItems = createPortfolioItems(shuffle(portfolioArray));
 const portfolioContainer = document.querySelector(".portfolio-container");
 
 if (portfolioContainer) {
     portfolioContainer.innerHTML = portfolioItems.join("");
 }
+
+
 
 
 const modalContainer = document.querySelector(".modal-container");
@@ -310,25 +317,28 @@ if (modalContainer) {
 
 
 
+
 lzy();
+
 
 
 
 const logoRing = document.querySelector("header .logo");
 const logoUstwo = document.querySelector("header .logo img");
+
 const tiltLogo = tilt => {
     logoRing.style.transform = `rotate(${-(tilt + 10)}deg)`;
     logoUstwo.style.transform = `rotate(${(tilt + 10)}deg)`;
 };
 
-window.addEventListener("deviceorientation", e => {
+window.ondeviceorientation = e => {
     logoRing.style.transition = "transform 4s cubic-bezier(0.6, 0, 0.5, 1)";
     logoUstwo.style.transition = "transform 4s cubic-bezier(0.6, 0, 0.5, 1)";
-    
+
     const tilt = (window.innerHeight > window.innerWidth) ? e.gamma : e.beta;
     const cappedTilt = Math.max(-45, Math.min(25, tilt));
     tiltLogo(cappedTilt);
-});
+};
 
 
 
