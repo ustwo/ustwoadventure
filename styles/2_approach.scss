@@ -7,14 +7,22 @@
         margin-top: 50px;
     }
 
-    blockquote {
-        margin: 70px auto 70px auto;
-        text-align: center;
-    }
-
     .writing {
         margin: auto;
         max-width: 800px;
+
+        a {
+            text-decoration: underline;
+
+            &:hover {
+                font-style: italic;
+            }
+        }
+
+        blockquote {
+            margin: 70px auto 70px auto;
+            text-align: center;
+        }
     }
 
     .stages {
@@ -38,11 +46,12 @@
             h2.number {
                 position: absolute;
                 top: -5px;
-                left: -23px;
+                left: -25px;
                 z-index: -1;
 
                 font-family: "futura-pt", "futura", sans-serif;
                 font-size: 72px;
+                opacity: 0.85;
                 -webkit-text-stroke: 1px;
                 -webkit-text-fill-color: transparent;
             }
@@ -60,7 +69,7 @@
                     -webkit-text-stroke: 0;
                     -webkit-text-fill-color: #f32d94;
 
-                    transform: scale(1.05);
+                    transform: scale(1.04);
                     transform-origin: bottom left;
                     transition: transform 0.2s;
                 }
