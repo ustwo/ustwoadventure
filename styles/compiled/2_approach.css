@@ -21,6 +21,7 @@
 
 .approach-content .writing blockquote {
 	margin: 70px auto 70px auto;
+	max-width: 350px;
 	text-align: center;
 }
 
@@ -52,9 +53,22 @@
 	opacity: 0.85;
 	-webkit-text-stroke: 1px;
 	-webkit-text-fill-color: transparent;
+	position: relative;
+}
+
+.approach-content .stages div h2.number::after {
+	content: attr(data-number);
+	-webkit-text-stroke: 0;
+	-webkit-text-fill-color: #f32d94;
+	position: absolute;
+	top: -0px;
+	left: 0px;
+	opacity: 0;
+	transition: top 0.1s, left 0.1s;
 }
 
 .approach-content .stages div p.stage-title {
+	margin-top: -55px;
 	font-weight: 700;
 }
 
@@ -62,12 +76,10 @@
 	margin-top: 10px;
 }
 
-.approach-content .stages div:hover h2.number {
-	-webkit-text-stroke: 0;
-	-webkit-text-fill-color: #f32d94;
-	transform: scale(1.04);
-	transform-origin: bottom left;
-	transition: transform 0.2s;
+.approach-content .stages div:hover h2.number::after {
+	opacity: 1;
+	top: -4px;
+	left: 4px;
 }
 
 .approach-content .stages div.stage-cta {
