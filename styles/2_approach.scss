@@ -4,7 +4,7 @@
     }
 
     p:not(:first-child) {
-        margin-top: 50px;
+        margin-top: 60px;
     }
 
     .writing {
@@ -28,7 +28,7 @@
 
     .stages {
         margin: 90px auto 0 auto;
-        max-width: 1050px;
+        max-width: 1020px;
 
         display: flex;
         flex-direction: row;
@@ -84,6 +84,7 @@
 
             &:hover h2.number {
                 color: #646464;
+                font-style: italic;
 
                 &::after {
                     opacity: 1;
