@@ -358,25 +358,25 @@ footerADVLetters.forEach(letter => {
 
 
 const approachStages = document.querySelectorAll(".stages div");
-const approachNumberScroll = () => {
+const approachStageScroll = () => {
     const observer = new IntersectionObserver(onIntersection, {
         rootMargin: "-25%",
         threshold: 0.5
     });
-    const numberScroll = number => {
-        number.classList.add("scrolled");
+    const stageScrolled = stage => {
+        stage.classList.add("scrolled");
     };
-    approachStages.forEach(number => observer.observe(number));
+    approachStages.forEach(stage => observer.observe(stage));
     function onIntersection(entries) {
         entries.forEach(entry => {
             if (entry.intersectionRatio > 0) {
                 observer.unobserve(entry.target);
-                numberScroll(entry.target);
+                stageScrolled(entry.target);
             }
         });
     }
 };
 
 if (approachStages && window.innerWidth < 450) {
-    approachNumberScroll();
+    approachStageScroll();
 }
