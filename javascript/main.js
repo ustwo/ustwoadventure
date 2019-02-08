@@ -123,7 +123,7 @@ const portfolioArray = [
         image: "images/team_assets/fund/dice_image.jpg",
         logo: "images/team_assets/fund/dice_logo.png",
         line: "Tickets to the best gigs, festivals and parties",
-        copy: "Every feature on DICE is designed for discovery and to make going out easy. We bring you closer to the artists you love. Every event on the app is handpicked by our team, with great copy and design to boot."
+        copy: "Every feature on DICE is designed for discovery and to make going out easy. We bring you closer to the artists you love. Every event on the app is handpicked by our team, for the fans"
     },
     {
         name: "Pauseable",
@@ -195,7 +195,7 @@ const portfolioArray = [
         image: "images/team_assets/fund/superhi_image.jpg",
         logo: "images/team_assets/fund/superhi_logo.png",
         line: "Online Courses For Creative People",
-        copy: "A community of inspiring people from over 50 countries learning new tech skills to complement and enhance what they're already great at"
+        copy: "A community of inspiring people from over 50 countries learning new tech skills to complement and enhance what they're already great at."
     }
 ];
 
