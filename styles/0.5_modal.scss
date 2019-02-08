@@ -129,7 +129,7 @@
                 width: 100%;
                 object-fit: cover;
                 object-position: 50% 50%;
-                filter: brightness(90%);
+                filter: contrast(95%) brightness(90%);
             }
 
             img.logo {
