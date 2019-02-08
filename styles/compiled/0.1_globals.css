@@ -152,7 +152,7 @@ a.button.external:hover {
 	}
 }
 
-@media (max-width: 425px) {
+@media (max-width: 475px) {
 	body {
 		padding: 0 25px;
 		font-size: 16px;

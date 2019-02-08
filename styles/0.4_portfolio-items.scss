@@ -2,7 +2,7 @@
     height: max-content;
 
     p.name {
-        font-size: 22px;
+        font-size: 1.22em;
         font-weight: 800;
         line-height: 1.7;
         color: #f32d94;
@@ -12,8 +12,6 @@
     }
 
     img {
-        width: 230px;
-        height: 290px;
         object-fit: cover;
         filter: contrast(92%);
         transition: transform 0.07s, box-shadow 0.07s, filter 0.07s;

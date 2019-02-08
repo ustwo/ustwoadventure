@@ -10,13 +10,13 @@
 
         display: grid;
         grid-template-columns: repeat(auto-fit, var(--itemWidth));
-        grid-gap: 3rem;
+        grid-gap: 3rem 2rem;
         justify-content: space-between;
     }
 
     .portfolio-item {
         p.name {
-            font-size: 20px;
+            font-size: 1.08em;
             max-width: var(--itemWidth);
         }
 
@@ -27,6 +27,62 @@
 
         p.copy {
             max-width: var(--itemWidth);
+        }
+    }
+
+
+
+
+    @media (max-width: 1150px) {
+        --itemWidth: 215px;
+    }
+
+
+    @media (max-width: 1080px) {
+        --itemWidth: 220px;
+
+        .portfolio-container {
+            justify-content: space-around;
+        }
+    }
+
+
+    @media (max-width: 840px) {
+        --itemWidth: 200px;
+    }
+
+
+    @media (max-width: 769px) {
+        --itemWidth: 190px;
+    }
+
+
+    @media (max-width: 715px) {
+        --itemWidth: 210px;
+    }
+
+
+    @media (max-width: 535px) {
+        --itemWidth: 180px;
+
+        .portfolio-item {
+            p.copy {
+                font-size: 0.96em;
+            }
+        }
+    }
+
+
+    @media (max-width: 475px) {
+        --itemWidth: 170px;
+    }
+
+
+    @media (max-width: 424px) {
+        --itemWidth: 160px;
+
+        .portfolio-container {
+            grid-gap: 2rem;
         }
     }
 }

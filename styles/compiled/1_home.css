@@ -129,6 +129,11 @@
 	margin-top: -190px;
 }
 
+.home-content .portfolio-preview .portfolio-item img {
+	width: 230px;
+	height: 290px;
+}
+
 .home-content .bottom-row {
 	display: flex;
 	flex-direction: row;

@@ -5,7 +5,7 @@ const portfolioArray = [
         tidyurl: "wearetribe.co",
         image: "images/team_assets/fund/tribe_image.jpg",
         logo: "images/team_assets/fund/tribe_logo.png",
-        line: "Natural sports nutrition & an amazing community",
+        line: "The best natural sports nutrition",
         copy: "A community of 50,000+ athletes brought together by a love of nature and a spirit for adventure. Inspired by a 1,000 mile run across Europe to fight human trafficking, TRIBE is on a mission to change the world of sports nutrition."
     },
     {
@@ -23,7 +23,7 @@ const portfolioArray = [
         tidyurl: "sanctus.io",
         image: "images/team_assets/fund/sanctus_image.jpg",
         logo: "images/team_assets/fund/sanctus_logo.png",
-        line: "Changing the perception of mental health",
+        line: "Changing perceptions of mental health",
         copy: "We believe mental health should be viewed like physical health, and are on a mission to make it accessible. We work with businesses to help them create an open environment where mental health is cared for."
     },
     {
@@ -41,7 +41,7 @@ const portfolioArray = [
         tidyurl: "tray.io",
         image: "images/team_assets/fund/tray_image.jpg",
         logo: "images/team_assets/fund/tray_logo.png",
-        line: "A beautiful integration platform for cloud apps",
+        line: "A beautiful cloud integration platform",
         copy: "We’ve made a secure and easy to use tool to let you automate any process across any cloud stack, without limits. From simple processes to multi step workflows with conditional logic, we’ve got you covered."
     },
     {
@@ -50,7 +50,7 @@ const portfolioArray = [
         tidyurl: "uptree.co",
         image: "images/team_assets/fund/uptree_image.jpg",
         logo: "images/team_assets/fund/uptree_logo.png",
-        line: "A career mobility platform for school students",
+        line: "A career mobility platform for students",
         copy: "We are providing students with an online resource to find early career events, internship and jobs to launch their future pathway."
     },
     {
@@ -77,7 +77,7 @@ const portfolioArray = [
         tidyurl: "everpress.com",
         image: "images/team_assets/fund/everpress_image.jpg",
         logo: "images/team_assets/fund/everpress_logo.png",
-        line: "Design and sell beautiful merchandise easily",
+        line: "Design & sell beautiful merchandise easily",
         copy: "The best way to create and share campaigns for clothing design, risk free and high quality. We’re enabling the newest wave of influencers to sell products to millions of consumers around the world."
     },
     {
@@ -86,7 +86,7 @@ const portfolioArray = [
         tidyurl: "curiscope.com",
         image: "images/team_assets/fund/curiscope_image.jpg",
         logo: "images/team_assets/fund/curiscope_logo.png",
-        line: "Educational experiences built for all ages",
+        line: "Digital educational experiences",
         copy: "We’re creating products using immersive technology like 360° video and AR to let you explore the depths of the ocean or the human body, and unleash your curiosity."
     },
     {
@@ -122,7 +122,7 @@ const portfolioArray = [
         tidyurl: "dice.fm",
         image: "images/team_assets/fund/dice_image.jpg",
         logo: "images/team_assets/fund/dice_logo.png",
-        line: "Tickets to the best gigs, festivals and parties",
+        line: "Tickets to the best gigs and parties",
         copy: "Every feature on DICE is designed for discovery and to make going out easy. We bring you closer to the artists you love. Every event on the app is handpicked by our team, for the fans"
     },
     {
