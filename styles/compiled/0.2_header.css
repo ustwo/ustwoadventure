@@ -314,7 +314,7 @@ header nav a:last-child, header nav a:visited:last-child {
 
 @media (max-width: 374px) {
 	header {
-		margin: 25px 0 120px 0;
+		margin: 20px 0 120px 0;
 	}
 	header .logo {
 		height: 55px;
