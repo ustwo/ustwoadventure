@@ -93,6 +93,12 @@
 		margin-top: 60px;
 		grid-gap: 3rem;
 	}
+	.portfolio-content .portfolio-container .portfolio-item:nth-child(odd) {
+		transform: translate(-30px, 0);
+	}
+	.portfolio-content .portfolio-container .portfolio-item:nth-child(even) {
+		transform: translate(30px, 0);
+	}
 	.portfolio-content .portfolio-container .portfolio-item img {
 		height: calc(var(--itemWidth) * 1.2);
 	}
