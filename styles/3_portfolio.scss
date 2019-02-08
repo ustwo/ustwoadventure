@@ -12,21 +12,21 @@
         grid-template-columns: repeat(auto-fit, var(--itemWidth));
         grid-gap: 3rem 2rem;
         justify-content: space-between;
-    }
 
-    .portfolio-item {
-        p.name {
-            font-size: 1.08em;
-            max-width: var(--itemWidth);
-        }
+        .portfolio-item {
+            p.name {
+                font-size: 1.08em;
+                max-width: var(--itemWidth);
+            }
 
-        img {
-            width: var(--itemWidth);
-            height: calc(var(--itemWidth) * 1.27);
-        }
+            img {
+                width: var(--itemWidth);
+                height: calc(var(--itemWidth) * 1.27);
+            }
 
-        p.copy {
-            max-width: var(--itemWidth);
+            p.copy {
+                max-width: var(--itemWidth);
+            }
         }
     }
 
@@ -79,10 +79,33 @@
 
 
     @media (max-width: 424px) {
-        --itemWidth: 160px;
+        --itemWidth: 152px;
 
         .portfolio-container {
             grid-gap: 2rem;
+        }
+    }
+
+
+    @media (max-width: 390px) {
+        --itemWidth: 140px;
+
+        .portfolio-container .portfolio-item p.copy {
+            display: none;
+        }
+    }
+
+
+    @media (max-width: 363px) {
+        --itemWidth: 170px;
+
+        .portfolio-container {
+            margin-top: 60px;
+            grid-gap: 2.5rem;
+
+            .portfolio-item p.copy {
+                display: block;
+            }
         }
     }
 }
