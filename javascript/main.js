@@ -6,7 +6,7 @@ const portfolioArray = [
         image: "images/team_assets/fund/tribe_image.jpg",
         logo: "images/team_assets/fund/tribe_logo.png",
         line: "Natural sports nutrition & an amazing community",
-        copy: "We are a community of 50,000+ athletes brought together by a love of nature and a spirit for adventure. TRIBE was inspired by a 1,000 mile run across Europe to fight human trafficking, which set us on a mission to change the world of sports nutrition."
+        copy: "A community of 50,000+ athletes brought together by a love of nature and a spirit for adventure. Inspired by a 1,000 mile run across Europe to fight human trafficking, TRIBE is on a mission to change the world of sports nutrition."
     },
     {
         name: "Easle",
@@ -33,7 +33,7 @@ const portfolioArray = [
         image: "images/team_assets/fund/sidestory_image.jpg",
         logo: "images/team_assets/fund/sidestory_logo.png",
         line: "Curated experiences, led by insiders",
-        copy: "A SideStory Experience is just you and the Insider discovering a particular neighbourhood or theme in great detail: they'll show you hidden gems and introduce you to the key movers and shakers, from food to architecture to art."
+        copy: "A SideStory Experience is just you and an Insider discovering a particular neighbourhood or theme in great detail: they'll show you hidden gems and introduce you to key movers and shakers, from food to architecture to art."
     },
     {
         name: "Tray",
@@ -141,7 +141,7 @@ const portfolioArray = [
         image: "images/team_assets/fund/over_image.jpg",
         logo: "images/team_assets/fund/over_logo.png",
         line: "Inspiring the world to create",
-        copy: "At Over, we believe that no matter who or where you are, you should be able to pick up your phone, open our app and design whatever you need. We want creating to be fast and easy, but most importantly we want it to be fun."
+        copy: "We believe that no matter who or where you are, you should be able to pick up your phone, open our app and design whatever you need. We want creating to be fast and easy, but most importantly we want it to be fun."
     },
     {
         name: "Run an Empire",
@@ -168,7 +168,7 @@ const portfolioArray = [
         image: "images/team_assets/fund/seedandspark_image.jpg",
         logo: "images/team_assets/fund/seedandspark_logo.png",
         line: "Look through different lenses",
-        copy: "A new kind of streaming service where perspective matters, combining streaming for audiences with crowdfunding for creators. Our mission is to create an entertainment landscape that reflects what we actually look like."
+        copy: "A streaming service where perspective matters, combining streaming for audiences with crowdfunding for creators. Our mission is to create an entertainment landscape that reflects what we actually look like."
     },
     {
         name: "Kyra",
@@ -220,7 +220,7 @@ const portfolioArray = [
 
 
 
-const lzy = (offset = 400) => {
+const lzy = (offset = 500) => {
     const images = document.querySelectorAll("[data-src]");
     const observer = new IntersectionObserver(onIntersection, {
         rootMargin: `${offset}px ${offset}px`,

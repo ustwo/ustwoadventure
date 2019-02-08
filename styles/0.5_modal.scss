@@ -214,6 +214,8 @@
 
         .modal-inner {
             .modal-details {
+                padding: 20px 22px;
+
                 h2 {
                     display: none;
                 }
@@ -232,13 +234,11 @@
 
 
     @media (max-width: 379px) {
-        height: calc(100% - 44px);
-        width: calc(100% - 38px);
+        height: calc(100% - 45px);
+        width: calc(100% - 40px);
 
         .modal-inner {
             .modal-details {
-                padding: 20px 22px;
-
                 a.site-link {
                     margin-bottom: 15px;
                     font-size: 24px;
