@@ -87,7 +87,7 @@
 
 @media (max-width: 380px) {
 	.portfolio-content {
-		--itemWidth: 190px;
+		--itemWidth: 200px;
 	}
 	.portfolio-content .portfolio-container {
 		margin-top: 60px;
@@ -106,6 +106,6 @@
 
 @media (max-width: 340px) {
 	.portfolio-content {
-		--itemWidth: 180px;
+		--itemWidth: 190px;
 	}
 }
