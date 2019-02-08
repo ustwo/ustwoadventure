@@ -215,6 +215,9 @@
 		height: calc(100% - 45px);
 		width: calc(100% - 40px);
 	}
+	.modal .modal-inner .modal-details {
+		padding: 16px 20px;
+	}
 	.modal .modal-inner .modal-details a.site-link {
 		margin-bottom: 15px;
 		font-size: 24px;
