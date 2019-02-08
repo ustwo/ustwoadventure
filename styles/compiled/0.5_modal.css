@@ -212,7 +212,7 @@
 
 @media (max-width: 379px) {
 	.modal {
-		height: calc(100% - 45px);
+		height: calc(100% - 46px);
 		width: calc(100% - 40px);
 	}
 	.modal .modal-inner .modal-details {
@@ -226,7 +226,7 @@
 		font-size: 18px;
 	}
 	.modal .modal-inner .modal-details p.copy {
-		font-size: 16px;
+		font-size: 15.5px;
 	}
 	.modal .modal-inner .modal-image img.logo {
 		max-width: 120px;
