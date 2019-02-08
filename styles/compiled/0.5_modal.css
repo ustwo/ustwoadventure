@@ -190,8 +190,8 @@
 
 @media (max-width: 500px) {
 	.modal {
-		height: calc(100% - 70px);
-		width: calc(100% - 55px);
+		height: calc(100% - 75px);
+		width: calc(100% - 60px);
 	}
 	.modal .modal-inner .modal-details {
 		padding: 20px 22px;
@@ -210,8 +210,8 @@
 
 @media (max-width: 379px) {
 	.modal {
-		height: calc(100% - 46px);
-		width: calc(100% - 40px);
+		height: calc(100% - 50px);
+		width: calc(100% - 42px);
 	}
 	.modal .modal-inner .modal-details {
 		padding: 16px 20px;

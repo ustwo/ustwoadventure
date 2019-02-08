@@ -86,7 +86,7 @@ const portfolioArray = [
         tidyurl: "curiscope.com",
         image: "images/team_assets/fund/curiscope_image.jpg",
         logo: "images/team_assets/fund/curiscope_logo.png",
-        line: "Digital educational experiences",
+        line: "Educational experiences for all",
         copy: "We’re creating products using immersive technology like 360° video and AR to let you explore the depths of the ocean or the human body, and unleash your curiosity."
     },
     {
