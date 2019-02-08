@@ -11,6 +11,8 @@ body {
 }
 
 h1 {
+    margin-bottom: 90px;
+
     font-family: "futura-pt", "futura", sans-serif;
     font-style: normal;
     font-size: 52px;
@@ -19,11 +21,11 @@ h1 {
     letter-spacing: -0.4px;
     text-transform: uppercase;
     color: #f32d94;
-
-    margin-bottom: 90px;
 }
 
 h2 {
+    margin-bottom: 20px;
+
     font-family: "futura", sans-serif;
     font-style: normal;
     font-size: 36px;
@@ -31,8 +33,6 @@ h2 {
     font-weight: 800;
     letter-spacing: -0.5px;
     color: #f32d94;
-
-    margin-bottom: 20px;
 }
 
 blockquote {
@@ -122,35 +122,95 @@ a.button {
 }
 
 
-@media (max-width: 950px) {
 
+
+@media (max-width: 950px) {
+    body {
+       padding: 0 50px;
+       font-size: 17px;
+    }
+
+    h1 {
+        margin-bottom: 60px;
+
+        font-size: 46px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+
+        font-size: 32px;
+    }
+
+    blockquote {
+        font-size: 32px;
+    }
 }
 
-@media (max-width: 780px) {
+
+@media (max-width: 769px) {
     body {
        padding: 0 40px;
        font-size: 17px;
     }
+
+    h1 {
+        margin-bottom: 60px;
+
+        font-size: 46px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+
+        font-size: 32px;
+    }
+
+    blockquote {
+        font-size: 32px;
+    }
 }
+
 
 @media (max-width: 600px) {
 
 }
 
+
 @media (max-width: 565px) {
 
 }
 
+
 @media (max-width: 425px) {
     body {
         padding: 0 30px;
+
         font-size: 16px;
     }
+
+    h1 {
+        margin-bottom: 40px;
+
+        font-size: 42px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+
+        font-size: 26px;
+    }
+
+    blockquote {
+        font-size: 28px;
+    }
 }
+
 
 @media (max-width: 374px) {
 
 }
+
 
 @media (max-width: 320px) {
 
