@@ -99,6 +99,9 @@
 	.portfolio-content .portfolio-container .portfolio-item:nth-child(even) {
 		transform: translate(30px, 0);
 	}
+	.portfolio-content .portfolio-container .portfolio-item p.name {
+		font-size: 1.12em;
+	}
 	.portfolio-content .portfolio-container .portfolio-item img {
 		height: calc(var(--itemWidth) * 1.2);
 	}

@@ -103,6 +103,10 @@
                     transform: translate(30px, 0);
                 }
 
+                p.name {
+                    font-size: 1.12em;
+                }
+
                 img {
                     height: calc(var(--itemWidth) * 1.2);
                 }
