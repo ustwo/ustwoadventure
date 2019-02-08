@@ -82,7 +82,7 @@ a.button {
         background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzFweCIgaGVpZ2h0PSIyNnB4IiB2aWV3Qm94PSIwIDAgMzEgMjYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUyLjUgKDY3NDY5KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5kb3dubG9hZDwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJXZWIiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJIb21lIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzIyLjAwMDAwMCwgLTEwODcuMDAwMDAwKSIgZmlsbD0iI0YzMkQ5NCI+CiAgICAgICAgICAgIDxnIGlkPSJkb3dubG9hZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzIyLjAwMDAwMCwgMTA4Ny4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUtNiIgeD0iMCIgeT0iMTEiIHdpZHRoPSIyNyIgaGVpZ2h0PSI0Ij48L3JlY3Q+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iQ29tYmluZWQtU2hhcGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3LjcyNzkyMiwgMTMuMDAwMDAwKSBzY2FsZSgtMSwgMSkgcm90YXRlKDQ1LjAwMDAwMCkgdHJhbnNsYXRlKC0xNy43Mjc5MjIsIC0xMy4wMDAwMDApICIgcG9pbnRzPSIxMi43Mjc5MjIgMTguMDAwMDAwMSAxMi43Mjc5MjIgNC4wMDAwMDAwNiA4LjcyNzkyMTkyIDQuMDAwMDAwMDYgOC43Mjc5MjE5MiAyMC4wMDAwMDAxIDguNzI3OTIxOTIgMjIuMDAwMDAwMSAyNi43Mjc5MjIgMjIuMDAwMDAwMSAyNi43Mjc5MjIgMTguMDAwMDAwMSI+PC9wb2x5Z29uPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=");
 
         &:hover {
-            background-position: calc(100% - 10px) 50%;
+            background-position: calc(100% - 11px) 50%;
         }
     }
 
@@ -117,11 +117,10 @@ a.button {
     min-height: 38vh;
 }
 
-
-
-@media (max-width: 1150px) {
-
+.content-wrapper.transition {
+    opacity: 0;
 }
+
 
 @media (max-width: 950px) {
 
@@ -130,6 +129,7 @@ a.button {
 @media (max-width: 780px) {
     body {
        padding: 0 40px;
+       font-size: 17px;
     }
 }
 
@@ -144,6 +144,7 @@ a.button {
 @media (max-width: 425px) {
     body {
         padding: 0 30px;
+        font-size: 16px;
     }
 }
 

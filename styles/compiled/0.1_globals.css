@@ -78,7 +78,7 @@ a.button.internal {
 }
 
 a.button.internal:hover {
-	background-position: calc(100% - 10px) 50%;
+	background-position: calc(100% - 11px) 50%;
 }
 
 a.button.back {
@@ -109,14 +109,20 @@ a.button.external:hover {
 	min-height: 38vh;
 }
 
+.content-wrapper.transition {
+	opacity: 0;
+}
+
 @media (max-width: 780px) {
 	body {
 		padding: 0 40px;
+		font-size: 17px;
 	}
 }
 
 @media (max-width: 425px) {
 	body {
 		padding: 0 30px;
+		font-size: 16px;
 	}
 }
