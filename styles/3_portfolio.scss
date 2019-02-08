@@ -74,11 +74,11 @@
 
 
     @media (max-width: 475px) {
-        --itemWidth: 170px;
+        --itemWidth: 168px;
     }
 
 
-    @media (max-width: 424px) {
+    @media (max-width: 418px) {
         --itemWidth: 152px;
 
         .portfolio-container {
@@ -88,24 +88,20 @@
 
 
     @media (max-width: 380px) {
-        --itemWidth: 140px;
+        --itemWidth: 190px;
 
-        .portfolio-container .portfolio-item p.copy {
-            display: none;
+        .portfolio-container {
+            margin-top: 60px;
+            grid-gap: 3rem;
+
+            .portfolio-item img {
+                height: calc(var(--itemWidth) * 1.2);
+            }
         }
     }
 
 
-    @media (max-width: 363px) {
-        --itemWidth: 170px;
-
-        .portfolio-container {
-            margin-top: 60px;
-            grid-gap: 2.5rem;
-
-            .portfolio-item p.copy {
-                display: block;
-            }
-        }
+    @media (max-width: 340px) {
+        --itemWidth: 180px;
     }
 }
