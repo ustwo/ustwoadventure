@@ -331,7 +331,7 @@ window.ondeviceorientation = e => {
     logoUstwo.style.transition = "transform 4s cubic-bezier(0.6, 0, 0.5, 1)";
 
     const tilt = (window.innerHeight > window.innerWidth) ? e.gamma : e.beta;
-    const cappedTilt = Math.max(-40, Math.min(20, tilt));
+    const cappedTilt = Math.max(-35, Math.min(15, tilt));
 
     logoRing.style.transform = `rotate(${-(cappedTilt + 10)}deg)`;
     logoUstwo.style.transform = `rotate(${(cappedTilt + 10)}deg)`;
