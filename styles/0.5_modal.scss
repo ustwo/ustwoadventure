@@ -107,7 +107,7 @@
             p.line {
                 margin-bottom: 20px;
                 font-size: 24px;
-                line-height: 1.2;
+                line-height: 1.3;
             }
 
             p.copy {
@@ -227,7 +227,7 @@
 
 
     @media (max-width: 379px) {
-        height: calc(100% - 50px);
+        height: calc(100% - 52px);
         width: calc(100% - 42px);
 
         .modal-inner {
