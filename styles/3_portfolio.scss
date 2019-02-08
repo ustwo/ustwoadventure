@@ -88,7 +88,7 @@
 
 
     @media (max-width: 380px) {
-        --itemWidth: 200px;
+        --itemWidth: 210px;
 
         .portfolio-container {
             margin-top: 60px;
@@ -106,16 +106,23 @@
                 p.name {
                     font-size: 1.12em;
                 }
-
-                img {
-                    height: calc(var(--itemWidth) * 1.2);
-                }
             }
         }
     }
 
 
     @media (max-width: 340px) {
-        --itemWidth: 190px;
+        --itemWidth: 200px;
+
+        .portfolio-container {
+            margin-top: 60px;
+            grid-gap: 3.5rem;
+
+            .portfolio-item {
+                img {
+                    height: calc(var(--itemWidth) * 1.2);
+                }
+            }
+        }
     }
 }

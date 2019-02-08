@@ -87,7 +87,7 @@
 
 @media (max-width: 380px) {
 	.portfolio-content {
-		--itemWidth: 200px;
+		--itemWidth: 210px;
 	}
 	.portfolio-content .portfolio-container {
 		margin-top: 60px;
@@ -102,13 +102,17 @@
 	.portfolio-content .portfolio-container .portfolio-item p.name {
 		font-size: 1.12em;
 	}
-	.portfolio-content .portfolio-container .portfolio-item img {
-		height: calc(var(--itemWidth) * 1.2);
-	}
 }
 
 @media (max-width: 340px) {
 	.portfolio-content {
-		--itemWidth: 190px;
+		--itemWidth: 200px;
+	}
+	.portfolio-content .portfolio-container {
+		margin-top: 60px;
+		grid-gap: 3.5rem;
+	}
+	.portfolio-content .portfolio-container .portfolio-item img {
+		height: calc(var(--itemWidth) * 1.2);
 	}
 }
