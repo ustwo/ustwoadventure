@@ -194,7 +194,7 @@ header {
 
 
     @media (max-width: 565px) {
-        margin: 30px 0 120px 0;
+        margin: 30px 0 100px 0;
 
         nav a {
             display: block;
@@ -205,6 +205,8 @@ header {
 
 
     @media (max-width: 425px) {
+        margin: 30px 0 100px 0;
+
         .logo {
             height: 65px;
             width: 170px;
@@ -221,7 +223,7 @@ header {
     }
 
     @media (max-width: 374px) {
-        margin: 20px 0 120px 0;
+        margin: 20px 0 100px 0;
 
         .logo {
             height: 55px;
@@ -243,7 +245,9 @@ header {
     }
 
 
-    @media (max-width: 320px) {
+    @media (max-width: 330px) {
+        margin: 20px 0 90px 0;
+
         .logo {
             height: 50px;
             width: 135px;

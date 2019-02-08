@@ -289,7 +289,7 @@ header nav a:last-child, header nav a:visited:last-child {
 
 @media (max-width: 565px) {
 	header {
-		margin: 30px 0 120px 0;
+		margin: 30px 0 100px 0;
 	}
 	header nav a {
 		display: block;
@@ -299,6 +299,9 @@ header nav a:last-child, header nav a:visited:last-child {
 }
 
 @media (max-width: 425px) {
+	header {
+		margin: 30px 0 100px 0;
+	}
 	header .logo {
 		height: 65px;
 		width: 170px;
@@ -314,7 +317,7 @@ header nav a:last-child, header nav a:visited:last-child {
 
 @media (max-width: 374px) {
 	header {
-		margin: 20px 0 120px 0;
+		margin: 20px 0 100px 0;
 	}
 	header .logo {
 		height: 55px;
@@ -332,7 +335,10 @@ header nav a:last-child, header nav a:visited:last-child {
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width: 330px) {
+	header {
+		margin: 20px 0 90px 0;
+	}
 	header .logo {
 		height: 50px;
 		width: 135px;

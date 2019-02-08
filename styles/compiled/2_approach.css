@@ -37,10 +37,8 @@
 
 .approach-content .stages div {
 	width: 28%;
-	min-width: 200px;
-	max-width: 290px;
 	position: relative;
-	margin-bottom: 70px;
+	margin: 0 10px 70px 10px;
 }
 
 .approach-content .stages div h2.number {
@@ -74,7 +72,7 @@
 
 .approach-content .stages div p.stage-copy {
 	margin-top: 10px;
-	line-height: 1.6;
+	font-size: 0.92em;
 }
 
 .approach-content .stages div:hover h2.number, .approach-content .stages div.scrolled h2.number {
@@ -94,4 +92,97 @@
 .approach-content .stages div.stage-cta a.button {
 	display: block;
 	width: max-content;
+}
+
+@media (max-width: 950px) {
+	.approach-content h1 {
+		max-width: 340px;
+	}
+	.approach-content p:not(:first-child) {
+		margin-top: 50px;
+	}
+	.approach-content .writing blockquote {
+		margin: 50px auto 50px auto;
+		max-width: 350px;
+	}
+	.approach-content .stages {
+		margin-top: 50px;
+	}
+	.approach-content .stages div p.stage-copy {
+		margin-top: 5px;
+	}
+}
+
+@media (max-width: 870px) {
+	.approach-content h1 {
+		max-width: 280px;
+	}
+	.approach-content .stages {
+		margin-top: 50px;
+		justify-content: space-around;
+	}
+	.approach-content .stages div {
+		width: 35%;
+	}
+	.approach-content .stages div p.stage-copy {
+		margin-top: 5px;
+	}
+}
+
+@media (max-width: 635px) {
+	.approach-content .stages div {
+		margin-bottom: 50px;
+		width: 65%;
+	}
+	.approach-content .stages div:nth-child(5) {
+		margin-bottom: 20px;
+	}
+	.approach-content .stages div h2.number {
+		top: -10px;
+	}
+}
+
+@media (max-width: 425px) {
+	.approach-content h1 {
+		max-width: 240px;
+	}
+	.approach-content p:not(:first-child) {
+		margin-top: 40px;
+	}
+	.approach-content .writing {
+		margin: auto;
+	}
+	.approach-content .writing blockquote {
+		margin: 40px auto 40px auto;
+		max-width: 240px;
+	}
+	.approach-content .stages {
+		margin-top: 50px;
+	}
+	.approach-content .stages div {
+		width: 78%;
+	}
+	.approach-content .stages div.stage-cta {
+		margin: 10px auto 0 auto;
+	}
+	.approach-content .stages div.stage-cta a.button {
+		display: inline-block;
+		margin-right: 10px;
+	}
+}
+
+@media (max-width: 340px) {
+	.approach-content h1 {
+		max-width: 220px;
+	}
+	.approach-content p:not(:first-child) {
+		margin-top: 30px;
+	}
+	.approach-content .writing blockquote {
+		margin: 30px auto 30px auto;
+		max-width: 220px;
+	}
+	.approach-content .stages div {
+		width: 85%;
+	}
 }

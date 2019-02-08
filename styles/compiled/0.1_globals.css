@@ -42,7 +42,7 @@ blockquote {
 
 p {
 	letter-spacing: -0.2px;
-	line-height: 1.5;
+	line-height: 1.6;
 }
 
 b {
@@ -61,7 +61,7 @@ a.button {
 	padding: 10px 40px 10px 15px;
 	box-sizing: border-box;
 	border: 1px solid #333;
-	font-size: 16px;
+	font-size: 0.88em;
 	text-transform: uppercase;
 	background-repeat: no-repeat;
 	background-position: calc(100% - 14px) 50%;
@@ -129,6 +129,9 @@ a.button.external:hover {
 	blockquote {
 		font-size: 32px;
 	}
+	a.button {
+		font-size: 0.8em;
+	}
 }
 
 @media (max-width: 769px) {
@@ -137,15 +140,15 @@ a.button.external:hover {
 		font-size: 17px;
 	}
 	h1 {
-		margin-bottom: 60px;
-		font-size: 42px;
+		margin-bottom: 70px;
+		font-size: 38px;
 	}
 	h2 {
 		margin-bottom: 20px;
-		font-size: 32px;
+		font-size: 28px;
 	}
 	blockquote {
-		font-size: 32px;
+		font-size: 30px;
 	}
 }
 
@@ -156,13 +159,23 @@ a.button.external:hover {
 	}
 	h1 {
 		margin-bottom: 40px;
-		font-size: 36px;
+		font-size: 30px;
 	}
 	h2 {
-		margin-bottom: 20px;
-		font-size: 26px;
+		margin-bottom: 15px;
+		font-size: 22px;
 	}
 	blockquote {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 340px) {
+	h1 {
+		margin-bottom: 35px;
 		font-size: 28px;
+	}
+	blockquote {
+		font-size: 22px;
 	}
 }
