@@ -102,9 +102,6 @@
             }
 
             p {
-                font-size: 18px;
-                line-height: 1.6;
-                font-weight: normal;
                 color: #646464;
             }
 
@@ -115,6 +112,7 @@
             }
 
             p.copy {
+                font-size: 0.94em;
                 font-style: italic;
             }
         }
@@ -190,10 +188,6 @@
                 p.line {
                     font-size: 20px;
                 }
-
-                p.copy {
-                    font-size: 17px;
-                }
             }
 
             .modal-image {
@@ -247,10 +241,6 @@
 
                 p.line {
                     font-size: 18px;
-                }
-
-                p.copy {
-                    font-size: 15.5px;
                 }
             }
 
