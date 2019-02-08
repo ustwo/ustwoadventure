@@ -102,6 +102,9 @@
 	.portfolio-content .portfolio-container .portfolio-item p.name {
 		font-size: 1.12em;
 	}
+	.portfolio-content .portfolio-container .portfolio-item p.copy {
+		font-size: 1em;
+	}
 }
 
 @media (max-width: 340px) {
