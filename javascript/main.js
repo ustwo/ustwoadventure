@@ -189,6 +189,24 @@ const portfolioArray = [
         copy: "We've created an SDK for emotional intelligence. Using AI models we want to enable products that interact with users as naturally as the interactions between two humans."
     },
     {
+        name: "Twiik",
+        url: "https://www.twiik.me/",
+        tidyurl: "twiik.me",
+        image: "images/team_assets/fund/twiik_image.jpg",
+        logo: "images/team_assets/fund/twiik_logo.png",
+        line: "Digitising wellness",
+        copy: "We want to get as many people as possible to build a healthier and more sustainable lifestyle. Twiik delivers a coaching and analytics platform with digital tools, for the entire wellness cycle."
+    },
+    {
+        name: "Billogram",
+        url: "https://billogram.com/",
+        tidyurl: "billogram.com",
+        image: "images/team_assets/fund/billogram_image.jpg",
+        logo: "images/team_assets/fund/billogram_logo.png",
+        line: "Easier payments. Quality engagement.",
+        copy: "Our interactive format replaces traditional invoices while adding the value of a seamless payment, a new channel for personal communication and a significantly improved customer experience."
+    },
+    {
         name: "Superhi",
         url: "https://www.superhi.com/?utm_campaign=ustwo_adventure_sh_profile&utm_medium=promo&utm_source=ustwo_adventure",
         tidyurl: "superhi.com",
