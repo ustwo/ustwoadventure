@@ -81,11 +81,11 @@
 		--itemWidth: 152px;
 	}
 	.portfolio-content .portfolio-container {
-		grid-gap: 2rem;
+		grid-gap: 2rem 1.5rem;
 	}
 }
 
-@media (max-width: 390px) {
+@media (max-width: 380px) {
 	.portfolio-content {
 		--itemWidth: 140px;
 	}

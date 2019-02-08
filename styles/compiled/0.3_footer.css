@@ -4,12 +4,6 @@
 	background-color: #f32d94;
 }
 
-@media (max-width: 525px) {
-	.separator {
-		margin-top: 75px;
-	}
-}
-
 footer {
 	margin: 65px 0 55px 0;
 	font-size: 16px;
