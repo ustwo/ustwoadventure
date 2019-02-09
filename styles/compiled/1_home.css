@@ -67,7 +67,7 @@
 .home-content .top-row .latest-investment:hover img {
 	box-shadow: -4px 4px 0px 0px #f32d94;
 	transform: translate(4px, -4px);
-	filter: brightness(103%);
+	filter: brightness(104%);
 }
 
 .home-content .top-row .latest-investment:hover h1 {
@@ -77,16 +77,6 @@
 	background-color: #f32d94;
 	box-shadow: -7px 7px 0px -1px #646464;
 	transform: translate(7px, -7px);
-}
-
-.home-content .top-row .latest-investment:focus img {
-	box-shadow: -2px 2px 0px 0px #f32d94;
-	transform: translate(2px, -2px);
-}
-
-.home-content .top-row .latest-investment:focus h1 {
-	box-shadow: -3px 3px 0px 0px #646464;
-	transform: translate(3px, -3px);
 }
 
 .home-content .our-portfolio {
