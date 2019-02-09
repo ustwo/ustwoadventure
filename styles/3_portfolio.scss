@@ -107,6 +107,12 @@
                     font-size: 1.12em;
                 }
 
+                .portfolio-item {
+                    img {
+                        height: calc(var(--itemWidth) * 1.25);
+                    }
+                }
+
                 p.copy {
                     font-size: 1em;
                 }

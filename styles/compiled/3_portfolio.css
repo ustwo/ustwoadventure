@@ -102,6 +102,9 @@
 	.portfolio-content .portfolio-container .portfolio-item p.name {
 		font-size: 1.12em;
 	}
+	.portfolio-content .portfolio-container .portfolio-item .portfolio-item img {
+		height: calc(var(--itemWidth) * 1.25);
+	}
 	.portfolio-content .portfolio-container .portfolio-item p.copy {
 		font-size: 1em;
 	}
