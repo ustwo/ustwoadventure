@@ -345,8 +345,8 @@ const logoRing = document.querySelector("header .logo");
 const logoUstwo = document.querySelector("header .logo img");
 
 window.addEventListener("deviceorientation", e => {
-    logoRing.style.transition = "transform 4s cubic-bezier(0.6, 0, 0.5, 1)";
-    logoUstwo.style.transition = "transform 4s cubic-bezier(0.6, 0, 0.5, 1)";
+    logoRing.style.transition = "transform 6s cubic-bezier(0.6, 0, 0.5, 1)";
+    logoUstwo.style.transition = "transform 6s cubic-bezier(0.6, 0, 0.5, 1)";
 
     const tilt = (window.innerHeight > window.innerWidth) ? e.gamma : e.beta;
     const cappedTilt = Math.max(-35, Math.min(15, tilt));
