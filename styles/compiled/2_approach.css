@@ -106,7 +106,7 @@
 		max-width: 350px;
 	}
 	.approach-content .stages {
-		margin-top: 50px;
+		margin-top: 60px;
 	}
 }
 
@@ -115,7 +115,6 @@
 		max-width: 280px;
 	}
 	.approach-content .stages {
-		margin-top: 50px;
 		justify-content: space-around;
 	}
 	.approach-content .stages div {
@@ -149,9 +148,6 @@
 	.approach-content .writing blockquote {
 		margin: 40px auto 40px auto;
 		max-width: 240px;
-	}
-	.approach-content .stages {
-		margin-top: 50px;
 	}
 	.approach-content .stages div {
 		width: 78%;
