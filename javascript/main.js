@@ -359,17 +359,16 @@ window.addEventListener("deviceorientation", e => {
 
 
 const footerADVLetters = document.querySelectorAll("footer .left .ADV span");
+const moveLetter = letter => {
+    const x = 10 * (Math.floor(Math.random() * 4)) - 10;
+    const y = 10 * (Math.floor(Math.random() * 4)) - 10;
+
+    letter.style.transform = `translate(${x}px, ${y}px)`;
+};
 
 footerADVLetters.forEach(letter => {
-    const moveLetter = () => {
-        const x = 10 * (Math.floor(Math.random() * 4)) - 10;
-        const y = 10 * (Math.floor(Math.random() * 4)) - 10;
-
-        letter.style.transform = `translate(${x}px, ${y}px)`;
-    };
-
-    letter.addEventListener("mouseover", () => moveLetter());
-    letter.addEventListener("click", () => moveLetter());
+    letter.addEventListener("mouseover", () => moveLetter(letter));
+    letter.addEventListener("click", () => moveLetter(letter));
 });
 
 

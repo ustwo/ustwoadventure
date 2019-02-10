@@ -87,17 +87,35 @@
 
 @media (max-width: 380px) {
 	.portfolio-content {
-		--itemWidth: 205px;
+		--itemWidth: 200px;
 	}
 	.portfolio-content .portfolio-container {
 		margin-top: 60px;
 		grid-gap: 3.5rem;
 	}
-	.portfolio-content .portfolio-container .portfolio-item:nth-child(odd) {
-		transform: translate(-30px, 0);
+	.portfolio-content .portfolio-container .portfolio-item {
+		--offset: 50px;
 	}
 	.portfolio-content .portfolio-container .portfolio-item:nth-child(even) {
-		transform: translate(30px, 0);
+		transform: translate(var(--offset), 0);
+	}
+	.portfolio-content .portfolio-container .portfolio-item:nth-child(odd) {
+		transform: translate(calc(var(--offset) * -1), 0);
+	}
+	.portfolio-content .portfolio-container .portfolio-item:nth-child(4n+7) {
+		transform: translate(calc(var(--offset) * 0.5), 0);
+	}
+	.portfolio-content .portfolio-container .portfolio-item:nth-child(4n-3) {
+		transform: translate(calc(var(--offset) * -0.6), 0);
+	}
+	.portfolio-content .portfolio-container .portfolio-item:nth-child(5n-3) {
+		transform: translate(calc(var(--offset) * 0.3), 0);
+	}
+	.portfolio-content .portfolio-container .portfolio-item:nth-child(5n+2) {
+		transform: translate(calc(var(--offset) * -0.8), 0);
+	}
+	.portfolio-content .portfolio-container .portfolio-item:nth-child(7n-1) {
+		transform: translate(calc(var(--offset) * -0.4), 0);
 	}
 	.portfolio-content .portfolio-container .portfolio-item p.name {
 		font-size: 1.12em;
@@ -112,11 +130,14 @@
 
 @media (max-width: 340px) {
 	.portfolio-content {
-		--itemWidth: 195px;
+		--itemWidth: 190px;
 	}
 	.portfolio-content .portfolio-container {
 		margin-top: 60px;
 		grid-gap: 3.5rem;
+	}
+	.portfolio-content .portfolio-container .portfolio-item {
+		--offset: 30px;
 	}
 	.portfolio-content .portfolio-container .portfolio-item img {
 		height: calc(var(--itemWidth) * 1.2);
