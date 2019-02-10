@@ -95,23 +95,7 @@
             grid-gap: 3.3rem;
 
             .portfolio-item {
-                --offset: 50px;
-
-                &:nth-child(even) {
-                    transform: translate(var(--offset), 0);
-                } &:nth-child(odd) {
-                    transform: translate(calc(var(--offset) * -1), 0);
-                } &:nth-child(4n+7) {
-                    transform: translate(calc(var(--offset) * 0.5), 0);
-                } &:nth-child(4n-3) {
-                    transform: translate(calc(var(--offset) * -0.6), 0);
-                } &:nth-child(5n-3) {
-                    transform: translate(calc(var(--offset) * 0.2), 0);
-                } &:nth-child(5n+2) {
-                    transform: translate(calc(var(--offset) * -0.8), 0);
-                } &:nth-child(7n-1) {
-                    transform: translate(calc(var(--offset) * -0.4), 0);
-                }
+                transform: translate(var(--offsetX), 0);
 
                 p.name {
                     font-size: 1.12em;
@@ -137,7 +121,7 @@
             grid-gap: 3.5rem;
 
             .portfolio-item {
-                --offset: 30px;
+                transform: translate(calc(var(--offsetX) * 0.6), 0);
 
                 img {
                     height: calc(var(--itemWidth) * 1.2);
