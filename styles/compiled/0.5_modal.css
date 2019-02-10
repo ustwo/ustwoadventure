@@ -110,7 +110,6 @@
 }
 
 .modal .modal-inner .modal-details p.copy {
-	font-size: 0.96em;
 	font-style: italic;
 }
 
@@ -222,6 +221,9 @@
 	}
 	.modal .modal-inner .modal-details p.line {
 		font-size: 18px;
+	}
+	.modal .modal-inner .modal-details p.copy {
+		font-size: 0.98em;
 	}
 	.modal .modal-inner .modal-image img.logo {
 		max-width: 120px;

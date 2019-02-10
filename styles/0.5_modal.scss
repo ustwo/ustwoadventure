@@ -111,7 +111,6 @@
             }
 
             p.copy {
-                font-size: 0.96em;
                 font-style: italic;
             }
         }
@@ -241,6 +240,10 @@
 
                 p.line {
                     font-size: 18px;
+                }
+
+                p.copy {
+                    font-size: 0.98em;
                 }
             }
 
