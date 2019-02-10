@@ -403,6 +403,6 @@ if (approachStages && window.innerWidth < 500) {
 
 const portfolioGridItems = document.querySelectorAll(".portfolio-item");
 portfolioGridItems.forEach(item => {
-    const random = 10 * (Math.floor(Math.random() * 11)) - 50;
-    item.style.setProperty("--offset", `${random}px`);
+    const randomOffset = 10 * (Math.floor(Math.random() * 11)) - 50;
+    item.style.setProperty("--offset", `${randomOffset}px`);
 });
