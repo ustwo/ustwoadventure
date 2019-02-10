@@ -111,11 +111,11 @@
         }
 
         .portfolio-item {
-            &:nth-child(1) { margin-top: calc(+155px + var(--offset) * 0.5) }
-            &:nth-child(2) { margin-top: calc(+050px + var(--offset)) }
-            &:nth-child(3) { margin-top: calc(+445px + var(--offset)) }
-            &:nth-child(4) { margin-top: calc(+280px + var(--offset)) }
-            &:nth-child(5) { margin-top: calc(-190px + var(--offset) * 0.4) }
+            &:nth-child(1) {margin-top:  170px}
+            &:nth-child(2) {margin-top:   50px}
+            &:nth-child(3) {margin-top:  440px}
+            &:nth-child(4) {margin-top:  270px}
+            &:nth-child(5) {margin-top: -200px}
 
             img {
                 width: 230px;
