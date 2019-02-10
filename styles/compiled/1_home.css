@@ -108,7 +108,7 @@
 }
 
 .home-content .portfolio-preview .portfolio-item:nth-child(3) {
-	margin-top: calc(+440px + var(--offset));
+	margin-top: calc(+445px + var(--offset));
 }
 
 .home-content .portfolio-preview .portfolio-item:nth-child(4) {
@@ -116,7 +116,7 @@
 }
 
 .home-content .portfolio-preview .portfolio-item:nth-child(5) {
-	margin-top: calc(-185px + var(--offset) * 0.4);
+	margin-top: calc(-190px + var(--offset) * 0.4);
 }
 
 .home-content .portfolio-preview .portfolio-item img {
