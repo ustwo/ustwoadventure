@@ -95,7 +95,7 @@
             grid-gap: 3.3rem;
 
             .portfolio-item {
-                transform: translate(var(--offsetX), 0);
+                transform: translate(var(--offset), 0);
 
                 p.name {
                     font-size: 1.12em;
@@ -121,7 +121,7 @@
             grid-gap: 3.5rem;
 
             .portfolio-item {
-                transform: translate(calc(var(--offsetX) * 0.6), 0);
+                transform: translate(calc(var(--offset) * 0.6), 0);
 
                 img {
                     height: calc(var(--itemWidth) * 1.2);
