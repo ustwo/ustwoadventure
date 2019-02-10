@@ -1,6 +1,4 @@
 .portfolio-content {
-    --itemWidth: 225px;
-
     h1 {
         max-width: 400px;
     }
@@ -9,78 +7,22 @@
         width: 100%;
 
         display: grid;
-        grid-template-columns: repeat(auto-fit, var(--itemWidth));
+        grid-template-columns: repeat(auto-fit, var(--portfolioItemWidth));
         grid-gap: 3rem 2rem;
         justify-content: space-between;
-
-        .portfolio-item {
-            p.name {
-                font-size: 1.08em;
-                max-width: var(--itemWidth);
-            }
-
-            img {
-                width: var(--itemWidth);
-                height: calc(var(--itemWidth) * 1.27);
-            }
-
-            p.copy {
-                max-width: var(--itemWidth);
-            }
-        }
     }
 
 
-
-
-    @media (max-width: 1150px) {
-        --itemWidth: 215px;
-    }
 
 
     @media (max-width: 1080px) {
-        --itemWidth: 220px;
-
         .portfolio-container {
             justify-content: space-around;
         }
     }
 
 
-    @media (max-width: 840px) {
-        --itemWidth: 200px;
-    }
-
-
-    @media (max-width: 769px) {
-        --itemWidth: 190px;
-    }
-
-
-    @media (max-width: 715px) {
-        --itemWidth: 210px;
-    }
-
-
-    @media (max-width: 535px) {
-        --itemWidth: 180px;
-
-        .portfolio-item {
-            p.copy {
-                font-size: 0.96em;
-            }
-        }
-    }
-
-
-    @media (max-width: 475px) {
-        --itemWidth: 168px;
-    }
-
-
     @media (max-width: 418px) {
-        --itemWidth: 152px;
-
         .portfolio-container {
             grid-gap: 2rem 1.5rem;
         }
@@ -88,45 +30,17 @@
 
 
     @media (max-width: 380px) {
-        --itemWidth: 200px;
-
         .portfolio-container {
             margin-top: 60px;
             grid-gap: 3.3rem;
-
-            .portfolio-item {
-                transform: translate(var(--offset), 0);
-
-                p.name {
-                    font-size: 1.12em;
-                }
-
-                img {
-                    height: calc(var(--itemWidth) * 1.24);
-                }
-
-                p.copy {
-                    font-size: 1em;
-                }
-            }
         }
     }
 
 
     @media (max-width: 340px) {
-        --itemWidth: 190px;
-
         .portfolio-container {
             margin-top: 60px;
             grid-gap: 3.5rem;
-
-            .portfolio-item {
-                transform: translate(calc(var(--offset) * 0.6), 0);
-
-                img {
-                    height: calc(var(--itemWidth) * 1.2);
-                }
-            }
         }
     }
 }

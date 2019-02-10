@@ -1,25 +1,34 @@
 .portfolio-item {
+    @at-root :root {--portfolioItemWidth: 225px}
     height: max-content;
 
     p.name {
-        font-size: 1.22em;
+        max-width: var(--portfolioItemWidth);
+
+        font-size: 1.08em;
         font-weight: 800;
         line-height: 1.7;
         color: #f32d94;
         text-align: right;
         text-transform: uppercase;
+
         transition: transform 0.07s;
     }
 
     img {
+        width: var(--portfolioItemWidth);
+        height: calc(var(--portfolioItemWidth) * 1.27);
+
         object-fit: cover;
         filter: contrast(92%);
+
         transition: transform 0.07s, box-shadow 0.07s, filter 0.07s;
     }
 
     p.copy {
+        max-width: var(--portfolioItemWidth);
+
         margin-top: 5px;
-        max-width: 230px;
     }
 
     &:hover {
@@ -41,6 +50,82 @@
         img {
             box-shadow: -0px 3px 0px 0px #f32d94;
             transform: translate(0px, -3px);
+        }
+    }
+
+
+
+
+    @media (max-width: 1150px) {
+        @at-root :root {--portfolioItemWidth: 215px}
+    }
+
+
+    @media (max-width: 1080px) {
+        @at-root :root {--portfolioItemWidth: 220px}
+    }
+
+
+    @media (max-width: 850px) {
+        @at-root :root {--portfolioItemWidth: 200px}
+    }
+
+
+    @media (max-width: 769px) {
+        @at-root :root {--portfolioItemWidth: 190px}
+    }
+
+
+    @media (max-width: 715px) {
+        @at-root :root {--portfolioItemWidth: 210px}
+    }
+
+
+    @media (max-width: 535px) {
+        @at-root :root {--portfolioItemWidth: 180px}
+
+        p.copy {
+            font-size: 0.96em;
+        }
+    }
+
+
+    @media (max-width: 475px) {
+        @at-root :root {--portfolioItemWidth: 168px}
+    }
+
+
+    @media (max-width: 418px) {
+        @at-root :root {--portfolioItemWidth: 152px}
+    }
+
+
+    @media (max-width: 380px) {
+        @at-root :root {--portfolioItemWidth: 200px}
+
+        transform: translate(var(--offset), 0);
+
+        p.name {
+            font-size: 1.12em;
+        }
+
+        img {
+            height: calc(var(--portfolioItemWidth) * 1.24);
+        }
+
+        p.copy {
+            font-size: 1em;
+        }
+    }
+
+
+    @media (max-width: 340px) {
+        @at-root :root {--portfolioItemWidth: 190px}
+
+        transform: translate(calc(var(--offset) * 0.6), 0);
+
+        img {
+            height: calc(var(--portfolioItemWidth) * 1.2);
         }
     }
 }
