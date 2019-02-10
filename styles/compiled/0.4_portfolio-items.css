@@ -95,7 +95,7 @@
 	}
 }
 
-@media (max-width: 418px) {
+@media (max-width: 425px) {
 	:root {
 		--portfolioItemWidth: 152px;
 	}

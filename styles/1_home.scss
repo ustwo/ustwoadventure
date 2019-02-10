@@ -113,8 +113,8 @@
         .portfolio-item {
             &:nth-child(1) {margin-top:  170px}
             &:nth-child(2) {margin-top:   45px}
-            &:nth-child(3) {margin-top:  440px}
-            &:nth-child(4) {margin-top:  270px}
+            &:nth-child(3) {margin-top:  420px}
+            &:nth-child(4) {margin-top:  260px}
             &:nth-child(5) {margin-top: -200px}
         }
     }
@@ -165,7 +165,7 @@
     }
 
 
-    @media (max-width: 418px) {
+    @media (max-width: 425px) {
         .portfolio-preview {
             grid-gap: 2rem 1.5rem;
         }
@@ -176,6 +176,10 @@
         .portfolio-preview {
             margin-top: 60px;
             grid-gap: 3.3rem;
+
+            .portfolio-item {
+                &:nth-child(3) {display: none}
+            }
         }
     }
 

@@ -95,14 +95,13 @@
     }
 
 
-    @media (max-width: 418px) {
+    @media (max-width: 425px) {
         @at-root :root {--portfolioItemWidth: 152px}
     }
 
 
     @media (max-width: 380px) {
         @at-root :root {--portfolioItemWidth: 200px}
-
         transform: translate(var(--offset), 0);
 
         p.name {
@@ -121,7 +120,6 @@
 
     @media (max-width: 340px) {
         @at-root :root {--portfolioItemWidth: 190px}
-
         transform: translate(calc(var(--offset) * 0.6), 0);
 
         img {

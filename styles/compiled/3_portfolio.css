@@ -16,7 +16,7 @@
 	}
 }
 
-@media (max-width: 418px) {
+@media (max-width: 425px) {
 	.portfolio-content .portfolio-container {
 		grid-gap: 2rem 1.5rem;
 	}

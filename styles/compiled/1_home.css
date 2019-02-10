@@ -108,11 +108,11 @@
 }
 
 .home-content .portfolio-preview .portfolio-item:nth-child(3) {
-	margin-top: 440px;
+	margin-top: 420px;
 }
 
 .home-content .portfolio-preview .portfolio-item:nth-child(4) {
-	margin-top: 270px;
+	margin-top: 260px;
 }
 
 .home-content .portfolio-preview .portfolio-item:nth-child(5) {
@@ -160,7 +160,7 @@
 	}
 }
 
-@media (max-width: 418px) {
+@media (max-width: 425px) {
 	.home-content .portfolio-preview {
 		grid-gap: 2rem 1.5rem;
 	}
@@ -170,6 +170,9 @@
 	.home-content .portfolio-preview {
 		margin-top: 60px;
 		grid-gap: 3.3rem;
+	}
+	.home-content .portfolio-preview .portfolio-item:nth-child(3) {
+		display: none;
 	}
 }
 
