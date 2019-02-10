@@ -111,6 +111,7 @@
 
 .modal .modal-inner .modal-details p.copy {
 	font-style: italic;
+	line-height: 1.6;
 }
 
 .modal .modal-inner .modal-image {
