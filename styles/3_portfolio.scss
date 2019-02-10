@@ -92,7 +92,7 @@
 
         .portfolio-container {
             margin-top: 60px;
-            grid-gap: 3.5rem;
+            grid-gap: 3.3rem;
 
             .portfolio-item {
                 --offset: 50px;
@@ -106,7 +106,7 @@
                 } &:nth-child(4n-3) {
                     transform: translate(calc(var(--offset) * -0.6), 0);
                 } &:nth-child(5n-3) {
-                    transform: translate(calc(var(--offset) * 0.3), 0);
+                    transform: translate(calc(var(--offset) * 0.2), 0);
                 } &:nth-child(5n+2) {
                     transform: translate(calc(var(--offset) * -0.8), 0);
                 } &:nth-child(7n-1) {
@@ -117,10 +117,8 @@
                     font-size: 1.12em;
                 }
 
-                .portfolio-item {
-                    img {
-                        height: calc(var(--itemWidth) * 1.25);
-                    }
+                img {
+                    height: calc(var(--itemWidth) * 1.24);
                 }
 
                 p.copy {

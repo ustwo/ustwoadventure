@@ -91,7 +91,7 @@
 	}
 	.portfolio-content .portfolio-container {
 		margin-top: 60px;
-		grid-gap: 3.5rem;
+		grid-gap: 3.3rem;
 	}
 	.portfolio-content .portfolio-container .portfolio-item {
 		--offset: 50px;
@@ -109,7 +109,7 @@
 		transform: translate(calc(var(--offset) * -0.6), 0);
 	}
 	.portfolio-content .portfolio-container .portfolio-item:nth-child(5n-3) {
-		transform: translate(calc(var(--offset) * 0.3), 0);
+		transform: translate(calc(var(--offset) * 0.2), 0);
 	}
 	.portfolio-content .portfolio-container .portfolio-item:nth-child(5n+2) {
 		transform: translate(calc(var(--offset) * -0.8), 0);
@@ -120,8 +120,8 @@
 	.portfolio-content .portfolio-container .portfolio-item p.name {
 		font-size: 1.12em;
 	}
-	.portfolio-content .portfolio-container .portfolio-item .portfolio-item img {
-		height: calc(var(--itemWidth) * 1.25);
+	.portfolio-content .portfolio-container .portfolio-item img {
+		height: calc(var(--itemWidth) * 1.24);
 	}
 	.portfolio-content .portfolio-container .portfolio-item p.copy {
 		font-size: 1em;
