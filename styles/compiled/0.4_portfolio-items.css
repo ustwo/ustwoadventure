@@ -101,7 +101,7 @@
 		transform: translate(var(--offset), 0);
 	}
 	:root {
-		--portfolioItemWidth: 200px;
+		--portfolioItemWidth: 195px;
 	}
 	.portfolio-item p.name {
 		font-size: 1.12em;
@@ -119,7 +119,7 @@
 		transform: translate(calc(var(--offset) * 0.6), 0);
 	}
 	:root {
-		--portfolioItemWidth: 190px;
+		--portfolioItemWidth: 185px;
 	}
 	.portfolio-item img {
 		height: calc(var(--portfolioItemWidth) * 1.1);
