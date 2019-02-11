@@ -86,7 +86,7 @@
 }
 
 .home-content .our-portfolio p {
-	max-width: 450px;
+	max-width: 360px;
 }
 
 .home-content .portfolio-preview {
@@ -184,7 +184,7 @@
 		margin-top: 130px;
 	}
 	.home-content .portfolio-preview .portfolio-item:nth-child(2) {
-		margin-top: 0px;
+		margin-top: 0;
 	}
 	.home-content .portfolio-preview .portfolio-item:nth-child(3) {
 		margin-top: 200px;
@@ -246,7 +246,7 @@
 
 @media (max-width: 740px) {
 	.home-content .top-row {
-		margin-bottom: 70px;
+		margin-bottom: 80px;
 	}
 	.home-content .top-row .path-for-companies p {
 		max-width: 470px;
@@ -256,9 +256,55 @@
 	}
 }
 
+@media (max-width: 715px) {
+	.home-content .portfolio-preview .portfolio-item:nth-child(1) {
+		margin-top: 80px;
+	}
+	.home-content .portfolio-preview .portfolio-item:nth-child(2) {
+		margin-top: -40px;
+	}
+	.home-content .portfolio-preview .portfolio-item:nth-child(3) {
+		margin-top: 40px;
+	}
+	.home-content .portfolio-preview .portfolio-item:nth-child(4) {
+		margin-top: -40px;
+		display: block;
+	}
+}
+
+@media (max-width: 535px) {
+	.home-content .portfolio-preview .portfolio-item:nth-child(1) {
+		margin-top: 80px;
+	}
+	.home-content .portfolio-preview .portfolio-item:nth-child(2) {
+		margin-top: -50px;
+	}
+	.home-content .portfolio-preview .portfolio-item:nth-child(3) {
+		margin-top: 20px;
+	}
+	.home-content .portfolio-preview .portfolio-item:nth-child(4) {
+		margin-top: -70px;
+	}
+}
+
 @media (max-width: 475px) {
+	.home-content h1 {
+		margin-bottom: 80px;
+	}
 	.home-content .top-row .path-for-companies h2 {
 		max-width: 300px;
+	}
+	.home-content .portfolio-preview .portfolio-item:nth-child(1) {
+		margin-top: 80px;
+	}
+	.home-content .portfolio-preview .portfolio-item:nth-child(2) {
+		margin-top: -40px;
+	}
+	.home-content .portfolio-preview .portfolio-item:nth-child(3) {
+		margin-top: 10px;
+	}
+	.home-content .portfolio-preview .portfolio-item:nth-child(4) {
+		margin-top: -80px;
 	}
 }
 
@@ -270,8 +316,20 @@
 
 @media (max-width: 380px) {
 	.home-content .portfolio-preview {
-		margin-top: 60px;
+		margin-top: 30px;
 		grid-gap: 3.3rem;
+	}
+	.home-content .portfolio-preview .portfolio-item:nth-child(1) {
+		margin-top: 0;
+	}
+	.home-content .portfolio-preview .portfolio-item:nth-child(2) {
+		margin-top: 0;
+	}
+	.home-content .portfolio-preview .portfolio-item:nth-child(3) {
+		margin-top: 0;
+	}
+	.home-content .portfolio-preview .portfolio-item:nth-child(4) {
+		display: none;
 	}
 }
 
