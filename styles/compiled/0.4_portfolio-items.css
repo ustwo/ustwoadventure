@@ -104,7 +104,7 @@
 		--portfolioItemWidth: 195px;
 	}
 	.portfolio-item p.name {
-		font-size: 1.12em;
+		font-size: 1.16em;
 	}
 	.portfolio-item img {
 		height: calc(var(--portfolioItemWidth) * 1.2);
