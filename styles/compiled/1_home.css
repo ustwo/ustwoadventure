@@ -317,7 +317,7 @@
 @media (max-width: 380px) {
 	.home-content .portfolio-preview {
 		margin-top: 40px;
-		grid-gap: 3;
+		grid-gap: 3rem;
 	}
 	.home-content .portfolio-preview .portfolio-item:nth-child(1) {
 		margin-top: 0;
