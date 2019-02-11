@@ -330,6 +330,8 @@
         }
 
         .top-row {
+            margin-bottom: 60px;
+
             .path-for-companies h2 {
                 max-width: 300px;
             }
@@ -355,7 +357,7 @@
 
     @media (max-width: 380px) {
         .portfolio-preview {
-            margin-top: 40px;
+            margin-top: 50px;
             grid-gap: 3rem;
 
             .portfolio-item {
@@ -369,10 +371,7 @@
 
 
     @media (max-width: 340px) {
-        .portfolio-preview {
-            margin-top: 60px;
-            grid-gap: 3.5rem;
-        }
+
     }
 
 }

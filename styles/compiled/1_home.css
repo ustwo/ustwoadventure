@@ -291,6 +291,9 @@
 	.home-content h1 {
 		margin-bottom: 80px;
 	}
+	.home-content .top-row {
+		margin-bottom: 60px;
+	}
 	.home-content .top-row .path-for-companies h2 {
 		max-width: 300px;
 	}
@@ -316,7 +319,7 @@
 
 @media (max-width: 380px) {
 	.home-content .portfolio-preview {
-		margin-top: 40px;
+		margin-top: 50px;
 		grid-gap: 3rem;
 	}
 	.home-content .portfolio-preview .portfolio-item:nth-child(1) {
@@ -330,12 +333,5 @@
 	}
 	.home-content .portfolio-preview .portfolio-item:nth-child(4) {
 		display: none;
-	}
-}
-
-@media (max-width: 340px) {
-	.home-content .portfolio-preview {
-		margin-top: 60px;
-		grid-gap: 3.5rem;
 	}
 }

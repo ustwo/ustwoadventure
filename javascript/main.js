@@ -194,7 +194,7 @@ const portfolioArray = [
         tidyurl: "twiik.me",
         image: "images/team_assets/fund/twiik_image.jpg",
         logo: "images/team_assets/fund/twiik_logo.png",
-        line: "Digitising wellness",
+        line: "Digitising the wellness cycle",
         copy: "We want to get as many people as possible to build a healthier and more sustainable lifestyle. Twiik delivers a coaching and analytics platform with digital tools, for the entire wellness cycle."
     },
     {
