@@ -163,7 +163,7 @@
 
 @media (max-width: 340px) {
 	.approach-content h1 {
-		max-width: 220px;
+		max-width: 200px;
 	}
 	.approach-content p:not(:first-child) {
 		margin-top: 30px;
