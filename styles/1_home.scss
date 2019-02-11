@@ -186,7 +186,7 @@
             }
 
             .latest-investment {
-                margin-top: 110px;
+                margin-top: 120px;
                 --latestInvestmentWidth: 280px;
 
                 p.tag {
@@ -202,7 +202,9 @@
 
         .portfolio-preview {
             .portfolio-item {
-                &:nth-child(3) {margin-top: 240px}
+                &:nth-child(1) {margin-top: 130px}
+                &:nth-child(2) {margin-top: 0px}
+                &:nth-child(3) {margin-top: 200px}
                 &:nth-child(4) {display: none}
             }
         }
@@ -244,7 +246,6 @@
             }
 
             .latest-investment {
-                margin-top: 100px;
                 --latestInvestmentWidth: 215px;
 
                 p.tag {
@@ -282,18 +283,27 @@
     }
 
 
-    @media (max-width: 735px) {
+    @media (max-width: 740px) {
         .top-row {
             margin-bottom: 70px;
 
             .path-for-companies {
                 p {
-                    max-width: 500px;
+                    max-width: 470px;
                 }
             }
 
             .latest-investment {
                 display: none;
+            }
+        }
+    }
+
+
+    @media (max-width: 475px) {
+        .top-row {
+            .path-for-companies h2 {
+                max-width: 300px;
             }
         }
     }
