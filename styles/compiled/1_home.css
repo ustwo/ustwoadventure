@@ -297,7 +297,7 @@
 	}
 	.home-content .bottom-row img {
 		--collectiveGeniusVideoWidth: 280px;
-		margin-top: 40px;
+		margin-top: 60px;
 	}
 }
 
@@ -365,7 +365,6 @@
 	}
 	.home-content .bottom-row img {
 		--collectiveGeniusVideoWidth: 250px;
-		margin-top: 60px;
 	}
 }
 
