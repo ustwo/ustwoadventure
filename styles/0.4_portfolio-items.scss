@@ -103,6 +103,7 @@
 
     @media (max-width: 380px) {
         @at-root :root {--portfolioItemWidth: 200px}
+
         transform: translate(var(--offset), 0);
 
         p.name {
@@ -110,7 +111,7 @@
         }
 
         img {
-            height: calc(var(--portfolioItemWidth) * 1.24);
+            height: calc(var(--portfolioItemWidth) * 1.2);
         }
 
         p.copy {
@@ -121,10 +122,11 @@
 
     @media (max-width: 340px) {
         @at-root :root {--portfolioItemWidth: 190px}
+
         transform: translate(calc(var(--offset) * 0.6), 0);
 
         img {
-            height: calc(var(--portfolioItemWidth) * 1.2);
+            height: calc(var(--portfolioItemWidth) * 1.1);
         }
     }
 }

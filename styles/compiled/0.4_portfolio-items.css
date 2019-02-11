@@ -113,7 +113,7 @@
 		font-size: 1.12em;
 	}
 	.portfolio-item img {
-		height: calc(var(--portfolioItemWidth) * 1.24);
+		height: calc(var(--portfolioItemWidth) * 1.2);
 	}
 	.portfolio-item p.copy {
 		font-size: 1em;
@@ -128,6 +128,6 @@
 		--portfolioItemWidth: 190px;
 	}
 	.portfolio-item img {
-		height: calc(var(--portfolioItemWidth) * 1.2);
+		height: calc(var(--portfolioItemWidth) * 1.1);
 	}
 }
