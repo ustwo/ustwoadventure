@@ -62,18 +62,13 @@
     }
 
 
-    @media (max-width: 1080px) {
-        @at-root :root {--portfolioItemWidth: 220px}
-    }
-
-
     @media (max-width: 850px) {
-        @at-root :root {--portfolioItemWidth: 200px}
+        @at-root :root {--portfolioItemWidth: 195px}
     }
 
 
     @media (max-width: 769px) {
-        @at-root :root {--portfolioItemWidth: 190px}
+        @at-root :root {--portfolioItemWidth: 185px}
     }
 
 

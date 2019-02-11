@@ -57,21 +57,15 @@
 	}
 }
 
-@media (max-width: 1080px) {
-	:root {
-		--portfolioItemWidth: 220px;
-	}
-}
-
 @media (max-width: 850px) {
 	:root {
-		--portfolioItemWidth: 200px;
+		--portfolioItemWidth: 195px;
 	}
 }
 
 @media (max-width: 769px) {
 	:root {
-		--portfolioItemWidth: 190px;
+		--portfolioItemWidth: 185px;
 	}
 }
 

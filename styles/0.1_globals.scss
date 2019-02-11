@@ -59,7 +59,7 @@ a, a:visited {
 
 a.button {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 22px;
     margin-right: 20px;
 
     padding: 10px 40px 10px 15px;
@@ -124,7 +124,7 @@ a.button {
 
 
 
-@media (max-width: 950px) {
+@media (max-width: 965px) {
     body {
        padding: 0 50px;
        font-size: 17px;
@@ -132,7 +132,7 @@ a.button {
 
     h1 {
         margin-bottom: 60px;
-        font-size: 46px;
+        font-size: 42px;
     }
 
     h2 {
@@ -145,7 +145,8 @@ a.button {
     }
 
     a.button {
-        font-size: 0.8em;
+        font-size: 0.78em;
+        padding: 10px 37px 9px 12px;
     }
 }
 
@@ -157,7 +158,7 @@ a.button {
     }
 
     h1 {
-        margin-bottom: 70px;
+        margin-bottom: 60px;
         font-size: 38px;
     }
 

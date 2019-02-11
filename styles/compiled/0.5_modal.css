@@ -190,7 +190,7 @@
 
 @media (max-width: 500px) {
 	.modal {
-		height: calc(100% - 75px);
+		height: calc(100% - 80px);
 		width: calc(100% - 60px);
 	}
 	.modal .modal-inner .modal-details {
@@ -201,7 +201,7 @@
 	}
 	.modal .modal-inner .modal-details a.site-link {
 		margin-bottom: 18px;
-		font-size: 26px;
+		font-size: 25px;
 	}
 	.modal .modal-inner .modal-details p.line {
 		margin-bottom: 12px;
