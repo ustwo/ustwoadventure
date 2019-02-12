@@ -105,7 +105,7 @@ const portfolioArray = [
         image: "images/team_assets/fund/mayku_image.jpg",
         logo: "images/team_assets/fund/mayku_logo.png",
         line: "Make beautiful things with the FormBox",
-        copy: "The most compact vacuum former ever made, letting you start a production line from your desktop. There's no end to the things you can make, It lets you bring your ideas into the world, fast."
+        copy: "Mayku are on a mission to give people the power of making. We're building a family of mini-machines that let you start a production line from your tabletop - as simply as baking a cake."
     },
     {
         name: "Marvel",
