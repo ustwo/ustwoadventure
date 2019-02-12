@@ -68,8 +68,8 @@ const portfolioArray = [
         tidyurl: "hoop.co.uk",
         image: "images/team_assets/fund/hoop_image.jpg",
         logo: "images/team_assets/fund/hoop_logo.png",
-        line: "Find the best things going on for kids",
-        copy: "The tool families need to search for events and activities that their kids will love, along with curated content."
+        line: "Find the best things happening for kids",
+        copy: "Hoop is on a mission to get families get out of house and help their children laugh, learn and make new friends."
     },
     {
         name: "Everpress",
