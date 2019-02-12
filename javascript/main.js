@@ -113,8 +113,8 @@ const portfolioArray = [
         tidyurl: "marvelapp.com",
         image: "images/team_assets/fund/marvel_image.jpg",
         logo: "images/team_assets/fund/marvel_logo.png",
-        line: "A prototyping tool for designers",
-        copy: "Design in Marvel or other tools, add your interactions and gestures to make the designs come to life, and collaborate with your team. We’ve built the best way for designers to to their thing."
+        line: "Making design simple for everyone",
+        copy: "Marvel is a design and collaboration platform that empowers individuals and teams to bring their ideas to life. From wireframing to prototyping to code generation - Marvel is used to create the apps and sites you use everyday"
     },
     {
         name: "Dice",
@@ -193,7 +193,7 @@ const portfolioArray = [
         url: "https://www.twiik.me/",
         tidyurl: "twiik.me",
         image: "images/team_assets/fund/twiik_image.jpg",
-        logo: "images/team_assets/fund/twiik_logo.png",
+        logo: "",
         line: "Digitising the wellness cycle",
         copy: "We want to get as many people as possible to build a healthier and more sustainable lifestyle. Twiik delivers a coaching and analytics platform with digital tools, for the entire wellness cycle."
     },
