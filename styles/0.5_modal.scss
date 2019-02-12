@@ -165,8 +165,8 @@
 
 
     @media (max-width: 640px) {
-        height: calc(100% - 100px);
-        width: calc(100% - 90px);
+        height: calc(100% - 110px);
+        width: calc(100% - 100px);
 
         .modal-inner {
             flex-direction: column;
@@ -181,7 +181,7 @@
                 padding: 30px;
 
                 h2 {
-                    font-size: 46px;
+                    font-size: 44px;
                 }
 
                 p.line {

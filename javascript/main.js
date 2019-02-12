@@ -213,7 +213,7 @@ const portfolioArray = [
         image: "images/team_assets/fund/superhi_image.jpg",
         logo: "images/team_assets/fund/superhi_logo.png",
         line: "Online Courses For Creative People",
-        copy: "A community of inspiring people from over 50 countries learning new tech skills to complement and enhance what they're already great at."
+        copy: "A community of inspiring people from over 80 countries learning new tech and design skills to complement and enhance what they're already great at."
     }
 ];
 
