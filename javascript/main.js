@@ -183,7 +183,7 @@ const portfolioArray = [
         name: "Limbic",
         url: "https://limbic.ai/",
         tidyurl: "limbic.ai",
-        image: "images/team_assets/fund/limbic_image.png",
+        image: "images/team_assets/fund/limbic_image.jpg",
         logo: "images/team_assets/fund/limbic_logo.png",
         line: "Humanising Computing",
         copy: "We've created an SDK for emotional intelligence. Using AI models we want to enable products that interact with users as naturally as the interactions between two humans."
