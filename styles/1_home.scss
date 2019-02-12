@@ -332,6 +332,8 @@
 
     @media (max-width: 535px) {
         .portfolio-preview {
+            margin-bottom: 80px;
+
             .portfolio-item {
                 &:nth-child(1) {margin-top:  80px}
                 &:nth-child(2) {margin-top: -50px}
@@ -362,6 +364,8 @@
         }
 
         .portfolio-preview {
+            margin-bottom: 70px;
+
             .portfolio-item {
                 &:nth-child(1) {margin-top:  80px}
                 &:nth-child(2) {margin-top: -40px}

@@ -287,6 +287,9 @@
 }
 
 @media (max-width: 535px) {
+	.home-content .portfolio-preview {
+		margin-bottom: 80px;
+	}
 	.home-content .portfolio-preview .portfolio-item:nth-child(1) {
 		margin-top: 80px;
 	}
@@ -313,6 +316,9 @@
 	}
 	.home-content .top-row .path-for-companies h2 {
 		max-width: 300px;
+	}
+	.home-content .portfolio-preview {
+		margin-bottom: 70px;
 	}
 	.home-content .portfolio-preview .portfolio-item:nth-child(1) {
 		margin-top: 80px;
