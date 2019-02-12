@@ -43,7 +43,7 @@
 
 .approach-content .stages div h2.number {
 	position: absolute;
-	top: -5px;
+	top: -3px;
 	left: -25px;
 	z-index: -1;
 	font-family: "futura-pt", "futura", sans-serif;
@@ -130,8 +130,11 @@
 	.approach-content .stages div:nth-child(5) {
 		margin-bottom: 20px;
 	}
+}
+
+@media (max-width: 475px) {
 	.approach-content .stages div h2.number {
-		top: -10px;
+		top: -9px;
 	}
 }
 

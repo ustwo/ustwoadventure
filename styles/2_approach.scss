@@ -44,7 +44,7 @@
 
             h2.number {
                 position: absolute;
-                top: -5px;
+                top: -3px;
                 left: -25px;
                 z-index: -1;
 
@@ -153,11 +153,14 @@
                 &:nth-child(5) {
                     margin-bottom: 20px;
                 }
-
-                h2.number {
-                    top: -10px;
-                }
             }
+        }
+    }
+
+
+    @media (max-width: 475px) {
+        .stages div h2.number {
+            top: -9px;
         }
     }
 

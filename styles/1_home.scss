@@ -26,7 +26,7 @@
         .latest-investment {
             margin-top: 120px;
             margin-left: 90px;
-            --latestInvestmentWidth: 350px;
+            --latestInvestmentImageWidth: 350px;
 
             p.tag {
                 margin-bottom: 10px;
@@ -41,8 +41,8 @@
             }
 
             img {
-                width: var(--latestInvestmentWidth);
-                height: calc(var(--latestInvestmentWidth) * 0.858);
+                width: var(--latestInvestmentImageWidth);
+                height: calc(var(--latestInvestmentImageWidth) * 0.858);
                 object-fit: cover;
 
                 transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
@@ -55,7 +55,7 @@
                 -webkit-text-fill-color: transparent;
 
                 width: max-content;
-                max-width: var(--latestInvestmentWidth);
+                max-width: var(--latestInvestmentImageWidth);
 
                 margin-top: -30px;
                 margin-bottom: 0;
@@ -70,7 +70,7 @@
                 margin-right: 5px;
                 line-height: 1.5;
                 text-align: right;
-                max-width: var(--latestInvestmentWidth);
+                max-width: var(--latestInvestmentImageWidth);
             }
 
             &:hover {
@@ -150,7 +150,7 @@
     @media (max-width: 1080px) {
         .top-row {
             .latest-investment {
-                --latestInvestmentWidth: 300px;
+                --latestInvestmentImageWidth: 300px;
             }
         }
 
@@ -181,7 +181,7 @@
         .top-row {
             .latest-investment {
                 margin-top: 120px;
-                --latestInvestmentWidth: 280px;
+                --latestInvestmentImageWidth: 280px;
 
                 p.tag {
                     margin-left: -23px;
@@ -215,7 +215,7 @@
         .top-row {
             .latest-investment {
                 margin-top: 100px;
-                --latestInvestmentWidth: 250px;
+                --latestInvestmentImageWidth: 250px;
 
                 p.tag {
                     margin-left: -18px;
@@ -241,14 +241,14 @@
     @media (max-width: 825px) {
         .top-row {
             .latest-investment {
-                --latestInvestmentWidth: 215px;
+                --latestInvestmentImageWidth: 215px;
 
                 p.tag {
                     margin-left: -16px;
                 }
 
                 img {
-                    height: calc(var(--latestInvestmentWidth) * 0.92);
+                    height: calc(var(--latestInvestmentImageWidth) * 0.92);
                 }
 
                 h1 {
@@ -274,7 +274,7 @@
 
         .top-row {
             .latest-investment {
-                --latestInvestmentWidth: 210px;
+                --latestInvestmentImageWidth: 210px;
 
                 h1 {
                     font-size: 42px;
@@ -286,7 +286,7 @@
             flex-direction: column;
 
             img {
-                --collectiveGeniusVideoWidth: 320px;
+                --collectiveGeniusVideoWidth: 360px;
                 margin-top: 20px;
                 margin-left: auto;
             }
@@ -323,7 +323,7 @@
 
         .bottom-row {
             img {
-                --collectiveGeniusVideoWidth: 280px;
+                --collectiveGeniusVideoWidth: 320px;
                 margin-top: 60px;
             }
         }
@@ -337,6 +337,12 @@
                 &:nth-child(2) {margin-top: -50px}
                 &:nth-child(3) {margin-top:  20px}
                 &:nth-child(4) {margin-top: -70px}
+            }
+        }
+
+        .bottom-row {
+            img {
+                --collectiveGeniusVideoWidth: 290px;
             }
         }
     }
