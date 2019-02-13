@@ -107,11 +107,12 @@ a.button.external:hover {
 
 .content-wrapper {
 	min-height: 38vh;
-	transition: opacity 0.17s;
+	transition: opacity 0.17s, transform 0.17s;
 }
 
 .content-wrapper.transition {
 	opacity: 0;
+	transform: translate(0, 6px);
 }
 
 @media (max-width: 965px) {

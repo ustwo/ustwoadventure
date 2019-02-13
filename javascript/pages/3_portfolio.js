@@ -11,6 +11,5 @@ const portfolioPage = `
             ${ portfolioItems }
         </div>
 
-
     </div>
 `;

@@ -18,6 +18,7 @@ const goToPage = pathName => {
     pageContentContainer.classList.add("transition");
     setTimeout(() => pageContentContainer.innerHTML = routes[pathName], 170);
     setTimeout(() => lzy(), 170);
+    if (window.pageYOffset > 400) setTimeout(() => window.scrollTo(0, 0), 170);
     setTimeout(() => pageContentContainer.classList.remove("transition"), 170);
 };
 
@@ -26,6 +27,7 @@ window.onpopstate = () => {
     pageContentContainer.classList.add("transition");
     setTimeout(() => pageContentContainer.innerHTML = routes[window.location.pathname], 170);
     setTimeout(() => lzy(), 170);
+    if (window.pageYOffset > 400) setTimeout(() => window.scrollTo(0, 0), 170);
     setTimeout(() => pageContentContainer.classList.remove("transition"), 170);
 };
 
