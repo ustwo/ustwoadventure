@@ -57,18 +57,3 @@ const approachStageScroll = () => {
 if (approachStages && window.innerWidth < 500) {
     approachStageScroll();
 }
-
-
-
-
-const portfolioGridItems = document.querySelectorAll(".portfolio-item");
-const gridItemOffset = () => {
-    portfolioGridItems.forEach(item => {
-        const randomOffset = 10 * (Math.floor(Math.random() * 11)) - 50;
-        item.style.setProperty("--offset", `${randomOffset}px`);
-    });
-};
-
-if (portfolioGridItems) {
-    gridItemOffset();
-}

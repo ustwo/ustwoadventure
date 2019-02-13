@@ -221,10 +221,11 @@ const portfolioArray = [
 
 
 
-
+const randomOffset = () => 10 * (Math.floor(Math.random() * 11)) - 50;
 const createPortfolioItems = a => a.map(obj => {
     return `
-        <a class="portfolio-item" href="#modal-${ kebabCase(obj.name) }" target="_blank" rel="modal:open">
+        <a class="portfolio-item" href="#modal-${ kebabCase(obj.name) }" target="_blank" rel="modal:open"
+        style="--offset: ${randomOffset()}px">
             <p class="name">${ obj.name }</p>
             <img data-src="${ obj.image }">
             <p class="copy">${ obj.line }</p>
