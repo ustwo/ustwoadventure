@@ -167,7 +167,7 @@ const portfolioArray = [
         tidyurl: "seedandspark.com",
         image: "images/team_assets/fund/seedandspark_image.jpg",
         logo: "images/team_assets/fund/seedandspark_logo.png",
-        line: "Look through different lenses",
+        line: "Raising daring and diverse voices in film",
         copy: "A streaming service where perspective matters, combining streaming for audiences with crowdfunding for creators. Our mission is to create an entertainment landscape that reflects what we actually look like."
     },
     {
