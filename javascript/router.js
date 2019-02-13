@@ -3,7 +3,8 @@ const routes = {
     "/approach": approachPage,
     "/portfolio": portfolioPage,
     "/apply": "",
-    "/faq": ""
+    "/faq": "",
+    "": fourOhFourPage
 };
 
 
@@ -15,17 +16,17 @@ lzy();
 const goToPage = pathName => {
     window.history.pushState({}, pathName, window.location.origin + pathName);
     pageContentContainer.classList.add("transition");
-    setTimeout(() => pageContentContainer.innerHTML = routes[pathName], 180);
-    setTimeout(() => lzy(), 180);
-    setTimeout(() => pageContentContainer.classList.remove("transition"), 180);
+    setTimeout(() => pageContentContainer.innerHTML = routes[pathName], 170);
+    setTimeout(() => lzy(), 170);
+    setTimeout(() => pageContentContainer.classList.remove("transition"), 170);
 };
 
 
 window.onpopstate = () => {
     pageContentContainer.classList.add("transition");
-    setTimeout(() => pageContentContainer.innerHTML = routes[window.location.pathname], 180);
-    setTimeout(() => lzy(), 180);
-    setTimeout(() => pageContentContainer.classList.remove("transition"), 180);
+    setTimeout(() => pageContentContainer.innerHTML = routes[window.location.pathname], 170);
+    setTimeout(() => lzy(), 170);
+    setTimeout(() => pageContentContainer.classList.remove("transition"), 170);
 };
 
 

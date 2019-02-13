@@ -220,6 +220,8 @@ const portfolioArray = [
 
 
 
+
+
 const createPortfolioItems = a => a.map(obj => {
     return `
         <a class="portfolio-item" href="#modal-${ kebabCase(obj.name) }" target="_blank" rel="modal:open">

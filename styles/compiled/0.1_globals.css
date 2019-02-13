@@ -107,7 +107,7 @@ a.button.external:hover {
 
 .content-wrapper {
 	min-height: 38vh;
-	transition: opacity 0.18s;
+	transition: opacity 0.17s;
 }
 
 .content-wrapper.transition {
