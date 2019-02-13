@@ -77,12 +77,13 @@
             overflow: auto;
 
             h2 {
+                --h2FontSize: 60px;
                 margin-bottom: 6px;
                 font-family: futura-pt, 'Px', sans-serif;
                 font-weight: 800;
                 color: #F32D94;
                 text-transform: uppercase;
-                font-size: 60px;
+                font-size: var(--h2FontSize);
                 line-height: 1;
             }
 
@@ -148,7 +149,7 @@
         width: 95%;
 
         .modal-inner .modal-details h2 {
-            font-size: 56px;
+            --h2FontSize: 56px;
             word-wrap: break-word;
             hyphens: auto;
         }
@@ -159,7 +160,7 @@
         width: 100%;
 
         .modal-inner .modal-details h2 {
-            font-size: 52px;
+            --h2FontSize: 52px;
         }
     }
 
@@ -181,7 +182,7 @@
                 padding: 30px;
 
                 h2 {
-                    font-size: 44px;
+                    --h2FontSize: 44px;
                 }
 
                 p.line {
@@ -272,6 +273,18 @@
         position: fixed;
         bottom: 0;
         left: 0;
+    }
+
+
+
+
+    &#modal-seedandspark {
+        .modal-inner .modal-details h2 {
+            font-size: calc(var(--h2FontSize) * 0.87);
+            @media (max-width: 880px) {font-size: calc(var(--h2FontSize) * 0.8)}
+            @media (max-width: 697px) {font-size: calc(var(--h2FontSize) * 0.72)}
+            @media (max-width: 640px) {font-size: calc(var(--h2FontSize) * 0.96)}
+        }
     }
 
 

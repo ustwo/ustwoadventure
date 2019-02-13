@@ -162,7 +162,7 @@ const portfolioArray = [
         copy: "Our frames are designed by us, are handmade by experienced frame builders out of the best materials, and can be ridden all day, whether in the city, on the track or out in the wild."
     },
     {
-        name: "Seed and Spark",
+        name: "Seed&Spark",
         url: "https://www.seedandspark.com/",
         tidyurl: "seedandspark.com",
         image: "images/team_assets/fund/seedandspark_image.jpg",
@@ -244,6 +244,7 @@ const lzy = (offset = 500) => {
 const kebabCase = string => {
     return string.replace(/([a-z])([A-Z])/g, "$1-$2")
                  .replace(/[\s_]+/g, "-")
+                 .replace(/&/g, "and")
                  .toLowerCase();
 };
 
