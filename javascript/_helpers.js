@@ -6,7 +6,6 @@ const lzy = (offset = 500) => {
     });
     const loadImage = imageEl => {
         imageEl.setAttribute("src", imageEl.getAttribute("data-src"));
-        imageEl.removeAttribute("data-src");
     };
     images.forEach(image => observer.observe(image));
     function onIntersection(entries) {
