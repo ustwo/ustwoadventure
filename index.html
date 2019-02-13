@@ -45,7 +45,7 @@
 
     <header>
 
-        <a class="logo" href="index.html">
+        <a class="nav logo" data-pathname="/" href="index.html">
             <img src="images/ustwo_logo_pink.svg">
             <ul>
                 <li>A</li>
@@ -61,9 +61,9 @@
         </a>
 
         <nav>
-            <a class="nav" href="approach.html">Approach</a>
-            <a class="nav" href="portfolio.html">Portfolio</a>
-            <a class="nav" href="apply.html">Apply</a>
+            <a class="nav" data-pathname="/approach" href="approach.html">Approach</a>
+            <a class="nav" data-pathname="/portfolio" href="portfolio.html">Portfolio</a>
+            <a class="nav" data-pathname="/apply" href="apply.html">Apply</a>
         </nav>
 
     </header>
@@ -71,56 +71,9 @@
 
     <section class="content-wrapper">
 
-        <div class="home-content">
-
-            <h1>
-                ustwo Adventure invests in creative companies, differently
-            </h1>
-
-            <div class="top-row">
-
-                <div class="path-for-companies">
-                    <h2>A path for companies to own their future</h2>
-                    <p>What if startup capital enabled companies to prioritise profitability, culture, and a long-term view?</p>
-                    <p>No equity by default, shared revenue, and a capped return. Our approach gives founders the option to grow their company as they see fit.</p>
-                    <a class="nav button internal" href="approach.html">Learn more</a>
-                    <!-- <a class="nav button internal" href="apply.html">Apply</a> -->
-                </div>
-
-                <div class="latest-investment">
-                    <a href="portfolio.html/?superhi">
-
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="our-portfolio">
-                <h2>Our Portfolio</h2>
-                <p>We invest in early-stage companies that are building something bigger than an exit.</p>
-                <a class="nav button internal" href="portfolio.html">See all</a>
-            </div>
-
-            <div class="portfolio-preview">
-
-            </div>
-
-            <div class="bottom-row">
-
-                <div class="collective-genius">
-                    <h2>Collective genius</h2>
-                    <p>ustwo builds products, services and companies that make a meaningful impact on the world. By caring deeply for our people, clients, and partners, we believe that we can unleash the “collective genius” of all of us.</p>
-                    <a class="nav button external" href="approach.html">ustwo.com</a>
-                </div>
-
-                <img src="images/monument-valley.jpg">
-
-            </div>
-
-        </div>
-
 
     </section>
+
 
     <section class="modal-container">
 
@@ -167,7 +120,7 @@
             <div class="more-juice">
                 <p>More juice</p>
                 <a href="https://github.com/ustwo/" target="_blank">Investment terms</a>
-                <a href="faq.html">FAQ</a>
+                <a class="nav" data-pathname="/faq" href="faq.html">FAQ</a>
                 <a href="mailto:hello.adventure@ustwo.com" target="_blank">Contact</a>
             </div>
 
@@ -188,6 +141,14 @@
     <script>if (!window.jQuery) document.write('<script src="javascript/jquery.min.js"><\/script>')</script>
     <script>if (!window.IntersectionObserver) document.write('<script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"> <\/script>')</script>
     <script src="javascript/jquery.modal.js"> </script>
+    <script src="javascript/_helpers.js"> </script>
+    <script src="javascript/_portfolioArray.js"> </script>
+    <script src="javascript/1_home.js"> </script>
+    <script src="javascript/2_approach.js"> </script>
+    <script src="javascript/3_portfolio.js"> </script>
+    <script src="javascript/4_apply.js"> </script>
+    <script src="javascript/5_faq.js"> </script>
+    <script src="javascript/router.js"> </script>
     <script src="javascript/main.js"> </script>
 
 </body>
