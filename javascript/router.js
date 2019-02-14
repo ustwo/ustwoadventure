@@ -27,6 +27,7 @@ const goToPage = pathName => {
     setTimeout(() => lzy(), 150);
     if (window.pageYOffset > 400) setTimeout(() => window.scrollTo(0, 0), 150);
     setTimeout(() => pageContentContainer.classList.remove("transition"), 150);
+    logoRingLetters.innerHTML = "<li>A</li><li>D</li><li>V</li><li>E</li><li>N</li><li>T</li><li>U</li><li>R</li><li>E</li>";
 };
 
 
