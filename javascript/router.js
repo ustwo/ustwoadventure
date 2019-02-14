@@ -8,6 +8,27 @@ const routes = {
 };
 
 
+const goToPage = pathName => {
+    if (!routes.hasOwnProperty(window.location.pathname)) {
+        orbitLetters[0].innerHTML = "A";
+        orbitLetters[1].innerHTML = "D";
+        orbitLetters[2].innerHTML = "V";
+        orbitLetters[3].innerHTML = "E";
+        orbitLetters[4].innerHTML = "N";
+        orbitLetters[5].innerHTML = "T";
+        orbitLetters[6].innerHTML = "U";
+        orbitLetters[7].innerHTML = "R";
+        orbitLetters[8].innerHTML = "E";
+    }
+    pageContentContainer.classList.add("transition");
+    setTimeout(() => pageContentContainer.innerHTML = routes[pathName], 150);
+    setTimeout(() => lzy(), 150);
+    setTimeout(() => navLinkSetup(), 150);
+    if (window.pageYOffset > 100) setTimeout(() => window.scrollTo(0, 0), 150);
+    setTimeout(() => pageContentContainer.classList.remove("transition"), 150);
+};
+
+
 const navLinkSetup = () => {
     const navLinks = document.querySelectorAll("a.nav");
     navLinks.forEach(link => {
@@ -43,27 +64,6 @@ if (routes.hasOwnProperty(window.location.pathname)) {
 
 lzy();
 navLinkSetup();
-
-
-const goToPage = pathName => {
-    if (!routes.hasOwnProperty(window.location.pathname)) {
-        orbitLetters[0].innerHTML = "A";
-        orbitLetters[1].innerHTML = "D";
-        orbitLetters[2].innerHTML = "V";
-        orbitLetters[3].innerHTML = "E";
-        orbitLetters[4].innerHTML = "N";
-        orbitLetters[5].innerHTML = "T";
-        orbitLetters[6].innerHTML = "U";
-        orbitLetters[7].innerHTML = "R";
-        orbitLetters[8].innerHTML = "E";
-    }
-    pageContentContainer.classList.add("transition");
-    setTimeout(() => pageContentContainer.innerHTML = routes[pathName], 150);
-    setTimeout(() => lzy(), 150);
-    setTimeout(() => navLinkSetup(), 150);
-    if (window.pageYOffset > 100) setTimeout(() => window.scrollTo(0, 0), 150);
-    setTimeout(() => pageContentContainer.classList.remove("transition"), 150);
-};
 
 
 window.onpopstate = () => {
