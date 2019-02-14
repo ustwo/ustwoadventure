@@ -8,17 +8,17 @@ const routes = {
 };
 
 
+const pageContentContainer = document.querySelector(".content-wrapper");
+const orbitLetters = Array.from(document.querySelectorAll("header .logo ul li"));
+const adventureLetters = "ADVENTURE";
+const fourOhFourLetters = "404ERROR-";
+
+
 const goToPage = pathName => {
     if (!routes.hasOwnProperty(window.location.pathname)) {
-        orbitLetters[0].innerHTML = "A";
-        orbitLetters[1].innerHTML = "D";
-        orbitLetters[2].innerHTML = "V";
-        orbitLetters[3].innerHTML = "E";
-        orbitLetters[4].innerHTML = "N";
-        orbitLetters[5].innerHTML = "T";
-        orbitLetters[6].innerHTML = "U";
-        orbitLetters[7].innerHTML = "R";
-        orbitLetters[8].innerHTML = "E";
+        for (var i = 0; i < orbitLetters.length; i++) {
+            orbitLetters[i].innerHTML = adventureLetters[i];
+        }
     }
     pageContentContainer.classList.add("transition");
     setTimeout(() => pageContentContainer.innerHTML = routes[pathName], 150);
@@ -31,16 +31,10 @@ const goToPage = pathName => {
 
 const goTo404 = () => {
     pageContentContainer.innerHTML = fourOhFourPage;
-    orbitLetters[0].innerHTML = "4";
-    orbitLetters[1].innerHTML = "0";
-    orbitLetters[2].innerHTML = "4";
-    orbitLetters[3].innerHTML = "E";
-    orbitLetters[4].innerHTML = "R";
-    orbitLetters[5].innerHTML = "R";
-    orbitLetters[6].innerHTML = "O";
-    orbitLetters[7].innerHTML = "R";
-    orbitLetters[8].innerHTML = "-";
-}
+    for (var i = 0; i < orbitLetters.length; i++) {
+        orbitLetters[i].innerHTML = fourOhFourLetters[i];
+    }
+};
 
 
 const navLinkSetup = () => {
@@ -56,9 +50,6 @@ const navLinkSetup = () => {
     });
 };
 
-
-const pageContentContainer = document.querySelector(".content-wrapper");
-const orbitLetters = Array.from(document.querySelectorAll("header .logo ul li"));
 
 if (routes.hasOwnProperty(window.location.pathname)) {
     pageContentContainer.innerHTML = routes[window.location.pathname];
