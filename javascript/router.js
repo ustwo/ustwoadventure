@@ -7,6 +7,19 @@ const routes = {
 };
 
 
+const navLinkSetup = () => {
+    const navLinks = document.querySelectorAll("a.nav");
+    navLinks.forEach(link => {
+        const pathName = link.getAttribute("data-pathname");
+        link.addEventListener("click", e => {
+            goToPage(pathName);
+            window.history.pushState({}, pathName, window.location.origin + pathName);
+            e.preventDefault();
+        });
+    });
+};
+
+
 const pageContentContainer = document.querySelector(".content-wrapper");
 const orbitLetters = Array.from(document.querySelectorAll("header .logo ul li"));
 
@@ -26,6 +39,7 @@ if (routes.hasOwnProperty(window.location.pathname)) {
 }
 
 lzy();
+navLinkSetup();
 
 
 const goToPage = pathName => {
@@ -43,20 +57,10 @@ const goToPage = pathName => {
     pageContentContainer.classList.add("transition");
     setTimeout(() => pageContentContainer.innerHTML = routes[pathName], 150);
     setTimeout(() => lzy(), 150);
+    setTimeout(() => navLinkSetup(), 150);
     if (window.pageYOffset > 400) setTimeout(() => window.scrollTo(0, 0), 150);
     setTimeout(() => pageContentContainer.classList.remove("transition"), 150);
 };
-
-
-const navLinks = document.querySelectorAll("a.nav");
-navLinks.forEach(link => {
-    const pathName = link.getAttribute("data-pathname");
-    link.addEventListener("click", e => {
-        goToPage(pathName);
-        window.history.pushState({}, pathName, window.location.origin + pathName);
-        e.preventDefault();
-    });
-});
 
 
 window.onpopstate = () => {
