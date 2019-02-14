@@ -29,27 +29,19 @@ lzy();
 
 
 const goToPage = pathName => {
-    window.history.pushState({}, pathName, window.location.origin + pathName);
+    if (!routes.hasOwnProperty(window.location.pathname)) {
+        orbitLetters[0].innerHTML = "A";
+        orbitLetters[1].innerHTML = "D";
+        orbitLetters[2].innerHTML = "V";
+        orbitLetters[3].innerHTML = "E";
+        orbitLetters[4].innerHTML = "N";
+        orbitLetters[5].innerHTML = "T";
+        orbitLetters[6].innerHTML = "U";
+        orbitLetters[7].innerHTML = "R";
+        orbitLetters[8].innerHTML = "E";
+    }
     pageContentContainer.classList.add("transition");
     setTimeout(() => pageContentContainer.innerHTML = routes[pathName], 150);
-    setTimeout(() => lzy(), 150);
-    if (window.pageYOffset > 400) setTimeout(() => window.scrollTo(0, 0), 150);
-    setTimeout(() => pageContentContainer.classList.remove("transition"), 150);
-    orbitLetters[0].innerHTML = "A";
-    orbitLetters[1].innerHTML = "D";
-    orbitLetters[2].innerHTML = "V";
-    orbitLetters[3].innerHTML = "E";
-    orbitLetters[4].innerHTML = "N";
-    orbitLetters[5].innerHTML = "T";
-    orbitLetters[6].innerHTML = "U";
-    orbitLetters[7].innerHTML = "R";
-    orbitLetters[8].innerHTML = "E";
-};
-
-
-window.onpopstate = () => {
-    pageContentContainer.classList.add("transition");
-    setTimeout(() => pageContentContainer.innerHTML = routes[window.location.pathname], 150);
     setTimeout(() => lzy(), 150);
     if (window.pageYOffset > 400) setTimeout(() => window.scrollTo(0, 0), 150);
     setTimeout(() => pageContentContainer.classList.remove("transition"), 150);
@@ -61,6 +53,12 @@ navLinks.forEach(link => {
     const pathName = link.getAttribute("data-pathname");
     link.addEventListener("click", e => {
         goToPage(pathName);
+        window.history.pushState({}, pathName, window.location.origin + pathName);
         e.preventDefault();
     });
 });
+
+
+window.onpopstate = () => {
+    goToPage(window.location.pathname);
+};
