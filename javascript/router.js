@@ -66,6 +66,6 @@ window.onpopstate = () => {
     if (routes.hasOwnProperty(window.location.pathname)) {
         goToPage(window.location.pathname);
     } else {
-        goToPage("/404");
+        goTo404();
     }
 };
