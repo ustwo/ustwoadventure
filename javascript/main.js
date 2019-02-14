@@ -33,7 +33,7 @@ footerADVLetters.forEach(letter => {
 
 
 
-
+// TODO:
 const approachStages = document.querySelectorAll(".stages div");
 const approachStageScroll = () => {
     const observer = new IntersectionObserver(onIntersection, {

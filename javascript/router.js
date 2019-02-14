@@ -6,6 +6,18 @@ const routes = {
     "/faq": "",
 };
 
+const goTo404 = () => {
+    pageContentContainer.innerHTML = fourOhFourPage;
+    orbitLetters[0].innerHTML = "4";
+    orbitLetters[1].innerHTML = "0";
+    orbitLetters[2].innerHTML = "4";
+    orbitLetters[3].innerHTML = "E";
+    orbitLetters[4].innerHTML = "R";
+    orbitLetters[5].innerHTML = "R";
+    orbitLetters[6].innerHTML = "O";
+    orbitLetters[7].innerHTML = "R";
+    orbitLetters[8].innerHTML = "-";
+}
 
 const navLinkSetup = () => {
     const navLinks = document.querySelectorAll("a.nav");
@@ -26,16 +38,7 @@ const orbitLetters = Array.from(document.querySelectorAll("header .logo ul li"))
 if (routes.hasOwnProperty(window.location.pathname)) {
     pageContentContainer.innerHTML = routes[window.location.pathname];
 } else {
-    pageContentContainer.innerHTML = fourOhFourPage;
-    orbitLetters[0].innerHTML = "4";
-    orbitLetters[1].innerHTML = "0";
-    orbitLetters[2].innerHTML = "4";
-    orbitLetters[3].innerHTML = "E";
-    orbitLetters[4].innerHTML = "R";
-    orbitLetters[5].innerHTML = "R";
-    orbitLetters[6].innerHTML = "O";
-    orbitLetters[7].innerHTML = "R";
-    orbitLetters[8].innerHTML = "-";
+    goTo404();
 }
 
 lzy();
@@ -64,5 +67,9 @@ const goToPage = pathName => {
 
 
 window.onpopstate = () => {
-    goToPage(window.location.pathname);
+    if (routes.hasOwnProperty(window.location.pathname)) {
+        goToPage(window.location.pathname);
+    } else {
+        goTo404();
+    }
 };
