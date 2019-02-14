@@ -17,15 +17,15 @@ const goTo404 = () => {
     orbitLetters[6].innerHTML = "O";
     orbitLetters[7].innerHTML = "R";
     orbitLetters[8].innerHTML = "-";
-}
+};
 
 const navLinkSetup = () => {
     const navLinks = document.querySelectorAll("a.nav");
     navLinks.forEach(link => {
         const pathName = link.getAttribute("data-pathname");
         link.addEventListener("click", e => {
-            goToPage(pathName);
             window.history.pushState({}, pathName, window.location.origin + pathName);
+            goToPage(pathName);
             e.preventDefault();
         });
     });
