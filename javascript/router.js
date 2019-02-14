@@ -21,19 +21,19 @@ lzy();
 const goToPage = pathName => {
     window.history.pushState({}, pathName, window.location.origin + pathName);
     pageContentContainer.classList.add("transition");
-    setTimeout(() => pageContentContainer.innerHTML = routes[pathName], 170);
-    setTimeout(() => lzy(), 170);
-    if (window.pageYOffset > 400) setTimeout(() => window.scrollTo(0, 0), 170);
-    setTimeout(() => pageContentContainer.classList.remove("transition"), 170);
+    setTimeout(() => pageContentContainer.innerHTML = routes[pathName], 150);
+    setTimeout(() => lzy(), 150);
+    if (window.pageYOffset > 400) setTimeout(() => window.scrollTo(0, 0), 150);
+    setTimeout(() => pageContentContainer.classList.remove("transition"), 150);
 };
 
 
 window.onpopstate = () => {
     pageContentContainer.classList.add("transition");
-    setTimeout(() => pageContentContainer.innerHTML = routes[window.location.pathname], 170);
-    setTimeout(() => lzy(), 170);
-    if (window.pageYOffset > 400) setTimeout(() => window.scrollTo(0, 0), 170);
-    setTimeout(() => pageContentContainer.classList.remove("transition"), 170);
+    setTimeout(() => pageContentContainer.innerHTML = routes[window.location.pathname], 150);
+    setTimeout(() => lzy(), 150);
+    if (window.pageYOffset > 400) setTimeout(() => window.scrollTo(0, 0), 150);
+    setTimeout(() => pageContentContainer.classList.remove("transition"), 150);
 };
 
 

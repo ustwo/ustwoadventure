@@ -6,7 +6,7 @@ const fourOhFourPage = `
         </h1>
 
         <h1 style="margin-bottom: 80px;">
-            ¯\_(ツ)_/¯
+            ¯\\_(ツ)_/¯
         </h1>
 
         <a class="button back" href="index.html" style="margin-left: 150px; margin-bottom: 50px;">Go home</a>
