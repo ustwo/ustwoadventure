@@ -5,6 +5,7 @@ const tiltLogo = tilt => {
     logoUstwo.style.transform = `rotate(${(tilt + 10)}deg)`;
 };
 
+
 window.addEventListener("deviceorientation", e => {
     logoRing.style.transition = "transform 4s cubic-bezier(0.6, 0, 0.5, 1)";
     logoUstwo.style.transition = "transform 4s cubic-bezier(0.6, 0, 0.5, 1)";
@@ -15,12 +16,18 @@ window.addEventListener("deviceorientation", e => {
     tiltLogo(cappedTilt);
 });
 
+
 const orbitLetters = Array.from(document.querySelectorAll("header .logo ul li"));
 const orbitLetterChange = string => {
     if (string.length == 9) {
-        for (var i = 0; i < orbitLetters.length; i++) {
-            orbitLetters[i].innerHTML = string[i];
-        }
+        orbitLetters.forEach(letter => letter.classList.add("transition"));
+
+        setTimeout(() => {
+            for (var i = 0; i < orbitLetters.length; i++) {
+                orbitLetters[i].innerHTML = string[i];
+            }
+            orbitLetters.forEach(letter => letter.classList.remove("transition"));
+        }, 200);
     }
 };
 
@@ -34,6 +41,7 @@ const moveLetter = letter => {
 
     letter.style.transform = `translate(${x}px, ${y}px)`;
 };
+
 
 footerADVLetters.forEach(letter => {
     letter.addEventListener("mouseover", () => moveLetter(letter));
@@ -84,7 +92,7 @@ const pageContentContainer = document.querySelector(".content-wrapper");
 
 
 const goToPage = pathName => {
-    if (orbitLetters[0] != "A") {
+    if (orbitLetters[0].innerHTML != "A") {
         orbitLetterChange("ADVENTURE");
     }
 
@@ -99,13 +107,13 @@ const goToPage = pathName => {
         lzy();
         navLinkSetup();
         if (pathName == "/approach") approachStageScroll();
-    }, 150);
+    }, 200);
 };
 
 
 
 const goTo404 = () => {
-    if (orbitLetters[0] != "4") {
+    if (orbitLetters[0].innerHTML != "4") {
         orbitLetterChange("404ERROR-");
     }
     pageContentContainer.innerHTML = fourOhFourPage;
