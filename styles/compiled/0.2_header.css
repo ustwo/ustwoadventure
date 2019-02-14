@@ -68,13 +68,12 @@ header .logo ul li {
 	font-weight: bold;
 	color: #f32d94;
 	-webkit-text-stroke: 1.2px #f32d94;
-	transition: opacity 0.2s, top 0.2s ease-in-out;
+	transition: opacity 0.2s;
 	--translateY: -110px;
 }
 
 header .logo ul li.transition {
 	opacity: 0;
-	left: 3px;
 }
 
 header .logo ul li:nth-child(1) {
