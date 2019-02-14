@@ -42,9 +42,11 @@ const navLinkSetup = () => {
     navLinks.forEach(link => {
         const pathName = link.getAttribute("data-pathname");
         link.addEventListener("click", e => {
-            goToPage(pathName);
-            window.history.pushState({}, pathName, window.location.origin + pathName);
-            // document.title = `${window.location.pathname.split("/")} - ustwo Adventure`;
+            if (pathName != window.location.pathname) {
+                goToPage(pathName);
+                window.history.pushState({}, pathName, window.location.origin + pathName);
+                // document.title = `${window.location.pathname.split("/")} - ustwo Adventure`;
+            }
             e.preventDefault();
         });
     });
