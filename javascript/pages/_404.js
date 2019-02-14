@@ -9,7 +9,7 @@ const fourOhFourPage = `
             ¯\\_(ツ)_/¯
         </h1>
 
-        <a class="button back" data-pathname="/" href="index.html" style="margin-left: 150px; margin-bottom: 50px;">Go home</a>
+        <a class="nav button back" data-pathname="/" href="index.html" style="margin-left: 150px; margin-bottom: 50px;">Go home</a>
 
     </div>
 `;
