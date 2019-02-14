@@ -8,11 +8,13 @@ const routes = {
 
 
 const pageContentContainer = document.querySelector(".content-wrapper");
+const logoRingLetters = document.querySelector("header .logo ul");
 
 if (routes.hasOwnProperty(window.location.pathname)) {
     pageContentContainer.innerHTML = routes[window.location.pathname];
 } else {
     pageContentContainer.innerHTML = fourOhFourPage;
+    logoRingLetters.innerHTML = "<li>4</li><li>0</li><li>4</li><li>E</li><li>R</li><li>R</li><li>O</li><li>R</li><li>-</li>";
 }
 
 lzy();
