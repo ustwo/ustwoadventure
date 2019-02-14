@@ -4,12 +4,17 @@ const routes = {
     "/portfolio": portfolioPage,
     "/apply": "",
     "/faq": "",
-    "": fourOhFourPage
 };
 
 
 const pageContentContainer = document.querySelector(".content-wrapper");
-pageContentContainer.innerHTML = routes[window.location.pathname];
+
+if (routes.hasOwnProperty(window.location.pathname)) {
+    pageContentContainer.innerHTML = routes[window.location.pathname];
+} else {
+    pageContentContainer.innerHTML = fourOhFourPage;
+}
+
 lzy();
 
 
