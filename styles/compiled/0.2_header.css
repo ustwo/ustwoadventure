@@ -68,6 +68,7 @@ header .logo ul li {
 	font-weight: bold;
 	color: #f32d94;
 	-webkit-text-stroke: 1.2px #f32d94;
+	transition: opacity 0.15s;
 	--translateY: -110px;
 }
 
@@ -231,6 +232,10 @@ header .logo ul li:nth-child(7) {
 	84.66667% {
 		-webkit-text-fill-color: #fff;
 	}
+}
+
+header .logo ul.transition {
+	opacity: 0;
 }
 
 header nav a, header nav a:visited {

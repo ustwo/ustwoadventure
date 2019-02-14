@@ -9,16 +9,20 @@ const routes = {
 
 
 const pageContentContainer = document.querySelector(".content-wrapper");
+
 const orbitLetters = Array.from(document.querySelectorAll("header .logo ul li"));
-const adventureLetters = "ADVENTURE";
-const fourOhFourLetters = "404ERROR-";
+const orbitLetterChange = string => {
+    for (var i = 0; i < orbitLetters.length; i++) {
+        orbitLetters.classList.add("transition");
+        setTimeout(() => orbitLetters[i].innerHTML = string[i], 150);
+        setTimeout(() => orbitLetters.classList.remove("transition"), 150);
+    }
+};
 
 
 const goToPage = pathName => {
     if (!routes.hasOwnProperty(window.location.pathname)) {
-        for (var i = 0; i < orbitLetters.length; i++) {
-            orbitLetters[i].innerHTML = adventureLetters[i];
-        }
+        orbitLetterChange("ADVENTURE");
     }
     pageContentContainer.classList.add("transition");
     setTimeout(() => pageContentContainer.innerHTML = routes[pathName], 150);
@@ -31,9 +35,7 @@ const goToPage = pathName => {
 
 const goTo404 = () => {
     pageContentContainer.innerHTML = fourOhFourPage;
-    for (var i = 0; i < orbitLetters.length; i++) {
-        orbitLetters[i].innerHTML = fourOhFourLetters[i];
-    }
+    orbitLetterChange("404ERROR-");
 };
 
 
