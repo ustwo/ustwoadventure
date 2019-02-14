@@ -117,11 +117,11 @@ a.button {
 .content-wrapper {
     min-height: 38vh;
     transition: opacity 0.15s, transform 0.15s ease-in-out;
-}
 
-.content-wrapper.transition {
-    opacity: 0;
-    transform: translate(0, 3px);
+    &.transition {
+        opacity: 0;
+        transform: translate(0, 3px);
+    }
 }
 
 
