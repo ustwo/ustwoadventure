@@ -10,12 +10,13 @@ const routes = {
 
 const pageContentContainer = document.querySelector(".content-wrapper");
 
+const orbitLetterContainer = document.querySelectorAll("header .logo ul");
 const orbitLetters = Array.from(document.querySelectorAll("header .logo ul li"));
 const orbitLetterChange = string => {
     for (var i = 0; i < orbitLetters.length; i++) {
-        orbitLetters.classList.add("transition");
+        orbitLetterContainer.classList.add("transition");
         setTimeout(() => orbitLetters[i].innerHTML = string[i], 150);
-        setTimeout(() => orbitLetters.classList.remove("transition"), 150);
+        setTimeout(() => orbitLetterContainer.classList.remove("transition"), 150);
     }
 };
 
