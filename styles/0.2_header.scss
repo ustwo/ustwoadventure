@@ -50,11 +50,6 @@ header {
             transform-style: preserve-3d;
             animation: three-dimensions-circle 16s linear infinite;
 
-            transition: opacity 0.15s;
-            &.transition {
-                opacity: 0;
-            }
-
             @keyframes three-dimensions-circle {
                 0% {
                     transform: rotateX(-100deg) rotate(0);

@@ -14,15 +14,13 @@ const orbitLetterContainer = document.querySelector("header .logo ul");
 const orbitLetters = Array.from(document.querySelectorAll("header .logo ul li"));
 const orbitLetterChange = string => {
     for (var i = 0; i < orbitLetters.length; i++) {
-        orbitLetterContainer.classList.add("transition");
-        setTimeout(() => orbitLetters[i].innerHTML = string[i], 150);
-        setTimeout(() => orbitLetterContainer.classList.remove("transition"), 150);
+        orbitLetters[i].innerHTML = string[i];
     }
 };
 
 
 const goToPage = pathName => {
-    if (!routes.hasOwnProperty(window.location.pathname)) {
+    if (orbitLetters[0] != "A") {
         orbitLetterChange("ADVENTURE");
     }
     pageContentContainer.classList.add("transition");
@@ -36,7 +34,9 @@ const goToPage = pathName => {
 
 const goTo404 = () => {
     pageContentContainer.innerHTML = fourOhFourPage;
-    orbitLetterChange("404ERROR-");
+    if (orbitLetters[0] != "4") {
+        orbitLetterChange("404ERROR-");
+    }
 };
 
 
