@@ -48,6 +48,12 @@ header .logo ul {
 	list-style: none;
 	transform-style: preserve-3d;
 	animation: three-dimensions-circle 16s linear infinite;
+	transition: opacity 0.15s, top 0.15s ease-in-out;
+}
+
+header .logo ul.transition {
+	opacity: 0;
+	top: 3px;
 }
 
 @keyframes three-dimensions-circle {

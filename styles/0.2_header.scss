@@ -50,6 +50,13 @@ header {
             transform-style: preserve-3d;
             animation: three-dimensions-circle 16s linear infinite;
 
+            // TODO: WHY isnt this working?????
+            transition: opacity 0.15s, top 0.15s ease-in-out;
+            &.transition {
+                opacity: 0;
+                top: 3px;
+            }
+
             @keyframes three-dimensions-circle {
                 0% {
                     transform: rotateX(-100deg) rotate(0);

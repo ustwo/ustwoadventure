@@ -23,20 +23,26 @@ const goToPage = pathName => {
     if (orbitLetters[0] != "A") {
         orbitLetterChange("ADVENTURE");
     }
+
     pageContentContainer.classList.add("transition");
-    setTimeout(() => pageContentContainer.innerHTML = routes[pathName], 150);
-    setTimeout(() => lzy(), 150);
-    setTimeout(() => navLinkSetup(), 150);
-    if (window.pageYOffset > 100) setTimeout(() => window.scrollTo(0, 0), 150);
-    setTimeout(() => pageContentContainer.classList.remove("transition"), 150);
+    document.title = `${window.location.pathname.split("/")} - ustwo Adventure`;
+
+    setTimeout(() => {
+        pageContentContainer.innerHTML = routes[pathName];
+        lzy();
+        navLinkSetup();
+        if (pathName == "/approach") approachStageScroll();
+        if (window.pageYOffset > 100) window.scrollTo(0, 0);
+        pageContentContainer.classList.remove("transition");
+    }, 150);
 };
 
 
 const goTo404 = () => {
-    pageContentContainer.innerHTML = fourOhFourPage;
     if (orbitLetters[0] != "4") {
         orbitLetterChange("404ERROR-");
     }
+    pageContentContainer.innerHTML = fourOhFourPage;
 };
 
 
@@ -48,7 +54,6 @@ const navLinkSetup = () => {
             if (pathName != window.location.pathname) {
                 goToPage(pathName);
                 window.history.pushState({}, pathName, window.location.origin + pathName);
-                // document.title = `${window.location.pathname.split("/")} - ustwo Adventure`;
             }
             e.preventDefault();
         });
@@ -65,6 +70,7 @@ if (routes.hasOwnProperty(window.location.pathname)) {
 
 lzy();
 navLinkSetup();
+approachStageScroll();
 
 
 window.onpopstate = () => {
