@@ -8,13 +8,21 @@ const routes = {
 
 
 const pageContentContainer = document.querySelector(".content-wrapper");
-const logoRingLetters = document.querySelector("header .logo ul");
+const orbitLetters = Array.from(document.querySelectorAll("header .logo ul li"));
 
 if (routes.hasOwnProperty(window.location.pathname)) {
     pageContentContainer.innerHTML = routes[window.location.pathname];
 } else {
     pageContentContainer.innerHTML = fourOhFourPage;
-    logoRingLetters.innerHTML = "<li>4</li><li>0</li><li>4</li><li>E</li><li>R</li><li>R</li><li>O</li><li>R</li><li>-</li>";
+    orbitLetters[0].innerHTML = "4";
+    orbitLetters[1].innerHTML = "0";
+    orbitLetters[2].innerHTML = "4";
+    orbitLetters[3].innerHTML = "E";
+    orbitLetters[4].innerHTML = "R";
+    orbitLetters[5].innerHTML = "R";
+    orbitLetters[6].innerHTML = "O";
+    orbitLetters[7].innerHTML = "R";
+    orbitLetters[8].innerHTML = "-";
 }
 
 lzy();
@@ -27,7 +35,7 @@ const goToPage = pathName => {
     setTimeout(() => lzy(), 150);
     if (window.pageYOffset > 400) setTimeout(() => window.scrollTo(0, 0), 150);
     setTimeout(() => pageContentContainer.classList.remove("transition"), 150);
-    logoRingLetters.innerHTML = "<li>A</li><li>D</li><li>V</li><li>E</li><li>N</li><li>T</li><li>U</li><li>R</li><li>E</li>";
+    // orbitLetters.innerHTML = "<li>A</li><li>D</li><li>V</li><li>E</li><li>N</li><li>T</li><li>U</li><li>R</li><li>E</li>";
 };
 
 
