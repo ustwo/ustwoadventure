@@ -109,6 +109,7 @@ const goTo404 = () => {
         orbitLetterChange("404ERROR-");
     }
     pageContentContainer.innerHTML = fourOhFourPage;
+    navLinkSetup();
 };
 
 
