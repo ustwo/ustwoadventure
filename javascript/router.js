@@ -3,8 +3,7 @@ const routes = {
     "/approach": approachPage,
     "/portfolio": portfolioPage,
     "/apply": "",
-    "/faq": "",
-    "/404": fourOhFourPage
+    "/faq": ""
 };
 
 
