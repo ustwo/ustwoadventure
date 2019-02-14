@@ -106,7 +106,7 @@ const goToPage = pathName => {
 
         lzy();
         navLinkSetup();
-        if (pathName == "/approach" && windo.innerWidth < 450) approachStageScroll();
+        if (pathName == "/approach" && window.innerWidth < 450) approachStageScroll();
     }, 200);
 };
 
