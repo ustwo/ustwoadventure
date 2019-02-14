@@ -10,11 +10,12 @@ const routes = {
 
 const pageContentContainer = document.querySelector(".content-wrapper");
 
-const orbitLetterContainer = document.querySelector("header .logo ul");
 const orbitLetters = Array.from(document.querySelectorAll("header .logo ul li"));
 const orbitLetterChange = string => {
-    for (var i = 0; i < orbitLetters.length; i++) {
-        orbitLetters[i].innerHTML = string[i];
+    if (string.length == 9) {
+        for (var i = 0; i < orbitLetters.length; i++) {
+            orbitLetters[i].innerHTML = string[i];
+        }
     }
 };
 
