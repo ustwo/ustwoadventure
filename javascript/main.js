@@ -93,11 +93,12 @@ const goToPage = pathName => {
 
     setTimeout(() => {
         pageContentContainer.innerHTML = routes[pathName];
+        if (window.pageYOffset > 100) window.scrollTo(0, 0);
+        pageContentContainer.classList.remove("transition");
+
         lzy();
         navLinkSetup();
         if (pathName == "/approach") approachStageScroll();
-        if (window.pageYOffset > 100) window.scrollTo(0, 0);
-        pageContentContainer.classList.remove("transition");
     }, 150);
 };
 
@@ -143,9 +144,3 @@ window.onpopstate = () => {
         goTo404();
     }
 };
-
-
-
-// lzy();
-// navLinkSetup();
-// approachStageScroll();
