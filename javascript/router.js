@@ -35,7 +35,15 @@ const goToPage = pathName => {
     setTimeout(() => lzy(), 150);
     if (window.pageYOffset > 400) setTimeout(() => window.scrollTo(0, 0), 150);
     setTimeout(() => pageContentContainer.classList.remove("transition"), 150);
-    // orbitLetters.innerHTML = "<li>A</li><li>D</li><li>V</li><li>E</li><li>N</li><li>T</li><li>U</li><li>R</li><li>E</li>";
+    orbitLetters[0].innerHTML = "A";
+    orbitLetters[1].innerHTML = "D";
+    orbitLetters[2].innerHTML = "V";
+    orbitLetters[3].innerHTML = "E";
+    orbitLetters[4].innerHTML = "N";
+    orbitLetters[5].innerHTML = "T";
+    orbitLetters[6].innerHTML = "U";
+    orbitLetters[7].innerHTML = "R";
+    orbitLetters[8].innerHTML = "E";
 };
 
 
