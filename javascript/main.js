@@ -73,7 +73,7 @@ const approachStageScroll = () => {
 
 
 
-const lzy = (offset = 500) => {
+const lzy = (offset = 400) => {
     const images = document.querySelectorAll("[data-src]");
     const onIntersection = entries => {
         entries.forEach(entry => {

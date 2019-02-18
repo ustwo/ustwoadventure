@@ -6,16 +6,16 @@
         p.question {
             margin-top: 40px;
 
-            font-size: 1.12em;
+            font-size: 1.08em;
             font-weight: 700;
             color: #646464;
         }
 
         p.answer {
-            margin-top: 12px;
+            margin-top: 10px;
 
             &:not(:first-child) {
-                margin-top: 20px;
+                margin-top: 18px;
             }
         }
 
@@ -31,18 +31,20 @@
 
 
 
-    @media (max-width: 950px) {
+    @media (max-width: 769px) {
+        .writing {
+            p.question {
+                margin-top: 30px;
+            }
 
-    }
+            p.answer {
+                margin-top: 10px;
 
-
-    @media (max-width: 870px) {
-
-    }
-
-
-    @media (max-width: 635px) {
-
+                &:not(:first-child) {
+                    margin-top: 15px;
+                }
+            }
+        }
     }
 
 

@@ -19,7 +19,7 @@ const goToPage = pathName => {
 
     let title = capitalizeFirstLetter(window.location.pathname.split("/")[1]);
     if (title == "Faq") title = "FAQ";
-    document.title = (title == "") ? "ustwo Adventure" : `${title} - ustwo Adventure`;
+    document.title = (title == "") ? "ustwo Adventure" : `${title} — ustwo Adventure`;
 
     setTimeout(() => {
         pageContentContainer.innerHTML = routes[pathName];

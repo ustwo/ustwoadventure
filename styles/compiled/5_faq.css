@@ -5,17 +5,17 @@
 
 .faq-content .writing p.question {
 	margin-top: 40px;
-	font-size: 1.12em;
+	font-size: 1.08em;
 	font-weight: 700;
 	color: #646464;
 }
 
 .faq-content .writing p.answer {
-	margin-top: 12px;
+	margin-top: 10px;
 }
 
 .faq-content .writing p.answer:not(:first-child) {
-	margin-top: 20px;
+	margin-top: 18px;
 }
 
 .faq-content .writing a {
@@ -24,4 +24,16 @@
 
 .faq-content .writing a:hover {
 	font-style: italic;
+}
+
+@media (max-width: 769px) {
+	.faq-content .writing p.question {
+		margin-top: 30px;
+	}
+	.faq-content .writing p.answer {
+		margin-top: 10px;
+	}
+	.faq-content .writing p.answer:not(:first-child) {
+		margin-top: 15px;
+	}
 }
