@@ -58,7 +58,7 @@ const approachPage = `
 
             <div class="stage-cta">
                 <a class="nav button external" href="https://gihub.com/ustwo/adventureinvestmentterms">See terms</a>
-                <a class="nav button internal" data-pathname="/faq" href="faq.html">Read FAQ</a>
+                <a class="nav button internal" data-pathname="/faq" href="faq">Read FAQ</a>
             </div>
 
         </div>

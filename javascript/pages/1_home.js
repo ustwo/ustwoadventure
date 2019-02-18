@@ -27,14 +27,14 @@ const homePage = `
                 <h2>A path for companies to own their future</h2>
                 <p>What if startup capital enabled companies to prioritise profitability, culture, and a long-term view?</p>
                 <p>No equity by default, shared revenue, and a capped return. Our approach gives founders the option to grow their company as they see fit.</p>
-                <a class="nav button internal" data-pathname="/approach" href="approach.html">Learn more</a>
+                <a class="nav button internal" data-pathname="/approach" href="approach">Learn more</a>
                 <a class="nav button" style="
                     background-image: none;
                     padding-right: 15px;
                     color: #646464;
                     pointer-events: none;
-                ">Applications open soon</a>
-                <!-- <a class="nav button internal" data-pathname="/apply" href="apply.html">Apply</a> -->
+                ">Investing H2 2019</a>
+                <!-- <a class="nav button internal" data-pathname="/apply" href="apply">Apply</a> -->
             </div>
 
             <div class="latest-investment">
@@ -46,7 +46,7 @@ const homePage = `
         <div class="our-portfolio">
             <h2>Our Portfolio</h2>
             <p>We invest in early-stage companies that are building something bigger than an exit.</p>
-            <a class="nav button internal" data-pathname="/portfolio" href="portfolio.html">See all</a>
+            <a class="nav button internal" data-pathname="/portfolio" href="portfolio">See all</a>
         </div>
 
         <div class="portfolio-preview">

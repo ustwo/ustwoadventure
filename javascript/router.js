@@ -38,7 +38,7 @@ const goToPage = pathName => {
 const goTo404 = () => {
     if (orbitLetters[0].innerHTML != "4") orbitLetterChange("404ERROR-");
     pageContentContainer.innerHTML = fourOhFourPage;
-    
+
     lzy();
     navLinkSetup();
     portfolioItemLinkSetup();
@@ -46,7 +46,6 @@ const goTo404 = () => {
 
 
 
-// TODO: href hover ???
 const navLinkSetup = () => {
     const navLinks = document.querySelectorAll("a.nav");
     navLinks.forEach(link => {
@@ -91,10 +90,10 @@ if (window.location.hash) {
 
 const portfolioItemLinkSetup = () => {
     const portfolioItemElements = document.querySelectorAll("a.portfolio-item, .latest-investment a");
-    portfolioItemElements.forEach(el => {
-        el.addEventListener("click", id => {
-            id = el.getAttribute("href").split("#modal-")[1];
-            history.replaceState("", document.title, window.location.pathname + `#${id}`);
+    portfolioItemElements.forEach(item => {
+        item.addEventListener("click", comapnyName => {
+            comapnyName = item.getAttribute("href").split("#modal-")[1];
+            history.replaceState("", document.title, window.location.pathname + `#${comapnyName}`);
         });
     });
 };
