@@ -1,0 +1,27 @@
+.faq-content .writing {
+	margin: auto;
+	max-width: 720px;
+}
+
+.faq-content .writing p.question {
+	margin-top: 40px;
+	font-size: 1.12em;
+	font-weight: 700;
+	color: #646464;
+}
+
+.faq-content .writing p.answer {
+	margin-top: 12px;
+}
+
+.faq-content .writing p.answer:not(:first-child) {
+	margin-top: 20px;
+}
+
+.faq-content .writing a {
+	text-decoration: underline;
+}
+
+.faq-content .writing a:hover {
+	font-style: italic;
+}

@@ -8,7 +8,7 @@
 
 .approach-content .writing {
 	margin: auto;
-	max-width: 760px;
+	max-width: 755px;
 }
 
 .approach-content .writing a {
@@ -144,9 +144,6 @@
 	}
 	.approach-content p:not(:first-child) {
 		margin-top: 40px;
-	}
-	.approach-content .writing {
-		margin: auto;
 	}
 	.approach-content .writing blockquote {
 		margin: 40px auto 40px auto;

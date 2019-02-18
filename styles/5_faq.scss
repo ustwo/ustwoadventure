@@ -1,0 +1,62 @@
+.faq-content {
+    .writing {
+        margin: auto;
+        max-width: 720px;
+
+        p.question {
+            margin-top: 40px;
+
+            font-size: 1.12em;
+            font-weight: 700;
+            color: #646464;
+        }
+
+        p.answer {
+            margin-top: 12px;
+
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+        }
+
+        a {
+            text-decoration: underline;
+
+            &:hover {
+                font-style: italic;
+            }
+        }
+    }
+
+
+
+
+    @media (max-width: 950px) {
+
+    }
+
+
+    @media (max-width: 870px) {
+
+    }
+
+
+    @media (max-width: 635px) {
+
+    }
+
+
+    @media (max-width: 475px) {
+
+    }
+
+
+    @media (max-width: 425px) {
+
+    }
+
+
+    @media (max-width: 340px) {
+
+    }
+}

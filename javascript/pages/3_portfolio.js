@@ -1,6 +1,7 @@
 const portfolioItems = createPortfolioItems(shuffle(portfolioArray)).join("");
 
 const portfolioPage = `
+
     <div class="portfolio-content">
 
         <h1>
@@ -12,4 +13,5 @@ const portfolioPage = `
         </div>
 
     </div>
+    
 `;

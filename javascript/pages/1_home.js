@@ -15,6 +15,7 @@ const portfolioPreview = createPortfolioItems(portfolioPreviewItems).join("");
 
 
 const homePage = `
+
     <div class="home-content">
 
         <h1>
@@ -25,8 +26,15 @@ const homePage = `
 
             <div class="path-for-companies">
                 <h2>A path for companies to own their future</h2>
-                <p>What if startup capital enabled companies to prioritise profitability, culture, and a long-term view?</p>
-                <p>No equity by default, shared revenue, and a capped return. Our approach gives founders the option to grow their company as they see fit.</p>
+                <p>
+                    What if startup capital enabled companies to prioritise
+                    profitability, culture, and a long-term view?
+                </p>
+                <p>
+                    No equity by default, shared revenue, and a capped return.
+                    Our approach gives founders the option to grow their company
+                    as they see fit.
+                </p>
                 <a class="nav button internal" data-pathname="/approach" href="approach">Learn more</a>
                 <a class="nav button" style="
                     background-image: none;
@@ -45,7 +53,10 @@ const homePage = `
 
         <div class="our-portfolio">
             <h2>Our Portfolio</h2>
-            <p>We invest in early-stage companies that are building something bigger than an exit.</p>
+            <p>
+                We invest in early-stage companies that are building something
+                bigger than an exit.
+            </p>
             <a class="nav button internal" data-pathname="/portfolio" href="portfolio">See all</a>
         </div>
 
@@ -57,7 +68,12 @@ const homePage = `
 
             <div class="collective-genius">
                 <h2>Collective genius</h2>
-                <p>ustwo builds products, services and companies that make a meaningful impact on the world. By caring deeply for our people, clients, and partners, we believe that we can unleash the “collective genius” of all of us.</p>
+                <p>
+                    ustwo builds products, services and companies that make a meaningful
+                    impact on the world. By caring deeply for our people, clients, and
+                    partners, we believe that we can unleash the “collective genius” of
+                    all of us.
+                </p>
                 <a class="button external" href="https://ustwo.com">ustwo.com</a>
             </div>
 
@@ -66,4 +82,5 @@ const homePage = `
         </div>
 
     </div>
+
 `;
