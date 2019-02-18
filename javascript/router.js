@@ -38,6 +38,7 @@ const goToPage = pathName => {
 const goTo404 = () => {
     if (orbitLetters[0].innerHTML != "4") orbitLetterChange("404ERROR-");
     pageContentContainer.innerHTML = fourOhFourPage;
+    
     lzy();
     navLinkSetup();
     portfolioItemLinkSetup();
