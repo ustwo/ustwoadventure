@@ -75,9 +75,10 @@ if (routes.hasOwnProperty(window.location.pathname)) {
 if (window.location.hash) {
     const query = window.location.hash.substring(1);
     const parameters = query.split("&");
+    let companyName, val;
     for (var i = 0; i < parameters.length; i++) {
-        const val = parameters[i].split("=");
-        const companyName = val[0];
+        val = parameters[i].split("=");
+        companyName = val[0];
     }
     $("#modal-" + companyName).modal();
 }
