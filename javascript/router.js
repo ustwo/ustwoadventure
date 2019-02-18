@@ -39,6 +39,7 @@ const goTo404 = () => {
         orbitLetterChange("404ERROR-");
     }
     pageContentContainer.innerHTML = fourOhFourPage;
+    lzy();
     navLinkSetup();
 };
 
@@ -76,7 +77,6 @@ if (window.location.hash) {
         val = parameters[i].split("=");
         companyName = val[0];
     }
-    // if (!companyName) return;
     $("#modal-" + companyName).modal();
 }
 
