@@ -352,7 +352,7 @@
 
     @media (max-width: 475px) {
         h1 {
-            margin-bottom: 80px;
+            margin-bottom: 100px;
         }
 
         .top-row {
@@ -384,6 +384,10 @@
 
 
     @media (max-width: 380px) {
+        h1 {
+            margin-bottom: 80px;
+        }
+
         .portfolio-preview {
             margin-top: 50px;
             grid-gap: 3rem;

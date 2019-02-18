@@ -7,53 +7,51 @@ const routes = {
 };
 
 
+
 const pageContentContainer = document.querySelector(".content-wrapper");
 
-const orbitLetters = Array.from(document.querySelectorAll("header .logo ul li"));
-const orbitLetterChange = string => {
-    if (string.length == 9) {
-        for (var i = 0; i < orbitLetters.length; i++) {
-            orbitLetters[i].innerHTML = string[i];
-        }
-    }
-};
 
 
 const goToPage = pathName => {
-    if (orbitLetters[0] != "A") {
+    if (orbitLetters[0].innerHTML != "A") {
         orbitLetterChange("ADVENTURE");
     }
 
     pageContentContainer.classList.add("transition");
+    // TODO:
     document.title = `${window.location.pathname.split("/")} - ustwo Adventure`;
 
     setTimeout(() => {
         pageContentContainer.innerHTML = routes[pathName];
+        if (window.pageYOffset > 100) window.scrollTo(0, 0);
+        pageContentContainer.classList.remove("transition");
+
         lzy();
         navLinkSetup();
         if (pathName == "/approach") approachStageScroll();
-        if (window.pageYOffset > 100) window.scrollTo(0, 0);
-        pageContentContainer.classList.remove("transition");
-    }, 150);
+    }, 200);
 };
+
 
 
 const goTo404 = () => {
-    if (orbitLetters[0] != "4") {
+    if (orbitLetters[0].innerHTML != "4") {
         orbitLetterChange("404ERROR-");
     }
     pageContentContainer.innerHTML = fourOhFourPage;
+    navLinkSetup();
 };
+
 
 
 const navLinkSetup = () => {
     const navLinks = document.querySelectorAll("a.nav");
     navLinks.forEach(link => {
-        const pathName = link.getAttribute("data-pathname");
-        link.addEventListener("click", e => {
+        link.addEventListener("click", (e, pathName) => {
+            pathName = link.getAttribute("data-pathname");
             if (pathName != window.location.pathname) {
-                goToPage(pathName);
                 window.history.pushState({}, pathName, window.location.origin + pathName);
+                goToPage(pathName);
             }
             e.preventDefault();
         });
@@ -61,16 +59,27 @@ const navLinkSetup = () => {
 };
 
 
+
 if (routes.hasOwnProperty(window.location.pathname)) {
-    pageContentContainer.innerHTML = routes[window.location.pathname];
+    goToPage(window.location.pathname);
 } else {
     goTo404();
 }
 
 
-lzy();
-navLinkSetup();
-approachStageScroll();
+
+if (window.location.hash) {
+    const query = window.location.hash.substring(1);
+    const parameters = query.split("&");
+    var companyName, val;
+    for (var i = 0; i < parameters.length; i++) {
+        val = parameters[i].split("=");
+        companyName = val[0];
+    }
+    // if (!companyName) return;
+    $("#modal-" + companyName).modal();
+}
+
 
 
 window.onpopstate = () => {

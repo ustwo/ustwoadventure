@@ -309,7 +309,7 @@
 
 @media (max-width: 475px) {
 	.home-content h1 {
-		margin-bottom: 80px;
+		margin-bottom: 100px;
 	}
 	.home-content .top-row {
 		margin-bottom: 60px;
@@ -341,6 +341,9 @@
 }
 
 @media (max-width: 380px) {
+	.home-content h1 {
+		margin-bottom: 80px;
+	}
 	.home-content .portfolio-preview {
 		margin-top: 50px;
 		grid-gap: 3rem;
