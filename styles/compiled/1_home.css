@@ -341,9 +341,6 @@
 }
 
 @media (max-width: 380px) {
-	.home-content h1 {
-		margin-bottom: 80px;
-	}
 	.home-content .portfolio-preview {
 		margin-top: 50px;
 		grid-gap: 3rem;
@@ -366,6 +363,9 @@
 }
 
 @media (max-width: 340px) {
+	.home-content h1 {
+		margin-bottom: 80px;
+	}
 	.home-content .bottom-row img {
 		--collectiveGeniusVideoWidth: 220px;
 		margin-top: 50px;
