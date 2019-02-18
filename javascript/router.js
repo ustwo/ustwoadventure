@@ -17,7 +17,8 @@ const goToPage = pathName => {
 
     pageContentContainer.classList.add("transition");
 
-    const title = capitalizeFirstLetter(window.location.pathname.split("/")[1]);
+    let title = capitalizeFirstLetter(window.location.pathname.split("/")[1]);
+    if (title == "Faq") title = "FAQ";
     document.title = (title == "") ? "ustwo Adventure" : `${title} - ustwo Adventure`;
 
     setTimeout(() => {
@@ -42,6 +43,7 @@ const goTo404 = () => {
 
 
 
+// TODO: href hover ???
 const navLinkSetup = () => {
     const navLinks = document.querySelectorAll("a.nav");
     navLinks.forEach(link => {
@@ -79,8 +81,20 @@ if (window.location.hash) {
         val = parameters[i].split("=");
         companyName = val[0];
     }
-    $("#modal-" + companyName).modal();
+    $(`#modal-${companyName}`).modal();
 }
+
+
+
+const portfolioItemElements = document.querySelectorAll(".portfolio-item");
+portfolioItemElements.forEach(item => {
+    item.addEventListener("click", id => {
+        id = item.getAttribute("href");
+        id = id.split("#modal-");
+        id = id[1];
+        history.replaceState("", document.title, window.location.pathname + `#${id}`);
+    });
+});
 
 
 

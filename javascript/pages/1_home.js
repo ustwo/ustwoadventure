@@ -28,6 +28,12 @@ const homePage = `
                 <p>What if startup capital enabled companies to prioritise profitability, culture, and a long-term view?</p>
                 <p>No equity by default, shared revenue, and a capped return. Our approach gives founders the option to grow their company as they see fit.</p>
                 <a class="nav button internal" data-pathname="/approach" href="approach.html">Learn more</a>
+                <a class="nav button" style="
+                    background-image: none;
+                    padding-right: 15px;
+                    color: #646464;
+                    pointer-events: none;
+                ">Applications open soon</a>
                 <!-- <a class="nav button internal" data-pathname="/apply" href="apply.html">Apply</a> -->
             </div>
 
@@ -52,7 +58,7 @@ const homePage = `
             <div class="collective-genius">
                 <h2>Collective genius</h2>
                 <p>ustwo builds products, services and companies that make a meaningful impact on the world. By caring deeply for our people, clients, and partners, we believe that we can unleash the “collective genius” of all of us.</p>
-                <a class="button external" href="approach.html">ustwo.com</a>
+                <a class="button external" href="https://ustwo.com">ustwo.com</a>
             </div>
 
             <img src="images/monument-valley.jpg">

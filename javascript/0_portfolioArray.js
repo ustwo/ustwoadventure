@@ -23,8 +23,8 @@ const portfolioArray = [
         tidyurl: "sanctus.io",
         image: "images/team_assets/fund/sanctus_image.jpg",
         logo: "images/team_assets/fund/sanctus_logo.png",
-        line: "Changing perceptions of mental health",
-        copy: "We believe mental health should be viewed like physical health, and are on a mission to make it accessible. We work with businesses to help them create an open environment where mental health is cared for."
+        line: "Creating space for mental health",
+        copy: "We believe mental health should be viewed like physical health, and are on a mission to make it accessible. We work with businesses to help them create an open environment where mental health is cared for."
     },
     {
         name: "Sidestory",
@@ -140,8 +140,8 @@ const portfolioArray = [
         tidyurl: "madewithover.com",
         image: "images/team_assets/fund/over_image.jpg",
         logo: "images/team_assets/fund/over_logo.png",
-        line: "Inspiring the world to create",
-        copy: "We believe that no matter who or where you are, you should be able to pick up your phone, open our app and design whatever you need. We want creating to be fast and easy, but most importantly we want it to be fun."
+        line: "Build your brand. Wow the world.",
+        copy: "We’re on a mission to empower small businesses with the tools, knowledge, and ideas they need to create everything from social posts and digital ads to logos and flyers. Effortlessly. Instantly. Fun-fully."
     },
     {
         name: "Run an Empire",
