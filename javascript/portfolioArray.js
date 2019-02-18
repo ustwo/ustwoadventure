@@ -252,6 +252,3 @@ const createModals = a => a.map(obj => {
         </div>
     `;
 });
-
-const modalContainer = document.querySelector(".modal-container");
-modalContainer.innerHTML = createModals(portfolioArray).join("");

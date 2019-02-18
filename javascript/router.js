@@ -10,6 +10,9 @@ const routes = {
 
 const pageContentContainer = document.querySelector(".content-wrapper");
 
+const modalContainer = document.querySelector(".modal-container");
+modalContainer.innerHTML = createModals(portfolioArray).join("");
+
 
 
 const goToPage = pathName => {
@@ -72,10 +75,9 @@ if (routes.hasOwnProperty(window.location.pathname)) {
 if (window.location.hash) {
     const query = window.location.hash.substring(1);
     const parameters = query.split("&");
-    var companyName, val;
     for (var i = 0; i < parameters.length; i++) {
-        val = parameters[i].split("=");
-        companyName = val[0];
+        const val = parameters[i].split("=");
+        const companyName = val[0];
     }
     $("#modal-" + companyName).modal();
 }
