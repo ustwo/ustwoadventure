@@ -10,15 +10,10 @@ const routes = {
 
 const pageContentContainer = document.querySelector(".content-wrapper");
 
-const modalContainer = document.querySelector(".modal-container");
-modalContainer.innerHTML = createModals(portfolioArray).join("");
-
 
 
 const goToPage = pathName => {
-    if (orbitLetters[0].innerHTML != "A") {
-        orbitLetterChange("ADVENTURE");
-    }
+    if (orbitLetters[0].innerHTML != "A") orbitLetterChange("ADVENTURE");
 
     pageContentContainer.classList.add("transition");
 
@@ -39,9 +34,7 @@ const goToPage = pathName => {
 
 
 const goTo404 = () => {
-    if (orbitLetters[0].innerHTML != "4") {
-        orbitLetterChange("404ERROR-");
-    }
+    if (orbitLetters[0].innerHTML != "4") orbitLetterChange("404ERROR-");
     pageContentContainer.innerHTML = fourOhFourPage;
     lzy();
     navLinkSetup();
@@ -70,6 +63,11 @@ if (routes.hasOwnProperty(window.location.pathname)) {
 } else {
     goTo404();
 }
+
+
+
+const modalContainer = document.querySelector(".modal-container");
+modalContainer.innerHTML = createModals(portfolioArray).join("");
 
 
 
