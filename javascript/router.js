@@ -28,6 +28,7 @@ const goToPage = pathName => {
 
         lzy();
         navLinkSetup();
+        portfolioItemLinkSetup();
         if (pathName == "/approach") approachStageScroll();
     }, 200);
 };
@@ -39,6 +40,7 @@ const goTo404 = () => {
     pageContentContainer.innerHTML = fourOhFourPage;
     lzy();
     navLinkSetup();
+    portfolioItemLinkSetup();
 };
 
 
@@ -86,15 +88,15 @@ if (window.location.hash) {
 
 
 
-const portfolioItemElements = document.querySelectorAll(".portfolio-item");
-portfolioItemElements.forEach(item => {
-    item.addEventListener("click", id => {
-        id = item.getAttribute("href");
-        id = id.split("#modal-");
-        id = id[1];
-        history.replaceState("", document.title, window.location.pathname + `#${id}`);
+const portfolioItemLinkSetup = () => {
+    const portfolioItemElements = document.querySelectorAll("a.portfolio-item, .latest-investment a");
+    portfolioItemElements.forEach(el => {
+        el.addEventListener("click", id => {
+            id = el.getAttribute("href").split("#modal-")[1];
+            history.replaceState("", document.title, window.location.pathname + `#${id}`);
+        });
     });
-});
+};
 
 
 
