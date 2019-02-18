@@ -22,7 +22,8 @@ const goToPage = pathName => {
 
     pageContentContainer.classList.add("transition");
     // TODO:
-    document.title = `${window.location.pathname.split("/")} - ustwo Adventure`;
+    const title = capitalizeFirstLetter(window.location.pathname.split("/")[1]);
+    document.title = `${title} - ustwo Adventure`;
 
     setTimeout(() => {
         pageContentContainer.innerHTML = routes[pathName];
