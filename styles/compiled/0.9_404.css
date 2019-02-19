@@ -1,0 +1,12 @@
+.404-content h1 {
+	margin-bottom: 50px;
+}
+
+.404-content h1.shruggie {
+	margin-bottom: 80px;
+}
+
+.404-content a.button.back {
+	margin-left: 150px;
+	margin-bottom: 50px;
+}

@@ -1,4 +1,5 @@
 const faqPage = `
+
     <div class="faq-content">
 
         <h1>FAQ</h1>
@@ -136,7 +137,8 @@ const faqPage = `
             </p>
 
             <p class="answer">
-                We expect to make investments up to £500,000.
+                We expect to make investments up to £500,000, with the average
+                being around £300,000.
             </p>
 
 

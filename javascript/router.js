@@ -62,6 +62,20 @@ const navLinkSetup = () => {
 
 
 
+const portfolioItemLinkSetup = () => {
+    const portfolioItemElements = document.querySelectorAll("a.portfolio-item, .latest-investment a");
+    if (portfolioItemElements) {
+        portfolioItemElements.forEach(item => {
+            item.addEventListener("click", comapnyName => {
+                comapnyName = item.getAttribute("href").split("#modal-")[1];
+                history.replaceState("", document.title, window.location.pathname + `#${comapnyName}`);
+            });
+        });
+    }
+};
+
+
+
 if (routes.hasOwnProperty(window.location.pathname)) {
     goToPage(window.location.pathname);
 } else {
@@ -85,18 +99,6 @@ if (window.location.hash) {
     }
     $(`#modal-${companyName}`).modal();
 }
-
-
-
-const portfolioItemLinkSetup = () => {
-    const portfolioItemElements = document.querySelectorAll("a.portfolio-item, .latest-investment a");
-    portfolioItemElements.forEach(item => {
-        item.addEventListener("click", comapnyName => {
-            comapnyName = item.getAttribute("href").split("#modal-")[1];
-            history.replaceState("", document.title, window.location.pathname + `#${comapnyName}`);
-        });
-    });
-};
 
 
 
