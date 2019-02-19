@@ -1,6 +1,6 @@
 const fourOhFourPage = `
 
-    <div class="404-content">
+    <div class="fourohfour-content">
 
         <h1>
             Page not found

@@ -1,12 +1,11 @@
-.404-content h1 {
-	margin-bottom: 50px;
-}
-
-.404-content h1.shruggie {
+.fourohfour-content h1 {
 	margin-bottom: 80px;
+	margin-right: 10%;
+	margin-left: auto;
+	width: max-content;
 }
 
-.404-content a.button.back {
-	margin-left: 150px;
+.fourohfour-content a.button.back {
+	margin-left: 10%;
 	margin-bottom: 50px;
 }
