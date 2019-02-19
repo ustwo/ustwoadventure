@@ -36,13 +36,6 @@ const homePage = `
                     as they see fit.
                 </p>
                 <a class="nav button internal" data-pathname="/approach" href="approach">Our approach</a>
-                <a class="nav button" style="
-                    background-image: none;
-                    padding-right: 15px;
-                    border-width: 0;
-                    color: #646464;
-                    pointer-events: none;
-                ">Investing H2 2019</a>
                 <!-- <a class="nav button internal" data-pathname="/apply" href="apply">Apply</a> -->
             </div>
 

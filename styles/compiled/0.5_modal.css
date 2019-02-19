@@ -86,6 +86,11 @@
 	line-height: 1;
 }
 
+.modal .modal-inner .modal-details a.button.external {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
 .modal .modal-inner .modal-details a.site-link {
 	display: block;
 	margin-bottom: 20px;
