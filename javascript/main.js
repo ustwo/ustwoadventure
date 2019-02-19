@@ -5,15 +5,17 @@ const tiltLogo = tilt => {
     logoUstwo.style.transform = `rotate(${(tilt + 10)}deg)`;
 };
 
-window.addEventListener("deviceorientation", e => {
-    logoRing.style.transition = "transform 4s cubic-bezier(0.6, 0, 0.5, 1)";
-    logoUstwo.style.transition = "transform 4s cubic-bezier(0.6, 0, 0.5, 1)";
+if ("ontouchstart" in document.documentElement) {
+    window.addEventListener("deviceorientation", e => {
+        logoRing.style.transition = "transform 4s cubic-bezier(0.6, 0, 0.5, 1)";
+        logoUstwo.style.transition = "transform 4s cubic-bezier(0.6, 0, 0.5, 1)";
 
-    const tilt = (window.innerHeight > window.innerWidth) ? e.gamma : e.beta;
-    const cappedTilt = Math.max(-35, Math.min(15, tilt));
+        const tilt = (window.innerHeight > window.innerWidth) ? e.gamma : e.beta;
+        const cappedTilt = Math.max(-35, Math.min(15, tilt));
 
-    tiltLogo(cappedTilt);
-});
+        tiltLogo(cappedTilt);
+    });
+}
 
 const orbitLetters = Array.from(document.querySelectorAll("header .logo ul li"));
 const orbitLetterChange = string => {
