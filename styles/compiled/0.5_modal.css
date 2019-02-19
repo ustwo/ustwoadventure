@@ -78,7 +78,7 @@
 .modal .modal-inner .modal-details h2 {
 	--h2FontSize: 60px;
 	margin-bottom: 8px;
-	font-family: futura-pt, 'Px', sans-serif;
+	font-family: "futura-pt", "futura", sans-serif;
 	font-weight: 800;
 	color: #F32D94;
 	text-transform: uppercase;
