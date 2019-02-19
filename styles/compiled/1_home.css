@@ -37,6 +37,8 @@
 	background-color: #f32d94;
 	color: #fff;
 	width: max-content;
+	width: -moz-max-content;
+	width: -ms-max-content;
 }
 
 .home-content .top-row .latest-investment img {
@@ -52,6 +54,8 @@
 	-webkit-text-stroke-color: #f32d94;
 	-webkit-text-fill-color: transparent;
 	width: max-content;
+	width: -moz-max-content;
+	width: -ms-max-content;
 	max-width: var(--latestInvestmentImageWidth);
 	margin-top: -30px;
 	margin-bottom: 0;
