@@ -249,15 +249,6 @@ header nav a:hover, header nav a:visited:hover {
 	font-style: italic;
 }
 
-header nav a:last-child, header nav a:visited:last-child {
-	text-decoration: line-through;
-	pointer-events: none;
-}
-
-header nav a:last-child:hover, header nav a:visited:last-child:hover {
-	font-style: normal;
-}
-
 @media (max-width: 780px) {
 	header .logo {
 		height: 70px;

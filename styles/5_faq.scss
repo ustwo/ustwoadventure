@@ -6,17 +6,13 @@
         p.question {
             margin-top: 40px;
 
-            font-size: 1.08em;
+            font-size: 1.03em;
             font-weight: 700;
             color: #646464;
         }
 
         p.answer {
-            margin-top: 10px;
-
-            &:not(:first-child) {
-                margin-top: 18px;
-            }
+            margin-top: 12px;
         }
 
         a {
@@ -39,26 +35,7 @@
 
             p.answer {
                 margin-top: 10px;
-
-                &:not(:first-child) {
-                    margin-top: 15px;
-                }
             }
         }
-    }
-
-
-    @media (max-width: 475px) {
-
-    }
-
-
-    @media (max-width: 425px) {
-
-    }
-
-
-    @media (max-width: 340px) {
-
     }
 }

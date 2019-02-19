@@ -35,7 +35,7 @@ const homePage = `
                     Our approach gives founders the option to grow their company
                     as they see fit.
                 </p>
-                <a class="nav button internal" data-pathname="/approach" href="approach">Learn more</a>
+                <a class="nav button internal" data-pathname="/approach" href="approach">Our approach</a>
                 <a class="nav button" style="
                     background-image: none;
                     padding-right: 15px;

@@ -141,13 +141,13 @@ header {
                 font-style: italic;
             }
 
-            &:last-child {
-                text-decoration: line-through;
-                pointer-events: none;
-                &:hover {
-                    font-style: normal;
-                }
-            }
+            // &:last-child {
+            //     text-decoration: line-through;
+            //     pointer-events: none;
+            //     &:hover {
+            //         font-style: normal;
+            //     }
+            // }
         }
 
     }

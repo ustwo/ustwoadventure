@@ -5,17 +5,13 @@
 
 .faq-content .writing p.question {
 	margin-top: 40px;
-	font-size: 1.08em;
+	font-size: 1.03em;
 	font-weight: 700;
 	color: #646464;
 }
 
 .faq-content .writing p.answer {
-	margin-top: 10px;
-}
-
-.faq-content .writing p.answer:not(:first-child) {
-	margin-top: 18px;
+	margin-top: 12px;
 }
 
 .faq-content .writing a {
@@ -32,8 +28,5 @@
 	}
 	.faq-content .writing p.answer {
 		margin-top: 10px;
-	}
-	.faq-content .writing p.answer:not(:first-child) {
-		margin-top: 15px;
 	}
 }
