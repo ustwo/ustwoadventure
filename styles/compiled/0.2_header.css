@@ -254,6 +254,10 @@ header nav a:last-child, header nav a:visited:last-child {
 	pointer-events: none;
 }
 
+header nav a:last-child:hover, header nav a:visited:last-child:hover {
+	font-style: normal;
+}
+
 @media (max-width: 780px) {
 	header .logo {
 		height: 70px;

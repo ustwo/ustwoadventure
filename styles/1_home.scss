@@ -39,8 +39,8 @@
                 background-color: #f32d94;
                 color: #fff;
                 width: max-content;
-                width: -moz-max-content;
-                width: -ms-max-content;
+                    width: -moz-max-content;
+                    width: -ms-max-content;
             }
 
             img {
@@ -58,8 +58,8 @@
                 -webkit-text-fill-color: transparent;
 
                 width: max-content;
-                width: -moz-max-content;
-                width: -ms-max-content;
+                    width: -moz-max-content;
+                    width: -ms-max-content;
                 max-width: var(--latestInvestmentImageWidth);
 
                 margin-top: -30px;

@@ -39,6 +39,7 @@ const homePage = `
                 <a class="nav button" style="
                     background-image: none;
                     padding-right: 15px;
+                    border-width: 0;
                     color: #646464;
                     pointer-events: none;
                 ">Investing H2 2019</a>
