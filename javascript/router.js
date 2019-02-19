@@ -2,7 +2,7 @@ const routes = {
     "/": homePage,
     "/approach": approachPage,
     "/portfolio": portfolioPage,
-    "/apply": "",
+    // "/apply": applyPage,
     "/faq": faqPage
 };
 
@@ -17,7 +17,7 @@ const goToPage = pathName => {
 
     pageContentContainer.classList.add("transition");
 
-    let title = capitalizeFirstLetter(window.location.pathname.split("/")[1]);
+    let title = capitalizeFirstLetter(pathName.split("/")[1]);
     if (title == "Faq") title = "FAQ";
     document.title = (title == "") ? "ustwo Adventure" : `${title} — ustwo Adventure`;
 
