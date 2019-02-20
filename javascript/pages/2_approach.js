@@ -8,7 +8,7 @@ const approachPage = `
 
             <p>
                 When you combine long-term thinking with strong culture + design,
-                you create game-changing companies. Very few investment vehicles
+                you create game-changing companies. Very few investment models
                 allow founders to do that. We’re creating an alternative that lets
                 you build a business on your terms, with independence and optionality.
             </p>
