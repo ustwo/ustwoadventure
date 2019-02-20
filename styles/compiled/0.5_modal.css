@@ -215,7 +215,7 @@
 	}
 	.modal .modal-inner .modal-details a.site-link-mobile {
 		display: inline-block;
-		margin-bottom: 12px;
+		margin-bottom: 15px;
 		font-size: 25px;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -237,8 +237,8 @@
 	.modal .modal-inner .modal-details {
 		padding: 19px 20px;
 	}
-	.modal .modal-inner .modal-details a.site-link {
-		margin-bottom: 15px;
+	.modal .modal-inner .modal-details a.site-link-mobile {
+		margin-bottom: 12px;
 		font-size: 23px;
 	}
 	.modal .modal-inner .modal-details p.line {
