@@ -59,8 +59,13 @@
                 transform: translate(0px, -5px);
                 filter: contrast(92%) brightness(104%);
             }
+
             img.arrow {
                 transform: translate(2px, -5px);
+
+                &:hover {
+                    transform: translate(5px, -5px);
+                }
             }
         }
     }

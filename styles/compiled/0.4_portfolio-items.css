@@ -60,6 +60,10 @@
 	transform: translate(2px, -5px);
 }
 
+.portfolio-item:hover div.image-container img.arrow:hover {
+	transform: translate(5px, -5px);
+}
+
 .portfolio-item:focus p.name {
 	transform: translate(0px, -3px);
 }

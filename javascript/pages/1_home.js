@@ -30,7 +30,7 @@ const homePage = `
             <div class="path-for-companies">
                 <h2>A path for companies to own their future</h2>
                 <p>
-                    What if startup capital enabled companies to prioritise
+                    What if startup funding enabled companies to prioritise
                     profitability, culture, and a long-term view?
                 </p>
                 <p>
