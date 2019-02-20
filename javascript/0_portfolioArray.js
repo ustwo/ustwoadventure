@@ -1,4 +1,24 @@
 const portfolioArray = [
+    // Exited/Succailed
+    {
+        name: "Sidestory",
+        url: "https://sidestory.co",
+        tidyurl: "sidestory.co",
+        image: "images/team_assets/sidestory_image.jpg",
+        logo: "images/team_assets/sidestory_logo.png",
+        line: "Curated experiences, led by insiders",
+        copy: "A SideStory Experience is just you and an Insider discovering a particular neighbourhood or theme in great detail: they'll show you hidden gems and introduce you to key movers and shakers, from food to architecture to art."
+    },
+    // {
+    //     name: "Easle",
+    //     url: "https://www.easle.co",
+    //     tidyurl: "easle.co",
+    //     image: "images/team_assets/easle_image.jpg",
+    //     logo: "images/team_assets/easle_logo.png",
+    //     line: "A freelancer platform getting artists hired",
+    //     copy: "We find the best work for the best artists. Our creators are vetted by industry experts, and we take care of all the tedious paperwork like timesheets, contracts and invoices."
+    // },
+    // Live
     {
         name: "Tribe",
         url: "https://wearetribe.co/",
@@ -9,15 +29,6 @@ const portfolioArray = [
         copy: "A community of 50,000+ athletes brought together by a love of nature and a spirit for adventure. Inspired by a 1,000 mile run across Europe to fight human trafficking, TRIBE is on a mission to change the world of sports nutrition."
     },
     {
-        name: "Easle",
-        url: "https://www.easle.co",
-        tidyurl: "easle.co",
-        image: "images/team_assets/easle_image.jpg",
-        logo: "images/team_assets/easle_logo.png",
-        line: "A freelancer platform getting artists hired",
-        copy: "We find the best work for the best artists. Our creators are vetted by industry experts, and we take care of all the tedious paperwork like timesheets, contracts and invoices."
-    },
-    {
         name: "Sanctus",
         url: "https://sanctus.io",
         tidyurl: "sanctus.io",
@@ -25,15 +36,6 @@ const portfolioArray = [
         logo: "images/team_assets/sanctus_logo.png",
         line: "Creating space for mental health",
         copy: "We believe mental health should be viewed like physical health, and are on a mission to make it accessible. We work with businesses to help them create an open environment where mental health is cared for."
-    },
-    {
-        name: "Sidestory",
-        url: "https://sidestory.co",
-        tidyurl: "sidestory.co",
-        image: "images/team_assets/sidestory_image.jpg",
-        logo: "images/team_assets/sidestory_logo.png",
-        line: "Curated experiences, led by insiders",
-        copy: "A SideStory Experience is just you and an Insider discovering a particular neighbourhood or theme in great detail: they'll show you hidden gems and introduce you to key movers and shakers, from food to architecture to art."
     },
     {
         name: "Tray",
