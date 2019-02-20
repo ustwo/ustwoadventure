@@ -194,7 +194,7 @@ const portfolioArray = [
         tidyurl: "twiik.me",
         image: "images/team_assets/twiik_image.jpg",
         logo: "images/team_assets/twiik_logo.png",
-        line: "Building healthier lifestyles",
+        line: "Helping people build healthier lifestyles",
         copy: "The Twiik app enables professional coaches, trainers and influencers to connect with people who are on the lookout for that perfect training program, dietary course or health challenge."
     },
     {
