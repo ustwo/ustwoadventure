@@ -231,10 +231,11 @@
 
                 a.site-link-mobile {
                     display: inline-block;
-                    margin-bottom: 20px;
+                    margin-bottom: 18px;
                     font-size: 25px;
                     font-weight: 700;
-                    color: #333;
+                    color: #f32d94;
+                    text-transform: uppercase;
 
                     &:hover {
                         background-position: calc(100% - 13px) 40%;
