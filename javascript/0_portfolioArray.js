@@ -241,6 +241,7 @@ const createModals = a => a.map(obj => {
                 <div class="modal-details">
                     <h2>${ obj.name }</h2>
                     <a class="site-link" href="${ obj.url }" target="_blank">${ obj.tidyurl }</a>
+                    <a class="site-link-mobile" href="${ obj.url }" target="_blank">${ obj.name }</a>
                     <p class="line">${ obj.line }</p>
                     <p class="copy">${ obj.copy }</p>
                 </div>

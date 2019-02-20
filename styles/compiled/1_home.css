@@ -100,7 +100,7 @@
 	grid-template-columns: repeat(auto-fit, var(--portfolioItemWidth));
 	grid-gap: 3rem 2.1rem;
 	justify-content: space-between;
-	margin: 30px auto 100px auto;
+	margin: 20px auto 100px auto;
 }
 
 .home-content .portfolio-preview p.copy {
@@ -289,7 +289,7 @@
 		margin-top: 30px;
 	}
 	.home-content .portfolio-preview .portfolio-item:nth-child(4) {
-		margin-top: -50px;
+		margin-top: -70px;
 		display: block;
 	}
 	.home-content .bottom-row img {
