@@ -27,7 +27,6 @@
 	object-fit: cover;
 	filter: contrast(92%);
 	transition: transform 0.08s, box-shadow 0.08s, filter 0.08s;
-	display: inline-block;
 	position: relative;
 }
 

@@ -27,7 +27,6 @@
 
             transition: transform 0.08s, box-shadow 0.08s, filter 0.08s;
 
-            display: inline-block;
             position: relative;
         }
 
@@ -81,7 +80,7 @@
                 box-shadow: -0px 3px 0px 0px #f32d94;
                 transform: translate(0px, -3px);
             }
-            
+
             img.arrow {
                 transform: translate(0px, -3px);
             }
