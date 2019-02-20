@@ -77,7 +77,7 @@ const portfolioArray = [
         tidyurl: "everpress.com",
         image: "images/team_assets/everpress_image.jpg",
         logo: "images/team_assets/everpress_logo.png",
-        line: "Design & sell beautiful merchandise easily",
+        line: "Design & sell beautiful merchandise, easily",
         copy: "The best way to create and share campaigns for clothing design, risk free and high quality. We’re enabling the newest wave of influencers to sell products to millions of consumers around the world."
     },
     {

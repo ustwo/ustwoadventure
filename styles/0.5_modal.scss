@@ -116,7 +116,7 @@
             }
 
             p.line {
-                margin-bottom: 17px;
+                margin-bottom: 15px;
                 font-size: 24px;
                 line-height: 1.4;
                 color: #333;
@@ -231,11 +231,11 @@
 
                 a.site-link-mobile {
                     display: inline-block;
-                    margin-bottom: 15px;
-                    font-size: 26px;
+                    margin-bottom: 14px;
+                    font-size: 25px;
                     font-weight: 700;
-                    color: #333;
                     text-transform: uppercase;
+                    color: #333;
 
                     &:hover {
                         background-position: calc(100% - 13px) 40%;
