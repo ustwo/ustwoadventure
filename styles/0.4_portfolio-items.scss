@@ -53,6 +53,7 @@
             font-style: italic;
             transform: translate(0px, -5px);
         }
+
         div.image-container {
             img.company-image {
                 box-shadow: -0px 6px 0px -2px #f32d94;
@@ -74,11 +75,13 @@
         p.name {
             transform: translate(0px, -3px);
         }
+
         div.image-container {
             img.company-image {
                 box-shadow: -0px 3px 0px 0px #f32d94;
                 transform: translate(0px, -3px);
             }
+            
             img.arrow {
                 transform: translate(0px, -3px);
             }
