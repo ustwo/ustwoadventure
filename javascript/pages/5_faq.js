@@ -7,17 +7,6 @@ const faqPage = `
         <div class="writing">
 
             <p class="question">
-                Have all of your investments been with this model?
-            </p>
-
-            <p class="answer">
-                Nope! Since 2014 we’ve invested in a handful of companies, all
-                using various models. In that time the learnings we’ve made have
-                led us to this one.
-            </p>
-
-
-            <p class="question">
                 Are you currently making investments?
             </p>
 
@@ -33,6 +22,17 @@ const faqPage = `
                 <a href="mailto:hello.adventure@ustwo.com" targer="_blank">
                     hello.adventure@ustwo.com.
                 </a>
+            </p>
+
+
+            <p class="question">
+                Have all of your investments been with this model?
+            </p>
+
+            <p class="answer">
+                Nope! Since 2014 we’ve invested in a handful of companies, all
+                using various models. In that time the learnings we’ve made have
+                led us to this one.
             </p>
 
 

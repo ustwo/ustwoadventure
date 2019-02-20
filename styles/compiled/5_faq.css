@@ -4,14 +4,13 @@
 }
 
 .faq-content .writing p.question {
-	margin-top: 40px;
-	font-size: 1.03em;
+	margin-top: 50px;
+	font-size: 1.32em;
 	font-weight: 700;
-	color: #646464;
 }
 
 .faq-content .writing p.answer {
-	margin-top: 12px;
+	margin-top: 18px;
 }
 
 .faq-content .writing a {
@@ -25,8 +24,9 @@
 @media (max-width: 769px) {
 	.faq-content .writing p.question {
 		margin-top: 30px;
+		font-size: 1.22em;
 	}
 	.faq-content .writing p.answer {
-		margin-top: 10px;
+		margin-top: 12px;
 	}
 }
