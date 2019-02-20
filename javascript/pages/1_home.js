@@ -2,7 +2,7 @@ const latestInvestment = portfolioArray[portfolioArray.length - 1];
 const latestInvestmentItem = `
     <a href="#modal-${ kebabCase(latestInvestment.name) }" target="_blank" rel="modal:open">
         <p class="tag">Latest investment:</p>
-        <div class="image">
+        <div class="image-container">
             <img class="company-image" data-src="${ latestInvestment.image }">
             <img class="arrow" src="images/arrow_white.svg">
         </div>
@@ -22,7 +22,7 @@ const homePage = `
     <div class="home-content">
 
         <h1>
-            ustwo Adventure invests in creative companies, differently
+            ustwo Adventure invests in creative companies, <span class="differently">differently</span>
         </h1>
 
         <div class="top-row">

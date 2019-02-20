@@ -231,7 +231,7 @@ const createPortfolioItems = a => a.map(obj => {
         <a class="portfolio-item" href="#modal-${ kebabCase(obj.name) }" target="_blank" rel="modal:open"
         style="--offset: ${randomOffset()}px">
             <p class="name">${ obj.name }</p>
-            <div class="image">
+            <div class="image-container">
                 <img class="company-image" data-src="${ obj.image }">
                 <img class="arrow" src="images/arrow_white.svg">
             </div>

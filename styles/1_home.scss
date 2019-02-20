@@ -43,7 +43,7 @@
                     width: -ms-max-content;
             }
 
-            div.image {
+            div.image-container {
                 position: relative;
                 z-index: -1;
 
@@ -93,7 +93,7 @@
             }
 
             &:hover {
-                div.image {
+                div.image-container {
                     img.company-image {
                         box-shadow: -4px 4px 0px 0px #f32d94;
                         transform: translate(4px, -4px);
@@ -252,7 +252,7 @@
                     margin-left: -18px;
                 }
 
-                div.image img.arrow {
+                div.image-container img.arrow {
                     width: 20px;
                 }
 
@@ -282,7 +282,7 @@
                     margin-left: -16px;
                 }
 
-                div.image {
+                div.image-container {
                     img.company-image {
                         height: calc(var(--latestInvestmentImageWidth) * 0.92);
                     }

@@ -41,19 +41,19 @@
 	width: -ms-max-content;
 }
 
-.home-content .top-row .latest-investment div.image {
+.home-content .top-row .latest-investment div.image-container {
 	position: relative;
 	z-index: -1;
 }
 
-.home-content .top-row .latest-investment div.image img.company-image {
+.home-content .top-row .latest-investment div.image-container img.company-image {
 	width: var(--latestInvestmentImageWidth);
 	height: calc(var(--latestInvestmentImageWidth) * 0.858);
 	object-fit: cover;
 	transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
 }
 
-.home-content .top-row .latest-investment div.image img.arrow {
+.home-content .top-row .latest-investment div.image-container img.arrow {
 	position: absolute;
 	top: 17px;
 	right: 18px;
@@ -85,13 +85,13 @@
 	max-width: var(--latestInvestmentImageWidth);
 }
 
-.home-content .top-row .latest-investment:hover div.image img.company-image {
+.home-content .top-row .latest-investment:hover div.image-container img.company-image {
 	box-shadow: -4px 4px 0px 0px #f32d94;
 	transform: translate(4px, -4px);
 	filter: brightness(104%);
 }
 
-.home-content .top-row .latest-investment:hover div.image img.arrow {
+.home-content .top-row .latest-investment:hover div.image-container img.arrow {
 	transform: translate(7px, -4px);
 }
 
@@ -232,7 +232,7 @@
 	.home-content .top-row .latest-investment p.tag {
 		margin-left: -18px;
 	}
-	.home-content .top-row .latest-investment div.image img.arrow {
+	.home-content .top-row .latest-investment div.image-container img.arrow {
 		width: 20px;
 	}
 	.home-content .top-row .latest-investment h1 {
@@ -253,7 +253,7 @@
 	.home-content .top-row .latest-investment p.tag {
 		margin-left: -16px;
 	}
-	.home-content .top-row .latest-investment div.image img.company-image {
+	.home-content .top-row .latest-investment div.image-container img.company-image {
 		height: calc(var(--latestInvestmentImageWidth) * 0.92);
 	}
 	.home-content .top-row .latest-investment h1 {

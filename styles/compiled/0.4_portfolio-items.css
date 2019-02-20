@@ -17,11 +17,11 @@
 	transition: transform 0.07s;
 }
 
-.portfolio-item div.image {
+.portfolio-item div.image-container {
 	position: relative;
 }
 
-.portfolio-item div.image img.company-image {
+.portfolio-item div.image-container img.company-image {
 	width: var(--portfolioItemWidth);
 	height: calc(var(--portfolioItemWidth) * 1.27);
 	object-fit: cover;
@@ -31,7 +31,7 @@
 	position: relative;
 }
 
-.portfolio-item div.image img.arrow {
+.portfolio-item div.image-container img.arrow {
 	position: absolute;
 	bottom: 21px;
 	left: 15px;
@@ -50,13 +50,13 @@
 	transform: translate(0px, -5px);
 }
 
-.portfolio-item:hover div.image img.company-image {
+.portfolio-item:hover div.image-container img.company-image {
 	box-shadow: -0px 6px 0px -2px #f32d94;
 	transform: translate(0px, -5px);
 	filter: contrast(92%) brightness(104%);
 }
 
-.portfolio-item:hover div.image img.arrow {
+.portfolio-item:hover div.image-container img.arrow {
 	transform: translate(2px, -5px);
 }
 
@@ -64,12 +64,12 @@
 	transform: translate(0px, -3px);
 }
 
-.portfolio-item:focus div.image img.company-image {
+.portfolio-item:focus div.image-container img.company-image {
 	box-shadow: -0px 3px 0px 0px #f32d94;
 	transform: translate(0px, -3px);
 }
 
-.portfolio-item:focus div.image img.arrow {
+.portfolio-item:focus div.image-container img.arrow {
 	transform: translate(0px, -3px);
 }
 
@@ -110,7 +110,7 @@
 	:root {
 		--portfolioItemWidth: 168px;
 	}
-	.portfolio-item div.image img.company-image {
+	.portfolio-item div.image-container img.company-image {
 		height: calc(var(--portfolioItemWidth) * 1.2);
 	}
 }
@@ -131,7 +131,7 @@
 	.portfolio-item p.name {
 		font-size: 1.16em;
 	}
-	.portfolio-item div.image img.company-image {
+	.portfolio-item div.image-container img.company-image {
 		height: calc(var(--portfolioItemWidth) * 1.2);
 	}
 	.portfolio-item p.copy {
@@ -146,7 +146,7 @@
 	:root {
 		--portfolioItemWidth: 185px;
 	}
-	.portfolio-item div.image img.company-image {
+	.portfolio-item div.image-container img.company-image {
 		height: calc(var(--portfolioItemWidth) * 1.1);
 	}
 }
