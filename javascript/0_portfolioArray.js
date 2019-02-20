@@ -193,9 +193,9 @@ const portfolioArray = [
         url: "https://www.twiik.me/",
         tidyurl: "twiik.me",
         image: "images/team_assets/twiik_image.jpg",
-        logo: "",
-        line: "Digitising the wellness cycle",
-        copy: "We want to get as many people as possible to build a healthier and more sustainable lifestyle. Twiik delivers a coaching and analytics platform with digital tools, for the entire wellness cycle."
+        logo: "images/team_assets/twiik_logo.png",
+        line: "Building healthier lifestyles",
+        copy: "The Twiik app enables professional coaches, trainers and influencers to connect with people who are on the lookout for that perfect training program, dietary course or health challenge."
     },
     {
         name: "Billogram",
