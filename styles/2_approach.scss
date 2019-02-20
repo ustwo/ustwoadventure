@@ -98,12 +98,20 @@
 
             a.button {
                 display: block;
-                width: max-content;
+                width: 142px;
+                text-align: center;
             }
         }
     }
 
 
+
+
+    @media (max-width: 965px) {
+        .stages div.stage-cta a.button {
+            width: 125px;
+        }
+    }
 
 
     @media (max-width: 950px) {
@@ -159,8 +167,13 @@
 
 
     @media (max-width: 475px) {
-        .stages div h2.number {
-            top: -9px;
+        .stages {
+            div h2.number {
+                top: -9px;
+            }
+            div.stage-cta a.button {
+                width: 121px;
+            }
         }
     }
 

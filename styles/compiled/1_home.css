@@ -56,7 +56,7 @@
 .home-content .top-row .latest-investment div.image img.arrow {
 	position: absolute;
 	top: 15px;
-	right: 15px;
+	right: 16px;
 	width: 22px;
 	transition: transform 0.2s;
 }
