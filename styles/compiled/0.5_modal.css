@@ -220,9 +220,10 @@
 		font-weight: 700;
 		text-transform: uppercase;
 		color: #333;
+		background-position: calc(100% - 13px) 40%;
 	}
 	.modal .modal-inner .modal-details a.site-link-mobile:hover {
-		background-position: calc(100% - 13px) 40%;
+		background-position: calc(100% - 13px) 37%;
 	}
 	.modal .modal-inner .modal-details p.line {
 		margin-bottom: 12px;

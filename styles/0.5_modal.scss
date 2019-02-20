@@ -237,8 +237,10 @@
                     text-transform: uppercase;
                     color: #333;
 
+                    background-position: calc(100% - 13px) 40%;
+
                     &:hover {
-                        background-position: calc(100% - 13px) 40%;
+                        background-position: calc(100% - 13px) 37%;
                     }
                 }
 
