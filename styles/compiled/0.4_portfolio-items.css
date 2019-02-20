@@ -33,8 +33,8 @@
 
 .portfolio-item div.image img.arrow {
 	position: absolute;
-	bottom: 20px;
-	left: 14px;
+	bottom: 21px;
+	left: 15px;
 	width: 22px;
 	transition: transform 0.07s;
 }
@@ -112,9 +112,6 @@
 	}
 	.portfolio-item div.image img.company-image {
 		height: calc(var(--portfolioItemWidth) * 1.2);
-	}
-	.portfolio-item div.image img.arrow {
-		width: 20px;
 	}
 }
 
