@@ -26,9 +26,12 @@ const approachPage = `
             </p>
 
             <p>
-                There are 5 main components to our model. If you want to dig into
-                the full terms we use to invest, feel free to check them out
-                <a href="https://github.com/ustwo/" target="_blank">on Github.</a>
+                There are 5 main components to our model. We'll soon be publishing our
+                full investment terms on Github, for people to dig into all of the details.
+
+                <!-- If you want to dig into the full terms we use to invest, feel
+                free to check them out
+                <a href="https://github.com/ustwo/adventureterms" target="_blank">on Github.</a> -->
             </p>
 
         </div>
@@ -88,7 +91,7 @@ const approachPage = `
             </div>
 
             <div class="stage-cta">
-                <a class="nav button external" href="https://gihub.com/ustwo/adventureinvestmentterms">See terms</a>
+                <!-- <a class="nav button external" href="https://gihub.com/ustwo/adventureinvestmentterms">See terms</a> -->
                 <a class="nav button internal" data-pathname="/faq" href="faq">Read FAQ</a>
             </div>
 
@@ -96,4 +99,4 @@ const approachPage = `
 
     </div>
 
-`
+`;

@@ -199,4 +199,4 @@ const faqPage = `
 
     </div>
 
-`
+`;

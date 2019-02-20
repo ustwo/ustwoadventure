@@ -1,4 +1,5 @@
 const portfolioArray = [
+
     // Exited/Succailed
     {
         name: "Sidestory",
@@ -18,6 +19,7 @@ const portfolioArray = [
     //     line: "A freelancer platform getting artists hired",
     //     copy: "We find the best work for the best artists. Our creators are vetted by industry experts, and we take care of all the tedious paperwork like timesheets, contracts and invoices."
     // },
+
     // Live
     {
         name: "Tribe",
@@ -229,7 +231,10 @@ const createPortfolioItems = a => a.map(obj => {
         <a class="portfolio-item" href="#modal-${ kebabCase(obj.name) }" target="_blank" rel="modal:open"
         style="--offset: ${randomOffset()}px">
             <p class="name">${ obj.name }</p>
-            <img data-src="${ obj.image }">
+            <div class="image">
+                <img class="company-image" data-src="${ obj.image }">
+                <img class="arrow" src="images/arrow_white.svg">
+            </div>
             <p class="copy">${ obj.line }</p>
         </a>
     `;

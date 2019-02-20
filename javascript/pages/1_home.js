@@ -2,7 +2,10 @@ const latestInvestment = portfolioArray[portfolioArray.length - 1];
 const latestInvestmentItem = `
     <a href="#modal-${ kebabCase(latestInvestment.name) }" target="_blank" rel="modal:open">
         <p class="tag">Latest investment:</p>
-        <img data-src="${ latestInvestment.image }">
+        <div class="image">
+            <img class="company-image" data-src="${ latestInvestment.image }">
+            <img class="arrow" src="images/arrow_white.svg">
+        </div>
         <h1>${ latestInvestment.name }</h1>
         <p class="copy">${ latestInvestment.line }</p>
     </a>

@@ -17,12 +17,26 @@
 	transition: transform 0.07s;
 }
 
-.portfolio-item img {
+.portfolio-item div.image {
+	position: relative;
+}
+
+.portfolio-item div.image img.company-image {
 	width: var(--portfolioItemWidth);
 	height: calc(var(--portfolioItemWidth) * 1.27);
 	object-fit: cover;
 	filter: contrast(92%);
 	transition: transform 0.07s, box-shadow 0.07s, filter 0.07s;
+	display: inline-block;
+	position: relative;
+}
+
+.portfolio-item div.image img.arrow {
+	position: absolute;
+	bottom: 20px;
+	left: 14px;
+	width: 22px;
+	transition: transform 0.07s;
 }
 
 .portfolio-item p.copy {
@@ -36,18 +50,26 @@
 	transform: translate(0px, -5px);
 }
 
-.portfolio-item:hover img {
+.portfolio-item:hover div.image img.company-image {
 	box-shadow: -0px 6px 0px -2px #f32d94;
 	transform: translate(0px, -5px);
 	filter: contrast(92%) brightness(104%);
+}
+
+.portfolio-item:hover div.image img.arrow {
+	transform: translate(2px, -5px);
 }
 
 .portfolio-item:focus p.name {
 	transform: translate(0px, -3px);
 }
 
-.portfolio-item:focus img {
+.portfolio-item:focus div.image img.company-image {
 	box-shadow: -0px 3px 0px 0px #f32d94;
+	transform: translate(0px, -3px);
+}
+
+.portfolio-item:focus div.image img.arrow {
 	transform: translate(0px, -3px);
 }
 
@@ -88,6 +110,12 @@
 	:root {
 		--portfolioItemWidth: 168px;
 	}
+	.portfolio-item div.image img.company-image {
+		height: calc(var(--portfolioItemWidth) * 1.2);
+	}
+	.portfolio-item div.image img.arrow {
+		width: 20px;
+	}
 }
 
 @media (max-width: 425px) {
@@ -106,7 +134,7 @@
 	.portfolio-item p.name {
 		font-size: 1.16em;
 	}
-	.portfolio-item img {
+	.portfolio-item div.image img.company-image {
 		height: calc(var(--portfolioItemWidth) * 1.2);
 	}
 	.portfolio-item p.copy {
@@ -121,7 +149,7 @@
 	:root {
 		--portfolioItemWidth: 185px;
 	}
-	.portfolio-item img {
+	.portfolio-item div.image img.company-image {
 		height: calc(var(--portfolioItemWidth) * 1.1);
 	}
 }

@@ -27,4 +27,4 @@ const applyPage = `
             </div>
         </form>
     </div>
-`
+`;
