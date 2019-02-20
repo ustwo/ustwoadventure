@@ -24,8 +24,8 @@
         }
 
         .latest-investment {
-            margin-top: 115px;
-            margin-right: 30px;
+            margin-top: 230px;
+            margin-right: 25px;
             margin-left: 90px;
             --latestInvestmentImageWidth: 350px;
 
@@ -119,11 +119,8 @@
     }
 
     .our-portfolio {
-        margin:  auto 0 auto 0;
-
-        p {
-            max-width: 360px;
-        }
+        margin:  -130px 0 auto 0;
+        max-width: 360px;
     }
 
     .portfolio-preview {
@@ -208,7 +205,7 @@
 
         .top-row {
             .latest-investment {
-                margin-top: 120px;
+                margin-top: 190px;
                 margin-right: 10px;
                 --latestInvestmentImageWidth: 280px;
 
@@ -221,6 +218,10 @@
                     font-size: 56px;
                 }
             }
+        }
+
+        .our-portfolio {
+            margin-top: -110px;
         }
 
         .portfolio-preview {
@@ -245,7 +246,6 @@
     @media (max-width: 875px) {
         .top-row {
             .latest-investment {
-                margin-top: 100px;
                 margin-right: 0;
                 --latestInvestmentImageWidth: 250px;
 
@@ -263,6 +263,10 @@
                     -webkit-text-stroke: 1.2px;
                 }
             }
+        }
+
+        .our-portfolio {
+            margin-top: -50px;
         }
 
         .bottom-row {
@@ -312,6 +316,7 @@
 
         .top-row {
             .latest-investment {
+                margin-top: 200px;
                 --latestInvestmentImageWidth: 210px;
 
                 h1 {
@@ -320,12 +325,16 @@
             }
         }
 
+        .our-portfolio {
+            margin-top: -20px;
+        }
+
         .bottom-row {
             flex-direction: column;
 
             img {
                 --collectiveGeniusVideoWidth: 360px;
-                margin-top: 20px;
+                margin-top: -30px;
                 margin-left: auto;
             }
         }
@@ -346,6 +355,10 @@
                 display: none;
             }
         }
+
+        .our-portfolio {
+            margin-top: 0;
+        }
     }
 
 
@@ -361,14 +374,14 @@
 
         .bottom-row {
             img {
-                --collectiveGeniusVideoWidth: 320px;
-                margin-top: 60px;
+                --collectiveGeniusVideoWidth: 310px;
+                margin-top: -20px;
             }
         }
     }
 
 
-    @media (max-width: 535px) {
+    @media (max-width: 565px) {
         .portfolio-preview {
             margin-bottom: 80px;
 
@@ -376,13 +389,14 @@
                 &:nth-child(1) {margin-top:  80px}
                 &:nth-child(2) {margin-top: -50px}
                 &:nth-child(3) {margin-top:  20px}
-                &:nth-child(4) {margin-top: -70px}
+                &:nth-child(4) {margin-top: -80px}
             }
         }
 
         .bottom-row {
             img {
-                --collectiveGeniusVideoWidth: 290px;
+                --collectiveGeniusVideoWidth: 280px;
+                margin-top: 40px;
             }
         }
     }

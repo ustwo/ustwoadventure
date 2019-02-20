@@ -1,5 +1,5 @@
 .separator {
-    margin-top: 85px;
+    margin-top: 100px;
     height: 4px;
     background-color: #f32d94;
 }
@@ -84,22 +84,33 @@ footer {
             margin-bottom: 10px;
         }
 
-        .fampany .external {
+        .external {
             &::after {
                 content:"";
-                background-image: url("data:image/png;base64,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");
+                background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzFweCIgaGVpZ2h0PSIyNnB4IiB2aWV3Qm94PSIwIDAgMzEgMjYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUyLjUgKDY3NDY5KSAtIGh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaCAtLT4KICAgIDx0aXRsZT5kb3dubG9hZDwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJXZWIiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJIb21lIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzIyLjAwMDAwMCwgLTEwODcuMDAwMDAwKSIgZmlsbD0iI0YzMkQ5NCI+CiAgICAgICAgICAgIDxnIGlkPSJkb3dubG9hZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzIyLjAwMDAwMCwgMTA4Ny4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUtNiIgeD0iMCIgeT0iMTEiIHdpZHRoPSIyNyIgaGVpZ2h0PSI0Ij48L3JlY3Q+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0iQ29tYmluZWQtU2hhcGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3LjcyNzkyMiwgMTMuMDAwMDAwKSBzY2FsZSgtMSwgMSkgcm90YXRlKDQ1LjAwMDAwMCkgdHJhbnNsYXRlKC0xNy43Mjc5MjIsIC0xMy4wMDAwMDApICIgcG9pbnRzPSIxMi43Mjc5MjIgMTguMDAwMDAwMSAxMi43Mjc5MjIgNC4wMDAwMDAwNiA4LjcyNzkyMTkyIDQuMDAwMDAwMDYgOC43Mjc5MjE5MiAyMC4wMDAwMDAxIDguNzI3OTIxOTIgMjIuMDAwMDAwMSAyNi43Mjc5MjIgMjIuMDAwMDAwMSAyNi43Mjc5MjIgMTguMDAwMDAwMSI+PC9wb2x5Z29uPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=");
+                transform: rotate(-45deg);
+
                 background-size: 12px;
                 background-repeat: no-repeat;
                 display: inline-block;
                 width: 12px;
                 height: 12px;
-                margin-left: 10px;
+                margin-left: 6px;
+                margin-bottom: -1px;
+            }
+
+            &:hover::after {
+                transform: translate(1px, -1px) rotate(-45deg);
+                transition: transform 0.07s;
             }
         }
 
         .more-juice a.external {
             pointer-events: none;
             text-decoration: line-through;
+            &::after {
+                background-image: none;
+            }
         }
     }
 
