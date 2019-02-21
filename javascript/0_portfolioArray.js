@@ -149,7 +149,7 @@ const portfolioArray = [
     },
     {
         name: "Run an Empire",
-        url: "https://www.runanempire.com",
+        url: "http://www.runanempire.com",
         tidyurl: "runanempire.com",
         image: "images/team_assets/runanempire_image.jpg",
         logo: "images/team_assets/runanempire_logo.png",
