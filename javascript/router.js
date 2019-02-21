@@ -41,7 +41,6 @@ const goTo404 = () => {
 
     lzy();
     navLinkSetup();
-    portfolioItemLinkSetup();
 };
 
 
@@ -66,9 +65,9 @@ const portfolioItemLinkSetup = () => {
     const portfolioItemElements = document.querySelectorAll("a.portfolio-item, .latest-investment a");
     if (portfolioItemElements) {
         portfolioItemElements.forEach(item => {
-            item.addEventListener("click", comapnyName => {
-                comapnyName = item.getAttribute("href").split("#modal-")[1];
-                history.replaceState("", document.title, window.location.pathname + `#${comapnyName}`);
+            item.addEventListener("click", companyName => {
+                companyName = item.getAttribute("href").split("#modal-")[1];
+                history.replaceState("", document.title, window.location.pathname + `#${companyName}`);
             });
         });
     }
@@ -77,7 +76,16 @@ const portfolioItemLinkSetup = () => {
 
 
 if (routes.hasOwnProperty(window.location.pathname)) {
-    goToPage(window.location.pathname);
+    pageContentContainer.innerHTML = routes[window.location.pathname];
+
+    let title = capitalizeFirstLetter(window.location.pathname.split("/")[1]);
+    if (title == "Faq") title = "FAQ";
+    document.title = (title == "") ? "ustwo Adventure" : `${title} — ustwo Adventure`;
+
+    lzy();
+    navLinkSetup();
+    portfolioItemLinkSetup();
+    if (window.location.pathname == "/approach") approachStageScroll();
 } else {
     goTo404();
 }
