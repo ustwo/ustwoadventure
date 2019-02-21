@@ -2,7 +2,7 @@ const approachPage = `
 
     <div class="approach-content">
 
-        <h1>Walk the right path</h1>
+        <h1>A different path</h1>
 
         <div class="writing">
 
