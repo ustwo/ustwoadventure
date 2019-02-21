@@ -32,7 +32,7 @@ const faqPage = `
             <p class="answer">
                 Nope! Since 2014 we’ve invested in a handful of companies, all
                 using various models. In that time the learnings we’ve made have
-                led us to this one.
+                led us to the approach we're now using.
             </p>
 
 
