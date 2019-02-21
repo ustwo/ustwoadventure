@@ -1,0 +1,42 @@
+.faq-content {
+    .writing {
+        margin: auto;
+        max-width: 720px;
+
+        p.question {
+            margin-top: 45px;
+
+            font-size: 1.32em;
+            font-weight: 700;
+            line-height: 1.6;
+        }
+
+        p.answer {
+            margin-top: 18px;
+        }
+
+        a {
+            text-decoration: underline;
+
+            &:hover {
+                font-style: italic;
+            }
+        }
+    }
+
+
+
+
+    @media (max-width: 769px) {
+        .writing {
+            p.question {
+                margin-top: 30px;
+                font-size: 1.22em;
+            }
+
+            p.answer {
+                margin-top: 12px;
+            }
+        }
+    }
+}

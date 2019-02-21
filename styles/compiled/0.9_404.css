@@ -1,0 +1,11 @@
+.fourohfour-content h1 {
+	margin-bottom: 80px;
+	margin-right: 10%;
+	margin-left: auto;
+	width: max-content;
+}
+
+.fourohfour-content a.button.back {
+	margin-left: 10%;
+	margin-bottom: 50px;
+}

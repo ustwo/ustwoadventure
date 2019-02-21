@@ -1,0 +1,34 @@
+.portfolio-content h1 {
+	max-width: 420px;
+}
+
+.portfolio-content .portfolio-container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, var(--portfolioItemWidth));
+	grid-gap: 3rem 2rem;
+	justify-content: space-between;
+}
+
+.portfolio-content .portfolio-container .portfolio-item .image-container img.arrow {
+	display: none;
+}
+
+@media (max-width: 1080px) {
+	.portfolio-content .portfolio-container {
+		justify-content: space-around;
+	}
+}
+
+@media (max-width: 425px) {
+	.portfolio-content .portfolio-container {
+		grid-gap: 2rem 1.5rem;
+	}
+}
+
+@media (max-width: 380px) {
+	.portfolio-content .portfolio-container {
+		margin-top: 60px;
+		grid-gap: 3.2rem;
+	}
+}

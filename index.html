@@ -1,106 +1,175 @@
 <!doctype html>
-
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
 
-  <title>ustwo Adventure</title>
+    <meta charset="utf-8">
 
-  <!-- META TAGS -->
-  <meta name="description" content="ustwo Adventure exists to help good people build good companies. We house teams in our playground, invest with our fund, engage in philanthropy, and launch own ventures.">
-  <meta name="author" content="Neef Rehman">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ustwo Adventure</title>
 
-  <!-- Twitter Crawl data -->
-  <!-- <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@ustwoadventure">
-  <meta name="twitter:title" content="ustwo Adventure">
-  <meta name="twitter:description" content="Making meaningful impact through building and developing companies — Workspace. Investment. Philanthropy.">
-  <meta name="twitter:creator" content="@neefstweets"> -->
-  <!-- Twitter Summary card images must be at least 120x120px -->
-  <!-- <meta name="twitter:image" content="https://adventure.ustwo.com/images/meta_og_twitter.jpg"> -->
+    <!-- META TAGS -->
+    <meta name="description" content="ustwo Adventure invests in creative companies, differently.">
+    <meta name="author" content="ustwo Adventure">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- stylesheets -->
-  <link rel="stylesheet" href="fonts/px/stylesheet.css">
-  <script src="https://use.typekit.net/hoo6hst.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="globalstyle.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="modal.css">
+    <!-- Google / Search Engine tags -->
+    <meta itemprop="name" content="ustwo Adventure">
+    <meta itemprop="description" content="We invest in creative companies, differently. No equity by default, shared revenue, and a capped return.">
+    <meta itemprop="image" content="http://adventure.ustwo.com/images/meta_og_twitter.png">
 
-  <link rel="icon" href="icons/favicon.png" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
-  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#f32d94">
+    <!-- OG tags  -->
+    <meta property="og:title" content="ustwo Adventure"/>
+    <meta property="og:url" content="https://adventure.ustwo.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="We invest in creative companies, differently. No equity by default, shared revenue, and a capped return."/>
+    <meta property="og:image" content="https://adventure.ustwo.com/images/meta_og_twitter.png"/>
+
+    <!-- Twitter crawl tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@ustwoadventure">
+    <meta name="twitter:title" content="ustwo Adventure">
+    <meta name="twitter:description" content="ustwo Adventure invests in creative companies, differently.">
+    <meta name="twitter:creator" content="@ustwoadventure">
+    <meta name="twitter:image" content="https://adventure.ustwo.com/images/meta_og_twitter.png">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="fonts/px/stylesheet.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hoo6hst.css">
+
+    <link rel="stylesheet" href="styles/compiled/_reset.css">
+    <link rel="stylesheet" href="styles/compiled/0.1_globals.css">
+    <link rel="stylesheet" href="styles/compiled/0.2_header.css">
+    <link rel="stylesheet" href="styles/compiled/0.3_footer.css">
+    <link rel="stylesheet" href="styles/compiled/0.4_portfolio-items.css">
+    <link rel="stylesheet" href="styles/compiled/0.5_modal.css">
+    <link rel="stylesheet" href="styles/compiled/0.9_404.css">
+    <link rel="stylesheet" href="styles/compiled/1_home.css">
+    <link rel="stylesheet" href="styles/compiled/2_approach.css">
+    <link rel="stylesheet" href="styles/compiled/3_portfolio.css">
+    <!-- <link rel="stylesheet" href="styles/compiled/4_apply.css"> -->
+    <link rel="stylesheet" href="styles/compiled/5_faq.css">
+
+    <link rel="icon" href="icons/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#f32d94">
 
 </head>
 
 <body>
 
-  <header>
-    <h1>
-      <a href="index.html"> <img src="images/logo_LeftAligned.png"/> </a>
-    </h1>
-    <nav>
-      <div id="socials">
-        <a href="https://medium.com/ustwoadventure" target="_blank" class="icon medium"><img src="images/icon_medium.png"/></a>
-        <a href="http://instagram.com/ustwoadventure" target="_blank" class="icon"><img src="images/icon_instagram.png"/></a>
-        <a href="http://twitter.com/ustwoadventure" target="_blank" class="icon" style="padding-right: 0;"><img src="images/icon_twitter.png"/></a>
-      </div>
-      <p> <a href="mailto:hello.adventure@ustwo.com" target="_blank" class="nav">Contact</a> </p>
-    </nav>
-    <p id="copy" class="description">
-      ustwo Adventure exists to help good people build good companies. We do this in four ways—housing teams in our playground, investing with our fund, engaging in philanthropy, and launching own ventures.
-    </p>
-    <div class="separator top">
-    </div>
-  </header>
+    <header>
 
-  <section>
-    <div id="list">
-      <p id="selectors" class="button-group">
-        <a class="button is_checked filter-button-group twocolumns" data-filter="*" data-descriptorstring="Our entire family of companies.">Fampany</a>
-        <a class="button filter-button-group twocolumns" data-filter="playground" data-descriptorstring="Our <a href='join.html'>Adventure floor</a> — 5,000 sq ft of shared workspace inside our London studio, and home to an inspiring group of values-led, ambitious teams.">Playground</a>
-        <a class="button filter-button-group twocolumns" data-filter="fund" data-descriptorstring="Our investment portfolio.">Fund</a>
-        <a class="button filter-button-group onecolumn" data-filter="foundation" data-descriptorstring="Our version of philanthropy, through the form of patronage, sponsorship and our time. This year our focus is on <a href='https://ustwo.com/blog/tackling-career-mobility-in-the-creative-industries' target='_blank'>career mobility into the creative industries</a>.">Foundation</a>
-        <a class="button filter-button-group onecolumn" data-filter="venture" data-descriptorstring="Companies that we've built and launched into the world.">Venture</a>
-      </p>
-      <p id="descriptor" class="description">
-        Our entire family of companies.
-      </p>
-      <ul id="companies" class="grid">
-      </ul>
-    </div>
-    <div class="modals" id="modals">
-    </div>
-  </section>
+        <a class="nav logo" data-pathname="/" href="/">
+            <img src="images/ustwo_logo_pink.svg">
+            <ul>
+                <li>A</li>
+                <li>D</li>
+                <li>V</li>
+                <li>E</li>
+                <li>N</li>
+                <li>T</li>
+                <li>U</li>
+                <li>R</li>
+                <li>E</li>
+            </ul>
+        </a>
 
-  <footer>
-    <div class="separator bottom">
-    </div>
-    <div id="footer_logo">
-      <a href="https://ustwo.com" target="_blank" class="footerlogo"><img src="images/ustwo_logo.png" /></a>
-    </div>
-    <div id="copyright">
-      <p>
-      Copyright © ustwo Adventure ltd <script type="text/javascript">document.write(new Date().getFullYear());</script>.
-      Here's our
-      <a href="https://www.iubenda.com/privacy-policy/50030836/cookie-policy" class="iubenda-nostyle no-brand iubenda-embed " title="Cookie Policy">Cookie</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
-      &
-      <a href="https://www.iubenda.com/privacy-policy/50030836" class="iubenda-nostyle no-brand iubenda-embed " title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>.
-      </p>
-    </div>
-  </footer>
+        <nav>
+            <a class="nav" data-pathname="/approach" href="approach">Approach</a>
+            <a class="nav" data-pathname="/portfolio" href="portfolio">Portfolio</a>
+            <a class="nav" data-pathname="/faq" href="faq">FAQ</a>
+            <!-- <a class="nav" data-pathname="/apply" href="apply">Apply</a> -->
+        </nav>
+
+    </header>
 
 
-  <!-- Scripts are placed at the end for loading -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    if (!window.jQuery) document.write('<script src="javascript/jquery.min.js"><\/script>');
-  </script>
-  <script src="javascript/main.js"></script>
-  <script src="javascript/jquery.unveil.js"></script>
-  <script src="javascript/jquery.modal.js"></script>
+
+
+    <section class="content-wrapper"> </section>
+
+
+
+    <section class="modal-container"> </section>
+
+
+
+
+    <div class="separator"> </div>
+
+
+    <footer>
+
+        <div class="left">
+
+            <div class="ADV">
+                <span>A</span>
+                <span>D</span>
+                <span>V</span>
+            </div>
+
+            <div class="copyright">
+                <p>
+                <a href="https://www.iubenda.com/privacy-policy/50030836/cookie-policy" class="iubenda-nostyle no-brand iubenda-embed " title="Cookie Policy">Cookie</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+                &
+                <a href="https://www.iubenda.com/privacy-policy/50030836" class="iubenda-nostyle no-brand iubenda-embed " title="Privacy Policy">Privacy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+                policy
+                </p>
+                <p>
+                © ustwo Adventure, <script type="text/javascript">document.write(new Date().getFullYear())</script>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <div class="fampany">
+                <p>The ustwo fampany</p>
+                <a class="external" href="https://ustwo.com" target="_blank">Studios</a>
+                <a class="external" href="https://ustwogames.co.uk" target="_blank">Games</a>
+                <a class="external" href="https://ustwo.org" target="_blank">Foundation</a>
+                <a class="nav" data-pathname="/" href="/">Adventure</a>
+            </div>
+
+            <div class="more-juice">
+                <p>More juice</p>
+                <a class="external" href="https://github.com/ustwo/" target="_blank">Investment terms</a>
+                <a class="nav" data-pathname="/faq" href="faq">FAQ</a>
+                <a href="mailto:hello.adventure@ustwo.com" target="_blank">Contact</a>
+            </div>
+
+            <div class="find-us">
+                <p>Find us</p>
+                <a href="https://twitter.com/ustwoadventure" target="_blank">Twitter</a>
+                <a href="https://instagram.com/ustwoadventure/" target="_blank">Instagram</a>
+                <a href="https://medium.com/ustwoadventure" target="_blank">Medium</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <script> window.jQuery || document.write('<script src="javascript/jquery/jquery.min.js"> <\/script>') </script>
+    <script src="javascript/jquery/jquery.modal.js"> </script>
+
+    <script> window.IntersectionObserver || document.write('<script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"> <\/script>') </script>
+
+    <script src="javascript/0_helpers.js"> </script>
+    <script src="javascript/0_portfolioArray.js"> </script>
+
+    <script src="javascript/pages/0.9_404.js"> </script>
+    <script src="javascript/pages/1_home.js"> </script>
+    <script src="javascript/pages/2_approach.js"> </script>
+    <script src="javascript/pages/3_portfolio.js"> </script>
+    <script src="javascript/pages/4_apply.js"> </script>
+    <script src="javascript/pages/5_faq.js"> </script>
+
+    <script src="javascript/main.js"> </script>
+    <script src="javascript/router.js"> </script>
 
 </body>
 </html>

@@ -1,0 +1,264 @@
+header {
+    margin: 65px 0 170px 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        width: 230px;
+
+        transform: rotate(-10deg);
+        transition: transform 12s;
+
+        img {
+            position: absolute;
+            max-width: 80px;
+
+            transform: rotate(10deg);
+            transition: transform 12s;
+        }
+
+        &:hover {
+            transform: rotate(335deg);
+            transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
+
+            img {
+                transform: rotate(-335deg);
+                transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
+            }
+
+            @media (pointer: coarse) {
+                transform: rotate(10deg);
+
+                img {
+                    transform: rotate(-10deg);
+                }
+            }
+        }
+
+        ul {
+            position: relative;
+            margin: 0;
+            list-style: none;
+
+            transform-style: preserve-3d;
+            animation: three-dimensions-circle 16s linear infinite;
+
+            @keyframes three-dimensions-circle {
+                0% {
+                    transform: rotateX(-100deg) rotate(0);
+                }
+                100% {
+                    transform: rotateX(-100deg) rotate(-360deg);
+                }
+            }
+
+            li {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+
+                font-family: "futura-pt", futura, sans-serif;
+                font-size: 52px;
+                font-weight: bold;
+                color: #f32d94;
+                -webkit-text-stroke: 1.2px #f32d94;
+
+                transition: opacity 0.2s;
+                &.transition {
+                    opacity: 0;
+                }
+
+                $NUMBER_OF_LETTERS: 9;
+                --translateY: -110px;
+
+                @for $i from 1 through $NUMBER_OF_LETTERS {
+                    &:nth-child(#{$i}) {
+                        transform: translate(-50%, -50%)
+                        rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
+                        translateY(var(--translateY))
+                        rotateX(90deg);
+                    }
+                }
+
+                @for $i from 1 through $NUMBER_OF_LETTERS {
+                    &:nth-child(#{$i}) {
+                        animation: circle-orbit-#{$i} 16s linear infinite;
+                    }
+                }
+
+                @for $i from 8 through 9 {
+                    &:nth-child(#{$i}) {
+                        -webkit-text-fill-color: #fff;
+                    }
+                    @keyframes circle-orbit-#{$i} {
+                        #{($i - 8) * (100 / ($NUMBER_OF_LETTERS / 2)) + 6}% {
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+                }
+                @for $i from 1 through 3 {
+                    &:nth-child(#{$i}) {
+                        -webkit-text-fill-color: #fff;
+                    }
+                    @keyframes circle-orbit-#{$i} {
+                        #{($i - 1) * (100 / ($NUMBER_OF_LETTERS / 2)) + 50}% {
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+                }
+                @for $i from 4 through 7 {
+                    &:nth-child(#{$i}) {
+                        -webkit-text-fill-color: transparent;
+                    }
+                    @keyframes circle-orbit-#{$i} {
+                        #{($i - 4) * (100 / ($NUMBER_OF_LETTERS / 2)) + 18}% {
+                            -webkit-text-fill-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    nav {
+
+        a, a:visited {
+            margin-left: 60px;
+
+            font-size: 20px;
+            line-height: 1.6;
+            color: #646464;
+
+            &:hover {
+                font-style: italic;
+            }
+        }
+
+    }
+
+
+
+
+
+    @media (max-width: 780px) {
+        .logo {
+            height: 70px;
+            width: 190px;
+
+            img {
+                width: 70px;
+            }
+
+            ul li {
+                font-size: 48px;
+                --translateY: -90px;
+            }
+        }
+
+        nav a {
+            margin-left: 40px;
+            font-size: 18px;
+        }
+    }
+
+
+    @media (max-width: 600px) {
+        margin: 50px 0 120px 0;
+
+        .logo {
+            height: 65px;
+            width: 175px;
+
+            img {
+                width: 67px;
+            }
+
+            ul li {
+                font-size: 46px;
+                --translateY: -85px;
+            }
+        }
+
+        nav a {
+            margin-left: 25px;
+        }
+    }
+
+
+    @media (max-width: 565px) {
+        margin: 30px 0 100px 0;
+
+        nav a {
+            display: block;
+            margin-bottom: 1px;
+            text-align: right;
+        }
+    }
+
+
+    @media (max-width: 425px) {
+        margin: 25px 0 100px 0;
+
+        .logo {
+            height: 65px;
+            width: 170px;
+
+            img {
+                width: 65px;
+            }
+
+            ul li {
+                font-size: 44px;
+                --translateY: -80px;
+            }
+        }
+    }
+
+    @media (max-width: 374px) {
+        .logo {
+            height: 55px;
+            width: 145px;
+
+            img {
+                width: 60px;
+            }
+
+            ul li {
+                font-size: 38px;
+                --translateY: -70px;
+            }
+        }
+
+        nav a {
+            font-size: 17px;
+        }
+    }
+
+
+    @media (max-width: 330px) {
+        margin: 20px 0 90px 0;
+
+        .logo {
+            height: 50px;
+            width: 135px;
+
+            img {
+                width: 60px;
+            }
+
+            ul li {
+                font-size: 36px;
+                --translateY: -65px;
+            }
+        }
+    }
+
+}
