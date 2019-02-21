@@ -333,7 +333,7 @@
 	}
 	.home-content .bottom-row video {
 		--collectiveGeniusVideoWidth: 310px;
-		margin-top: -20px;
+		margin-top: -30px;
 	}
 }
 
@@ -353,9 +353,18 @@
 	.home-content .portfolio-preview .portfolio-item:nth-child(4) {
 		margin-top: -80px;
 	}
+	.home-content .bottom-row {
+		position: relative;
+	}
+	.home-content .bottom-row .collective-genius a.button {
+		position: absolute;
+		bottom: -25px;
+		left: 0;
+	}
 	.home-content .bottom-row video {
 		--collectiveGeniusVideoWidth: 280px;
-		margin-top: 40px;
+		margin-top: 30px;
+		margin-bottom: 40px;
 	}
 }
 
@@ -383,6 +392,9 @@
 	}
 	.home-content .portfolio-preview .portfolio-item:nth-child(4) {
 		margin-top: -80px;
+	}
+	.home-content .bottom-row .collective-genius a.button {
+		bottom: -30px;
 	}
 }
 

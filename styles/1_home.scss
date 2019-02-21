@@ -386,7 +386,7 @@
         .bottom-row {
             video {
                 --collectiveGeniusVideoWidth: 310px;
-                margin-top: -20px;
+                margin-top: -30px;
             }
         }
     }
@@ -405,9 +405,17 @@
         }
 
         .bottom-row {
+            position: relative;
+
+            .collective-genius a.button {
+                position: absolute;
+                bottom: -25px;
+                left: 0;
+            }
             video {
                 --collectiveGeniusVideoWidth: 280px;
-                margin-top: 40px;
+                margin-top: 30px;
+                margin-bottom: 40px;
             }
         }
     }
@@ -435,6 +443,10 @@
                 &:nth-child(3) {margin-top:  10px}
                 &:nth-child(4) {margin-top: -80px}
             }
+        }
+
+        .bottom-row .collective-genius a.button {
+            bottom: -30px;
         }
     }
 
