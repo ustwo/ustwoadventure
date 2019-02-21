@@ -41,6 +41,7 @@ const goTo404 = () => {
 
     lzy();
     navLinkSetup();
+    portfolioItemLinkSetup();
 };
 
 
@@ -75,25 +76,16 @@ const portfolioItemLinkSetup = () => {
 
 
 
+const modalContainer = document.querySelector(".modal-container");
+modalContainer.innerHTML = createModals(portfolioArray).join("");
+
+
+
 if (routes.hasOwnProperty(window.location.pathname)) {
-    pageContentContainer.innerHTML = routes[window.location.pathname];
-
-    let title = capitalizeFirstLetter(window.location.pathname.split("/")[1]);
-    if (title == "Faq") title = "FAQ";
-    document.title = (title == "") ? "ustwo Adventure" : `${title} — ustwo Adventure`;
-
-    lzy();
-    navLinkSetup();
-    portfolioItemLinkSetup();
-    if (window.location.pathname == "/approach") approachStageScroll();
+    goToPage(window.location.pathname);
 } else {
     goTo404();
 }
-
-
-
-const modalContainer = document.querySelector(".modal-container");
-modalContainer.innerHTML = createModals(portfolioArray).join("");
 
 
 
