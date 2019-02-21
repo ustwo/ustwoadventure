@@ -37,20 +37,6 @@ const faqPage = `
 
 
             <p class="question">
-                Who isn't a fit?
-            </p>
-
-            <p class="answer">
-                Businesses that have high R&D costs (e.g., deep tech), winner-takes-all
-                industry dynamics (e.g., marketplaces, social networks) or typically
-                lower margin business models (e.g., agencies) generally aren’t a
-                good fit for our approach. This is because we want our investment
-                to be the last round you need to raise while also having enough
-                gross margin to manage the revenue share.
-            </p>
-
-
-            <p class="question">
                 Who is a fit?
             </p>
 
@@ -69,15 +55,29 @@ const faqPage = `
 
 
             <p class="question">
+                Who isn't a fit?
+            </p>
+
+            <p class="answer">
+                Businesses that have high R&D costs (e.g. deep tech), winner-takes-all
+                industry dynamics (e.g. marketplaces, social networks) or typically
+                lower margin business models (e.g. agencies) generally aren’t a
+                good fit for our approach. This is because we want our investment
+                to be the last round you need to raise while also having enough
+                gross margin to manage the revenue share.
+            </p>
+
+
+            <p class="question">
                 What does tech-enabled even mean any more?
             </p>
 
             <p class="answer">
-                Good question! It feels like most new businesses are tech enabled
+                Good question! It feels like most new businesses are tech-enabled
                 in some way these days. We use this phrase to mean businesses
                 that are predominantly creating digital products and services.
                 Think e-commerce, SaaS, digital content. This is by no means an
-                exhaustive list! These are business models that benefit from
+                exhaustive list. These are business models that benefit from
                 decreasing costs of technology yet remain relatively scalable
                 in nature.
             </p>
@@ -104,7 +104,7 @@ const faqPage = `
             </p>
 
             <p class="answer">
-                We are committed building a portfolio of companies that reflects
+                We are committed to building a portfolio of companies that reflects
                 the diversity of the world we live in. We believe this model of
                 investment levels the playing field in two ways.
             </p>
@@ -121,9 +121,8 @@ const faqPage = `
                 Secondly, we are looking for realistic targets. No need to promise
                 the world to us. We’d rather see credible and thoughtful milestones.
                 What we believe, and what we’ve seen so far, is that this invites a
-                less entitled profile of founder. We’re exciting to see how this
-                plays out as we start investing with inclusion core to our thesis,
-                as well as sharing this journey.
+                less entitled profile of founder. We’re excited to see how this
+                plays out as we start investing with inclusion core to our thesis.
             </p>
 
             <p class="answer">
