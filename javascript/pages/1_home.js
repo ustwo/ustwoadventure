@@ -35,7 +35,7 @@ const homePage = `
                 </p>
                 <p>
                     No equity by default, shared revenue, and a capped return.
-                    Our investment gives founders the option to grow their company
+                    Our model gives founders the option to grow their company
                     as they see fit.
                 </p>
                 <a class="nav button internal" data-pathname="/approach" href="approach">Our approach</a>
@@ -71,7 +71,7 @@ const homePage = `
                     partners, we believe that we can unleash the “collective genius” of
                     all of us.
                 </p>
-                <a class="button external" href="https://ustwo.com">ustwo.com</a>
+                <a class="button external" href="https://ustwo.com" target="_blank">ustwo.com</a>
             </div>
 
             <video autoplay playsinline loop muted
