@@ -82,7 +82,16 @@ modalContainer.innerHTML = createModals(portfolioArray).join("");
 
 
 if (routes.hasOwnProperty(window.location.pathname)) {
-    goToPage(window.location.pathname);
+    pageContentContainer.innerHTML = routes[window.location.pathname];
+
+    let title = capitalizeFirstLetter(window.location.pathname.split("/")[1]);
+    if (title == "Faq") title = "FAQ";
+    document.title = (title == "") ? "ustwo Adventure" : `${title} — ustwo Adventure`;
+
+    lzy();
+    navLinkSetup();
+    portfolioItemLinkSetup();
+    if (window.location.pathname == "/approach") approachStageScroll();
 } else {
     goTo404();
 }

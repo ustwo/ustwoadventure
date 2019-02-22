@@ -22,7 +22,7 @@
 }
 
 .home-content .top-row .latest-investment {
-	margin-top: 240px;
+	margin-top: 230px;
 	margin-right: 20px;
 	margin-left: 90px;
 	--latestInvestmentImageWidth: 350px;
@@ -105,7 +105,7 @@
 }
 
 .home-content .our-portfolio {
-	margin: -140px 0 auto 0;
+	margin: -130px 0 auto 0;
 	max-width: 360px;
 }
 
@@ -373,7 +373,7 @@
 		margin-bottom: 100px;
 	}
 	.home-content .top-row {
-		margin-bottom: 60px;
+		margin-bottom: 70px;
 	}
 	.home-content .top-row .path-for-companies h2 {
 		max-width: 260px;

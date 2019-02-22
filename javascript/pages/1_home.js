@@ -35,7 +35,7 @@ const homePage = `
                 </p>
                 <p>
                     No equity by default, shared revenue, and a capped return.
-                    Our approach gives founders the option to grow their company
+                    Our investment gives founders the option to grow their company
                     as they see fit.
                 </p>
                 <a class="nav button internal" data-pathname="/approach" href="approach">Our approach</a>

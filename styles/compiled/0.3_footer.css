@@ -164,7 +164,7 @@ footer .right .more-juice a.external::after {
 	}
 	footer .right {
 		margin-right: 0;
-		width: 82%;
+		width: 85%;
 		flex-wrap: wrap;
 	}
 	footer .right .find-us {
@@ -178,7 +178,7 @@ footer .right .more-juice a.external::after {
 
 @media (max-width: 390px) {
 	footer .right {
-		width: 98%;
+		width: 100%;
 	}
 }
 
