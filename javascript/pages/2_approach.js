@@ -14,7 +14,7 @@ const approachPage = `
             </p>
 
             <blockquote>
-                Your business is yours to keep
+                Build a business on your terms
             </blockquote>
 
             <p>

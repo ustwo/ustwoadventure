@@ -75,7 +75,7 @@ const homePage = `
             </div>
 
             <video autoplay playsinline loop muted
-                src="https://player.vimeo.com/external/310346824.sd.mp4?s=5907d9389a6114dec39081532a102d4101c32c6d&profile_id=165"
+                src="https://player.vimeo.com/external/310346824.sd.mp4?s=5907d9389a6114dec39081532a102d4101c32c6d&profile_id=164"
                 poster="images/monument-valley.jpg">
             </video>
 
