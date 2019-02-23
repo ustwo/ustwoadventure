@@ -108,7 +108,7 @@ a.button.external:hover {
 }
 
 .page-content-container {
-	min-height: 55vh;
+	min-height: 200vh;
 	transition: opacity 0.15s, transform 0.15s ease-in-out;
 }
 
