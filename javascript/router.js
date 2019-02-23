@@ -38,7 +38,7 @@ const metaDescription = document.querySelector("meta[name='description']");
 
 
 
-const goToPage = pathName => {
+const goToPage = (pathName, scroll) => {
     const page = routes.find(route => route.pathname == pathName);
     document.title = page.title;
     metaDescription.setAttribute("content", page.description);
@@ -48,7 +48,7 @@ const goToPage = pathName => {
 
     setTimeout(() => {
         pageContentContainer.innerHTML = page.pageContent;
-        if (window.pageYOffset > 100) window.scrollTo(0, 0);
+        if (window.pageYOffset > 100 && scroll) window.scrollTo(0, 0);
         pageContentContainer.classList.remove("transition");
 
         lzy();
@@ -80,7 +80,7 @@ const navLinkSetup = () => {
             pathName = link.getAttribute("data-pathname");
             if (pathName != window.location.pathname) {
                 window.history.pushState({}, pathName, window.location.origin + pathName);
-                goToPage(pathName);
+                goToPage(pathName, scroll);
             }
             e.preventDefault();
         });
