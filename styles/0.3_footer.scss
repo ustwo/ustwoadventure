@@ -95,7 +95,7 @@ footer {
                 display: inline-block;
                 width: 12px;
                 height: 12px;
-                margin-left: 6px;
+                margin-left: 7px;
                 margin-bottom: -1px;
             }
 
@@ -105,11 +105,18 @@ footer {
             }
         }
 
-        .more-juice a.external {
+        .more-juice a.external:first-of-type {
             pointer-events: none;
             text-decoration: line-through;
             &::after {
+                content: "(coming soon)";
+                font-size: 0.85em;
                 background-image: none;
+                transform: rotate(0);
+                width: max-content;
+                    width: -moz-max-content;
+                    width: -ms-max-content;
+                    width: -webkit-max-content;
             }
         }
     }
