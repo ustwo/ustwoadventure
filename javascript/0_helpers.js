@@ -6,9 +6,6 @@ const kebabCase = string => {
 };
 
 
-const capitalizeFirstLetter = string => string.charAt(0).toUpperCase() + string.slice(1);
-
-
 const shuffle = a => {
     for (let i = a.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -27,7 +24,7 @@ const lzy = (offset = 400) => {
         images.forEach(image => image.setAttribute("src", image.getAttribute("data-src")));
 
     } else {
-        
+
         const onIntersection = entries => {
             entries.forEach(entry => {
                 if (entry.intersectionRatio > 0) {
