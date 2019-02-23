@@ -18,18 +18,16 @@ const shuffle = a => {
 };
 
 
-var ua = navigator.userAgent || navigator.vendor || window.opera;
-var isInstagram = (ua.indexOf('Instagram') > -1) ? true : false;
-
 const lzy = (offset = 400) => {
+
     const images = document.querySelectorAll("[data-src]");
 
-    if (isInstagram) {
+    if (!window.IntersectionObserver) {
 
         images.forEach(image => image.setAttribute("src", image.getAttribute("data-src")));
 
-	} else {
-
+    } else {
+        
         const onIntersection = entries => {
             entries.forEach(entry => {
                 if (entry.intersectionRatio > 0) {
@@ -46,6 +44,6 @@ const lzy = (offset = 400) => {
             imageEl.setAttribute("src", imageEl.getAttribute("data-src"));
         };
         images.forEach(image => observer.observe(image));
-
     }
+
 };
