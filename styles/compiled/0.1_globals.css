@@ -107,12 +107,12 @@ a.button.external:hover {
 	background-position: calc(100% - 13px) 50%;
 }
 
-.content-wrapper {
+.page-content-container {
 	min-height: 55vh;
 	transition: opacity 0.15s, transform 0.15s ease-in-out;
 }
 
-.content-wrapper.transition {
+.page-content-container.transition {
 	opacity: 0;
 	transform: translate(0, 3px);
 }
