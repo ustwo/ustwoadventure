@@ -16,15 +16,11 @@ const shuffle = a => {
 
 
 const lzy = (offset = 400) => {
-
     const images = document.querySelectorAll("[data-src]");
 
     if (!window.IntersectionObserver) {
-
         images.forEach(image => image.setAttribute("src", image.getAttribute("data-src")));
-
     } else {
-
         const onIntersection = entries => {
             entries.forEach(entry => {
                 if (entry.intersectionRatio > 0) {
@@ -42,5 +38,4 @@ const lzy = (offset = 400) => {
         };
         images.forEach(image => observer.observe(image));
     }
-
 };

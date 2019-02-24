@@ -54,7 +54,7 @@ const approachPage = `
                 <h2 class="number" data-number="2">2</h2>
                 <p class="stage-title">No equity by default</p>
                 <p class="stage-copy">
-                    This is about preserving founders’ most valuable asset. We
+                    This is about preserving a founder's most valuable asset. We
                     can find other ways of realising value (see number 3).
                 </p>
             </div>

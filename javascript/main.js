@@ -51,8 +51,8 @@ footerADVLetters.forEach(letter => {
 
 
 const approachStageScroll = () => {
-    if (window.innerWidth < 450) {
-        const approachStages = document.querySelectorAll(".stages div");
+    const approachStages = document.querySelectorAll(".approach-content .stages div");
+    if (window.innerWidth < 450 && approachStages) {
         const onIntersection = entries => {
             entries.forEach(entry => {
                 if (entry.intersectionRatio > 0) {

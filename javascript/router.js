@@ -38,24 +38,27 @@ const metaDescription = document.querySelector("meta[name='description']");
 
 
 
-const goToPage = (pathName, scroll) => {
+const goToPage = (pathName, transition) => {
     const page = routes.find(route => route.pathname == pathName);
     document.title = page.title;
     metaDescription.setAttribute("content", page.description);
-
-    pageContentContainer.classList.add("transition");
     if (orbitLetters[0].innerHTML != "A") orbitLetterChange("ADVENTURE");
 
-    setTimeout(() => {
-        pageContentContainer.innerHTML = page.pageContent;
-        if (window.pageYOffset > 100 && scroll) window.scrollTo(0, 0);
-        pageContentContainer.classList.remove("transition");
+    if (transition) {
+        pageContentContainer.classList.add("transition");
+        setTimeout(() => {
+            pageContentContainer.innerHTML = page.pageContent;
+            if (window.pageYOffset > 100) window.scrollTo(0, 0);
+            pageContentContainer.classList.remove("transition");
 
-        lzy();
-        navLinkSetup();
-        portfolioItemLinkSetup();
-        if (pathName == "/approach") approachStageScroll();
-    }, 200);
+            pageSetupFunctions();
+        }, 200);
+    } else {
+        pageContentContainer.innerHTML = page.pageContent;
+
+        pageSetupFunctions();
+    }
+
 };
 
 
@@ -66,8 +69,16 @@ const goTo404 = () => {
 
     if (orbitLetters[0].innerHTML != "4") orbitLetterChange("404ERROR-");
 
-    lzy();
+    pageSetupFunctions();
+};
+
+
+
+const pageSetupFunctions = () => {
     navLinkSetup();
+    portfolioItemLinkSetup();
+    lzy();
+    approachStageScroll();
 };
 
 
@@ -80,7 +91,7 @@ const navLinkSetup = () => {
             pathName = link.getAttribute("data-pathname");
             if (pathName != window.location.pathname) {
                 window.history.pushState({}, pathName, window.location.origin + pathName);
-                goToPage(pathName, scroll);
+                goToPage(pathName, "transition");
             }
             e.preventDefault();
         });
