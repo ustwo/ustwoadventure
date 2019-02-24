@@ -40,8 +40,10 @@ const metaDescription = document.querySelector("meta[name='description']");
 
 const goToPage = (pathName, transition) => {
     const page = routes.find(route => route.pathname == pathName);
+
     document.title = page.title;
     metaDescription.setAttribute("content", page.description);
+
     if (orbitLetters[0].innerHTML != "A") orbitLetterChange("ADVENTURE");
 
     if (transition) {
@@ -55,10 +57,8 @@ const goToPage = (pathName, transition) => {
         }, 200);
     } else {
         pageContentContainer.innerHTML = page.pageContent;
-
         pageSetupFunctions();
     }
-
 };
 
 
