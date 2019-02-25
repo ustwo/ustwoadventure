@@ -36,7 +36,6 @@ const routes = [
 const pageContentContainer = document.querySelector(".page-content-container");
 const metaDescriptions = document.querySelectorAll(`
     meta[name="description"],
-    meta[itemprop="description"],
     meta[property="og:description"],
     meta[name="twitter:description"]
 `);
