@@ -254,7 +254,7 @@ const createModals = a => a.map(obj => {
                 </div>
                 <div class="modal-image">
                     <img class="background" data-src="${ obj.image }"/>
-                    <a href="${ obj.url }" target="_blank"> <img class="logo" src="${ obj.logo }"/> </a>
+                    <a href="${ obj.url }" target="_blank"> <img class="logo" data-src="${ obj.logo }"/> </a>
                 </div>
             </div>
         </div>
