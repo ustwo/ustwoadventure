@@ -34,7 +34,12 @@ const routes = [
 
 
 const pageContentContainer = document.querySelector(".page-content-container");
-const metaDescription = document.querySelector("meta[name='description']");
+const metaDescriptions = document.querySelectorAll(`
+    meta[name="description"],
+    meta[itemprop="description"],
+    meta[property="og:description"],
+    meta[name="twitter:description"]
+`);
 
 
 
@@ -42,7 +47,7 @@ const goToPage = (pathName, transition) => {
     const page = routes.find(route => route.pathname == pathName);
 
     document.title = page.title;
-    metaDescription.setAttribute("content", page.description);
+    metaDescriptions.forEach(tag => tag.setAttribute("content", page.description));
 
     if (orbitLetters[0].innerHTML != "A") orbitLetterChange("ADVENTURE");
 

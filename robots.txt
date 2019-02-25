@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /*?team=*
+Disallow: /residency
+Disallow: /join
+Disallow: /rolling
