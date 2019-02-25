@@ -71,3 +71,8 @@ const approachStageScroll = () => {
         approachStages.forEach(stage => observer.observe(stage));
     }
 };
+
+
+
+
+console.log("%c It's always fun looking under the hood :) ", "background: #f32d94; color: #fff", "https://ustwo.com/join-us");
