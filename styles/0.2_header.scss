@@ -67,8 +67,8 @@ header {
                 font-family: "futura-pt", futura, sans-serif;
                 font-size: 52px;
                 font-weight: bold;
-                color: #f32d94;
-                -webkit-text-stroke: 1.2px #f32d94;
+                color: var(--piglet);
+                -webkit-text-stroke: 1.2px var(--piglet);
 
                 transition: opacity 0.2s;
                 &.transition {
@@ -129,19 +129,17 @@ header {
     }
 
     nav {
-
         a, a:visited {
             margin-left: 60px;
 
             font-size: 20px;
             line-height: 1.6;
-            color: #646464;
+            color: var(--grey04);
 
             &:hover {
                 font-style: italic;
             }
         }
-
     }
 
 

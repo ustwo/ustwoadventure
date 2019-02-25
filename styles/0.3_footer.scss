@@ -1,14 +1,14 @@
 .separator {
     margin-top: 100px;
     height: 4px;
-    background-color: #f32d94;
+    background-color: var(--piglet);
 }
 
 footer {
     margin: 65px 0 55px 0;
 
     font-size: 16px;
-    color: #646464;
+    color: var(--grey04);
 
     display: flex;
     flex-direction: row;
@@ -19,7 +19,7 @@ footer {
     position: relative;
 
     a, a:visited {
-        color: #646464;
+        color: var(--grey04);
 
         width: max-content;
     }
@@ -39,7 +39,7 @@ footer {
             font-size: 42px;
             line-height: 1;
             letter-spacing: -5px;
-            color: #f32d94;
+            color: var(--piglet);
 
             span {
                 display: inline-block;
@@ -75,7 +75,7 @@ footer {
         p {
             margin-bottom: 15px;
 
-            color: #f32d94;
+            color: var(--piglet);
             font-weight: 800;
         }
 

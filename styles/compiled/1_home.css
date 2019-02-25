@@ -34,7 +34,7 @@
 	font-size: 16px;
 	line-height: 1;
 	padding: 4px;
-	background-color: #f32d94;
+	background-color: var(--piglet);
 	color: #fff;
 	width: max-content;
 	width: -moz-max-content;
@@ -64,7 +64,7 @@
 .home-content .top-row .latest-investment h1 {
 	font-size: 62px;
 	-webkit-text-stroke: 1.5px;
-	-webkit-text-stroke-color: #f32d94;
+	-webkit-text-stroke-color: var(--piglet);
 	-webkit-text-fill-color: transparent;
 	width: max-content;
 	width: -moz-max-content;
@@ -86,7 +86,7 @@
 }
 
 .home-content .top-row .latest-investment:hover div.image-container img.company-image {
-	box-shadow: -4px 4px 0px 0px #f32d94;
+	box-shadow: -4px 4px 0px 0px var(--piglet);
 	transform: translate(4px, -4px);
 	filter: brightness(104%);
 }
@@ -99,8 +99,8 @@
 	-webkit-text-stroke: 0px;
 	-webkit-text-stroke-color: #fff;
 	-webkit-text-fill-color: #fff;
-	background-color: #f32d94;
-	box-shadow: -7px 7px 0px -1px #646464;
+	background-color: var(--piglet);
+	box-shadow: -7px 7px 0px -1px var(--grey04);
 	transform: translate(7px, -7px);
 }
 

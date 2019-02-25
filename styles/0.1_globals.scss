@@ -1,3 +1,9 @@
+:root {
+    --piglet: #f32d94;
+    --nonBlack: #333333;
+    --grey04: #646464;
+}
+
 body {
     margin: auto;
     padding: 0 60px;
@@ -7,7 +13,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-size: 18px;
     line-height: 1.3;
-    color: #333;
+    color: var(--nonBlack);
 }
 
 h1 {
@@ -20,7 +26,7 @@ h1 {
     font-weight: 800;
     letter-spacing: -0.4px;
     text-transform: uppercase;
-    color: #f32d94;
+    color: var(--piglet);
 }
 
 h2 {
@@ -32,7 +38,7 @@ h2 {
     line-height: 1.2;
     font-weight: 800;
     letter-spacing: -0.5px;
-    color: #f32d94;
+    color: var(--piglet);
 }
 
 blockquote {
@@ -40,7 +46,7 @@ blockquote {
     font-size: 36px;
     line-height: 1.6;
     text-align: center;
-    color: #646464;
+    color: var(--grey04);
 }
 
 p {
@@ -54,7 +60,7 @@ b {
 
 a, a:visited {
     text-decoration: none;
-    color: #333;
+    color: var(--nonBlack);
 }
 
 a.button {
@@ -64,7 +70,7 @@ a.button {
 
     padding: 10px 40px 10px 15px;
     box-sizing: border-box;
-    border: 1px solid #333;
+    border: 1px solid var(--nonBlack);
 
     font-size: 0.88em;
     text-transform: uppercase;
@@ -73,7 +79,7 @@ a.button {
     transition: background-position 0.07s;
 
     &:hover {
-        box-shadow: inset 0 0 0 0.5px #333;
+        box-shadow: inset 0 0 0 0.5px var(--nonBlack);
     }
 
     &.internal {

@@ -70,15 +70,15 @@ input[type=text], input[type=email], select {
   margin: 12px 0;
   display: inline-block;
   border-width: 0 0 2px;
-  border-color: #f32d94;
+  border-color: var(--piglet);
   box-sizing: border-box;
   font-size: 20px;
-  color: #333333;
+  color: var(--nonBlack)333;
   font-family: 'Px', sans-serif;
 }
 
 input[type=button], input[type=submit], input[type=reset] {
-  background-color: #f32d94;
+  background-color: var(--piglet);
   border: none;
   color: white;
   padding: 12px 24px;
@@ -90,7 +90,7 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 ::placeholder {
-  color: #f32d94;
+  color: var(--piglet);
 }
 
 textarea {
@@ -99,10 +99,10 @@ textarea {
   margin: 12px 0;
   display: inline-block;
   border-width: 2px 2px 2px 2px;
-  border-color: #f32d94;
+  border-color: var(--piglet);
   box-sizing: border-box;
   font-size: 20px;
-  color: #333333;
+  color: var(--nonBlack)333;
   font-family: 'Px', sans-serif;
   resize: vertical;
 }

@@ -11,7 +11,7 @@
 	font-size: 1.08em;
 	font-weight: 800;
 	line-height: 1.7;
-	color: #f32d94;
+	color: var(--piglet);
 	text-align: right;
 	text-transform: uppercase;
 	transition: transform 0.08s;
@@ -50,7 +50,7 @@
 }
 
 .portfolio-item:hover div.image-container img.company-image {
-	box-shadow: -0px 6px 0px -2px #f32d94;
+	box-shadow: 0px 6px 0px -2px var(--piglet);
 	transform: translate(0px, -5px);
 	filter: contrast(92%) brightness(104%);
 }
@@ -68,7 +68,7 @@
 }
 
 .portfolio-item:focus div.image-container img.company-image {
-	box-shadow: -0px 3px 0px 0px #f32d94;
+	box-shadow: 0px 3px 0px 0px var(--piglet);
 	transform: translate(0px, -3px);
 }
 

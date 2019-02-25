@@ -59,7 +59,7 @@
                 &::after {
                     content: attr(data-number);
                     -webkit-text-stroke: 0;
-                    -webkit-text-fill-color: #f32d94;
+                    -webkit-text-fill-color: var(--piglet);
 
                     position: absolute;
                     top: -0px;
