@@ -1,6 +1,6 @@
 const latestInvestment = portfolioArray[portfolioArray.length - 1];
 const latestInvestmentItem = `
-    <a href="#modal-${ kebabCase(latestInvestment.name) }" target="_blank" rel="modal:open">
+    <a href="#modal-${ kebabCase(latestInvestment.name) }" rel="modal:open">
         <p class="tag">Latest investment:</p>
         <div class="image-container">
             <img class="company-image" data-src="${ latestInvestment.image }">
@@ -71,7 +71,7 @@ const homePage = `
                     partners, we believe that we can unleash the “collective genius” of
                     all of us.
                 </p>
-                <a class="button external" href="https://ustwo.com" target="_blank">ustwo.com</a>
+                <a class="button external" href="https://ustwo.com" target="_blank" rel="noopener">ustwo.com</a>
             </div>
 
             <video autoplay playsinline loop muted

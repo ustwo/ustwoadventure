@@ -228,7 +228,7 @@ const portfolioArray = [
 const randomOffset = () => 10 * (Math.floor(Math.random() * 11)) - 50;
 const createPortfolioItems = a => a.map(obj => {
     return `
-        <a class="portfolio-item" href="#modal-${ kebabCase(obj.name) }" target="_blank" rel="modal:open"
+        <a class="portfolio-item" href="#modal-${ kebabCase(obj.name) }" rel="modal:open"
         style="--offset: ${randomOffset()}px">
             <p class="name">${ obj.name }</p>
             <div class="image-container">
@@ -247,14 +247,14 @@ const createModals = a => a.map(obj => {
             <div class="modal-inner">
                 <div class="modal-details">
                     <h2>${ obj.name }</h2>
-                    <a class="site-link" href="${ obj.url }" target="_blank">${ obj.tidyurl }</a>
-                    <a class="site-link-mobile" href="${ obj.url }" target="_blank">${ obj.name }</a>
+                    <a class="site-link" href="${ obj.url }" target="_blank" rel="noopener">${ obj.tidyurl }</a>
+                    <a class="site-link-mobile" href="${ obj.url }" target="_blank" rel="noopener">${ obj.name }</a>
                     <p class="line">${ obj.line }</p>
                     <p class="copy">${ obj.copy }</p>
                 </div>
                 <div class="modal-image">
                     <img class="background" data-src="${ obj.image }"/>
-                    <a href="${ obj.url }" target="_blank"> <img class="logo" src="${ obj.logo }"/> </a>
+                    <a href="${ obj.url }" target="_blank" rel="noopener"> <img class="logo" src="${ obj.logo }"/> </a>
                 </div>
             </div>
         </div>

@@ -19,7 +19,7 @@ const faqPage = `
                 That said, we are actively making connections with founders out there
                 who are interested in this form of investment in the future or would
                 like to learn more. If that’s you, feel free to drop us a line on
-                <a href="mailto:hello.adventure@ustwo.com" targer="_blank">
+                <a href="mailto:hello.adventure@ustwo.com" target="_blank" rel="noopener">
                     hello.adventure@ustwo.com.
                 </a>
             </p>
