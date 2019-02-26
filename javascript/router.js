@@ -15,7 +15,7 @@ const routes = [
         pathname: "/portfolio",
         pageContent: portfolioPage,
         title: "Portfolio — ustwo Adventure",
-        description: "Our family of companies."
+        description: "Our family of companies. ustwo Adventure invests in creative companies, differently."
     },
     {
         pathname: "/apply",
