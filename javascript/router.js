@@ -21,7 +21,7 @@ const routes = [
         pathname: "/apply",
         // pageContent: applyPage,
         title: "Apply — ustwo Adventure",
-        description: "Apply to ustwo Adventure — investment, but differently."
+        description: "Apply to ustwo Adventure — investmenting in creative companies, differently."
     },
     {
         pathname: "/faq",
