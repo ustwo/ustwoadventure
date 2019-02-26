@@ -27,7 +27,7 @@ const routes = [
         pathname: "/faq",
         pageContent: faqPage,
         title: "FAQ — ustwo Adventure",
-        description: "Frequently asked questions."
+        description: "Frequently asked questions. ustwo Adventure invests in creative companies, differently."
     }
 ];
 
