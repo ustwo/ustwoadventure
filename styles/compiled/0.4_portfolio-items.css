@@ -114,7 +114,7 @@
 		--portfolioItemWidth: 168px;
 	}
 	.portfolio-item div.image-container img.company-image {
-		height: calc(var(--portfolioItemWidth) * 1.2);
+		height: calc(var(--portfolioItemWidth) * 1.22);
 	}
 }
 
@@ -129,13 +129,10 @@
 		transform: translate(var(--offset), 0);
 	}
 	:root {
-		--portfolioItemWidth: 195px;
+		--portfolioItemWidth: 190px;
 	}
 	.portfolio-item p.name {
-		font-size: 1.16em;
-	}
-	.portfolio-item div.image-container img.company-image {
-		height: calc(var(--portfolioItemWidth) * 1.2);
+		font-size: 1.12em;
 	}
 	.portfolio-item p.copy {
 		font-size: 1em;
@@ -150,6 +147,6 @@
 		--portfolioItemWidth: 185px;
 	}
 	.portfolio-item div.image-container img.company-image {
-		height: calc(var(--portfolioItemWidth) * 1.1);
+		height: calc(var(--portfolioItemWidth) * 1.12);
 	}
 }

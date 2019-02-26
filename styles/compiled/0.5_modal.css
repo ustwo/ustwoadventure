@@ -258,7 +258,9 @@
 	}
 	.modal .modal-inner .modal-image img.logo {
 		max-width: 120px;
-		max-height: 50px;
+		max-height: 45px;
+		bottom: 22px;
+		left: 22px;
 	}
 }
 

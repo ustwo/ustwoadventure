@@ -124,7 +124,7 @@
 
         div.image-container {
             img.company-image {
-                height: calc(var(--portfolioItemWidth) * 1.2);
+                height: calc(var(--portfolioItemWidth) * 1.22);
             }
         }
     }
@@ -136,18 +136,12 @@
 
 
     @media (max-width: 380px) {
-        @at-root :root {--portfolioItemWidth: 195px}
+        @at-root :root {--portfolioItemWidth: 190px}
 
         transform: translate(var(--offset), 0);
 
         p.name {
-            font-size: 1.16em;
-        }
-
-        div.image-container {
-            img.company-image {
-                height: calc(var(--portfolioItemWidth) * 1.2);
-            }
+            font-size: 1.12em;
         }
 
         p.copy {
@@ -163,7 +157,7 @@
 
         div.image-container {
             img.company-image {
-                height: calc(var(--portfolioItemWidth) * 1.1);
+                height: calc(var(--portfolioItemWidth) * 1.12);
             }
         }
     }
