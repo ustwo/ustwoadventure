@@ -232,7 +232,7 @@ const createPortfolioItems = a => a.map(obj => {
         style="--offset: ${randomOffset()}px">
             <p class="name">${ obj.name }</p>
             <div class="image-container">
-                <img class="company-image" data-src="${ obj.image }">
+                <img class="company-image" data-src="${ obj.image }" alt="${ obj.name }'s company photo">
                 <img class="arrow" src="images/arrow_white.svg">
             </div>
             <p class="copy">${ obj.line }</p>
@@ -253,7 +253,7 @@ const createModals = a => a.map(obj => {
                     <p class="copy">${ obj.copy }</p>
                 </div>
                 <div class="modal-image">
-                    <img class="background" data-src="${ obj.image }"/>
+                    <img class="background" data-src="${ obj.image }" alt="${ obj.name }'s company photo"/>
                     <a href="${ obj.url }" target="_blank" rel="noopener"> <img class="logo" src="${ obj.logo }"/> </a>
                 </div>
             </div>

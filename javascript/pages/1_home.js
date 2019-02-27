@@ -3,7 +3,7 @@ const latestInvestmentItem = `
     <a href="#modal-${ kebabCase(latestInvestment.name) }" rel="modal:open">
         <p class="tag">Latest investment:</p>
         <div class="image-container">
-            <img class="company-image" data-src="${ latestInvestment.image }">
+            <img class="company-image" data-src="${ latestInvestment.image }" alt="${ latestInvestment.name }'s company photo">
             <img class="arrow" src="images/arrow_white.svg">
         </div>
         <h1>${ latestInvestment.name }</h1>
