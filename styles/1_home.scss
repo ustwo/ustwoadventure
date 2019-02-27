@@ -102,6 +102,9 @@
 
                     img.arrow {
                         transform: translate(7px, -4px);
+                        &:hover {
+                            transform: translate(10px, -4px);
+                        }
                     }
                 }
 

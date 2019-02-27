@@ -4,7 +4,7 @@ const latestInvestmentItem = `
         <p class="tag">Latest investment:</p>
         <div class="image-container">
             <img class="company-image" data-src="${ latestInvestment.image }" alt="${ latestInvestment.name }'s company photo">
-            <img class="arrow" src="images/arrow_white.svg" alt="">
+            <img class="arrow" data-src="images/arrow_white.svg" alt="">
         </div>
         <h1>${ latestInvestment.name }</h1>
         <p class="copy">${ latestInvestment.line }</p>

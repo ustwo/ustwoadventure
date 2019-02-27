@@ -95,6 +95,10 @@
 	transform: translate(7px, -4px);
 }
 
+.home-content .top-row .latest-investment:hover div.image-container img.arrow:hover {
+	transform: translate(10px, -4px);
+}
+
 .home-content .top-row .latest-investment:hover h1 {
 	-webkit-text-stroke: 0px;
 	-webkit-text-stroke-color: #fff;
