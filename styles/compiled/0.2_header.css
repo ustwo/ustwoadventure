@@ -239,10 +239,15 @@ header .logo ul li:nth-child(7) {
 }
 
 header nav a, header nav a:visited {
-	margin-left: 60px;
+	margin-left: 44px;
+	padding: 0.4em;
 	font-size: 20px;
 	line-height: 1.6;
 	color: var(--grey04);
+}
+
+header nav a:last-child, header nav a:visited:last-child {
+	margin-right: -0.4em;
 }
 
 header nav a:hover, header nav a:visited:hover {
@@ -262,8 +267,14 @@ header nav a:hover, header nav a:visited:hover {
 		--translateY: -90px;
 	}
 	header nav a {
-		margin-left: 40px;
+		margin-left: 36px;
 		font-size: 18px;
+	}
+}
+
+@media (max-width: 680px) {
+	header nav a {
+		margin-left: 26px;
 	}
 }
 
@@ -283,7 +294,7 @@ header nav a:hover, header nav a:visited:hover {
 		--translateY: -85px;
 	}
 	header nav a {
-		margin-left: 25px;
+		margin-left: 16px;
 	}
 }
 
@@ -293,8 +304,12 @@ header nav a:hover, header nav a:visited:hover {
 	}
 	header nav a {
 		display: block;
-		margin-bottom: 1px;
+		padding: 0.1em;
+		margin: -0.1em -0.1em -0.1em -0.1em;
 		text-align: right;
+	}
+	header nav a:last-child {
+		margin-right: -0.1em;
 	}
 }
 

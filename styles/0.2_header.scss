@@ -130,11 +130,16 @@ header {
 
     nav {
         a, a:visited {
-            margin-left: 60px;
+            margin-left: 44px;
+            padding: 0.4em;
 
             font-size: 20px;
             line-height: 1.6;
             color: var(--grey04);
+
+            &:last-child {
+                margin-right: -0.4em;
+            }
 
             &:hover {
                 font-style: italic;
@@ -162,8 +167,15 @@ header {
         }
 
         nav a {
-            margin-left: 40px;
+            margin-left: 36px;
             font-size: 18px;
+        }
+    }
+
+
+    @media (max-width: 680px) {
+        nav a {
+            margin-left: 26px;
         }
     }
 
@@ -186,7 +198,7 @@ header {
         }
 
         nav a {
-            margin-left: 25px;
+            margin-left: 16px;
         }
     }
 
@@ -196,8 +208,13 @@ header {
 
         nav a {
             display: block;
-            margin-bottom: 1px;
+            padding: 0.1em;
+            margin: -0.1em -0.1em -0.1em -0.1em;
             text-align: right;
+
+            &:last-child {
+                margin-right: -0.1em;
+            }
         }
     }
 
