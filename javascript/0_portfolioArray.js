@@ -1,5 +1,4 @@
 const portfolioArray = [
-
     // Exited/Succailed
     {
         name: "Sidestory",
@@ -10,6 +9,15 @@ const portfolioArray = [
         line: "Curated experiences, led by insiders",
         copy: "A SideStory Experience is just you and an Insider discovering a particular neighbourhood or theme in great detail: they'll show you hidden gems and introduce you to key movers and shakers, from food to architecture to art."
     },
+    {
+        name: "Dojo",
+        url: "https://www.dojoapp.co",
+        tidyurl: "dojoapp.co",
+        image: "images/team_assets/dojo_image.jpg",
+        logo: "images/team_assets/dojo_logo.png",
+        line: "The best places and events in your city",
+        copy: "With editorial selections, high quality reviews, and insider info, our magazine style guide tells you whats going on daily and weekly, so you know what to enjoy."
+    },
     // {
     //     name: "Easle",
     //     url: "https://www.easle.co",
@@ -19,7 +27,6 @@ const portfolioArray = [
     //     line: "A freelancer platform getting artists hired",
     //     copy: "We find the best work for the best artists. Our creators are vetted by industry experts, and we take care of all the tedious paperwork like timesheets, contracts and invoices."
     // },
-
     // Live
     {
         name: "Tribe",
@@ -56,15 +63,6 @@ const portfolioArray = [
         logo: "images/team_assets/uptree_logo.png",
         line: "A career mobility platform for students",
         copy: "We are providing students with an online resource to find early career events, internship and jobs to launch their future pathway."
-    },
-    {
-        name: "Dojo",
-        url: "https://www.dojoapp.co",
-        tidyurl: "dojoapp.co",
-        image: "images/team_assets/dojo_image.jpg",
-        logo: "images/team_assets/dojo_logo.png",
-        line: "The best places and events in your city",
-        copy: "With editorial selections, high quality reviews, and insider info, our magazine style guide tells you whats going on daily and weekly, so you know what to enjoy."
     },
     {
         name: "Hoop",
