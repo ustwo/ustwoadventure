@@ -19,9 +19,11 @@ if ("ontouchstart" in document.documentElement) {
 
 const orbitLetters = Array.from(document.querySelectorAll("header .logo ul li"));
 const orbitLetterChange = string => {
-    if (string.length == 9) {
-        orbitLetters.forEach(letter => letter.classList.add("transition"));
+    if (string.length <= 50) {
+        if (string.length < 9) string = string.padEnd(9, "-");
+        string = string.toUpperCase();
 
+        orbitLetters.forEach(letter => letter.classList.add("transition"));
         setTimeout(() => {
             for (var i = 0; i < orbitLetters.length; i++) {
                 orbitLetters[i].innerHTML = string[i];
