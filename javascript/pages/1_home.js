@@ -12,7 +12,7 @@ const latestInvestmentItem = `
 `;
 
 
-const portfolioMinusLatest = portfolioArray.slice(0, portfolioArray.length - 1);
+const portfolioMinusLatest = portfolioArray.slice(succailuredCount, portfolioArray.length - 1);
 const portfolioPreviewItems = shuffle(portfolioMinusLatest).slice(0, 5);
 const portfolioPreview = createPortfolioItems(portfolioPreviewItems).join("");
 

@@ -1,3 +1,4 @@
+const succailuredCount = 2;
 const portfolioArray = [
     // Exited/Succailed
     {
