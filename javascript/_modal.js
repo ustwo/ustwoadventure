@@ -1,5 +1,5 @@
 const activeModalContainer = document.querySelector(".active-modal-container");
-const closeModalButton = `<a href="#close-modal" rel="modal:close" class="close-modal "> </a>`;
+const closeModalButton = document.querySelector("a.close-modal");
 
 let modalLinks = document.querySelectorAll("a.portfolio-item, a.latest-investment-item");
 let clonedModal;
@@ -19,6 +19,7 @@ modalLinks.forEach(modalLink => {
 
 const openModal = modal => {
     clonedModal = modal.cloneNode(true);
+    clonedModal.appendChild(closeModalButton);
     activeModalContainer.prepend(clonedModal);
     activeModalContainer.classList.add("show");
 };
