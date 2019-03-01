@@ -1,5 +1,5 @@
 const activeModalContainer = document.querySelector(".active-modal-container");
-const closeModalButton = document.querySelector ("a.close-modal");
+const closeModalButton = `<a href="#close-modal" rel="modal:close" class="close-modal "> </a>`;
 
 let modalLinks = document.querySelectorAll("a.portfolio-item, a.latest-investment-item");
 let clonedModal;
@@ -7,8 +7,9 @@ let clonedModal;
 
 modalLinks.forEach(modalLink => {
     modalLink.addEventListener("click", e => {
-        const modal = document.querySelector(modalLink.href);
-
+        const modalHref = modalLink.href;
+        const modalId = modalHref.substr(modalHref.indexOf("#"), modalHref.length);
+        const modal = document.querySelector(modalId);
         openModal(modal);
 
         e.preventDefault();
@@ -18,8 +19,8 @@ modalLinks.forEach(modalLink => {
 
 const openModal = modal => {
     clonedModal = modal.cloneNode(true);
-
-    activeModalContainer.appendChild(clonedModal);
+    activeModalContainer.prepend(clonedModal);
+    activeModalContainer.classList.add("show");
 };
 
 
@@ -29,8 +30,8 @@ const closeModal = () => {
 };
 
 
-document.addEventListener("click", e => {
-    if (e.target != clonedModal) closeModal();
-});
+// document.addEventListener("click", e => {
+//     if (e.target != clonedModal) closeModal();
+// });
 
-closeModalButton.addEventListener("click", closeModal());
+// closeModalButton.addEventListener("click", closeModal());
