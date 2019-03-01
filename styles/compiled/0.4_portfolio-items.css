@@ -28,7 +28,6 @@
 	object-fit: cover;
 	filter: contrast(92%);
 	transition: transform 0.08s, box-shadow 0.08s, filter 0.08s;
-	position: relative;
 }
 
 .portfolio-item div.image-container img.company-image::after {

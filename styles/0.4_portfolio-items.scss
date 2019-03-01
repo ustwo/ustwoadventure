@@ -28,8 +28,6 @@
 
             transition: transform 0.08s, box-shadow 0.08s, filter 0.08s;
 
-            position: relative;
-
             &::after {
                 content: " ";
                 position: absolute;
