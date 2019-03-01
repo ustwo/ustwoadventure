@@ -19,10 +19,11 @@
         position: relative;
 
         img.company-image {
+            display: block;
             width: var(--portfolioItemWidth);
             height: calc(var(--portfolioItemWidth) * 1.27);
-
             object-fit: cover;
+            
             filter: contrast(92%);
 
             transition: transform 0.08s, box-shadow 0.08s, filter 0.08s;
@@ -32,7 +33,7 @@
 
         img.arrow {
             position: absolute;
-            bottom: 21px;
+            bottom: 15px;
             left: 15px;
             width: 22px;
 

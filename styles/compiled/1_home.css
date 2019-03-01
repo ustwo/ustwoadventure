@@ -47,6 +47,7 @@
 }
 
 .home-content .top-row .latest-investment div.image-container img.company-image {
+	display: block;
 	width: var(--latestInvestmentImageWidth);
 	height: calc(var(--latestInvestmentImageWidth) * 0.858);
 	object-fit: cover;

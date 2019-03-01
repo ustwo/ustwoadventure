@@ -22,6 +22,7 @@
 }
 
 .portfolio-item div.image-container img.company-image {
+	display: block;
 	width: var(--portfolioItemWidth);
 	height: calc(var(--portfolioItemWidth) * 1.27);
 	object-fit: cover;
@@ -32,7 +33,7 @@
 
 .portfolio-item div.image-container img.arrow {
 	position: absolute;
-	bottom: 21px;
+	bottom: 15px;
 	left: 15px;
 	width: 22px;
 	transition: transform 0.08s;

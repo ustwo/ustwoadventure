@@ -48,6 +48,7 @@
                 z-index: -1;
 
                 img.company-image {
+                    display: block;
                     width: var(--latestInvestmentImageWidth);
                     height: calc(var(--latestInvestmentImageWidth) * 0.858);
                     object-fit: cover;
