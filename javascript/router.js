@@ -110,7 +110,7 @@ const navLinkSetup = () => {
 
 
 const portfolioItemLinkSetup = () => {
-    const portfolioItemElements = document.querySelectorAll("a.portfolio-item, .latest-investment a");
+    const portfolioItemElements = document.querySelectorAll("a.portfolio-item, a.latest-investment-item");
 
     if (portfolioItemElements) {
         portfolioItemElements.forEach(item => {
