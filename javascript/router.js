@@ -124,11 +124,6 @@ const portfolioItemLinkSetup = () => {
 
 
 
-const modalContainer = document.querySelector(".modal-container");
-modalContainer.innerHTML = createModals(portfolioArray).join("");
-
-
-
 if (routes.some(route => route.pathname == window.location.pathname)) {
     goToPage(window.location.pathname);
 } else {
@@ -144,19 +139,6 @@ window.onpopstate = () => {
         goTo404();
     }
 };
-
-
-
-if (window.location.hash) {
-    const query = window.location.hash.substring(1);
-    const parameters = query.split("&");
-    let companyName, val;
-    for (var i = 0; i < parameters.length; i++) {
-        val = parameters[i].split("=");
-        companyName = val[0];
-    }
-    $(`#modal-${companyName}`).modal();
-}
 
 
 
