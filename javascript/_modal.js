@@ -1,5 +1,6 @@
 const activeModalContainer = document.querySelector(".active-modal-container");
-const closeModalButton = document.querySelector("a.close-modal");
+const closeModalButton = document.createElement("a");
+closeModalButton.classList.add("close-modal");
 
 let modalLinks = document.querySelectorAll("a.portfolio-item, a.latest-investment-item");
 let clonedModal;
@@ -20,13 +21,16 @@ modalLinks.forEach(modalLink => {
 const openModal = modal => {
     clonedModal = modal.cloneNode(true);
     clonedModal.appendChild(closeModalButton);
-    activeModalContainer.prepend(clonedModal);
+
+    while (activeModalContainer.firstChild) activeModalContainer.removeChild(activeModalContainer.firstChild);
+    activeModalContainer.appendChild(clonedModal);
+
     activeModalContainer.classList.add("show");
 };
 
 
 const closeModal = () => {
-    activeModalContainer.removeChild(clonedModal);
+    while (activeModalContainer.firstChild) activeModalContainer.removeChild(activeModalContainer.firstChild);
     activeModalContainer.classList.remove("show");
 };
 

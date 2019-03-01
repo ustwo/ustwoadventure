@@ -157,3 +157,7 @@ if (window.location.hash) {
     }
     $(`#modal-${companyName}`).modal();
 }
+
+
+
+console.log("%c It's always fun looking under the hood ツ ", "background: #f32d94; color: #fff", "--> https://ustwo.com/join-us");

@@ -29,22 +29,22 @@
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="https://use.typekit.net/hoo6hst.css">
-    <link rel="stylesheet" href="styles/fonts/px/stylesheet.css">
+    <link rel="stylesheet" href="styles/_fonts/px/stylesheet.css">
 
-    <link rel="stylesheet" href="styles/compiled/_reset.css">
-    <link rel="stylesheet" href="styles/compiled/0.1_globals.css">
-    <link rel="stylesheet" href="styles/compiled/0.2_header.css">
-    <link rel="stylesheet" href="styles/compiled/0.3_footer.css">
-    <link rel="stylesheet" href="styles/compiled/0.4_portfolio-items.css">
-    <link rel="stylesheet" href="styles/compiled/0.5_modal.css">
-    <link rel="stylesheet" href="styles/compiled/0.9_404.css">
-    <link rel="stylesheet" href="styles/compiled/1_home.css">
-    <link rel="stylesheet" href="styles/compiled/2_approach.css">
-    <link rel="stylesheet" href="styles/compiled/3_portfolio.css">
+    <link rel="stylesheet" href="styles/_reset.css">
 
-    <link rel="stylesheet" href="styles/compiled/5_faq.css">
+    <link rel="stylesheet" href="styles/components/compiled/0.1_globals.css">
+    <link rel="stylesheet" href="styles/components/compiled/0.2_header.css">
+    <link rel="stylesheet" href="styles/components/compiled/0.3_footer.css">
+    <link rel="stylesheet" href="styles/components/compiled/0.4_portfolio-items.css">
+    <link rel="stylesheet" href="styles/components/compiled/0.5_modals.css">
 
-    <!-- <link rel="stylesheet" href="styles/compiled/4_apply.css"> -->
+    <link rel="stylesheet" href="styles/pages/compiled/0.9_404.css">
+    <link rel="stylesheet" href="styles/pages/compiled/1_home.css">
+    <link rel="stylesheet" href="styles/pages/compiled/2_approach.css">
+    <link rel="stylesheet" href="styles/pages/compiled/3_portfolio.css">
+    <link rel="stylesheet" href="styles/pages/compiled/4_apply.css">
+    <link rel="stylesheet" href="styles/pages/compiled/5_faq.css">
 
     <link rel="icon" href="icons/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
@@ -87,11 +87,9 @@
 
 
 
-    <section class="modal-container"> </section>
+    <div class="modal-container"> </div>
 
-    <section class="active-modal-container modal blocker">
-        <a href="#close-modal" rel="modal:close" class="close-modal "> </a>
-    </section>
+    <div class="active-modal-container blocker"> </div>
 
 
 
@@ -114,11 +112,11 @@
                     <a href="https://www.iubenda.com/privacy-policy/50030836/cookie-policy" class="iubenda-nostyle no-brand iubenda-embed " title="Cookie Policy">
                         Cookie
                     </a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
-                    &
+                        &
                     <a href="https://www.iubenda.com/privacy-policy/50030836" class="iubenda-nostyle no-brand iubenda-embed " title="Privacy Policy">
                         Privacy
                     </a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
-                    policy
+                        policy
                 </p>
                 <p>
                     © ustwo Adventure, <script type="text/javascript">document.write(new Date().getFullYear())</script>
@@ -160,11 +158,16 @@
     <script> window.IntersectionObserver || document.write('<script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"> <\/script>') </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
-    <script> window.jQuery || document.write('<script src="javascript/jquery/jquery.min.js"> <\/script>') </script>
-    <script src="javascript/jquery/jquery.modal.js"> </script>
+    <script> window.jQuery || document.write('<script src="javascript/_jquery/jquery.min.js"> <\/script>') </script>
+    <script src="javascript/_jquery/jquery.modal.js"> </script>
 
-    <script src="javascript/0_helpers.js"> </script>
-    <script src="javascript/0_portfolioArray.js"> </script>
+    <script src="javascript/_helpers.js"> </script>
+    <script src="javascript/_portfolioArray.js"> </script>
+
+    <script src="javascript/components/0.2_header.js"> </script>
+    <script src="javascript/components/0.3_footer.js"> </script>
+    <script src="javascript/components/0.4_portfolio-items.js"> </script>
+    <script src="javascript/components/0.5_modals.js"> </script>
 
     <script src="javascript/pages/0.9_404.js"> </script>
     <script src="javascript/pages/1_home.js"> </script>
@@ -173,8 +176,7 @@
     <script src="javascript/pages/4_apply.js"> </script>
     <script src="javascript/pages/5_faq.js"> </script>
 
-    <script src="javascript/main.js"> </script>
-    <script src="javascript/router.js"> </script>
+    <script src="javascript/2_router.js"> </script>
 
     <!-- <script src="javascript/_modal.js"> </script> -->
 

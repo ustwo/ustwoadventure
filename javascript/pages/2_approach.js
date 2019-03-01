@@ -1,3 +1,26 @@
+const approachStageScroll = () => {
+    const approachStages = document.querySelectorAll(".approach-content .stages div");
+    if (window.innerWidth < 450 && approachStages) {
+        const onIntersection = entries => {
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0) {
+                    observer.unobserve(entry.target);
+                    stageScrolled(entry.target);
+                }
+            });
+        };
+        const observer = new IntersectionObserver(onIntersection, {
+            rootMargin: "-25%",
+            threshold: 0.5
+        });
+        const stageScrolled = stage => {
+            stage.classList.add("scrolled");
+        };
+        approachStages.forEach(stage => observer.observe(stage));
+    }
+};
+
+
 const approachPage = `
 
     <div class="approach-content">
