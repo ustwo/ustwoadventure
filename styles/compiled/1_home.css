@@ -54,6 +54,16 @@
 	transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
 }
 
+.home-content .top-row .latest-investment div.image-container img.company-image::after {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #eeeeee;
+}
+
 .home-content .top-row .latest-investment div.image-container img.arrow {
 	position: absolute;
 	top: 17px;
