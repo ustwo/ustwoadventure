@@ -29,7 +29,7 @@ if (window.location.hash) {
     let companyName, val;
     for (var i = 0; i < parameters.length; i++) {
         val = parameters[i].split("=");
-        companyName = val[0];
+        companyName = val[0].toLowerCase();
     }
     $(`#modal-${companyName}`).modal();
 }
