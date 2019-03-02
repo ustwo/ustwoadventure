@@ -5,7 +5,6 @@ const tiltLogo = tilt => {
     logoUstwo.style.transform = `rotate(${(tilt + 10)}deg)`;
 };
 
-
 if ("ontouchstart" in document.documentElement) {
     window.addEventListener("deviceorientation", e => {
         logoRing.style.transition = "transform 4s cubic-bezier(0.6, 0, 0.5, 1)";

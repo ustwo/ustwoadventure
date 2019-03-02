@@ -32,7 +32,6 @@ const routes = [
 ];
 
 
-
 const pageContentContainer = document.querySelector(".page-content-container");
 const metaTitles = document.querySelectorAll(`
     meta[property="og:title"],
@@ -43,7 +42,6 @@ const metaDescriptions = document.querySelectorAll(`
     meta[property="og:description"],
     meta[name="twitter:description"]
 `);
-
 
 
 const goToPage = (pathName, transition) => {
@@ -71,7 +69,6 @@ const goToPage = (pathName, transition) => {
 };
 
 
-
 const goTo404 = () => {
     pageContentContainer.innerHTML = fourOhFourPage;
     document.title = "404 — ustwo Adventure";
@@ -82,14 +79,12 @@ const goTo404 = () => {
 };
 
 
-
 const pageSetupFunctions = () => {
     navLinkSetup();
-    portfolioItemLinkSetup();
+    modalLinkSetup();
     lzy();
     approachStageScroll();
 };
-
 
 
 const navLinkSetup = () => {
@@ -108,28 +103,11 @@ const navLinkSetup = () => {
 };
 
 
-
-const portfolioItemLinkSetup = () => {
-    const portfolioItemElements = document.querySelectorAll("a.portfolio-item, a.latest-investment-item");
-
-    if (portfolioItemElements) {
-        portfolioItemElements.forEach(item => {
-            item.addEventListener("click", companyName => {
-                companyName = item.getAttribute("href").split("#modal-")[1];
-                history.replaceState("", document.title, window.location.pathname + `#${companyName}`);
-            });
-        });
-    }
-};
-
-
-
 if (routes.some(route => route.pathname == window.location.pathname)) {
     goToPage(window.location.pathname);
 } else {
     goTo404();
 }
-
 
 
 window.onpopstate = () => {
@@ -139,7 +117,6 @@ window.onpopstate = () => {
         goTo404();
     }
 };
-
 
 
 console.log("%c It's always fun looking under the hood ツ ", "background: #f32d94; color: #fff", "--> https://ustwo.com/join-us");

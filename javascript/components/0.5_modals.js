@@ -23,6 +23,71 @@ const modalContainer = document.querySelector(".modal-container");
 modalContainer.innerHTML = createModals(portfolioArray).join("");
 
 
+
+
+const activeModalContainer = document.querySelector(".active-modal-container");
+const closeModalButton = document.createElement("a");
+closeModalButton.classList.add("close-modal");
+closeModalButton.href = ("");
+
+
+const modalLinkSetup = () => {
+    const modalLinks = document.querySelectorAll("a.portfolio-item, a.latest-investment-item");
+
+    if (modalLinks) {
+        modalLinks.forEach(link => {
+            link.addEventListener("click", (e, companyName) => {
+                companyName = link.getAttribute("href").split("#modal-")[1];
+                history.replaceState("", document.title, window.location.pathname + `#${companyName}`);
+
+                const modalHref = link.href;
+                const modalId = modalHref.substr(modalHref.indexOf("#"), modalHref.length);
+                openModal(modalId);
+
+                e.preventDefault();
+            });
+        });
+    }
+};
+
+
+const openModal = modalId => {
+    const modal = document.querySelector(modalId);
+    const clonedModal = modal.cloneNode(true);
+    clonedModal.appendChild(closeModalButton);
+
+    while (activeModalContainer.firstChild) activeModalContainer.removeChild(activeModalContainer.firstChild);
+    activeModalContainer.appendChild(clonedModal);
+
+    activeModalContainer.classList.add("show");
+    document.body.classList.add("no-scroll");
+
+    const companyphoto = activeModalContainer.querySelector("img[data-src]");
+    companyphoto.setAttribute("src", companyphoto.getAttribute("data-src"));
+
+    const blocker = document.querySelector(".blocker");
+    blocker.addEventListener("click", e => {
+        if (e.target == blocker && e.target != clonedModal) closeModal();
+    });
+};
+
+
+const closeModal = () => {
+    while (activeModalContainer.firstChild) activeModalContainer.removeChild(activeModalContainer.firstChild);
+
+    activeModalContainer.classList.remove("show");
+    document.body.classList.remove("no-scroll");
+
+    history.replaceState("", document.title, window.location.pathname);
+};
+
+
+closeModalButton.addEventListener("click", e => {
+    closeModal();
+    e.preventDefault();
+});
+
+
 if (window.location.hash) {
     const query = window.location.hash.substring(1);
     const parameters = query.split("&");
@@ -31,5 +96,5 @@ if (window.location.hash) {
         val = parameters[i].split("=");
         companyName = val[0].toLowerCase();
     }
-    $(`#modal-${companyName}`).modal();
+    openModal(`#modal-${companyName}`);
 }
