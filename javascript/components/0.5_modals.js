@@ -51,10 +51,10 @@ const modalLinkSetup = () => {
 const openModal = modalId => {
     const modal = document.querySelector(modalId);
     const clonedModal = modal.cloneNode(true);
-    clonedModal.appendChild(closeModalButton);
 
     while (activeModalContainer.firstChild) activeModalContainer.removeChild(activeModalContainer.firstChild);
     activeModalContainer.appendChild(clonedModal);
+    clonedModal.appendChild(closeModalButton);
 
     activeModalContainer.classList.add("show");
     document.body.classList.add("no-scroll");
