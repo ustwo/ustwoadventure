@@ -20,15 +20,6 @@ const portfolioArray = [
         line: "The best places and events in your city",
         copy: "With editorial selections, high quality reviews, and insider info, our magazine style guide tells you whats going on daily and weekly, so you know what to enjoy."
     },
-    // {
-    //     name: "Easle",
-    //     url: "https://www.easle.co",
-    //     tidyurl: "easle.co",
-    //     image: "images/team_assets/easle_image.jpg",
-    //     logo: "images/team_assets/easle_logo.png",
-    //     line: "A freelancer platform getting artists hired",
-    //     copy: "We find the best work for the best artists. Our creators are vetted by industry experts, and we take care of all the tedious paperwork like timesheets, contracts and invoices."
-    // },
     // Live
     {
         name: "Tribe",

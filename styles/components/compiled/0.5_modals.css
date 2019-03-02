@@ -62,7 +62,7 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url("../../images/modal_exit.svg");
+	background-image: url("../../../images/modal_exit.svg");
 }
 
 .modal .modal-inner {
