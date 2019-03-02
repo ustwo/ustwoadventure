@@ -25,6 +25,7 @@ modalContainer.innerHTML = createModals(portfolioArray).join("");
 
 
 
+
 const activeModalContainer = document.querySelector(".active-modal-container");
 const closeModalButton = document.createElement("a");
 closeModalButton.classList.add("close-modal");
@@ -36,14 +37,10 @@ const modalLinkSetup = () => {
 
     if (modalLinks) {
         modalLinks.forEach(link => {
-            link.addEventListener("click", (e, companyName) => {
-                companyName = link.getAttribute("href").split("#modal-")[1];
-                history.replaceState("", document.title, window.location.pathname + `#${companyName}`);
-
+            link.addEventListener("click", e => {
                 const modalHref = link.href;
                 const modalId = modalHref.substr(modalHref.indexOf("#"), modalHref.length);
                 openModal(modalId);
-
                 e.preventDefault();
             });
         });
@@ -64,6 +61,9 @@ const openModal = modalId => {
 
     const companyphoto = activeModalContainer.querySelector("img[data-src]");
     companyphoto.setAttribute("src", companyphoto.getAttribute("data-src"));
+
+    const companyName = modalId.split("#modal-")[1];
+    history.replaceState("", document.title, window.location.pathname + `#${companyName}`);
 
     const blocker = document.querySelector(".blocker");
     blocker.addEventListener("click", e => {
