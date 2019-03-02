@@ -71,6 +71,7 @@
 
     &:focus {
         p.name {
+            font-style: italic;
             transform: translate(0px, -3px);
         }
 
