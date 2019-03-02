@@ -143,6 +143,7 @@
 
 .modal .modal-inner .modal-details p.copy {
 	line-height: 1.6;
+	word-spacing: normal;
 	color: var(--grey04);
 }
 
