@@ -1,7 +1,5 @@
 User-agent: *
 
-Disallow: /#*
-Disallow: /?*
 Disallow: /*?team=*
 Disallow: /residency
 Disallow: /join
