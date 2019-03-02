@@ -33,6 +33,7 @@ const routes = [
 
 
 const pageContentContainer = document.querySelector(".page-content-container");
+
 const metaTitles = document.querySelectorAll(`
     meta[property="og:title"],
     meta[name="twitter:title"]
