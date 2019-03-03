@@ -129,6 +129,8 @@ header {
     }
 
     nav {
+        margin-right: -0.4em;
+
         a, a:visited {
             margin-left: 44px;
             padding: 0.4em;
@@ -136,10 +138,6 @@ header {
             font-size: 20px;
             line-height: 1.6;
             color: var(--grey04);
-
-            &:last-child {
-                margin-right: -0.4em;
-            }
 
             &:hover {
                 font-style: italic;
@@ -206,14 +204,14 @@ header {
     @media (max-width: 565px) {
         margin: 30px 0 100px 0;
 
-        nav a {
-            display: block;
-            padding: 0.1em;
-            margin: -0.1em -0.1em -0.1em -0.1em;
-            text-align: right;
+        nav {
+            margin-right: -0.1em;
 
-            &:last-child {
-                margin-right: -0.1em;
+            a {
+                display: block;
+                padding: 0.1em;
+                margin: -0.1em 0 -0.1em -0.1em;
+                text-align: right;
             }
         }
     }
