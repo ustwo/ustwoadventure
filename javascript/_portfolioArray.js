@@ -100,7 +100,7 @@ const portfolioArray = [
         image: "images/team_assets/mayku_image.jpg",
         logo: "images/team_assets/mayku_logo.png",
         line: "Make beautiful things with the FormBox",
-        copy: "Mayku are on a mission to give people the power of making. We're building a family of mini-machines that let you start a production line from your tabletop - as simply as baking a cake."
+        copy: "Mayku are on a mission to give people the power of making. We're building a family of mini-machines that let you start a production line from your tabletop - as simply as baking a cake."
     },
     {
         name: "Marvel",
