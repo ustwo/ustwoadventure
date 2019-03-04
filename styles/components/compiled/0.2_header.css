@@ -308,7 +308,7 @@ header nav a:hover, header nav a:visited:hover {
 	header nav a {
 		display: block;
 		padding: 0.1em;
-		margin: -0.1em 0 -0.1em -0.1em;
+		margin: -0.1em 0;
 		text-align: right;
 	}
 }
