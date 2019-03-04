@@ -248,7 +248,7 @@
 		margin-bottom: 1px;
 	}
 	.modal .modal-inner .modal-details p.line {
-		margin-bottom: 12px;
+		margin-bottom: 11px;
 	}
 }
 
@@ -258,7 +258,7 @@
 		width: calc(100% - 42px);
 	}
 	.modal .modal-inner .modal-details {
-		padding: 19px 20px;
+		padding: 19px;
 	}
 	.modal .modal-inner .modal-details a.site-link-mobile {
 		margin-bottom: 13px;
