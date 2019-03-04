@@ -27,6 +27,8 @@ modalContainer.innerHTML = createModals(portfolioArray).join("");
 
 
 const activeModalContainer = document.querySelector(".active-modal-container");
+let activeModalIndex, portfolioItemLinks;
+
 const closeModalButton = document.createElement("a");
 closeModalButton.classList.add("close-modal");
 closeModalButton.href = ("");
@@ -34,6 +36,7 @@ closeModalButton.href = ("");
 
 const modalLinkSetup = () => {
     const modalLinks = document.querySelectorAll("a.portfolio-item, a.latest-investment-item");
+    portfolioItemLinks = document.querySelectorAll("a.portfolio-item");
 
     if (modalLinks) {
         modalLinks.forEach(link => {
@@ -69,6 +72,9 @@ const openModal = modalId => {
     blocker.addEventListener("click", e => {
         if (e.target == blocker && e.target != clonedModal) closeModal();
     });
+
+    const parentPortfolioItem = document.querySelector(`[href="${modalId}"]`);
+    if (parentPortfolioItem) activeModalIndex = parseFloat(parentPortfolioItem.getAttribute("data-index"));
 };
 
 
@@ -98,3 +104,22 @@ if (window.location.hash) {
     }
     openModal(`#modal-${companyName}`);
 }
+
+
+const arrowModalChange = (index, indexChange) => {
+    const newIndex = index + indexChange;
+
+    if (0 <= newIndex && newIndex < portfolioItemLinks.length) {
+        const newModal = document.querySelector(`[data-index="${newIndex}"]`);
+        const newModalHref = newModal.href;
+        const newModalId = newModalHref.substr(newModalHref.indexOf("#"), newModalHref.length);
+        openModal(newModalId);
+    }
+};
+
+
+window.addEventListener("keyup", e => {
+    if (e.key == "ArrowRight" || e.code == "Space") arrowModalChange(activeModalIndex, 1);
+    if (e.key == "ArrowLeft") arrowModalChange(activeModalIndex, -1);
+    if (e.key == "Escape") closeModal();
+});
