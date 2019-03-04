@@ -103,7 +103,7 @@ if (window.location.hash) {
         companyName = val[0].toLowerCase();
     }
     openModal(`#modal-${companyName}`);
-    activeModalIndex = 0;
+    activeModalIndex = -1;
 }
 
 
