@@ -68,13 +68,13 @@ const openModal = modalId => {
     const companyName = modalId.split("#modal-")[1];
     history.replaceState("", document.title, window.location.pathname + `#${companyName}`);
 
+    const parentPortfolioItem = document.querySelector(`[href="${modalId}"]`);
+    if (parentPortfolioItem) activeModalIndex = parseFloat(parentPortfolioItem.getAttribute("data-index"));
+
     const blocker = document.querySelector(".blocker");
     blocker.addEventListener("click", e => {
         if (e.target == blocker && e.target != clonedModal) closeModal();
     });
-
-    const parentPortfolioItem = document.querySelector(`[href="${modalId}"]`);
-    if (parentPortfolioItem) activeModalIndex = parseFloat(parentPortfolioItem.getAttribute("data-index"));
 };
 
 
@@ -103,6 +103,7 @@ if (window.location.hash) {
         companyName = val[0].toLowerCase();
     }
     openModal(`#modal-${companyName}`);
+    activeModalIndex = 0;
 }
 
 
