@@ -27,11 +27,13 @@ modalContainer.innerHTML = createModals(portfolioArray).join("");
 
 
 const activeModalContainer = document.querySelector(".active-modal-container");
-let activeModalIndex, portfolioItemLinks;
+const blocker = document.querySelector(".blocker");
 
 const closeModalButton = document.createElement("a");
 closeModalButton.classList.add("close-modal");
 closeModalButton.href = ("");
+
+let activeModalIndex, portfolioItemLinks, clonedModal;
 
 
 const modalLinkSetup = () => {
@@ -53,7 +55,7 @@ const modalLinkSetup = () => {
 
 const openModal = modalId => {
     const modal = document.querySelector(modalId);
-    const clonedModal = modal.cloneNode(true);
+    clonedModal = modal.cloneNode(true);
 
     while (activeModalContainer.firstChild) activeModalContainer.removeChild(activeModalContainer.firstChild);
     activeModalContainer.appendChild(clonedModal);
@@ -69,12 +71,7 @@ const openModal = modalId => {
     history.replaceState("", document.title, window.location.pathname + `#${companyName}`);
 
     const parentPortfolioItem = document.querySelector(`[href="${modalId}"]`);
-    if (parentPortfolioItem) activeModalIndex = parseFloat(parentPortfolioItem.getAttribute("data-index"));
-
-    const blocker = document.querySelector(".blocker");
-    blocker.addEventListener("click", e => {
-        if (e.target == blocker && e.target != clonedModal) closeModal();
-    });
+    activeModalIndex = (parentPortfolioItem) ? parseFloat(parentPortfolioItem.getAttribute("data-index")) : -1;
 };
 
 
@@ -86,6 +83,11 @@ const closeModal = () => {
 
     history.replaceState("", document.title, window.location.pathname);
 };
+
+
+blocker.addEventListener("click", e => {
+    if (e.target == blocker && e.target != clonedModal) closeModal();
+});
 
 
 closeModalButton.addEventListener("click", e => {
@@ -103,7 +105,6 @@ if (window.location.hash) {
         companyName = val[0].toLowerCase();
     }
     openModal(`#modal-${companyName}`);
-    activeModalIndex = -1;
 }
 
 
