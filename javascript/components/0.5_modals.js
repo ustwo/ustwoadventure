@@ -25,9 +25,7 @@ modalContainer.innerHTML = createModals(portfolioArray).join("");
 
 
 
-
 const activeModalContainer = document.querySelector(".active-modal-container");
-const blocker = document.querySelector(".blocker");
 
 const closeModalButton = document.createElement("a");
 closeModalButton.classList.add("close-modal");
@@ -85,8 +83,8 @@ const closeModal = () => {
 };
 
 
-blocker.addEventListener("click", e => {
-    if (e.target == blocker && e.target != clonedModal) closeModal();
+activeModalContainer.addEventListener("click", e => {
+    if (e.target == activeModalContainer && e.target != clonedModal) closeModal();
 });
 
 
