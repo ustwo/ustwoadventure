@@ -38,11 +38,14 @@ const metaTitles = document.querySelectorAll(`
     meta[property="og:title"],
     meta[name="twitter:title"]
 `);
+
 const metaDescriptions = document.querySelectorAll(`
     meta[name="description"],
     meta[property="og:description"],
     meta[name="twitter:description"]
 `);
+
+const canonicalTag = document.querySelector(`link[rel="canonical"]`);
 
 
 const goToPage = (pathName, transition) => {
@@ -51,6 +54,7 @@ const goToPage = (pathName, transition) => {
     document.title = page.title;
     metaTitles.forEach(title => title.setAttribute("content", page.title));
     metaDescriptions.forEach(tag => tag.setAttribute("content", page.description));
+    canonicalTag.setAttribute("href", `https://adventure.ustwo.com${page.pathname}`);
 
     if (orbitLetters[0].innerHTML != "A") orbitLetterChange("ADVENTURE");
 
