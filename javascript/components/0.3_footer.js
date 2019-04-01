@@ -11,4 +11,4 @@ footerADVLetters.forEach(letter => {
     letter.addEventListener("click", () => moveLetter(letter));
 });
 
-document.querySelector(".footerYear").innerHTML = new Date().getFullYear();
+document.querySelector(".footerYear").textContent = new Date().getFullYear();
