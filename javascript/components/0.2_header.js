@@ -1,5 +1,6 @@
 const logoRing = document.querySelector("header .logo");
 const logoUstwo = document.querySelector("header .logo img");
+
 const tiltLogo = tilt => {
     logoRing.style.transform = `rotate(${-(tilt + 10)}deg)`;
     logoUstwo.style.transform = `rotate(${(tilt + 10)}deg)`;
