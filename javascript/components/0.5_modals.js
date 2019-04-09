@@ -98,7 +98,7 @@ if (window.location.hash) {
     const query = window.location.hash.substring(1);
     const parameters = query.split("&");
     let companyName, val;
-    for (var i = 0; i < parameters.length; i++) {
+    for (let i = 0; i < parameters.length; i++) {
         val = parameters[i].split("=");
         companyName = val[0].toLowerCase();
     }
@@ -118,7 +118,7 @@ const arrowModalChange = (index, indexChange) => {
 };
 
 
-window.addEventListener("keyup", e => {
+window.addEventListener("keydown", e => {
     if (e.key == "ArrowRight" || e.code == "Space") arrowModalChange(activeModalIndex, 1);
     if (e.key == "ArrowLeft") arrowModalChange(activeModalIndex, -1);
     if (e.key == "Escape") closeModal();

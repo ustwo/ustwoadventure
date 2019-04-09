@@ -26,7 +26,7 @@ const orbitLetterChange = string => {
 
     orbitLetters.forEach(letter => letter.classList.add("transition"));
     setTimeout(() => {
-        for (var i = 0; i < orbitLetters.length; i++) {
+        for (let i = 0; i < orbitLetters.length; i++) {
             orbitLetters[i].textContent = string[i];
         }
         orbitLetters.forEach(letter => letter.classList.remove("transition"));

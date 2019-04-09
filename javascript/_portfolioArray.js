@@ -201,6 +201,15 @@ const portfolioArray = [
         line: "Easier payments. Quality engagement.",
         copy: "Our interactive format replaces traditional invoices while adding the value of a seamless payment, a new channel for personal communication and a significantly improved customer experience."
     },
+    // {
+    //     name: "Stitch",
+    //     url: "https://stitchapp.co/",
+    //     tidyurl: "stitchapp.co",
+    //     image: "images/team_assets/stitch_image.jpg",
+    //     logo: "images/team_assets/stitch_logo.png",
+    //     line: "Creative Production Resource Management",
+    //     copy: "Stitch is reinventing the production process for brands & agencies, by organizing & automating the production workflow."
+    // },
     {
         name: "Superhi",
         url: "https://www.superhi.com/?utm_campaign=ustwo_adventure_sh_profile&utm_medium=promo&utm_source=ustwo_adventure",
