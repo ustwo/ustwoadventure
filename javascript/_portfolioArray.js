@@ -201,6 +201,15 @@ const portfolioArray = [
         line: "Easier payments. Quality engagement.",
         copy: "Our interactive format replaces traditional invoices while adding the value of a seamless payment, a new channel for personal communication and a significantly improved customer experience."
     },
+    {
+        name: "Trinny London",
+        url: "https://trinnylondon.com/",
+        tidyurl: "trinnylondon.com",
+        image: "images/team_assets/trinny_image.jpg",
+        logo: "images/team_assets/trinny_logo.png",
+        line: "Changing the face of makeup",
+        copy: "A portable, versatile range of makeup, with colours to suit every woman, and state-of-the-art technology to pinpoint which makeup truly suits you. Welcome to the ultimate easy, modern, do-it-everywhere makeup brand."
+    },
     // {
     //     name: "Stitch",
     //     url: "https://stitchapp.co/",
