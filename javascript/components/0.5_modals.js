@@ -102,7 +102,8 @@ if (window.location.hash) {
         val = parameters[i].split("=");
         companyName = val[0].toLowerCase();
     }
-    openModal(`#modal-${companyName}`);
+    const linkedModal = document.querySelector(`#modal-${companyName}`);
+    if (linkedModal) openModal(`#modal-${companyName}`);
 }
 
 
