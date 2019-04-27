@@ -1,4 +1,8 @@
-const applyPage = `
+const applyPage = document.createElement("div");
+applyPage.className = "apply-content";
+
+applyPage.innerHTML = `
+
     <div class="formdiv">
         <form class="form" name="contact" netlify netlify-honeypot="bot-field" action="thanks">
             <p class="hidden">
@@ -27,4 +31,5 @@ const applyPage = `
             </div>
         </form>
     </div>
+    
 `;

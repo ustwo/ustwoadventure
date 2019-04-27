@@ -1,17 +1,17 @@
 const portfolioItems = createPortfolioItems(shuffle(portfolioArray)).join("");
 
-const portfolioPage = `
 
-    <div class="portfolio-content">
+const portfolioPage = document.createElement("div");
+portfolioPage.className = "portfolio-content";
 
-        <h1>
-            Our family of companies
-        </h1>
+portfolioPage.innerHTML = `
 
-        <div class="portfolio-container">
-            ${ portfolioItems }
-        </div>
+    <h1>
+        Our family of companies
+    </h1>
 
+    <div class="portfolio-container">
+        ${ portfolioItems }
     </div>
-    
+
 `;

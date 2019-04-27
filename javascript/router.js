@@ -48,6 +48,14 @@ const metaDescriptions = document.querySelectorAll(`
 const canonicalTag = document.querySelector(`link[rel="canonical"]`);
 
 
+const pageContentChange = page => {
+    while (pageContentContainer.firstChild) {
+        pageContentContainer.removeChild(pageContentContainer.firstChild);
+    }
+    pageContentContainer.appendChild(page);
+};
+
+
 const goToPage = (pathName, transition) => {
     const page = routes.find(route => route.pathname == pathName);
 
@@ -61,21 +69,21 @@ const goToPage = (pathName, transition) => {
     if (transition) {
         pageContentContainer.classList.add("transition");
         setTimeout(() => {
-            pageContentContainer.innerHTML = page.pageContent;
+            pageContentChange(page.pageContent);
+            pageSetupFunctions();
+
             if (window.pageYOffset > 100) window.scrollTo(0, 0);
             pageContentContainer.classList.remove("transition");
-
-            pageSetupFunctions();
         }, 200);
     } else {
-        pageContentContainer.innerHTML = page.pageContent;
+        pageContentChange(page.pageContent);
         pageSetupFunctions();
     }
 };
 
 
 const goTo404 = () => {
-    pageContentContainer.innerHTML = fourOhFourPage;
+    pageContentContainer.appendChild(fourOhFourPage);
     document.title = "404 — ustwo Adventure";
 
     if (orbitLetters[0].innerHTML != "4") orbitLetterChange("404ERROR");

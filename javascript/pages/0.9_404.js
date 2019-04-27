@@ -1,17 +1,16 @@
-const fourOhFourPage = `
+const fourOhFourPage = document.createElement("div");
+fourOhFourPage.className = "fourohfour-content";
 
-    <div class="fourohfour-content">
+fourOhFourPage.innerHTML = `
 
-        <h1>
-            Page not found
-        </h1>
+    <h1>
+        Page not found
+    </h1>
 
-        <h1 class="shruggie">
-            ¯\\_(ツ)_/¯
-        </h1>
+    <h1 class="shruggie">
+        ¯\\_(ツ)_/¯
+    </h1>
 
-        <a class="nav button back" data-pathname="/" href="index.html">Go home</a>
-
-    </div>
+    <a class="nav button back" data-pathname="/" href="index.html">Go home</a>
 
 `;
