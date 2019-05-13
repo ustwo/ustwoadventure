@@ -53,6 +53,7 @@ const pageContentChange = page => {
         pageContentContainer.removeChild(pageContentContainer.firstChild);
     }
     pageContentContainer.appendChild(page);
+    pageSetupFunctions();
 };
 
 
@@ -70,14 +71,11 @@ const goToPage = (pathName, transition) => {
         pageContentContainer.classList.add("transition");
         setTimeout(() => {
             pageContentChange(page.pageContent);
-            pageSetupFunctions();
-
             if (window.pageYOffset > 100) window.scrollTo(0, 0);
             pageContentContainer.classList.remove("transition");
         }, 200);
     } else {
         pageContentChange(page.pageContent);
-        pageSetupFunctions();
     }
 };
 
