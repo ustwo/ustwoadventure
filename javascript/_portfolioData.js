@@ -232,4 +232,4 @@ const portfolioData = {
     ]
 };
 
-const allPortfolioData = portfolioData.live.concat(portfolioData.exited).concat(portfolioData.succailed);
+const allPortfolioData = Object.values(portfolioData).reduce((acc, cur) => [...acc, ...cur], []);
