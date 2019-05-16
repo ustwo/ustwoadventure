@@ -1,4 +1,4 @@
-const latestInvestment = portfolioArray.live[portfolioArray.live.length - 1];
+const latestInvestment = portfolioData.live[portfolioData.live.length - 1];
 const latestInvestmentItem = `
     <a class="latest-investment-item" href="#modal-${ kebabCase(latestInvestment.name) }">
         <p class="tag">Latest investment:</p>
@@ -12,7 +12,7 @@ const latestInvestmentItem = `
 `;
 
 
-const portfolioPreviewItems = shuffle(portfolioArray.live).slice(0, 5);
+const portfolioPreviewItems = shuffle(portfolioData.live).slice(0, 5);
 const portfolioPreview = createPortfolioItems(portfolioPreviewItems).join("");
 
 

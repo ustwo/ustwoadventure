@@ -20,7 +20,7 @@ const createModals = a => a.map(obj => {
 
 
 const modalContainer = document.querySelector(".modal-container");
-modalContainer.innerHTML = createModals(allPortfolio).join("");
+modalContainer.innerHTML = createModals(allPortfolioData).join("");
 
 
 

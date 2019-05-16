@@ -1,4 +1,4 @@
-const portfolioArray = {
+const portfolioData = {
     exited: [
         {
             name: "Sidestory",
@@ -232,4 +232,4 @@ const portfolioArray = {
     ]
 };
 
-const allPortfolio = portfolioArray.live.concat(portfolioArray.exited).concat(portfolioArray.succailed);
+const allPortfolioData = portfolioData.live.concat(portfolioData.exited).concat(portfolioData.succailed);
