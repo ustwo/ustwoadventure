@@ -1,4 +1,4 @@
-const portfolioItems = createPortfolioItems(shuffle(portfolioArray)).join("");
+const portfolioItems = createPortfolioItems(shuffle(allPortfolio)).join("");
 
 
 const portfolioPage = document.createElement("div");
