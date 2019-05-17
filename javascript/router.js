@@ -51,7 +51,7 @@ const canonicalTag = document.querySelector(`link[rel="canonical"]`);
 const pageContentChange = page => {
     while (pageContentContainer.firstChild) pageContentContainer.removeChild(pageContentContainer.firstChild);
     pageContentContainer.appendChild(page);
-    
+
     navLinkSetup();
     modalLinkSetup();
     lzy();
@@ -83,12 +83,10 @@ const goToPage = (pathName, transition) => {
 
 
 const goTo404 = () => {
-    pageContentContainer.appendChild(fourOhFourPage);
+    pageContentChange(fourOhFourPage);
     document.title = "404 — ustwo Adventure";
 
     if (orbitLetters[0].innerHTML != "4") orbitLetterChange("404ERROR");
-
-    pageSetupFunctions();
 };
 
 
