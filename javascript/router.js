@@ -17,12 +17,12 @@ const routes = [
         title: "Portfolio — ustwo Adventure",
         description: "Our family of companies. ustwo Adventure invests in creative companies, differently."
     },
-    {
-        pathname: "/apply",
-        // pageContent: applyPage,
-        title: "Apply — ustwo Adventure",
-        description: "Apply to ustwo Adventure — investmenting in creative companies, differently."
-    },
+    // {
+    //     pathname: "/apply",
+    //     pageContent: applyPage,
+    //     title: "Apply — ustwo Adventure",
+    //     description: "Apply to ustwo Adventure — investmenting in creative companies, differently."
+    // },
     {
         pathname: "/faq",
         pageContent: faqPage,
@@ -85,7 +85,6 @@ const goToPage = (pathName, transition) => {
 const goTo404 = () => {
     pageContentChange(fourOhFourPage);
     document.title = "404 — ustwo Adventure";
-
     if (orbitLetters[0].innerHTML != "4") orbitLetterChange("404ERROR");
 };
 
