@@ -75,6 +75,7 @@ const goToPage = (pathName, transition) => {
         pageContentContainer.classList.add("transition");
         setTimeout(() => {
             pageContentChange(page.pageContent);
+
             if (window.pageYOffset > 100) window.scrollTo(0, 0);
             pageContentContainer.classList.remove("transition");
         }, 200);
