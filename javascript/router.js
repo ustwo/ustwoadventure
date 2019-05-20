@@ -49,7 +49,9 @@ const canonicalTag = document.querySelector(`link[rel="canonical"]`);
 
 
 const pageContentChange = page => {
-    while (pageContentContainer.firstChild) pageContentContainer.removeChild(pageContentContainer.firstChild);
+    while (pageContentContainer.firstChild) {
+        pageContentContainer.removeChild(pageContentContainer.firstChild);
+    }
     pageContentContainer.appendChild(page);
 
     navLinkSetup();
