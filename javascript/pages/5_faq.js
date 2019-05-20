@@ -8,25 +8,6 @@ faqPage.innerHTML = `
     <div class="writing">
 
         <p class="question">
-            Are you currently making investments?
-        </p>
-
-        <p class="answer">
-            Not yet - we are still lining up our own investors, but we want to
-            start investing as soon as possible. Watch this space, as they say.
-        </p>
-
-        <p class="answer">
-            That said, we are actively making connections with founders out there
-            who are interested in this form of investment in the future or would
-            like to learn more. If that’s you, feel free to drop us a line on
-            <a href="mailto:hello.adventure@ustwo.com" target="_blank" rel="noopener">
-                hello.adventure@ustwo.com.
-            </a>
-        </p>
-
-
-        <p class="question">
             Have all of your investments been with this model?
         </p>
 
