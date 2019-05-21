@@ -39,8 +39,8 @@ homePage.innerHTML = `
                 Our model gives founders the option to grow their company
                 as they see fit.
             </p>
-            <a class="nav button internal" data-pathname="/approach" href="approach">Our approach</a>
-            <!-- <a class="nav button internal" data-pathname="/apply" href="apply">Apply</a> -->
+            <a class="nav button internal" href="/approach">Our approach</a>
+            <!-- <a class="nav button internal" href="/apply">Apply</a> -->
         </div>
 
         <div class="latest-investment">
@@ -55,7 +55,7 @@ homePage.innerHTML = `
             We invest in early-stage companies that are building something
             bigger than an exit.
         </p>
-        <a class="nav button internal" data-pathname="/portfolio" href="portfolio">See all</a>
+        <a class="nav button internal" href="/portfolio">See all</a>
     </div>
 
     <div class="portfolio-preview">

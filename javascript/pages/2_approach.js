@@ -115,8 +115,8 @@ approachPage.innerHTML = `
         </div>
 
         <div class="stage-cta">
-            <!-- <a class="nav button external" href="https://gihub.com/ustwo/adventureinvestmentterms" targte="_blank" rel="noopener">See terms</a> -->
-            <a class="nav button internal" data-pathname="/faq" href="faq">Read FAQ</a>
+            <!-- <a class="nav button external" href="https://gihub.com/ustwo/adventure-investment-terms" target="_blank" rel="noopener">See terms</a> -->
+            <a class="nav button internal" href="/faq">Read FAQ</a>
         </div>
 
     </div>

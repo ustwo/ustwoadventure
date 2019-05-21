@@ -61,7 +61,7 @@ const pageContentChange = page => {
 };
 
 
-const goToPage = (pathName, transition) => {
+const goToPage = (pathName, transition = false) => {
     const page = routes.find(route => route.pathname == pathName);
 
     document.title = page.title;
@@ -71,7 +71,7 @@ const goToPage = (pathName, transition) => {
 
     if (orbitLetters[0].innerHTML != "A") orbitLetterChange("ADVENTURE");
 
-    if (transition) {
+    if (transition == true) {
         pageContentContainer.classList.add("transition");
         setTimeout(() => {
             pageContentChange(page.pageContent);
@@ -97,10 +97,10 @@ const navLinkSetup = () => {
 
     navLinks.forEach(link => {
         link.addEventListener("click", (e, pathName) => {
-            pathName = link.getAttribute("data-pathname");
+            pathName = link.getAttribute("href");
             if (pathName != window.location.pathname) {
                 window.history.pushState({}, pathName, window.location.origin + pathName);
-                goToPage(pathName, "transition");
+                goToPage(pathName, true);
             }
             e.preventDefault();
         });
