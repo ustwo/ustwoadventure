@@ -125,7 +125,7 @@ a.button.external:hover {
 
 .page-content-container.transition {
 	opacity: 0;
-	transform: translate(0, 3px) scale(0.997);
+	transform: translate(0, 3px);
 }
 
 img[data-src]::after {
