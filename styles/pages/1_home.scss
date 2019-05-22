@@ -23,7 +23,7 @@
             }
         }
 
-        .latest-investment {
+        .latest-investment-item {
             margin-top: 230px;
             margin-right: 20px;
             margin-left: 90px;
@@ -93,7 +93,8 @@
                 max-width: var(--latestInvestmentImageWidth);
             }
 
-            &:hover {
+            &:hover,
+            &:focus {
                 div.image-container {
                     img.company-image {
                         box-shadow: -4px 4px 0px 0px var(--piglet);

@@ -21,14 +21,14 @@
 	max-width: 510px;
 }
 
-.home-content .top-row .latest-investment {
+.home-content .top-row .latest-investment-item {
 	margin-top: 230px;
 	margin-right: 20px;
 	margin-left: 90px;
 	--latestInvestmentImageWidth: 350px;
 }
 
-.home-content .top-row .latest-investment p.tag {
+.home-content .top-row .latest-investment-item p.tag {
 	margin-bottom: 10px;
 	margin-left: -28px;
 	font-size: 16px;
@@ -41,12 +41,12 @@
 	width: -ms-max-content;
 }
 
-.home-content .top-row .latest-investment div.image-container {
+.home-content .top-row .latest-investment-item div.image-container {
 	position: relative;
 	z-index: -1;
 }
 
-.home-content .top-row .latest-investment div.image-container img.company-image {
+.home-content .top-row .latest-investment-item div.image-container img.company-image {
 	display: block;
 	width: var(--latestInvestmentImageWidth);
 	height: calc(var(--latestInvestmentImageWidth) * 0.858);
@@ -54,7 +54,7 @@
 	transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
 }
 
-.home-content .top-row .latest-investment div.image-container img.arrow {
+.home-content .top-row .latest-investment-item div.image-container img.arrow {
 	position: absolute;
 	top: 17px;
 	right: 18px;
@@ -62,7 +62,7 @@
 	transition: transform 0.2s;
 }
 
-.home-content .top-row .latest-investment h1 {
+.home-content .top-row .latest-investment-item h1 {
 	font-size: 62px;
 	-webkit-text-stroke: 1.5px;
 	-webkit-text-stroke-color: var(--piglet);
@@ -78,7 +78,7 @@
 	transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.home-content .top-row .latest-investment p.copy {
+.home-content .top-row .latest-investment-item p.copy {
 	margin-top: 0;
 	margin-right: 5px;
 	line-height: 1.5;
@@ -86,21 +86,21 @@
 	max-width: var(--latestInvestmentImageWidth);
 }
 
-.home-content .top-row .latest-investment:hover div.image-container img.company-image {
+.home-content .top-row .latest-investment-item:hover div.image-container img.company-image, .home-content .top-row .latest-investment-item:focus div.image-container img.company-image {
 	box-shadow: -4px 4px 0px 0px var(--piglet);
 	transform: translate(4px, -4px);
 	filter: brightness(104%);
 }
 
-.home-content .top-row .latest-investment:hover div.image-container img.arrow {
+.home-content .top-row .latest-investment-item:hover div.image-container img.arrow, .home-content .top-row .latest-investment-item:focus div.image-container img.arrow {
 	transform: translate(7px, -4px);
 }
 
-.home-content .top-row .latest-investment:hover div.image-container img.arrow:hover {
+.home-content .top-row .latest-investment-item:hover div.image-container img.arrow:hover, .home-content .top-row .latest-investment-item:focus div.image-container img.arrow:hover {
 	transform: translate(10px, -4px);
 }
 
-.home-content .top-row .latest-investment:hover h1 {
+.home-content .top-row .latest-investment-item:hover h1, .home-content .top-row .latest-investment-item:focus h1 {
 	-webkit-text-stroke: 0px;
 	-webkit-text-stroke-color: #fff;
 	-webkit-text-fill-color: #fff;

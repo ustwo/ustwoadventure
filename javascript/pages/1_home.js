@@ -43,9 +43,7 @@ homePage.innerHTML = `
             <!-- <a class="nav button internal" href="/apply">Apply</a> -->
         </div>
 
-        <div class="latest-investment">
-            ${ latestInvestmentItem }
-        </div>
+        ${ latestInvestmentItem }
 
     </div>
 
