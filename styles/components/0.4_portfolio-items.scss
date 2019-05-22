@@ -46,7 +46,8 @@
         line-height: 1.6;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         p.name {
             font-style: italic;
             transform: translate(0px, -5px);
@@ -65,24 +66,6 @@
                 &:hover {
                     transform: translate(5px, -5px);
                 }
-            }
-        }
-    }
-
-    &:focus {
-        p.name {
-            font-style: italic;
-            transform: translate(0px, -3px);
-        }
-
-        div.image-container {
-            img.company-image {
-                box-shadow: -0px 3px 0px 0px var(--piglet);
-                transform: translate(0px, -3px);
-            }
-
-            img.arrow {
-                transform: translate(0px, -3px);
             }
         }
     }
