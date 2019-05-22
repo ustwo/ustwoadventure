@@ -87,6 +87,7 @@ const goToPage = (pathName, transition = false) => {
 
 const goTo404 = () => {
     pageContentChange(fourOhFourPage);
+
     document.title = "404 — ustwo Adventure";
     if (orbitLetters[0].innerHTML != "4") orbitLetterChange("404ERROR");
 };

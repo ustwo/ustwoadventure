@@ -132,11 +132,12 @@ a.button {
 
 .page-content-container {
     min-height: 50vh;
-    transition: opacity 0.15s, transform 0.15s ease-in-out;
+    transform-origin: top;
+    transition: opacity 160ms, transform 160ms ease-in-out;
 
     &.transition {
         opacity: 0;
-        transform: translate(0, 3px);
+        transform: translate(0, 3px) scale(0.997);
     }
 }
 
