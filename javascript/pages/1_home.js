@@ -12,8 +12,9 @@ const latestInvestmentItem = `
 `;
 
 
-const livePortfolioArray = portfolioArray.filter(obj => obj.status === "Live");
-const portfolioPreviewItems = shuffle(livePortfolioArray).slice(0, 5);
+const portfolioMinusLatest = portfolioArray.slice(0, portfolioArray.length - 1);
+const livePortfolioMinusLatest = portfolioMinusLatest.filter(obj => obj.status === PORTFOLIO_STATUS.LIVE);
+const portfolioPreviewItems = shuffle(livePortfolioMinusLatest).slice(0, 5);
 const portfolioPreview = createPortfolioItems(portfolioPreviewItems).join("");
 
 
