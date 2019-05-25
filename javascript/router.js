@@ -61,7 +61,7 @@ const pageContentChange = page => {
 };
 
 
-const goToPage = (pathName, transition = false) => {
+const goToPage = (pathName, hasTransition = false) => {
     const page = routes.find(route => route.pathname == pathName);
 
     document.title = page.title;
@@ -71,7 +71,7 @@ const goToPage = (pathName, transition = false) => {
 
     if (orbitLetters[0].innerHTML != "A") orbitLetterChange("ADVENTURE");
 
-    if (transition == true) {
+    if (hasTransition == true) {
         pageContentContainer.classList.add("transition");
         setTimeout(() => {
             pageContentChange(page.pageContent);
