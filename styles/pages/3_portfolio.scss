@@ -10,10 +10,6 @@
         grid-template-columns: repeat(auto-fit, var(--portfolioItemWidth));
         grid-gap: 3rem 2rem;
         justify-content: space-between;
-
-        .portfolio-item .image-container img.arrow {
-            display: none;
-        }
     }
 
 
