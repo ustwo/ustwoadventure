@@ -72,11 +72,18 @@ const openModal = modalId => {
     const companyName = modalId.split("#modal-")[1];
     history.replaceState("", document.title, window.location.pathname + `#${companyName}`);
 
-    const parentPortfolioItem = document.querySelector(`[href="${modalId}"]`);
+    let parentPortfolioItem = document.querySelector(`[href="${modalId}"]`);
     activeModalIndex = (parentPortfolioItem) ? parseFloat(parentPortfolioItem.getAttribute("data-index")) : -1;
 
-    modalLinks.forEach(link => link.classList.remove("active"));
-    if (parentPortfolioItem) parentPortfolioItem.classList.add("active");
+    if (modalLinks && parentPortfolioItem) {
+        modalLinks.forEach(link => link.classList.remove("active"));
+        parentPortfolioItem.classList.add("active");
+    } else if (!parentPortfolioItem) {
+        document.addEventListener("DOMContentLoaded", () => {
+            parentPortfolioItem = document.querySelector(`[href="${modalId}"]`);
+            parentPortfolioItem.classList.add("active");
+        });
+    }
 
     isModalOpen = true;
 };
@@ -132,7 +139,7 @@ const arrowModalChange = (index, indexChange) => {
 
 
 window.addEventListener("keydown", e => {
-    if (isModalOpen == true) {
+    if (isModalOpen === true) {
         if (e.key == "ArrowRight" || e.code == "Space") arrowModalChange(activeModalIndex, 1);
         if (e.key == "ArrowLeft") arrowModalChange(activeModalIndex, -1);
         if (e.key == "Escape") closeModal();
