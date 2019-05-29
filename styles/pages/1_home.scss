@@ -94,7 +94,7 @@
             }
 
             &:hover,
-            &:focus {
+            &.active {
                 div.image-container {
                     img.company-image {
                         box-shadow: -4px 4px 0px 0px var(--piglet);

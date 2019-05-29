@@ -44,22 +44,22 @@
 	line-height: 1.6;
 }
 
-.portfolio-item:hover p.name, .portfolio-item:focus p.name {
+.portfolio-item:hover p.name, .portfolio-item.active p.name {
 	font-style: italic;
 	transform: translate(0px, -5px);
 }
 
-.portfolio-item:hover div.image-container img.company-image, .portfolio-item:focus div.image-container img.company-image {
+.portfolio-item:hover div.image-container img.company-image, .portfolio-item.active div.image-container img.company-image {
 	box-shadow: 0px 6px 0px -2px var(--piglet);
 	transform: translate(0px, -5px);
 	filter: contrast(92%) brightness(104%);
 }
 
-.portfolio-item:hover div.image-container img.arrow, .portfolio-item:focus div.image-container img.arrow {
+.portfolio-item:hover div.image-container img.arrow, .portfolio-item.active div.image-container img.arrow {
 	transform: translate(2px, -5px);
 }
 
-.portfolio-item:hover div.image-container img.arrow:hover, .portfolio-item:focus div.image-container img.arrow:hover {
+.portfolio-item:hover div.image-container img.arrow:hover, .portfolio-item.active div.image-container img.arrow:hover {
 	transform: translate(5px, -5px);
 }
 

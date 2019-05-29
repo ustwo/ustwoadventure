@@ -86,21 +86,21 @@
 	max-width: var(--latestInvestmentImageWidth);
 }
 
-.home-content .top-row .latest-investment-item:hover div.image-container img.company-image, .home-content .top-row .latest-investment-item:focus div.image-container img.company-image {
+.home-content .top-row .latest-investment-item:hover div.image-container img.company-image, .home-content .top-row .latest-investment-item.active div.image-container img.company-image {
 	box-shadow: -4px 4px 0px 0px var(--piglet);
 	transform: translate(4px, -4px);
 	filter: brightness(104%);
 }
 
-.home-content .top-row .latest-investment-item:hover div.image-container img.arrow, .home-content .top-row .latest-investment-item:focus div.image-container img.arrow {
+.home-content .top-row .latest-investment-item:hover div.image-container img.arrow, .home-content .top-row .latest-investment-item.active div.image-container img.arrow {
 	transform: translate(7px, -4px);
 }
 
-.home-content .top-row .latest-investment-item:hover div.image-container img.arrow:hover, .home-content .top-row .latest-investment-item:focus div.image-container img.arrow:hover {
+.home-content .top-row .latest-investment-item:hover div.image-container img.arrow:hover, .home-content .top-row .latest-investment-item.active div.image-container img.arrow:hover {
 	transform: translate(10px, -4px);
 }
 
-.home-content .top-row .latest-investment-item:hover h1, .home-content .top-row .latest-investment-item:focus h1 {
+.home-content .top-row .latest-investment-item:hover h1, .home-content .top-row .latest-investment-item.active h1 {
 	-webkit-text-stroke: 0px;
 	-webkit-text-stroke-color: #fff;
 	-webkit-text-fill-color: #fff;

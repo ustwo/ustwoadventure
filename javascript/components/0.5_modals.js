@@ -31,11 +31,15 @@ const closeModalButton = document.createElement("a");
 closeModalButton.classList.add("close-modal");
 closeModalButton.href = ("");
 
-let activeModalIndex, portfolioItemLinks, clonedModal;
+let isModalOpen,
+    activeModalIndex,
+    clonedModal,
+    portfolioItemLinks,
+    modalLinks;
 
 
 const modalLinkSetup = () => {
-    const modalLinks = document.querySelectorAll("a.portfolio-item, a.latest-investment-item");
+    modalLinks = document.querySelectorAll("a.portfolio-item, a.latest-investment-item");
     portfolioItemLinks = document.querySelectorAll("a.portfolio-item");
 
     if (modalLinks) {
@@ -70,6 +74,11 @@ const openModal = modalId => {
 
     const parentPortfolioItem = document.querySelector(`[href="${modalId}"]`);
     activeModalIndex = (parentPortfolioItem) ? parseFloat(parentPortfolioItem.getAttribute("data-index")) : -1;
+
+    modalLinks.forEach(link => link.classList.remove("active"));
+    if (parentPortfolioItem) parentPortfolioItem.classList.add("active");
+
+    isModalOpen = true;
 };
 
 
@@ -77,9 +86,12 @@ const closeModal = () => {
     while (activeModalContainer.firstChild) activeModalContainer.removeChild(activeModalContainer.firstChild);
 
     activeModalContainer.classList.remove("show");
+    modalLinks.forEach(link => link.classList.remove("active"));
     document.body.classList.remove("no-scroll");
 
     history.replaceState("", document.title, window.location.pathname);
+
+    isModalOpen = false;
 };
 
 
@@ -120,7 +132,9 @@ const arrowModalChange = (index, indexChange) => {
 
 
 window.addEventListener("keydown", e => {
-    if (e.key == "ArrowRight" || e.code == "Space") arrowModalChange(activeModalIndex, 1);
-    if (e.key == "ArrowLeft") arrowModalChange(activeModalIndex, -1);
-    if (e.key == "Escape") closeModal();
+    if (isModalOpen == true) {
+        if (e.key == "ArrowRight" || e.code == "Space") arrowModalChange(activeModalIndex, 1);
+        if (e.key == "ArrowLeft") arrowModalChange(activeModalIndex, -1);
+        if (e.key == "Escape") closeModal();
+    }
 });
