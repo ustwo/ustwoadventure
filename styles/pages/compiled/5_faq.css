@@ -1,33 +1,33 @@
 .faq-content .writing {
-	margin: auto;
-	max-width: 720px;
+  margin: auto;
+  max-width: 720px;
 }
 
 .faq-content .writing p.question {
-	margin-top: 45px;
-	font-size: 1.32em;
-	font-weight: 700;
-	line-height: 1.6;
+  margin-top: 45px;
+  font-size: 1.32em;
+  font-weight: 700;
+  line-height: 1.6;
 }
 
 .faq-content .writing p.answer {
-	margin-top: 18px;
+  margin-top: 18px;
 }
 
 .faq-content .writing a {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .faq-content .writing a:hover {
-	font-style: italic;
+  font-style: italic;
 }
 
 @media (max-width: 769px) {
-	.faq-content .writing p.question {
-		margin-top: 30px;
-		font-size: 1.22em;
-	}
-	.faq-content .writing p.answer {
-		margin-top: 12px;
-	}
+  .faq-content .writing p.question {
+    margin-top: 30px;
+    font-size: 1.22em;
+  }
+  .faq-content .writing p.answer {
+    margin-top: 12px;
+  }
 }

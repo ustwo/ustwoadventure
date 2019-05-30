@@ -1,188 +1,192 @@
 .approach-content h1 {
-	max-width: 400px;
+  max-width: 400px;
 }
 
 .approach-content p:not(:first-child) {
-	margin-top: 60px;
+  margin-top: 60px;
 }
 
 .approach-content .writing {
-	margin: auto;
-	max-width: 766px;
+  margin: auto;
+  max-width: 766px;
 }
 
 .approach-content .writing a {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .approach-content .writing a:hover {
-	font-style: italic;
+  font-style: italic;
 }
 
 .approach-content .writing blockquote {
-	margin: 70px auto 70px auto;
-	max-width: 350px;
-	text-align: center;
+  margin: 70px auto 70px auto;
+  max-width: 350px;
+  text-align: center;
 }
 
 .approach-content .stages {
-	margin: 90px auto 0 auto;
-	max-width: 1020px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	justify-content: space-between;
+  margin: 90px auto 0 auto;
+  max-width: 1020px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 
 .approach-content .stages div {
-	width: 28%;
-	position: relative;
-	margin: 0 10px 70px 10px;
+  width: 28%;
+  position: relative;
+  margin: 0 10px 70px 10px;
 }
 
 .approach-content .stages div h2.number {
-	position: absolute;
-	top: -3px;
-	left: -25px;
-	z-index: -1;
-	font-family: "futura-pt", "futura", sans-serif;
-	font-size: 72px;
-	opacity: 0.85;
-	-webkit-text-stroke: 1.2px;
-	-webkit-text-fill-color: transparent;
-	position: relative;
+  top: -3px;
+  left: -25px;
+  z-index: -1;
+  font-family: "futura-pt", "futura", sans-serif;
+  font-size: 72px;
+  opacity: 0.85;
+  -webkit-text-stroke: 1.2px;
+  -webkit-text-fill-color: transparent;
+  position: relative;
 }
 
 .approach-content .stages div h2.number::after {
-	content: attr(data-number);
-	-webkit-text-stroke: 0;
-	-webkit-text-fill-color: var(--piglet);
-	position: absolute;
-	top: -0px;
-	left: 0px;
-	opacity: 0;
-	transition: top 0.15s, left 0.15s;
+  content: attr(data-number);
+  -webkit-text-stroke: 0;
+  -webkit-text-fill-color: var(--piglet);
+  position: absolute;
+  top: -0px;
+  left: 0px;
+  opacity: 0;
+  transition: top 0.15s, left 0.15s;
 }
 
 .approach-content .stages div p.stage-title {
-	margin-top: -55px;
-	font-weight: 700;
+  margin-top: -55px;
+  font-weight: 700;
 }
 
 .approach-content .stages div p.stage-copy {
-	margin-top: 5px;
-	font-size: 0.92em;
+  margin-top: 5px;
+  font-size: 0.92em;
 }
 
 .approach-content .stages div:hover h2.number, .approach-content .stages div.scrolled h2.number {
-	font-style: italic;
+  font-style: italic;
 }
 
 .approach-content .stages div:hover h2.number::after, .approach-content .stages div.scrolled h2.number::after {
-	opacity: 1;
-	top: -4px;
-	left: -4px;
+  opacity: 1;
+  top: -4px;
+  left: -4px;
 }
 
 .approach-content .stages div.stage-cta {
-	margin-top: 25px;
+  margin-top: 25px;
 }
 
 .approach-content .stages div.stage-cta a.button {
-	display: block;
-	width: 142px;
-	text-align: center;
+  display: block;
+  width: 142px;
+  text-align: center;
 }
 
 @media (max-width: 965px) {
-	.approach-content .stages div.stage-cta a.button {
-		width: 125px;
-	}
+  .approach-content .stages div.stage-cta a.button {
+    width: 125px;
+  }
 }
 
 @media (max-width: 950px) {
-	.approach-content h1 {
-		max-width: 340px;
-	}
-	.approach-content p:not(:first-child) {
-		margin-top: 50px;
-	}
-	.approach-content .writing blockquote {
-		margin: 50px auto 50px auto;
-		max-width: 350px;
-	}
-	.approach-content .stages {
-		margin-top: 60px;
-	}
+  .approach-content h1 {
+    max-width: 340px;
+  }
+  .approach-content p:not(:first-child) {
+    margin-top: 50px;
+  }
+  .approach-content .writing blockquote {
+    margin: 50px auto 50px auto;
+    max-width: 350px;
+  }
+  .approach-content .stages {
+    margin-top: 60px;
+  }
 }
 
 @media (max-width: 870px) {
-	.approach-content h1 {
-		max-width: 280px;
-	}
-	.approach-content .stages {
-		justify-content: space-around;
-	}
-	.approach-content .stages div {
-		width: 35%;
-	}
+  .approach-content h1 {
+    max-width: 280px;
+  }
+  .approach-content .stages {
+    justify-content: space-around;
+  }
+  .approach-content .stages div {
+    width: 35%;
+  }
 }
 
 @media (max-width: 635px) {
-	.approach-content .stages div {
-		margin-bottom: 50px;
-		width: 65%;
-	}
-	.approach-content .stages div:nth-child(5) {
-		margin-bottom: 20px;
-	}
+  .approach-content .stages div {
+    margin-bottom: 50px;
+    width: 65%;
+  }
+  .approach-content .stages div:nth-child(5) {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 475px) {
-	.approach-content .stages div h2.number {
-		top: -9px;
-	}
-	.approach-content .stages div.stage-cta a.button {
-		width: 121px;
-	}
+  .approach-content .stages div h2.number {
+    top: -9px;
+  }
+  .approach-content .stages div.stage-cta a.button {
+    width: 121px;
+  }
 }
 
 @media (max-width: 425px) {
-	.approach-content h1 {
-		max-width: 240px;
-	}
-	.approach-content p:not(:first-child) {
-		margin-top: 40px;
-	}
-	.approach-content .writing blockquote {
-		margin: 40px auto 40px auto;
-		max-width: 240px;
-	}
-	.approach-content .stages div {
-		width: 78%;
-	}
-	.approach-content .stages div.stage-cta {
-		margin: 10px auto 0 auto;
-	}
-	.approach-content .stages div.stage-cta a.button {
-		display: inline-block;
-		margin-right: 15px;
-	}
+  .approach-content h1 {
+    max-width: 240px;
+  }
+  .approach-content p:not(:first-child) {
+    margin-top: 40px;
+  }
+  .approach-content .writing blockquote {
+    margin: 40px auto 40px auto;
+    max-width: 240px;
+  }
+  .approach-content .stages div {
+    width: 78%;
+  }
+  .approach-content .stages div.stage-cta {
+    margin: 10px auto 0 auto;
+  }
+  .approach-content .stages div.stage-cta a.button {
+    display: inline-block;
+    margin-right: 15px;
+  }
 }
 
 @media (max-width: 340px) {
-	.approach-content h1 {
-		max-width: 200px;
-	}
-	.approach-content p:not(:first-child) {
-		margin-top: 30px;
-	}
-	.approach-content .writing blockquote {
-		margin: 30px auto 30px auto;
-		max-width: 220px;
-	}
-	.approach-content .stages div {
-		width: 85%;
-	}
+  .approach-content h1 {
+    max-width: 200px;
+  }
+  .approach-content p:not(:first-child) {
+    margin-top: 30px;
+  }
+  .approach-content .writing blockquote {
+    margin: 30px auto 30px auto;
+    max-width: 220px;
+  }
+  .approach-content .stages div {
+    width: 85%;
+  }
 }
