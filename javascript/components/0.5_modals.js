@@ -31,8 +31,7 @@ const closeModalButton = document.createElement("a");
 closeModalButton.classList.add("close-modal");
 closeModalButton.href = ("");
 
-let isModalOpen,
-    activeModalIndex,
+let activeModalIndex,
     clonedModal,
     portfolioItemLinks,
     modalLinks;
@@ -84,8 +83,6 @@ const openModal = modalId => {
             parentPortfolioItem.classList.add("active");
         });
     }
-
-    isModalOpen = true;
 };
 
 
@@ -97,8 +94,6 @@ const closeModal = () => {
     document.body.classList.remove("no-scroll");
 
     history.replaceState("", document.title, window.location.pathname);
-
-    isModalOpen = false;
 };
 
 
@@ -139,7 +134,7 @@ const arrowModalChange = (index, indexChange) => {
 
 
 window.addEventListener("keydown", e => {
-    if (isModalOpen === true) {
+    if (activeModalContainer.classList.contains("show")) {
         if (e.key == "ArrowRight" || e.code == "Space") arrowModalChange(activeModalIndex, 1);
         if (e.key == "ArrowLeft") arrowModalChange(activeModalIndex, -1);
         if (e.key == "Escape") closeModal();
