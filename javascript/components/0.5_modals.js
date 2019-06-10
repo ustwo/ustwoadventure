@@ -121,8 +121,8 @@ if (window.location.hash) {
 }
 
 
-const arrowModalChange = (index, indexChange) => {
-    const newIndex = index + indexChange;
+const arrowModalChange = indexChange => {
+    const newIndex = activeModalIndex + indexChange;
 
     if (0 <= newIndex && newIndex < portfolioItemLinks.length) {
         const newModal = document.querySelector(`[data-index="${newIndex}"]`);
@@ -135,8 +135,8 @@ const arrowModalChange = (index, indexChange) => {
 
 window.addEventListener("keydown", e => {
     if (activeModalContainer.classList.contains("show")) {
-        if (e.key == "ArrowRight" || e.code == "Space") arrowModalChange(activeModalIndex, 1);
-        if (e.key == "ArrowLeft") arrowModalChange(activeModalIndex, -1);
+        if (e.key == "ArrowRight" || e.code == "Space") arrowModalChange(+1);
+        if (e.key == "ArrowLeft") arrowModalChange(-1);
         if (e.key == "Escape") closeModal();
     }
 });
