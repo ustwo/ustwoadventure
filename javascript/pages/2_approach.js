@@ -26,15 +26,17 @@ approachPage.className = "approach-content";
 
 approachPage.innerHTML = `
 
-    <h1>A different path</h1>
+    <h1>A flexible path</h1>
 
     <div class="writing">
 
         <p>
             When you combine long-term thinking with strong culture + design,
-            you create game-changing companies. Very few investment models
+            you create game-changing companies. We exist to help others create
+            businesses that are buit on these principles.
+            <!-- Very few investment models
             allow founders to do that. We’re creating an alternative that lets
-            you build a business on your terms, with independence and optionality.
+            you build a business on your terms, with independence and optionality. -->
         </p>
 
         <blockquote>
