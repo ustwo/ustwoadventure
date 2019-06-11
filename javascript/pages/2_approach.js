@@ -32,7 +32,7 @@ approachPage.innerHTML = `
 
         <p>
             When you combine long-term thinking with strong culture + design,
-            you create game-changing companies. We exist to help others create
+            you create game-changing companies. We want to help others create
             businesses that are buit on these principles.
             <!-- Very few investment models
             allow founders to do that. We’re creating an alternative that lets
