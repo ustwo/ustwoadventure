@@ -32,8 +32,9 @@ homePage.innerHTML = `
         <div class="path-for-companies">
             <h2>A path for game-changing companies</h2>
             <p>
-                What if startup funding enabled companies to prioritise
-                design, culture, and a long-term view?
+                When you combine long-term thinking with strong culture and design,
+                you create game-changing companies. We want to help others build
+                businesses on top of these principles.
             </p>
             <p>
                 Whether by equity or revenue share, our approach to investing

@@ -31,25 +31,21 @@ approachPage.innerHTML = `
     <div class="writing">
 
         <p>
-            When you combine long-term thinking with strong culture + design,
-            you create game-changing companies. We want to help others create
-            businesses that are buit on these principles.
-            <!-- Very few investment models
-            allow founders to do that. We’re creating an alternative that lets
-            you build a business on your terms, with independence and optionality. -->
+            We know how important creativity is, and what it takes to build a company
+            people believe in. ustwo has been an independant studio for
+            ${new Date().getFullYear() - 2004} years, and we've worked hard to build a
+            culture that we're proud of. These traits have been essential to our success,
+            and have allowed us to take risks and make a meaningful impact with the work we
+            do. We want other founders to have the same opportunity.
         </p>
 
         <blockquote>
             Build a business on your terms
         </blockquote>
 
-        <p>
-            We know what it takes to build a company people believe in. We
-            are creators. We are operators. We value our financial independence.
-            Our culture is essential to our success. These traits have allowed
-            us to take risks and make a meaningful impact. We want other
-            founders to have the same opportunity.
-        </p>
+        <!-- <p>
+            
+        </p> -->
 
         <p>
             There are 5 main components to our model. We'll soon be publishing our
