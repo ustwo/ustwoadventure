@@ -1,4 +1,6 @@
 .faq-content {
+    margin-bottom: 120px;
+
     .writing {
         margin: auto;
         max-width: 720px;
@@ -28,6 +30,8 @@
 
 
     @media (max-width: 769px) {
+        margin-bottom: 100px;
+
         .writing {
             p.question {
                 margin-top: 30px;

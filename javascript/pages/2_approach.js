@@ -47,6 +47,8 @@ approachPage.innerHTML = `
             
         </p> -->
 
+        <!-- <div class="separator"> </div> -->
+
         <p>
             There are 5 main components to our model. We'll soon be publishing our
             full investment terms on Github, for people to dig into all of the details.

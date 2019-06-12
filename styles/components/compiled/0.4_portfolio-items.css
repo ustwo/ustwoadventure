@@ -16,9 +16,9 @@
   color: var(--piglet);
   text-align: right;
   text-transform: uppercase;
-  transition: -webkit-transform 0.08s;
-  transition: transform 0.08s;
-  transition: transform 0.08s, -webkit-transform 0.08s;
+  transition: -webkit-transform 0.09s;
+  transition: transform 0.09s;
+  transition: transform 0.09s, -webkit-transform 0.09s;
 }
 
 .portfolio-item div.image-container {
@@ -33,9 +33,9 @@
      object-fit: cover;
   -webkit-filter: contrast(92%);
           filter: contrast(92%);
-  transition: box-shadow 0.08s, -webkit-transform 0.08s, -webkit-filter 0.08s;
-  transition: transform 0.08s, box-shadow 0.08s, filter 0.08s;
-  transition: transform 0.08s, box-shadow 0.08s, filter 0.08s, -webkit-transform 0.08s, -webkit-filter 0.08s;
+  transition: box-shadow 0.09s, -webkit-transform 0.09s, -webkit-filter 0.09s;
+  transition: transform 0.09s, box-shadow 0.09s, filter 0.09s;
+  transition: transform 0.09s, box-shadow 0.09s, filter 0.09s, -webkit-transform 0.09s, -webkit-filter 0.09s;
 }
 
 .portfolio-item div.image-container img.arrow {
@@ -43,9 +43,9 @@
   bottom: 15px;
   left: 15px;
   width: 22px;
-  transition: -webkit-transform 0.08s;
-  transition: transform 0.08s;
-  transition: transform 0.08s, -webkit-transform 0.08s;
+  transition: -webkit-transform 0.09s;
+  transition: transform 0.09s;
+  transition: transform 0.09s, -webkit-transform 0.09s;
 }
 
 .portfolio-item p.copy {
