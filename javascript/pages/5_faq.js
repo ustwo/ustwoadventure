@@ -12,10 +12,10 @@ faqPage.innerHTML = `
         </p>
 
         <p class="answer">
-            Since 2014 we’ve been investing in companies. What we've seen in that
-            time is that, like us, the most thoughtful and creative founders value
-            their independence and care deeply about how they want to build their
-            business.
+            Since 2014 we’ve been investing in a broad set of companies. What we've
+            seen in that time is that, like us, the most thoughtful and creative
+            founders value their independence and care deeply about how they want
+            to build their business.
         </p>
         
         <p class="answer">
