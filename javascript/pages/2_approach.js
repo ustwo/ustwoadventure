@@ -30,18 +30,14 @@ approachPage.innerHTML = `
 
     <div class="writing">
 
-        <p>
+        <!-- <p>
             We know how important creativity is, and what it takes to build a company
             people believe in. ustwo has been an independent studio for
             ${new Date().getFullYear() - 2004} years, and we've worked hard to build a
             culture that we're proud of. These traits have been essential to our success,
             and have allowed us to take risks and make a meaningful impact with the work we
             do.
-        </p>
-
-        <blockquote>
-            Applying our values to investment
-        </blockquote>
+        </p> -->
 
         <p>
             Adventure is an expression of ustwo’s values applied to the world of investment
@@ -51,13 +47,12 @@ approachPage.innerHTML = `
             community of founders and their teams in the long run.
         </p>
 
+        <blockquote>
+            We want to apply our values to investing
+        </blockquote>
+
         <p>
-            Founders should be able to run their companies in they way that feels right for
-            them and their team, sometimes this means that the traditional venture capital
-            path isn't right for them, and sometimes it is. To make sure we can be inclusive
-            to all types of companies we practice two models of investment. The first is
-            traditional equity based investments. The second is an alternative revenue-share
-            structure, which has 5 components.
+            We have 5 core principles that we use to invest
         </p>
 
     </div>
@@ -67,8 +62,9 @@ approachPage.innerHTML = `
 
         <div class="stage-1">
             <h2 class="number" data-number="1"> 1 </h2>
-            <p class="stage-title">Investment of up to £500k</p>
+            <p class="stage-title"> Design as a force for good </p>
             <p class="stage-copy">
+                At the highest level this is what ustwo is all about.
                 This capital is about unlocking pent-up growth, not subsidising
                 future fundraises. This amount should credibly get you to
                 profitability so this can be your last round
@@ -78,36 +74,36 @@ approachPage.innerHTML = `
 
         <div class="stage-2">
             <h2 class="number" alt="2" data-number="2"> 2 </h2>
-            <p class="stage-title">No equity by default</p>
+            <p class="stage-title"> Deep care </p>
             <p class="stage-copy">
-                This is about preserving a founder's most valuable asset. We
-                can find other ways of realising value (see number 3).
+                For your product, your users, and your employees. We want to back
+                founders who understand
             </p>
         </div>
 
         <div class="stage-3">
             <h2 class="number" data-number="3"> 3 </h2>
-            <p class="stage-title">Revenue share</p>
+            <p class="stage-title"> Inclusivity </p>
             <p class="stage-copy">
-                These payments kick in 2–3 years post investment, once
-                the business has grown and can afford to take out a single
-                digit percentage of revenue to repay investors.
+                We are committed to building a portfolio of companies that
+                reflects the diversity of the world we live in.
             </p>
         </div>
 
         <div class="stage-4">
             <h2 class="number" data-number="4"> 4 </h2>
-            <p class="stage-title">A capped return</p>
+            <p class="stage-title"> Real communities </p>
             <p class="stage-copy">
-                Our cap is 3X the original investment, not insignificant but
-                certainly more modest than the 10X+ that traditional venture
-                capital wants from any given investment.
+                We love it when people are brought together through common bonds
+                and a higher purspose. It's collective genius in action. Community
+                for us means businesses that are made better by engaged customers,
+                whose contribution to the brand goes beyond purchasing.
             </p>
         </div>
 
         <div class="stage-5">
             <h2 class="number" data-number="5"> 5 </h2>
-            <p class="stage-title">Equity option</p>
+            <p class="stage-title"> Sustainable profitability </p>
             <p class="stage-copy">
                 This is also in the single digit % range. One day VC may make
                 sense. One day you may want to sell your business. This option
@@ -116,11 +112,34 @@ approachPage.innerHTML = `
             </p>
         </div>
 
-        <div class="stage-cta">
-            <!-- <a class="nav button external" href="https://gihub.com/ustwo/adventure-investment-terms" target="_blank" rel="noopener">See terms</a> -->
-            <a class="nav button internal" href="/faq">Read FAQ</a>
+        <div class="stage-6">
+            <h2 class="number" data-number="6"> 6 </h2>
+            <p class="stage-title"> A golden thread </p>
+            <p class="stage-copy">
+                As a group of companies we look to make investments where we can
+                add the most value, and where we can learn the most in areas where
+                we do work. Healthcare, mobility, immersive technologies, games.
+                These are areas that we love to work with.
+            </p>
         </div>
 
     </div>
+
+    <h1>Model</h1>
+
+    <div class="writing">
+
+        <p>
+            Founders should be able to run their companies in the way that feels right for
+            them and their team, while being able to prioritise all of the above. Sometimes
+            this means that the traditional venture capital path isn't right for them, and
+            sometimes it is. To make sure we can be inclusive to all types of companies we
+            practice two models of investment. The first is traditional equity based investments.
+            The second is an alternative revenue-share structure, which has 5 components.
+        </p>
+
+    </div>
+
+    <h1>Platform</h1>
 
 `;

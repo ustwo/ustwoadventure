@@ -9,9 +9,15 @@
 
 .faq-content .writing p.question {
   margin-top: 45px;
-  font-size: 1.32em;
+  font-size: 1.28em;
   font-weight: 700;
   line-height: 1.6;
+  color: var(--grey04);
+}
+
+.faq-content .writing p.answer-header {
+  font-weight: 700;
+  margin-top: 18px;
 }
 
 .faq-content .writing p.answer {

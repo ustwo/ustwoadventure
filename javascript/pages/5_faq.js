@@ -8,6 +8,49 @@ faqPage.innerHTML = `
     <div class="writing">
 
         <p class="question">
+            Can you tell us more about the revenue share structure?
+        </p>
+
+        <p class="answer">
+            Yes! To give founders the independence and optionality to grow their business without
+            being locked into a VC path we can also use a revenue share structure for investing.
+            The key components of this are:
+        </p>
+        
+        <p class="answer-header">1. Investment of up to £500k</p>
+        <p class="answer">
+            This capital is about unlocking pent-up growth, not subsidising future fundraises.
+            This amount should credibly get you to profitability so this can be your last round
+            (if that’s what you want).
+        </p>
+
+        <p class="answer-header">2. No equity by default</p>
+        <p class="answer">
+            This is about preserving a founder's most valuable asset. We can find other ways of
+            realising value...
+        </p>
+
+        <p class="answer-header">3. Revenue share</p>
+        <p class="answer">
+            These payments would kick in 2–3 years post investment, once the business has grown
+            and can afford to take out a single digit percentage of revenue to repay investors.
+        </p>
+
+        <p class="answer-header">4. A capped return</p>
+        <p class="answer">
+            Our cap is 3X the original investment, not insignificant but certainly more modest
+            than the 10X+ traditional venture capital wants from any given investment.
+        </p>
+
+        <p class="answer-header">5. Equity option</p>
+        <p class="answer">
+            This is also in the single digit % range. One day VC may make sense. One day
+            you may want tosell your business. This option exists to give founders the
+            flexibility to do what makes sense in the future.
+        </p>
+
+
+        <p class="question">
             Why are you practicing two models of investment?
         </p>
 
