@@ -1,0 +1,101 @@
+.contact-content .copy-form-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-content .copy-form-container .copy {
+  max-width: 42%;
+}
+
+.contact-content .copy-form-container .copy p {
+  margin-bottom: 30px;
+}
+
+.contact-content .copy-form-container .copy p a {
+  font-size: 1.24em;
+  color: var(--grey04);
+}
+
+.contact-content .copy-form-container .copy p a:hover {
+  font-style: italic;
+}
+
+.contact-content .copy-form-container form {
+  margin-left: 40px;
+  width: 45%;
+}
+
+.contact-content .copy-form-container form p {
+  margin-bottom: 25px;
+}
+
+.contact-content .copy-form-container form p.hidden {
+  display: none;
+}
+
+.contact-content .copy-form-container form label {
+  width: 100%;
+  min-width: 150px;
+  display: inline-block;
+}
+
+.contact-content .copy-form-container form input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.contact-content .copy-form-container form *:focus {
+  outline: none;
+}
+
+.contact-content .copy-form-container form input[type=text], .contact-content .copy-form-container form input[type=email], .contact-content .copy-form-container form select {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 12px 0;
+  display: inline-block;
+  border-width: 0 0 2px;
+  border-color: var(--piglet);
+  box-sizing: border-box;
+  font-size: 20px;
+  color: var(--nonBlack);
+  font-family: 'Px', sans-serif;
+}
+
+.contact-content .copy-form-container form ::-webkit-input-placeholder {
+  color: var(--piglet);
+}
+
+.contact-content .copy-form-container form :-ms-input-placeholder {
+  color: var(--piglet);
+}
+
+.contact-content .copy-form-container form ::placeholder {
+  color: var(--piglet);
+}
+
+.contact-content .copy-form-container form textarea {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 12px 0;
+  display: inline-block;
+  border-width: 2px 2px 2px 2px;
+  border-color: var(--piglet);
+  box-sizing: border-box;
+  font-size: 20px;
+  color: var(--nonBlack);
+  font-family: 'Px', sans-serif;
+  resize: vertical;
+}
+
+.contact-content .copy-form-container form input[type=text], .contact-content .copy-form-container form input[type=email], .contact-content .copy-form-container form select {
+  width: 100%;
+}
+
+.contact-content .copy-form-container form input[type=button], .contact-content .copy-form-container form input[type=submit], .contact-content .copy-form-container form input[type=reset] {
+  cursor: pointer;
+}

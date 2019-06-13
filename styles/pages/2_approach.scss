@@ -27,8 +27,8 @@
     }
 
     .stages {
-        margin: 100px auto 60px auto;
-        max-width: 1020px;
+        margin: 100px 20px 70px 20px;
+        max-width: 1060px;
 
         display: flex;
         flex-direction: row;
@@ -40,7 +40,7 @@
             width: 28%;
             position: relative;
 
-            margin: 0 10px 70px 10px;
+            margin-bottom: 70px;
 
             h2.number {
                 top: -3px;
@@ -65,7 +65,7 @@
                     left: 0px;
 
                     opacity: 0;
-                    transition: top 0.15s, left 0.15s;
+                    transition: top 180ms, left 180ms;
                 }
             }
 
@@ -130,12 +130,12 @@
         }
 
         .stages {
-            margin-top: 60px;
+            margin: 60px 10px 60px 10px;
         }
     }
 
 
-    @media (max-width: 870px) {
+    @media (max-width: 890px) {
         h1 {
             max-width: 280px;
         }

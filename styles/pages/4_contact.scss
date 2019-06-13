@@ -1,0 +1,92 @@
+.contact-content {
+
+    .copy-form-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .copy {
+            max-width: 42%;
+
+            p {
+                margin-bottom: 30px;
+
+                a {
+                    font-size: 1.24em;
+                    color: var(--grey04);
+
+                    &:hover {
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+
+        form {
+            margin-left: 40px;
+            width: 45%;
+
+            p {
+                margin-bottom: 25px;
+
+                &.hidden {
+                    display: none;
+                }
+            }
+
+            label {
+                width: 100%;
+                min-width: 150px;
+                display: inline-block;
+            }
+
+            input {
+                -webkit-appearance: none;
+                border-radius: 0;
+            }
+
+            *:focus {
+                outline: none;
+            }
+
+            input[type=text], input[type=email], select {
+                width: 100%;
+                padding: 10px 10px;
+                margin: 12px 0;
+                display: inline-block;
+                border-width: 0 0 2px;
+                border-color: var(--piglet);
+                box-sizing: border-box;
+                font-size: 20px;
+                color: var(--nonBlack);
+                font-family: 'Px', sans-serif;
+            }
+
+            ::placeholder {
+                color: var(--piglet);
+            }
+
+            textarea {
+                width: 100%;
+                padding: 10px 10px;
+                margin: 12px 0;
+                display: inline-block;
+                border-width: 2px 2px 2px 2px;
+                border-color: var(--piglet);
+                box-sizing: border-box;
+                font-size: 20px;
+                color: var(--nonBlack);
+                font-family: 'Px', sans-serif;
+                resize: vertical;
+            }
+
+            input[type=text], input[type=email], select {
+                width: 100%;
+            }
+
+            input[type=button], input[type=submit], input[type=reset] {
+                cursor: pointer;
+            }
+        }
+    }
+}
