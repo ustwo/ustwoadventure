@@ -10,8 +10,9 @@ contactPage.innerHTML = `
         <div class="copy">
 
             <p>
-                To get in touch with us about an investment opportunity, please fill out the form.
-                To contact us about anything else, please send us an email to the address below.
+                To get in touch with us to talk about an investment opportunity, please
+                fill out the form. To contact us about anything else, please send us
+                an email to the address below.
             </p>
 
             <p>

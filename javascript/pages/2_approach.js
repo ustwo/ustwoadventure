@@ -26,7 +26,7 @@ approachPage.className = "approach-content";
 
 approachPage.innerHTML = `
 
-    <h1>[Doing it differently]</h1>
+    <h1>Investing our way</h1>
 
     <div class="writing">
 
@@ -38,12 +38,12 @@ approachPage.innerHTML = `
             community of founders and their teams in the long run.
         </p>
 
-        <blockquote>
-            Applying our values to investing [will change this]
-        </blockquote>
+        <!-- <blockquote>
+            Applying our values to investing
+        </blockquote> -->
 
         <p>
-            [More here] Our investment thesis is comprised of 6 core principles:
+            Our investment thesis is comprised of 6 core principles:
         </p>
 
     </div>
@@ -117,6 +117,8 @@ approachPage.innerHTML = `
         </div>
 
     </div>
+
+    <h1>An alternative path</h1>
 
     <div class="writing">
 

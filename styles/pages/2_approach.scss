@@ -1,6 +1,10 @@
 .approach-content {
     h1 {
         max-width: 400px;
+
+        &:nth-of-type(2) {
+            max-width: 460px;
+        }
     }
 
     p:not(:first-child) {
