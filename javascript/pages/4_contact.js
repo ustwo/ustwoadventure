@@ -27,7 +27,7 @@ contactPage.innerHTML = `
 
         </div>
 
-        <form class="form" name="contact" method="POST" action="contact?thanks" data-netlify="true" netlify-honeypot="bot-field">
+        <form class="form" name="contact" action="contact?thanks" data-netlify="true" netlify-honeypot="bot-field">
 
             <p class="hidden">
                 <label> Don’t fill this out: <input name="bot-field"> </label>
