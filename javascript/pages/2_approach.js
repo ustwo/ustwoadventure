@@ -26,36 +26,24 @@ approachPage.className = "approach-content";
 
 approachPage.innerHTML = `
 
-    <h1>A different path</h1>
+    <h1>Investing our way</h1>
 
     <div class="writing">
 
         <p>
-            When you combine long-term thinking with strong culture + design,
-            you create game-changing companies. Very few investment models
-            allow founders to do that. We’re creating an alternative that lets
-            you build a business on your terms, with independence and optionality.
+            Adventure is an expression of ustwo’s values applied to the world of investment
+            and company building. We want to help founders with true heart and ambition forge
+            a path in a world that suffers from bias, groupthink, and growth-at-all-costs.
+            Money is one part of this equation, but we also care about supporting our
+            community of founders and their teams in the long run.
         </p>
 
-        <blockquote>
-            Build a business on your terms
-        </blockquote>
+        <!-- <blockquote>
+            Applying our values to investing
+        </blockquote> -->
 
         <p>
-            We know what it takes to build a company people believe in. We
-            are creators. We are operators. We value our financial independence.
-            Our culture is essential to our success. These traits have allowed
-            us to take risks and make a meaningful impact. We want other
-            founders to have the same opportunity.
-        </p>
-
-        <p>
-            There are 5 main components to our model. We'll soon be publishing our
-            full investment terms on Github, for people to dig into all of the details.
-
-            <!-- If you want to dig into the full terms we use to invest, feel
-            free to check them out
-            <a href="https://github.com/ustwo/adventureterms" target="_blank" rel="noopener">on Github.</a> -->
+            We have six core principles to evaluate the companies we invest in:
         </p>
 
     </div>
@@ -64,60 +52,88 @@ approachPage.innerHTML = `
     <div class="stages">
 
         <div class="stage-1">
-            <h2 class="number" data-number="1">1</h2>
-            <p class="stage-title">Investment of up to £500k</p>
+            <h2 class="number" data-number="1"> 1 </h2>
+            <p class="stage-title"> Design as a force for good </p>
             <p class="stage-copy">
-                This capital is about unlocking pent-up growth, not subsidising
-                future fundraises. This amount should credibly get you to
-                profitability so this can be your last round
-                (if that’s what you want).
+                This is what ustwo is all about. We believe design and creativity
+                can improve the world we live in. We want to support the next generation
+                of founders doing just that.
             </p>
         </div>
 
         <div class="stage-2">
-            <h2 class="number" data-number="2">2</h2>
-            <p class="stage-title">No equity by default</p>
+            <h2 class="number" data-number="2"> 2 </h2>
+            <p class="stage-title"> Real communities </p>
             <p class="stage-copy">
-                This is about preserving a founder's most valuable asset. We
-                can find other ways of realising value (see number 3).
+                We love it when people are brought together through common bonds
+                and a higher purspose. It's collective genius in action. For us,
+                community means engaged users, whose contribution to the brand
+                goes beyond purchasing.
             </p>
         </div>
 
         <div class="stage-3">
-            <h2 class="number" data-number="3">3</h2>
-            <p class="stage-title">Revenue share</p>
+            <h2 class="number" data-number="3"> 3 </h2>
+            <p class="stage-title"> Deep care </p>
             <p class="stage-copy">
-                These payments would kick in 2–3 years post investment, once
-                the business has grown and can afford to take out a single
-                digit percentage of revenue to repay investors.
+                For your product, your users, and your employees. We back
+                genuine founders who take a long-term approach to their
+                business, and come with real conviction to solve the
+                problems they see.
             </p>
         </div>
 
         <div class="stage-4">
-            <h2 class="number" data-number="4">4</h2>
-            <p class="stage-title">A capped return</p>
+            <h2 class="number" data-number="4"> 4 </h2>
+            <p class="stage-title"> Inclusivity </p>
             <p class="stage-copy">
-                Our cap is 3X the original investment, not insignificant but
-                certainly more modest than the 10X+ traditional venture capital
-                wants from any given investment.
+                We are committed to building a portfolio of companies that
+                reflects the world we live in, both in terms of the founders
+                we back, and how they consider diversity when operating their
+                business.
             </p>
         </div>
 
         <div class="stage-5">
-            <h2 class="number" data-number="5">5</h2>
-            <p class="stage-title">Equity option</p>
+            <h2 class="number" data-number="5"> 5 </h2>
+            <p class="stage-title"> A golden thread </p>
             <p class="stage-copy">
-                This is also in the single digit % range. One day VC may make
-                sense. One day you may want to sell your business. This option
-                exists to give founders the flexibility to do what makes sense
-                in the future.
+                At ustwo we look to make investments that align with our work and expertise.
+                Healthcare, mobility, immersive technologies, future of work, games — these
+                are areas that we love.
             </p>
         </div>
 
-        <div class="stage-cta">
-            <!-- <a class="nav button external" href="https://gihub.com/ustwo/adventure-investment-terms" target="_blank" rel="noopener">See terms</a> -->
-            <a class="nav button internal" href="/faq">Read FAQ</a>
+        <div class="stage-6">
+            <h2 class="number" data-number="6"> 6 </h2>
+            <p class="stage-title"> Sustainable growth </p>
+            <p class="stage-copy">
+                We're not looking for mega-scale.
+                Instead we want to see realistic targets and credible, thoughtful
+                milestones. To achieve this we're open to different investment
+                structures in addition to equity.
+            </p>
         </div>
+
+    </div>
+
+    <h1>An alternative path</h1>
+
+    <div class="writing">
+
+        <p>
+            We believe that founders should be able to run their companies in the way that feels
+            right for them and their team. Sometimes this means that the traditional venture
+            capital path is right for them, and sometimes it isn't. To make sure we can work
+            with all types of companies, we use a range of investment styles.
+        </p>
+
+        <p>
+            Our favoured alternative style of investing has a few key components: No equity by
+            default, a share of revenue that kicks in after 2 years, and a capped return at 3x.
+            We feel this model is perfect for founders who need extra capital to scale their
+            business sustainably, while maintaining financial independance.
+        </p>
 
     </div>
 

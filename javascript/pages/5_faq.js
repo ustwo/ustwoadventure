@@ -8,13 +8,65 @@ faqPage.innerHTML = `
     <div class="writing">
 
         <p class="question">
-            Have all of your investments been with this model?
+            Can you tell us more about the revenue share structure?
         </p>
 
         <p class="answer">
-            Nope! Since 2014 we’ve invested in a handful of companies, all
-            using various models. In that time the learnings we’ve made have
-            led us to the approach we're now using.
+            Yes! To give founders the independence and optionality to grow their business without
+            being locked into a VC path we can also use a revenue share structure for investing.
+            The key components of this are:
+        </p>
+        
+        <p class="answer-header">1. Investment of up to £500k</p>
+        <p class="answer">
+            This capital is about unlocking pent-up growth, not subsidising future fundraises.
+            This amount should credibly get you to profitability so this can be your last round
+            (if that’s what you want).
+        </p>
+
+        <p class="answer-header">2. No equity by default</p>
+        <p class="answer">
+            This is about preserving a founder's most valuable asset. We can find other ways of
+            realising value...
+        </p>
+
+        <p class="answer-header">3. Revenue share</p>
+        <p class="answer">
+            These payments would kick in 2–3 years post investment, once the business has grown
+            and can afford to take out a single digit percentage of revenue to repay investors.
+        </p>
+
+        <p class="answer-header">4. A capped return</p>
+        <p class="answer">
+            Our cap is 3X the original investment, not insignificant but certainly more modest
+            than the 10X+ traditional venture capital wants from any given investment.
+        </p>
+
+        <p class="answer-header">5. Equity option</p>
+        <p class="answer">
+            This is also in the single digit % range. One day VC may make sense. One day
+            you may want tosell your business. This option exists to give founders the
+            flexibility to do what makes sense in the future.
+        </p>
+
+
+        <p class="question">
+            Why are you practicing two models of investment?
+        </p>
+
+        <p class="answer">
+            Since 2014 we’ve been investing in a broad set of companies. What we've
+            seen in that time is that, like us, the most thoughtful and creative
+            founders value their independence and care deeply about how they want
+            to build their business.
+        </p>
+        
+        <p class="answer">
+            For some that means thoughfully approaching the VC industry in order to
+            grow their business in a way that they want. For others this means owning
+            their company and controlling it's future, but this often requires some
+            capital to grow sustainably. Both of these are paths that we want to support,
+            and are happy to be using mechanisms that can accomodate both.
         </p>
 
 
@@ -25,18 +77,19 @@ faqPage.innerHTML = `
         <p class="answer">
             We look for tech-enabled businesses that are already generating
             revenue, have strong capabilities in both design and tech, and
-            are serious about becoming sustainably profitable.
+            who's crosshair is aimed at their product and customers, not
+            their next funding round.
         </p>
 
         <p class="answer">
-            Mindset really matters to us. We are looking for founders who
-            value a long term approach over growth-at-all-costs. You see your
-            business as an opportunity to express your values and you live
-            by them. You would rather talk to customers than investors.
+            Mindset really matters to us. We are looking for founders who are
+            genuine and value a long term approach over growth-at-all-costs.
+            You see your business as an opportunity to express your values
+            and you live by them.
         </p>
 
 
-        <p class="question">
+        <!-- <p class="question">
             Who isn't a fit?
         </p>
 
@@ -47,7 +100,7 @@ faqPage.innerHTML = `
             good fit for our approach. This is because we want our investment
             to be the last round you need to raise while also having enough
             gross margin to manage the revenue share.
-        </p>
+        </p> -->
 
 
         <p class="question">
@@ -107,10 +160,10 @@ faqPage.innerHTML = `
             plays out as we start investing with inclusion core to our thesis.
         </p>
 
-        <p class="answer">
+        <!-- <p class="answer">
             We also ask all companies we meet to apply in exactly the same
             way, looking to reduce unfair network advantages.
-        </p>
+        </p> -->
 
 
         <p class="question">
@@ -118,8 +171,8 @@ faqPage.innerHTML = `
         </p>
 
         <p class="answer">
-            We expect to make investments up to £500,000, with the average
-            being around £300,000.
+            We expect our investment sizes to range from £25,000 to £100,000.
+            As a result we tend to join rounds led by other investors.
         </p>
 
 
@@ -128,10 +181,10 @@ faqPage.innerHTML = `
         </p>
 
         <p class="answer">
-            In our first fund, we are focusing on the UK (where the Adventure
-            team is based) but we’ll also consider investments in areas
-            where we have an ustwo presence. Currently this list includes
-            the US, Sweden, Portugal, and Australia.
+            For our first year investing this way, we are focusing on the
+            UK (where the Adventure team is based), but we’ll also consider
+            investments in areas where we have an ustwo presence. Currently
+            this list includes the US, Sweden, Portugal, and Australia.
         </p>
 
 
@@ -143,16 +196,6 @@ faqPage.innerHTML = `
             No. We want to be active, supportive partners, and we don’t need
             voting rights in your business to do that. It’s not about control,
             but trust.
-        </p>
-
-
-        <p class="question">
-            Do you co-invest?
-        </p>
-
-        <p class="answer">
-            We’d love to invest alongside others. So long as they’re willing
-            to sign on to our terms, we’re happy to have the conversation.
         </p>
 
 

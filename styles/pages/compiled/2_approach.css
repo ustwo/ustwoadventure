@@ -2,6 +2,10 @@
   max-width: 400px;
 }
 
+.approach-content h1:nth-of-type(2) {
+  max-width: 460px;
+}
+
 .approach-content p:not(:first-child) {
   margin-top: 60px;
 }
@@ -26,8 +30,8 @@
 }
 
 .approach-content .stages {
-  margin: 90px auto 0 auto;
-  max-width: 1020px;
+  margin: 100px auto 70px auto;
+  max-width: 1050px;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;
@@ -43,7 +47,7 @@
 .approach-content .stages div {
   width: 28%;
   position: relative;
-  margin: 0 10px 70px 10px;
+  margin-bottom: 70px;
 }
 
 .approach-content .stages div h2.number {
@@ -52,7 +56,7 @@
   z-index: -1;
   font-family: "futura-pt", "futura", sans-serif;
   font-size: 72px;
-  opacity: 0.85;
+  opacity: 0.8;
   -webkit-text-stroke: 1.2px;
   -webkit-text-fill-color: transparent;
   position: relative;
@@ -66,7 +70,7 @@
   top: -0px;
   left: 0px;
   opacity: 0;
-  transition: top 0.15s, left 0.15s;
+  transition: top 180ms, left 180ms;
 }
 
 .approach-content .stages div p.stage-title {
@@ -117,11 +121,11 @@
     max-width: 350px;
   }
   .approach-content .stages {
-    margin-top: 60px;
+    margin: 60px 10px 60px 10px;
   }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 890px) {
   .approach-content h1 {
     max-width: 280px;
   }

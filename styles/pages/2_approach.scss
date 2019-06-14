@@ -1,6 +1,10 @@
 .approach-content {
     h1 {
         max-width: 400px;
+
+        &:nth-of-type(2) {
+            max-width: 460px;
+        }
     }
 
     p:not(:first-child) {
@@ -27,8 +31,8 @@
     }
 
     .stages {
-        margin: 90px auto 0 auto;
-        max-width: 1020px;
+        margin: 100px auto 70px auto;
+        max-width: 1050px;
 
         display: flex;
         flex-direction: row;
@@ -40,7 +44,7 @@
             width: 28%;
             position: relative;
 
-            margin: 0 10px 70px 10px;
+            margin-bottom: 70px;
 
             h2.number {
                 top: -3px;
@@ -49,7 +53,7 @@
 
                 font-family: "futura-pt", "futura", sans-serif;
                 font-size: 72px;
-                opacity: 0.85;
+                opacity: 0.8;
                 -webkit-text-stroke: 1.2px;
                 -webkit-text-fill-color: transparent;
 
@@ -65,7 +69,7 @@
                     left: 0px;
 
                     opacity: 0;
-                    transition: top 0.15s, left 0.15s;
+                    transition: top 180ms, left 180ms;
                 }
             }
 
@@ -130,12 +134,12 @@
         }
 
         .stages {
-            margin-top: 60px;
+            margin: 60px 10px 60px 10px;
         }
     }
 
 
-    @media (max-width: 870px) {
+    @media (max-width: 890px) {
         h1 {
             max-width: 280px;
         }

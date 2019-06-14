@@ -1,4 +1,6 @@
 .faq-content {
+    margin-bottom: 120px;
+
     .writing {
         margin: auto;
         max-width: 720px;
@@ -6,9 +8,15 @@
         p.question {
             margin-top: 45px;
 
-            font-size: 1.32em;
+            font-size: 1.28em;
             font-weight: 700;
             line-height: 1.6;
+            color: var(--grey04);
+        }
+
+        p.answer-header {
+            font-weight: 700;
+            margin-top: 18px;
         }
 
         p.answer {
@@ -28,6 +36,8 @@
 
 
     @media (max-width: 769px) {
+        margin-bottom: 100px;
+
         .writing {
             p.question {
                 margin-top: 30px;

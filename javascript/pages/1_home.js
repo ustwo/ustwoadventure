@@ -30,15 +30,15 @@ homePage.innerHTML = `
     <div class="top-row">
 
         <div class="path-for-companies">
-            <h2>A path for companies to own their future</h2>
+            <h2>A path for game-changing companies</h2>
             <p>
-                What if startup funding enabled companies to prioritise
-                profitability, culture, and a long-term view?
+                When you combine long-term thinking with strong culture and design,
+                you create game-changing companies. We want to help others build
+                businesses on top of these principles.
             </p>
             <p>
-                No equity by default, shared revenue, and a capped return.
-                Our model gives founders the option to grow their company
-                as they see fit.
+                Whether by equity or revenue share, our approach to investing
+                gives founders the option to grow their company as they see fit.
             </p>
             <a class="nav button internal" href="/approach">Our approach</a>
             <!-- <a class="nav button internal" href="/apply">Apply</a> -->

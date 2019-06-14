@@ -17,18 +17,12 @@ const routes = [
         title: "Portfolio — ustwo Adventure",
         description: "Our family of companies. ustwo Adventure invests in creative companies, differently."
     },
-    // {
-    //     pathname: "/apply",
-    //     pageContent: applyPage,
-    //     title: "Apply — ustwo Adventure",
-    //     description: "Apply to ustwo Adventure — investmenting in creative companies, differently."
-    // },
     {
-        pathname: "/faq",
-        pageContent: faqPage,
-        title: "FAQ — ustwo Adventure",
-        description: "Frequently asked questions. ustwo Adventure invests in creative companies, differently."
-    }
+        pathname: "/contact",
+        pageContent: contactPage,
+        title: "Contact — ustwo Adventure",
+        description: "Contact to ustwo Adventure — investmenting in creative companies, differently."
+    },
 ];
 
 
@@ -58,6 +52,7 @@ const pageContentChange = page => {
     modalLinkSetup();
     lzy();
     if (page == approachPage) approachStageScroll();
+    // if (page == contactPage) submitRedirect();
 };
 
 

@@ -12,7 +12,7 @@
         text-align: right;
         text-transform: uppercase;
 
-        transition: transform 0.08s;
+        transition: transform 0.09s;
     }
 
     div.image-container {
@@ -26,7 +26,7 @@
 
             filter: contrast(92%);
 
-            transition: transform 0.08s, box-shadow 0.08s, filter 0.08s;
+            transition: transform 0.09s, box-shadow 0.09s, filter 0.09s;
         }
 
         img.arrow {
@@ -35,7 +35,7 @@
             left: 15px;
             width: 22px;
 
-            transition: transform 0.08s;
+            transition: transform 0.09s;
         }
     }
 
