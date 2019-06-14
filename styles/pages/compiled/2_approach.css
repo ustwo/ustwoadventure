@@ -30,8 +30,8 @@
 }
 
 .approach-content .stages {
-  margin: 100px 20px 70px 20px;
-  max-width: 1060px;
+  margin: 100px auto 70px auto;
+  max-width: 1050px;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: horizontal;

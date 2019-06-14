@@ -43,7 +43,7 @@ approachPage.innerHTML = `
         </blockquote> -->
 
         <p>
-            We assess investment opportunities through six core principles:
+            We have six core principles to evaluate the companies we invest in:
         </p>
 
     </div>
@@ -55,9 +55,9 @@ approachPage.innerHTML = `
             <h2 class="number" data-number="1"> 1 </h2>
             <p class="stage-title"> Design as a force for good </p>
             <p class="stage-copy">
-                This is what ustwo is all about. From a strong sense of design
-                in product or brand, to tools that facilitate creative expression.
-                We want to let creativity shape our portfolio of investments.
+                This is what ustwo is all about. We believe design and creativity
+                can improve the world we live in. We want to support the next generation
+                of founders doing just that.
             </p>
         </div>
 
@@ -67,8 +67,8 @@ approachPage.innerHTML = `
             <p class="stage-copy">
                 We love it when people are brought together through common bonds
                 and a higher purspose. It's collective genius in action. For us,
-                community means being made better by engaged users, whose
-                contribution to the brand goes beyond purchasing.
+                community means engaged users, whose contribution to the brand
+                goes beyond purchasing.
             </p>
         </div>
 
@@ -77,7 +77,9 @@ approachPage.innerHTML = `
             <p class="stage-title"> Deep care </p>
             <p class="stage-copy">
                 For your product, your users, and your employees. We back
-                genuine founders who take a long-term approach to their business.
+                genuine founders who take a long-term approach to their
+                business, and come with real conviction to solve the
+                problems they see.
             </p>
         </div>
 
@@ -96,10 +98,9 @@ approachPage.innerHTML = `
             <h2 class="number" data-number="5"> 5 </h2>
             <p class="stage-title"> A golden thread </p>
             <p class="stage-copy">
-                At ustwo we look to make investments where we can both add value
-                to companies and learn from them ourselves. Especially in areas where
-                we do work. Healthcare, mobility, immersive technologies, games.
-                These are areas that we love to work with.
+                At ustwo we look to make investments that align with our work and expertise.
+                Healthcare, mobility, immersive technologies, future of work, games — these
+                are areas that we love.
             </p>
         </div>
 
@@ -107,10 +108,10 @@ approachPage.innerHTML = `
             <h2 class="number" data-number="6"> 6 </h2>
             <p class="stage-title"> Sustainable growth </p>
             <p class="stage-copy">
-                No need to offer the world to us. We're not looking for mega-scale.
+                We're not looking for mega-scale.
                 Instead we want to see realistic targets and credible, thoughtful
-                milestones. To achieve this we're open to different ways of making
-                growing your businesswork for you.
+                milestones. To achieve this we're open to different investment
+                structures in addition to equity.
             </p>
         </div>
 
@@ -121,23 +122,17 @@ approachPage.innerHTML = `
     <div class="writing">
 
         <p>
-            To expand on that last point, we believe that founders should be able to run their
-            companies in the way that feels right for them and their team. Sometimes this means
-            that the traditional venture capital path is right for them, and sometimes it isn't.
-            To make sure we can work with all types of companies, we are actively practicing
-            investment styles beyond equity.
+            We believe that founders should be able to run their companies in the way that feels
+            right for them and their team. Sometimes this means that the traditional venture
+            capital path is right for them, and sometimes it isn't. To make sure we can work
+            with all types of companies, we use a range of investment styles.
         </p>
 
         <p>
             Our favoured alternative style of investing has a few key components: No equity by
             default, a share of revenue that kicks in after 2 years, and a capped return at 3x.
-            The revenue shares are in the single digit range, and once the cap is hit, we're square.
             We feel this model is perfect for founders who need extra capital to scale their
-            business sustainably, while maintaining financial independance. And because we know
-            that things change and one day VC might make sense, or you might want to sell the
-            business, we preserve optionality for founders via an equity option. One that
-            triggers in the event  of further fundraising or an exit. This option exists to
-            give the flexibility to do what makes sense in the future.
+            business sustainably, while maintaining financial independance.
         </p>
 
     </div>

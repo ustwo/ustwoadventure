@@ -99,3 +99,33 @@
 .contact-content .copy-form-container form input[type=button], .contact-content .copy-form-container form input[type=submit], .contact-content .copy-form-container form input[type=reset] {
   cursor: pointer;
 }
+
+@media (max-width: 825px) {
+  .contact-content .copy-form-container form {
+    margin-left: 25px;
+    width: 48%;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-content .copy-form-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .contact-content .copy-form-container .copy {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+  .contact-content .copy-form-container form {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .contact-content .copy-form-container .copy {
+    margin-bottom: 40px;
+  }
+}
