@@ -28,9 +28,10 @@ contactPage.innerHTML = `
         </div>
 
         <form name="investment-contact" action="contact" data-netlify="true" netlify-honeypot="bot-field">
-
             <label class="hidden"> Don’t fill this out: <input name="bot-field"> </label>
+            <input type="hidden" name="form-name" value="investment-contact"/>
 
+            
             <label for="company"> Company Name <input required type="text" name="company"/> </label>
 
             <label for="website"> Website <input required type="text" name="website"/> </label>
