@@ -25,7 +25,8 @@ contactPage.innerHTML = `
 
             <p>
                 ${ formIsSubmitted
-                    ? `We'll follow up via e-mail as soon as possible. Have a great day!`
+                    ? `We'll read through what you've sent us and follow up via e-mail as soon as
+                       possible. Have a great day!`
                     : `To get in touch with us to talk about an investment opportunity, please
                        fill out the form. To contact us about anything else, please send us
                        an email to the address below.`
