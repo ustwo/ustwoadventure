@@ -1,3 +1,9 @@
+const stopSubmitRedirect = () => {
+    const submitButton = document.querySelector("input[type=submit]");
+    submitButton.addEventListener("submit", e => e.preventDefault());
+};
+
+
 const contactPage = document.createElement("div");
 contactPage.className = "contact-content";
 
@@ -21,10 +27,10 @@ contactPage.innerHTML = `
 
         </div>
 
-        <form class="form" name="contact" netlify netlify-honeypot="bot-field" action="thanks">
+        <form class="form" name="contact" method="POST" netlify netlify-honeypot="bot-field">
 
             <p class="hidden">
-                <label>Don’t fill this out: <input name="bot-field"></label>
+                <label> Don’t fill this out: <input name="bot-field"> </label>
             </p>
 
             <p>
