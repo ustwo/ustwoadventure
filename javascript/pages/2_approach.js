@@ -43,7 +43,7 @@ approachPage.innerHTML = `
         </blockquote> -->
 
         <p>
-            Our investment thesis is comprised of 6 core principles:
+            We assess investment opportunities through six core principles:
         </p>
 
     </div>
@@ -55,10 +55,9 @@ approachPage.innerHTML = `
             <h2 class="number" data-number="1"> 1 </h2>
             <p class="stage-title"> Design as a force for good </p>
             <p class="stage-copy">
-                At the highest level this is what ustwo is all about. From a
-                strong sense of design in product or brand, to tools that
-                facilitate creative expression. We want to let creativity shape
-                our portfolio of investments.
+                This is what ustwo is all about. From a strong sense of design
+                in product or brand, to tools that facilitate creative expression.
+                We want to let creativity shape our portfolio of investments.
             </p>
         </div>
 
@@ -67,9 +66,9 @@ approachPage.innerHTML = `
             <p class="stage-title"> Real communities </p>
             <p class="stage-copy">
                 We love it when people are brought together through common bonds
-                and a higher purspose. It's collective genius in action. Community
-                for us means being made better by really engaged users,
-                whose contribution to the brand goes beyond purchasing.
+                and a higher purspose. It's collective genius in action. For us,
+                community means being made better by engaged users, whose
+                contribution to the brand goes beyond purchasing.
             </p>
         </div>
 
@@ -77,9 +76,8 @@ approachPage.innerHTML = `
             <h2 class="number" data-number="3"> 3 </h2>
             <p class="stage-title"> Deep care </p>
             <p class="stage-copy">
-                For your product, your users, and your employees. We want to back
-                genuine founders who take a long-term approach to their business,
-                and who would rather speak to customers than investors.
+                For your product, your users, and your employees. We back
+                genuine founders who take a long-term approach to their business.
             </p>
         </div>
 
