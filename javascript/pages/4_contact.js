@@ -1,7 +1,15 @@
-const stopSubmitRedirect = () => {
-    const submitButton = document.querySelector("input[type=submit]");
-    submitButton.addEventListener("submit", e => e.preventDefault());
-};
+// const thanksMessageH1 = "Thanks for gettng in touch";
+// const thanksMessageP = "We'll follow up via e-mail as soon as possible. Have a great day!";
+const formIsSubmitted = window.location.search && window.location.search.contains("bot-field=&");
+
+// const submitRedirect = () => {
+//     const submitButton = document.querySelector("input[type=submit]");
+//     submitButton.addEventListener("submit", e => e.preventDefault());
+
+//     if (formIsSubmitted) {
+
+//     }
+// };
 
 
 const contactPage = document.createElement("div");
@@ -9,16 +17,19 @@ contactPage.className = "contact-content";
 
 contactPage.innerHTML = `
 
-    <h1>Get in touch</h1>
+    <h1>${ formIsSubmitted ? "Thanks for gettng in touch" : `Get in touch` }</h1>
 
     <section class="copy-form-container">
 
         <div class="copy">
 
             <p>
-                To get in touch with us to talk about an investment opportunity, please
-                fill out the form. To contact us about anything else, please send us
-                an email to the address below.
+                ${ formIsSubmitted
+                    ? `We'll follow up via e-mail as soon as possible. Have a great day!`
+                    : `To get in touch with us to talk about an investment opportunity, please
+                       fill out the form. To contact us about anything else, please send us
+                       an email to the address below.`
+                }
             </p>
 
             <p>

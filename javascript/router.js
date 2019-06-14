@@ -52,7 +52,7 @@ const pageContentChange = page => {
     modalLinkSetup();
     lzy();
     if (page == approachPage) approachStageScroll();
-    if (page == contactPage) stopSubmitRedirect();
+    // if (page == contactPage) submitRedirect();
 };
 
 
