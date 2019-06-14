@@ -29,33 +29,19 @@ contactPage.innerHTML = `
 
         <form name="investment-contact" action="contact" data-netlify="true" netlify-honeypot="bot-field">
 
-            <p class="hidden">
-                <label> Don’t fill this out: <input name="bot-field"> </label>
-            </p>
+            <label class="hidden"> Don’t fill this out: <input name="bot-field"> </label>
 
-            <p>
-                <label for="company"> Company Name <input required type="text" name="company"/> </label>
-            </p>
+            <label for="company"> Company Name <input required type="text" name="company"/> </label>
 
-            <p>
-                <label for="website"> Website <input required type="text" name="website"/> </label>
-            </p>
+            <label for="website"> Website <input required type="text" name="website"/> </label>
 
-            <p>
-                <label for="tell us about what you do"> Tell us about what you do <textarea rows="3" name="Tell us about what you do"> </textarea> </label>
-            </p>
+            <label for="tell us about what you do"> Tell us about what you do <textarea rows="3" name="Tell us about what you do"> </textarea> </label>
 
-            <p>
-                <label for="name"> Your Name <input required type="text" name="name"/> </label>
-            </p>
+            <label for="name"> Your Name <input required type="text" name="name"/> </label>
 
-            <p>
-                <label for="email"> Email <input required type="email" name="email"/> </label>
-            </p>
+            <label for="email"> Email <input required type="email" name="email"/> </label>
 
-            <p>
-                <input class="button internal" type="submit" value="Submit">
-            </p>
+            <input class="button internal" type="submit" value="Submit">
 
         </form>
         

@@ -34,11 +34,11 @@
   width: 45%;
 }
 
-.contact-content .copy-form-container form p {
+.contact-content .copy-form-container form label {
   margin-bottom: 25px;
 }
 
-.contact-content .copy-form-container form p.hidden {
+.contact-content .copy-form-container form label.hidden {
   display: none;
 }
 
