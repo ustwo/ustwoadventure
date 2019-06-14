@@ -1,3 +1,7 @@
+.contact-content h1 {
+  max-width: 50%;
+}
+
 .contact-content .copy-form-container {
   display: -webkit-box;
   display: flex;
