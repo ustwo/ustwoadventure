@@ -1,6 +1,6 @@
 // const thanksMessageH1 = "Thanks for gettng in touch";
 // const thanksMessageP = "We'll follow up via e-mail as soon as possible. Have a great day!";
-const formIsSubmitted = window.location.search && window.location.search.contains("bot-field=&");
+const formIsSubmitted = window.location.search && window.location.search.includes("bot-field=&");
 
 // const submitRedirect = () => {
 //     const submitButton = document.querySelector("input[type=submit]");
