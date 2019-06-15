@@ -9,7 +9,7 @@
 }
 
 .portfolio-item p.name {
-  max-width: var(--portfolioItemWidth);
+  width: 100%;
   font-size: 1.08em;
   font-weight: 800;
   line-height: 1.7;
@@ -27,7 +27,7 @@
 
 .portfolio-item div.image-container img.company-image {
   display: block;
-  width: var(--portfolioItemWidth);
+  width: 100%;
   height: calc(var(--portfolioItemWidth) * 1.27);
   -o-object-fit: cover;
      object-fit: cover;
@@ -49,7 +49,7 @@
 }
 
 .portfolio-item p.copy {
-  max-width: var(--portfolioItemWidth);
+  width: 100%;
   margin-top: 5px;
   line-height: 1.6;
 }
