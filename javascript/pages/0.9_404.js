@@ -11,6 +11,6 @@ fourOhFourPage.innerHTML = `
         ¯\\_(ツ)_/¯
     </h1>
 
-    <a class="nav button back" href="/index.html">Go home</a>
+    <a class="nav button back" href="/">Go home</a>
 
 `;
