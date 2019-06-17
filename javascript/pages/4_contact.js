@@ -23,7 +23,7 @@ const formSubmit = () => {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "investment-contact"})
+            body: encode({ "form-name": "investment-contact", data })
         })
             .then(() => {
                 for (let i = 0; i < form.length; ++i) {
