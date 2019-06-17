@@ -24,7 +24,7 @@ const formSubmit = () => {
             if (response.target.status === 0) {
                 h1.textContent = "Error";
                 copy.innerHTML = form.dataset.formError;
-            } else if (response.target.status === 400) {
+            } else if (response.target.status === 400 || response.target.status === 404) {
                 h1.textContent = "Error";
                 copy.innerHTML = JSON.parse(responseText).error;
             } else if (response.target.status === 200) {
@@ -73,7 +73,7 @@ contactPage.innerHTML = `
 
         </div>
 
-        <form name="investment-contact" action="/contact-thanks" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <form name="investment-contact" action="/" method="POST" data-netlify="true" netlify-honeypot="bot-field">
             
             <input type="hidden" name="form-name" value="investment-contact"/>
             <label class="hidden"> Don’t fill this out: <input name="bot-field"> </label>
