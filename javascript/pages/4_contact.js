@@ -4,8 +4,6 @@ const formSubmit = () => {
     const h1 = document.querySelector("h1");
     const copy = document.querySelector(".copy p.message");
 
-    copyContainer.classList.add("transition");
-
     form.addEventListener("submit", e => {
         e.preventDefault();
 
@@ -33,6 +31,8 @@ const formSubmit = () => {
                     const input = form[i];
                     input.disabled = true;
                 }
+
+                copyContainer.classList.add("transition");
                 setTimeout(() => {
                     h1.textContent = "Thanks for getting in touch";
                     copy.textContent = `We'll read through what you've sent us and follow up via
@@ -41,9 +41,12 @@ const formSubmit = () => {
                 }), 300;
             })
             .catch(error => {
-                h1.textContent = "Form submit error" + error.code;
-                copy.textContent = `There has been an error with sending the form. Sorry!
-                                    Please try again or email us with the address below`;
+                copyContainer.classList.add("transition");
+                setTimeout(() => {
+                    h1.textContent = "Form submit error" + error.code;
+                    copy.textContent = `There has been an error with sending the form. Sorry!
+                                        Please try again or email us with the address below`;
+                }), 300;
             });
 
         window.scrollTo({
