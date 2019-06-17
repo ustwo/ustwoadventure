@@ -22,12 +22,6 @@ const routes = [
         pageContent: contactPage,
         title: "Contact — ustwo Adventure",
         description: "Contact ustwo Adventure — investmenting in creative companies, differently."
-    },
-    {
-        pathname: "/contact-thanks",
-        pageContent: contactThanksPage,
-        title: "Thanks for getting in touch :) — ustwo Adventure",
-        description: "Contact ustwo Adventure — investmenting in creative companies, differently."
     }
 ];
 
@@ -58,7 +52,7 @@ const pageContentChange = page => {
     modalLinkSetup();
     lzy();
     if (page == approachPage) approachStageScroll();
-    // if (page == contactPage) submitRedirect();
+    if (page == contactPage) formSubmit();
 };
 
 

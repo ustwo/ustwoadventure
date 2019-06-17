@@ -21,21 +21,18 @@ const formSubmit = () => {
         xhr.send(JSON.stringify(data));
 
         xhr.onloadend = response => {
-            if (response.target.status === 0) {
-                h1.textContent = "Error";
-                copy.innerHTML = form.dataset.formError;
-            } else if (response.target.status === 400 || response.target.status === 404) {
-                h1.textContent = "Error";
-                copy.innerHTML = JSON.parse(responseText).error;
-            } else if (response.target.status === 200) {
-                h1.textContent = "Thanks for getting in touch";
-                copy.textContent = `We'll read through what you've sent us and follow up via
-                                    e-mail as soon as possible. Have a great day!`;
-
+            if (response.target.status === 200) {
                 for (let i = 0; i < form.length; ++i) {
                     const input = form[i];
                     input.disabled = true;
                 }
+                h1.textContent = "Thanks for getting in touch";
+                copy.textContent = `We'll read through what you've sent us and follow up via
+                                    e-mail as soon as possible. Have a great day!`;
+            } else {
+                h1.textContent = "Error";
+                copy.textContent = `There has been an error with sending the form. Sorry!
+                                    Please try again or email us with the address below`;
             }
 
             window.scrollTo({
@@ -73,7 +70,7 @@ contactPage.innerHTML = `
 
         </div>
 
-        <form name="investment-contact" action="/" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <form name="investment-contact" action="thanks" method="POST" data-netlify="true" netlify-honeypot="bot-field">
             
             <input type="hidden" name="form-name" value="investment-contact"/>
             <label class="hidden"> Don’t fill this out: <input name="bot-field"> </label>
