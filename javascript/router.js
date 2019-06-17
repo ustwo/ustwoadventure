@@ -21,8 +21,14 @@ const routes = [
         pathname: "/contact",
         pageContent: contactPage,
         title: "Contact — ustwo Adventure",
-        description: "Contact to ustwo Adventure — investmenting in creative companies, differently."
+        description: "Contact ustwo Adventure — investmenting in creative companies, differently."
     },
+    {
+        pathname: "/contact-thanks",
+        pageContent: contactThanksPage,
+        title: "Thanks for getting in touch :) — ustwo Adventure",
+        description: "Contact ustwo Adventure — investmenting in creative companies, differently."
+    }
 ];
 
 

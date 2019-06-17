@@ -104,6 +104,11 @@
   cursor: pointer;
 }
 
+.contact-content .copy-form-container form input[disabled], .contact-content .copy-form-container form textarea[disabled], .contact-content .copy-form-container form input[type=submit][disabled] {
+  border-color: var(--grey04);
+  pointer-events: none;
+}
+
 @media (max-width: 825px) {
   .contact-content .copy-form-container form {
     margin-left: 25px;

@@ -1,24 +1,18 @@
-const formIsSubmitted = window.location.search && (window.location.search.includes("bot-field=&") || window.location.search.includes("thanks"));
-
 const contactPage = document.createElement("div");
 contactPage.className = "contact-content";
 
 contactPage.innerHTML = `
 
-    <h1>${ formIsSubmitted ? "Thanks for gettng in touch" : `Get in touch` }</h1>
+    <h1>Get in touch</h1>
 
     <section class="copy-form-container">
 
         <div class="copy">
 
             <p>
-                ${ formIsSubmitted
-                    ? `We'll read through what you've sent us and follow up via e-mail as soon as
-                       possible. Have a great day!`
-                    : `To get in touch with us to talk about an investment opportunity, please
-                       fill out the form. To contact us about anything else, please send us
-                       an email to the address below.`
-                }
+                To get in touch with us to talk about an investment opportunity, please
+                fill out the form. To contact us about anything else, please send us
+                an email to the address below.
             </p>
 
             <p>
@@ -27,7 +21,7 @@ contactPage.innerHTML = `
 
         </div>
 
-        <form name="investment-contact" action="/contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <form name="investment-contact" action="/contact-thanks" method="POST" data-netlify="true" netlify-honeypot="bot-field">
             
             <input type="hidden" name="form-name" value="investment-contact"/>
             <label class="hidden"> Don’t fill this out: <input name="bot-field"> </label>

@@ -90,6 +90,11 @@
             input[type=button], input[type=submit], input[type=reset] {
                 cursor: pointer;
             }
+
+            input[disabled], textarea[disabled], input[type=submit][disabled] {
+                border-color: var(--grey04);
+                pointer-events: none;
+            }
         }
     }
 
