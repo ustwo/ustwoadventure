@@ -1,5 +1,6 @@
 const formSubmit = () => {
     const form = document.querySelector("form");
+    const transitionCopy = document.querySelectorAll(".submit-transition");
     const h1 = document.querySelector("h1");
     const copy = document.querySelector(".copy p.message");
 
@@ -19,8 +20,6 @@ const formSubmit = () => {
                 .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
                 .join("&");
         };
-        // console.log(data);
-        // console.log(encode(data));
 
         fetch("/", {
             method: "POST",
@@ -33,21 +32,35 @@ const formSubmit = () => {
                     input.disabled = true;
                 }
 
-                h1.textContent = "Thanks for getting in touch";
-                copy.textContent = `We'll read through what you've sent us and follow up via
-                                    e-mail as soon as possible. Have a great day!`;
+                setTimeout(() => {
+                    h1.textContent = "Thanks!";
+                    copy.textContent = `We'll read through what you've sent us and follow up via
+                                        e-mail as soon as possible. Have a great day!`;
+                }, 760);
             })
             .catch(error => {
-                h1.textContent = "Form submit error" + error.code;
+                setTimeout(() => {
+                h1.textContent = "Submit error" + error.code;
                 copy.textContent = `Looks like there has been an error with sending the form.
                                     Sorry! Please try again, or email us on the address below`;
+                }, 760);
             });
 
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: "smooth"
-        });
+        setTimeout(() => {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            });
+        }, 240);
+
+        setTimeout(() => {
+            transitionCopy.forEach(copyItem => copyItem.classList.add("transition-active"));
+        }, 600);
+
+        setTimeout(() => {
+            transitionCopy.forEach(copyItem => copyItem.classList.remove("transition-active"));
+        }, 760);
     });
 };
 
@@ -59,11 +72,11 @@ contactPage.className = "contact-content";
 
 contactPage.innerHTML = `
 
-    <h1>Get in touch</h1>
+    <h1 class="submit-transition">Get in touch</h1>
 
     <section class="copy-form-container">
 
-        <div class="copy">
+        <div class="copy submit-transition">
 
             <p class="message">
                 To get in touch with us to talk about an investment opportunity, please

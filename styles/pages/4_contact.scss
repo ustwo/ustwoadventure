@@ -83,8 +83,9 @@
                 cursor: pointer;
             }
 
-            input[disabled], textarea[disabled], input[type=submit][disabled] {
+            input[disabled], textarea[disabled], input[type=submit][disabled], input:-internal-autofill-selected[disabled] {
                 border-color: var(--grey04);
+                color: var(--grey04);
                 pointer-events: none;
             }
 
@@ -92,6 +93,17 @@
                 color: var(--piglet);
                 opacity: 0.8;
             }
+        }
+    }
+
+    .submit-transition {
+        display: block;
+        transform-origin: top;
+        transition: opacity 160ms, transform 160ms ease-in-out;
+
+        &.transition-active {
+            opacity: 0;
+            transform: translate(0, 4px);
         }
     }
 

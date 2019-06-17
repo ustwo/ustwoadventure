@@ -88,8 +88,9 @@
   cursor: pointer;
 }
 
-.contact-content .copy-form-container form input[disabled], .contact-content .copy-form-container form textarea[disabled], .contact-content .copy-form-container form input[type=submit][disabled] {
+.contact-content .copy-form-container form input[disabled], .contact-content .copy-form-container form textarea[disabled], .contact-content .copy-form-container form input[type=submit][disabled], .contact-content .copy-form-container form input:-internal-autofill-selected[disabled] {
   border-color: var(--grey04);
+  color: var(--grey04);
   pointer-events: none;
 }
 
@@ -106,6 +107,21 @@
 .contact-content .copy-form-container form ::placeholder {
   color: var(--piglet);
   opacity: 0.8;
+}
+
+.contact-content .submit-transition {
+  display: block;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  transition: opacity 160ms, -webkit-transform 160ms ease-in-out;
+  transition: opacity 160ms, transform 160ms ease-in-out;
+  transition: opacity 160ms, transform 160ms ease-in-out, -webkit-transform 160ms ease-in-out;
+}
+
+.contact-content .submit-transition.transition-active {
+  opacity: 0;
+  -webkit-transform: translate(0, 4px);
+          transform: translate(0, 4px);
 }
 
 @media (max-width: 825px) {
