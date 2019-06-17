@@ -96,17 +96,17 @@
 
 .contact-content .copy-form-container form ::-webkit-input-placeholder {
   color: var(--piglet);
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .contact-content .copy-form-container form :-ms-input-placeholder {
   color: var(--piglet);
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .contact-content .copy-form-container form ::placeholder {
   color: var(--piglet);
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .contact-content .submit-transition {
