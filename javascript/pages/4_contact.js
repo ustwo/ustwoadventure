@@ -14,28 +14,6 @@ const formSubmit = () => {
             }
         }
 
-        // const xhr = new XMLHttpRequest();
-        // xhr.open(form.method, "/", true);
-        // xhr.setRequestHeader("Accept", "application/json; charset=utf-8");
-        // xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
-        // xhr.send(JSON.stringify(data));
-
-        // xhr.onloadend = response => {
-        //     if (response.target.status === 200) {
-        //         for (let i = 0; i < form.length; ++i) {
-        //             const input = form[i];
-        //             input.disabled = true;
-        //         }
-        //         h1.textContent = "Thanks for getting in touch";
-        //         copy.textContent = `We'll read through what you've sent us and follow up via
-        //                             e-mail as soon as possible. Have a great day!`;
-        //     } else {
-        //         h1.textContent = "Form submit error";
-        //         copy.textContent = `There has been an error with sending the form. Sorry!
-        //                             Please try again or email us with the address below`;
-        //     }
-        // };
-
         const encode = data => {
             return Object.keys(data)
                 .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -47,14 +25,26 @@ const formSubmit = () => {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "investment-contact"})
         })
-            .then(() => alert("Success!"))
-            .catch(error => alert(error));
-
-            window.scrollTo({
-                top: 0,
-                left: 0,
-                behavior: "smooth"
+            .then(() => {
+                for (let i = 0; i < form.length; ++i) {
+                    const input = form[i];
+                    input.disabled = true;
+                }
+                h1.textContent = "Thanks for getting in touch";
+                copy.textContent = `We'll read through what you've sent us and follow up via
+                                    e-mail as soon as possible. Have a great day!`;
+            })
+            .catch(error => {
+                h1.textContent = "Form submit error" + error.code;
+                copy.textContent = `There has been an error with sending the form. Sorry!
+                                    Please try again or email us with the address below`;
             });
+
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
     });
 };
 
