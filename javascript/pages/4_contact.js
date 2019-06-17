@@ -15,7 +15,7 @@ const formSubmit = () => {
         }
 
         const xhr = new XMLHttpRequest();
-        xhr.open(form.method, form.action, true);
+        xhr.open(form.method, "/", true);
         xhr.setRequestHeader("Accept", "application/json; charset=utf-8");
         xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
         xhr.send(JSON.stringify(data));
@@ -30,7 +30,7 @@ const formSubmit = () => {
                 copy.textContent = `We'll read through what you've sent us and follow up via
                                     e-mail as soon as possible. Have a great day!`;
             } else {
-                h1.textContent = "Error";
+                h1.textContent = "Form submit error";
                 copy.textContent = `There has been an error with sending the form. Sorry!
                                     Please try again or email us with the address below`;
             }
@@ -70,7 +70,7 @@ contactPage.innerHTML = `
 
         </div>
 
-        <form name="investment-contact" action="/netlify-form.html" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <form name="investment-contact" action="/" method="POST" data-netlify="true" netlify-honeypot="bot-field">
             
             <input type="hidden" name="form-name" value="investment-contact"/>
             <label class="hidden"> Don’t fill this out: <input name="bot-field"> </label>
