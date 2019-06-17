@@ -4,5 +4,7 @@ Disallow: /*?team=*
 Disallow: /residency
 Disallow: /join
 Disallow: /rolling
+Disallow: /faq
+Disallow: /contact-thanks
 
 Sitemap: https://adventure.ustwo.com/sitemap.xml
