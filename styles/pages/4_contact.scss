@@ -65,10 +65,6 @@
                 font-family: 'Px', sans-serif;
             }
 
-            ::placeholder {
-                color: var(--piglet);
-            }
-
             textarea {
                 width: 100%;
                 padding: 10px 10px;
@@ -83,10 +79,6 @@
                 resize: vertical;
             }
 
-            input[type=text], input[type=email], select {
-                width: 100%;
-            }
-
             input[type=button], input[type=submit], input[type=reset] {
                 cursor: pointer;
             }
@@ -94,6 +86,11 @@
             input[disabled], textarea[disabled], input[type=submit][disabled] {
                 border-color: var(--grey04);
                 pointer-events: none;
+            }
+
+            ::placeholder {
+                color: var(--piglet);
+                opacity: 0.8;
             }
         }
     }

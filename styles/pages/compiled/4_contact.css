@@ -70,18 +70,6 @@
   font-family: 'Px', sans-serif;
 }
 
-.contact-content .copy-form-container form ::-webkit-input-placeholder {
-  color: var(--piglet);
-}
-
-.contact-content .copy-form-container form :-ms-input-placeholder {
-  color: var(--piglet);
-}
-
-.contact-content .copy-form-container form ::placeholder {
-  color: var(--piglet);
-}
-
 .contact-content .copy-form-container form textarea {
   width: 100%;
   padding: 10px 10px;
@@ -96,10 +84,6 @@
   resize: vertical;
 }
 
-.contact-content .copy-form-container form input[type=text], .contact-content .copy-form-container form input[type=email], .contact-content .copy-form-container form select {
-  width: 100%;
-}
-
 .contact-content .copy-form-container form input[type=button], .contact-content .copy-form-container form input[type=submit], .contact-content .copy-form-container form input[type=reset] {
   cursor: pointer;
 }
@@ -107,6 +91,21 @@
 .contact-content .copy-form-container form input[disabled], .contact-content .copy-form-container form textarea[disabled], .contact-content .copy-form-container form input[type=submit][disabled] {
   border-color: var(--grey04);
   pointer-events: none;
+}
+
+.contact-content .copy-form-container form ::-webkit-input-placeholder {
+  color: var(--piglet);
+  opacity: 0.8;
+}
+
+.contact-content .copy-form-container form :-ms-input-placeholder {
+  color: var(--piglet);
+  opacity: 0.8;
+}
+
+.contact-content .copy-form-container form ::placeholder {
+  color: var(--piglet);
+  opacity: 0.8;
 }
 
 @media (max-width: 825px) {
