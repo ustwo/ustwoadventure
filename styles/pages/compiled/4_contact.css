@@ -14,7 +14,6 @@
 
 .contact-content .copy-form-container .copy {
   max-width: 42%;
-  transition: opacity 200ms;
 }
 
 .contact-content .copy-form-container .copy p {
@@ -28,10 +27,6 @@
 
 .contact-content .copy-form-container .copy p a:hover {
   font-style: italic;
-}
-
-.contact-content .copy-form-container .copy.transition {
-  opacity: 0;
 }
 
 .contact-content .copy-form-container form {

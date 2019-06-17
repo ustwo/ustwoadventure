@@ -1,6 +1,5 @@
 const formSubmit = () => {
     const form = document.querySelector("form");
-    const copyContainer = document.querySelector(".copy");
     const h1 = document.querySelector("h1");
     const copy = document.querySelector(".copy p.message");
 
@@ -20,11 +19,13 @@ const formSubmit = () => {
                 .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
                 .join("&");
         };
+        // console.log(data);
+        // console.log(encode(data));
 
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "investment-contact", data })
+            body: encode(data)
         })
             .then(() => {
                 for (let i = 0; i < form.length; ++i) {
@@ -32,21 +33,14 @@ const formSubmit = () => {
                     input.disabled = true;
                 }
 
-                copyContainer.classList.add("transition");
-                setTimeout(() => {
-                    h1.textContent = "Thanks for getting in touch";
-                    copy.textContent = `We'll read through what you've sent us and follow up via
-                                        e-mail as soon as possible. Have a great day!`;
-                    copyContainer.classList.remove("transition");
-                }), 300;
+                h1.textContent = "Thanks for getting in touch";
+                copy.textContent = `We'll read through what you've sent us and follow up via
+                                    e-mail as soon as possible. Have a great day!`;
             })
             .catch(error => {
-                copyContainer.classList.add("transition");
-                setTimeout(() => {
-                    h1.textContent = "Form submit error" + error.code;
-                    copy.textContent = `There has been an error with sending the form. Sorry!
-                                        Please try again or email us with the address below`;
-                }), 300;
+                h1.textContent = "Form submit error" + error.code;
+                copy.textContent = `Looks like there has been an error with sending the form.
+                                    Sorry! Please try again, or email us on the address below`;
             });
 
         window.scrollTo({

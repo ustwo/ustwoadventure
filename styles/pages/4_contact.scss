@@ -10,7 +10,6 @@
 
         .copy {
             max-width: 42%;
-            transition: opacity 200ms;
 
             p {
                 margin-bottom: 30px;
@@ -23,10 +22,6 @@
                         font-style: italic;
                     }
                 }
-            }
-
-            &.transition {
-                opacity: 0;
             }
         }
 
