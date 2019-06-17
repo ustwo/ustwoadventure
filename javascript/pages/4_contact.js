@@ -3,6 +3,7 @@ const formSubmit = () => {
     const transitionCopy = document.querySelectorAll(".submit-transition");
     const h1 = document.querySelector("h1");
     const copy = document.querySelector(".copy p.message");
+    const submitButton = document.querySelector("input[type=submit]");
 
     form.addEventListener("submit", e => {
         e.preventDefault();
@@ -32,6 +33,7 @@ const formSubmit = () => {
                     input.disabled = true;
                 }
 
+                submitButton.value = "Success!";
                 setTimeout(() => {
                     h1.textContent = "Thanks!";
                     copy.textContent = `We'll read through what you've sent us and follow up via
@@ -39,6 +41,7 @@ const formSubmit = () => {
                 }, 760);
             })
             .catch(error => {
+                    submitButton.value = "Error";
                 setTimeout(() => {
                 h1.textContent = "Submit error" + error.code;
                 copy.textContent = `Looks like there has been an error with sending the form.
