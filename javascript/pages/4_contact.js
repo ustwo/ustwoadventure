@@ -41,7 +41,6 @@ const formSubmit = () => {
                 }, 760);
             })
             .catch(error => {
-                    submitButton.value = "Error";
                 setTimeout(() => {
                 h1.textContent = "Submit error" + error.code;
                 copy.textContent = `Looks like there has been an error with sending the form.
