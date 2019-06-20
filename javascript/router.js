@@ -3,13 +3,13 @@ const routes = [
         pathname: "/",
         pageContent: homePage,
         title: "ustwo Adventure",
-        description: "ustwo Adventure invests in creative companies, differently. No equity by default, shared revenue, and a capped return. Our approach gives founders the option to grow their company as they see fit."
+        description: "ustwo Adventure invests in creative companies, differently. We back game-changing businesses that value long-term thinking, strong culture, and design."
     },
     {
         pathname: "/approach",
         pageContent: approachPage,
         title: "Approach — ustwo Adventure",
-        description: "We invest to prioritise sustainability, independance and optionality. No equity by default, revenue shares and a capped return."
+        description: "We invest in companies to achieve something bigger than an exit. Companies that prioritise sustainability, inclusivity, care and community."
     },
     {
         pathname: "/portfolio",
@@ -52,7 +52,7 @@ const pageContentChange = page => {
     modalLinkSetup();
     lzy();
     if (page == approachPage) approachStageScroll();
-    if (page == contactPage) formHandling();
+    if (page == contactPage) formHandlingSetup();
 };
 
 

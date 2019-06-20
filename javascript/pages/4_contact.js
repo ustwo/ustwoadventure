@@ -1,6 +1,6 @@
 let form;
 
-const formHandling = () => {
+const formHandlingSetup = () => {
     form = document.querySelector("form");
 
     addFormValidation();
