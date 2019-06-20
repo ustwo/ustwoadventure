@@ -3,13 +3,13 @@ const routes = [
         pathname: "/",
         pageContent: homePage,
         title: "ustwo Adventure",
-        description: "ustwo Adventure invests in creative companies, differently. We back game-changing businesses that value long-term thinking, strong culture, and design."
+        description: "Investing in creative companies, differently. We want to help others build businesses on top of strong culture, values and design."
     },
     {
         pathname: "/approach",
         pageContent: approachPage,
         title: "Approach — ustwo Adventure",
-        description: "We invest in companies to achieve something bigger than an exit. Companies that prioritise sustainability, inclusivity, care and community."
+        description: "We invest in companies that prioritise sustainability, inclusivity and deep care, and founders with true heart and ambition."
     },
     {
         pathname: "/portfolio",
@@ -21,7 +21,7 @@ const routes = [
         pathname: "/contact",
         pageContent: contactPage,
         title: "Contact — ustwo Adventure",
-        description: "Contact ustwo Adventure — investmenting in creative companies, differently."
+        description: "Contact ustwo Adventure — investing in creative companies, differently."
     }
 ];
 
