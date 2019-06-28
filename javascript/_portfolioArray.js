@@ -232,7 +232,7 @@ const portfolioArray = [
         image: "images/team_assets/kyra_image.jpg",
         logo: "images/team_assets/kyra_logo.png",
         line: "A new age TV network",
-        copy: "We are reimagining TV for the digital world. We make TV quality, brand safe, original content franchises that brands can use to speak to an already engaged audience.",
+        copy: "We are reimagining TV for the digital world. The way young people consume media has changed. Kyra was created to make TV quality original content that embraces that change.",
         status: PORTFOLIO_STATUS.LIVE
     },
     {
