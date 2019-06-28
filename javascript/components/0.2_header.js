@@ -12,7 +12,7 @@ if ("ontouchstart" in document.documentElement) {
         logoUstwo.style.transition = "transform 5s cubic-bezier(0.6, 0, 0.5, 1)";
 
         const tilt = (window.innerHeight > window.innerWidth) ? e.gamma : e.beta;
-        const cappedTilt = Math.max(-35, Math.min(15, (tilt * 0.6)));
+        const cappedTilt = Math.max(-35, Math.min(15, (tilt * 0.65)));
 
         tiltLogo(cappedTilt);
     });
