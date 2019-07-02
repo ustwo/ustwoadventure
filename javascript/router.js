@@ -3,7 +3,7 @@ const routes = [
         pathname: "/",
         pageContent: homePage,
         title: "ustwo Adventure",
-        description: "Investing in creative companies, differently. We want to help others build businesses on top of strong culture, values and design."
+        description: "Investing in creative companies, differently. We want to help founders build businesses on top of strong culture, values and design."
     },
     {
         pathname: "/approach",
