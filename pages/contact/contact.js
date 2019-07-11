@@ -123,7 +123,9 @@ contactPage.innerHTML = `
 
             <label for="tell us about what you do"> Tell us about what you do <textarea rows="3" name="Tell us about what you do"> </textarea> </label>
 
-            <label for="amount"> How much are you looking to raise? <input required type="text" name="amount"/> </label>
+            <label for="what stage are you currently at?"> What stage are you currently at? <textarea rows="3" name="what stage are you currently at?"> </textarea> </label>
+
+            <label for="amount raising"> How much are you looking to raise? <input required type="text" name="amount raising"/> </label>
 
             <label for="name"> Your Name <input required type="text" name="name"/> </label>
 

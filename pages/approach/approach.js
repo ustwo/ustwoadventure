@@ -1,5 +1,6 @@
 const approachStageScroll = () => {
     const approachStages = document.querySelectorAll(".approach-content .stages div");
+
     if (window.innerWidth < 635 && window.matchMedia("(pointer: coarse)").matches) {
         const onIntersection = entries => {
             entries.forEach(entry => {
