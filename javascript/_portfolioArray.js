@@ -71,7 +71,7 @@ const portfolioArray = [
         tidyurl: "tray.io",
         image: "images/team_assets/tray_image.jpg",
         logo: "images/team_assets/tray_logo.png",
-        line: "A beautiful cloud integration platform",
+        line: "The integration platform for citizen automators",
         copy: "We’ve made a secure and easy to use tool to let you automate any process across any cloud stack, without limits. From simple processes to multi step workflows with conditional logic, we’ve got you covered.",
         status: PORTFOLIO_STATUS.EXITED
     },
