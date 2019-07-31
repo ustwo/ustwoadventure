@@ -195,16 +195,16 @@ const portfolioArray = [
         copy: "We’re creating products using immersive technology like 360° video and AR to let you explore the depths of the ocean or the human body, and unleash your curiosity.",
         status: PORTFOLIO_STATUS.LIVE
     },
-    // {
-    //     name: "Stitch",
-    //     url: "https://stitchapp.co/",
-    //     tidyurl: "stitchapp.co",
-    //     image: "images/team_assets/stitch_image.jpg",
-    //     logo: "images/team_assets/stitch_logo.png",
-    //     line: "Creative Production Resource Management",
-    //     copy: "Stitch is reinventing the production process for brands & agencies, by organizing & automating the production workflow.",
-    //     status: PORTFOLIO_STATUS.LIVE
-    // },
+    {
+        name: "Stitch",
+        url: "https://stitchapp.co/",
+        tidyurl: "stitchapp.co",
+        image: "images/team_assets/stitch_image.jpg",
+        logo: "images/team_assets/stitch_logo.png",
+        line: "Creative Production Resource Management",
+        copy: "Stitch is reinventing the production process for brands & agencies, by organizing & automating the production workflow.",
+        status: PORTFOLIO_STATUS.LIVE
+    },
     {
         name: "Uptree",
         url: "https://www.uptree.co",
