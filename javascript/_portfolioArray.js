@@ -289,7 +289,7 @@ const portfolioArray = [
     //     logo: "images/team_assets/onesecondeveryday_logo.png",
     //     line: "Life is made of seconds",
     //     copy:
-    //         "Imagine a movie that includes every day of the rest of your life.",
+    //         "Imagine a movie that includes every day of the rest of your life. We've built an app for people to easily and beautifully document their lives.",
     //     status: PORTFOLIO_STATUS.LIVE
     // }
 ];
