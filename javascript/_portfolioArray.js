@@ -220,7 +220,7 @@ const portfolioArray = [
         tidyurl: "stitchapp.co",
         image: "images/team_assets/stitch_image.jpg",
         logo: "images/team_assets/stitch_logo.png",
-        line: "Creative Production Resource Management",
+        line: "Creative production management",
         copy:
             "Stitch is reinventing the production process for brands & agencies, by organizing & automating the production workflow.",
         status: PORTFOLIO_STATUS.LIVE
@@ -289,7 +289,7 @@ const portfolioArray = [
     //     logo: "images/team_assets/onesecondeveryday_logo.png",
     //     line: "Life is made of seconds",
     //     copy:
-    //         "Imagine a movie that includes every day of the rest of your life. We've built an app for people to easily and beautifully document their lives.",
+    //         "Imagine a movie that includes every day of the rest of your life. We've built 1 Second Everyday - an app that enables people to easily and beautifully document their lives.",
     //     status: PORTFOLIO_STATUS.LIVE
     // }
 ];
