@@ -3,28 +3,31 @@ const routes = [
         pathname: "/",
         pageContent: homePage,
         title: "ustwo Adventure",
-        description: "Investing in creative companies, differently. We want to help founders build businesses on top of strong culture, values and design."
+        description:
+            "Investing in creative companies, differently. We want to help founders build businesses on top of strong culture, values and design."
     },
     {
         pathname: "/approach",
         pageContent: approachPage,
         title: "Approach — ustwo Adventure",
-        description: "We invest in companies that prioritise sustainability, inclusivity and deep care, and founders with true heart and ambition."
+        description:
+            "We invest in companies that prioritise sustainability, inclusivity and deep care, and founders with true heart and ambition."
     },
     {
         pathname: "/portfolio",
         pageContent: portfolioPage,
         title: "Portfolio — ustwo Adventure",
-        description: "Our family of companies. ustwo Adventure invests in creative companies, differently."
+        description:
+            "Our family of companies. ustwo Adventure invests in creative companies, differently."
     },
     {
         pathname: "/contact",
         pageContent: contactPage,
         title: "Contact — ustwo Adventure",
-        description: "Contact ustwo Adventure — investing in creative companies, differently."
+        description:
+            "Contact ustwo Adventure — investing in creative companies, differently."
     }
 ];
-
 
 const pageContentContainer = document.querySelector(".page-content-container");
 
@@ -41,7 +44,6 @@ const metaDescriptions = document.querySelectorAll(`
 
 const canonicalTag = document.querySelector(`link[rel="canonical"]`);
 
-
 const pageContentChange = page => {
     while (pageContentContainer.firstChild) {
         pageContentContainer.removeChild(pageContentContainer.firstChild);
@@ -55,14 +57,18 @@ const pageContentChange = page => {
     if (page == contactPage) formHandlingSetup();
 };
 
-
 const goToPage = (pathName, hasTransition = false) => {
     const page = routes.find(route => route.pathname == pathName);
 
     document.title = page.title;
     metaTitles.forEach(title => title.setAttribute("content", page.title));
-    metaDescriptions.forEach(tag => tag.setAttribute("content", page.description));
-    canonicalTag.setAttribute("href", `https://adventure.ustwo.com${page.pathname}`);
+    metaDescriptions.forEach(tag =>
+        tag.setAttribute("content", page.description)
+    );
+    canonicalTag.setAttribute(
+        "href",
+        `https://adventure.ustwo.com${page.pathname}`
+    );
 
     if (orbitLetters[0].innerHTML != "A") orbitLetterChange("ADVENTURE");
 
@@ -79,14 +85,12 @@ const goToPage = (pathName, hasTransition = false) => {
     }
 };
 
-
 const goTo404 = () => {
     pageContentChange(fourOhFourPage);
 
     document.title = "404 — ustwo Adventure";
     if (orbitLetters[0].innerHTML != "4") orbitLetterChange("404ERROR");
 };
-
 
 const navLinkSetup = () => {
     const navLinks = document.querySelectorAll("a.nav");
@@ -95,7 +99,11 @@ const navLinkSetup = () => {
         link.addEventListener("click", (e, pathName) => {
             pathName = link.getAttribute("href");
             if (pathName != window.location.pathname) {
-                window.history.pushState({}, pathName, window.location.origin + pathName);
+                window.history.pushState(
+                    {},
+                    pathName,
+                    window.location.origin + pathName
+                );
                 goToPage(pathName, true);
             }
             e.preventDefault();
@@ -103,13 +111,11 @@ const navLinkSetup = () => {
     });
 };
 
-
 if (routes.some(route => route.pathname == window.location.pathname)) {
     goToPage(window.location.pathname);
 } else {
     goTo404();
 }
-
 
 window.onpopstate = () => {
     if (routes.some(route => route.pathname == window.location.pathname)) {
@@ -119,5 +125,8 @@ window.onpopstate = () => {
     }
 };
 
-
-console.log("%c It's always fun looking under the hood ツ ", "background: #f32d94; color: #fff", "--> https://ustwo.com/join-us");
+console.log(
+    "%c It's always fun looking under the hood ツ ",
+    "background: #f32d94; color: #fff",
+    "--> https://ustwo.com/join-us"
+);

@@ -1,10 +1,10 @@
 const kebabCase = string => {
-    return string.replace(/([a-z])([A-Z])/g, "$1-$2")
-                 .replace(/[\s_]+/g, "-")
-                 .replace(/&/g, "and")
-                 .toLowerCase();
+    return string
+        .replace(/([a-z])([A-Z])/g, "$1-$2")
+        .replace(/[\s_]+/g, "-")
+        .replace(/&/g, "and")
+        .toLowerCase();
 };
-
 
 const shuffle = a => {
     for (let i = a.length - 1; i > 0; i--) {
@@ -14,12 +14,13 @@ const shuffle = a => {
     return a;
 };
 
-
 const lzy = (offset = 400) => {
     const images = document.querySelectorAll("[data-src]");
 
     if (!window.IntersectionObserver) {
-        images.forEach(image => image.setAttribute("src", image.getAttribute("data-src")));
+        images.forEach(image =>
+            image.setAttribute("src", image.getAttribute("data-src"))
+        );
     } else {
         const onIntersection = entries => {
             entries.forEach(entry => {

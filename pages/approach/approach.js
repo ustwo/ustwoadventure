@@ -1,7 +1,12 @@
 const approachStageScroll = () => {
-    const approachStages = document.querySelectorAll(".approach-content .stages div");
+    const approachStages = document.querySelectorAll(
+        ".approach-content .stages div"
+    );
 
-    if (window.innerWidth < 635 && window.matchMedia("(pointer: coarse)").matches) {
+    if (
+        window.innerWidth < 635 &&
+        window.matchMedia("(pointer: coarse)").matches
+    ) {
         const onIntersection = entries => {
             entries.forEach(entry => {
                 if (entry.intersectionRatio > 0) {
@@ -20,7 +25,6 @@ const approachStageScroll = () => {
         approachStages.forEach(stage => observer.observe(stage));
     }
 };
-
 
 const approachPage = document.createElement("div");
 approachPage.className = "approach-content";
@@ -123,15 +127,15 @@ approachPage.innerHTML = `
     <div class="writing">
 
         <p>
-            We believe that founders should be able to run their companies in the way that feels
+            Founders should be able to run their companies in a way that feels
             right for them and their team. Sometimes this means that the traditional venture
-            capital path is right for them, and sometimes it isn't. To make sure we can work
+            capital path is right, and sometimes it isn't. To make sure we can work
             with all types of companies, we use a range of investment styles.
         </p>
 
         <p>
             Our favoured alternative style of investing has a few key components: No equity by
-            default, a share of revenue that kicks in after 2 years, and a capped return at 3x.
+            default, a revenue-share that kicks in after 2 years, and a capped return at 3x.
             We feel this model is perfect for founders who need extra capital to scale their
             business sustainably, while maintaining financial independance.
         </p>
