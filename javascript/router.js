@@ -96,9 +96,9 @@ const navLinkSetup = () => {
     const navLinks = document.querySelectorAll("a.nav");
 
     navLinks.forEach(link => {
-        link.addEventListener("click", (e, pathName) => {
-            pathName = link.getAttribute("href");
-            if (pathName != window.location.pathname) {
+        link.addEventListener("click", e => {
+            const pathName = link.getAttribute("href");
+            if (pathName !== window.location.pathname) {
                 window.history.pushState(
                     {},
                     pathName,

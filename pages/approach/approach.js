@@ -94,8 +94,8 @@ approachPage.innerHTML = `
             <p class="stage-copy">
                 We are committed to building a portfolio of companies that
                 reflects the world we live in, both in terms of the founders
-                we back, and how they consider diversity when operating their
-                business.
+                we back, and how they consider diversity and inclusion when
+                operating their business.
             </p>
         </div>
 
@@ -105,7 +105,7 @@ approachPage.innerHTML = `
             <p class="stage-copy">
                 At ustwo we look to make investments that align with our work and expertise.
                 Healthcare, mobility, immersive technologies, future of work, games — these
-                are areas that we love.
+                are areas that we know and love.
             </p>
         </div>
 
