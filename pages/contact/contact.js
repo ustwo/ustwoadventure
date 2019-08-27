@@ -37,7 +37,12 @@ const formSubmit = e => {
 
     const encode = data => {
         return Object.keys(data)
-            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .map(
+                key =>
+                    encodeURIComponent(key) +
+                    "=" +
+                    encodeURIComponent(data[key])
+            )
             .join("&");
     };
 
@@ -61,8 +66,8 @@ const formSubmit = e => {
         })
         .catch(error => {
             setTimeout(() => {
-            formPageH1.textContent = "Submit error" + error.code;
-            formPageCopy.textContent = `Looks like there has been an error with sending the form.
+                formPageH1.textContent = "Submit error" + error.code;
+                formPageCopy.textContent = `Looks like there has been an error with sending the form.
                                         Sorry! Please try again, or email us on the address below`;
             }, 860);
         });
@@ -76,18 +81,19 @@ const formSubmit = e => {
     }, 400);
 
     setTimeout(() => {
-        transitionCopy.forEach(copyItem => copyItem.classList.add("transition-active"));
+        transitionCopy.forEach(copyItem =>
+            copyItem.classList.add("transition-active")
+        );
     }, 700);
 
     setTimeout(() => {
-        transitionCopy.forEach(copyItem => copyItem.classList.remove("transition-active"));
+        transitionCopy.forEach(copyItem =>
+            copyItem.classList.remove("transition-active")
+        );
     }, 860);
 
     e.preventDefault();
 };
-
-
-
 
 const contactPage = document.createElement("div");
 contactPage.className = "contact-content";
@@ -113,25 +119,45 @@ contactPage.innerHTML = `
         </div>
 
         <form name="investment-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+
+            <!-- add checkboxes to click regarding culture & inclusion, sustainability, creativity etc. before people can fill out form. Style checkboxes for pink box to grow on click like this https://jsfiddle.net/2zkofa0x/18/ -->
+            <!-- stage form into more parts -->
+            <!-- Be more specific on what we want! -->
             
             <input type="hidden" name="form-name" value="investment-contact"/>
             <label class="hidden"> Don’t fill this out: <input name="bot-field"> </label>
 
-            <label for="company"> Company Name <input required type="text" name="company"/> </label>
+            <label> Company Name
+                <input required type="text" name="company"/>
+            </label>
 
-            <label for="website"> Website <input required type="text" name="website"/> </label>
+            <label> Website
+                <input required type="text" name="website"/>
+            </label>
 
-            <label for="tell us about what you do"> Tell us about what you do <textarea rows="3" name="Tell us about what you do"> </textarea> </label>
+            <label> Tell us about what you do
+                <textarea rows="3" name="description"> </textarea>
+            </label>
 
-            <label for="what stage are you currently at?"> What stage are you currently at? <textarea rows="3" name="what stage are you currently at?"> </textarea> </label>
+            <label> What stage are you currently at?
+                <textarea rows="3" name="stage"> </textarea>
+            </label>
 
-            <label for="revenue"> Are you generating any revenue? <input required type="text" name="revenue"/> </label>
+            <label> Are you generating any revenue?
+                <input required type="text" name="revenue"/>
+            </label>
 
-            <label for="amount raising"> How much are you looking to raise? <input required type="text" name="amount raising"/> </label>
+            <label> How much are you looking to raise?
+                <input required type="text" name="amount raising"/>
+            </label>
 
-            <label for="name"> Your Name <input required type="text" name="name"/> </label>
+            <label> Your Name
+                <input required type="text" name="name"/>
+            </label>
 
-            <label for="email"> Email <input required type="email" name="email"/> </label>
+            <label> Email
+                <input required type="email" name="email"/>
+            </label>
 
             <input class="button internal" type="submit" value="Submit">
 
