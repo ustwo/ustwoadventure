@@ -132,7 +132,7 @@ const portfolioArray = [
         tidyurl: "billogram.com",
         image: "images/team_assets/billogram_image.jpg",
         logo: "images/team_assets/billogram_logo.png",
-        line: "Easier payments. Quality engagement.",
+        line: "Easier payments, quality engagement,",
         copy:
             "Our interactive format replaces traditional invoices while adding the value of a seamless payment, a new channel for personal communication and a significantly improved customer experience.",
         status: PORTFOLIO_STATUS.LIVE

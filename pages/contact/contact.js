@@ -120,7 +120,7 @@ contactPage.innerHTML = `
 
         <form name="investment-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
 
-            <!-- add checkboxes to click regarding culture & inclusion,sustainability, creativity etc. before people can fill out form. Style checkboxes for pink box to grow on click like this https://jsfiddle.net/2zkofa0x/18/ -->
+            <!-- add checkboxes to click regarding culture & inclusion, sustainability, creativity etc. before people can fill out form. Style checkboxes for pink box to grow on click like this https://jsfiddle.net/2zkofa0x/18/ -->
             <!-- stage form into more parts -->
             <!-- Be more specific on what we want! -->
             
