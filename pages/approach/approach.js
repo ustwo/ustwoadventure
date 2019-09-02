@@ -3,10 +3,7 @@ const approachStageScroll = () => {
         ".approach-content .stages div"
     );
 
-    if (
-        window.innerWidth < 635 &&
-        window.matchMedia("(pointer: coarse)").matches
-    ) {
+    if (window.innerWidth < 635 && window.matchMedia("(pointer: coarse)").matches) {
         const onIntersection = entries => {
             entries.forEach(entry => {
                 if (entry.intersectionRatio > 0) {
@@ -39,13 +36,21 @@ approachPage.innerHTML = `
             Adventure is an expression of ustwo’s values applied to the world of investment
             and company building. We want to help founders with true heart and ambition forge
             a path in a world that suffers from bias, groupthink, and growth-at-all-costs.
-            Money is one part of this equation, but we also care about supporting our
-            community of founders and their teams in the long run.
+            There is more than one way to build a company, and that is fine by us.
+            It's why we want to do things differently.
         </p>
 
-        <!-- <blockquote>
-            Applying our values to investing
-        </blockquote> -->
+        <blockquote>
+            Helping founders with heart and ambition forge a path for their business.
+        </blockquote>
+
+        <p>
+            We support founders from all backgrounds who are building game-changing companies,
+            and we are purposefully flexible in how we do it. As well as equity-based investing,
+            we use revenue-share terms to help scale businesses sustainably, while preserving
+            optionality. No equity by default, a revenue-share that kicks in after 2 years, and
+            a capped return at 3x.
+        </p>
 
         <p>
             We have six core principles to evaluate the companies we invest in:
@@ -94,8 +99,8 @@ approachPage.innerHTML = `
             <p class="stage-copy">
                 We are committed to building a portfolio of companies that
                 reflects the world we live in, both in terms of the founders
-                we back, and how they consider diversity when operating their
-                business.
+                we back, and how they consider diversity and inclusion when
+                operating their business.
             </p>
         </div>
 
@@ -105,7 +110,7 @@ approachPage.innerHTML = `
             <p class="stage-copy">
                 At ustwo we look to make investments that align with our work and expertise.
                 Healthcare, mobility, immersive technologies, future of work, games — these
-                are areas that we love.
+                are areas that we know and love.
             </p>
         </div>
 
@@ -119,26 +124,6 @@ approachPage.innerHTML = `
                 structures in addition to equity.
             </p>
         </div>
-
-    </div>
-
-    <h1>An alternative path</h1>
-
-    <div class="writing">
-
-        <p>
-            Founders should be able to run their companies in a way that feels
-            right for them and their team. Sometimes this means that the traditional venture
-            capital path is right, and sometimes it isn't. To make sure we can work
-            with all types of companies, we use a range of investment styles.
-        </p>
-
-        <p>
-            Our favoured alternative style of investing has a few key components: No equity by
-            default, a revenue-share that kicks in after 2 years, and a capped return at 3x.
-            We feel this model is perfect for founders who need extra capital to scale their
-            business sustainably, while maintaining financial independance.
-        </p>
 
     </div>
 
