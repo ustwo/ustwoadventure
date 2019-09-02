@@ -36,12 +36,8 @@ approachPage.innerHTML = `
             Adventure is an expression of ustwo’s values applied to the world of investment
             and company building. We want to help founders with true heart and ambition forge
             a path in a world that suffers from bias, groupthink, and growth-at-all-costs.
-            <!-- Money is one part of this equation, but we also care about supporting our
-            community of founders and their teams in the long run. -->
-            Founders who really care about what they're building, and who want to do it
-            in a way that is right for them. Sometimes that means taking on traditional Venture
-            Captial is the best choice, and sometimes it isn't. Either way is fine by us. It's why
-            we want to do things differently.
+            There is more than one way to build a company, and that is fine by us.
+            It's why we want to do things differently.
         </p>
 
         <blockquote>
@@ -50,8 +46,8 @@ approachPage.innerHTML = `
 
         <p>
             We support founders from all backgrounds who are building game-changing companies,
-            and are purpsefully flexible in how we do it. Alongside equity-based investing, we
-            use revenue-share structures to help scale businesses sustainably, while preserving
+            and we are purposefully flexible in how we do it. As well as equity-based investing,
+            we use revenue-share terms to help scale businesses sustainably, while preserving
             optionality. No equity by default, a revenue-share that kicks in after 2 years, and
             a capped return at 3x.
         </p>
