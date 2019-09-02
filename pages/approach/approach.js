@@ -127,24 +127,4 @@ approachPage.innerHTML = `
 
     </div>
 
-    <!-- <h1>An alternative path</h1>
-
-    <div class="writing">
-
-        <p>
-            Founders should be able to run their companies in a way that feels
-            right for them and their team. Sometimes this means that the traditional venture
-            capital path is right, and sometimes it isn't. To make sure we can work
-            with all types of companies, we use a range of investment styles.
-        </p>
-
-        <p>
-            Our favoured alternative style of investing has a few key components: No equity by
-            default, a revenue-share that kicks in after 2 years, and a capped return at 3x.
-            We feel this model is perfect for founders who need extra capital to scale their
-            business sustainably, while maintaining financial independance.
-        </p>
-
-    </div> -->
-
 `;
