@@ -1,22 +1,24 @@
 const latestInvestment = portfolioArray[portfolioArray.length - 1];
 const latestInvestmentItem = `
-    <a class="latest-investment-item" href="#modal-${ kebabCase(latestInvestment.name) }">
+    <a class="latest-investment-item"
+    href="#modal-${kebabCase(latestInvestment.name)}">
         <p class="tag">Latest investment:</p>
         <div class="image-container">
-            <img class="company-image" data-src="${ latestInvestment.image }" alt="${ latestInvestment.name }'s company photo">
+            <img class="company-image" data-src="${latestInvestment.image}"
+                alt="${latestInvestment.name}'s company photo">
             <img class="arrow" data-src="images/arrow_white.svg" alt="">
         </div>
-        <h1>${ latestInvestment.name }</h1>
-        <p class="copy">${ latestInvestment.line }</p>
+        <h1>${latestInvestment.name}</h1>
+        <p class="copy">${latestInvestment.line}</p>
     </a>
 `;
 
-
 const portfolioMinusLatest = portfolioArray.slice(0, portfolioArray.length - 1);
-const livePortfolioMinusLatest = portfolioMinusLatest.filter(obj => obj.status === PORTFOLIO_STATUS.LIVE);
+const livePortfolioMinusLatest = portfolioMinusLatest.filter(
+    obj => obj.status === PORTFOLIO_STATUS.LIVE
+);
 const portfolioPreviewItems = shuffle(livePortfolioMinusLatest).slice(0, 5);
 const portfolioPreview = createPortfolioItems(portfolioPreviewItems, true).join("");
-
 
 const homePage = document.createElement("div");
 homePage.className = "home-content";
@@ -33,7 +35,7 @@ homePage.innerHTML = `
             <h2>A path for game-changing companies</h2>
             <p>
                 When you combine long-term thinking with strong culture and design,
-                you create game-changing companies. We want to help others build
+                you create game-changing companies. We help founders build
                 businesses on top of these principles.
             </p>
             <p>
@@ -44,7 +46,7 @@ homePage.innerHTML = `
             <!-- <a class="nav button internal" href="/apply">Apply</a> -->
         </div>
 
-        ${ latestInvestmentItem }
+        ${latestInvestmentItem}
 
     </div>
 
@@ -58,7 +60,7 @@ homePage.innerHTML = `
     </div>
 
     <div class="portfolio-preview">
-        ${ portfolioPreview }
+        ${portfolioPreview}
     </div>
 
     <div class="bottom-row">

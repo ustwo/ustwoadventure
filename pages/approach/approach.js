@@ -3,10 +3,7 @@ const approachStageScroll = () => {
         ".approach-content .stages div"
     );
 
-    if (
-        window.innerWidth < 635 &&
-        window.matchMedia("(pointer: coarse)").matches
-    ) {
+    if (window.innerWidth < 635 && window.matchMedia("(pointer: coarse)").matches) {
         const onIntersection = entries => {
             entries.forEach(entry => {
                 if (entry.intersectionRatio > 0) {
@@ -39,13 +36,25 @@ approachPage.innerHTML = `
             Adventure is an expression of ustwo’s values applied to the world of investment
             and company building. We want to help founders with true heart and ambition forge
             a path in a world that suffers from bias, groupthink, and growth-at-all-costs.
-            Money is one part of this equation, but we also care about supporting our
-            community of founders and their teams in the long run.
+            <!-- Money is one part of this equation, but we also care about supporting our
+            community of founders and their teams in the long run. -->
+            Founders who really care about what they're building, and who want to do it
+            in a way that is right for them. Sometimes that means taking on traditional Venture
+            Captial is the best choice, and sometimes it isn't. Either way is fine by us. It's why
+            we want to do things differently.
         </p>
 
-        <!-- <blockquote>
-            Applying our values to investing
-        </blockquote> -->
+        <blockquote>
+            Helping founders with heart and ambition forge a path for their business.
+        </blockquote>
+
+        <p>
+            We support founders from all backgrounds who are building game-changing companies,
+            and are purpsefully flexible in how we do it. Alongside equity-based investing, we
+            use revenue-share structures to help scale businesses sustainably, while preserving
+            optionality. No equity by default, a revenue-share that kicks in after 2 years, and
+            a capped return at 3x.
+        </p>
 
         <p>
             We have six core principles to evaluate the companies we invest in:
@@ -122,7 +131,7 @@ approachPage.innerHTML = `
 
     </div>
 
-    <h1>An alternative path</h1>
+    <!-- <h1>An alternative path</h1>
 
     <div class="writing">
 
@@ -140,6 +149,6 @@ approachPage.innerHTML = `
             business sustainably, while maintaining financial independance.
         </p>
 
-    </div>
+    </div> -->
 
 `;
