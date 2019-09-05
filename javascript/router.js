@@ -53,8 +53,8 @@ const pageContentChange = page => {
     navLinkSetup();
     modalLinkSetup();
     lzy();
-    if (page == approachPage) approachStageScroll();
-    if (page == contactPage) formHandlingSetup();
+    if (page === approachPage) approachStageScroll();
+    if (page === contactPage) formHandlingSetup();
 };
 
 const goToPage = (pathName, hasTransition = false) => {
@@ -62,13 +62,8 @@ const goToPage = (pathName, hasTransition = false) => {
 
     document.title = page.title;
     metaTitles.forEach(title => title.setAttribute("content", page.title));
-    metaDescriptions.forEach(tag =>
-        tag.setAttribute("content", page.description)
-    );
-    canonicalTag.setAttribute(
-        "href",
-        `https://adventure.ustwo.com${page.pathname}`
-    );
+    metaDescriptions.forEach(tag => tag.setAttribute("content", page.description));
+    canonicalTag.setAttribute("href", `https://adventure.ustwo.com${page.pathname}`);
 
     if (orbitLetters[0].innerHTML != "A") orbitLetterChange("ADVENTURE");
 
@@ -96,9 +91,9 @@ const navLinkSetup = () => {
     const navLinks = document.querySelectorAll("a.nav");
 
     navLinks.forEach(link => {
-        link.addEventListener("click", (e, pathName) => {
-            pathName = link.getAttribute("href");
-            if (pathName != window.location.pathname) {
+        link.addEventListener("click", e => {
+            const pathName = link.getAttribute("href");
+            if (pathName !== window.location.pathname) {
                 window.history.pushState(
                     {},
                     pathName,
