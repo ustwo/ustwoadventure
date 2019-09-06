@@ -37,7 +37,9 @@ const formSubmit = e => {
 
     const encode = data => {
         return Object.keys(data)
-            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .map(
+                key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+            )
             .join("&");
     };
 
@@ -61,9 +63,9 @@ const formSubmit = e => {
         })
         .catch(error => {
             setTimeout(() => {
-            formPageH1.textContent = "Submit error" + error.code;
-            formPageCopy.textContent = `Looks like there has been an error with sending the form.
-                                        Sorry! Please try again, or email us on the address below`;
+                formPageH1.textContent = "Submit error" + error.code;
+                formPageCopy.textContent = `Looks like there has been an error with sending the form.
+                                            Sorry! Please try again, or email us on the address below`;
             }, 860);
         });
 
@@ -76,18 +78,19 @@ const formSubmit = e => {
     }, 400);
 
     setTimeout(() => {
-        transitionCopy.forEach(copyItem => copyItem.classList.add("transition-active"));
+        transitionCopy.forEach(copyItem =>
+            copyItem.classList.add("transition-active")
+        );
     }, 700);
 
     setTimeout(() => {
-        transitionCopy.forEach(copyItem => copyItem.classList.remove("transition-active"));
+        transitionCopy.forEach(copyItem =>
+            copyItem.classList.remove("transition-active")
+        );
     }, 860);
 
     e.preventDefault();
 };
-
-
-
 
 const contactPage = document.createElement("div");
 contactPage.className = "contact-content";
