@@ -58,7 +58,7 @@ const pageContentChange = page => {
 };
 
 const goToPage = (pathName, hasTransition = false) => {
-    const page = routes.find(route => route.pathname == pathName);
+    const page = routes.find(route => route.pathname === pathName);
 
     document.title = page.title;
     metaTitles.forEach(title => title.setAttribute("content", page.title));
