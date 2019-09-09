@@ -38,10 +38,7 @@ const formSubmit = e => {
     const encode = data => {
         return Object.keys(data)
             .map(
-                key =>
-                    encodeURIComponent(key) +
-                    "=" +
-                    encodeURIComponent(data[key])
+                key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
             )
             .join("&");
     };
@@ -68,7 +65,7 @@ const formSubmit = e => {
             setTimeout(() => {
                 formPageH1.textContent = "Submit error" + error.code;
                 formPageCopy.textContent = `Looks like there has been an error with sending the form.
-                                        Sorry! Please try again, or email us on the address below`;
+                                            Sorry! Please try again, or email us on the address below`;
             }, 860);
         });
 

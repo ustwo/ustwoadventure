@@ -70,7 +70,7 @@ homePage.innerHTML = `
             <p>
                 ustwo builds products, services and companies that make a meaningful
                 impact on the world. By caring deeply for our people, clients, and
-                partners, we believe that we can unleash the “collective genius” of
+                partners, we believe that we can unleash the collective genius of
                 all of us.
             </p>
             <a class="button external" href="https://ustwo.com" target="_blank" rel="noopener">ustwo.com</a>

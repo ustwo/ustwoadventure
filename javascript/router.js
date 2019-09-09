@@ -53,22 +53,17 @@ const pageContentChange = page => {
     navLinkSetup();
     modalLinkSetup();
     lzy();
-    if (page == approachPage) approachStageScroll();
-    if (page == contactPage) formHandlingSetup();
+    if (page === approachPage) approachStageScroll();
+    if (page === contactPage) formHandlingSetup();
 };
 
 const goToPage = (pathName, hasTransition = false) => {
-    const page = routes.find(route => route.pathname == pathName);
+    const page = routes.find(route => route.pathname === pathName);
 
     document.title = page.title;
     metaTitles.forEach(title => title.setAttribute("content", page.title));
-    metaDescriptions.forEach(tag =>
-        tag.setAttribute("content", page.description)
-    );
-    canonicalTag.setAttribute(
-        "href",
-        `https://adventure.ustwo.com${page.pathname}`
-    );
+    metaDescriptions.forEach(tag => tag.setAttribute("content", page.description));
+    canonicalTag.setAttribute("href", `https://adventure.ustwo.com${page.pathname}`);
 
     if (orbitLetters[0].innerHTML != "A") orbitLetterChange("ADVENTURE");
 
