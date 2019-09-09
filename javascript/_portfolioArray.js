@@ -132,7 +132,7 @@ const portfolioArray = [
         tidyurl: "billogram.com",
         image: "images/team_assets/billogram_image.jpg",
         logo: "images/team_assets/billogram_logo.png",
-        line: "Easier payments. Quality engagement.",
+        line: "Easier payments, quality engagement,",
         copy:
             "Our interactive format replaces traditional invoices while adding the value of a seamless payment, a new channel for personal communication and a significantly improved customer experience.",
         status: PORTFOLIO_STATUS.LIVE
@@ -280,16 +280,16 @@ const portfolioArray = [
         copy:
             "A community of inspiring people from over 80 countries learning new tech and design skills to complement and enhance what they're already great at.",
         status: PORTFOLIO_STATUS.LIVE
+    },
+    {
+        name: "1se",
+        url: "https://1se.co/",
+        tidyurl: "1se.co",
+        image: "images/team_assets/onesecondeveryday_image.jpg",
+        logo: "images/team_assets/onesecondeveryday_logo.png",
+        line: "Life is made of seconds",
+        copy:
+            "Imagine a movie that includes every day of the rest of your life. We've built 1 Second Everyday - an app that enables anybody to easily and beautifully document their lives.",
+        status: PORTFOLIO_STATUS.LIVE
     }
-    // {
-    //     name: "1se",
-    //     url: "https://1se.co/",
-    //     tidyurl: "1se.co",
-    //     image: "images/team_assets/onesecondeveryday_image.jpg",
-    //     logo: "images/team_assets/onesecondeveryday_logo.png",
-    //     line: "Life is made of seconds",
-    //     copy:
-    //         "Imagine a movie that includes every day of the rest of your life. We've built 1 Second Everyday - an app that enables people to easily and beautifully document their lives.",
-    //     status: PORTFOLIO_STATUS.LIVE
-    // }
 ];

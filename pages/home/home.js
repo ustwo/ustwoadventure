@@ -1,13 +1,11 @@
 const latestInvestment = portfolioArray[portfolioArray.length - 1];
 const latestInvestmentItem = `
-    <a class="latest-investment-item" href="#modal-${kebabCase(
-        latestInvestment.name
-    )}">
+    <a class="latest-investment-item"
+    href="#modal-${kebabCase(latestInvestment.name)}">
         <p class="tag">Latest investment:</p>
         <div class="image-container">
-            <img class="company-image" data-src="${latestInvestment.image}" alt="${
-    latestInvestment.name
-}'s company photo">
+            <img class="company-image" data-src="${latestInvestment.image}"
+                alt="${latestInvestment.name}'s company photo">
             <img class="arrow" data-src="images/arrow_white.svg" alt="">
         </div>
         <h1>${latestInvestment.name}</h1>
@@ -37,7 +35,7 @@ homePage.innerHTML = `
             <h2>A path for game-changing companies</h2>
             <p>
                 When you combine long-term thinking with strong culture and design,
-                you create game-changing companies. We help others build
+                you create game-changing companies. We help founders build
                 businesses on top of these principles.
             </p>
             <p>

@@ -46,7 +46,7 @@ h2 {
 
 blockquote {
     font-style: italic;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1.6;
     text-align: center;
     color: var(--grey04);
@@ -79,7 +79,7 @@ a, a:visited {
     text-transform: uppercase;
 
     background-repeat: no-repeat;
-    transition: background-position 80ms;
+    transition: background-position 90ms;
 
     &:hover {
         box-shadow: inset 0 0 0 0.5px var(--nonBlack);
@@ -173,7 +173,7 @@ img[data-src]::after {
     }
 
     blockquote {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     a.button {
@@ -200,7 +200,7 @@ img[data-src]::after {
     }
 
     blockquote {
-        font-size: 30px;
+        font-size: 24px;
     }
 }
 
@@ -222,7 +222,7 @@ img[data-src]::after {
     }
 
     blockquote {
-        font-size: 24px;
+        font-size: 23px;
     }
 }
 
@@ -236,9 +236,5 @@ img[data-src]::after {
     h2 {
         margin-bottom: 15px;
         font-size: 24px;
-    }
-
-    blockquote {
-        font-size: 22px;
     }
 }
