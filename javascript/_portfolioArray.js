@@ -264,9 +264,9 @@ const portfolioArray = [
         tidyurl: "limbic.ai",
         image: "images/team_assets/limbic_image.jpg",
         logo: "images/team_assets/limbic_logo.png",
-        line: "Humanising Computing",
+        line: "Bringing AI to psychotherapy",
         copy:
-            "We've created an SDK for emotional intelligence. Using AI models we want to enable products that interact with users as naturally as the interactions between two humans.",
+            "We've created a platform that brings emotional intelligence to psychiatrists and patients, enabling better care and outcomes.",
         status: PORTFOLIO_STATUS.LIVE
     },
     {
