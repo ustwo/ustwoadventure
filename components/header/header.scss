@@ -95,7 +95,7 @@ header {
 
                 @for $i from 8 through 9 {
                     &:nth-child(#{$i}) {
-                        -webkit-text-fill-color: #fff;
+                        -webkit-text-fill-color: #ffffff;
                     }
                     @keyframes circle-orbit-#{$i} {
                         #{($i - 8) * (100 / ($NUMBER_OF_LETTERS / 2)) + 6}% {
@@ -105,7 +105,7 @@ header {
                 }
                 @for $i from 1 through 3 {
                     &:nth-child(#{$i}) {
-                        -webkit-text-fill-color: #fff;
+                        -webkit-text-fill-color: #ffffff;
                     }
                     @keyframes circle-orbit-#{$i} {
                         #{($i - 1) * (100 / ($NUMBER_OF_LETTERS / 2)) + 50}% {
@@ -115,11 +115,11 @@ header {
                 }
                 @for $i from 4 through 7 {
                     &:nth-child(#{$i}) {
-                        -webkit-text-fill-color: transparent;
+                        -webkit-text-fill-color: #ffffff00;
                     }
                     @keyframes circle-orbit-#{$i} {
                         #{($i - 4) * (100 / ($NUMBER_OF_LETTERS / 2)) + 18}% {
-                            -webkit-text-fill-color: #fff;
+                            -webkit-text-fill-color: #ffffff;
                         }
                     }
                 }
