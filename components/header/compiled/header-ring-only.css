@@ -406,6 +406,9 @@ header .logo ul li:nth-child(7) {
 }
 
 @media (max-width: 425px) {
+  div.canvas {
+    width: 120%;
+  }
   header .logo {
     --logoScale: 1.6;
   }
