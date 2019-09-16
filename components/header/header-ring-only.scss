@@ -173,5 +173,9 @@ header {
         @media (max-width: 769px) {
             --scale: 1.4;
         }
+
+        @media (max-width: 500px) {
+            --scale: 1.6;
+        }
     }
 }

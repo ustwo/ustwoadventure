@@ -393,3 +393,9 @@ header .logo ul li:nth-child(7) {
     --scale: 1.4;
   }
 }
+
+@media (max-width: 500px) {
+  header .logo {
+    --scale: 1.6;
+  }
+}
