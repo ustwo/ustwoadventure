@@ -169,13 +169,24 @@ header {
                 }
             }
         }
+    }
+}
 
-        @media (max-width: 769px) {
-            --logoScale: 1.3;
+@media (max-width: 769px) {
+    div.canvas {
+        width: 100%;
+        transform: translate(-50%, -34%);
+
+        .canvas-inner img.white-bg {
+            height: 60vh;
         }
+    }
 
-        @media (max-width: 500px) {
-            --logoScale: 1.6;
+    header {
+        margin-top: 2%;
+
+        .logo {
+            --logoScale: 1.3;
         }
     }
 }
