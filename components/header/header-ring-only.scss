@@ -56,7 +56,7 @@ header {
         width: 42vw;
 
         transform: rotate(-10deg);
-        transition: transform 12s;
+        transition: transform 10s;
 
         --logoScale: 1;
 
@@ -65,7 +65,7 @@ header {
             max-width: calc(11vw * var(--logoScale));
 
             transform: rotate(10deg);
-            transition: transform 12s;
+            transition: transform 10s;
         }
 
         &:hover {

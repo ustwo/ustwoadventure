@@ -62,9 +62,9 @@ header .logo {
   width: 42vw;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
-  transition: -webkit-transform 12s;
-  transition: transform 12s;
-  transition: transform 12s, -webkit-transform 12s;
+  transition: -webkit-transform 10s;
+  transition: transform 10s;
+  transition: transform 10s, -webkit-transform 10s;
   --logoScale: 1;
 }
 
@@ -73,9 +73,9 @@ header .logo img {
   max-width: calc(11vw * var(--logoScale));
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
-  transition: -webkit-transform 12s;
-  transition: transform 12s;
-  transition: transform 12s, -webkit-transform 12s;
+  transition: -webkit-transform 10s;
+  transition: transform 10s;
+  transition: transform 10s, -webkit-transform 10s;
 }
 
 header .logo:hover {
