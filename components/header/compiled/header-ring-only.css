@@ -407,9 +407,21 @@ header .logo ul li:nth-child(7) {
 
 @media (max-width: 425px) {
   div.canvas {
-    width: 135%;
+    width: 110%;
   }
   header .logo {
     --logoScale: 1.6;
+  }
+}
+
+@media (max-width: 325px) {
+  div.canvas {
+    width: 120%;
+  }
+}
+
+@media (max-width: 270px) {
+  div.canvas {
+    width: 130%;
   }
 }
