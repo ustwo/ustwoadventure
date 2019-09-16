@@ -58,11 +58,11 @@ header {
         transform: rotate(-10deg);
         transition: transform 12s;
 
-        --scale: 1;
+        --logoScale: 1;
 
         img {
             position: absolute;
-            max-width: calc(11vw * var(--scale));
+            max-width: calc(11vw * var(--logoScale));
 
             transform: rotate(10deg);
             transition: transform 12s;
@@ -109,7 +109,7 @@ header {
                 left: 50%;
 
                 font-family: "futura-pt", futura, sans-serif;
-                font-size: calc(5.5vw * var(--scale));
+                font-size: calc(5.5vw * var(--logoScale));
                 font-weight: bold;
                 color: var(--piglet);
                 -webkit-text-stroke: 0.022em var(--piglet);
@@ -120,7 +120,7 @@ header {
                 }
 
                 $NUMBER_OF_LETTERS: 9;
-                --translateY: calc(-13.5vw * var(--scale));
+                --translateY: calc(-13.5vw * var(--logoScale));
 
                 @for $i from 1 through $NUMBER_OF_LETTERS {
                     &:nth-child(#{$i}) {
@@ -171,11 +171,11 @@ header {
         }
 
         @media (max-width: 769px) {
-            --scale: 1.4;
+            --logoScale: 1.3;
         }
 
         @media (max-width: 500px) {
-            --scale: 1.6;
+            --logoScale: 1.6;
         }
     }
 }
