@@ -190,3 +190,11 @@ header {
         }
     }
 }
+
+@media (max-width: 425px) {
+    header {
+        .logo {
+            --logoScale: 1.6;
+        }
+    }
+}
