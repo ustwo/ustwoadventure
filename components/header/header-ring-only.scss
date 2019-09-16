@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f32d94;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 div.canvas {
@@ -10,7 +12,7 @@ div.canvas {
     left: 50%;
     transform: translate(-50%, -28%);
     width: 80%;
-    max-width: 900px;
+    max-width: 1000px;
     height: 100%;
 
     padding: 0 70px;
@@ -50,15 +52,17 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 31vh;
-        width: 25vw;
+        height: 32vh;
+        width: 26vw;
 
         transform: rotate(-10deg);
         transition: transform 12s;
 
+        --scale: 1;
+
         img {
             position: absolute;
-            max-width: 10vw;
+            max-width: calc(11vw * var(--scale));
 
             transform: rotate(10deg);
             transition: transform 12s;
@@ -105,7 +109,7 @@ header {
                 left: 50%;
 
                 font-family: "futura-pt", futura, sans-serif;
-                font-size: 5vw;
+                font-size: calc(5.5vw * var(--scale));
                 font-weight: bold;
                 color: var(--piglet);
                 -webkit-text-stroke: 0.022em var(--piglet);
@@ -116,7 +120,7 @@ header {
                 }
 
                 $NUMBER_OF_LETTERS: 9;
-                --translateY: -12vw;
+                --translateY: calc(-13.5vw * var(--scale));
 
                 @for $i from 1 through $NUMBER_OF_LETTERS {
                     &:nth-child(#{$i}) {
@@ -164,6 +168,10 @@ header {
                     }
                 }
             }
+        }
+
+        @media (max-width: 769px) {
+            --scale: 1.4;
         }
     }
 }
