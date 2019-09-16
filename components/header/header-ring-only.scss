@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f32d94;
+}
+
+div.canvas {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -28%);
+    width: 80%;
+    max-width: 900px;
+    height: 100%;
+
+    padding: 0 70px;
+    box-sizing: border-box;
+    border-radius: 0;
+
+    .canvas-inner {
+        box-shadow: rgba(0, 0, 0, 0.4) 0 20px 60px 0;
+        border-radius: 8px;
+
+        svg {
+            border-radius: 8px 8px 0 0;
+            background-color: rgb(232, 232, 232);
+        }
+
+        img.white-bg {
+            margin: -5px 0;
+            border-radius: 0 0 8px 8px;
+            width: 100%;
+            height: 50vh;
+        }
+    }
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 1.5%;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 31vh;
+        width: 25vw;
+
+        transform: rotate(-10deg);
+        transition: transform 12s;
+
+        img {
+            position: absolute;
+            max-width: 10vw;
+
+            transform: rotate(10deg);
+            transition: transform 12s;
+        }
+
+        &:hover {
+            transform: rotate(335deg);
+            transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
+
+            img {
+                transform: rotate(-335deg);
+                transition: transform 16s cubic-bezier(0.6, 0, 0.5, 1);
+            }
+
+            @media (pointer: coarse) {
+                transform: rotate(10deg);
+
+                img {
+                    transform: rotate(-10deg);
+                }
+            }
+        }
+
+        ul {
+            position: relative;
+            margin: 0;
+            list-style: none;
+
+            transform-style: preserve-3d;
+            animation: three-dimensions-circle 16s linear infinite;
+
+            @keyframes three-dimensions-circle {
+                0% {
+                    transform: rotateX(-100deg) rotate(0);
+                }
+                100% {
+                    transform: rotateX(-100deg) rotate(-360deg);
+                }
+            }
+
+            li {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+
+                font-family: "futura-pt", futura, sans-serif;
+                font-size: 5vw;
+                font-weight: bold;
+                color: var(--piglet);
+                -webkit-text-stroke: 0.022em var(--piglet);
+
+                transition: opacity 0.2s;
+                &.transition {
+                    opacity: 0;
+                }
+
+                $NUMBER_OF_LETTERS: 9;
+                --translateY: -12vw;
+
+                @for $i from 1 through $NUMBER_OF_LETTERS {
+                    &:nth-child(#{$i}) {
+                        transform: translate(-50%, -50%)
+                        rotate(#{$i * (360/$NUMBER_OF_LETTERS) - (360/$NUMBER_OF_LETTERS)}deg)
+                        translateY(var(--translateY))
+                        rotateX(90deg);
+                    }
+                }
+
+                @for $i from 1 through $NUMBER_OF_LETTERS {
+                    &:nth-child(#{$i}) {
+                        animation: circle-orbit-#{$i} 16s linear infinite;
+                    }
+                }
+
+                @for $i from 8 through 9 {
+                    &:nth-child(#{$i}) {
+                        -webkit-text-fill-color: #ffffff;
+                    }
+                    @keyframes circle-orbit-#{$i} {
+                        #{($i - 8) * (100 / ($NUMBER_OF_LETTERS / 2)) + 6}% {
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+                }
+                @for $i from 1 through 3 {
+                    &:nth-child(#{$i}) {
+                        -webkit-text-fill-color: #ffffff;
+                    }
+                    @keyframes circle-orbit-#{$i} {
+                        #{($i - 1) * (100 / ($NUMBER_OF_LETTERS / 2)) + 50}% {
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+                }
+                @for $i from 4 through 7 {
+                    &:nth-child(#{$i}) {
+                        -webkit-text-fill-color: #ffffff00;
+                    }
+                    @keyframes circle-orbit-#{$i} {
+                        #{($i - 4) * (100 / ($NUMBER_OF_LETTERS / 2)) + 18}% {
+                            -webkit-text-fill-color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

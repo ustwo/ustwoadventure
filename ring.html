@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://use.typekit.net/hoo6hst.css">
+    <link rel="stylesheet" href="styles/compiled/globals.css">
+
+    <link rel="stylesheet" href="components/header/compiled/header-ring-only.css">
+
+</head>
+
+<body>
+
+    <div class="canvas">
+        <div class="canvas-inner">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 449 32" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g fill="none" fill-rule="nonzero">
+                    <rect width="100%" fill="#e8e8e8"> </rect>
+                    <circle fill="#FF5F56" cx="20" cy="17" r="6"> </circle>
+                    <circle fill="#FFBD2E" cx="40" cy="17" r="6"> </circle>
+                    <circle fill="#27C93F" cx="60" cy="17" r="6"> </circle>
+                </g>
+            </svg>
+            <img class="white-bg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=" alt>
+        </div>
+    </div>
+
+    <header>
+        <a class="logo" href="https://adventure.ustwo.com" target="_blank" rel="noreferrer noopener">
+            <img src="images/ustwo_logo_pink.svg" alt="ustwo logo">
+            <ul>
+                <li>A</li>
+                <li>D</li>
+                <li>V</li>
+                <li>E</li>
+                <li>N</li>
+                <li>T</li>
+                <li>U</li>
+                <li>R</li>
+                <li>E</li>
+            </ul>
+        </a>
+    </header>
+
+</body>
+
+<script>
+    const logoRing = document.querySelector("header .logo");
+    const logoUstwo = document.querySelector("header .logo img");
+
+    const tiltLogo = tilt => {
+        logoRing.style.transform = `rotate(${-(tilt + 10)}deg)`;
+        logoUstwo.style.transform = `rotate(${(tilt + 10)}deg)`;
+    };
+
+    if ("ontouchstart" in document.documentElement) {
+        window.addEventListener("deviceorientation", e => {
+            logoRing.style.transition = "transform 5s cubic-bezier(0.6, 0, 0.5, 1)";
+            logoUstwo.style.transition = "transform 5s cubic-bezier(0.6, 0, 0.5, 1)";
+
+            const tilt = (window.innerHeight > window.innerWidth) ? e.gamma : e.beta;
+            const cappedTilt = Math.max(-35, Math.min(15, (tilt * 0.65)));
+
+            tiltLogo(cappedTilt);
+        });
+    }
+
+    const orbitLetters = Array.from(document.querySelectorAll("header .logo ul li"));
+    const orbitLetterChange = string => {
+        string = (string.length < 9) ? string.padEnd(9, "-") : string.substr(0, 9);
+        string = string.toUpperCase();
+
+        orbitLetters.forEach(letter => letter.classList.add("transition"));
+        setTimeout(() => {
+            for (let i = 0; i < orbitLetters.length; i++) {
+                orbitLetters[i].textContent = string[i];
+            }
+            orbitLetters.forEach(letter => letter.classList.remove("transition"));
+        }, 200);
+    };
+</script>
+
+</html>
