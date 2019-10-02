@@ -48,9 +48,10 @@ header {
             list-style: none;
 
             transform-style: preserve-3d;
-            animation: three-dimensions-circle 16s linear infinite;
+            --rotationDuration: 16s;
+            animation: ring-rotate-3d var(--rotationDuration) linear infinite;
 
-            @keyframes three-dimensions-circle {
+            @keyframes ring-rotate-3d {
                 0% {
                     transform: rotateX(-100deg) rotate(0);
                 }
@@ -89,7 +90,7 @@ header {
 
                 @for $i from 1 through $NUMBER_OF_LETTERS {
                     &:nth-child(#{$i}) {
-                        animation: circle-orbit-#{$i} 16s linear infinite;
+                        animation: circle-orbit-#{$i} var(--rotationDuration) linear infinite;
                     }
                 }
 

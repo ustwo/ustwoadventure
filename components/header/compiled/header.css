@@ -70,11 +70,12 @@ header .logo ul {
   list-style: none;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-animation: three-dimensions-circle 16s linear infinite;
-          animation: three-dimensions-circle 16s linear infinite;
+  --rotationDuration: 16s;
+  -webkit-animation: ring-rotate-3d var(--rotationDuration) linear infinite;
+          animation: ring-rotate-3d var(--rotationDuration) linear infinite;
 }
 
-@-webkit-keyframes three-dimensions-circle {
+@-webkit-keyframes ring-rotate-3d {
   0% {
     -webkit-transform: rotateX(-100deg) rotate(0);
             transform: rotateX(-100deg) rotate(0);
@@ -85,7 +86,7 @@ header .logo ul {
   }
 }
 
-@keyframes three-dimensions-circle {
+@keyframes ring-rotate-3d {
   0% {
     -webkit-transform: rotateX(-100deg) rotate(0);
             transform: rotateX(-100deg) rotate(0);
@@ -159,48 +160,48 @@ header .logo ul li:nth-child(9) {
 }
 
 header .logo ul li:nth-child(1) {
-  -webkit-animation: circle-orbit-1 16s linear infinite;
-          animation: circle-orbit-1 16s linear infinite;
+  -webkit-animation: circle-orbit-1 var(--rotationDuration) linear infinite;
+          animation: circle-orbit-1 var(--rotationDuration) linear infinite;
 }
 
 header .logo ul li:nth-child(2) {
-  -webkit-animation: circle-orbit-2 16s linear infinite;
-          animation: circle-orbit-2 16s linear infinite;
+  -webkit-animation: circle-orbit-2 var(--rotationDuration) linear infinite;
+          animation: circle-orbit-2 var(--rotationDuration) linear infinite;
 }
 
 header .logo ul li:nth-child(3) {
-  -webkit-animation: circle-orbit-3 16s linear infinite;
-          animation: circle-orbit-3 16s linear infinite;
+  -webkit-animation: circle-orbit-3 var(--rotationDuration) linear infinite;
+          animation: circle-orbit-3 var(--rotationDuration) linear infinite;
 }
 
 header .logo ul li:nth-child(4) {
-  -webkit-animation: circle-orbit-4 16s linear infinite;
-          animation: circle-orbit-4 16s linear infinite;
+  -webkit-animation: circle-orbit-4 var(--rotationDuration) linear infinite;
+          animation: circle-orbit-4 var(--rotationDuration) linear infinite;
 }
 
 header .logo ul li:nth-child(5) {
-  -webkit-animation: circle-orbit-5 16s linear infinite;
-          animation: circle-orbit-5 16s linear infinite;
+  -webkit-animation: circle-orbit-5 var(--rotationDuration) linear infinite;
+          animation: circle-orbit-5 var(--rotationDuration) linear infinite;
 }
 
 header .logo ul li:nth-child(6) {
-  -webkit-animation: circle-orbit-6 16s linear infinite;
-          animation: circle-orbit-6 16s linear infinite;
+  -webkit-animation: circle-orbit-6 var(--rotationDuration) linear infinite;
+          animation: circle-orbit-6 var(--rotationDuration) linear infinite;
 }
 
 header .logo ul li:nth-child(7) {
-  -webkit-animation: circle-orbit-7 16s linear infinite;
-          animation: circle-orbit-7 16s linear infinite;
+  -webkit-animation: circle-orbit-7 var(--rotationDuration) linear infinite;
+          animation: circle-orbit-7 var(--rotationDuration) linear infinite;
 }
 
 header .logo ul li:nth-child(8) {
-  -webkit-animation: circle-orbit-8 16s linear infinite;
-          animation: circle-orbit-8 16s linear infinite;
+  -webkit-animation: circle-orbit-8 var(--rotationDuration) linear infinite;
+          animation: circle-orbit-8 var(--rotationDuration) linear infinite;
 }
 
 header .logo ul li:nth-child(9) {
-  -webkit-animation: circle-orbit-9 16s linear infinite;
-          animation: circle-orbit-9 16s linear infinite;
+  -webkit-animation: circle-orbit-9 var(--rotationDuration) linear infinite;
+          animation: circle-orbit-9 var(--rotationDuration) linear infinite;
 }
 
 header .logo ul li:nth-child(8) {
