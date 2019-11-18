@@ -242,9 +242,9 @@ const portfolioArray = [
         tidyurl: "seedandspark.com",
         image: "images/team_assets/seedandspark_image.jpg",
         logo: "images/team_assets/seedandspark_logo.png",
-        line: "Raising daring and diverse voices in film",
+        line: "Connecting people through stories that matter",
         copy:
-            "A streaming service where perspective matters, combining streaming for audiences with crowdfunding for creators. Our mission is to create an entertainment landscape that reflects what we actually look like.",
+            "Seed&Spark is where creators and audiences work together to tell stories that celebrate diverse voices and foster vibrant conversation. We help creators use those stories to connect people in their communities through live events, and we have built a first of its kind enterprise inclusion program using film to help companies build workplaces that work for everyone.",
         status: PORTFOLIO_STATUS.LIVE
     },
     {

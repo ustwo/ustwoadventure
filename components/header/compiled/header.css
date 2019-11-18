@@ -469,7 +469,7 @@ header nav a:hover, header nav a:visited:hover {
     width: 60px;
   }
   header .logo ul li {
-    font-size: 36px;
+    font-size: 34px;
     --translateY: -65px;
   }
 }
