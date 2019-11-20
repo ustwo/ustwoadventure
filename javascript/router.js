@@ -1,28 +1,28 @@
 const routes = [
     {
         pathname: "/",
-        pageContent: homePage,
+        render: renderHomePage,
         title: "ustwo Adventure",
         description:
             "Investing in creative companies, differently. We want to help founders build businesses on top of strong culture, values and design."
     },
     {
         pathname: "/approach",
-        pageContent: approachPage,
+        render: renderApproachPage,
         title: "Approach — ustwo Adventure",
         description:
             "We invest in companies that prioritise sustainability, inclusivity and deep care, and founders with true heart and ambition."
     },
     {
         pathname: "/portfolio",
-        pageContent: portfolioPage,
+        render: renderPortfolioPage,
         title: "Portfolio — ustwo Adventure",
         description:
             "Our family of companies. ustwo Adventure invests in creative companies, differently."
     },
     {
         pathname: "/contact",
-        pageContent: contactPage,
+        render: renderContactPage,
         title: "Contact — ustwo Adventure",
         description:
             "Contact ustwo Adventure — investing in creative companies, differently."
@@ -35,27 +35,12 @@ const metaTitles = document.querySelectorAll(`
     meta[property="og:title"],
     meta[name="twitter:title"]
 `);
-
 const metaDescriptions = document.querySelectorAll(`
     meta[name="description"],
     meta[property="og:description"],
     meta[name="twitter:description"]
 `);
-
 const canonicalTag = document.querySelector(`link[rel="canonical"]`);
-
-const pageContentChange = page => {
-    while (pageContentContainer.firstChild) {
-        pageContentContainer.removeChild(pageContentContainer.firstChild);
-    }
-    pageContentContainer.appendChild(page);
-
-    navLinkSetup();
-    modalLinkSetup();
-    lzy();
-    if (page === approachPage) approachStageScroll();
-    if (page === contactPage) formHandlingSetup();
-};
 
 const goToPage = (pathName, hasTransition = false) => {
     const page = routes.find(route => route.pathname === pathName);
@@ -64,24 +49,35 @@ const goToPage = (pathName, hasTransition = false) => {
     metaTitles.forEach(title => title.setAttribute("content", page.title));
     metaDescriptions.forEach(tag => tag.setAttribute("content", page.description));
     canonicalTag.setAttribute("href", `https://adventure.ustwo.com${page.pathname}`);
-
     if (orbitLetters[0].innerHTML != "A") orbitLetterChange("ADVENTURE");
+
+    const renderPage = () => {
+        page.render();
+        navLinkSetup();
+        modalLinkSetup();
+        lzy();
+    };
 
     if (hasTransition == true) {
         pageContentContainer.classList.add("transition");
+
         setTimeout(() => {
-            pageContentChange(page.pageContent);
+            while (pageContentContainer.firstChild) {
+                pageContentContainer.removeChild(pageContentContainer.firstChild);
+            }
+            renderPage();
 
             if (window.pageYOffset > 100) window.scrollTo(0, 0);
             pageContentContainer.classList.remove("transition");
         }, 200);
     } else {
-        pageContentChange(page.pageContent);
+        renderPage();
     }
 };
 
 const goTo404 = () => {
-    pageContentChange(fourOhFourPage);
+    render404Page();
+    navLinkSetup();
 
     document.title = "404 — ustwo Adventure";
     if (orbitLetters[0].innerHTML != "4") orbitLetterChange("404ERROR");

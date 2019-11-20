@@ -1,18 +1,24 @@
-const shuffledPortfolioArrayCopy = shuffle(portfolioArray.slice());
-const portfolioItems = createPortfolioItems(shuffledPortfolioArrayCopy, false).join("");
+const renderPortfolioPage = () => {
+    const shuffledPortfolioArrayCopy = shuffle(portfolioArray.slice());
+    const portfolioItems = createPortfolioItems(
+        shuffledPortfolioArrayCopy,
+        false
+    ).join("");
 
+    const portfolioPage = document.createElement("div");
+    portfolioPage.className = "portfolio-content";
 
-const portfolioPage = document.createElement("div");
-portfolioPage.className = "portfolio-content";
+    portfolioPage.innerHTML = `
 
-portfolioPage.innerHTML = `
+        <h1>
+            Our family of companies
+        </h1>
 
-    <h1>
-        Our family of companies
-    </h1>
+        <div class="portfolio-container">
+            ${portfolioItems}
+        </div>
 
-    <div class="portfolio-container">
-        ${ portfolioItems }
-    </div>
+    `;
 
-`;
+    pageContentContainer.appendChild(portfolioPage);
+};

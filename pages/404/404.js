@@ -1,16 +1,20 @@
-const fourOhFourPage = document.createElement("div");
-fourOhFourPage.className = "fourohfour-content";
+const render404Page = () => {
+    const fourOhFourPage = document.createElement("div");
+    fourOhFourPage.className = "fourohfour-content";
 
-fourOhFourPage.innerHTML = `
+    fourOhFourPage.innerHTML = `
 
-    <h1>
-        Page not found
-    </h1>
+        <h1>
+            Page not found
+        </h1>
 
-    <h1 class="shruggie">
-        ¯\\_(ツ)_/¯
-    </h1>
+        <h1 class="shruggie">
+            ¯\\_(ツ)_/¯
+        </h1>
 
-    <a class="nav button back" href="/">Go home</a>
+        <a class="nav button back" href="/">Go home</a>
 
-`;
+    `;
+
+    pageContentContainer.appendChild(fourOhFourPage);
+};
