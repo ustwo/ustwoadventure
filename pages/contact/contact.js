@@ -31,14 +31,17 @@ const renderContactPage = () => {
         const data = {};
         for (let i = 0; i < form.length; ++i) {
             const input = form[i];
-            if (input.name) data[input.name] = input.value;
+            if (input.name) {
+                data[input.name] = input.value;
+            }
         }
 
         const encode = data => {
             return Object.keys(data)
-                .map(key => {
-                    encodeURIComponent(key) + "=" + encodeURIComponent(data[key]);
-                })
+                .map(
+                    key =>
+                        encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+                )
                 .join("&");
         };
 
