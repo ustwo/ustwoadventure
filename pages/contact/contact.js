@@ -1,13 +1,4 @@
 const renderContactPage = () => {
-    let form;
-
-    const formHandlingSetup = () => {
-        form = document.querySelector("form");
-
-        addFormValidation();
-        form.addEventListener("submit", e => formSubmit(e));
-    };
-
     const addFormValidation = () => {
         const formInputs = document.querySelectorAll("form input, form textarea");
 
@@ -22,7 +13,7 @@ const renderContactPage = () => {
         });
     };
 
-    const formSubmit = e => {
+    const handleSubmit = e => {
         const submitButton = document.querySelector("input[type=submit]");
         const transitionCopy = document.querySelectorAll(".submit-transition");
         const formPageH1 = document.querySelector("h1");
@@ -163,5 +154,8 @@ const renderContactPage = () => {
     `;
 
     pageContentContainer.appendChild(contactPage);
-    formHandlingSetup();
+
+    const form = document.querySelector("form");
+    addFormValidation();
+    form.addEventListener("submit", e => handleSubmit(e));
 };
