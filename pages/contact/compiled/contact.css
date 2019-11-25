@@ -67,7 +67,7 @@
   box-sizing: border-box;
   font-size: 20px;
   color: var(--nonBlack);
-  font-family: 'Px', sans-serif;
+  font-family: var(--pxGrotesk);
 }
 
 .contact-content .copy-form-container form textarea {
@@ -80,7 +80,7 @@
   box-sizing: border-box;
   font-size: 20px;
   color: var(--nonBlack);
-  font-family: 'Px', sans-serif;
+  font-family: var(--pxGrotesk);
   resize: vertical;
 }
 

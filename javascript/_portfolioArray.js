@@ -242,7 +242,7 @@ const portfolioArray = [
         tidyurl: "seedandspark.com",
         image: "images/team_assets/seedandspark_image.jpg",
         logo: "images/team_assets/seedandspark_logo.png",
-        line: "Connecting people with stories that matter",
+        line: "Anyone can participate. Everyone belongs.",
         copy:
             "Seed&Spark is where creators and audiences work together to tell stories that celebrate diverse voices and foster vibrant conversation. We help creators use those stories to connect their communities through live events, and we have built a first of its kind inclusion program using film to help companies build workplaces that work for everyone.",
         status: PORTFOLIO_STATUS.LIVE
