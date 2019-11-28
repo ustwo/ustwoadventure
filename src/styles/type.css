@@ -1,0 +1,123 @@
+@font-face {
+  font-family: PxGroteskRegular;
+  src: url(./px-grotesk/PxGrotesk-Regular.eot);
+  src: url(./px-grotesk/PxGrotesk-Regular.eot?#iefix) format('embedded-opentype'),
+       url(./px-grotesk/PxGrotesk-Regular.woff2) format('woff2'),
+       url(./px-grotesk/PxGrotesk-Regular.woff) format('woff'),
+       url(./px-grotesk/PxGrotesk-Regular.svg#PxGroteskRegular) format('svg');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+    margin-bottom: 90px;
+    font-family: var(--futuraBold);
+    font-style: normal;
+    font-size: 54px;
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+    color: var(--piglet);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-family: var(--futura);
+    font-size: 38px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    color: var(--piglet);
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 28px;
+    line-height: 1.8;
+    text-align: center;
+    color: var(--grey04);
+}
+
+p {
+    letter-spacing: -0.2px;
+    line-height: 1.7;
+}
+
+b {
+    font-weight: 700;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: var(--nonBlack);
+}
+
+
+
+
+@media (max-width: 965px) {
+    h1 {
+        margin-bottom: 60px;
+        font-size: 42px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 34px;
+    }
+
+    blockquote {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 769px) {
+    h1 {
+        margin-bottom: 60px;
+        font-size: 38px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    blockquote {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 475px) {
+    h1 {
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+        font-size: 26px;
+    }
+
+    blockquote {
+        font-size: 23px;
+    }
+}
+
+
+@media (max-width: 340px) {
+    h1 {
+        margin-bottom: 40px;
+        font-size: 26px;
+    }
+
+    h2 {
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+}

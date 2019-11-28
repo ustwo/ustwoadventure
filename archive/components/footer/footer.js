@@ -1,7 +1,7 @@
 const footerADVLetters = document.querySelectorAll("footer .left .ADV span");
 const moveLetter = letter => {
-    const x = 10 * (Math.floor(Math.random() * 4)) - 10;
-    const y = 10 * (Math.floor(Math.random() * 4)) - 10;
+    const x = 10 * Math.floor(Math.random() * 4) - 10;
+    const y = 10 * Math.floor(Math.random() * 4) - 10;
 
     letter.style.transform = `translate(${x}px, ${y}px)`;
 };

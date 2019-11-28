@@ -47,8 +47,13 @@ const goToPage = (pathName, hasTransition = false) => {
 
     document.title = page.title;
     metaTitles.forEach(title => title.setAttribute("content", page.title));
-    metaDescriptions.forEach(tag => tag.setAttribute("content", page.description));
-    canonicalTag.setAttribute("href", `https://adventure.ustwo.com${page.pathname}`);
+    metaDescriptions.forEach(tag =>
+        tag.setAttribute("content", page.description)
+    );
+    canonicalTag.setAttribute(
+        "href",
+        `https://adventure.ustwo.com${page.pathname}`
+    );
     if (orbitLetters[0].innerHTML != "A") orbitLetterChange("ADVENTURE");
 
     const renderPage = () => {
@@ -63,7 +68,9 @@ const goToPage = (pathName, hasTransition = false) => {
 
         setTimeout(() => {
             while (pageContentContainer.firstChild) {
-                pageContentContainer.removeChild(pageContentContainer.firstChild);
+                pageContentContainer.removeChild(
+                    pageContentContainer.firstChild
+                );
             }
             renderPage();
 

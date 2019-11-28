@@ -1,0 +1,60 @@
+module.exports = {
+    siteMetadata: {
+        siteUrl: "https://adventure.ustwo.com",
+        siteTitle: "ustwo Adventure",
+        siteDescription:
+            "Investing in creative companies, Differently — We help founders build businesses on top of strong culture, values and design.",
+        image: "https://adventure.ustwo.com/static/meta_image.png",
+        twitter: "@ustwoadventure",
+        name: "ustwo Adventure"
+    },
+
+    plugins: [
+        "gatsby-plugin-sitemap",
+        "gatsby-plugin-robots-txt",
+        "gatsby-plugin-netlify",
+        {
+            resolve: "gatsby-plugin-web-font-loader",
+            options: {
+                typekit: {
+                    id: "hoo6hst"
+                }
+            }
+        },
+        {
+            resolve: "gatsby-plugin-google-analytics",
+            options: {
+                trackingId: "UA-110109355-1",
+                head: true,
+                anonymize: true
+            }
+        },
+        "gatsby-plugin-react-helmet",
+        "gatsby-plugin-eslint",
+        "gatsby-plugin-sharp",
+        "gatsby-transformer-sharp",
+        {
+            resolve: "gatsby-plugin-canonical-urls",
+            options: {
+                siteUrl: "https://adventure.ustwo.com"
+            }
+        },
+        "gatsby-plugin-linaria",
+        {
+            resolve: "gatsby-plugin-manifest",
+            options: {
+                name: "ustwo Adventure",
+                short_name: "ustwo Adventure",
+                start_url: "/",
+                display: "minimal-ui",
+                icon: "./src/assets/favicon.png"
+            }
+        },
+        {
+            resolve: "gatsby-plugin-postcss",
+            options: {
+                postCssPlugins: [require("postcss-custom-media")()]
+            }
+        }
+    ]
+};

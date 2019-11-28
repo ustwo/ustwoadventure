@@ -9,7 +9,8 @@ const tiltLogo = tilt => {
 if ("ontouchstart" in document.documentElement) {
     window.addEventListener("deviceorientation", e => {
         logoRing.style.transition = "transform 5s cubic-bezier(0.6, 0, 0.5, 1)";
-        logoUstwo.style.transition = "transform 5s cubic-bezier(0.6, 0, 0.5, 1)";
+        logoUstwo.style.transition =
+            "transform 5s cubic-bezier(0.6, 0, 0.5, 1)";
 
         const tilt = window.innerHeight > window.innerWidth ? e.gamma : e.beta;
         const cappedTilt = Math.max(-35, Math.min(15, tilt * 0.65));
@@ -18,7 +19,9 @@ if ("ontouchstart" in document.documentElement) {
     });
 }
 
-const orbitLetters = Array.from(document.querySelectorAll("header .logo ul li"));
+const orbitLetters = Array.from(
+    document.querySelectorAll("header .logo ul li")
+);
 const orbitLetterChange = string => {
     string = string.length < 9 ? string.padEnd(9, "-") : string.substr(0, 9);
     string = string.toUpperCase();
