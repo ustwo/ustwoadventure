@@ -11,7 +11,7 @@ const OrbitLogo = () => {
         justify-content: center;
         align-items: center;
         height: 85px;
-        width: calc(132px + 9.8vw);
+        width: calc(130px + 9.8vw);
         max-width: 250px;
 
         transform: rotate(-10deg);

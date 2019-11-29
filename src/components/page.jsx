@@ -14,15 +14,20 @@ import Footer from "./footer";
 const Page = ({ title, description, children }) => {
     const PageWrapper = styled.div`
         display: grid;
+        grid-template-rows: auto 1fr auto;
         grid-template-columns: repeat(12, 12fr);
         column-gap: 36px;
+
+        main {
+            min-height: 40vh;
+        }
 
         @media (--for-up-to-tablet) {
             column-gap: 24px;
         }
 
         @media (--for-up-to-mobile) {
-            column-gap: 24px;
+            grid-template-columns: repeat(1, 1fr);
         }
     `;
 

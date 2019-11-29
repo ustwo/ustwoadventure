@@ -7,7 +7,7 @@ import ADV from "./adv";
 
 const Footer = () => {
     const StyledFooter = styled.footer`
-        margin: 65px 0 55px 0;
+        margin-bottom: 55px;
         color: var(--grey04);
 
         a,
@@ -21,6 +21,10 @@ const Footer = () => {
         }
 
         ${subgrid}
+
+        @media (--for-up-to-mobile) {
+            grid-template-columns: repeat(3, 1fr);
+        }
     `;
 
     return (

@@ -72,8 +72,16 @@ const FooterLinks = () => {
             font-size: 0.98em;
         }
 
+        @media (--for-up-to-mobile) {
+            grid-column: 2/-1;
+        }
+
         @media (--for-up-to-small-mobile) {
-            grid-column: 4/-1;
+            grid-column: 1/-1;
+
+            .links div {
+                width: 50%;
+            }
         }
     `;
 
@@ -88,7 +96,13 @@ const FooterLinks = () => {
                 <div>
                     <Link to="/first-mile">First Mile</Link>
                     <Link to="/about">About</Link>
-                    <Link to="/jobs">Jobs</Link>
+                    <a
+                        href="https://job.garden/b/ustwoadventure"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Jobs
+                    </a>
                 </div>
                 <div>
                     <a

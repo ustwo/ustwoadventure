@@ -5,6 +5,10 @@ const ADV = () => {
     const ADVWrapper = styled.div`
         grid-column: 1/3;
         display: inline-block;
+
+        @media (--for-up-to-mobile) {
+            grid-column: 1/1;
+        }
     `;
 
     const LetterContainer = styled.span`
@@ -16,7 +20,7 @@ const ADV = () => {
         transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
         @media (--for-up-to-mobile) {
-            font-size: 2em;
+            font-size: 2.15em;
         }
 
         @media (--for-up-to-small-mobile) {

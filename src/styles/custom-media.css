@@ -1,5 +1,5 @@
 @custom-media --for-up-to-small-mobile (max-width: 350px);
-@custom-media --for-up-to-mobile (max-width: 475px);
+@custom-media --for-up-to-mobile (max-width: 500px);
 @custom-media --for-up-to-small-tablet (max-width: 580px);
 @custom-media --for-up-to-tablet (max-width: 769px);
 @custom-media --for-up-to-large-tablet (max-width: 1025px);

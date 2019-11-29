@@ -160,7 +160,8 @@ img[data-src]::after {
 
 @media (--for-up-to-small-mobile) {
     body {
-        margin: 20px 0 30px 0;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 
     h1 {
