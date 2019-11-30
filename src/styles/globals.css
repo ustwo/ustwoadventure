@@ -63,17 +63,6 @@ a, a:visited {
     color: var(--nonBlack);
 }
 
-.page-content-container {
-    min-height: 50vh;
-    transform-origin: top;
-    transition: opacity 160ms, transform 160ms ease-in-out;
-}
-
-.page-content-container.transition {
-    opacity: 0;
-    transform: translate(0, 3px);
-}
-
 img[data-src]::after {
     content: " ";
     position: absolute;

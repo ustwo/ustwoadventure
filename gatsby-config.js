@@ -10,6 +10,17 @@ module.exports = {
     },
 
     plugins: [
+        "gatsby-plugin-linaria",
+        {
+            resolve: "gatsby-plugin-manifest",
+            options: {
+                name: "ustwo Adventure",
+                short_name: "ustwo Adventure",
+                start_url: "/",
+                display: "minimal-ui",
+                icon: "./src/assets/favicon.png"
+            }
+        },
         "gatsby-plugin-sitemap",
         "gatsby-plugin-robots-txt",
         "gatsby-plugin-netlify",
@@ -39,21 +50,13 @@ module.exports = {
                 siteUrl: "https://adventure.ustwo.com"
             }
         },
-        "gatsby-plugin-linaria",
-        {
-            resolve: "gatsby-plugin-manifest",
-            options: {
-                name: "ustwo Adventure",
-                short_name: "ustwo Adventure",
-                start_url: "/",
-                display: "minimal-ui",
-                icon: "./src/assets/favicon.png"
-            }
-        },
         {
             resolve: "gatsby-plugin-postcss",
             options: {
-                postCssPlugins: [require("postcss-custom-media")()]
+                postCssPlugins: [
+                    require("postcss-custom-media")(),
+                    require("postcss-subgrid")({ ieHack: false })
+                ]
             }
         }
     ]

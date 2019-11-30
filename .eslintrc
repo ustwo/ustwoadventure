@@ -26,6 +26,7 @@
     ],
     "linebreak-style": "off",
     "no-underscore-dangle": "off",
+    "no-nested-ternary": "off",
     "prettier/prettier": "warn",
     "react/prop-types": "off",
     "react/display-name": "off",

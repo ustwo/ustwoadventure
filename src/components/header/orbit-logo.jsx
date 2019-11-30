@@ -22,7 +22,7 @@ const OrbitLogo = () => {
         svg {
             position: absolute;
             width: 15vw;
-            max-width: 80px;
+            max-width: 85px;
             min-width: 65px;
 
             transform: rotate(10deg);

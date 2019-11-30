@@ -18,10 +18,6 @@ const Page = ({ title, description, children }) => {
         grid-template-columns: repeat(12, 12fr);
         column-gap: 36px;
 
-        main {
-            min-height: 40vh;
-        }
-
         @media (--for-up-to-tablet) {
             column-gap: 24px;
         }
@@ -32,15 +28,13 @@ const Page = ({ title, description, children }) => {
     `;
 
     return (
-        <>
+        <PageWrapper>
             <SEO title={title} description={description} />
 
-            <PageWrapper>
-                <Header />
-                <main>{children}</main>
-                <Footer />
-            </PageWrapper>
-        </>
+            <Header />
+            {children}
+            <Footer />
+        </PageWrapper>
     );
 };
 
