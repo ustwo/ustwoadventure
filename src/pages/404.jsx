@@ -1,12 +1,12 @@
 import React from "react";
 
-import Page from "../components/page";
+import Layout from "../components/layout";
 
 const FourOhFour = () => {
     return (
-        <Page title="Error">
+        <Layout title="Error">
             <h1>hello</h1>
-        </Page>
+        </Layout>
     );
 };
 

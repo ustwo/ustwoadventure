@@ -4,7 +4,6 @@ import { styled } from "linaria/react";
 const ADV = () => {
     const ADVWrapper = styled.div`
         grid-column: 1/3;
-        display: inline-block;
 
         @media (--for-up-to-mobile) {
             grid-column: 1/1;
@@ -17,6 +16,7 @@ const ADV = () => {
         line-height: 1;
         letter-spacing: -3px;
         color: var(--piglet);
+        display: inline-block;
         transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
         @media (--for-up-to-mobile) {

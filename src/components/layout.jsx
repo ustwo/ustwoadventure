@@ -7,11 +7,10 @@ import "../styles/custom-media.css";
 import "../styles/type.css";
 import "../styles/globals.css";
 
-import SEO from "./seo";
 import Header from "./header";
 import Footer from "./footer";
 
-const Page = ({ title, description, children }) => {
+const Layout = ({ children }) => {
     const PageWrapper = styled.div`
         display: grid;
         grid-template-rows: auto 1fr auto;
@@ -29,8 +28,6 @@ const Page = ({ title, description, children }) => {
 
     return (
         <PageWrapper>
-            <SEO title={title} description={description} />
-
             <Header />
             {children}
             <Footer />
@@ -38,4 +35,4 @@ const Page = ({ title, description, children }) => {
     );
 };
 
-export default Page;
+export default Layout;

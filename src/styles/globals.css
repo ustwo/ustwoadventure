@@ -16,7 +16,7 @@ h1 {
 
     font-family: var(--futuraBold);
     font-style: normal;
-    font-size: 54px;
+    font-size: 3em;
     line-height: 1.1;
     font-weight: 800;
     letter-spacing: -0.4px;
@@ -27,7 +27,7 @@ h1 {
 h2 {
     margin-bottom: 20px;
     font-family: var(--futura);
-    font-size: 38px;
+    font-size: 2.111em;
     font-weight: 700;
     font-style: normal;
     line-height: 1.2;
@@ -43,7 +43,7 @@ h3 {
 
 blockquote {
     font-style: italic;
-    font-size: 28px;
+    font-size: 1.333em;
     line-height: 1.8;
     text-align: center;
     color: var(--grey04);
@@ -52,6 +52,7 @@ blockquote {
 p {
     letter-spacing: -0.2px;
     line-height: 1.7;
+    margin-bottom: 0.92em;
 }
 
 b {
@@ -75,22 +76,18 @@ img[data-src]::after {
 
 
 @media (--for-up-to-large-tablet) {
-    body {
-       font-size: 17px;
-    }
-
     h1 {
         margin-bottom: 60px;
-        font-size: 42px;
+        font-size: 2.333em;
     }
 
     h2 {
         margin-bottom: 20px;
-        font-size: 34px;
+        font-size: 1.888em;
     }
 
     blockquote {
-        font-size: 28px;
+        font-size: 1.555em;
     }
 }
 
@@ -104,16 +101,10 @@ img[data-src]::after {
 
     h1 {
         margin-bottom: 60px;
-        font-size: 38px;
     }
 
     h2 {
         margin-bottom: 20px;
-        font-size: 30px;
-    }
-
-    blockquote {
-        font-size: 24px;
     }
 }
 
@@ -133,16 +124,16 @@ img[data-src]::after {
 
     h1 {
         margin-bottom: 40px;
-        font-size: 30px;
+        font-size: 1.875em;
     }
 
     h2 {
         margin-bottom: 15px;
-        font-size: 26px;
+        font-size: 1.625em;
     }
 
     blockquote {
-        font-size: 23px;
+        font-size: 1.437em;
     }
 }
 
@@ -155,11 +146,11 @@ img[data-src]::after {
 
     h1 {
         margin-bottom: 40px;
-        font-size: 26px;
+        font-size: 1.625em;
     }
 
     h2 {
         margin-bottom: 15px;
-        font-size: 24px;
+        font-size: 1.5em;
     }
 }

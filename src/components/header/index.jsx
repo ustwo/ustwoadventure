@@ -4,6 +4,7 @@ import { styled } from "linaria/react";
 import OrbitLogo from "./orbit-logo";
 import Nav from "./nav";
 
+// TODO: sort our logo rerendering on route change
 const Header = () => {
     const StyledHeader = styled.header`
         margin: 0;

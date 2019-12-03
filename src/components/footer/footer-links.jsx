@@ -2,7 +2,7 @@ import React from "react";
 import { styled } from "linaria/react";
 import { Link } from "gatsby";
 
-import externalArrow from "../../assets/external-arrow";
+import { arrow } from "../../assets/inline-arrows";
 import CopyRight from "./copyright";
 
 const FooterLinks = () => {
@@ -27,16 +27,15 @@ const FooterLinks = () => {
                 &[target="_blank"] {
                     &::after {
                         content: "";
-                        background-image: url(${externalArrow});
+                        background-image: url(${arrow});
                         transform: rotate(-45deg);
 
-                        background-size: 0.8em;
+                        background-size: 0.73em;
                         background-repeat: no-repeat;
                         display: inline-block;
                         width: 0.8em;
                         height: 0.8em;
                         margin-left: 7px;
-                        margin-bottom: -1px;
                     }
 
                     &:hover::after {
