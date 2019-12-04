@@ -1,10 +1,9 @@
-const renderPortfolioPage = () => {
-    const shuffledPortfolioArrayCopy = shuffle(portfolioArray.slice());
-    const portfolioItems = createPortfolioItems(
-        shuffledPortfolioArrayCopy,
-        false
-    ).join("");
+const shuffledPortfolioArrayCopy = shuffle(portfolioArray.slice());
+const portfolioItems = createPortfolioItems(shuffledPortfolioArrayCopy, false).join(
+    ""
+);
 
+const renderPortfolioPage = () => {
     const portfolioPage = document.createElement("div");
     portfolioPage.className = "portfolio-content";
 

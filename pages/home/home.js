@@ -1,6 +1,5 @@
-const renderHomePage = () => {
-    const latestInvestment = portfolioArray[portfolioArray.length - 1];
-    const latestInvestmentItem = `
+const latestInvestment = portfolioArray[portfolioArray.length - 1];
+const latestInvestmentItem = `
         <a class="latest-investment-item"
         href="#modal-${kebabCase(latestInvestment.name)}">
             <p class="tag">Latest investment:</p>
@@ -14,15 +13,14 @@ const renderHomePage = () => {
         </a>
     `;
 
-    const portfolioMinusLatest = portfolioArray.slice(0, portfolioArray.length - 1);
-    const livePortfolioMinusLatest = portfolioMinusLatest.filter(
-        obj => obj.status === PORTFOLIO_STATUS.LIVE
-    );
-    const portfolioPreviewItems = shuffle(livePortfolioMinusLatest).slice(0, 5);
-    const portfolioPreview = createPortfolioItems(portfolioPreviewItems, true).join(
-        ""
-    );
+const portfolioMinusLatest = portfolioArray.slice(0, portfolioArray.length - 1);
+const livePortfolioMinusLatest = portfolioMinusLatest.filter(
+    obj => obj.status === PORTFOLIO_STATUS.LIVE
+);
+const portfolioPreviewItems = shuffle(livePortfolioMinusLatest).slice(0, 5);
+const portfolioPreview = createPortfolioItems(portfolioPreviewItems, true).join("");
 
+const renderHomePage = () => {
     const homePage = document.createElement("div");
     homePage.className = "home-content";
 
