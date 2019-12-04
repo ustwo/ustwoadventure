@@ -9,18 +9,25 @@ import portfolioArray from "../../data/portfolioArray";
 import shuffle from "../../utils/shuffle";
 
 const OurPortfolio = () => {
-    const StyledPortfolioCopy = styled.div`
+    const OurPortfolioSection = styled(SectionWrapper)`
         margin-top: -110px;
-        grid-column: 1 / 9;
-        max-width: 350px;
 
         @media (max-width: 880px) {
             margin-top: -80px;
         }
 
-        @media (max-width: 740px) {
-            margin-top: 10px;
+        @media (max-width: 825px) {
+            margin-top: -50px;
         }
+
+        @media (max-width: 740px) {
+            margin-top: 15px;
+        }
+    `;
+
+    const StyledPortfolioCopy = styled.div`
+        grid-column: 1 / 9;
+        max-width: 350px;
     `;
 
     const PortfolioPreviewGridWrapper = styled(PortfolioGridWrapper)`
@@ -48,7 +55,7 @@ const OurPortfolio = () => {
                     margin-top: 300px;
                 }
                 &:nth-child(4) {
-                    margin-top: -160px;
+                    margin-top: -170px;
                 }
                 &:nth-child(5) {
                     display: none;
@@ -113,7 +120,7 @@ const OurPortfolio = () => {
     const portfolioPreviewItems = shuffle(livePortfolioMinusLatest).slice(0, 5);
 
     return (
-        <SectionWrapper subgrid>
+        <OurPortfolioSection subgrid>
             <StyledPortfolioCopy>
                 <h2>Our Portfolio</h2>
                 <p>
@@ -136,7 +143,7 @@ const OurPortfolio = () => {
                     );
                 })}
             </PortfolioPreviewGridWrapper>
-        </SectionWrapper>
+        </OurPortfolioSection>
     );
 };
 

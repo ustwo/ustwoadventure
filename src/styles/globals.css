@@ -1,7 +1,7 @@
 body {
     margin: auto;
     margin-top: 65px;
-    padding: 0 50px;
+    padding: 0 45px;
     max-width: 1100px;
 
     font-family: var(--pxGrotesk);
@@ -82,7 +82,6 @@ img[data-src]::after {
     }
 
     h2 {
-        margin-bottom: 20px;
         font-size: 1.888em;
     }
 
@@ -104,7 +103,7 @@ img[data-src]::after {
     }
 
     h2 {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 }
 
@@ -128,7 +127,6 @@ img[data-src]::after {
     }
 
     h2 {
-        margin-bottom: 15px;
         font-size: 1.625em;
     }
 
@@ -145,12 +143,10 @@ img[data-src]::after {
     }
 
     h1 {
-        margin-bottom: 40px;
         font-size: 1.625em;
     }
 
     h2 {
-        margin-bottom: 15px;
         font-size: 1.5em;
     }
 }

@@ -67,7 +67,7 @@ const Button = ({ children, external, back, href }) => {
 
         @media (--for-up-to-large-tablet) {
             font-size: 0.82em;
-            padding: 8px 37px 9px 12px;
+            padding: 8px 36px 9px 11px;
         }
     `;
 

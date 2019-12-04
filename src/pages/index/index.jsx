@@ -9,7 +9,7 @@ import CollectiveGenius from "./collective-genius";
 
 const Index = () => {
     const HomePageHeader = styled.h1`
-        margin: 0 0 140px auto;
+        margin: 0 0 130px auto;
         max-width: calc(400px + 31vw);
         grid-column: 1 / -1;
 

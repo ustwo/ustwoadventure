@@ -21,7 +21,7 @@ const Intro = () => {
             grid-column: 1 / 8;
 
             h2 {
-                max-width: 340px;
+                max-width: 330px;
             }
         }
 
@@ -44,12 +44,13 @@ const Intro = () => {
         margin-left: 3vw;
         margin-right: 4vw;
 
-        @media (--for-up-to-large-tablet) {
-            grid-column: 8 / -1;
+        @media (--for-over-desktop) {
+            margin-left: 30px;
+            margin-right: 40px;
         }
 
         @media (max-width: 950px) {
-            margin-top: 135px;
+            margin-top: 125px;
             margin-left: 6vw;
             margin-right: 0;
         }
