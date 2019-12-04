@@ -1,9 +1,3 @@
-const PORTFOLIO_STATUS = {
-    LIVE: "Live",
-    SUCCAILED: "Succailed",
-    EXITED: "Exited"
-};
-
 export default [
     {
         name: "Sidestory",
@@ -14,7 +8,7 @@ export default [
         oneLiner: "Curated experiences, led by insiders",
         copy:
             "A SideStory Experience is just you and an Insider discovering a particular neighbourhood or theme in great detail: they'll show you hidden gems and introduce you to key movers and shakers, from food to architecture to art.",
-        status: PORTFOLIO_STATUS.EXITED
+        status: "EXIT"
     },
     {
         name: "Sanctus",
@@ -25,7 +19,7 @@ export default [
         oneLiner: "Creating space for mental health",
         copy:
             "We believe mental health should be viewed like physical health, and are on a mission to make it accessible. We work with businesses to help them create an open environment where mental health is cared for.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Amaliah",
@@ -36,7 +30,7 @@ export default [
         oneLiner: "Amplifying the voices of muslim women",
         copy:
             "We create content that is culturally relevant to Muslim women across fashion, beauty, topical issues, lifestyle and more.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Over",
@@ -47,7 +41,7 @@ export default [
         oneLiner: "Build your brand. Wow the world.",
         copy:
             "We’re on a mission to empower small businesses with the tools, knowledge, and ideas they need to create everything from social posts and digital ads to logos and flyers. Effortlessly. Instantly. Fun-fully.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Run an Empire",
@@ -58,7 +52,7 @@ export default [
         oneLiner: "A real world strategy running game",
         copy:
             "The most fun way to get on the road. Race against people in the real world to control territory in your area, and claim land in the name of your empire.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Brother Cycles",
@@ -69,7 +63,7 @@ export default [
         oneLiner: "Beautiful bikes, designed in London",
         copy:
             "Our frames are designed by us, are handmade by experienced frame builders out of the best materials, and can be ridden all day, whether in the city, on the track or out in the wild.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Tray",
@@ -80,7 +74,7 @@ export default [
         oneLiner: "The integration platform for citizen automators",
         copy:
             "We’ve made a secure and easy to use tool to let you automate any process across any cloud stack, without limits. From simple processes to multi step workflows with conditional logic, we’ve got you covered.",
-        status: PORTFOLIO_STATUS.EXITED
+        status: "EXIT"
     },
     {
         name: "Dice",
@@ -91,7 +85,7 @@ export default [
         oneLiner: "Tickets to the best gigs and parties",
         copy:
             "Every feature on DICE is designed for discovery and to make going out easy. We bring you closer to the artists you love. Every event on the app is handpicked by our team, for the fans",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Marvel",
@@ -102,7 +96,7 @@ export default [
         oneLiner: "Making design simple for everyone",
         copy:
             "Marvel is a design and collaboration platform that empowers individuals and teams to bring their ideas to life. From wireframing to prototyping to code generation - Marvel is used to create the apps and sites you use everyday",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Twiik",
@@ -113,7 +107,7 @@ export default [
         oneLiner: "Helping people build healthier lifestyles",
         copy:
             "The Twiik app enables professional coaches, trainers and influencers to connect with people who are on the lookout for that perfect training program, dietary course or health challenge.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Pauseable",
@@ -124,7 +118,7 @@ export default [
         oneLiner: "Mindfulness in motion",
         copy:
             "We’re creating tools to bring mindfulness to everyone everywhere, through interactive meditation, unlocking an oasis of calm via a series of simple movements.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Billogram",
@@ -135,7 +129,7 @@ export default [
         oneLiner: "Easier payments, quality engagement",
         copy:
             "Our interactive format replaces traditional invoices while adding the value of a seamless payment, a new channel for personal communication and a significantly improved customer experience.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Dojo",
@@ -146,7 +140,7 @@ export default [
         oneLiner: "The best places and events in your city",
         copy:
             "With editorial selections, high quality reviews, and insider info, our magazine style guide tells you whats going on daily and weekly, so you know what to enjoy.",
-        status: PORTFOLIO_STATUS.SUCCAILED
+        status: "SUCCAILURE"
     },
     {
         name: "Hoop",
@@ -157,7 +151,7 @@ export default [
         oneLiner: "Find the best things happening for kids",
         copy:
             "Hoop is on a mission to get families get out of house and help their children laugh, learn and make new friends.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Tribe",
@@ -168,7 +162,7 @@ export default [
         oneLiner: "The best natural sports nutrition",
         copy:
             "A community of 50,000+ athletes brought together by a love of nature and a spirit for adventure. Inspired by a 1,000 mile run across Europe to fight human trafficking, TRIBE is on a mission to change the world of sports nutrition.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Everpress",
@@ -179,7 +173,7 @@ export default [
         oneLiner: "Design & sell beautiful merchandise, easily",
         copy:
             "The best way to create and share campaigns for clothing design, risk free and high quality. We’re enabling the newest wave of influencers to sell products to millions of consumers around the world.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Trinny London",
@@ -190,7 +184,7 @@ export default [
         oneLiner: "Changing the face of makeup",
         copy:
             "A portable, versatile range of makeup, with colours to suit every woman, and state-of-the-art technology to pinpoint which makeup truly suits you. Welcome to the ultimate easy, modern, do-it-everywhere makeup brand.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Mayku",
@@ -201,7 +195,7 @@ export default [
         oneLiner: "Make beautiful things with the FormBox",
         copy:
             "Mayku are on a mission to give people the power of making. We're building a family of mini-machines that let you start a production line from your tabletop - as simply as baking a cake.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Curiscope",
@@ -212,7 +206,7 @@ export default [
         oneLiner: "Educational experiences for all",
         copy:
             "We’re creating products using immersive technology like 360° video and AR to let you explore the depths of the ocean or the human body, and unleash your curiosity.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Stitch",
@@ -223,7 +217,7 @@ export default [
         oneLiner: "Creative production management",
         copy:
             "Stitch is reinventing the production process for brands & agencies, by organizing & automating the production workflow.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Uptree",
@@ -234,7 +228,7 @@ export default [
         oneLiner: "A career mobility platform for students",
         copy:
             "We are providing students with an online resource to find early career events, internship and jobs to launch their future pathway.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Seed&Spark",
@@ -245,7 +239,7 @@ export default [
         oneLiner: "Anyone can participate. Everyone belongs.",
         copy:
             "Seed&Spark is where creators and audiences work together to tell stories that celebrate diverse voices and foster vibrant conversation. We help creators use those stories to connect their communities through live events, and we have built a first of its kind inclusion program using film to help companies build workplaces that work for everyone.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Kyra",
@@ -256,7 +250,7 @@ export default [
         oneLiner: "A new age TV network",
         copy:
             "We are reimagining TV for the digital world. The way young people consume media has changed. Kyra was created to make TV quality original content that embraces that change.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Limbic",
@@ -267,7 +261,7 @@ export default [
         oneLiner: "Bringing AI to psychotherapy",
         copy:
             "We've created a platform that brings emotional intelligence to psychiatrists and patients, enabling better care and outcomes.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "Superhi",
@@ -279,7 +273,7 @@ export default [
         oneLiner: "Online Courses For Creative People",
         copy:
             "A community of inspiring people from over 80 countries learning new tech and design skills to complement and enhance what they're already great at.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     },
     {
         name: "1se",
@@ -290,6 +284,6 @@ export default [
         oneLiner: "Life is made of seconds",
         copy:
             "Imagine a movie that includes every day of the rest of your life. We've built 1 Second Everyday - an app that enables anybody to easily and beautifully document their lives.",
-        status: PORTFOLIO_STATUS.LIVE
+        status: "LIVE"
     }
 ];

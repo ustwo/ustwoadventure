@@ -74,8 +74,8 @@ const OrbitLetters = ({ string = "adventure" }) => {
 
     return (
         <LetterList>
-            {map.call(letters, individualLetter => (
-                <StyledLetters>{individualLetter}</StyledLetters>
+            {map.call(letters, (individualLetter, i) => (
+                <StyledLetters key={i}>{individualLetter}</StyledLetters>
             ))}
         </LetterList>
     );

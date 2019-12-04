@@ -2,77 +2,42 @@ import React from "react";
 import { styled } from "linaria/react";
 
 import SEO from "../../components/seo";
-import SectionWrapper from "../../components/section-wrapper";
 import MainWrapper from "../../components/main-wrapper";
-import LatestInvestment from "./latest-investment";
-import Button from "../../components/button";
+import Intro from "./intro";
+import OurPortfolio from "./our-portfolio";
+import CollectiveGenius from "./collective-genius";
 
 const Index = () => {
-    const HomePage = styled(MainWrapper)`
-        h1.PageHeader {
-            margin: 0 0 140px auto;
-            max-width: calc(400px + 31vw);
-            grid-column: 1 / -1;
-        }
-
-        section div.introCopy {
-            grid-column: 1 / 7;
-
-            h2 {
-                max-width: 360px;
-            }
-
-            p {
-                max-width: 470px;
-            }
-        }
+    const HomePageHeader = styled.h1`
+        margin: 0 0 140px auto;
+        max-width: calc(400px + 31vw);
+        grid-column: 1 / -1;
 
         @media (--for-over-desktop) {
-            h1.PageHeader {
-                max-width: 710px;
-            }
+            max-width: 710px;
         }
 
         @media (--for-up-to-large-tablet) {
-            h1.PageHeader {
-                max-width: calc(400px + 20vw);
-            }
+            max-width: calc(400px + 20vw);
+        }
 
-            section div.introCopy {
-                grid-column: 1 / 8;
-
-                h2 {
-                    max-width: 340px;
-                }
-            }
+        @media (--for-up-to-tablet) {
+            margin: 0 0 110px auto;
         }
     `;
 
     return (
-        <HomePage>
+        <MainWrapper>
             <SEO />
 
-            <h1 className="PageHeader">
+            <HomePageHeader>
                 ustwo Adventure invests in creative companies, differently
-            </h1>
+            </HomePageHeader>
 
-            <SectionWrapper subgrid>
-                <div className="introCopy">
-                    <h2>Build something bigger than an exit</h2>
-                    <p>
-                        When you combine long-term thinking with strong culture
-                        and design, you create amazing companies.
-                    </p>
-                    <p>
-                        Through capital, experience and belief, we help founders
-                        with true heart and ambition build businesses on top of
-                        these principles.
-                    </p>
-                    <Button href="/approach">Our approach</Button>
-                </div>
-                <LatestInvestment />
-            </SectionWrapper>
-        </HomePage>
+            <Intro />
+            <OurPortfolio />
+            <CollectiveGenius />
+        </MainWrapper>
     );
 };
 

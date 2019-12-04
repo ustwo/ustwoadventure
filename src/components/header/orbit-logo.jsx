@@ -5,6 +5,8 @@ import { styled } from "linaria/react";
 import UstwoLogo from "../../assets/ustwo-logo";
 import OrbitLetters from "./orbit-letters";
 
+// TODO: refactor to class: log every event in lifecycle out to find out why it rerenders on routechange
+
 const OrbitLogo = () => {
     const LogoWrapper = styled.div`
         display: flex;

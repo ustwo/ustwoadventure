@@ -3,7 +3,7 @@ import { styled } from "linaria/react";
 
 const ADV = () => {
     const ADVWrapper = styled.div`
-        grid-column: 1/3;
+        grid-column: 1/4;
 
         @media (--for-up-to-mobile) {
             grid-column: 1/1;
@@ -12,7 +12,7 @@ const ADV = () => {
 
     const LetterContainer = styled.span`
         font-family: var(--futuraBold);
-        font-size: 2.5em;
+        font-size: 2.46em;
         line-height: 1;
         letter-spacing: -3px;
         color: var(--piglet);

@@ -16,7 +16,7 @@ const Button = ({ children, external, back, href }) => {
         margin-top: 5px;
         margin-right: 20px;
 
-        padding: 10px 40px 10px 15px;
+        padding: 9px 40px 9px 12px;
         box-sizing: border-box;
         border: 1px solid var(--nonBlack);
 
@@ -63,6 +63,11 @@ const Button = ({ children, external, back, href }) => {
                 background-size: 14px auto;
                 background-position: calc(100% - 13px) 50%;
             }
+        }
+
+        @media (--for-up-to-large-tablet) {
+            font-size: 0.82em;
+            padding: 8px 37px 9px 12px;
         }
     `;
 

@@ -6,7 +6,7 @@ import ADV from "./adv";
 
 const Footer = () => {
     const StyledFooter = styled.footer`
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         color: var(--grey04);
         display: subgrid;
 

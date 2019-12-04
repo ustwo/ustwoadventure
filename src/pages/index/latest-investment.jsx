@@ -4,11 +4,8 @@ import { styled } from "linaria/react";
 import portfolioArray from "../../data/portfolioArray";
 import ForwardsArrow from "../../assets/forwards-arrow";
 
-const LatestInvestment = () => {
+const LatestInvestment = ({ className, style }) => {
     const LatestInvestmentLink = styled.a`
-        margin-top: 150px;
-        grid-column: 8 / 12;
-
         p.tag {
             margin-bottom: 10px;
             margin-left: -28px;
@@ -27,7 +24,8 @@ const LatestInvestment = () => {
             img.company-image {
                 display: block;
                 width: 100%;
-                height: 100%; /* TODO: height as 85% of width */
+                height: 25vw;
+                max-height: 300px;
                 object-fit: cover;
                 transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
             }
@@ -90,11 +88,18 @@ const LatestInvestment = () => {
         }
 
         @media (--for-up-to-large-tablet) {
-            grid-column: 9 / -1;
+            h1 {
+                -webkit-text-stroke: 1.2px;
+                margin-top: -22px;
+                font-size: 54px;
+            }
         }
 
         @media (--for-up-to-tablet) {
-            display: none;
+            h1 {
+                margin-top: -20px;
+                font-size: 46px;
+            }
         }
     `;
 
@@ -102,7 +107,7 @@ const LatestInvestment = () => {
     const { name, image, oneLiner } = latestInvestment;
 
     return (
-        <LatestInvestmentLink>
+        <LatestInvestmentLink className={className} style={style}>
             <p className="tag">Latest investment:</p>
             <div className="image-container">
                 {/* TODO: get lzy working */}
