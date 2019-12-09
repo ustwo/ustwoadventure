@@ -40,9 +40,13 @@ const OurPortfolio = () => {
         margin-top: 15px;
         position: relative;
 
+        @media (max-width: 380px) {
+            margin-top: 25px;
+        }
+
         a {
             &:nth-child(1) {
-                margin-top: 130px;
+                margin-top: 135px;
             }
             &:nth-child(2) {
                 margin-top: 0px;
@@ -54,7 +58,7 @@ const OurPortfolio = () => {
                 margin-top: 220px;
             }
             &:nth-child(5) {
-                margin-top: -210px;
+                margin-top: -215px;
             }
 
             @media (--for-up-to-large-tablet) {
@@ -101,12 +105,8 @@ const OurPortfolio = () => {
             }
 
             @media (max-width: 380px) {
-                &:nth-child(1) {
-                    margin-top: 0;
-                }
-                &:nth-child(2) {
-                    margin-top: 0;
-                }
+                &:nth-child(1),
+                &:nth-child(2),
                 &:nth-child(3) {
                     margin-top: 0;
                 }

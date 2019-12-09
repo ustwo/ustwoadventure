@@ -99,11 +99,34 @@ const PortfolioPreview = ({ name, image, oneLiner, hasArrows = false }) => {
             }
         }
 
-        /* TODO: Offset on mobile */
+        @media (max-width: 380px) {
+            --columnWidth: 60%;
+            transform: translateX(
+                calc(100% - var(--columnWidth) + var(--offset))
+            );
+            width: var(--columnWidth);
+
+            p.name {
+                font-size: 1.12em;
+            }
+
+            div.image-container img.image {
+                height: calc(215px + 5vw);
+            }
+        }
+
+        @media (max-width: 340px) {
+            --columnWidth: 70%;
+            transform: translateX(
+                calc((100% - var(--columnWidth) + var(--offset)) * 0.6)
+            );
+        }
     `;
 
+    const randomOffset = () => 10 * Math.floor(Math.random() * 11) - 50;
+
     return (
-        <PortfolioPreviewLink>
+        <PortfolioPreviewLink style={{ "--offset": `${randomOffset()}px` }}>
             <p className="name">{name}</p>
             <div className="image-container">
                 {/* TODO: get lzy working */}

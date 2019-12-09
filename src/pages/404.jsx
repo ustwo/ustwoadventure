@@ -1,13 +1,7 @@
 import React from "react";
 
-import Layout from "../components/layout";
-
 const FourOhFour = () => {
-    return (
-        <Layout title="Error">
-            <h1>hello</h1>
-        </Layout>
-    );
+    return <h1>hello</h1>;
 };
 
 export default FourOhFour;

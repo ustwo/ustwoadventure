@@ -68,6 +68,7 @@ const PortfolioGridWrapper = styled.div`
 
     @media (max-width: 380px) {
         grid-template-columns: repeat(1, 1fr);
+        row-gap: 12vw;
     }
 `;
 
