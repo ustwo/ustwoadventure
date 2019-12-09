@@ -5,8 +5,14 @@ import SectionWrapper from "../../components/section-wrapper";
 import Button from "../../components/button";
 import PortfolioGridWrapper from "../../components/portfolio-grid";
 import PortfolioItem from "../../components/portfolio-item";
-import portfolioArray from "../../data/portfolioArray";
+import portfolioArray from "../../data/portfolio-array";
 import shuffle from "../../utils/shuffle";
+
+const portfolioMinusLatest = portfolioArray.slice(0, portfolioArray.length - 1);
+const livePortfolioMinusLatest = portfolioMinusLatest.filter(
+    obj => obj.status === "LIVE"
+);
+const portfolioPreviewItems = shuffle(livePortfolioMinusLatest).slice(0, 5);
 
 const OurPortfolio = () => {
     const OurPortfolioSection = styled(SectionWrapper)`
@@ -32,6 +38,7 @@ const OurPortfolio = () => {
 
     const PortfolioPreviewGridWrapper = styled(PortfolioGridWrapper)`
         margin-top: 15px;
+        position: relative;
 
         a {
             &:nth-child(1) {
@@ -55,7 +62,7 @@ const OurPortfolio = () => {
                     margin-top: 300px;
                 }
                 &:nth-child(4) {
-                    margin-top: -170px;
+                    margin-top: -150px;
                 }
                 &:nth-child(5) {
                     display: none;
@@ -64,13 +71,13 @@ const OurPortfolio = () => {
 
             @media (max-width: 965px) {
                 &:nth-child(1) {
-                    margin-top: 130px;
+                    margin-top: 110px;
                 }
                 &:nth-child(2) {
                     margin-top: 0;
                 }
                 &:nth-child(3) {
-                    margin-top: 200px;
+                    margin-top: 220px;
                 }
                 &:nth-child(4) {
                     display: none;
@@ -79,16 +86,16 @@ const OurPortfolio = () => {
 
             @media (max-width: 710px) {
                 &:nth-child(1) {
-                    margin-top: 80px;
+                    margin-top: 75px;
                 }
                 &:nth-child(2) {
-                    margin-top: -40px;
+                    margin-top: -50px;
                 }
                 &:nth-child(3) {
-                    margin-top: 0;
+                    margin-top: -10px;
                 }
                 &:nth-child(4) {
-                    margin-top: -110px;
+                    margin-top: -100px;
                     display: block;
                 }
             }
@@ -110,14 +117,40 @@ const OurPortfolio = () => {
         }
     `;
 
-    const portfolioMinusLatest = portfolioArray.slice(
-        0,
-        portfolioArray.length - 1
-    );
-    const livePortfolioMinusLatest = portfolioMinusLatest.filter(
-        obj => obj.status === "LIVE"
-    );
-    const portfolioPreviewItems = shuffle(livePortfolioMinusLatest).slice(0, 5);
+    const PortfolioPreviewBackground = styled.div`
+        background-color: var(--nonWhite);
+        width: 100vw;
+        max-width: 1520px;
+        height: 74%;
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        top: 10%;
+        transform: translateX(-50%);
+
+        @media (min-width: 1520px) {
+            max-width: 1320px;
+        }
+
+        @media (max-width: 965px) {
+            height: 68.3%;
+            top: 14%;
+        }
+
+        @media (max-width: 710px) {
+            height: 70%;
+            top: 5%;
+        }
+
+        @media (max-width: 520px) {
+            height: 67%;
+        }
+
+        @media (max-width: 380px) {
+            height: 76%;
+            top: 10%;
+        }
+    `;
 
     return (
         <OurPortfolioSection subgrid>
@@ -142,6 +175,7 @@ const OurPortfolio = () => {
                         />
                     );
                 })}
+                <PortfolioPreviewBackground />
             </PortfolioPreviewGridWrapper>
         </OurPortfolioSection>
     );

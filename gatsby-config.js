@@ -40,6 +40,13 @@ module.exports = {
                 anonymize: true
             }
         },
+        {
+            resolve: "gatsby-plugin-mailchimp",
+            options: {
+                endpoint:
+                    "https://ustwo.us15.list-manage.com/subscribe/post?u=01fc7ee99c29d28e16dc3776f&id=9e2f3ee259"
+            }
+        },
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-eslint",
         "gatsby-plugin-sharp",

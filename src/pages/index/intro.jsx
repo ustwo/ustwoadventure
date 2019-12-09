@@ -50,8 +50,8 @@ const Intro = () => {
         }
 
         @media (max-width: 950px) {
-            margin-top: 125px;
-            margin-left: 6vw;
+            margin-top: 130px;
+            margin-left: 6.3vw;
             margin-right: 0;
         }
 
@@ -61,7 +61,7 @@ const Intro = () => {
     `;
 
     return (
-        <SectionWrapper subgrid>
+        <SectionWrapper noMarginTop subgrid>
             <StyledIntroCopy>
                 <h2>Build something bigger than an exit</h2>
                 <p>
@@ -76,6 +76,7 @@ const Intro = () => {
                 <Button href="/approach">Our approach</Button>
                 <Button href="/about">About us</Button>
             </StyledIntroCopy>
+
             <LatestInvestmentElement />
         </SectionWrapper>
     );

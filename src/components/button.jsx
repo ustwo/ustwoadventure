@@ -7,10 +7,11 @@ import {
     arrow,
     backArrow,
     externalArrow,
-    externalArrowHover
+    externalArrowHover,
+    tick
 } from "../assets/inline-arrows";
 
-const Button = ({ children, external, back, href }) => {
+const Button = ({ children, external, back, href, submit, success }) => {
     const StyledButton = css`
         display: inline-block;
         margin-top: 5px;
@@ -30,7 +31,8 @@ const Button = ({ children, external, back, href }) => {
             box-shadow: inset 0 0 0 0.5px var(--nonBlack);
         }
 
-        &.internal {
+        &.internal,
+        &.submit {
             background-image: url(${arrow});
             background-size: 15px auto;
             background-position: calc(100% - 14px) 50%;
@@ -65,18 +67,48 @@ const Button = ({ children, external, back, href }) => {
             }
         }
 
+        &.submit {
+            border: none;
+            background-color: #ffffff;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            color: var(--piglet);
+
+            &:hover {
+                cursor: pointer;
+                box-shadow: none;
+            }
+
+            &.success {
+                background-image: url(${tick});
+
+                &:hover {
+                    background-position: calc(100% - 14px) 50%;
+                }
+            }
+        }
+
         @media (--for-up-to-large-tablet) {
             font-size: 0.82em;
             padding: 8px 36px 9px 11px;
+        }
+
+        @media (max-width: 346px) {
+            &:not(:first-of-type) {
+                margin-top: 15px;
+            }
         }
     `;
 
     const classes = cx(
         StyledButton,
         external ? "external" : "internal",
-        back && "back"
+        back && "back",
+        submit && "submit",
+        success && "success"
     );
 
+    // TODO: refactor away from so many ternaries??
     return external ? (
         <a
             className={classes}
@@ -86,6 +118,8 @@ const Button = ({ children, external, back, href }) => {
         >
             {children}
         </a>
+    ) : submit ? (
+        <input className={classes} type="submit" value={children} />
     ) : (
         <Link className={classes} to={href}>
             {children}

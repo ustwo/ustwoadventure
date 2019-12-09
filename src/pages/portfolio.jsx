@@ -5,8 +5,10 @@ import SEO from "../components/seo";
 import MainWrapper from "../components/main-wrapper";
 import PortfolioGridWrapper from "../components/portfolio-grid";
 import PortfolioItem from "../components/portfolio-item";
-import portfolioArray from "../data/portfolioArray";
+import portfolioArray from "../data/portfolio-array";
 import shuffle from "../utils/shuffle";
+
+const shuffledPortfolioArrayCopy = shuffle(portfolioArray.slice());
 
 const Portfolio = () => {
     const PortfolioPageHeader = styled.h1`
@@ -18,7 +20,37 @@ const Portfolio = () => {
         }
     `;
 
-    const shuffledPortfolioArrayCopy = shuffle(portfolioArray.slice());
+    const StyledPortfolioGridWrapper = styled(PortfolioGridWrapper)`
+        position: relative;
+    `;
+
+    const PortfolioGridBackground = styled.div`
+        background-color: var(--nonWhite);
+        width: 100vw;
+        max-width: 1520px;
+        height: 90%;
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        top: 120px;
+        transform: translateX(-50%);
+
+        @media (min-width: 1520px) {
+            max-width: 1320px;
+        }
+
+        @media (max-width: 965px) {
+            height: 92%;
+        }
+
+        @media (max-width: 710px) {
+            height: 94%;
+        }
+
+        @media (max-width: 380px) {
+            height: 97%;
+        }
+    `;
 
     return (
         <MainWrapper>
@@ -29,7 +61,7 @@ const Portfolio = () => {
 
             <PortfolioPageHeader>Our family of companies</PortfolioPageHeader>
 
-            <PortfolioGridWrapper>
+            <StyledPortfolioGridWrapper>
                 {shuffledPortfolioArrayCopy.map(company => {
                     return (
                         <PortfolioItem
@@ -40,7 +72,8 @@ const Portfolio = () => {
                         />
                     );
                 })}
-            </PortfolioGridWrapper>
+                <PortfolioGridBackground />
+            </StyledPortfolioGridWrapper>
         </MainWrapper>
     );
 };

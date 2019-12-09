@@ -18,6 +18,10 @@ const Layout = ({ children }) => {
         column-gap: 36px;
 
         @media (--for-up-to-tablet) {
+            column-gap: 30px;
+        }
+
+        @media (--for-up-to-small-tablet) {
             column-gap: 24px;
         }
 

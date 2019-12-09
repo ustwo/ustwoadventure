@@ -52,7 +52,7 @@ const CollectiveGenius = () => {
 
         @media (--for-up-to-large-tablet) {
             grid-column: 7 / -1;
-            margin-top: -25px;
+            margin-top: -40px;
             width: calc(100% - 35px);
             margin-right: 35px;
         }

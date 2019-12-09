@@ -1,7 +1,7 @@
 import { styled } from "linaria/react";
 
 const SectionWrapper = styled.section`
-    margin: 40px 0;
+    margin: ${props => (props.noMarginTop ? "0 0 40px 0" : "40px 0")};
     display: subgrid;
     display: ${props =>
         props.grid || props.subgrid ? "grid" : props.flex ? "flex" : "block"};

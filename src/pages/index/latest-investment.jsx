@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "linaria/react";
 
-import portfolioArray from "../../data/portfolioArray";
+import portfolioArray from "../../data/portfolio-array";
 import ForwardsArrow from "../../assets/forwards-arrow";
 
 const LatestInvestment = ({ className, style }) => {
@@ -98,7 +98,7 @@ const LatestInvestment = ({ className, style }) => {
         @media (--for-up-to-tablet) {
             h1 {
                 margin-top: -20px;
-                font-size: 46px;
+                font-size: 48px;
             }
         }
     `;

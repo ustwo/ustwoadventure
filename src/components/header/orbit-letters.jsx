@@ -41,8 +41,8 @@ const OrbitLetters = ({ string = "adventure" }) => {
             opacity: 0;
         }
 
-        @media (--for-desktop) {
-            font-size: 3em;
+        @media (--for-over-desktop) {
+            font-size: 2.9em;
             --translateY: calc(-110px);
         }
 

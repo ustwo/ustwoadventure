@@ -23,6 +23,10 @@ const Nav = () => {
                 margin-right: calc(-1 * var(--hitBoxPadding));
             }
 
+            @media (--for-over-desktop) {
+                margin-left: 50px;
+            }
+
             @media (--for-up-to-small-tablet) {
                 --hitBoxPadding: 0.1em;
                 display: block;
