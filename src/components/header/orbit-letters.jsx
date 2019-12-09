@@ -1,9 +1,9 @@
 import React from "react";
 import { styled } from "linaria/react";
 
-import LetterItem from "./orbit-letters-loops";
-
 const OrbitLetters = ({ string = "adventure" }) => {
+    const letterCount = 9;
+
     const LetterList = styled.ul`
         position: relative;
         margin: 0;
@@ -23,7 +23,65 @@ const OrbitLetters = ({ string = "adventure" }) => {
         }
     `;
 
-    const StyledLetters = styled(LetterItem)`
+    const createLoopLetterStyles = () => {
+        let LetterStyleString = "";
+
+        for (let i = 0; i <= letterCount; i++) {
+            LetterStyleString += `
+                &:nth-child(${i}) {
+                    transform: translate(-50%, -50%)
+                        rotate(${i * (360 / letterCount) -
+                            360 / letterCount}deg)
+                        translateY(var(--translateY)) rotateX(90deg);
+                    animation: circle-orbit-${i} var(--rotationDuration) linear
+                        infinite;
+                }
+            `;
+        }
+
+        for (let i = 8; i <= letterCount; i++) {
+            LetterStyleString += `
+                &:nth-child(${i}) {
+                    -webkit-text-fill-color: #ffffff;
+                }
+                @keyframes circle-orbit-${i} {
+                    ${(i - 8) * (100 / (letterCount / 2)) + 6}% {
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            `;
+        }
+
+        for (let i = 1; i <= 3; i++) {
+            LetterStyleString += `
+                &:nth-child(${i}) {
+                    -webkit-text-fill-color: #ffffff;
+                }
+                @keyframes circle-orbit-${i} {
+                    ${(i - 1) * (100 / (letterCount / 2)) + 50}% {
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            `;
+        }
+
+        for (let i = 4; i <= 7; i++) {
+            LetterStyleString += `
+                &:nth-child(${i}) {
+                    -webkit-text-fill-color: #ffffff00;
+                }
+                @keyframes circle-orbit-${i} {
+                    ${(i - 4) * (100 / (letterCount / 2)) + 18}% {
+                        -webkit-text-fill-color: #ffffff;
+                    }
+                }
+            `;
+        }
+
+        return LetterStyleString;
+    };
+
+    const StyledLetters = styled.li`
         position: absolute;
         top: 50%;
         left: 50%;
@@ -41,6 +99,8 @@ const OrbitLetters = ({ string = "adventure" }) => {
             opacity: 0;
         }
 
+        ${createLoopLetterStyles()}
+
         @media (--for-over-desktop) {
             font-size: 2.9em;
             --translateY: calc(-110px);
@@ -57,9 +117,9 @@ const OrbitLetters = ({ string = "adventure" }) => {
 
     const capitalLetters = string.toUpperCase();
     const letters =
-        capitalLetters.length < 9
-            ? capitalLetters.padEnd(9, "-")
-            : capitalLetters.substr(0, 9);
+        capitalLetters.length < letterCount
+            ? capitalLetters.padEnd(letterCount, "-")
+            : capitalLetters.substr(0, letterCount);
 
     // TODO: error letters
     // orbitLetters.forEach(letter => letter.classList.add("transition"));

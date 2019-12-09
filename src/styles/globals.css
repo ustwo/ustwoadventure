@@ -87,7 +87,7 @@ input {
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 0;
-    transition: background-color 0.1s;
+    transition: background-color 0.15s;
 }
 
 input:hover {
@@ -96,7 +96,7 @@ input:hover {
 
 input:focus {
     outline: none;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.31);
 }
 
 input::placeholder {

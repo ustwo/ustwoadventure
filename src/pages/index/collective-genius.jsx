@@ -73,6 +73,10 @@ const CollectiveGenius = () => {
             grid-column: 5 / -1;
         }
 
+        @media (max-width: 530px) {
+            margin-left: 10px;
+        }
+
         @media (--for-up-to-mobile) {
             width: 65%;
             margin-left: 35%;

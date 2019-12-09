@@ -10,7 +10,11 @@ const NewsletterSubscribe = () => {
         margin-top: 90px;
 
         @media (--for-up-to-tablet) {
-            margin-top: 70px;
+            margin-top: 60px;
+        }
+
+        @media (--for-up-to-small-tablet) {
+            margin-top: 40px;
         }
     `;
 
