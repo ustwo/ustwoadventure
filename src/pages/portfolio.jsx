@@ -8,74 +8,72 @@ import PortfolioItem from "../components/portfolio-item";
 import portfolioArray from "../data/portfolio-array";
 import shuffle from "../utils/shuffle";
 
+const PortfolioPageHeader = styled.h1`
+    grid-column: 1 / -1;
+    max-width: 69%;
+
+    @media (--for-up-to-small-tablet) {
+        max-width: 90%;
+    }
+`;
+
+const StyledPortfolioGridWrapper = styled(PortfolioGridWrapper)`
+    position: relative;
+`;
+
+const PortfolioGridBackground = styled.div`
+    background-color: var(--nonWhite);
+    width: 100vw;
+    max-width: 1520px;
+    height: 90%;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 120px;
+    transform: translateX(-50%);
+
+    @media (min-width: 1520px) {
+        max-width: 1320px;
+    }
+
+    @media (max-width: 965px) {
+        height: 92%;
+    }
+
+    @media (max-width: 710px) {
+        height: 94%;
+    }
+
+    @media (max-width: 380px) {
+        height: 97%;
+    }
+`;
+
 const shuffledPortfolioArrayCopy = shuffle(portfolioArray.slice());
 
-const Portfolio = () => {
-    const PortfolioPageHeader = styled.h1`
-        grid-column: 1 / -1;
-        max-width: 69%;
+const Portfolio = () => (
+    <MainWrapper>
+        <SEO
+            title="Portfolio"
+            description="Our family of companies. ustwo Adventure invests in creative companies, differently."
+        />
 
-        @media (--for-up-to-small-tablet) {
-            max-width: 90%;
-        }
-    `;
+        <PortfolioPageHeader>Our family of companies</PortfolioPageHeader>
 
-    const StyledPortfolioGridWrapper = styled(PortfolioGridWrapper)`
-        position: relative;
-    `;
-
-    const PortfolioGridBackground = styled.div`
-        background-color: var(--nonWhite);
-        width: 100vw;
-        max-width: 1520px;
-        height: 90%;
-        position: absolute;
-        z-index: -1;
-        left: 50%;
-        top: 120px;
-        transform: translateX(-50%);
-
-        @media (min-width: 1520px) {
-            max-width: 1320px;
-        }
-
-        @media (max-width: 965px) {
-            height: 92%;
-        }
-
-        @media (max-width: 710px) {
-            height: 94%;
-        }
-
-        @media (max-width: 380px) {
-            height: 97%;
-        }
-    `;
-
-    return (
-        <MainWrapper>
-            <SEO
-                title="Portfolio"
-                description="Our family of companies. ustwo Adventure invests in creative companies, differently."
-            />
-
-            <PortfolioPageHeader>Our family of companies</PortfolioPageHeader>
-
-            <StyledPortfolioGridWrapper>
-                {shuffledPortfolioArrayCopy.map(company => {
-                    return (
-                        <PortfolioItem
-                            key={company.name}
-                            name={company.name}
-                            image={company.image}
-                            oneLiner={company.oneLiner}
-                        />
-                    );
-                })}
-                <PortfolioGridBackground />
-            </StyledPortfolioGridWrapper>
-        </MainWrapper>
-    );
-};
+        <StyledPortfolioGridWrapper>
+            {shuffledPortfolioArrayCopy.map(company => {
+                return (
+                    <PortfolioItem
+                        key={company.name}
+                        name={company.name}
+                        image={company.image}
+                        oneLiner={company.oneLiner}
+                    />
+                );
+            })}
+            <PortfolioGridBackground />
+        </StyledPortfolioGridWrapper>
+    </MainWrapper>
+);
 
 export default Portfolio;

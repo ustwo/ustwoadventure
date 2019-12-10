@@ -1,33 +1,32 @@
 import React from "react";
 import { styled } from "linaria/react";
 
-const OrbitLetters = ({ string = "adventure" }) => {
-    const letterCount = 9;
+const letterCount = 9;
 
-    const LetterList = styled.ul`
-        position: relative;
-        margin: 0;
-        list-style: none;
+const LetterList = styled.ul`
+    position: relative;
+    margin: 0;
+    list-style: none;
 
-        transform-style: preserve-3d;
-        --rotationDuration: 16s;
-        animation: ring-rotate-3d var(--rotationDuration) linear infinite;
+    transform-style: preserve-3d;
+    --rotationDuration: 16s;
+    animation: ring-rotate-3d var(--rotationDuration) linear infinite;
 
-        @keyframes ring-rotate-3d {
-            0% {
-                transform: rotateX(-100deg) rotate(0);
-            }
-            100% {
-                transform: rotateX(-100deg) rotate(-360deg);
-            }
+    @keyframes ring-rotate-3d {
+        0% {
+            transform: rotateX(-100deg) rotate(0);
         }
-    `;
+        100% {
+            transform: rotateX(-100deg) rotate(-360deg);
+        }
+    }
+`;
 
-    const createLoopLetterStyles = () => {
-        let LetterStyleString = "";
+const createLoopLetterStyles = () => {
+    let LetterStyleString = "";
 
-        for (let i = 0; i <= letterCount; i++) {
-            LetterStyleString += `
+    for (let i = 0; i <= letterCount; i++) {
+        LetterStyleString += `
                 &:nth-child(${i}) {
                     transform: translate(-50%, -50%)
                         rotate(${i * (360 / letterCount) -
@@ -37,10 +36,10 @@ const OrbitLetters = ({ string = "adventure" }) => {
                         infinite;
                 }
             `;
-        }
+    }
 
-        for (let i = 8; i <= letterCount; i++) {
-            LetterStyleString += `
+    for (let i = 8; i <= letterCount; i++) {
+        LetterStyleString += `
                 &:nth-child(${i}) {
                     -webkit-text-fill-color: #ffffff;
                 }
@@ -50,10 +49,10 @@ const OrbitLetters = ({ string = "adventure" }) => {
                     }
                 }
             `;
-        }
+    }
 
-        for (let i = 1; i <= 3; i++) {
-            LetterStyleString += `
+    for (let i = 1; i <= 3; i++) {
+        LetterStyleString += `
                 &:nth-child(${i}) {
                     -webkit-text-fill-color: #ffffff;
                 }
@@ -63,10 +62,10 @@ const OrbitLetters = ({ string = "adventure" }) => {
                     }
                 }
             `;
-        }
+    }
 
-        for (let i = 4; i <= 7; i++) {
-            LetterStyleString += `
+    for (let i = 4; i <= 7; i++) {
+        LetterStyleString += `
                 &:nth-child(${i}) {
                     -webkit-text-fill-color: #ffffff00;
                 }
@@ -76,45 +75,46 @@ const OrbitLetters = ({ string = "adventure" }) => {
                     }
                 }
             `;
-        }
+    }
 
-        return LetterStyleString;
-    };
+    return LetterStyleString;
+};
 
-    const StyledLetters = styled.li`
-        position: absolute;
-        top: 50%;
-        left: 50%;
+const StyledLetters = styled.li`
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-        font-family: var(--futuraBold);
-        font-size: calc(2.5em + 0.7vw);
-        font-weight: bold;
-        color: var(--piglet);
-        -webkit-text-stroke: 0.02em var(--piglet);
+    font-family: var(--futuraBold);
+    font-size: calc(2.5em + 0.7vw);
+    font-weight: bold;
+    color: var(--piglet);
+    -webkit-text-stroke: 0.02em var(--piglet);
 
-        --translateY: calc(-75px - 3.15vw);
+    --translateY: calc(-75px - 3.15vw);
 
-        transition: opacity 0.2s;
-        &.transition {
-            opacity: 0;
-        }
+    transition: opacity 0.2s;
+    &.transition {
+        opacity: 0;
+    }
 
-        ${createLoopLetterStyles()}
+    ${createLoopLetterStyles()}
 
-        @media (--for-over-desktop) {
-            font-size: 2.9em;
-            --translateY: calc(-110px);
-        }
+    @media (--for-over-desktop) {
+        font-size: 2.9em;
+        --translateY: calc(-110px);
+    }
 
-        @media (--for-up-to-tablet) {
-            --translateY: calc(-75px - 2.4vw);
-        }
+    @media (--for-up-to-tablet) {
+        --translateY: calc(-75px - 2.4vw);
+    }
 
-        @media (--for-up-to-mobile) {
-            --translateY: calc(-75px - 1.4vw);
-        }
-    `;
+    @media (--for-up-to-mobile) {
+        --translateY: calc(-75px - 1.4vw);
+    }
+`;
 
+const OrbitLetters = ({ string = "adventure" }) => {
     const capitalLetters = string.toUpperCase();
     const letters =
         capitalLetters.length < letterCount
