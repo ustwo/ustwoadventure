@@ -5,17 +5,17 @@ const PORTFOLIO_STATUS = {
 };
 
 const portfolioArray = [
-    {
-        name: "Sidestory",
-        url: "https://sidestory.co",
-        tidyurl: "sidestory.co",
-        image: "images/team_assets/sidestory_image.jpg",
-        logo: "images/team_assets/sidestory_logo.png",
-        line: "Curated experiences, led by insiders",
-        copy:
-            "A SideStory Experience is just you and an Insider discovering a particular neighbourhood or theme in great detail: they'll show you hidden gems and introduce you to key movers and shakers, from food to architecture to art.",
-        status: PORTFOLIO_STATUS.EXITED
-    },
+    // {
+    //     name: "Sidestory",
+    //     url: "https://sidestory.co",
+    //     tidyurl: "sidestory.co",
+    //     image: "images/team_assets/sidestory_image.jpg",
+    //     logo: "images/team_assets/sidestory_logo.png",
+    //     line: "Curated experiences, led by insiders",
+    //     copy:
+    //         "A SideStory Experience is just you and an Insider discovering a particular neighbourhood or theme in great detail: they'll show you hidden gems and introduce you to key movers and shakers, from food to architecture to art.",
+    //     status: PORTFOLIO_STATUS.EXITED
+    // },
     {
         name: "Sanctus",
         url: "https://sanctus.io",
@@ -126,28 +126,28 @@ const portfolioArray = [
             "We’re creating tools to bring mindfulness to everyone everywhere, through interactive meditation, unlocking an oasis of calm via a series of simple movements.",
         status: PORTFOLIO_STATUS.LIVE
     },
-    {
-        name: "Billogram",
-        url: "https://billogram.com/",
-        tidyurl: "billogram.com",
-        image: "images/team_assets/billogram_image.jpg",
-        logo: "images/team_assets/billogram_logo.png",
-        line: "Easier payments, quality engagement",
-        copy:
-            "Our interactive format replaces traditional invoices while adding the value of a seamless payment, a new channel for personal communication and a significantly improved customer experience.",
-        status: PORTFOLIO_STATUS.LIVE
-    },
-    {
-        name: "Dojo",
-        url: "https://www.dojoapp.co",
-        tidyurl: "dojoapp.co",
-        image: "images/team_assets/dojo_image.jpg",
-        logo: "images/team_assets/dojo_logo.png",
-        line: "The best places and events in your city",
-        copy:
-            "With editorial selections, high quality reviews, and insider info, our magazine style guide tells you whats going on daily and weekly, so you know what to enjoy.",
-        status: PORTFOLIO_STATUS.SUCCAILED
-    },
+    // {
+    //     name: "Billogram",
+    //     url: "https://billogram.com/",
+    //     tidyurl: "billogram.com",
+    //     image: "images/team_assets/billogram_image.jpg",
+    //     logo: "images/team_assets/billogram_logo.png",
+    //     line: "Easier payments, quality engagement",
+    //     copy:
+    //         "Our interactive format replaces traditional invoices while adding the value of a seamless payment, a new channel for personal communication and a significantly improved customer experience.",
+    //     status: PORTFOLIO_STATUS.LIVE
+    // },
+    // {
+    //     name: "Dojo",
+    //     url: "https://www.dojoapp.co",
+    //     tidyurl: "dojoapp.co",
+    //     image: "images/team_assets/dojo_image.jpg",
+    //     logo: "images/team_assets/dojo_logo.png",
+    //     line: "The best places and events in your city",
+    //     copy:
+    //         "With editorial selections, high quality reviews, and insider info, our magazine style guide tells you whats going on daily and weekly, so you know what to enjoy.",
+    //     status: PORTFOLIO_STATUS.SUCCAILED
+    // },
     {
         name: "Hoop",
         url: "https://www.hoop.co.uk",
