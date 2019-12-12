@@ -9,7 +9,7 @@ import {
     externalArrow,
     externalArrowHover,
     tick
-} from "../assets/inline-arrows";
+} from "../assets/inline-icons";
 
 const StyledButton = css`
     display: inline-block;

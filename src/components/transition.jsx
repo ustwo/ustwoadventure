@@ -5,31 +5,43 @@ import {
     TransitionGroup
 } from "react-transition-group";
 
-const duration = 500;
+const duration = 400;
 
 const defaultStyle = {
-    transition: `opacity ${duration}ms, transform ${duration}ms ease-in-out`
+    transition: `opacity ${duration}ms, transform ${duration}ms ease-out`
 };
 
 const transitionStyles = {
     entering: { opacity: 1, transform: "translateY(0px)" },
     entered: { opacity: 1, transform: "translateY(0px)" },
-    exiting: { opacity: 0, transform: "translateY(3px)" },
-    exited: { opacity: 0, transform: "translateY(3px)" }
+    exiting: { opacity: 0, transform: "translateY(5px)" },
+    exited: { opacity: 0, transform: "translateY(5px)" }
 };
 
-const subgrid = css`
-    display: subgrid;
+// Repeated here as well as in Layout as inheriting the grid so many times causes perf issues
+// TODO: maybe remove and go back to subgrid once it has better support
+const pageGrid = css`
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(12, 12fr);
+    column-gap: var(--column-gap);
+    @media (--for-up-to-tablet) {
+        --column-gap: 30px;
+    }
+    @media (--for-up-to-small-tablet) {
+        --column-gap: 24px;
+    }
+    @media (--for-up-to-mobile) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `;
 
-// TODO: Test why the perf on this is bad and it changes orbit-letter transparency?
-
 const TransitionWrapper = ({ children, location }) => (
-    <TransitionGroup className={subgrid}>
+    <TransitionGroup className={pageGrid}>
         <ReactTransition timeout={duration} key={location.pathname}>
             {status => (
                 <div
-                    className={subgrid}
+                    className={pageGrid}
                     style={{
                         ...defaultStyle,
                         ...transitionStyles[status]

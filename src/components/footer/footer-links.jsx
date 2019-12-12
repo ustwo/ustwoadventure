@@ -2,7 +2,7 @@ import React from "react";
 import { styled } from "linaria/react";
 import { Link } from "gatsby";
 
-import { arrow } from "../../assets/inline-arrows";
+import { arrow } from "../../assets/inline-icons";
 import CopyRight from "./copyright";
 
 const RightFooterWrapper = styled.div`

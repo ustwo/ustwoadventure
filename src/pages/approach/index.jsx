@@ -8,7 +8,7 @@ import TextBlock from "../../components/text-block";
 import PrincipleElement from "./principle-element";
 import principleContent from "../../data/approach-principles";
 import Applicationform from "./application-form";
-import { FaqContainer, FaqItem } from "../../components/faq-item";
+import FaqSection from "../../components/faqs";
 import faqContent from "../../data/approach-faqs";
 
 const ApproachPage = styled(MainWrapper)`
@@ -87,9 +87,7 @@ const Index = () => (
             title="Approach"
             description="We invest in companies that prioritise sustainability, inclusivity and deep care, and founders with true heart and ambition."
         />
-
         <h1>Approach</h1>
-
         <SectionWrapper subgrid>
             <TextBlock tight>
                 <h3>
@@ -110,7 +108,6 @@ const Index = () => (
                 </p>
             </TextBlock>
         </SectionWrapper>
-
         <SectionWrapper subgrid>
             <PrinciplesH3>
                 There are six principles that guide our investments:
@@ -126,7 +123,6 @@ const Index = () => (
                 ))}
             </PrincipleFlexContainer>
         </SectionWrapper>
-
         <SectionWrapper subgrid>
             <Wideh3>
                 We partner closely with our portfolio — offering our support and
@@ -160,18 +156,7 @@ const Index = () => (
 
         <Applicationform />
 
-        <SectionWrapper subgrid marginTop="100px">
-            <h1>FAQs</h1>
-            <FaqContainer>
-                {faqContent.map(faq => (
-                    <FaqItem
-                        key={faq.question}
-                        question={faq.question}
-                        answer={faq.answer}
-                    />
-                ))}
-            </FaqContainer>
-        </SectionWrapper>
+        <FaqSection faqArray={faqContent} />
     </ApproachPage>
 );
 

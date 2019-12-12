@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { styled } from "linaria/react";
+import { cx } from "linaria";
 
 const StyledLi = styled.li`
     width: 28%;
@@ -94,31 +95,38 @@ const StyledLi = styled.li`
 `;
 
 const PrincipleElement = ({ title, copy, index }) => {
-    // TODO: Scrolling
-    // if (
-    //     window.innerWidth < 635 &&
-    //     window.matchMedia("(pointer: coarse)").matches
-    // ) {
-    //     const onIntersection = entries => {
-    //         entries.forEach(entry => {
-    //             if (entry.intersectionRatio > 0) {
-    //                 observer.unobserve(entry.target);
-    //                 stageScrolled(entry.target);
-    //             }
-    //         });
-    //     };
-    //     const observer = new IntersectionObserver(onIntersection, {
-    //         rootMargin: "-25%",
-    //         threshold: 0.5
-    //     });
-    //     const stageScrolled = stage => {
-    //         stage.classList.add("scrolled");
-    //     };
-    //     approachStages.forEach(stage => observer.observe(stage));
-    // }
+    const [scrolled, setScrolled] = useState(false);
+    const principleRef = useRef();
+
+    useEffect(() => {
+        let observer;
+
+        if (
+            window.innerWidth < 635 &&
+            window.matchMedia("(pointer: coarse)").matches
+        ) {
+            const options = {
+                rootMargin: "-25%",
+                threshold: 0.5
+            };
+            observer = new IntersectionObserver(([entry]) => {
+                if (entry.intersectionRatio > 0) {
+                    setScrolled(true);
+                    observer.unobserve(principleRef.current);
+                }
+            }, options);
+            observer.observe(principleRef.current);
+        }
+
+        return () => {
+            if (observer) observer.unobserve(principleRef.current);
+        };
+    }, []);
+
+    const scrolledClass = cx(scrolled && "scrolled");
 
     return (
-        <StyledLi>
+        <StyledLi ref={principleRef} className={scrolledClass}>
             <h2>{index}</h2>
             <b>{title}</b>
             <p>{copy}</p>

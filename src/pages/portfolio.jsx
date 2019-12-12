@@ -7,9 +7,9 @@ import shuffle from "../utils/shuffle";
 import portfolioArray from "../data/portfolio-array";
 import {
     PortfolioGridWrapper,
-    PortfolioBackground,
-    PortfolioItem
-} from "../components/portfolio-item";
+    PortfolioGridBackground
+} from "../components/portfolio-grid";
+import PortfolioItem from "../components/portfolio-item";
 
 const PortfolioPageHeader = styled.h1`
     grid-column: 1 / -1;
@@ -25,7 +25,7 @@ const StyledPortfolioGridWrapper = styled(PortfolioGridWrapper)`
     position: relative;
 `;
 
-const PortfolioGridBackground = styled(PortfolioBackground)`
+const FullPortfolioGridBackground = styled(PortfolioGridBackground)`
     height: 90%;
     top: 120px;
 
@@ -62,7 +62,7 @@ const Portfolio = () => (
                     oneLiner={company.oneLiner}
                 />
             ))}
-            <PortfolioGridBackground />
+            <FullPortfolioGridBackground />
         </StyledPortfolioGridWrapper>
     </MainWrapper>
 );

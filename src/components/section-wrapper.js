@@ -17,7 +17,7 @@ const SectionWrapper = styled.section`
     @media (--for-up-to-tablet) {
         margin: ${props =>
             props.marginTop
-                ? `calc(${props.marginTop} * 0.8) 0 25px 0`
+                ? `calc(${props.marginTop} * 0.77) 0 25px 0`
                 : "25px 0"};
     }
 

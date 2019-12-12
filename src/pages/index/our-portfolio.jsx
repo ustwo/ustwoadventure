@@ -7,9 +7,9 @@ import shuffle from "../../utils/shuffle";
 import portfolioArray, { PORTFOLIO_STATUS } from "../../data/portfolio-array";
 import {
     PortfolioGridWrapper,
-    PortfolioBackground,
-    PortfolioItem
-} from "../../components/portfolio-item";
+    PortfolioGridBackground
+} from "../../components/portfolio-grid";
+import PortfolioItem from "../../components/portfolio-item";
 
 const OurPortfolioSection = styled(SectionWrapper)`
     margin-top: -100px;
@@ -113,7 +113,7 @@ const PortfolioPreviewGridWrapper = styled(PortfolioGridWrapper)`
     }
 `;
 
-const PortfolioPreviewBackground = styled(PortfolioBackground)`
+const PortfolioPreviewBackground = styled(PortfolioGridBackground)`
     @media (max-width: 965px) {
         height: 68.3%;
         top: 14%;

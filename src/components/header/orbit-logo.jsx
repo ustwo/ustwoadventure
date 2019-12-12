@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Link } from "gatsby";
 import { styled } from "linaria/react";
 
@@ -38,40 +38,45 @@ const LogoWrapper = styled.div`
         }
 
         @media (pointer: coarse) {
-            transform: rotate(10deg);
+            transform: rotate(-10deg);
 
-            img {
-                transform: rotate(-10deg);
+            svg {
+                transform: rotate(10deg);
+            }
+
+            svg,
+            ul {
+                transition: transform 5s cubic-bezier(0.6, 0, 0.5, 1);
             }
         }
     }
 `;
 
 const OrbitLogo = () => {
-    // TODO: reintroduce deviceoriantaion for logo
-    // const tiltLogo = tilt => {
-    //     logoRing.style.transform = `rotate(${-(tilt + 10)}deg)`;
-    //     logoUstwo.style.transform = `rotate(${tilt + 10}deg)`;
-    // };
+    const logoRef = useRef(); // TODO: Use refs with function components so I don't have to querySelector() below
+    let svgEl;
 
-    // if ("ontouchstart" in document.documentElement) {
-    //     window.addEventListener("deviceorientation", e => {
-    //         logoRing.style.transition =
-    //             "transform 5s cubic-bezier(0.6, 0, 0.5, 1)";
-    //         logoUstwo.style.transition =
-    //             "transform 5s cubic-bezier(0.6, 0, 0.5, 1)";
+    const tiltLogo = tilt => {
+        const cappedTilt = Math.max(-35, Math.min(15, tilt * 0.65));
+        logoRef.current.style.transform = `rotate(${-(cappedTilt + 10)}deg)`;
+        svgEl.style.transform = `rotate(${cappedTilt + 10}deg)`;
+    };
 
-    //         const tilt =
-    //             window.innerHeight > window.innerWidth ? e.gamma : e.beta;
-    //         const cappedTilt = Math.max(-35, Math.min(15, tilt * 0.65));
+    useEffect(() => {
+        svgEl = logoRef.current.querySelector("svg"); //
 
-    //         tiltLogo(cappedTilt);
-    //     });
-    // }
+        if ("ontouchstart" in document.documentElement) {
+            window.addEventListener("deviceorientation", e => {
+                tiltLogo(
+                    window.innerHeight > window.innerWidth ? e.gamma : e.beta
+                );
+            });
+        }
+    }, []);
 
     return (
         <Link to="/">
-            <LogoWrapper>
+            <LogoWrapper ref={logoRef}>
                 <UstwoLogo />
                 <OrbitLetters />
             </LogoWrapper>

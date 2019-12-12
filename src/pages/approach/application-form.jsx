@@ -10,6 +10,10 @@ const StyledCTAWrapper = styled(CTAWrapper)`
     @media (--for-up-to-tablet) {
         margin-top: 40px;
     }
+
+    @media (--for-up-to-small-tablet) {
+        margin-top: 30px;
+    }
 `;
 
 const CopyWrapper = styled.div`
