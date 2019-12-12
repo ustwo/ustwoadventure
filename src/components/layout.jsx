@@ -9,6 +9,7 @@ import "../styles/globals.css";
 
 import Header from "./header";
 import Footer from "./footer";
+import TransitionWrapper from "./transition";
 
 const PageWrapper = styled.div`
     --column-gap: 36px;
@@ -30,10 +31,10 @@ const PageWrapper = styled.div`
     }
 `;
 
-const Layout = ({ children }) => (
+const Layout = ({ children, location }) => (
     <PageWrapper>
         <Header />
-        {children}
+        <TransitionWrapper location={location}>{children}</TransitionWrapper>
         <Footer />
     </PageWrapper>
 );

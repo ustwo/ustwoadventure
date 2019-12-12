@@ -5,7 +5,7 @@ const InlineVideo = ({ style, className, src, poster }) => (
         style={style}
         className={className}
         autoPlay
-        playsinline
+        playsInline
         loop
         muted
         src={src}

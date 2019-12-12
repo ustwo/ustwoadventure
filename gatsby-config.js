@@ -8,7 +8,6 @@ module.exports = {
         twitter: "@ustwoadventure",
         name: "ustwo Adventure"
     },
-
     plugins: [
         "gatsby-plugin-linaria",
         {
@@ -23,6 +22,12 @@ module.exports = {
         },
         "gatsby-plugin-sitemap",
         "gatsby-plugin-robots-txt",
+        {
+            resolve: "gatsby-plugin-layout",
+            options: {
+                component: require.resolve("./src/components/layout.jsx")
+            }
+        },
         "gatsby-plugin-netlify",
         {
             resolve: "gatsby-plugin-web-font-loader",

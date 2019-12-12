@@ -1,1 +1,0 @@
-exports.wrapPageElement = require("./wrapper");
