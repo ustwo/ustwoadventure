@@ -3,10 +3,13 @@ import { styled } from "linaria/react";
 
 import SEO from "../components/seo";
 import MainWrapper from "../components/main-wrapper";
-import PortfolioGridWrapper from "../components/portfolio-grid";
-import PortfolioItem from "../components/portfolio-item";
-import portfolioArray from "../data/portfolio-array";
 import shuffle from "../utils/shuffle";
+import portfolioArray from "../data/portfolio-array";
+import {
+    PortfolioGridWrapper,
+    PortfolioBackground,
+    PortfolioItem
+} from "../components/portfolio-item";
 
 const PortfolioPageHeader = styled.h1`
     grid-column: 1 / -1;
@@ -18,23 +21,13 @@ const PortfolioPageHeader = styled.h1`
 `;
 
 const StyledPortfolioGridWrapper = styled(PortfolioGridWrapper)`
+    margin-top: 20px;
     position: relative;
 `;
 
-const PortfolioGridBackground = styled.div`
-    background-color: var(--nonWhite);
-    width: 100vw;
-    max-width: 1520px;
+const PortfolioGridBackground = styled(PortfolioBackground)`
     height: 90%;
-    position: absolute;
-    z-index: -1;
-    left: 50%;
     top: 120px;
-    transform: translateX(-50%);
-
-    @media (min-width: 1520px) {
-        max-width: 1320px;
-    }
 
     @media (max-width: 965px) {
         height: 92%;
@@ -61,16 +54,14 @@ const Portfolio = () => (
         <PortfolioPageHeader>Our family of companies</PortfolioPageHeader>
 
         <StyledPortfolioGridWrapper>
-            {shuffledPortfolioArrayCopy.map(company => {
-                return (
-                    <PortfolioItem
-                        key={company.name}
-                        name={company.name}
-                        image={company.image}
-                        oneLiner={company.oneLiner}
-                    />
-                );
-            })}
+            {shuffledPortfolioArrayCopy.map(company => (
+                <PortfolioItem
+                    key={company.name}
+                    name={company.name}
+                    image={company.image}
+                    oneLiner={company.oneLiner}
+                />
+            ))}
             <PortfolioGridBackground />
         </StyledPortfolioGridWrapper>
     </MainWrapper>

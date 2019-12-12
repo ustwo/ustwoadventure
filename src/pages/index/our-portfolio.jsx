@@ -3,15 +3,18 @@ import { styled } from "linaria/react";
 
 import SectionWrapper from "../../components/section-wrapper";
 import Button from "../../components/button";
-import PortfolioGridWrapper from "../../components/portfolio-grid";
-import PortfolioItem from "../../components/portfolio-item";
-import portfolioArray from "../../data/portfolio-array";
 import shuffle from "../../utils/shuffle";
+import portfolioArray, { PORTFOLIO_STATUS } from "../../data/portfolio-array";
+import {
+    PortfolioGridWrapper,
+    PortfolioBackground,
+    PortfolioItem
+} from "../../components/portfolio-item";
 
 const OurPortfolioSection = styled(SectionWrapper)`
-    margin-top: -110px;
+    margin-top: -100px;
 
-    @media (max-width: 880px) {
+    @media (max-width: 925px) {
         margin-top: -80px;
     }
 
@@ -20,7 +23,7 @@ const OurPortfolioSection = styled(SectionWrapper)`
     }
 
     @media (max-width: 740px) {
-        margin-top: 15px;
+        margin-top: 25px;
     }
 `;
 
@@ -110,21 +113,7 @@ const PortfolioPreviewGridWrapper = styled(PortfolioGridWrapper)`
     }
 `;
 
-const PortfolioPreviewBackground = styled.div`
-    background-color: var(--nonWhite);
-    width: 100vw;
-    max-width: 1520px;
-    height: 74%;
-    position: absolute;
-    z-index: -1;
-    left: 50%;
-    top: 10%;
-    transform: translateX(-50%);
-
-    @media (min-width: 1520px) {
-        max-width: 1320px;
-    }
-
+const PortfolioPreviewBackground = styled(PortfolioBackground)`
     @media (max-width: 965px) {
         height: 68.3%;
         top: 14%;
@@ -147,7 +136,7 @@ const PortfolioPreviewBackground = styled.div`
 
 const portfolioMinusLatest = portfolioArray.slice(0, portfolioArray.length - 1);
 const livePortfolioMinusLatest = portfolioMinusLatest.filter(
-    obj => obj.status === "LIVE"
+    obj => obj.status === PORTFOLIO_STATUS.LIVE
 );
 const portfolioPreviewItems = shuffle(livePortfolioMinusLatest).slice(0, 5);
 
@@ -163,17 +152,15 @@ const OurPortfolio = () => (
         </StyledPortfolioCopy>
 
         <PortfolioPreviewGridWrapper>
-            {portfolioPreviewItems.map(company => {
-                return (
-                    <PortfolioItem
-                        key={company.name}
-                        name={company.name}
-                        image={company.image}
-                        oneLiner={company.oneLiner}
-                        hasArrows
-                    />
-                );
-            })}
+            {portfolioPreviewItems.map(company => (
+                <PortfolioItem
+                    key={company.name}
+                    name={company.name}
+                    image={company.image}
+                    oneLiner={company.oneLiner}
+                    hasArrows
+                />
+            ))}
             <PortfolioPreviewBackground />
         </PortfolioPreviewGridWrapper>
     </OurPortfolioSection>

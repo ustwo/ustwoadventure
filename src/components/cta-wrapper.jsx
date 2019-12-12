@@ -10,7 +10,7 @@ const CTABackground = styled(SectionWrapper)`
     --side-margin: -1.2em;
     margin-left: var(--side-margin);
     margin-right: var(--side-margin);
-    padding: 65px 0; /* was calc(var(--side-margin) * -1) to keep inline with page grid, but dind't look good */
+    padding: 65px 0; /* was calc(var(--side-margin) * -1) to keep inline with page grid, but didn't look good */
 
     @media (max-width: 715px) {
         --side-margin: 0;
@@ -29,10 +29,6 @@ const CTAInner = styled.div`
 
     p:last-child {
         margin-bottom: 0;
-    }
-
-    input:not(:last-child) {
-        margin-bottom: 0.8em;
     }
 
     @media (max-width: 715px) {

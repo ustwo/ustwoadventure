@@ -60,15 +60,15 @@ const NewsletterSubscribe = () => {
     // add success prop to Button on success
     // https://github.com/revolunet/react-mailchimp-subscribe/tree/master/src
     const MailchimpForm = () => {
-        const handleSubmit = async (/* e */) => {
-            // e.preventDefault();
+        const handleSubmit = async e => {
+            e.preventDefault();
             // const result = await addToMailchimp(email, listFields);
             // I recommend setting `result` to React state
             // but you can do whatever you want
         };
 
         return (
-            <StyledForm onSubmit={handleSubmit(/* email */)}>
+            <StyledForm onSubmit={handleSubmit}>
                 <input type="email" name="email" placeholder="Email Address" />
                 <Button submit type="submit">
                     Subscribe

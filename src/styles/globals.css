@@ -12,8 +12,7 @@ body {
 }
 
 h1 {
-    margin-bottom: 90px;
-
+    margin-bottom: 70px;
     font-family: var(--futuraBold);
     font-style: normal;
     font-size: 3em;
@@ -36,7 +35,8 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
+    margin-bottom: 36px;
+    font-size: 1.333em;
     line-height: 150%;
     color: var(--grey04);
 }
@@ -74,7 +74,7 @@ img[data-src]::after {
     background-color: #eeeeee;
 }
 
-input {
+input, textarea {
     --input-padding: 0.88em;
     padding: var(--input-padding);
     font-size: 16px;
@@ -90,23 +90,36 @@ input {
     transition: background-color 0.15s;
 }
 
-input:hover {
+input:not(:last-of-type),
+textarea:not(:last-of-type) {
+    margin-bottom: 0.8em;
+}
+
+input:hover,
+textarea:hover {
     background-color: rgba(0, 0, 0, 0.225);
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     outline: none;
     background-color: rgba(0, 0, 0, 0.31);
 }
 
-input::placeholder {
+::placeholder {
     color: rgba(255, 255, 255, 0.85);
+}
+
+label {
+    color: #ffffff;
+    font-size: 0.88em;
+    font-family: var(--pxGrotesk);
 }
 
 
 @media (--for-up-to-large-tablet) {
     h1 {
-        margin-bottom: 60px;
+        margin-bottom: 50px;
         font-size: 2.333em;
     }
 
@@ -128,11 +141,16 @@ input::placeholder {
     }
 
     h1 {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
     h2 {
         margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+        margin-bottom: 40px;
     }
 }
 
@@ -151,7 +169,7 @@ input::placeholder {
     }
 
     h1 {
-        margin-bottom: 40px;
+        margin-bottom: 35px;
         font-size: 1.875em;
     }
 

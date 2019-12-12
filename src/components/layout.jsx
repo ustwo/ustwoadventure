@@ -11,17 +11,18 @@ import Header from "./header";
 import Footer from "./footer";
 
 const PageWrapper = styled.div`
+    --column-gap: 36px;
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: repeat(12, 12fr);
-    column-gap: 36px;
+    column-gap: var(--column-gap);
 
     @media (--for-up-to-tablet) {
-        column-gap: 30px;
+        --column-gap: 30px;
     }
 
     @media (--for-up-to-small-tablet) {
-        column-gap: 24px;
+        --column-gap: 24px;
     }
 
     @media (--for-up-to-mobile) {

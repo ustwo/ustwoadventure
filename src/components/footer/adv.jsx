@@ -9,7 +9,7 @@ const ADVWrapper = styled.div`
     }
 `;
 
-const LetterContainer = styled.span`
+const StyledLetter = styled.span`
     font-family: var(--futuraBold);
     font-size: 2.46em;
     line-height: 1;
@@ -27,40 +27,30 @@ const LetterContainer = styled.span`
     }
 `;
 
-const ADV = () => {
-    // TODO: get moveLetter working
+const LetterContainer = ({ children }) => {
     const moveLetter = e => {
         const x = 10 * Math.floor(Math.random() * 4) - 10;
         const y = 10 * Math.floor(Math.random() * 4) - 10;
-
-        e.target.transform = `translate(${x}px, ${y}px)`;
+        e.target.style.transform = `translate(${x}px, ${y}px)`;
     };
 
     return (
-        <ADVWrapper>
-            <LetterContainer
-                onMouseOver={moveLetter}
-                onFocus={moveLetter}
-                onClick={moveLetter}
-            >
-                A
-            </LetterContainer>
-            <LetterContainer
-                onMouseOver={moveLetter}
-                onFocus={moveLetter}
-                onClick={moveLetter}
-            >
-                D
-            </LetterContainer>
-            <LetterContainer
-                onMouseOver={moveLetter}
-                onFocus={moveLetter}
-                onClick={moveLetter}
-            >
-                V
-            </LetterContainer>
-        </ADVWrapper>
+        <StyledLetter
+            onMouseOver={moveLetter}
+            onFocus={moveLetter}
+            onClick={moveLetter}
+        >
+            {children}
+        </StyledLetter>
     );
 };
+
+const ADV = () => (
+    <ADVWrapper>
+        <LetterContainer>A</LetterContainer>
+        <LetterContainer>D</LetterContainer>
+        <LetterContainer>V</LetterContainer>
+    </ADVWrapper>
+);
 
 export default ADV;

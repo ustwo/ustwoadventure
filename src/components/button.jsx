@@ -14,7 +14,7 @@ import {
 const StyledButton = css`
     display: inline-block;
     margin-top: 5px;
-    margin-right: 20px;
+    margin-right: 16px;
 
     padding: 9px 40px 9px 12px;
     box-sizing: border-box;
@@ -66,12 +66,14 @@ const StyledButton = css`
         }
     }
 
-    &.submit {
+    &.submit,
+    &.next {
         border: none;
         background-color: #ffffff;
         padding-top: 12px;
         padding-bottom: 12px;
         color: var(--piglet);
+        min-width: 110px;
 
         &:hover {
             cursor: pointer;
@@ -99,12 +101,13 @@ const StyledButton = css`
     }
 `;
 
-const Button = ({ children, external, back, href, submit, success }) => {
+const Button = ({ children, external, back, href, submit, success, next }) => {
     const classes = cx(
         StyledButton,
         external ? "external" : "internal",
         back && "back",
         submit && "submit",
+        next && "next",
         success && "success"
     );
 
