@@ -6,10 +6,10 @@ import SectionWrapper from "../../components/section-wrapper";
 import MainWrapper from "../../components/main-wrapper";
 import TextBlock from "../../components/text-block";
 import PrincipleElement from "./principle-element";
-import principleContent from "./principle-content";
+import principleContent from "../../data/approach-principles";
 import Applicationform from "./application-form";
 import { FaqContainer, FaqItem } from "../../components/faq-item";
-import faqContent from "./faq-content";
+import faqContent from "../../data/approach-faqs";
 
 const ApproachPage = styled(MainWrapper)`
     h1 {
