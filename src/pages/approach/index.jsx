@@ -1,11 +1,12 @@
 import React from "react";
 import { styled } from "linaria/react";
 
+import SEO from "../../components/seo";
 import SectionWrapper from "../../components/section-wrapper";
 import MainWrapper from "../../components/main-wrapper";
-import { principleContent, PrincipleElement } from "./principles";
 import TextBlock from "../../components/text-block";
-import SEO from "../../components/seo";
+import PrincipleElement from "./principle-element";
+import principleContent from "./principle-content";
 import Applicationform from "./application-form";
 import { FaqContainer, FaqItem } from "../../components/faq-item";
 import faqContent from "./faq-content";
