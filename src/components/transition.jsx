@@ -5,17 +5,24 @@ import {
     TransitionGroup
 } from "react-transition-group";
 
-const duration = 400;
-
-const defaultStyle = {
-    transition: `opacity ${duration}ms, transform ${duration}ms ease-out`
-};
+const duration = 180;
 
 const transitionStyles = {
-    entering: { opacity: 1, transform: "translateY(0px)" },
-    entered: { opacity: 1, transform: "translateY(0px)" },
-    exiting: { opacity: 0, transform: "translateY(5px)" },
-    exited: { opacity: 0, transform: "translateY(5px)" }
+    entering: {
+        position: "absolute",
+        opacity: 0,
+        transform: "translate3d(0, 4px, 0)"
+    },
+    entered: {
+        transition: `all ${duration}ms ease-out`,
+        opacity: 1,
+        transform: "translate3d(0, 0, 0)"
+    },
+    exiting: {
+        transition: `all ${duration}ms ease-in`,
+        opacity: 0,
+        transform: "translate3d(0, 4px, 0)"
+    }
 };
 
 // Repeated here as well as in Layout as inheriting the grid so many times causes perf issues
@@ -43,7 +50,6 @@ const TransitionWrapper = ({ children, location }) => (
                 <div
                     className={pageGrid}
                     style={{
-                        ...defaultStyle,
                         ...transitionStyles[status]
                     }}
                 >

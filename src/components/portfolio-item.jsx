@@ -27,9 +27,7 @@ const PortfolioPreviewLink = styled.a`
             height: calc(200px + 6.5vw);
             max-height: 287px;
             object-fit: cover;
-
             filter: contrast(92%);
-
             transition: transform 0.09s, box-shadow 0.09s, filter 0.09s;
         }
 
@@ -38,14 +36,12 @@ const PortfolioPreviewLink = styled.a`
             bottom: 15px;
             left: 15px;
             width: 22px;
-
             transition: transform 0.09s;
         }
     }
 
     p.copy {
         width: 100%;
-
         margin-top: 5px;
         line-height: 1.6;
     }
@@ -120,10 +116,13 @@ const PortfolioPreviewLink = styled.a`
     }
 `;
 
-const PortfolioItem = ({ name, image, oneLiner, hasArrows = false }) => {
-    const randomOffset = () => 10 * Math.floor(Math.random() * 11) - 50;
+const randomOffset = () => 10 * Math.floor(Math.random() * 11) - 50;
 
+const PortfolioItem = ({ name, image, oneLiner, hasArrows = false }) => {
     // TODO: Fix name changes on refresh - happend only in production
+    // Problem is because of static html that's rendered (can see in page source)
+    // but the image won't be replaced on refresh?
+    // Maybe make adding to the dom an async or onLoad function?
 
     return (
         <PortfolioPreviewLink style={{ "--offset": `${randomOffset()}px` }}>
