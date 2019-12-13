@@ -138,35 +138,32 @@ const portfolioMinusLatest = portfolioArray.slice(0, portfolioArray.length - 1);
 const livePortfolioMinusLatest = portfolioMinusLatest.filter(
     obj => obj.status === PORTFOLIO_STATUS.LIVE
 );
+const portfolioPreviewItems = shuffle(livePortfolioMinusLatest).slice(0, 5);
 
-const OurPortfolio = () => {
-    const portfolioPreviewItems = shuffle(livePortfolioMinusLatest).slice(0, 5);
-    
-    return (
-        <OurPortfolioSection subgrid>
-            <StyledPortfolioCopy>
-                <h2>Our Portfolio</h2>
-                <p>
-                    We are proud to back great people and companies that put
-                    their values first.
-                </p>
-                <Button href="/portfolio">See all</Button>
-            </StyledPortfolioCopy>
+const OurPortfolio = () => (
+    <OurPortfolioSection subgrid>
+        <StyledPortfolioCopy>
+            <h2>Our Portfolio</h2>
+            <p>
+                We are proud to back great people and companies that put their
+                values first.
+            </p>
+            <Button href="/portfolio">See all</Button>
+        </StyledPortfolioCopy>
 
-            <PortfolioPreviewGridWrapper>
-                {portfolioPreviewItems.map(company => (
-                    <PortfolioItem
-                        key={company.name}
-                        name={company.name}
-                        image={company.image}
-                        oneLiner={company.oneLiner}
-                        hasArrows
-                    />
-                ))}
-                <PortfolioPreviewBackground />
-            </PortfolioPreviewGridWrapper>
-        </OurPortfolioSection>
-    );
-};
+        <PortfolioPreviewGridWrapper>
+            {portfolioPreviewItems.map(company => (
+                <PortfolioItem
+                    key={company.name}
+                    name={company.name}
+                    image={company.image}
+                    oneLiner={company.oneLiner}
+                    hasArrows
+                />
+            ))}
+            <PortfolioPreviewBackground />
+        </PortfolioPreviewGridWrapper>
+    </OurPortfolioSection>
+);
 
 export default OurPortfolio;
