@@ -8,7 +8,7 @@ export const PortfolioGridWrapper = styled.div`
     row-gap: 2.9vw;
 
     @media (--for-over-desktop) {
-        gap: 2.1em 3.7em;
+        gap: 2.1em 3.9em;
     }
 
     @media (--for-up-to-large-tablet) {

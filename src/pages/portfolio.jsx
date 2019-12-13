@@ -42,29 +42,31 @@ const FullPortfolioGridBackground = styled(PortfolioGridBackground)`
     }
 `;
 
-const shuffledPortfolioArrayCopy = shuffle(portfolioArray.slice());
+const Portfolio = () => {
+    const shuffledPortfolioArrayCopy = shuffle(portfolioArray.slice());
 
-const Portfolio = () => (
-    <MainWrapper>
-        <SEO
-            title="Portfolio"
-            description="Our family of companies. ustwo Adventure invests in creative companies, differently."
-        />
+    return (
+        <MainWrapper>
+            <SEO
+                title="Portfolio"
+                description="Our family of companies. ustwo Adventure invests in creative companies, differently."
+            />
 
-        <PortfolioPageHeader>Our family of companies</PortfolioPageHeader>
+            <PortfolioPageHeader>Our family of companies</PortfolioPageHeader>
 
-        <StyledPortfolioGridWrapper>
-            {shuffledPortfolioArrayCopy.map(company => (
-                <PortfolioItem
-                    key={company.name}
-                    name={company.name}
-                    image={company.image}
-                    oneLiner={company.oneLiner}
-                />
-            ))}
-            <FullPortfolioGridBackground />
-        </StyledPortfolioGridWrapper>
-    </MainWrapper>
-);
+            <StyledPortfolioGridWrapper>
+                {shuffledPortfolioArrayCopy.map(company => (
+                    <PortfolioItem
+                        key={company.name}
+                        name={company.name}
+                        image={company.image}
+                        oneLiner={company.oneLiner}
+                    />
+                ))}
+                <FullPortfolioGridBackground />
+            </StyledPortfolioGridWrapper>
+        </MainWrapper>
+    );
+};
 
 export default Portfolio;

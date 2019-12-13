@@ -123,6 +123,8 @@ const PortfolioPreviewLink = styled.a`
 const PortfolioItem = ({ name, image, oneLiner, hasArrows = false }) => {
     const randomOffset = () => 10 * Math.floor(Math.random() * 11) - 50;
 
+    // TODO: Fix name changes on refresh - happend only in production
+
     return (
         <PortfolioPreviewLink style={{ "--offset": `${randomOffset()}px` }}>
             <p className="name">{name}</p>

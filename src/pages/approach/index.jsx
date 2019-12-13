@@ -130,7 +130,7 @@ const Index = () => (
                 for them.
             </Wideh3>
             <TextBlock>
-                <b>A belief Factory</b>
+                <b>A belief factory</b>
                 <p>
                     You may come for the capital, but we want you to stay for
                     the belief. We offer the perspective and support to help you
@@ -139,7 +139,7 @@ const Index = () => (
 
                 <b>A flexible view on growth</b>
                 <p>
-                    The way companies grow is changing, and Venture Capital
+                    The way companies grow is changing, and venture capital
                     isn’t the best fit for everyone. We invest via revenue-share
                     agreements alongside traditional equity, whichever is right
                     for you.
