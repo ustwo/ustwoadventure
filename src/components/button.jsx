@@ -89,7 +89,7 @@ const StyledButton = css`
         }
     }
 
-    @media (--for-up-to-large-tablet) {
+    @media (max-width: 1025px) {
         font-size: 0.82em;
         padding: 8px 36px 9px 11px;
     }

@@ -45,13 +45,13 @@ const RightFooterWrapper = styled.div`
         }
     }
 
-    @media (--for-up-to-large-tablet) {
+    @media (max-width: 1025px) {
         .links a {
             font-size: 1em;
         }
     }
 
-    @media (--for-up-to-tablet) {
+    @media (max-width: 769px) {
         grid-column: 6/-1;
 
         .links {
@@ -65,16 +65,16 @@ const RightFooterWrapper = styled.div`
         }
     }
 
-    @media (--for-up-to-small-tablet) {
+    @media (max-width: 580px) {
         grid-column: 5/-1;
         font-size: 0.98em;
     }
 
-    @media (--for-up-to-mobile) {
+    @media (max-width: 500px) {
         grid-column: 2/-1;
     }
 
-    @media (--for-up-to-small-mobile) {
+    @media (max-width: 350px) {
         grid-column: 1/-1;
 
         .links div {

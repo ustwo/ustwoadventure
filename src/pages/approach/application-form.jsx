@@ -7,11 +7,11 @@ import { NetlifyForm, Input } from "../../components/netlify-form";
 const StyledCTAWrapper = styled(CTAWrapper)`
     margin-top: 60px;
 
-    @media (--for-up-to-tablet) {
+    @media (max-width: 769px) {
         margin-top: 40px;
     }
 
-    @media (--for-up-to-small-tablet) {
+    @media (max-width: 580px) {
         margin-top: 30px;
     }
 `;

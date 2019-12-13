@@ -33,7 +33,7 @@ const PrinciplesH3 = styled.h3`
         grid-column: 1 / 8;
     }
 
-    @media (--for-up-to-small-tablet) {
+    @media (max-width: 580px) {
         grid-column: 1 / 10;
     }
 `;
@@ -61,7 +61,7 @@ const Wideh3 = styled.h3`
     grid-column: 2 / 11;
     margin-bottom: 80px;
 
-    @media (--for-up-to-large-tablet) {
+    @media (max-width: 1025px) {
         grid-column: 2 / -1;
         margin-bottom: 70px;
     }
@@ -71,7 +71,7 @@ const Wideh3 = styled.h3`
         margin-bottom: 60px;
     }
 
-    @media (--for-up-to-tablet) {
+    @media (max-width: 769px) {
         margin-bottom: 50px;
     }
 

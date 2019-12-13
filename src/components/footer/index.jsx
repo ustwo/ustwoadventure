@@ -19,7 +19,7 @@ const StyledFooter = styled.footer`
         font-style: italic;
     }
 
-    @media (--for-up-to-mobile) {
+    @media (max-width: 500px) {
         grid-template-columns: repeat(3, 1fr);
     }
 `;

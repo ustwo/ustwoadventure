@@ -18,15 +18,15 @@ const PageWrapper = styled.div`
     grid-template-columns: repeat(12, 12fr);
     column-gap: var(--column-gap);
 
-    @media (--for-up-to-tablet) {
+    @media (max-width: 769px) {
         --column-gap: 30px;
     }
 
-    @media (--for-up-to-small-tablet) {
+    @media (max-width: 580px) {
         --column-gap: 24px;
     }
 
-    @media (--for-up-to-mobile) {
+    @media (max-width: 500px) {
         grid-template-columns: repeat(1, 1fr);
     }
 `;

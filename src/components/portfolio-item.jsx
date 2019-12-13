@@ -80,13 +80,13 @@ const PortfolioPreviewLink = styled.a`
         }
     }
 
-    @media (--for-up-to-small-tablet) {
+    @media (max-width: 580px) {
         div.image-container img.image {
             height: calc(200px + 7.5vw);
         }
     }
 
-    @media (--for-up-to-mobile) {
+    @media (max-width: 500px) {
         div.image-container img.image {
             height: calc(200px + 5vw);
         }

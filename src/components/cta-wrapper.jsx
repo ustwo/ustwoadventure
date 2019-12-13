@@ -42,7 +42,7 @@ const CTAInner = styled.div`
         width: 85%;
     }
 
-    @media (--for-up-to-mobile) {
+    @media (max-width: 500px) {
         width: 100%;
     }
 `;

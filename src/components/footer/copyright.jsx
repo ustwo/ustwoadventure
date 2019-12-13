@@ -20,11 +20,11 @@ const CopyrightWrapper = styled.div`
         }
     }
 
-    @media (--for-up-to-tablet) {
+    @media (max-width: 769px) {
         margin-top: 3.2em;
     }
 
-    @media (--for-up-to-small-tablet) {
+    @media (max-width: 580px) {
         grid-column: 2/-1;
     }
 `;

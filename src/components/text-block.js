@@ -17,11 +17,11 @@ const TextBlock = styled.div`
         margin-bottom: ${props => (props.tight ? "1.7em" : "2.4em")};
     }
 
-    @media (--for-up-to-large-tablet) {
+    @media (max-width: 1025px) {
         grid-column: 4 / 12;
     }
 
-    @media (--for-up-to-tablet) {
+    @media (max-width: 769px) {
         grid-column: 3 / 12;
 
         h3 {
@@ -37,7 +37,7 @@ const TextBlock = styled.div`
         grid-column: 3 / -1;
     }
 
-    @media (--for-up-to-small-tablet) {
+    @media (max-width: 580px) {
         grid-column: 1 / -1;
     }
 `;

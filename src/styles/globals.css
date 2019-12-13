@@ -117,7 +117,7 @@ label {
 }
 
 
-@media (--for-up-to-large-tablet) {
+@media (max-width: 1025px) {
     h1 {
         margin-bottom: 50px;
         font-size: 2.333em;
@@ -133,7 +133,7 @@ label {
 }
 
 
-@media (--for-up-to-tablet) {
+@media (max-width: 769px) {
     body {
         margin-top: 50px;
         padding: 0 40px;
@@ -154,14 +154,14 @@ label {
     }
 }
 
-@media (--for-up-to-small-tablet) {
+@media (max-width: 580px) {
     body {
         margin-top: 30px;
     }
 }
 
 
-@media (--for-up-to-mobile) {
+@media (max-width: 500px) {
     body {
         margin-top: 25px;
         padding: 0 25px;
@@ -183,7 +183,7 @@ label {
 }
 
 
-@media (--for-up-to-small-mobile) {
+@media (max-width: 350px) {
     body {
         margin-top: 20px;
         margin-bottom: 30px;

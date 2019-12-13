@@ -4,7 +4,7 @@ import { styled } from "linaria/react";
 const ADVWrapper = styled.div`
     grid-column: 1/4;
 
-    @media (--for-up-to-mobile) {
+    @media (max-width: 500px) {
         grid-column: 1/1;
     }
 `;
@@ -18,11 +18,11 @@ const StyledLetter = styled.span`
     display: inline-block;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media (--for-up-to-mobile) {
+    @media (max-width: 500px) {
         font-size: 2.15em;
     }
 
-    @media (--for-up-to-small-mobile) {
+    @media (max-width: 350px) {
         display: none;
     }
 `;

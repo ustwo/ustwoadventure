@@ -100,16 +100,16 @@ const StyledLetters = styled.li`
 
     ${createLoopLetterStyles()}
 
-    @media (--for-over-desktop) {
+    @media (min-width: 1280px) {
         font-size: 2.9em;
         --translateY: calc(-110px);
     }
 
-    @media (--for-up-to-tablet) {
+    @media (max-width: 769px) {
         --translateY: calc(-75px - 2.4vw);
     }
 
-    @media (--for-up-to-mobile) {
+    @media (max-width: 500px) {
         --translateY: calc(-75px - 1.4vw);
     }
 `;

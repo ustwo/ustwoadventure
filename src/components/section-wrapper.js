@@ -7,21 +7,21 @@ const SectionWrapper = styled.section`
     display: ${props =>
         props.grid || props.subgrid ? "grid" : props.flex ? "flex" : "block"};
 
-    @media (--for-up-to-large-tablet) {
+    @media (max-width: 1025px) {
         margin: ${props =>
             props.marginTop
                 ? `calc(${props.marginTop} * 0.9) 0 25px 0`
                 : "25px 0"};
     }
 
-    @media (--for-up-to-tablet) {
+    @media (max-width: 769px) {
         margin: ${props =>
             props.marginTop
                 ? `calc(${props.marginTop} * 0.77) 0 25px 0`
                 : "25px 0"};
     }
 
-    @media (--for-up-to-mobile) {
+    @media (max-width: 500px) {
         margin: ${props =>
             props.marginTop
                 ? `calc(${props.marginTop} * 0.667) 0 25px 0`

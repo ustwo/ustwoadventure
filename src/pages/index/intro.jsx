@@ -16,7 +16,7 @@ const StyledIntroCopy = styled.div`
         max-width: 470px;
     }
 
-    @media (--for-up-to-large-tablet) {
+    @media (max-width: 1025px) {
         grid-column: 1 / 8;
 
         h2 {
@@ -28,7 +28,7 @@ const StyledIntroCopy = styled.div`
         grid-column: 1 / 10;
     }
 
-    @media (--for-up-to-small-tablet) {
+    @media (max-width: 580px) {
         grid-column: 1 / 12;
 
         h2 {
@@ -43,7 +43,7 @@ const LatestInvestmentElement = styled(LatestInvestment)`
     margin-left: 3vw;
     margin-right: 4vw;
 
-    @media (--for-over-desktop) {
+    @media (min-width: 1280px) {
         margin-left: 30px;
         margin-right: 40px;
     }

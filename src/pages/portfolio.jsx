@@ -15,7 +15,7 @@ const PortfolioPageHeader = styled.h1`
     grid-column: 1 / -1;
     max-width: 69%;
 
-    @media (--for-up-to-small-tablet) {
+    @media (max-width: 580px) {
         max-width: 90%;
     }
 `;

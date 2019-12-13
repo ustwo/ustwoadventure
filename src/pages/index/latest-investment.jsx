@@ -86,7 +86,7 @@ const LatestInvestmentLink = styled.a`
         }
     }
 
-    @media (--for-up-to-large-tablet) {
+    @media (max-width: 1025px) {
         h1 {
             -webkit-text-stroke: 1.2px;
             margin-top: -22px;
@@ -94,7 +94,7 @@ const LatestInvestmentLink = styled.a`
         }
     }
 
-    @media (--for-up-to-tablet) {
+    @media (max-width: 769px) {
         h1 {
             margin-top: -20px;
             font-size: 48px;

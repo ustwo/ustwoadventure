@@ -81,7 +81,7 @@ const StyledLi = styled.li`
         }
     }
 
-    @media (--for-up-to-mobile) {
+    @media (max-width: 500px) {
         margin-bottom: 30px;
     }
 
@@ -89,7 +89,7 @@ const StyledLi = styled.li`
         width: 76%;
     }
 
-    @media (--for-up-to-small-mobile) {
+    @media (max-width: 350px) {
         width: 85%;
     }
 `;

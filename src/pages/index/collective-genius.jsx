@@ -6,7 +6,7 @@ import Button from "../../components/button";
 import InlineVideo from "../../components/inline-video";
 
 const CollectiveGeniusSection = styled(SectionWrapper)`
-    @media (--for-up-to-mobile) {
+    @media (max-width: 500px) {
         position: relative;
         margin-bottom: 80px;
 
@@ -23,11 +23,11 @@ const CollectiveGeniusCopy = styled.div`
     margin-top: 6vw;
     margin-right: 20px;
 
-    @media (--for-over-desktop) {
+    @media (min-width: 1280px) {
         margin-top: 90px;
     }
 
-    @media (--for-up-to-large-tablet) {
+    @media (max-width: 1025px) {
         margin-top: 6vw;
     }
 
@@ -36,11 +36,11 @@ const CollectiveGeniusCopy = styled.div`
         grid-column: 1 / 8;
     }
 
-    @media (--for-up-to-tablet) {
+    @media (max-width: 769px) {
         grid-column: 1 / 10;
     }
 
-    @media (--for-up-to-small-tablet) {
+    @media (max-width: 580px) {
         grid-column: 1 / 12;
     }
 `;
@@ -49,7 +49,7 @@ const UstwoVideo = styled(InlineVideo)`
     grid-column: 8 / -1;
     width: 100%;
 
-    @media (--for-up-to-large-tablet) {
+    @media (max-width: 1025px) {
         grid-column: 7 / -1;
         margin-top: -40px;
         width: calc(100% - 35px);
@@ -63,12 +63,12 @@ const UstwoVideo = styled(InlineVideo)`
         margin-right: 0;
     }
 
-    @media (--for-up-to-tablet) {
+    @media (max-width: 769px) {
         grid-column: 6 / -1;
         margin-top: -10px;
     }
 
-    @media (--for-up-to-small-tablet) {
+    @media (max-width: 580px) {
         grid-column: 5 / -1;
     }
 
@@ -76,7 +76,7 @@ const UstwoVideo = styled(InlineVideo)`
         margin-left: 10px;
     }
 
-    @media (--for-up-to-mobile) {
+    @media (max-width: 500px) {
         width: 65%;
         margin-left: 35%;
         margin-top: 15px;

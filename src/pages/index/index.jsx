@@ -13,16 +13,16 @@ const HomePageHeader = styled.h1`
     max-width: 710px;
     grid-column: 1 / -1;
 
-    @media (--for-up-to-large-tablet) {
+    @media (max-width: 1025px) {
         max-width: 600px;
     }
 
-    @media (--for-up-to-tablet) {
+    @media (max-width: 769px) {
         margin-bottom: 110px;
         max-width: 520px;
     }
 
-    @media (--for-up-to-mobile) {
+    @media (max-width: 500px) {
         margin-bottom: 100px;
     }
 `;

@@ -22,11 +22,11 @@ const StyledNav = styled.nav`
             margin-right: calc(-1 * var(--hitBoxPadding));
         }
 
-        @media (--for-over-desktop) {
+        @media (min-width: 1280px) {
             margin-left: 50px;
         }
 
-        @media (--for-up-to-small-tablet) {
+        @media (max-width: 580px) {
             --hitBoxPadding: 0.1em;
             display: block;
             margin: -0.1em 0;

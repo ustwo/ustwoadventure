@@ -23,7 +23,7 @@ const FaqColumnContainer = styled.div`
         grid-column: 7 / -1;
     }
 
-    @media (--for-up-to-tablet) {
+    @media (max-width: 769px) {
         margin-top: 0;
 
         &:first-of-type,
@@ -87,11 +87,11 @@ const FaqStyledDetails = styled.details`
         }
     }
 
-    @media (--for-up-to-tablet) {
+    @media (max-width: 769px) {
         width: 480px;
     }
 
-    @media (--for-up-to-small-tablet) {
+    @media (max-width: 580px) {
         width: 100%;
     }
 `;
