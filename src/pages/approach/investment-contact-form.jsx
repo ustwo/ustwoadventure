@@ -43,35 +43,7 @@ const InvestmentContactForm = () => {
                 </p>
             </CopyWrapper>
 
-            <Form
-                pages={3}
-                name="investment-contact"
-                // inputs={
-                //     [
-                // <Input halfWidth label="Company Name" name="company" />,
-                // <Input halfWidth label="Website" name="website" />,
-                // <Input
-                //     label="Tell us about what you do"
-                //     type="textarea"
-                //     name="description"
-                // />,
-                // <Input
-                //     label="What stage are you currently at?"
-                //     name="stage"
-                // />,
-                // <Input
-                //     label="Are you generating any revenue?"
-                //     name="revenue"
-                // />,
-                // <Input
-                //     label="How much are you looking to raise?"
-                //     name="amount raising"
-                // />,
-                // <Input halfWidth label="Your Name" name="name" />,
-                // <Input halfWidth label="Email" type="email" name="email" />
-                //     ]
-                // }
-            >
+            <Form pages={3} name="investment-contact">
                 <StepWrapper>
                     <Input halfWidth label="Company Name" name="company" />
 

@@ -43,6 +43,7 @@ const SEO = ({ title, description }) => {
             <meta name="twitter:image" content={image} />
 
             <link rel="preconnect" src="https://use.typekit.net" />
+            <link rel="stylesheet" href="https://use.typekit.net/hoo6hst.css" />
 
             {/* {keywords && (
                 <meta
