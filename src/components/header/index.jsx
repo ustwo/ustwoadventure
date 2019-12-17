@@ -14,7 +14,6 @@ const StyledHeader = styled.header`
     justify-content: space-between;
 `;
 
-// TODO: sort our logo rerendering on route change
 const Header = () => (
     <StyledHeader>
         <OrbitLogo />

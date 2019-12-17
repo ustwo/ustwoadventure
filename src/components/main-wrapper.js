@@ -23,6 +23,4 @@ const MainWrapper = styled.main`
     }
 `;
 
-// TODO: add transitions here?
-
 export default MainWrapper;

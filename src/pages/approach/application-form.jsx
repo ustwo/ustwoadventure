@@ -2,7 +2,7 @@ import React from "react";
 import { styled } from "linaria/react";
 
 import CTAWrapper from "../../components/cta-wrapper";
-import { NetlifyForm, Input } from "../../components/netlify-form";
+import { Form, Input } from "../../components/form";
 
 const StyledCTAWrapper = styled(CTAWrapper)`
     margin-top: 60px;
@@ -31,8 +31,6 @@ const CopyWrapper = styled.div`
 
 const Applicationform = () => {
     // TODO: sort out error and success validation via state -> update <p> copy in CopyWrapper
-    // add success prop to Button on success
-    // https://github.com/revolunet/react-mailchimp-subscribe/tree/master/src
     return (
         <StyledCTAWrapper>
             <CopyWrapper>
@@ -45,7 +43,36 @@ const Applicationform = () => {
                 </p>
             </CopyWrapper>
 
-            <NetlifyForm pages={3}>
+            <Form
+                netlify
+                pages={3}
+                name="investment-contact"
+                // inputs={
+                //     [
+                // <Input halfWidth label="Company Name" name="company" />,
+                // <Input halfWidth label="Website" name="website" />,
+                // <Input
+                //     label="Tell us about what you do"
+                //     type="textarea"
+                //     name="description"
+                // />,
+                // <Input
+                //     label="What stage are you currently at?"
+                //     name="stage"
+                // />,
+                // <Input
+                //     label="Are you generating any revenue?"
+                //     name="revenue"
+                // />,
+                // <Input
+                //     label="How much are you looking to raise?"
+                //     name="amount raising"
+                // />,
+                // <Input halfWidth label="Your Name" name="name" />,
+                // <Input halfWidth label="Email" type="email" name="email" />
+                //     ]
+                // }
+            >
                 <Input halfWidth label="Company Name" name="company" />
 
                 <Input halfWidth label="Website" name="website" />
@@ -68,7 +95,7 @@ const Applicationform = () => {
                 <Input halfWidth label="Your Name" name="name" />
 
                 <Input halfWidth label="Email" type="email" name="email" />
-            </NetlifyForm>
+            </Form>
         </StyledCTAWrapper>
     );
 };

@@ -34,7 +34,7 @@ const FaqColumnContainer = styled.div`
 `;
 
 const FaqStyledDetails = styled.details`
-    --faqPadding: 1.24em;
+    --faqPadding: 1.23em;
     width: 100%;
 
     &:not(:last-child) {
@@ -45,7 +45,7 @@ const FaqStyledDetails = styled.details`
         background-color: var(--piglet);
         color: #ffffff;
         font-size: 1.16em;
-        padding: calc(var(--faqPadding) * 0.86) var(--faqPadding);
+        padding: calc(var(--faqPadding) * 0.82) var(--faqPadding);
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -73,7 +73,6 @@ const FaqStyledDetails = styled.details`
         }
     }
 
-    /* TODO: animation here? */
     &[open] summary::after {
         transform: rotate(45deg);
     }

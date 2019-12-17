@@ -30,7 +30,7 @@ module.exports = {
         },
         "gatsby-plugin-netlify",
         {
-            resolve: "gatsby-plugin-web-font-loader",
+            resolve: "gatsby-plugin-web-font-loader", // TODO: Force render-blocking
             options: {
                 typekit: {
                     id: "hoo6hst"

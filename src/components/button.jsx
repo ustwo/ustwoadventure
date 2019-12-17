@@ -112,6 +112,31 @@ const Button = ({ children, external, back, href, submit, success, next }) => {
     );
 
     // TODO: refactor away from so many ternaries??
+    // let conditionalButtonTag;
+    // if (external) {
+    //     conditionalButtonTag = (
+    //         <a
+    //             className={classes}
+    //             href={href}
+    //             target="_blank"
+    //             rel="noopener noreferrer"
+    //         >
+    //             {children}
+    //         </a>
+    //     );
+    // } else if (submit) {
+    //     conditionalButtonTag = (
+    //         <input className={classes} type="submit" value={children} />
+    //     );
+    // } else {
+    //     conditionalButtonTag = (
+    //         <Link className={classes} to={href}>
+    //             {children}
+    //         </Link>
+    //     );
+    // }
+    // return { conditionalButtonTag };
+
     return external ? (
         <a
             className={classes}

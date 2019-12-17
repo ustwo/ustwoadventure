@@ -10,7 +10,7 @@ const ADVWrapper = styled.div`
 `;
 
 const StyledLetter = styled.span`
-    font-family: var(--futuraBold);
+    font-family: var(--futura);
     font-size: 2.46em;
     line-height: 1;
     letter-spacing: -3px;

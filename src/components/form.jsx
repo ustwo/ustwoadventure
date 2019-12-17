@@ -27,10 +27,23 @@ const StyledForm = styled.form`
     }
 `;
 
-export const NetlifyForm = ({ children, style, className, pages = 1 }) => {
+// TODO: Is a HOC the best way to do this? - fiddly to pass state up on submit to change copy on parent component
+// Array method to paginate also not that good? Feels hacky
+// Make reusbale hooks like useStep? And reusable function like netlifyFormSubmit?
+// and NetlifyInputs as component? -> ./netlify-submit.jsx
+// {step === n && (<div>nth step</div>)}
+
+export const Form = ({
+    children,
+    netlify,
+    name,
+    style,
+    className,
+    pages = 1
+}) => {
     const [step, setStep] = useState(1);
 
-    // TODO: handleSubmit and handleNext
+    // TODO: handleSubmit and handleNext - merge to one function?
     const handleNext = e => {
         setStep(step + 1);
         e.preventDefault();
@@ -38,6 +51,25 @@ export const NetlifyForm = ({ children, style, className, pages = 1 }) => {
 
     const handleSubmit = e => {
         setStep(step + 1);
+
+        const encode = data =>
+            Object.keys(data)
+                .map(
+                    key =>
+                        `${encodeURIComponent(key)}=${encodeURIComponent(
+                            data[key]
+                        )}`
+                )
+                .join("&");
+
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": name /* , ...state */ })
+        })
+            .then(() => {})
+            .catch((/* error */) => {});
+
         e.preventDefault();
     };
 
@@ -45,16 +77,20 @@ export const NetlifyForm = ({ children, style, className, pages = 1 }) => {
         <StyledForm
             style={style}
             className={className}
-            name="investment-contact"
+            name={name}
             method="POST"
-            data-netlify="true"
-            netlify-honeypot="bot-field"
+            data-netlify={netlify}
+            netlify-honeypot={netlify && "bot-field"}
         >
-            <input type="hidden" name="form-name" value="investment-contact" />
-            <label htmlFor="bot-field" style={{ display: "none" }}>
-                Don’t fill this out:
-                <input name="bot-field" />
-            </label>
+            {netlify && (
+                <>
+                    <input type="hidden" name="form-name" value={name} />
+                    <label htmlFor="bot-field" style={{ display: "none" }}>
+                        Don’t fill this out:
+                        <input name="bot-field" />
+                    </label>
+                </>
+            )}
 
             {children}
 
@@ -63,19 +99,12 @@ export const NetlifyForm = ({ children, style, className, pages = 1 }) => {
                     Submit
                 </Button>
             ) : (
-                <Button next href={undefined} onClick={handleNext}>
+                <Button next onClick={handleNext}>
                     Next
                 </Button>
             )}
 
-            {pages !== 1 &&
-                (step <= pages ? (
-                    <p>
-                        {step}/{pages}
-                    </p>
-                ) : (
-                    <p>:—)</p>
-                ))}
+            {pages !== 1 && <p>{step <= pages ? `${step}/${pages}` : ":—)"}</p>}
         </StyledForm>
     );
 };
@@ -120,6 +149,7 @@ export const Input = ({
         {type === "textarea" ? (
             <textarea
                 rows="10"
+                id={name}
                 name={name}
                 required={required}
                 placeholder={label}

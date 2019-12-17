@@ -61,7 +61,7 @@ const LatestInvestmentElement = styled(LatestInvestment)`
 
 const Intro = () => {
     return (
-        <SectionWrapper marginTop="0" subgrid>
+        <SectionWrapper style={{ marginTop: 0 }} subgrid>
             <StyledIntroCopy>
                 <h2>Build something bigger than an exit</h2>
                 <p>

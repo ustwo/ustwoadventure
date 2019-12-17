@@ -110,7 +110,6 @@ const LatestInvestment = ({ className, style }) => {
         <LatestInvestmentLink className={className} style={style}>
             <p className="tag">Latest investment:</p>
             <div className="image-container">
-                {/* TODO: get lzy working */}
                 <img className="company-image" src={image} alt={name} />
                 <ForwardsArrow />
             </div>
