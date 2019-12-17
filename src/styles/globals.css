@@ -75,8 +75,7 @@ img[data-src]::after {
 }
 
 input, textarea {
-    --input-padding: 0.88em;
-    padding: var(--input-padding);
+    padding: 0.9em;
     font-size: 16px;
     font-family: var(--pxGrotesk);
     font-weight: 400;
@@ -112,7 +111,7 @@ textarea:focus {
 
 label {
     color: #ffffff;
-    font-size: 0.88em;
+    font-size: 0.9em;
     font-family: var(--pxGrotesk);
 }
 

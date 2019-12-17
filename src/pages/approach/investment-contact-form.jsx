@@ -2,7 +2,7 @@ import React from "react";
 import { styled } from "linaria/react";
 
 import CTAWrapper from "../../components/cta-wrapper";
-import { Form, Input } from "../../components/form";
+import { Form, StepWrapper, Input } from "../../components/application-form";
 
 const StyledCTAWrapper = styled(CTAWrapper)`
     margin-top: 60px;
@@ -29,7 +29,7 @@ const CopyWrapper = styled.div`
     }
 `;
 
-const Applicationform = () => {
+const InvestmentContactForm = () => {
     // TODO: sort out error and success validation via state -> update <p> copy in CopyWrapper
     return (
         <StyledCTAWrapper>
@@ -44,7 +44,6 @@ const Applicationform = () => {
             </CopyWrapper>
 
             <Form
-                netlify
                 pages={3}
                 name="investment-contact"
                 // inputs={
@@ -73,31 +72,41 @@ const Applicationform = () => {
                 //     ]
                 // }
             >
-                <Input halfWidth label="Company Name" name="company" />
+                <StepWrapper>
+                    <Input halfWidth label="Company Name" name="company" />
 
-                <Input halfWidth label="Website" name="website" />
+                    <Input halfWidth label="Website" name="website" />
 
-                <Input
-                    label="Tell us about what you do"
-                    type="textarea"
-                    name="description"
-                />
+                    <Input
+                        label="Tell us about what you do"
+                        type="textarea"
+                        name="description"
+                    />
+                </StepWrapper>
 
-                <Input label="What stage are you currently at?" name="stage" />
+                {/* <StepWrapper>
+                    <Input
+                        label="What stage are you currently at?"
+                        name="stage"
+                    />
 
-                <Input label="Are you generating any revenue?" name="revenue" />
+                    <Input
+                        label="What current revenue are you generating?"
+                        name="revenue"
+                    />
 
-                <Input
-                    label="How much are you looking to raise?"
-                    name="amount raising"
-                />
+                    <Input
+                        label="How much are you looking to raise?"
+                        name="amount raising"
+                    />
 
-                <Input halfWidth label="Your Name" name="name" />
+                    <Input halfWidth label="Your Name" name="name" />
 
-                <Input halfWidth label="Email" type="email" name="email" />
+                    <Input halfWidth label="Email" type="email" name="email" />
+                </StepWrapper> */}
             </Form>
         </StyledCTAWrapper>
     );
 };
 
-export default Applicationform;
+export default InvestmentContactForm;

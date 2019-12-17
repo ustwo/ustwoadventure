@@ -12,7 +12,7 @@ const CollectiveGeniusSection = styled(SectionWrapper)`
 
         a {
             position: absolute;
-            bottom: -70px;
+            bottom: -70px; /* TODO: Not working on mobile */
             left: 0;
         }
     }

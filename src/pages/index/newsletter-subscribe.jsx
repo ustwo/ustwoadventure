@@ -27,10 +27,6 @@ const CopyWrapper = styled.div`
     grid-column: 2 / 7;
     margin-right: 15px;
 
-    p {
-        min-height: calc(2em * 1.7);
-    }
-
     a {
         color: #ffffff;
         text-decoration: underline;
@@ -52,7 +48,8 @@ const StyledForm = styled.form`
     align-items: flex-start;
 
     input[type="email"] {
-        width: calc(100% - 2 * var(--input-padding));
+        width: 100%;
+        box-sizing: border-box;
     }
 
     @media (max-width: 950px) {
@@ -85,7 +82,7 @@ const NewsletterSubscribe = () => {
             <CopyWrapper>
                 <h2>We hope you like newsletters</h2>
                 {response ? (
-                    <p dangerouslySetInnerHTML={{ __html: response.msg }} />
+                    <p dangerouslySetInnerHTML={{ __html: response.msg }} /> // TODO: Sort out animated styling or static height here
                 ) : (
                     <p>
                         Sign up for a monthly update from Adventure and our

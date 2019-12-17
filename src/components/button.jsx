@@ -104,14 +104,14 @@ const StyledButton = css`
 const Button = ({ children, external, back, href, submit, success, next }) => {
     const classes = cx(
         StyledButton,
-        external ? "external" : "internal",
+        external && !next ? "external" : "internal",
         back && "back",
         submit && "submit",
         next && "next",
         success && "success"
     );
 
-    // TODO: refactor away from so many ternaries??
+    // TODO: refactor away from so many ternaries???
     // let conditionalButtonTag;
     // if (external) {
     //     conditionalButtonTag = (

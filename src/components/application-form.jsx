@@ -3,9 +3,10 @@ import { styled } from "linaria/react";
 
 import Button from "./button";
 
-const StyledForm = styled.form`
+export const StyledForm = styled.form`
     grid-column: 7 / 12;
     height: 100%;
+    min-height: 330px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -27,48 +28,51 @@ const StyledForm = styled.form`
     }
 `;
 
+export const StepWrapper = styled.div`
+    min-height: 15em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+`;
+
 // TODO: Is a HOC the best way to do this? - fiddly to pass state up on submit to change copy on parent component
 // Array method to paginate also not that good? Feels hacky
-// Make reusbale hooks like useStep? And reusable function like netlifyFormSubmit?
-// and NetlifyInputs as component? -> ./netlify-submit.jsx
-// {step === n && (<div>nth step</div>)}
+// Make reusbale hooks like useStep? -> {step === n && (<StepWrapper>nth step inputs here</StepWrapper>)}
 
-export const Form = ({
-    children,
-    netlify,
-    name,
-    style,
-    className,
-    pages = 1
-}) => {
+export const Form = ({ children, name, style, className, pages = 1 }) => {
     const [step, setStep] = useState(1);
 
     // TODO: handleSubmit and handleNext - merge to one function?
     const handleNext = e => {
         setStep(step + 1);
+        console.log("step"); // Not working?
         e.preventDefault();
     };
 
     const handleSubmit = e => {
         setStep(step + 1);
 
-        const encode = data =>
-            Object.keys(data)
-                .map(
-                    key =>
-                        `${encodeURIComponent(key)}=${encodeURIComponent(
-                            data[key]
-                        )}`
-                )
-                .join("&");
+        const encode = data => {
+            const formData = new FormData();
+            Object.keys(data).forEach(key => {
+                formData.append(key, data[key]);
+            });
+            return formData;
+        };
 
         fetch("/", {
             method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": name /* , ...state */ })
+            headers: {
+                "Content-Type": "multipart/form-data; boundary=random"
+            },
+            body: encode({
+                "form-name": name /* , ...stateFromParent */
+            })
         })
-            .then(() => {})
-            .catch((/* error */) => {});
+            .then(() => {}) // Pass up to parent component to change copy etc?
+            .catch((/* error */) => {}); // Pass up to parent component to change copy etc?
 
         e.preventDefault();
     };
@@ -79,27 +83,22 @@ export const Form = ({
             className={className}
             name={name}
             method="POST"
-            data-netlify={netlify}
-            netlify-honeypot={netlify && "bot-field"}
+            onSubmit={handleSubmit}
+            data-netlify="true"
+            netlify-honeypot="bot-field"
         >
-            {netlify && (
-                <>
-                    <input type="hidden" name="form-name" value={name} />
-                    <label htmlFor="bot-field" style={{ display: "none" }}>
-                        Don’t fill this out:
-                        <input name="bot-field" />
-                    </label>
-                </>
-            )}
+            <input type="hidden" name="form-name" value={name} />
+            <label htmlFor="bot-field" style={{ display: "none" }}>
+                Don’t fill this out:
+                <input name="bot-field" />
+            </label>
 
             {children}
 
             {step === pages ? (
-                <Button submit onClick={handleSubmit}>
-                    Submit
-                </Button>
+                <Button submit>Submit</Button>
             ) : (
-                <Button next onClick={handleNext}>
+                <Button external next onClick={handleNext}>
                     Next
                 </Button>
             )}
@@ -111,14 +110,16 @@ export const Form = ({
 
 const InputWrapper = styled.div`
     position: relative;
-    width: ${props => (props.halfWidth ? "48%" : "100%")};
+    width: ${props => (props.halfWidth ? "47%" : "100%")};
+    margin-bottom: 1.5em;
 
     label {
         display: block;
         position: absolute;
         opacity: 0;
         transition: opacity 0.1s;
-        top: -1.5em;
+        top: -1.7em;
+        left: 1px;
     }
 
     input:not(:placeholder-shown) + label,
@@ -129,8 +130,12 @@ const InputWrapper = styled.div`
 
     input,
     textarea {
-        width: calc(100% - 2 * var(--input-padding));
-        margin-bottom: 1.4em;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        height: 11em;
     }
 
     @media (max-width: 960px) {
@@ -148,7 +153,6 @@ export const Input = ({
     <InputWrapper halfWidth={halfWidth}>
         {type === "textarea" ? (
             <textarea
-                rows="10"
                 id={name}
                 name={name}
                 required={required}

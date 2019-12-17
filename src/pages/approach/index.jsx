@@ -7,7 +7,7 @@ import MainWrapper from "../../components/main-wrapper";
 import TextBlock from "../../components/text-block";
 import PrincipleElement from "./principle-element";
 import principleContent from "../../data/approach-principles";
-import Applicationform from "./application-form";
+import InvestmentContactForm from "./investment-contact-form";
 import FaqSection from "../../components/faqs";
 import faqContent from "../../data/approach-faqs";
 
@@ -154,7 +154,7 @@ const Index = () => (
             </TextBlock>
         </SectionWrapper>
 
-        <Applicationform />
+        <InvestmentContactForm />
 
         <FaqSection faqArray={faqContent} />
     </ApproachPage>

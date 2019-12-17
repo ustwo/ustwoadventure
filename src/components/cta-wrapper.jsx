@@ -27,6 +27,10 @@ const CTAInner = styled.div`
         color: #ffffff;
     }
 
+    h2 {
+        margin-bottom: 25px;
+    }
+
     p:last-child {
         margin-bottom: 0;
     }
