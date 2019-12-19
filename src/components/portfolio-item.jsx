@@ -2,9 +2,12 @@ import React from "react";
 import { styled } from "linaria/react";
 
 import ForwardsArrow from "../assets/forwards-arrow";
+import Modal from "./modal";
+import useModal from "../hooks/use-modal";
 
-const PortfolioPreviewLink = styled.a`
+const PortfolioPreviewLink = styled.div`
     height: max-content;
+    cursor: pointer;
 
     p.name {
         margin-bottom: 2px;
@@ -118,20 +121,46 @@ const PortfolioPreviewLink = styled.a`
 
 const randomOffset = () => 10 * Math.floor(Math.random() * 11) - 50;
 
-const PortfolioItem = ({ name, image, oneLiner, hasArrows = false }) => {
-    // TODO: Fix name changes on refresh - happend only in production
+const PortfolioItem = ({
+    name,
+    url,
+    tidyUrl,
+    oneLiner,
+    description,
+    image,
+    logo,
+    hasArrows
+}) => {
+    // TODO: Fix name changes on refresh - happens only in production
     // Problem is because of static html that's rendered (can see in page source)
     // but the image won't be replaced on refresh?
     // Maybe make adding to the dom an async or onLoad function?
+    const [modalIsOpen, setModalIsOpen] = useModal();
 
     return (
-        <PortfolioPreviewLink style={{ "--offset": `${randomOffset()}px` }}>
+        <PortfolioPreviewLink
+            style={{ "--offset": `${randomOffset()}px` }}
+            onClick={() => setModalIsOpen(true)}
+        >
             <p className="name">{name}</p>
             <div className="image-container">
                 <img className="image" src={image} alt={name} />
                 {hasArrows && <ForwardsArrow />}
             </div>
             <p className="copy">{oneLiner}</p>
+
+            <Modal
+                className={modalIsOpen && "show"}
+                name={name}
+                url={url}
+                tidyUrl={tidyUrl}
+                oneLiner={oneLiner}
+                description={description}
+                image={image}
+                logo={logo}
+                isOpen={modalIsOpen}
+                handleClose={() => setModalIsOpen(false)}
+            />
         </PortfolioPreviewLink>
     );
 };

@@ -1,48 +1,57 @@
 import React, { useState } from "react";
 import { styled } from "linaria/react";
 
+import CTAWrapper from "./cta-wrapper";
+import { StyledForm } from "./form-elements";
 import Button from "./button";
 
-export const StyledForm = styled.form`
-    grid-column: 7 / 12;
-    height: 100%;
-    min-height: 330px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+const StyledCTAWrapper = styled(CTAWrapper)`
+    margin-top: 50px;
 
-    p {
-        font-size: 0.92em;
+    @media (max-width: 769px) {
+        margin-top: 40px;
     }
 
-    @media (max-width: 810px) {
-        input[type="submit"] {
-            width: 100%;
-        }
-    }
-
-    @media (max-width: 715px) {
-        grid-column: 1 / -1;
+    @media (max-width: 580px) {
+        margin-top: 30px;
     }
 `;
 
-export const StepWrapper = styled.div`
-    min-height: 15em;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+const CopyWrapper = styled.div`
+    grid-column: 2 / 6;
+
+    @media (max-width: 715px) {
+        margin-bottom: 40px;
+        grid-column: 1 / -1;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            transition: opacity 200ms;
+
+            &.transition {
+                opacity: 0;
+            }
+        }
+    }
 `;
 
 // TODO: Is a HOC the best way to do this? - fiddly to pass state up on submit to change copy on parent component
 // Array method to paginate also not that good? Feels hacky
 // Make reusbale hooks like useStep? -> {step === n && (<StepWrapper>nth step inputs here</StepWrapper>)}
-
-export const Form = ({ children, name, style, className, pages = 1 }) => {
+const Applicationform = ({
+    name,
+    title,
+    copy,
+    children,
+    style,
+    className,
+    pages = 1
+}) => {
     const [step, setStep] = useState(1);
+    const [response, setResponse] = useState(false);
 
     // TODO: handleSubmit and handleNext - merge to one function?
     const handleNext = e => {
@@ -52,7 +61,7 @@ export const Form = ({ children, name, style, className, pages = 1 }) => {
     };
 
     const handleSubmit = e => {
-        setStep(step + 1);
+        // setStep(step + 1);
 
         const encode = data => {
             const formData = new FormData();
@@ -67,106 +76,63 @@ export const Form = ({ children, name, style, className, pages = 1 }) => {
             headers: {
                 "Content-Type": "multipart/form-data; boundary=random"
             },
-            body: encode({
-                "form-name": name /* , ...stateFromParent */
-            })
+            body: encode(/* data */) // https://github.com/futuregerald/react-netlify-form-file/blob/afd730bf0fcc9b9cd78ebd85dac7a555d22dfd9b/src/App.js#L27
         })
-            .then(() => {}) // Pass up to parent component to change copy etc?
-            .catch((/* error */) => {}); // Pass up to parent component to change copy etc?
+            .then(() => setResponse(true))
+            .catch(error => setResponse(error.code));
 
         e.preventDefault();
     };
 
     return (
-        <StyledForm
-            style={style}
-            className={className}
-            name={name}
-            method="POST"
-            onSubmit={handleSubmit}
-            data-netlify="true"
-            netlify-honeypot="bot-field"
-        >
-            <input type="hidden" name="form-name" value={name} />
-            <label htmlFor="bot-field" style={{ display: "none" }}>
-                Don’t fill this out:
-                <input name="bot-field" />
-            </label>
+        <StyledCTAWrapper>
+            <CopyWrapper>
+                <h2>{title}</h2>
+                <p className={response && "transition"}>
+                    {response
+                        ? response === true
+                            ? "Thanks! We'll read through what you've sent us and follow up via e-mail as soon as possible. Have a great day."
+                            : `Looks like there has been a ${response} server error with sending the form. Sorry! Please try again, or email via the address in our footer.`
+                        : copy}
+                </p>
+            </CopyWrapper>
 
-            {children}
+            <StyledForm
+                style={style}
+                className={className}
+                name={name}
+                method="POST"
+                onSubmit={handleSubmit}
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+            >
+                <input type="hidden" name="form-name" value={name} />
+                <label htmlFor="bot-field" style={{ display: "none" }}>
+                    Don’t fill this out:
+                    <input name="bot-field" />
+                </label>
 
-            {step === pages ? (
-                <Button submit>Submit</Button>
-            ) : (
-                <Button external next onClick={handleNext}>
-                    Next
-                </Button>
-            )}
+                {children}
 
-            {pages !== 1 && <p>{step <= pages ? `${step}/${pages}` : ":—)"}</p>}
-        </StyledForm>
+                {step === pages ? (
+                    <Button
+                        submit
+                        success={response && response.result === "success"}
+                    >
+                        Submit
+                    </Button>
+                ) : (
+                    <Button external next onClick={handleNext}>
+                        Next
+                    </Button>
+                )}
+
+                {pages !== 1 && (
+                    <p>{step <= pages ? `${step}/${pages}` : ":—)"}</p>
+                )}
+            </StyledForm>
+        </StyledCTAWrapper>
     );
 };
 
-const InputWrapper = styled.div`
-    position: relative;
-    width: ${props => (props.halfWidth ? "47%" : "100%")};
-    margin-bottom: 1.5em;
-
-    label {
-        display: block;
-        position: absolute;
-        opacity: 0;
-        transition: opacity 0.1s;
-        top: -1.8em;
-        left: 1px;
-    }
-
-    input:not(:placeholder-shown) + label,
-    textarea:not(:placeholder-shown) + label {
-        z-index: 1;
-        opacity: 1;
-    }
-
-    input,
-    textarea {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    textarea {
-        height: 11em;
-    }
-
-    @media (max-width: 960px) {
-        width: 100%;
-    }
-`;
-
-export const Input = ({
-    label,
-    name,
-    type = "text",
-    required = true,
-    halfWidth
-}) => (
-    <InputWrapper halfWidth={halfWidth}>
-        {type === "textarea" ? (
-            <textarea
-                id={name}
-                name={name}
-                required={required}
-                placeholder={label}
-            />
-        ) : (
-            <input
-                id={name}
-                type={type}
-                name={name}
-                required={required}
-                placeholder={label}
-            />
-        )}
-        <label htmlFor={name}>{label}</label>
-    </InputWrapper>
-);
+export default Applicationform;

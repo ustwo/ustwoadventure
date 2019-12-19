@@ -63,7 +63,7 @@ const OrbitLogo = () => {
     };
 
     useEffect(() => {
-        svgEl = logoRef.current.querySelector("svg"); //
+        svgEl = logoRef.current.querySelector("svg");
 
         if ("ontouchstart" in document.documentElement) {
             window.addEventListener("deviceorientation", e => {

@@ -34,7 +34,9 @@ const PageWrapper = styled.div`
 const Layout = ({ children, location }) => (
     <PageWrapper>
         <Header />
+
         <TransitionWrapper location={location}>{children}</TransitionWrapper>
+
         <Footer />
     </PageWrapper>
 );

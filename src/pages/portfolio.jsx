@@ -58,8 +58,12 @@ const Portfolio = () => (
                 <PortfolioItem
                     key={company.name}
                     name={company.name}
-                    image={company.image}
                     oneLiner={company.oneLiner}
+                    url={company.url}
+                    tidyUrl={company.tidyurl}
+                    description={company.copy}
+                    image={company.image}
+                    logo={company.logo}
                 />
             ))}
             <FullPortfolioGridBackground />

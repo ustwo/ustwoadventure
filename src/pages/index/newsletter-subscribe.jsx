@@ -4,6 +4,7 @@ import addToMailchimp from "gatsby-plugin-mailchimp";
 
 import CTAWrapper from "../../components/cta-wrapper";
 import Button from "../../components/button";
+import { Input } from "../../components/form-elements";
 
 const StyledCTAWrapper = styled(CTAWrapper)`
     margin-top: 90px;
@@ -67,6 +68,10 @@ const StyledForm = styled.form`
     }
 `;
 
+const EmailInput = styled(Input)`
+    margin-bottom: 0.9em;
+`;
+
 const NewsletterSubscribe = () => {
     const [email, setEmail] = useState("");
     const [response, setResponse] = useState();
@@ -92,16 +97,15 @@ const NewsletterSubscribe = () => {
             </CopyWrapper>
 
             <StyledForm onSubmit={handleSubmit}>
-                <input
+                <EmailInput
                     type="email"
                     value={email}
                     name="email"
-                    placeholder="Email Address"
+                    label="Email Address"
                     onChange={e => setEmail(e.target.value)}
                 />
                 <Button
                     submit
-                    type="submit"
                     success={response && response.result === "success"}
                 >
                     {response && response.result === "success"

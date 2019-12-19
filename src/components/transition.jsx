@@ -11,17 +11,16 @@ const transitionStyles = {
     entering: {
         position: "absolute",
         opacity: 0,
-        transform: "translate3d(0, 4px, 0)"
+        transform: "translateY(4px)"
     },
     entered: {
         transition: `all ${duration}ms ease-out`,
-        opacity: 1,
-        transform: "translate3d(0, 0, 0)"
+        opacity: 1
     },
     exiting: {
         transition: `all ${duration}ms ease-in`,
         opacity: 0,
-        transform: "translate3d(0, 4px, 0)"
+        transform: "translateY(4px)"
     }
 };
 

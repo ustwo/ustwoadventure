@@ -292,4 +292,15 @@ export default [
             "Imagine a movie that includes every day of the rest of your life. We've built 1 Second Everyday - an app that enables anybody to easily and beautifully document their lives.",
         status: PORTFOLIO_STATUS.LIVE
     }
+    // {
+    //     name: "Suvera",
+    //     url: "https://suvera.co.uk/",
+    //     tidyurl: "suvera.co.uk",
+    //     image: "/team_assets/suvera_image.jpg",
+    //     logo: "/team_assets/suvera_logo.png",
+    //     oneLiner: "Follow up care in your hands",
+    //     copy:
+    //         "We enable general practices to virtually follow up patients with long-term conditions and their treatments - convenient, fast and effective.",
+    //     status: PORTFOLIO_STATUS.LIVE
+    // }
 ];

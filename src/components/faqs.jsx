@@ -4,6 +4,26 @@ import { styled } from "linaria/react";
 import { plus } from "../assets/inline-icons";
 import SectionWrapper from "./section-wrapper";
 
+const StyledFaqSection = styled(SectionWrapper)`
+    margin-top: 100px;
+
+    @media (max-width: 1080px) {
+        margin-top: 80px;
+    }
+
+    @media (max-width: 769px) {
+        margin-top: 70px;
+    }
+
+    @media (max-width: 625px) {
+        margin-top: 60px;
+    }
+
+    @media (max-width: 475px) {
+        margin-top: 50px;
+    }
+`;
+
 const FaqH1 = styled.h1`
     grid-column: 1 / -1;
 `;
@@ -111,7 +131,7 @@ const FaqSection = ({ faqArray }) => {
     const faqColumnTwo = faqArray.filter((_, i) => i % 2 === 1);
 
     return (
-        <SectionWrapper subgrid marginTop="100px">
+        <StyledFaqSection subgrid>
             <FaqH1>FAQs</FaqH1>
 
             <FaqColumnContainer>
@@ -132,7 +152,7 @@ const FaqSection = ({ faqArray }) => {
                     />
                 ))}
             </FaqColumnContainer>
-        </SectionWrapper>
+        </StyledFaqSection>
     );
 };
 

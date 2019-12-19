@@ -40,7 +40,7 @@ const PortfolioPreviewGridWrapper = styled(PortfolioGridWrapper)`
         margin-top: 25px;
     }
 
-    a {
+    > {
         &:nth-child(1) {
             margin-top: 135px;
         }
@@ -156,8 +156,12 @@ const OurPortfolio = () => (
                 <PortfolioItem
                     key={company.name}
                     name={company.name}
-                    image={company.image}
                     oneLiner={company.oneLiner}
+                    url={company.url}
+                    tidyUrl={company.tidyurl}
+                    description={company.copy}
+                    image={company.image}
+                    logo={company.logo}
                     hasArrows
                 />
             ))}

@@ -3,8 +3,12 @@ import { styled } from "linaria/react";
 
 import portfolioArray from "../../data/portfolio-array";
 import ForwardsArrow from "../../assets/forwards-arrow";
+import Modal from "../../components/modal";
+import useModal from "../../hooks/use-modal";
 
-const LatestInvestmentLink = styled.a`
+const LatestInvestmentLink = styled.div`
+    cursor: pointer;
+
     p.tag {
         margin-bottom: 10px;
         margin-left: -28px;
@@ -43,12 +47,10 @@ const LatestInvestmentLink = styled.a`
         -webkit-text-stroke: 1.5px;
         -webkit-text-stroke-color: var(--piglet);
         -webkit-text-fill-color: transparent;
-
         width: max-content;
         margin: -22px 0 0 auto;
         padding: 0 5px;
         text-align: right;
-
         transition: transform 0.2s, box-shadow 0.2s;
     }
 
@@ -69,6 +71,7 @@ const LatestInvestmentLink = styled.a`
 
             svg {
                 transform: translate(7px, -4px);
+
                 &:hover {
                     transform: translate(10px, -4px);
                 }
@@ -79,7 +82,6 @@ const LatestInvestmentLink = styled.a`
             -webkit-text-stroke: 0px;
             -webkit-text-stroke-color: #fff;
             -webkit-text-fill-color: #fff;
-
             background-color: var(--piglet);
             box-shadow: -7px 7px 0px -1px var(--grey04);
             transform: translate(7px, -7px);
@@ -103,11 +105,17 @@ const LatestInvestmentLink = styled.a`
 `;
 
 const latestInvestment = portfolioArray[portfolioArray.length - 1];
-const { name, image, oneLiner } = latestInvestment;
+const { name, url, tidyurl, oneLiner, copy, image, logo } = latestInvestment;
 
 const LatestInvestment = ({ className, style }) => {
+    const [modalIsOpen, setModalIsOpen] = useModal();
+
     return (
-        <LatestInvestmentLink className={className} style={style}>
+        <LatestInvestmentLink
+            onClick={() => setModalIsOpen(true)}
+            className={className}
+            style={style}
+        >
             <p className="tag">Latest investment:</p>
             <div className="image-container">
                 <img className="company-image" src={image} alt={name} />
@@ -115,6 +123,19 @@ const LatestInvestment = ({ className, style }) => {
             </div>
             <h1>{name}</h1>
             <p className="copy">{oneLiner}</p>
+
+            <Modal
+                className={modalIsOpen && "show"}
+                name={name}
+                url={url}
+                tidyUrl={tidyurl}
+                oneLiner={oneLiner}
+                description={copy}
+                image={image}
+                logo={logo}
+                isOpen={modalIsOpen}
+                handleClose={() => setModalIsOpen(false)}
+            />
         </LatestInvestmentLink>
     );
 };
