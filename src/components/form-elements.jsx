@@ -45,7 +45,7 @@ const InputWrapper = styled.div`
         position: absolute;
         opacity: 0;
         transition: opacity 0.1s;
-        top: -1.8em;
+        top: -1.75em;
         left: 2px;
     }
 
@@ -77,25 +77,30 @@ export const Input = ({
     name,
     type = "text",
     required = true,
-    halfWidth
-}) => (
-    <InputWrapper halfWidth={halfWidth} style={style} className={className}>
-        {type === "textarea" ? (
-            <textarea
-                id={name}
-                name={name}
-                required={required}
-                placeholder={label}
-            />
-        ) : (
-            <input
-                id={name}
-                type={type}
-                name={name}
-                required={required}
-                placeholder={label}
-            />
-        )}
-        <label htmlFor={name}>{label}</label>
-    </InputWrapper>
-);
+    halfWidth,
+    handleChange
+}) => {
+    return (
+        <InputWrapper halfWidth={halfWidth} style={style} className={className}>
+            {type === "textarea" ? (
+                <textarea
+                    id={name}
+                    name={name}
+                    required={required}
+                    placeholder={label}
+                    onChange={handleChange}
+                />
+            ) : (
+                <input
+                    id={name}
+                    type={type}
+                    name={name}
+                    required={required}
+                    placeholder={label}
+                    onChange={handleChange}
+                />
+            )}
+            <label htmlFor={name}>{label}</label>
+        </InputWrapper>
+    );
+};

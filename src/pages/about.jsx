@@ -252,8 +252,7 @@ const Portfolio = () => (
 
         <SectionWrapper subgrid>
             <AboutUstwoVideo
-                hasSound
-                controls
+                // hasSound
                 src="https://player.vimeo.com/external/189642924.sd.mp4?s=2dafa1fb7c8ef594412e9fa7fd4be182163d7f71&profile_id=165"
                 poster="https://images.ctfassets.net/gw5wr8vzz44g/1U3hetCC84dw7qCUwdUjiL/fdf3a817455b6f0049c3e29d4544366e/sinx-presentation-ustwo-studio.jpg?w=600&fm=webp"
             />

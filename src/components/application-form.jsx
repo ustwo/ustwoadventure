@@ -45,6 +45,7 @@ const Applicationform = ({
     name,
     title,
     copy,
+    successCopy,
     children,
     style,
     className,
@@ -91,7 +92,8 @@ const Applicationform = ({
                 <p className={response && "transition"}>
                     {response
                         ? response === true
-                            ? "Thanks! We'll read through what you've sent us and follow up via e-mail as soon as possible. Have a great day."
+                            ? successCopy ||
+                              "Thanks! We'll read through what you've sent us and follow up via e-mail as soon as possible. Have a great day."
                             : `Looks like there has been a ${response} server error with sending the form. Sorry! Please try again, or email via the address in our footer.`
                         : copy}
                 </p>

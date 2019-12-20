@@ -140,7 +140,7 @@ const PortfolioItem = ({
     return (
         <PortfolioPreviewLink
             style={{ "--offset": `${randomOffset()}px` }}
-            onClick={() => setModalIsOpen(true)}
+            onClick={() => !modalIsOpen && setModalIsOpen(true)}
         >
             <p className="name">{name}</p>
             <div className="image-container">
@@ -150,7 +150,6 @@ const PortfolioItem = ({
             <p className="copy">{oneLiner}</p>
 
             <Modal
-                className={modalIsOpen && "show"}
                 name={name}
                 url={url}
                 tidyUrl={tidyUrl}

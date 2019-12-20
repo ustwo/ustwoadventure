@@ -125,7 +125,6 @@ const LatestInvestment = ({ className, style }) => {
             <p className="copy">{oneLiner}</p>
 
             <Modal
-                className={modalIsOpen && "show"}
                 name={name}
                 url={url}
                 tidyUrl={tidyurl}

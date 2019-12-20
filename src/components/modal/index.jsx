@@ -111,7 +111,6 @@ const ModalInner = styled.div`
 `;
 
 const Modal = ({
-    className,
     name,
     url,
     tidyUrl,
@@ -122,38 +121,23 @@ const Modal = ({
     isOpen,
     handleClose
 }) => {
-    const handleBackgroundClose = () => {
-        // TODO
-        handleClose();
-        console.log("background clicked");
-    };
-
-    const handleButtonClose = () => {
-        // TODO
-        handleClose();
-        console.log("button clicked");
-    };
-
     const handleEsc = e => e.key === "Escape" && handleClose();
 
     useEffect(() => {
         if (isOpen) {
             document.body.classList.add("no-scroll");
-            // window.addEventListener("click", handleBackgroundClose);
-            window.addEventListener("keyup", handleEsc);
+            window.addEventListener("keydown", handleEsc);
         } else {
             document.body.classList.remove("no-scroll");
         }
         return () => {
-            document.body.classList.toggle("no-scroll");
-            // window.removeEventListener("click", handleBackgroundClose);
-            window.removeEventListener("keyup", handleEsc);
+            window.removeEventListener("keydown", handleEsc);
         };
     }, [isOpen]);
 
     return (
-        <ModalContainer className={className}>
-            <ModalBackground onClick={handleBackgroundClose} />
+        <ModalContainer className={isOpen && "show"}>
+            <ModalBackground onClick={handleClose} />
             <ModalWrapper>
                 <ModalInner>
                     <ModalDetails
@@ -170,7 +154,7 @@ const Modal = ({
                         url={url}
                     />
                 </ModalInner>
-                <CloseModalButton onClick={handleButtonClose} />
+                <CloseModalButton onClick={handleClose} />
             </ModalWrapper>
         </ModalContainer>
     );

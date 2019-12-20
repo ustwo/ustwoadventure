@@ -53,7 +53,7 @@ const LogoWrapper = styled.div`
 `;
 
 const OrbitLogo = () => {
-    const logoRef = useRef(); // TODO: Use refs with function components so I don't have to querySelector() below
+    const logoRef = useRef();
     let svgEl;
 
     const tiltLogo = tilt => {
