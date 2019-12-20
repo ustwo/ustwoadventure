@@ -58,12 +58,23 @@ const InvestmentContactForm = () => {
         if (name === "email") setContactEmail(value);
     };
 
+    // const encode = data => {
+    //     const formData = new FormData();
+    //     Object.keys(data).forEach(key => {
+    //         formData.append(key, data[key]);
+    //     });
+    //     return formData;
+    // };
+
     const encode = data => {
-        const formData = new FormData();
-        Object.keys(data).forEach(key => {
-            formData.append(key, data[key]);
-        });
-        return formData;
+        return Object.keys(data)
+            .map(
+                key =>
+                    `${encodeURIComponent(key)}=${encodeURIComponent(
+                        data[key]
+                    )}`
+            )
+            .join("&");
     };
 
     const handleSubmit = e => {
@@ -86,10 +97,14 @@ const InvestmentContactForm = () => {
             // headers: {
             //     "Content-Type": "multipart/form-data; boundary=random"
             // },
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode(data)
         })
             .then(() => setResponse(true))
             .catch(error => setResponse(error.code));
+
+        console.log(data);
+        console.log(encode(data));
 
         e.preventDefault();
     };
@@ -182,10 +197,7 @@ const InvestmentContactForm = () => {
                 />
                 {/* </StepWrapper> */}
 
-                <Button
-                    submit
-                    success={response && response.result === "success"}
-                >
+                <Button submit success={response === true}>
                     Submit
                 </Button>
 

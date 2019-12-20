@@ -45,7 +45,7 @@ const InputWrapper = styled.div`
         position: absolute;
         opacity: 0;
         transition: opacity 0.1s;
-        top: -1.75em;
+        top: -1.7em;
         left: 2px;
     }
 
@@ -93,8 +93,8 @@ export const Input = ({
             ) : (
                 <input
                     id={name}
-                    type={type}
                     name={name}
+                    type={type}
                     required={required}
                     placeholder={label}
                     onChange={handleChange}
