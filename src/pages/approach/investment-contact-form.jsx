@@ -58,14 +58,6 @@ const InvestmentContactForm = () => {
         if (name === "email") setContactEmail(value);
     };
 
-    // const encode = data => {
-    //     const formData = new FormData();
-    //     Object.keys(data).forEach(key => {
-    //         formData.append(key, data[key]);
-    //     });
-    //     return formData;
-    // };
-
     const encode = data => {
         return Object.keys(data)
             .map(
@@ -94,9 +86,6 @@ const InvestmentContactForm = () => {
 
         fetch("/", {
             method: "POST",
-            // headers: {
-            //     "Content-Type": "multipart/form-data; boundary=random"
-            // },
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode(data)
         })
@@ -143,21 +132,21 @@ const InvestmentContactForm = () => {
                     <Input
                         halfWidth
                         label="Company Name"
-                        name="company"
+                        name="companyName"
                         handleChange={handleChange}
                     />
 
                     <Input
                         halfWidth
                         label="Website"
-                        name="website"
+                        name="companyWebsite"
                         handleChange={handleChange}
                     />
 
                     <Input
                         label="Tell us about what you do"
                         type="textarea"
-                        name="description"
+                        name="companyDescription"
                         handleChange={handleChange}
                     />
                 </StepWrapper>
@@ -165,26 +154,26 @@ const InvestmentContactForm = () => {
                 {/* <StepWrapper> */}
                 <Input
                     label="What stage are you currently at?"
-                    name="stage"
+                    name="companyStage"
                     handleChange={handleChange}
                 />
 
                 <Input
                     label="What current revenue are you generating?"
-                    name="revenue"
+                    name="companyRevenue"
                     handleChange={handleChange}
                 />
 
                 <Input
                     label="How much are you looking to raise?"
-                    name="amount raising"
+                    name="companyInvestmentSize"
                     handleChange={handleChange}
                 />
 
                 <Input
                     halfWidth
                     label="Your Name"
-                    name="name"
+                    name="contactName"
                     handleChange={handleChange}
                 />
 
@@ -192,7 +181,7 @@ const InvestmentContactForm = () => {
                     halfWidth
                     label="Email"
                     type="email"
-                    name="email"
+                    name="contactEmail"
                     handleChange={handleChange}
                 />
                 {/* </StepWrapper> */}
