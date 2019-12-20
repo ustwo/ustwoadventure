@@ -37,7 +37,7 @@ const InvestmentContactForm = () => {
     const [response, setResponse] = useState(false);
 
     const [companyName, setCompanyName] = useState("");
-    const [companyWebsite, setCompanyWebsite] = useState("");
+    const [website, setWebsite] = useState("");
     const [companyDescription, setCompanyDescription] = useState("");
     const [companyStage, setCompanyStage] = useState("");
     const [companyRevenue, setCompanyRevenue] = useState("");
@@ -49,7 +49,7 @@ const InvestmentContactForm = () => {
         const { name, value } = e.target;
 
         if (name === "company") setCompanyName(value);
-        if (name === "website") setCompanyWebsite(value);
+        if (name === "website") setWebsite(value);
         if (name === "description") setCompanyDescription(value);
         if (name === "stage") setCompanyStage(value);
         if (name === "revenue") setCompanyRevenue(value);
@@ -75,7 +75,7 @@ const InvestmentContactForm = () => {
         const data = {
             "form-name": "investment-contact",
             companyName,
-            companyWebsite,
+            website,
             companyDescription,
             companyStage,
             companyRevenue,
@@ -91,9 +91,6 @@ const InvestmentContactForm = () => {
         })
             .then(() => setResponse(true))
             .catch(error => setResponse(error.code));
-
-        console.log(data);
-        console.log(encode(data));
 
         e.preventDefault();
     };
@@ -139,7 +136,7 @@ const InvestmentContactForm = () => {
                     <Input
                         halfWidth
                         label="Website"
-                        name="companyWebsite"
+                        name="website"
                         handleChange={handleChange}
                     />
 
