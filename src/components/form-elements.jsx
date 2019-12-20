@@ -78,6 +78,7 @@ export const Input = ({
     type = "text",
     required = true,
     halfWidth,
+    // value,
     handleChange
 }) => {
     return (
@@ -88,6 +89,7 @@ export const Input = ({
                     name={name}
                     required={required}
                     placeholder={label}
+                    // value={value}
                     onChange={handleChange}
                 />
             ) : (
@@ -97,6 +99,7 @@ export const Input = ({
                     type={type}
                     required={required}
                     placeholder={label}
+                    // value={value}
                     onChange={handleChange}
                 />
             )}

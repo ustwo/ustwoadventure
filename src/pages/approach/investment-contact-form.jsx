@@ -41,21 +41,21 @@ const InvestmentContactForm = () => {
     const [companyDescription, setCompanyDescription] = useState("");
     const [companyStage, setCompanyStage] = useState("");
     const [companyRevenue, setCompanyRevenue] = useState("");
-    const [companyInvestmentSize, setCompanyInvestmentSize] = useState("");
+    const [roundSize, setRoundSize] = useState("");
     const [contactName, setContactName] = useState("");
     const [contactEmail, setContactEmail] = useState("");
 
     const handleChange = e => {
         const { name, value } = e.target;
 
-        if (name === "company") setCompanyName(value);
+        if (name === "companyName") setCompanyName(value);
         if (name === "website") setWebsite(value);
-        if (name === "description") setCompanyDescription(value);
-        if (name === "stage") setCompanyStage(value);
-        if (name === "revenue") setCompanyRevenue(value);
-        if (name === "amount raising") setCompanyInvestmentSize(value);
-        if (name === "name") setContactName(value);
-        if (name === "email") setContactEmail(value);
+        if (name === "companyDescription") setCompanyDescription(value);
+        if (name === "companyStage") setCompanyStage(value);
+        if (name === "companyRevenue") setCompanyRevenue(value);
+        if (name === "roundSize") setRoundSize(value);
+        if (name === "contactName") setContactName(value);
+        if (name === "contactEmail") setContactEmail(value);
     };
 
     const encode = data => {
@@ -79,7 +79,7 @@ const InvestmentContactForm = () => {
             companyDescription,
             companyStage,
             companyRevenue,
-            companyInvestmentSize,
+            roundSize,
             contactName,
             contactEmail
         };
@@ -91,6 +91,9 @@ const InvestmentContactForm = () => {
         })
             .then(() => setResponse(true))
             .catch(error => setResponse(error.code));
+
+        console.log(data);
+        console.log(encode(data));
 
         e.preventDefault();
     };
@@ -163,7 +166,7 @@ const InvestmentContactForm = () => {
 
                 <Input
                     label="How much are you looking to raise?"
-                    name="companyInvestmentSize"
+                    name="roundSize"
                     handleChange={handleChange}
                 />
 
