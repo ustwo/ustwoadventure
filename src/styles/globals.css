@@ -79,7 +79,7 @@ img[data-src]::after {
 }
 
 input, textarea {
-    padding: 0.9em;
+    padding: 0.86em;
     font-size: 16px;
     font-family: var(--pxGrotesk);
     font-weight: 400;

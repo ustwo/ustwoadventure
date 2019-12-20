@@ -33,6 +33,9 @@ const CopyWrapper = styled.div`
 const InvestmentContactForm = () => {
     const pageCount = 1;
 
+    const [step, setStep] = useState(1);
+    const [response, setResponse] = useState(false);
+
     const [companyName, setCompanyName] = useState("");
     const [companyWebsite, setCompanyWebsite] = useState("");
     const [companyDescription, setCompanyDescription] = useState("");
@@ -41,9 +44,6 @@ const InvestmentContactForm = () => {
     const [companyInvestmentSize, setCompanyInvestmentSize] = useState("");
     const [contactName, setContactName] = useState("");
     const [contactEmail, setContactEmail] = useState("");
-
-    const [step, setStep] = useState(1);
-    const [response, setResponse] = useState(false);
 
     const handleChange = e => {
         const { name, value } = e.target;
@@ -83,9 +83,9 @@ const InvestmentContactForm = () => {
 
         fetch("/", {
             method: "POST",
-            headers: {
-                "Content-Type": "multipart/form-data; boundary=random"
-            },
+            // headers: {
+            //     "Content-Type": "multipart/form-data; boundary=random"
+            // },
             body: encode(data)
         })
             .then(() => setResponse(true))
