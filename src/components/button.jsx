@@ -101,9 +101,20 @@ const StyledButton = css`
     }
 `;
 
-const Button = ({ children, external, back, href, submit, success, next }) => {
+const Button = ({
+    className,
+    style,
+    children,
+    external,
+    back,
+    href,
+    submit,
+    success,
+    next
+}) => {
     const classes = cx(
         StyledButton,
+        className,
         external && !next ? "external" : "internal",
         back && "back",
         submit && "submit",
@@ -140,6 +151,7 @@ const Button = ({ children, external, back, href, submit, success, next }) => {
     return external ? (
         <a
             className={classes}
+            style={style}
             href={href}
             target="_blank"
             rel="noopener noreferrer"
@@ -147,9 +159,14 @@ const Button = ({ children, external, back, href, submit, success, next }) => {
             {children}
         </a>
     ) : submit ? (
-        <input className={classes} type="submit" value={children} />
+        <input
+            className={classes}
+            style={style}
+            type="submit"
+            value={children}
+        />
     ) : (
-        <Link className={classes} to={href}>
+        <Link className={classes} style={style} to={href}>
             {children}
         </Link>
     );

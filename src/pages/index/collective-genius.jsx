@@ -1,22 +1,10 @@
 import React from "react";
+import { css } from "linaria";
 import { styled } from "linaria/react";
 
 import SectionWrapper from "../../components/section-wrapper";
 import Button from "../../components/button";
 import InlineVideo from "../../components/inline-video";
-
-const CollectiveGeniusSection = styled(SectionWrapper)`
-    @media (max-width: 500px) {
-        position: relative;
-        margin-bottom: 80px;
-
-        a {
-            position: absolute;
-            bottom: -70px; /* TODO: Not working on mobile */
-            left: 0;
-        }
-    }
-`;
 
 const CollectiveGeniusCopy = styled.div`
     grid-column: 1 / 7;
@@ -42,6 +30,22 @@ const CollectiveGeniusCopy = styled.div`
 
     @media (max-width: 580px) {
         grid-column: 1 / 12;
+    }
+
+    @media (max-width: 500px) {
+        a {
+            display: none;
+        }
+    }
+`;
+
+const mobileButton = css`
+    display: none;
+    margin-top: 25px;
+    width: 125px;
+
+    @media (max-width: 500px) {
+        display: block;
     }
 `;
 
@@ -89,7 +93,7 @@ const UstwoVideo = styled(InlineVideo)`
 `;
 
 const CollectiveGenius = () => (
-    <CollectiveGeniusSection subgrid>
+    <SectionWrapper subgrid>
         <CollectiveGeniusCopy>
             <h2>Collective genius</h2>
             <p>
@@ -107,7 +111,11 @@ const CollectiveGenius = () => (
             src="https://player.vimeo.com/external/310346824.sd.mp4?s=5907d9389a6114dec39081532a102d4101c32c6d&profile_id=164"
             poster="images/monument-valley.jpg"
         />
-    </CollectiveGeniusSection>
+
+        <Button className={mobileButton} external href="https://ustwo.com">
+            ustwo.com
+        </Button>
+    </SectionWrapper>
 );
 
 export default CollectiveGenius;

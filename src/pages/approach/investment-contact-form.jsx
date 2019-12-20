@@ -20,12 +20,27 @@ const StyledCTAWrapper = styled(CTAWrapper)`
 const CopyWrapper = styled.div`
     grid-column: 2 / 6;
 
+    p {
+        transition: all 180ms;
+
+        &.transition {
+            opacity: 0;
+            transform: translateY(3px);
+        }
+    }
+
+    @media (max-width: 1080px) {
+        grid-column: 2 / 7;
+        margin-right: 40px;
+    }
+
     @media (max-width: 715px) {
-        margin-bottom: 40px;
+        margin-right: 0;
+        margin-bottom: 60px;
         grid-column: 1 / -1;
 
         h2 {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
     }
 `;
@@ -34,6 +49,7 @@ const InvestmentContactForm = () => {
     const pageCount = 1;
 
     const [step, setStep] = useState(1);
+    const [sending, setSending] = useState(false);
     const [response, setResponse] = useState(false);
 
     const [companyName, setCompanyName] = useState("");
@@ -72,6 +88,9 @@ const InvestmentContactForm = () => {
     const handleSubmit = e => {
         setStep(step + 1);
 
+        setSending(true);
+        setTimeout(() => setSending(false), 180);
+
         const data = {
             "form-name": "investment-contact",
             companyName,
@@ -92,9 +111,6 @@ const InvestmentContactForm = () => {
             .then(() => setResponse(true))
             .catch(error => setResponse(error.code));
 
-        console.log(data);
-        console.log(encode(data));
-
         e.preventDefault();
     };
 
@@ -102,7 +118,7 @@ const InvestmentContactForm = () => {
         <StyledCTAWrapper>
             <CopyWrapper>
                 <h2>Do you want some money?</h2>
-                <p>
+                <p className={sending && "transition"}>
                     {response
                         ? response === true
                             ? "Thanks! We'll read through what you've sent us and follow up via e-mail as soon as possible. Have a great day."
@@ -151,40 +167,40 @@ const InvestmentContactForm = () => {
                     />
                 </StepWrapper>
 
-                {/* <StepWrapper> */}
-                <Input
-                    label="What stage are you currently at?"
-                    name="companyStage"
-                    handleChange={handleChange}
-                />
+                <StepWrapper>
+                    <Input
+                        label="What stage are you currently at?"
+                        name="companyStage"
+                        handleChange={handleChange}
+                    />
 
-                <Input
-                    label="What current revenue are you generating?"
-                    name="companyRevenue"
-                    handleChange={handleChange}
-                />
+                    <Input
+                        label="What current revenue are you generating?"
+                        name="companyRevenue"
+                        handleChange={handleChange}
+                    />
 
-                <Input
-                    label="How much are you looking to raise?"
-                    name="roundSize"
-                    handleChange={handleChange}
-                />
+                    <Input
+                        label="How much are you looking to raise?"
+                        name="roundSize"
+                        handleChange={handleChange}
+                    />
 
-                <Input
-                    halfWidth
-                    label="Your Name"
-                    name="contactName"
-                    handleChange={handleChange}
-                />
+                    <Input
+                        halfWidth
+                        label="Your Name"
+                        name="contactName"
+                        handleChange={handleChange}
+                    />
 
-                <Input
-                    halfWidth
-                    label="Email"
-                    type="email"
-                    name="contactEmail"
-                    handleChange={handleChange}
-                />
-                {/* </StepWrapper> */}
+                    <Input
+                        halfWidth
+                        label="Email"
+                        type="email"
+                        name="contactEmail"
+                        handleChange={handleChange}
+                    />
+                </StepWrapper>
 
                 <Button submit success={response === true}>
                     Submit

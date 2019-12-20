@@ -54,7 +54,7 @@ const PortfolioPreviewGridWrapper = styled(PortfolioGridWrapper)`
             margin-top: 220px;
         }
         &:nth-child(5) {
-            margin-top: -215px;
+            margin-top: -200px;
         }
 
         @media (max-width: 1025px) {

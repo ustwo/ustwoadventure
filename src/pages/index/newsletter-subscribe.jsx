@@ -8,12 +8,6 @@ import { Input } from "../../components/form-elements";
 
 const StyledCTAWrapper = styled(CTAWrapper)`
     margin-top: 90px;
-    max-height: 170px;
-    transition: max-height 2s;
-
-    &.response {
-        max-height: 300px; /* TODO: Get animated height working or force static */
-    }
 
     @media (max-width: 769px) {
         margin-top: 60px;
@@ -27,6 +21,15 @@ const StyledCTAWrapper = styled(CTAWrapper)`
 const CopyWrapper = styled.div`
     grid-column: 2 / 7;
     margin-right: 15px;
+
+    p {
+        transition: all 180ms;
+
+        &.transition {
+            opacity: 0;
+            transform: translateY(3px);
+        }
+    }
 
     a {
         color: #ffffff;
@@ -74,9 +77,12 @@ const EmailInput = styled(Input)`
 
 const NewsletterSubscribe = () => {
     const [email, setEmail] = useState("");
+    const [sending, setSending] = useState(false);
     const [response, setResponse] = useState();
 
     const handleSubmit = async e => {
+        setSending(true);
+        setTimeout(() => setSending(false), 180);
         e.preventDefault();
         const serverResponse = await addToMailchimp(email);
         setResponse(serverResponse);
@@ -87,9 +93,12 @@ const NewsletterSubscribe = () => {
             <CopyWrapper>
                 <h2>We hope you like newsletters</h2>
                 {response ? (
-                    <p dangerouslySetInnerHTML={{ __html: response.msg }} /> // TODO: Sort out animated styling or static height here
+                    <p
+                        className={sending && "transition"}
+                        dangerouslySetInnerHTML={{ __html: response.msg }}
+                    /> // TODO: Get animated height working or force static
                 ) : (
-                    <p>
+                    <p className={sending && "transition"}>
                         Sign up for a monthly update from Adventure and our
                         community of creative companies.
                     </p>
