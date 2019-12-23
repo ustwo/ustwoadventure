@@ -8,12 +8,14 @@ import SectionWrapper from "../components/section-wrapper";
 
 const StyledMain = styled(MainWrapper)`
     h1 {
+        grid-column: 2 / 12;
         margin-bottom: 80px;
         margin-left: auto;
         width: max-content;
     }
 
     a {
+        grid-column: 2 / 12;
         margin-bottom: 50px;
         width: 130px;
     }
@@ -34,7 +36,7 @@ const FourOhFour = () => (
     <StyledMain>
         <SEO />
 
-        <SectionWrapper style={{ display: "block" }}>
+        <SectionWrapper>
             <h1>Page not found</h1>
 
             <h1>¯\_(ツ)_/¯</h1>
