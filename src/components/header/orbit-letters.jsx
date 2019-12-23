@@ -114,33 +114,30 @@ const StyledLetters = styled.li`
 `;
 
 const OrbitLetters = ({ is404 }) => {
-    const [string, setString] = useState(is404 ? "404ERROR—" : "ADVENTURE");
     const [hasLoaded, setHasLoaded] = useState(false);
+
+    const string = is404 ? "404ERROR—" : "ADVENTURE";
     const ulRef = useRef();
+    const { map } = Array.prototype;
 
     useLayoutEffect(() => {
-        const orbitLetters = ulRef.current.querySelectorAll("li");
-
         if (hasLoaded) {
-            setString(is404 ? "404ERROR—" : "ADVENTURE");
+            const newString = is404 ? "404ERROR—" : "ADVENTURE";
 
+            const orbitLetters = ulRef.current.querySelectorAll("li");
             orbitLetters.forEach((letter, i) => {
-                setTimeout(() => letter.classList.add("transition"), i * 60);
+                setTimeout(() => letter.classList.add("transition"), i * 80);
             });
             setTimeout(() => {
                 orbitLetters.forEach((letter, i) => {
                     setTimeout(() => {
                         letter.classList.remove("transition");
-                        orbitLetters[i].textContent = string[i];
-                    }, i * 60);
+                        orbitLetters[i].textContent = newString[i];
+                    }, i * 80);
                 });
-            }, 270);
-        } else {
-            setHasLoaded(true);
-        }
+            }, 300);
+        } else setHasLoaded(true);
     }, [is404]);
-
-    const { map } = Array.prototype;
 
     return (
         <LetterList ref={ulRef}>
