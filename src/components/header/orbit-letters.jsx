@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useState, useRef, useLayoutEffect } from "react";
 import { styled } from "linaria/react";
 
 const letterCount = 9;
@@ -113,47 +113,51 @@ const StyledLetters = styled.li`
     }
 `;
 
-const trimString = string =>
-    string.length < letterCount
-        ? string.padEnd(letterCount, "-")
-        : string.substr(0, letterCount);
+const trimString = string => {
+    const trimmedString =
+        string.length < letterCount
+            ? string.padEnd(letterCount, "-")
+            : string.substr(0, letterCount);
+    return trimmedString.toUpperCase();
+};
 
 const OrbitLetters = ({ is404 }) => {
-    // const [string, setString] = useState("adventure");
-    // const [hasLoaded, setHasLoaded] = useState(false);
+    const [string, setString] = useState(
+        trimString(is404 ? "404error" : "adventure")
+    );
+    const [hasLoaded, setHasLoaded] = useState(false);
     const ulRef = useRef();
 
-    const string = is404 === true ? "404error" : "adventure";
-    const capitalLetters = string.toUpperCase();
-    const letters = trimString(capitalLetters);
-
-    // TODO: error letters
-    useEffect(() => {
-        // if (hasLoaded) {
-        // setString(is404 === true ? "404error" : "adventure");
+    useLayoutEffect(() => {
         const orbitLetters = ulRef.current.querySelectorAll("li");
 
-        orbitLetters.forEach((letter, i) => {
-            setTimeout(() => letter.classList.add("transition"), i * 30);
-        });
-        setTimeout(() => {
-            for (let i = 0; i < orbitLetters.length; i++) {
-                orbitLetters[i].textContent = string[i];
-            }
+        if (hasLoaded) {
+            setString(trimString(is404 ? "404error" : "adventure"));
+
             orbitLetters.forEach((letter, i) => {
-                setTimeout(() => letter.classList.remove("transition"), i * 30);
+                setTimeout(() => letter.classList.add("transition"), i * 50);
             });
-        }, 270);
-        // } else {
-        //     setHasLoaded(true);
-        // }
+            setTimeout(() => {
+                for (let i = 0; i < orbitLetters.length; i++) {
+                    orbitLetters[i].textContent = string[i];
+                }
+                orbitLetters.forEach((letter, i) => {
+                    setTimeout(
+                        () => letter.classList.remove("transition"),
+                        i * 50
+                    );
+                });
+            }, 270);
+        } else {
+            setHasLoaded(true);
+        }
     }, [is404]);
 
     const { map } = Array.prototype;
 
     return (
         <LetterList ref={ulRef}>
-            {map.call(letters, (letter, i) => (
+            {map.call(string, (letter, i) => (
                 <StyledLetters key={i}>{letter}</StyledLetters>
             ))}
         </LetterList>
