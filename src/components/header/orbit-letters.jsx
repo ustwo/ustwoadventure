@@ -113,18 +113,8 @@ const StyledLetters = styled.li`
     }
 `;
 
-const trimString = string => {
-    const trimmedString =
-        string.length < letterCount
-            ? string.padEnd(letterCount, "-")
-            : string.substr(0, letterCount);
-    return trimmedString.toUpperCase();
-};
-
 const OrbitLetters = ({ is404 }) => {
-    const [string, setString] = useState(
-        trimString(is404 ? "404error" : "adventure")
-    );
+    const [string, setString] = useState(is404 ? "404ERROR—" : "ADVENTURE");
     const [hasLoaded, setHasLoaded] = useState(false);
     const ulRef = useRef();
 
@@ -132,20 +122,17 @@ const OrbitLetters = ({ is404 }) => {
         const orbitLetters = ulRef.current.querySelectorAll("li");
 
         if (hasLoaded) {
-            setString(trimString(is404 ? "404error" : "adventure"));
+            setString(is404 ? "404ERROR—" : "ADVENTURE");
 
             orbitLetters.forEach((letter, i) => {
-                setTimeout(() => letter.classList.add("transition"), i * 50);
+                setTimeout(() => letter.classList.add("transition"), i * 60);
             });
             setTimeout(() => {
-                for (let i = 0; i < orbitLetters.length; i++) {
-                    orbitLetters[i].textContent = string[i];
-                }
                 orbitLetters.forEach((letter, i) => {
-                    setTimeout(
-                        () => letter.classList.remove("transition"),
-                        i * 50
-                    );
+                    setTimeout(() => {
+                        letter.classList.remove("transition");
+                        orbitLetters[i].textContent = string[i];
+                    }, i * 60);
                 });
             }, 270);
         } else {
