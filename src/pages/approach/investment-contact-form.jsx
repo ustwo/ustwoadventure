@@ -4,6 +4,7 @@ import { styled } from "linaria/react";
 import CTAWrapper from "../../components/cta-wrapper";
 import { StyledForm, StepWrapper, Input } from "../../components/form-elements";
 import Button from "../../components/button";
+import useNetlifySubmit from "../../hooks/use-netlify-submit";
 
 const StyledCTAWrapper = styled(CTAWrapper)`
     margin-top: 50px;
@@ -48,9 +49,14 @@ const CopyWrapper = styled.div`
 const InvestmentContactForm = () => {
     const pageCount = 1;
 
+    const [
+        sending,
+        response,
+        handleNetlifySubmit,
+        NetlifyRequiredInputs
+    ] = useNetlifySubmit();
+
     const [step, setStep] = useState(1);
-    const [sending, setSending] = useState(false);
-    const [response, setResponse] = useState(false);
 
     const [companyName, setCompanyName] = useState("");
     const [website, setWebsite] = useState("");
@@ -74,23 +80,7 @@ const InvestmentContactForm = () => {
         if (name === "contactEmail") setContactEmail(value);
     };
 
-    const encode = data => {
-        return Object.keys(data)
-            .map(
-                key =>
-                    `${encodeURIComponent(key)}=${encodeURIComponent(
-                        data[key]
-                    )}`
-            )
-            .join("&");
-    };
-
     const handleSubmit = e => {
-        setStep(step + 1);
-
-        setSending(true);
-        setTimeout(() => setSending(false), 180);
-
         const data = {
             "form-name": "investment-contact",
             companyName,
@@ -103,14 +93,8 @@ const InvestmentContactForm = () => {
             contactEmail
         };
 
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode(data)
-        })
-            .then(() => setResponse(true))
-            .catch(error => setResponse(error.code));
-
+        handleNetlifySubmit(data);
+        setStep(step + 1);
         e.preventDefault();
     };
 
@@ -118,7 +102,7 @@ const InvestmentContactForm = () => {
         <StyledCTAWrapper>
             <CopyWrapper>
                 <h2>Do you want some money?</h2>
-                <p className={sending && "transition"}>
+                <p className={sending ? "transition" : undefined}>
                     {response
                         ? response === true
                             ? "Thanks! We'll read through what you've sent us and follow up via e-mail as soon as possible. Have a great day."
@@ -134,15 +118,7 @@ const InvestmentContactForm = () => {
                 data-netlify="true"
                 netlify-honeypot="bot-field"
             >
-                <input
-                    type="hidden"
-                    name="form-name"
-                    value="investment-contact"
-                />
-                <label htmlFor="bot-field" style={{ display: "none" }}>
-                    Don’t fill this out:
-                    <input name="bot-field" />
-                </label>
+                <NetlifyRequiredInputs formName="investment-contact" />
 
                 <StepWrapper>
                     <Input
