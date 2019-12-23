@@ -89,16 +89,16 @@ const NewsletterSubscribe = () => {
     };
 
     return (
-        <StyledCTAWrapper className={response && "response"}>
+        <StyledCTAWrapper className={response ? "response" : undefined}>
             <CopyWrapper>
                 <h2>We hope you like newsletters</h2>
                 {response ? (
                     <p
-                        className={sending && "transition"}
+                        className={sending ? "transition" : undefined}
                         dangerouslySetInnerHTML={{ __html: response.msg }}
                     /> // TODO: Get animated height working or force static
                 ) : (
-                    <p className={sending && "transition"}>
+                    <p className={sending ? "transition" : undefined}>
                         Sign up for a monthly update from Adventure and our
                         community of creative companies.
                     </p>

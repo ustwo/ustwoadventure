@@ -15,10 +15,7 @@ export default () => {
 
     const handleNetlifySubmit = data => {
         setSending(true);
-        setTimeout(() => setSending(false), 200);
-
-        console.log(data);
-        console.log(encode(data));
+        setTimeout(() => setSending(false), 240);
 
         fetch("/", {
             method: "POST",
@@ -27,12 +24,8 @@ export default () => {
             },
             body: encode(data)
         })
-            .then(() => {
-                setTimeout(() => setResponse(true), 180);
-            })
-            .catch(error => {
-                setTimeout(() => setResponse(error.code), 180);
-            });
+            .then(() => setTimeout(() => setResponse(true), 200))
+            .catch(err => setTimeout(() => setResponse(err.code), 200));
     };
 
     const NetlifyRequiredInputs = ({ formName }) => (

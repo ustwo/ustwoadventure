@@ -4,6 +4,7 @@ import { styled } from "linaria/react";
 import CTAWrapper from "./cta-wrapper";
 import { StyledForm } from "./form-elements";
 import Button from "./button";
+import useNetlifySubmit from "../hooks/use-netlify-submit";
 
 const StyledCTAWrapper = styled(CTAWrapper)`
     margin-top: 50px;
@@ -52,9 +53,14 @@ const Applicationform = ({
     pages = 1
 }) => {
     const [step, setStep] = useState(1);
-    const [response, setResponse] = useState(false);
 
-    // TODO: handleSubmit and handleNext - merge to one function?
+    const [
+        sending,
+        response,
+        handleNetlifySubmit,
+        NetlifyRequiredInputs
+    ] = useNetlifySubmit();
+
     const handleNext = e => {
         setStep(step + 1);
         console.log("step"); // Not working?
@@ -62,25 +68,9 @@ const Applicationform = ({
     };
 
     const handleSubmit = e => {
-        // setStep(step + 1);
+        setStep(step + 1);
 
-        const encode = data => {
-            const formData = new FormData();
-            Object.keys(data).forEach(key => {
-                formData.append(key, data[key]);
-            });
-            return formData;
-        };
-
-        fetch("/", {
-            method: "POST",
-            headers: {
-                "Content-Type": "multipart/form-data; boundary=random"
-            },
-            body: encode(/* data */) // https://github.com/futuregerald/react-netlify-form-file/blob/afd730bf0fcc9b9cd78ebd85dac7a555d22dfd9b/src/App.js#L27
-        })
-            .then(() => setResponse(true))
-            .catch(error => setResponse(error.code));
+        handleNetlifySubmit(/* data */);
 
         e.preventDefault();
     };
@@ -89,7 +79,7 @@ const Applicationform = ({
         <StyledCTAWrapper>
             <CopyWrapper>
                 <h2>{title}</h2>
-                <p className={response && "transition"}>
+                <p className={sending ? "transition" : undefined}>
                     {response
                         ? response === true
                             ? successCopy ||
@@ -108,26 +98,13 @@ const Applicationform = ({
                 data-netlify="true"
                 netlify-honeypot="bot-field"
             >
-                <input type="hidden" name="form-name" value={name} />
-                <label htmlFor="bot-field" style={{ display: "none" }}>
-                    Don’t fill this out:
-                    <input name="bot-field" />
-                </label>
+                <NetlifyRequiredInputs formName={name} />
 
                 {children}
 
-                {step === pages ? (
-                    <Button
-                        submit
-                        success={response && response.result === "success"}
-                    >
-                        Submit
-                    </Button>
-                ) : (
-                    <Button external next onClick={handleNext}>
-                        Next
-                    </Button>
-                )}
+                <Button submit success={response === true}>
+                    Submit
+                </Button>
 
                 {pages !== 1 && (
                     <p>{step <= pages ? `${step}/${pages}` : ":—)"}</p>

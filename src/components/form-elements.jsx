@@ -45,7 +45,7 @@ const InputWrapper = styled.div`
         position: absolute;
         opacity: 0;
         transition: opacity 0.1s;
-        top: -1.7em;
+        top: -1.75em;
         left: 2px;
     }
 

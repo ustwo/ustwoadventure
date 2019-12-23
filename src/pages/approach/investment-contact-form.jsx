@@ -22,7 +22,7 @@ const CopyWrapper = styled.div`
     grid-column: 2 / 6;
 
     p {
-        transition: all 180ms;
+        transition: all 200ms;
 
         &.transition {
             opacity: 0;
@@ -81,6 +81,8 @@ const InvestmentContactForm = () => {
     };
 
     const handleSubmit = e => {
+        // step === pageCount ? handleSubmit() : handleNext();
+
         const data = {
             "form-name": "investment-contact",
             companyName,
