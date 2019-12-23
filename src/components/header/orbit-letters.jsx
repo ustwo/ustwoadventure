@@ -128,7 +128,9 @@ const OrbitLetters = ({ string = "adventure" }) => {
     //     for (let i = 0; i < orbitLetters.length; i++) {
     //         orbitLetters[i].textContent = string[i];
     //     }
-    //     orbitLetters.forEach(letter => letter.classList.remove("transition"));
+    //     orbitLetters.forEach((letter, i) => {
+    //         letter.classList.remove("transition");
+    //     });
     // }, 200);
 
     const { map } = Array.prototype;

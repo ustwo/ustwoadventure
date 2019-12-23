@@ -3,6 +3,8 @@ import { styled } from "linaria/react";
 
 import MainWrapper from "../components/main-wrapper";
 import Button from "../components/button";
+import SEO from "../components/seo";
+import SectionWrapper from "../components/section-wrapper";
 
 const StyledMain = styled(MainWrapper)`
     h1 {
@@ -22,13 +24,17 @@ const Shruggie = styled.h1``;
 
 const FourOhFour = () => (
     <StyledMain>
-        <h1>Page not found</h1>
+        <SEO />
 
-        <Shruggie>¯\\_(ツ)_/¯</Shruggie>
+        <SectionWrapper style={{ display: "block" }}>
+            <h1>Page not found</h1>
 
-        <Button back href="/">
-            Go home
-        </Button>
+            <Shruggie>¯\\_(ツ)_/¯</Shruggie>
+
+            <Button back href="/">
+                Go home
+            </Button>
+        </SectionWrapper>
     </StyledMain>
 );
 
