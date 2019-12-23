@@ -116,6 +116,8 @@ const StyledLetters = styled.li`
 const OrbitLetters = ({ is404 }) => {
     const [hasLoaded, setHasLoaded] = useState(false);
 
+    // TODO: component rerenders anyway on change without useeffect,
+    // so the letters change and THEN the transitions fire - need to fix.
     const string = is404 ? "404ERROR—" : "ADVENTURE";
     const ulRef = useRef();
     const { map } = Array.prototype;
@@ -123,19 +125,20 @@ const OrbitLetters = ({ is404 }) => {
     useLayoutEffect(() => {
         if (hasLoaded) {
             const newString = is404 ? "404ERROR—" : "ADVENTURE";
-
             const orbitLetters = ulRef.current.querySelectorAll("li");
+
             orbitLetters.forEach((letter, i) => {
-                setTimeout(() => letter.classList.add("transition"), i * 80);
+                setTimeout(
+                    () => letter.classList.add("transition"),
+                    50 + i * 70
+                );
             });
-            setTimeout(() => {
-                orbitLetters.forEach((letter, i) => {
-                    setTimeout(() => {
-                        letter.classList.remove("transition");
-                        orbitLetters[i].textContent = newString[i];
-                    }, i * 80);
-                });
-            }, 300);
+            orbitLetters.forEach((letter, i) => {
+                setTimeout(() => {
+                    letter.classList.remove("transition");
+                    orbitLetters[i].textContent = newString[i];
+                }, 320 + i * 70);
+            });
         } else setHasLoaded(true);
     }, [is404]);
 
