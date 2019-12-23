@@ -41,7 +41,7 @@ const CollectiveGeniusCopy = styled.div`
 
 const mobileButton = css`
     display: none;
-    margin-top: 25px;
+    margin-top: 30px;
     width: 125px;
 
     @media (max-width: 500px) {

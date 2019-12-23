@@ -23,7 +23,11 @@ const OurPortfolioSection = styled(SectionWrapper)`
     }
 
     @media (max-width: 740px) {
-        margin-top: 25px;
+        margin-top: 40px;
+    }
+
+    @media (max-width: 500px) {
+        margin-top: 50px;
     }
 `;
 
@@ -37,7 +41,7 @@ const PortfolioPreviewGridWrapper = styled(PortfolioGridWrapper)`
     position: relative;
 
     @media (max-width: 380px) {
-        margin-top: 25px;
+        margin-top: 40px;
     }
 
     > {

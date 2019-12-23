@@ -14,9 +14,9 @@ const StyledHeader = styled.header`
     justify-content: space-between;
 `;
 
-const Header = () => (
+const Header = ({ is404 }) => (
     <StyledHeader>
-        <OrbitLogo />
+        <OrbitLogo is404={is404} />
         <Nav />
     </StyledHeader>
 );

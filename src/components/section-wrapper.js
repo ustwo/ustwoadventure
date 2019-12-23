@@ -13,7 +13,6 @@ const SectionWrapper = styled.section`
     }
 
     @media (max-width: 500px) {
-        margin: 20px 0;
         grid-column: 1 / -1;
         grid-template-columns: repeat(1, 1fr);
 

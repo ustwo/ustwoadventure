@@ -67,6 +67,7 @@ const FaqStyledDetails = styled.details`
         font-size: 1.16em;
         padding: calc(var(--faqPadding) * 0.82) var(--faqPadding);
         display: flex;
+        flex-wrap: nowrap; /* TODO: fix this on mobile (actual mobile, not devtools) */
         flex-direction: row;
         justify-content: space-between;
         align-items: center;

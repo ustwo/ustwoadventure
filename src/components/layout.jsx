@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext, useState } from "react";
 import { styled } from "linaria/react";
 
 import "../styles/base.css";
@@ -31,14 +31,24 @@ const PageWrapper = styled.div`
     }
 `;
 
-const Layout = ({ children, location }) => (
-    <PageWrapper>
-        <Header />
+export const setIs404Context = createContext(null);
 
-        <TransitionWrapper location={location}>{children}</TransitionWrapper>
+const Layout = ({ children, location }) => {
+    const [is404, setIs404] = useState(false);
 
-        <Footer />
-    </PageWrapper>
-);
+    return (
+        <setIs404Context.Provider value={setIs404}>
+            <PageWrapper>
+                <Header is404={is404} />
+
+                <TransitionWrapper location={location}>
+                    {children}
+                </TransitionWrapper>
+
+                <Footer />
+            </PageWrapper>
+        </setIs404Context.Provider>
+    );
+};
 
 export default Layout;

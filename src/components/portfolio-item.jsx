@@ -98,7 +98,7 @@ const PortfolioPreviewLink = styled.div`
     }
 
     @media (max-width: 380px) {
-        --columnWidth: 60%;
+        --columnWidth: 58%;
         transform: translateX(calc(100% - var(--columnWidth) + var(--offset)));
         width: var(--columnWidth);
 
@@ -107,7 +107,7 @@ const PortfolioPreviewLink = styled.div`
         }
 
         div.image-container img.image {
-            height: calc(215px + 5vw);
+            height: calc(210px + 5vw);
         }
     }
 

@@ -44,6 +44,10 @@ const IntroCopy = styled(TextBlock)`
     @media (max-width: 769px) {
         margin-top: 50px;
     }
+
+    @media (max-width: 600px) {
+        margin-top: 35px;
+    }
 `;
 
 const AboutH3 = styled.h3`
@@ -113,7 +117,7 @@ const TeamMemberWrapper = styled.div`
     }
 
     @media (max-width: 500px) {
-        margin-top: 10px;
+        margin-top: 20px;
         width: 77%;
     }
 

@@ -1,10 +1,11 @@
-import React /* , { createContext, useEffect } */ from "react";
+import React, { useEffect, useContext } from "react";
 import { styled } from "linaria/react";
 
 import MainWrapper from "../components/main-wrapper";
 import Button from "../components/button";
 import SEO from "../components/seo";
 import SectionWrapper from "../components/section-wrapper";
+import { setIs404Context } from "../components/layout";
 
 const StyledMain = styled(MainWrapper)`
     h1 {
@@ -32,16 +33,16 @@ const StyledMain = styled(MainWrapper)`
     }
 `;
 
-// const is404 = createContext(false);
-
 const FourOhFour = () => {
-    // useEffect(() => {
-    //     is404 = true;
+    const setIs404 = useContext(setIs404Context);
 
-    //     return () => {
-    //         is404 = false;
-    //     };
-    // });
+    useEffect(() => {
+        setIs404(true);
+
+        return () => {
+            setIs404(false);
+        };
+    });
 
     return (
         <StyledMain>

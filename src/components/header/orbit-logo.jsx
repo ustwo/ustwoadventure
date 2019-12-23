@@ -52,7 +52,7 @@ const LogoWrapper = styled.div`
     }
 `;
 
-const OrbitLogo = () => {
+const OrbitLogo = ({ is404 }) => {
     const logoRef = useRef();
     let svgEl;
 
@@ -78,7 +78,7 @@ const OrbitLogo = () => {
         <Link to="/">
             <LogoWrapper ref={logoRef}>
                 <UstwoLogo />
-                <OrbitLetters />
+                <OrbitLetters is404={is404} />
             </LogoWrapper>
         </Link>
     );

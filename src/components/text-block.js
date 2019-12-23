@@ -29,7 +29,7 @@ const TextBlock = styled.div`
         grid-column: 3 / 12;
 
         h3 {
-            margin-bottom: 35px;
+            margin-bottom: ${props => (props.largeHeader ? "2.2em" : "35px")};
         }
 
         p {
