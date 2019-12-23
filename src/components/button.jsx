@@ -122,7 +122,7 @@ const Button = ({
         success && "success"
     );
 
-    // TODO: refactor away from so many ternaries???
+    // TODO: refactor away from so many ternaries??
     // let conditionalButtonTag;
     // if (external) {
     //     conditionalButtonTag = (

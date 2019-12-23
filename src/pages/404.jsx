@@ -1,4 +1,4 @@
-import React from "react";
+import React /* , { createContext, useEffect } */ from "react";
 import { styled } from "linaria/react";
 
 import MainWrapper from "../components/main-wrapper";
@@ -32,20 +32,32 @@ const StyledMain = styled(MainWrapper)`
     }
 `;
 
-const FourOhFour = () => (
-    <StyledMain>
-        <SEO />
+// const is404 = createContext(false);
 
-        <SectionWrapper>
-            <h1>Page not found</h1>
+const FourOhFour = () => {
+    // useEffect(() => {
+    //     is404 = true;
 
-            <h1>¯\_(ツ)_/¯</h1>
+    //     return () => {
+    //         is404 = false;
+    //     };
+    // });
 
-            <Button back href="/">
-                Go home
-            </Button>
-        </SectionWrapper>
-    </StyledMain>
-);
+    return (
+        <StyledMain>
+            <SEO />
+
+            <SectionWrapper>
+                <h1>Page not found</h1>
+
+                <h1>¯\_(ツ)_/¯</h1>
+
+                <Button back href="/">
+                    Go home
+                </Button>
+            </SectionWrapper>
+        </StyledMain>
+    );
+};
 
 export default FourOhFour;

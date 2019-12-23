@@ -26,11 +26,15 @@ const orbitLetterChange = string => {
     string = string.length < 9 ? string.padEnd(9, "-") : string.substr(0, 9);
     string = string.toUpperCase();
 
-    orbitLetters.forEach(letter => letter.classList.add("transition"));
+    orbitLetters.forEach((letter, i) => {
+        setTimeout(() => letter.classList.add("transition"), i * 25);
+    });
     setTimeout(() => {
         for (let i = 0; i < orbitLetters.length; i++) {
             orbitLetters[i].textContent = string[i];
         }
-        orbitLetters.forEach(letter => letter.classList.remove("transition"));
+        orbitLetters.forEach((letter, i) => {
+            setTimeout(() => letter.classList.remove("transition"), i * 25);
+        });
     }, 200);
 };
