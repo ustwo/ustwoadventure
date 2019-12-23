@@ -109,7 +109,7 @@ const CollectiveGenius = () => (
 
         <UstwoVideo
             src="https://player.vimeo.com/external/310346824.sd.mp4?s=5907d9389a6114dec39081532a102d4101c32c6d&profile_id=164"
-            poster="images/monument-valley.jpg"
+            poster="monument-valley.jpg"
         />
 
         <Button className={mobileButton} external href="https://ustwo.com">

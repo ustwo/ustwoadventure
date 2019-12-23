@@ -17,6 +17,9 @@ export default () => {
         setSending(true);
         setTimeout(() => setSending(false), 200);
 
+        console.log(data);
+        console.log(encode(data));
+
         fetch("/", {
             method: "POST",
             headers: {
