@@ -88,7 +88,7 @@ const Index = () => (
             description="We invest in companies that prioritise sustainability, inclusivity and deep care, and founders with true heart and ambition."
         />
         <h1>Approach</h1>
-        <SectionWrapper subgrid>
+        <SectionWrapper>
             <TextBlock tight>
                 <h3>
                     We invest £25-75k in early-stage creative companies, and
@@ -108,7 +108,7 @@ const Index = () => (
                 </p>
             </TextBlock>
         </SectionWrapper>
-        <SectionWrapper subgrid>
+        <SectionWrapper>
             <PrinciplesH3>
                 There are six principles that guide our investments:
             </PrinciplesH3>
@@ -123,7 +123,7 @@ const Index = () => (
                 ))}
             </PrincipleFlexContainer>
         </SectionWrapper>
-        <SectionWrapper subgrid>
+        <SectionWrapper>
             <Wideh3>
                 We partner closely with our portfolio — offering our support and
                 guidance beyond investment, to foster growth in a way that works

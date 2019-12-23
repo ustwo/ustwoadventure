@@ -93,7 +93,7 @@ const UstwoVideo = styled(InlineVideo)`
 `;
 
 const CollectiveGenius = () => (
-    <SectionWrapper subgrid>
+    <SectionWrapper>
         <CollectiveGeniusCopy>
             <h2>Collective genius</h2>
             <p>

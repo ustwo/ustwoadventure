@@ -94,6 +94,7 @@ const StyledLetters = styled.li`
     --translateY: calc(-75px - 3.15vw);
 
     transition: opacity 0.2s;
+
     &.transition {
         opacity: 0;
     }

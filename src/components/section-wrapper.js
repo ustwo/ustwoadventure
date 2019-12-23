@@ -3,8 +3,6 @@ import { styled } from "linaria/react";
 const SectionWrapper = styled.section`
     margin: 40px 0;
     display: subgrid;
-    display: ${props =>
-        props.grid || props.subgrid ? "grid" : props.flex ? "flex" : "block"};
 
     @media (max-width: 1025px) {
         margin: 30px 0;

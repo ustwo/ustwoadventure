@@ -1,7 +1,35 @@
 import React from "react";
+import { styled } from "linaria/react";
 
-const FourOhFour = () => {
-    return <h1>hello</h1>;
-};
+import MainWrapper from "../components/main-wrapper";
+import Button from "../components/button";
+
+const StyledMain = styled(MainWrapper)`
+    h1 {
+        margin-bottom: 80px;
+        margin-right: 10%;
+        margin-left: auto;
+        width: max-content;
+    }
+
+    a {
+        margin-left: 10%;
+        margin-bottom: 50px;
+    }
+`;
+
+const Shruggie = styled.h1``;
+
+const FourOhFour = () => (
+    <StyledMain>
+        <h1>Page not found</h1>
+
+        <Shruggie>¯\\_(ツ)_/¯</Shruggie>
+
+        <Button back href="/">
+            Go home
+        </Button>
+    </StyledMain>
+);
 
 export default FourOhFour;

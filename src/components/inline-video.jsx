@@ -29,7 +29,7 @@ const muteToggleStyles = css`
     }
 `;
 
-const InlineVideo = ({ style, className, src, poster, hasSound }) => {
+const InlineVideo = ({ style, className, src, poster, hasSound, controls }) => {
     const [muted, setMute] = useState(true);
 
     const toggleMute = e => {
@@ -50,7 +50,7 @@ const InlineVideo = ({ style, className, src, poster, hasSound }) => {
             onClick={hasSound && toggleMute}
             src={src}
             poster={poster}
-            controls={!muted}
+            controls={!muted || controls}
         />
     );
 };
