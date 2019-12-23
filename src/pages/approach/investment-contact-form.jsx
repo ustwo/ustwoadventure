@@ -49,7 +49,12 @@ const CopyWrapper = styled.div`
 const InvestmentContactForm = () => {
     const pageCount = 1;
 
-    const [sending, response, handleNetlifySubmit] = useNetlifySubmit();
+    const [
+        sending,
+        response,
+        handleNetlifySubmit,
+        NetlifyRequiredInputs
+    ] = useNetlifySubmit();
 
     const [step, setStep] = useState(1);
 
@@ -113,15 +118,7 @@ const InvestmentContactForm = () => {
                 data-netlify="true"
                 netlify-honeypot="bot-field"
             >
-                <input
-                    type="hidden"
-                    name="form-name"
-                    value="investment-contact"
-                />
-                <label htmlFor="bot-field" style={{ display: "none" }}>
-                    Don’t fill this out:
-                    <input name="bot-field" />
-                </label>
+                <NetlifyRequiredInputs formName="investment-contact" />
 
                 <StepWrapper>
                     <Input
