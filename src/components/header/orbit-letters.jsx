@@ -82,7 +82,7 @@ const createLoopLetterStyles = () => {
     return LetterStyleString;
 };
 
-const StyledLetters = styled.li`
+const StyledLetter = styled.li`
     position: absolute;
     top: 50%;
     left: 50%;
@@ -115,28 +115,28 @@ const StyledLetters = styled.li`
 `;
 
 const OrbitLetters = ({ is404 }) => {
+    const emptyLetterArray = Array.from(Array(9));
     const ulRef = useRef();
-    const { map } = Array.prototype;
 
     useLayoutEffect(() => {
         const string = is404 ? "404ERROR—" : "ADVENTURE";
         const orbitLetters = ulRef.current.querySelectorAll("li");
 
         orbitLetters.forEach((letter, i) => {
-            setTimeout(() => letter.classList.add("transition"), i * 120);
+            setTimeout(() => letter.classList.add("transition"), i * 100);
         });
         orbitLetters.forEach((letter, i) => {
             setTimeout(() => {
                 letter.classList.remove("transition");
                 orbitLetters[i].textContent = string[i];
-            }, 280 + i * 120);
+            }, 280 + i * 100);
         });
     }, [is404]);
 
     return (
         <LetterList ref={ulRef}>
-            {map.call("         ", (letter, i) => (
-                <StyledLetters key={i}>{letter}</StyledLetters>
+            {emptyLetterArray.map((_, i) => (
+                <StyledLetter key={`letter ${i + 1}`} />
             ))}
         </LetterList>
     );
