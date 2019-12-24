@@ -119,7 +119,7 @@ const OrbitLetters = ({ is404 }) => {
     const ulRef = useRef();
 
     useLayoutEffect(() => {
-        const string = is404 ? "404ERROR—" : "ADVENTURE";
+        const string = is404 ? "—404ERROR" : "ADVENTURE";
         const orbitLetters = ulRef.current.querySelectorAll("li");
 
         orbitLetters.forEach((letter, i) => {
