@@ -11,7 +11,7 @@ const transitionStyles = {
     entering: {
         position: "absolute",
         opacity: 0,
-        transform: "translateY(4px)"
+        transform: "translateY(5px)"
     },
     entered: {
         transition: `all ${duration}ms ease-out`,
@@ -20,7 +20,7 @@ const transitionStyles = {
     exiting: {
         transition: `all ${duration}ms ease-in`,
         opacity: 0,
-        transform: "translateY(4px)"
+        transform: "translateY(5px)"
     }
 };
 

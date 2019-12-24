@@ -112,7 +112,7 @@ const LatestInvestment = ({ className, style }) => {
 
     return (
         <LatestInvestmentLink
-            onClick={() => setModalIsOpen(true)}
+            onClick={() => !modalIsOpen && setModalIsOpen(true)}
             className={className}
             style={style}
         >
