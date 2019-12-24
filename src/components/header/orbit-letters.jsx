@@ -1,4 +1,4 @@
-import React, { useState, useRef, useLayoutEffect } from "react";
+import React, { useRef, useLayoutEffect } from "react";
 import { styled } from "linaria/react";
 
 const letterCount = 9;
@@ -36,6 +36,8 @@ const createLoopLetterStyles = () => {
                         infinite;
                 }
             `;
+        // TODO: steps to stop fading on webkit - instead of linear
+        //  https://stackoverflow.com/questions/4503195/css3-sprite-animation-without-tweening
     }
 
     for (let i = 8; i <= letterCount; i++) {
@@ -90,8 +92,7 @@ const StyledLetters = styled.li`
     color: var(--piglet);
     -webkit-text-stroke: 0.02em var(--piglet);
     --translateY: calc(-75px - 3.15vw);
-    transition: opacity 200ms;
-    /* TODO: steps to stop fading */
+    transition: opacity 250ms;
 
     &.transition {
         opacity: 0;
@@ -114,37 +115,27 @@ const StyledLetters = styled.li`
 `;
 
 const OrbitLetters = ({ is404 }) => {
-    const [hasLoaded, setHasLoaded] = useState(false);
-
-    // TODO: component rerenders anyway on change without useeffect,
-    // so the letters change and THEN the transitions fire - need to fix.
-    const string = is404 ? "404ERROR—" : "ADVENTURE";
     const ulRef = useRef();
     const { map } = Array.prototype;
 
     useLayoutEffect(() => {
-        if (hasLoaded) {
-            const newString = is404 ? "404ERROR—" : "ADVENTURE";
-            const orbitLetters = ulRef.current.querySelectorAll("li");
+        const string = is404 ? "404ERROR—" : "ADVENTURE";
+        const orbitLetters = ulRef.current.querySelectorAll("li");
 
-            orbitLetters.forEach((letter, i) => {
-                setTimeout(
-                    () => letter.classList.add("transition"),
-                    50 + i * 70
-                );
-            });
-            orbitLetters.forEach((letter, i) => {
-                setTimeout(() => {
-                    letter.classList.remove("transition");
-                    orbitLetters[i].textContent = newString[i];
-                }, 320 + i * 70);
-            });
-        } else setHasLoaded(true);
+        orbitLetters.forEach((letter, i) => {
+            setTimeout(() => letter.classList.add("transition"), i * 120);
+        });
+        orbitLetters.forEach((letter, i) => {
+            setTimeout(() => {
+                letter.classList.remove("transition");
+                orbitLetters[i].textContent = string[i];
+            }, 280 + i * 120);
+        });
     }, [is404]);
 
     return (
         <LetterList ref={ulRef}>
-            {map.call(string, (letter, i) => (
+            {map.call("         ", (letter, i) => (
                 <StyledLetters key={i}>{letter}</StyledLetters>
             ))}
         </LetterList>

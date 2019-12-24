@@ -38,10 +38,7 @@ const FourOhFour = () => {
 
     useEffect(() => {
         setIs404(true);
-
-        return () => {
-            setIs404(false);
-        };
+        return () => setIs404(false);
     });
 
     return (
