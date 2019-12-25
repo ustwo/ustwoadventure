@@ -110,7 +110,7 @@ const StyledLetter = styled.li`
     }
 
     @media (max-width: 500px) {
-        font-size: calc(2.5em + 0.2vw);
+        font-size: calc(2.45em + 0.5vw);
         --translateY: calc(-75px - 1.2vw);
     }
 `;
