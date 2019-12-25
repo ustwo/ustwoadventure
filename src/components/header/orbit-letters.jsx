@@ -92,7 +92,7 @@ const StyledLetter = styled.li`
     font-weight: bold;
     color: var(--piglet);
     -webkit-text-stroke: 0.02em var(--piglet);
-    transition: opacity 250ms;
+    transition: opacity 240ms;
 
     &.transition {
         opacity: 0;
@@ -120,17 +120,17 @@ const OrbitLetters = ({ is404 }) => {
     const ulRef = useRef();
 
     useLayoutEffect(() => {
-        const string = is404 ? "—404ERROR" : "ADVENTURE";
+        const string = is404 ? "404ERROR—" : "ADVENTURE";
         const orbitLetters = ulRef.current.querySelectorAll("li");
 
         orbitLetters.forEach((letter, i) => {
-            setTimeout(() => letter.classList.add("transition"), i * 100);
+            setTimeout(() => letter.classList.add("transition"), i * 160);
         });
         orbitLetters.forEach((letter, i) => {
             setTimeout(() => {
                 letter.classList.remove("transition");
                 orbitLetters[i].textContent = string[i];
-            }, 280 + i * 100);
+            }, 300 + i * 160);
         });
     }, [is404]);
 
