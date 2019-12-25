@@ -83,15 +83,15 @@ const createLoopLetterStyles = () => {
 };
 
 const StyledLetter = styled.li`
+    font-family: var(--futuraBold);
+    --translateY: calc(-75px - 3.15vw);
     position: absolute;
     top: 50%;
     left: 50%;
-    font-family: var(--futuraBold);
     font-size: calc(2.5em + 0.7vw);
     font-weight: bold;
     color: var(--piglet);
     -webkit-text-stroke: 0.02em var(--piglet);
-    --translateY: calc(-75px - 3.15vw);
     transition: opacity 250ms;
 
     &.transition {
@@ -110,7 +110,8 @@ const StyledLetter = styled.li`
     }
 
     @media (max-width: 500px) {
-        --translateY: calc(-75px - 1.4vw);
+        font-size: calc(2.5em + 0.2vw);
+        --translateY: calc(-75px - 1.2vw);
     }
 `;
 
