@@ -135,6 +135,9 @@ const PortfolioItem = ({
     // Problem is because of static html that's rendered (can see in page source)
     // but the image won't be replaced on refresh?
     // Maybe make adding to the dom an async or onLoad function?
+    // https://github.com/gatsbyjs/gatsby/issues/8707
+    // https://stackoverflow.com/questions/52959147/gatsby-static-dynamic-hybrid-component
+    // Suspense or dynamic import don't work
     const [modalIsOpen, setModalIsOpen] = useModal();
 
     return (

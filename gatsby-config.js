@@ -4,7 +4,7 @@ module.exports = {
         siteTitle: "ustwo Adventure",
         siteDescription:
             "Investing in creative companies, Differently — We help founders build businesses on top of strong culture, values and design.",
-        image: "https://adventure.ustwo.com/static/meta_image.png",
+        siteImage: "https://adventure.ustwo.com/static/meta_image.png",
         twitter: "@ustwoadventure",
         name: "ustwo Adventure"
     },

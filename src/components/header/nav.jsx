@@ -26,7 +26,7 @@ const StyledNav = styled.nav`
             margin-left: 50px;
         }
 
-        @media (max-width: 580px) {
+        @media (max-width: 830px) {
             --hitBoxPadding: 0.1em;
             display: block;
             margin: -0.1em 0;
@@ -43,7 +43,7 @@ const Nav = () => (
     <StyledNav>
         <Link to="/approach">Approach</Link>
         <Link to="/portfolio">Portfolio</Link>
-        {/* <Link to="/first-mile">First Mile</Link> */}
+        <Link to="/first-mile">First Mile</Link>
         <Link to="/about">About</Link>
     </StyledNav>
 );

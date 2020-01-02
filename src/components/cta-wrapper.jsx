@@ -46,7 +46,7 @@ const CTAInner = styled.div`
         width: 85%;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 540px) {
         width: 100%;
     }
 `;

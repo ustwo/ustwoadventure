@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "ustwo, neef@ustwo.com",
   "dependencies": {
-    "gatsby": "^2.18.5",
+    "gatsby": "^2.18.17",
     "gatsby-cli": "^2.8.18",
     "gatsby-image": "^2.2.33",
     "gatsby-plugin-canonical-urls": "^2.1.15",
@@ -42,14 +42,14 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
-    "eslint": "^6.7.1",
+    "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-loader": "^3.0.2",
-    "eslint-plugin-import": "^2.18.2",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
     "gatsby-plugin-eslint": "^2.0.8",
     "prettier": "^1.19.1"
   }

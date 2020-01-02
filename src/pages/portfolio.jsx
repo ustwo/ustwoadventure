@@ -44,31 +44,33 @@ const FullPortfolioGridBackground = styled(PortfolioGridBackground)`
 
 const shuffledPortfolioArrayCopy = shuffle(portfolioArray.slice());
 
-const Portfolio = () => (
-    <MainWrapper>
-        <SEO
-            title="Portfolio"
-            description="Our family of companies. ustwo Adventure invests in creative companies, differently."
-        />
+const Portfolio = () => {
+    return (
+        <MainWrapper>
+            <SEO
+                title="Portfolio"
+                description="Our family of companies. ustwo Adventure invests in creative companies, differently."
+            />
 
-        <PortfolioPageHeader>Our family of companies</PortfolioPageHeader>
+            <PortfolioPageHeader>Our family of companies</PortfolioPageHeader>
 
-        <StyledPortfolioGridWrapper>
-            {shuffledPortfolioArrayCopy.map(company => (
-                <PortfolioItem
-                    key={company.name}
-                    name={company.name}
-                    oneLiner={company.oneLiner}
-                    url={company.url}
-                    tidyUrl={company.tidyurl}
-                    description={company.copy}
-                    image={company.image}
-                    logo={company.logo}
-                />
-            ))}
-            <FullPortfolioGridBackground />
-        </StyledPortfolioGridWrapper>
-    </MainWrapper>
-);
+            <StyledPortfolioGridWrapper>
+                {shuffledPortfolioArrayCopy.map(company => (
+                    <PortfolioItem
+                        key={company.name}
+                        name={company.name}
+                        oneLiner={company.oneLiner}
+                        url={company.url}
+                        tidyUrl={company.tidyurl}
+                        description={company.copy}
+                        image={company.image}
+                        logo={company.logo}
+                    />
+                ))}
+                <FullPortfolioGridBackground />
+            </StyledPortfolioGridWrapper>
+        </MainWrapper>
+    );
+};
 
 export default Portfolio;

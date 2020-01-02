@@ -38,5 +38,5 @@ export default () => {
         </>
     );
 
-    return [sending, response, handleNetlifySubmit, NetlifyRequiredInputs];
+    return { sending, response, handleNetlifySubmit, NetlifyRequiredInputs };
 };

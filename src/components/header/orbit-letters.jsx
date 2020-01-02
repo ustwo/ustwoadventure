@@ -1,4 +1,4 @@
-import React, { useRef, useLayoutEffect } from "react";
+import React, { useRef, useLayoutEffect, useState } from "react";
 import { styled } from "linaria/react";
 
 const letterCount = 9;
@@ -92,7 +92,7 @@ const StyledLetter = styled.li`
     font-weight: bold;
     color: var(--piglet);
     -webkit-text-stroke: 0.02em var(--piglet);
-    transition: opacity 240ms;
+    transition: opacity 250ms;
 
     &.transition {
         opacity: 0;
@@ -116,6 +116,8 @@ const StyledLetter = styled.li`
 `;
 
 const OrbitLetters = ({ is404 }) => {
+    const [didMount, setDidMount] = useState(false);
+
     const emptyLetterArray = Array.from(Array(9));
     const ulRef = useRef();
 
@@ -123,15 +125,22 @@ const OrbitLetters = ({ is404 }) => {
         const string = is404 ? "404ERROR—" : "ADVENTURE";
         const orbitLetters = ulRef.current.querySelectorAll("li");
 
-        orbitLetters.forEach((letter, i) => {
-            setTimeout(() => letter.classList.add("transition"), i * 160);
-        });
-        orbitLetters.forEach((letter, i) => {
-            setTimeout(() => {
-                letter.classList.remove("transition");
-                orbitLetters[i].textContent = string[i];
-            }, 300 + i * 160);
-        });
+        if (didMount) {
+            orbitLetters.forEach((letter, i) => {
+                setTimeout(() => letter.classList.add("transition"), i * 140);
+            });
+            orbitLetters.forEach((letter, i) => {
+                setTimeout(() => {
+                    letter.classList.remove("transition");
+                    orbitLetters[i].textContent = string[i];
+                }, 300 + i * 140);
+            });
+        } else {
+            orbitLetters.forEach((_, i) => {
+                orbitLetters[i].textContent = string[i]; // TODO: Make happen on initial 404 page load
+            });
+            setDidMount(true);
+        }
     }, [is404]);
 
     return (

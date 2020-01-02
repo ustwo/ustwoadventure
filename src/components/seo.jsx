@@ -3,18 +3,19 @@ import { Helmet } from "react-helmet";
 
 import useSiteMetadata from "../hooks/use-site-metadata";
 
-const SEO = ({ title, description }) => {
+const SEO = ({ title, description, image }) => {
     const {
         siteUrl,
         siteTitle,
         siteDescription,
-        image,
+        siteImage,
         twitter,
         name
     } = useSiteMetadata();
 
     const pageTitle = title ? `${title} — ${siteTitle}` : siteTitle;
     const pageDescription = description || siteDescription;
+    const pageImage = image || siteImage;
 
     return (
         <Helmet>
@@ -33,14 +34,14 @@ const SEO = ({ title, description }) => {
             <meta property="og:description" content={pageDescription} />
             <meta property="og:url" content={siteUrl} />
             <meta property="og:type" content="website" />
-            <meta property="og:image" content={image} />
+            <meta property="og:image" content={pageImage} />
 
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content={twitter} />
             <meta name="twitter:creator" content={twitter} />
             <meta name="twitter:title" content={pageTitle} />
             <meta name="twitter:description" content={pageDescription} />
-            <meta name="twitter:image" content={image} />
+            <meta name="twitter:image" content={pageImage} />
 
             <link rel="preconnect" src="https://use.typekit.net" />
             <link rel="stylesheet" href="https://use.typekit.net/hoo6hst.css" />

@@ -46,7 +46,7 @@ const CopyWrapper = styled.div`
     }
 `;
 
-const InvestmentContactForm = () => {
+const FirstMileApplicationForm = () => {
     const formName = "investment-contact";
     const pageCount = 2;
 
@@ -213,4 +213,4 @@ const InvestmentContactForm = () => {
     );
 };
 
-export default InvestmentContactForm;
+export default FirstMileApplicationForm;

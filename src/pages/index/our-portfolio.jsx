@@ -12,7 +12,7 @@ import {
 import PortfolioItem from "../../components/portfolio-item";
 
 const OurPortfolioSection = styled(SectionWrapper)`
-    margin-top: -100px;
+    margin-top: 0; /* was -100px */
 
     @media (max-width: 925px) {
         margin-top: -80px;

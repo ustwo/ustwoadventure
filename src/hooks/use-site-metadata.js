@@ -9,7 +9,7 @@ export default () => {
                         siteUrl
                         siteTitle
                         siteDescription
-                        image
+                        siteImage
                         twitter
                         name
                     }

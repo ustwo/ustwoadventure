@@ -5,6 +5,7 @@ import ModalDetails from "./details";
 import ModalImage from "./image";
 import { plus } from "../../assets/inline-icons";
 import { ModalContainer, ModalBackground } from "./container";
+import kebabCase from "../../utils/kebab-case";
 
 const CloseModalButton = styled.a`
     position: absolute;
@@ -73,19 +74,6 @@ const ModalWrapper = styled.div`
         bottom: 0;
         left: 0;
     }
-
-    &#modal-seed-and-spark > div > div > h2 {
-        font-size: calc(var(--h2FontSize) * 0.87);
-        @media (max-width: 880px) {
-            font-size: calc(var(--h2FontSize) * 0.8);
-        }
-        @media (max-width: 697px) {
-            font-size: calc(var(--h2FontSize) * 0.72);
-        }
-        @media (max-width: 640px) {
-            font-size: calc(var(--h2FontSize) * 0.96);
-        }
-    }
 `;
 
 const ModalInner = styled.div`
@@ -136,7 +124,10 @@ const Modal = ({
     }, [isOpen]);
 
     return (
-        <ModalContainer className={isOpen && "show"}>
+        <ModalContainer
+            id={`modal-${kebabCase(name)}`}
+            className={isOpen && "show"}
+        >
             <ModalBackground onClick={handleClose} />
             <ModalWrapper>
                 <ModalInner>

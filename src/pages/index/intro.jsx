@@ -4,6 +4,7 @@ import { styled } from "linaria/react";
 import SectionWrapper from "../../components/section-wrapper";
 import LatestInvestment from "./latest-investment";
 import Button from "../../components/button";
+import HomePageCTA from "./home-page-cta";
 
 const StyledIntroCopy = styled.div`
     grid-column: 1 / 7;
@@ -78,6 +79,8 @@ const Intro = () => {
             </StyledIntroCopy>
 
             <LatestInvestmentElement />
+
+            <HomePageCTA />
         </SectionWrapper>
     );
 };

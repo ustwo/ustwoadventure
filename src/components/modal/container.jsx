@@ -22,6 +22,19 @@ export const ModalContainer = styled.div`
     &.show {
         display: block;
     }
+
+    &#modal-seed-and-spark > div > div > div > h2 {
+        font-size: calc(var(--h2FontSize) * 0.87);
+        @media (max-width: 880px) {
+            font-size: calc(var(--h2FontSize) * 0.8);
+        }
+        @media (max-width: 697px) {
+            font-size: calc(var(--h2FontSize) * 0.72);
+        }
+        @media (max-width: 640px) {
+            font-size: calc(var(--h2FontSize) * 0.96);
+        }
+    }
 `;
 
 export const ModalBackground = styled.div`

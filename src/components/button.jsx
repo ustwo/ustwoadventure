@@ -66,8 +66,7 @@ const StyledButton = css`
         }
     }
 
-    &.submit,
-    &.next {
+    &.white {
         border: none;
         background-color: #ffffff;
         padding-top: 12px;
@@ -87,6 +86,11 @@ const StyledButton = css`
                 background-position: calc(100% - 14px) 50%;
             }
         }
+    }
+
+    &[disabled] {
+        pointer-events: none;
+        background-color: var(--nonWhite);
     }
 
     @media (max-width: 1025px) {
@@ -110,7 +114,9 @@ const Button = ({
     href,
     submit,
     success,
-    next
+    next,
+    white,
+    disabled
 }) => {
     const classes = cx(
         StyledButton,
@@ -119,10 +125,10 @@ const Button = ({
         back && "back",
         submit && "submit",
         next && "next",
-        success && "success"
+        success && "success",
+        white && "white"
     );
 
-    // TODO: refactor away from so many ternaries??
     // let conditionalButtonTag;
     // if (external) {
     //     conditionalButtonTag = (
@@ -164,6 +170,7 @@ const Button = ({
             style={style}
             type="submit"
             value={children}
+            disabled={disabled}
         />
     ) : (
         <Link className={classes} style={style} to={href}>

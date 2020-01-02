@@ -81,7 +81,6 @@ const NewsletterSubscribe = () => {
     const [response, setResponse] = useState();
 
     const handleSubmit = async e => {
-        console.log(email);
         e.preventDefault();
         setSending(true);
         const serverResponse = await addToMailchimp(email);
@@ -117,6 +116,7 @@ const NewsletterSubscribe = () => {
                     handleChange={e => setEmail(e.target.value)}
                 />
                 <Button
+                    white
                     submit
                     success={response && response.result === "success"}
                 >
