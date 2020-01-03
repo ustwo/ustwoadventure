@@ -22,6 +22,28 @@ const ApproachPage = styled(MainWrapper)`
     ${SectionWrapper} {
         margin: 60px 0;
     }
+
+    @media (max-width: 880px) {
+        ${TextBlock} {
+            grid-column-start: 4;
+        }
+
+        ${SectionWrapper} {
+            margin: 40px 0;
+        }
+    }
+
+    @media (max-width: 769px) {
+        ${TextBlock} {
+            grid-column-start: 3;
+        }
+    }
+
+    @media (max-width: 600px) {
+        ${TextBlock} {
+            grid-column-start: 1;
+        }
+    }
 `;
 
 const MainIllustration = styled.img`
@@ -29,6 +51,14 @@ const MainIllustration = styled.img`
     width: 100%;
     margin: 20px 0;
     background-color: #7ea8d9;
+
+    @media (max-width: 769px) {
+        grid-column: 1 / -1;
+    }
+
+    @media (max-width: 680px) {
+        margin: 0;
+    }
 `;
 
 const IntroSection = styled(SectionWrapper)`
@@ -54,6 +84,19 @@ const DetailsSection = styled(SectionWrapper)`
                 margin-top: 70px;
             }
         }
+
+        @media (max-width: 1025px) {
+            grid-column-start: 5;
+            grid-column-end: -1;
+        }
+
+        @media (max-width: 769px) {
+            grid-column-start: 3;
+        }
+
+        @media (max-width: 650px) {
+            grid-column-start: 1;
+        }
     }
 
     ul {
@@ -65,6 +108,31 @@ const DetailsSection = styled(SectionWrapper)`
         li {
             line-height: 1.5;
         }
+
+        @media (max-width: 520px) {
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 1.2em;
+        }
+    }
+
+    @media (max-width: 769px) {
+        img {
+            grid-column: 1 / 6;
+            margin-bottom: 40px;
+        }
+    }
+
+    @media (max-width: 580px) {
+        img {
+            grid-column: 1 / 8;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        img {
+            width: 66%;
+        }
     }
 `;
 
@@ -73,6 +141,20 @@ const MoreInfoSection = styled(SectionWrapper)`
         grid-column: 1 / 4;
         width: 100%;
         margin-bottom: 50px;
+
+        @media (max-width: 769px) {
+            grid-column: 1 / 5;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 580px) {
+            grid-column: 1 / 6;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 500px) {
+            width: 33%;
+        }
     }
 `;
 
@@ -125,7 +207,7 @@ const Index = () => (
                     <li>12 months of guided support</li>
                     <li>A £10,000 stipend</li>
                     <li>An additional £5,000 of services</li>
-                    <li>Part-time hotdesking space in our London studio</li>
+                    <li>Hotdesking space in our London studio</li>
                     <li>A structured mentorship program</li>
                     <li>More...</li>
                 </ul>
@@ -135,7 +217,7 @@ const Index = () => (
                     <li>First-time founder</li>
                     <li>Have a limited company set up in the UK</li>
                     <li>An additional £5,000 of services</li>
-                    <li>Part-time hotdesking space in our London studio</li>
+                    <li>Hotdesking space in our London studio</li>
                 </ul>
             </TextBlock>
         </DetailsSection>

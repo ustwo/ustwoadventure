@@ -115,6 +115,7 @@ const InputWrapper = styled.div`
 
     textarea {
         height: 11em;
+        resize: none;
     }
 
     input.invalid,

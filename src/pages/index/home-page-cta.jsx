@@ -7,7 +7,7 @@ import ForwardsArrow from "../../assets/forwards-arrow";
 
 const linkStyles = css`
     grid-column: 2 / 12;
-    margin: 70px 0;
+    margin: 70px 0 60px 0;
     background-color: var(--nonBlack);
     box-shadow: var(--card-shadow);
     border-radius: 3px;
@@ -102,9 +102,21 @@ const linkStyles = css`
     }
 
     @media (max-width: 769px) {
-        margin: 60px 0 40px 0;
+        margin: 70px 0 40px 0;
 
         div.wrapper {
+            height: 190px;
+
+            div h2 {
+                font-size: 1.333em;
+            }
+        }
+    }
+
+    @media (max-width: 715px) {
+        div.wrapper {
+            height: 180px;
+
             div h2 {
                 font-size: 1.333em;
             }

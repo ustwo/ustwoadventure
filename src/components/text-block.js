@@ -13,7 +13,7 @@ const TextBlock = styled.div`
         margin-bottom: 0.84em;
     }
 
-    p {
+    p:not(:last-child) {
         margin-bottom: ${props => (props.tight ? "1.7em" : "2.4em")};
     }
 

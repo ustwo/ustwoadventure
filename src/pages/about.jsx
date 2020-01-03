@@ -58,6 +58,10 @@ const AboutH3 = styled.h3`
     line-height: 140%;
     margin-top: -0.1em;
 
+    @media (max-width: 1024px) {
+        font-size: 1.8em;
+    }
+
     @media (max-width: 769px) {
         font-size: 1.7em;
     }
@@ -99,7 +103,7 @@ const TeamMemberWrapper = styled.div`
 
     @media (max-width: 680px) {
         margin-top: 0;
-        grid-column: 4 / 11;
+        grid-column: 5 / 12;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -175,7 +179,7 @@ const AboutUstwoCopy = styled.div`
         margin-top: 0;
     }
 
-    @media (max-width: 540px) {
+    @media (max-width: 570px) {
         grid-column: 1 / -1;
     }
 `;
