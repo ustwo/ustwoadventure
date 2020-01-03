@@ -8,6 +8,9 @@ import InlineVideo from "../components/inline-video";
 import SectionWrapper from "../components/section-wrapper";
 import Button from "../components/button";
 
+import justinPhoto from "../assets/about/justin.jpg";
+import neefPhoto from "../assets/about/neef.jpg";
+
 const StyledAboutPage = styled(MainWrapper)`
     h1:first-of-type {
         grid-column: 1 / 4;
@@ -243,12 +246,13 @@ const Portfolio = () => (
             <TeamMemberWrapper>
                 <TeamMember>
                     <p>Justin</p>
-                    <img src="/justin.jpg" alt="Justin Michaels headshot" />
+                    <img src={justinPhoto} alt="Justin Michaels headshot" />
                     <p>Adventure Director</p>
                 </TeamMember>
+
                 <TeamMember>
                     <p>Neef</p>
-                    <img src="/neef.jpg" alt="Neef Rehman headshot" />
+                    <img src={neefPhoto} alt="Neef Rehman headshot" />
                     <p>Designer & web developer</p>
                 </TeamMember>
             </TeamMemberWrapper>
@@ -270,6 +274,7 @@ const Portfolio = () => (
                     markets, created an award-winning games studio, and launched
                     Adventure to support other creative businesses.
                 </p>
+
                 <Button external href="https://ustwo.com">
                     ustwo.com
                 </Button>

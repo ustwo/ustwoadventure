@@ -27,7 +27,7 @@ const ApproachPage = styled(MainWrapper)`
 const MainIllustration = styled.img`
     grid-column: 3 / -1;
     width: 100%;
-    margin-bottom: 20px;
+    margin: 20px 0;
     background-color: #7ea8d9;
 `;
 
@@ -47,8 +47,12 @@ const DetailsSection = styled(SectionWrapper)`
     ${TextBlock} {
         grid-column-start: 6;
 
-        h3:not(:first-child) {
-            margin-top: 80px;
+        h3 {
+            margin-bottom: 40px;
+
+            &:not(:first-child) {
+                margin-top: 70px;
+            }
         }
     }
 
