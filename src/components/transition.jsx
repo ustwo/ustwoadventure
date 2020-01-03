@@ -24,8 +24,6 @@ const transitionStyles = {
     }
 };
 
-// Repeated here as well as in Layout as inheriting the grid so many times causes perf issues
-// TODO: maybe remove and go back to subgrid once it has better support
 const pageGrid = css`
     display: grid;
     grid-column: 1 / -1;

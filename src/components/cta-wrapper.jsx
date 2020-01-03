@@ -6,6 +6,7 @@ import SectionWrapper from "./section-wrapper";
 const CTABackground = styled(SectionWrapper)`
     background-color: var(--piglet);
     box-shadow: var(--card-shadow);
+    border-radius: 1px;
 
     --side-margin: -1.2em;
     margin-left: var(--side-margin);

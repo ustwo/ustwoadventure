@@ -37,7 +37,7 @@ const createLoopLetterStyles = () => {
                 }
             `;
         // TODO: steps to stop fading on webkit - instead of linear
-        //  https://stackoverflow.com/questions/4503195/css3-sprite-animation-without-tweening
+        // https://stackoverflow.com/questions/4503195/css3-sprite-animation-without-tweening
     }
 
     for (let i = 8; i <= letterCount; i++) {
@@ -138,7 +138,7 @@ const OrbitLetters = ({ is404 }) => {
             });
         } else {
             orbitLetters.forEach((_, i) => {
-                orbitLetters[i].textContent = string[i]; // TODO: Make happen on initial 404 page load
+                orbitLetters[i].textContent = string[i];
             });
             setDidMount(true);
         }
