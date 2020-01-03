@@ -88,6 +88,7 @@ const Index = () => (
             description="We invest in companies that prioritise sustainability, inclusivity and deep care, and founders with true heart and ambition."
         />
         <h1>Approach</h1>
+
         <SectionWrapper>
             <TextBlock tight>
                 <h3>
@@ -108,10 +109,12 @@ const Index = () => (
                 </p>
             </TextBlock>
         </SectionWrapper>
+
         <SectionWrapper>
             <PrinciplesH3>
                 There are six principles that guide our investments:
             </PrinciplesH3>
+
             <PrincipleFlexContainer>
                 {principleContent.map((principle, i) => (
                     <PrincipleElement
@@ -123,12 +126,14 @@ const Index = () => (
                 ))}
             </PrincipleFlexContainer>
         </SectionWrapper>
+
         <SectionWrapper>
             <Wideh3>
                 We partner closely with our portfolio — offering our support and
                 guidance beyond investment, to foster growth in a way that works
                 for them.
             </Wideh3>
+
             <TextBlock>
                 <b>A belief factory</b>
                 <p>

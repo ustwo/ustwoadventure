@@ -38,5 +38,13 @@ export default () => {
         </>
     );
 
-    return { sending, response, handleNetlifySubmit, NetlifyRequiredInputs };
+    const errorCopy = `Looks like there has been a ${response} server error when sending the form. Sorry! Please try again, or email us at hello.adventure@ustwo.com.`;
+
+    return {
+        sending,
+        response,
+        handleNetlifySubmit,
+        NetlifyRequiredInputs,
+        errorCopy
+    };
 };

@@ -32,6 +32,7 @@ const StyledButton = css`
 
     &.internal,
     &.submit {
+        margin-top: 0;
         background-image: url(${arrow});
         background-size: 15px auto;
         background-position: calc(100% - 14px) 50%;
@@ -128,31 +129,6 @@ const Button = ({
         success && "success",
         white && "white"
     );
-
-    // let conditionalButtonTag;
-    // if (external) {
-    //     conditionalButtonTag = (
-    //         <a
-    //             className={classes}
-    //             href={href}
-    //             target="_blank"
-    //             rel="noopener noreferrer"
-    //         >
-    //             {children}
-    //         </a>
-    //     );
-    // } else if (submit) {
-    //     conditionalButtonTag = (
-    //         <input className={classes} type="submit" value={children} />
-    //     );
-    // } else {
-    //     conditionalButtonTag = (
-    //         <Link className={classes} to={href}>
-    //             {children}
-    //         </Link>
-    //     );
-    // }
-    // return { conditionalButtonTag };
 
     return external ? (
         <a

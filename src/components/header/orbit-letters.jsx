@@ -117,6 +117,7 @@ const StyledLetter = styled.li`
 
 const OrbitLetters = ({ is404 }) => {
     const [didMount, setDidMount] = useState(false);
+    const [previousString, setPreviousString] = useState();
 
     const emptyLetterArray = Array.from(Array(9));
     const ulRef = useRef();
@@ -125,7 +126,7 @@ const OrbitLetters = ({ is404 }) => {
         const string = is404 ? "404ERROR—" : "ADVENTURE";
         const orbitLetters = ulRef.current.querySelectorAll("li");
 
-        if (didMount) {
+        if (didMount && string !== previousString) {
             orbitLetters.forEach((letter, i) => {
                 setTimeout(() => letter.classList.add("transition"), i * 140);
             });
@@ -141,6 +142,7 @@ const OrbitLetters = ({ is404 }) => {
             });
             setDidMount(true);
         }
+        setPreviousString(string);
     }, [is404]);
 
     return (

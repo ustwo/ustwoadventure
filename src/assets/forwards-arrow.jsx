@@ -1,7 +1,12 @@
 import React from "react";
 
-const ForwardsArrow = ({ fill = "#ffffff" }) => (
-    <svg viewBox="0 0 32 26" xmlns="http://www.w3.org/2000/svg">
+const ForwardsArrow = ({ style, className, fill = "#ffffff" }) => (
+    <svg
+        style={style}
+        className={className}
+        viewBox="0 0 32 26"
+        xmlns="http://www.w3.org/2000/svg"
+    >
         <rect fill={fill} x="0" y="11" width="28" height="4" />
         <polygon
             fill={fill}

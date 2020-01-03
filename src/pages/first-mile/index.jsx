@@ -6,75 +6,69 @@ import SectionWrapper from "../../components/section-wrapper";
 import MainWrapper from "../../components/main-wrapper";
 import TextBlock from "../../components/text-block";
 import FaqSection from "../../components/faqs";
-import faqContent from "../../data/approach-faqs";
+import faqContent from "../../data/first-mile-faqs";
+import FirstMileApplicationForm from "./first-mile-application-form";
+
+import mainIllustration from "../../assets/first-mile/main.png";
+// import startIllustration from "../../assets/first-mile/start.png";
+import jumpIllustration from "../../assets/first-mile/jump.png";
+import batonIllustration from "../../assets/first-mile/baton.png";
 
 const ApproachPage = styled(MainWrapper)`
     h1 {
         grid-column: 1 / -1;
     }
-`;
 
-const PrinciplesH3 = styled.h3`
-    grid-column: 2 / 5;
-
-    @media (max-width: 1100px) {
-        grid-column: 2 / 7;
-    }
-
-    @media (max-width: 845px) {
-        grid-column: 1 / 6;
-        margin-bottom: 15px;
-    }
-
-    @media (max-width: 645px) {
-        grid-column: 1 / 8;
-    }
-
-    @media (max-width: 580px) {
-        grid-column: 1 / 10;
+    ${SectionWrapper} {
+        margin: 60px 0;
     }
 `;
 
-const PrincipleFlexContainer = styled.ol`
-    margin: 40px auto -20px auto;
-    max-width: 1050px;
-    grid-column: 1 / -1;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
+const MainIllustration = styled.img`
+    grid-column: 3 / -1;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #7ea8d9;
+`;
 
-    @media (max-width: 890px) {
-        justify-content: space-around;
-    }
-
-    @media (max-width: 500px) {
-        margin-top: 20px;
+const IntroSection = styled(SectionWrapper)`
+    ${TextBlock} p:last-child {
+        margin-bottom: 0;
     }
 `;
 
-const Wideh3 = styled.h3`
-    grid-column: 2 / 11;
-    margin-bottom: 80px;
-
-    @media (max-width: 1025px) {
-        grid-column: 2 / -1;
-        margin-bottom: 70px;
-    }
-
-    @media (max-width: 845px) {
-        grid-column: 1 / -1;
-        margin-bottom: 60px;
-    }
-
-    @media (max-width: 769px) {
+const DetailsSection = styled(SectionWrapper)`
+    img {
+        grid-column: 1 / 5;
+        width: 100%;
         margin-bottom: 50px;
     }
 
-    @media (max-width: 635px) {
-        margin-top: 30px;
-        margin-bottom: 40px;
+    ${TextBlock} {
+        grid-column-start: 6;
+
+        h3:not(:first-child) {
+            margin-top: 80px;
+        }
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: var(--column-gap);
+        row-gap: 1.4em;
+
+        li {
+            line-height: 1.5;
+        }
+    }
+`;
+
+const MoreInfoSection = styled(SectionWrapper)`
+    img {
+        grid-column: 1 / 4;
+        width: 100%;
+        margin-bottom: 50px;
     }
 `;
 
@@ -82,66 +76,97 @@ const Index = () => (
     <ApproachPage>
         <SEO
             title="First Mile"
-            description="We invest in companies that prioritise sustainability, inclusivity and deep care, and founders with true heart and ambition." // TODO: description
+            description="A program for the next generation of founders who are building businesses that have creativity and culture at their core."
             image="https://adventure.ustwo.com/meta_first_mile_image.png"
         />
+
         <h1>First Mile</h1>
-        <SectionWrapper>
-            <TextBlock tight>
+
+        <MainIllustration
+            src={mainIllustration}
+            alt="An illustration of a race start line, with various animals running together"
+        />
+
+        <IntroSection>
+            <TextBlock>
                 <h3>
-                    We invest £25-75k in early-stage creative companies, and
-                    support them with our experience and network.
+                    A program for the next generation of founders who are
+                    building businesses that have creativity and culture at
+                    their core.
                 </h3>
 
                 <p>
-                    In ustwo’s 15 years, we’ve learned that there is no single
-                    path to success. But there are things that make a difference
-                    in the end. Above all, we know that authenticity and values
-                    matter.
+                    We want to enable a new wave of leaders who understand the
+                    power of design, culture and long-term thinking, and equip
+                    them with the belief, network and resources to build the
+                    foundations of great businesses.
                 </p>
 
                 <p>
-                    Adventure is our platform for backing founders and teams who
-                    understand this, and helping them on their journey.
+                    First Mile is a 12-month program for first-time founders,
+                    we’ve designed it to focus on...
                 </p>
             </TextBlock>
-        </SectionWrapper>
-        <SectionWrapper>
-            <PrinciplesH3>
-                There are six principles that guide our investments:
-            </PrinciplesH3>
-            <PrincipleFlexContainer />
-        </SectionWrapper>
-        <SectionWrapper>
-            <Wideh3>
-                We partner closely with our portfolio — offering our support and
-                guidance beyond investment, to foster growth in a way that works
-                for them.
-            </Wideh3>
+        </IntroSection>
+
+        <DetailsSection>
+            <img
+                src={jumpIllustration}
+                alt="An illustration of a race start line, with various animals running together"
+            />
+
             <TextBlock>
-                <b>A belief factory</b>
+                <h3>What you get</h3>
+                <ul>
+                    <li>12 months of guided support</li>
+                    <li>A £10,000 stipend</li>
+                    <li>An additional £5,000 of services</li>
+                    <li>Part-time hotdesking space in our London studio</li>
+                    <li>A structured mentorship program</li>
+                    <li>More...</li>
+                </ul>
+
+                <h3>The criteria</h3>
+                <ul>
+                    <li>First-time founder</li>
+                    <li>Have a limited company set up in the UK</li>
+                    <li>An additional £5,000 of services</li>
+                    <li>Part-time hotdesking space in our London studio</li>
+                </ul>
+            </TextBlock>
+        </DetailsSection>
+
+        <MoreInfoSection>
+            <img
+                src={batonIllustration}
+                alt="An illustration of a race start line, with various animals running together"
+            />
+
+            <TextBlock>
+                <h3>
+                    A program for the next generation of founders with true
+                    heart and ambition, who are building businesses with
+                    creativity and culture at their core.
+                </h3>
+
                 <p>
                     You may come for the capital, but we want you to stay for
                     the belief. We offer the perspective and support to help you
                     forge your path.
                 </p>
 
-                <b>A flexible view on growth</b>
                 <p>
-                    The way companies grow is changing, and venture capital
-                    isn’t the best fit for everyone. We invest via revenue-share
-                    agreements alongside traditional equity, whichever is right
-                    for you.
-                </p>
-
-                <b>A community of experts</b>
-                <p>
-                    ustwo is home to over 250 designers, developers, strategists
-                    and operators. We’re here to bring that expertise to bear
-                    and expand your thinking around what’s next.
+                    At ustwo we celebrate difference, and the creativity that it
+                    generates. We are proud to offer equal opportunities
+                    regardless of race, religion, sex, nationality, sexual
+                    orientation, age, disability, gender identity, marital
+                    status, or other ways that people identify. We welcome
+                    applications for our First Mile programe from anywhere.
                 </p>
             </TextBlock>
-        </SectionWrapper>
+        </MoreInfoSection>
+
+        <FirstMileApplicationForm />
 
         <FaqSection faqArray={faqContent} />
     </ApproachPage>

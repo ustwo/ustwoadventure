@@ -73,6 +73,20 @@ const StyledForm = styled.form`
 
 const EmailInput = styled(Input)`
     margin-bottom: 0.9em;
+
+    > input + label {
+        top: -0.97em;
+    }
+
+    > input:not(:placeholder-shown) {
+        transform: scaleY(1) translateY(0);
+        padding: 0.86em;
+        margin-bottom: 0;
+
+        + label {
+            top: -1.78em;
+        }
+    }
 `;
 
 const NewsletterSubscribe = () => {

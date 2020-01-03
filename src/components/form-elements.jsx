@@ -28,7 +28,7 @@ export const StyledForm = styled.form`
 `;
 
 const StepWrapper = styled.div`
-    min-height: 360px;
+    min-height: 365px;
     display: none;
     flex-direction: row;
     flex-wrap: wrap;
@@ -67,25 +67,30 @@ export const FormStep = ({ isActive, children }) => {
 const InputWrapper = styled.div`
     position: relative;
     width: ${props => (props.halfWidth ? "47%" : "100%")};
-    margin-bottom: 1.55em;
+    margin-bottom: 1.5em;
 
     label {
         display: block;
         position: absolute;
         opacity: 0;
-        transition: opacity 100ms;
-        top: -0.97em;
+        transition: opacity 100ms, top 200ms;
+        top: -0.8em;
         left: 2px;
     }
 
     textarea + label {
-        top: -0.63em;
+        top: -0.46em;
     }
 
     input:not(:placeholder-shown) + label,
     textarea:not(:placeholder-shown) + label {
+        top: -0.97em;
         z-index: 1;
         opacity: 1;
+    }
+
+    textarea:not(:placeholder-shown) + label {
+        top: -0.63em;
     }
 
     input:not(:placeholder-shown),
@@ -139,7 +144,7 @@ export const Input = ({
             e.target.classList = "invalid";
             setProcessedLabel(
                 `${label} ${
-                    e.target.value.length === 0 ? "- required" : "- invalid"
+                    e.target.value.length === 0 ? "(required)" : "(invalid)"
                 }`
             );
         } else {

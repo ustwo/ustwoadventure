@@ -3,8 +3,8 @@ import { styled } from "linaria/react";
 
 import CTAWrapper from "../../components/cta-wrapper";
 import { StyledForm, FormStep, Input } from "../../components/form-elements";
-import Button from "../../components/button";
 import useNetlifySubmit from "../../hooks/use-netlify-submit";
+import useMultiStepForm from "../../hooks/use-multi-step-form";
 
 const StyledCTAWrapper = styled(CTAWrapper)`
     margin-top: 50px;
@@ -48,16 +48,23 @@ const CopyWrapper = styled.div`
 
 const InvestmentContactForm = () => {
     const formName = "investment-contact";
-    const pageCount = 2;
+
+    const {
+        pageCount,
+        currentStep,
+        nextStep,
+        // BackButton, // TODO: back button
+        NextButton,
+        StepIndicator
+    } = useMultiStepForm(2);
 
     const {
         sending,
         response,
         handleNetlifySubmit,
-        NetlifyRequiredInputs
+        NetlifyRequiredInputs,
+        errorCopy
     } = useNetlifySubmit();
-
-    const [step, setStep] = useState(1);
 
     const [companyName, setCompanyName] = useState("");
     const [website, setWebsite] = useState("");
@@ -81,14 +88,8 @@ const InvestmentContactForm = () => {
         if (name === "contactEmail") setContactEmail(value);
     };
 
-    // const handleBack = e => {
-    //     setStep(step - 1);
-    //     console.log(step);
-    //     e.preventDefault();
-    // };
-
     const handleSubmit = e => {
-        if (step === pageCount) {
+        if (currentStep === pageCount) {
             const data = {
                 "form-name": formName,
                 companyName,
@@ -103,7 +104,7 @@ const InvestmentContactForm = () => {
 
             handleNetlifySubmit(data);
         }
-        setStep(step + 1);
+        nextStep();
         e.preventDefault();
     };
 
@@ -115,13 +116,12 @@ const InvestmentContactForm = () => {
                     {response
                         ? response === true
                             ? "Thanks! We'll read through what you've sent us and follow up via e-mail as soon as possible. Have a great day."
-                            : `Looks like there has been a ${response} server error with sending the form. Sorry! Please try again, or email us at hello.adventure@ustwo.com.`
+                            : errorCopy
                         : "If you’d like to get in touch with us about an investment opportunity, fill out the form and we’ll get back to you as soon as possible. Please also make sure to read our FAQs below."}
                 </p>
             </CopyWrapper>
 
             <StyledForm
-                noValidate
                 name={formName}
                 method="POST"
                 onSubmit={handleSubmit}
@@ -130,12 +130,13 @@ const InvestmentContactForm = () => {
             >
                 <NetlifyRequiredInputs formName={formName} />
 
-                <FormStep isActive={step === 1}>
+                <FormStep isActive={currentStep === 1}>
                     <Input
                         halfWidth
                         label="Company Name"
                         name="companyName"
                         handleChange={handleChange}
+                        required={currentStep === 1}
                     />
 
                     <Input
@@ -143,34 +144,39 @@ const InvestmentContactForm = () => {
                         label="Website"
                         name="website"
                         handleChange={handleChange}
+                        required={currentStep === 1}
                     />
 
                     <Input
-                        label="Tell us about what you do"
+                        label="Tell us about the company"
                         type="textarea"
                         name="companyDescription"
                         handleChange={handleChange}
+                        required={currentStep === 1}
                     />
 
                     <Input
                         label="What stage are you at?"
                         name="companyStage"
                         handleChange={handleChange}
+                        required={currentStep === 1}
                     />
                 </FormStep>
 
-                <FormStep isActive={step >= 2}>
+                <FormStep isActive={currentStep >= 2}>
                     <Input
                         label="What are your revenue and user metrics?"
                         type="textarea"
                         name="companyRevenue"
                         handleChange={handleChange}
+                        required={currentStep === 2}
                     />
 
                     <Input
                         label="How much are you looking to raise?"
                         name="roundSize"
                         handleChange={handleChange}
+                        required={currentStep === 2}
                     />
 
                     <Input
@@ -178,6 +184,7 @@ const InvestmentContactForm = () => {
                         label="Your Name"
                         name="contactName"
                         handleChange={handleChange}
+                        required={currentStep === 2}
                     />
 
                     <Input
@@ -186,28 +193,18 @@ const InvestmentContactForm = () => {
                         type="email"
                         name="contactEmail"
                         handleChange={handleChange}
+                        required={currentStep === 2}
                     />
                 </FormStep>
 
                 <div>
-                    {/* {step > 1 && (
-                        <Button href="" white back onClick={handleBack}>
-                            Back
-                        </Button>
-                    )} */}
-                    <Button
-                        white
-                        submit
+                    <NextButton
                         success={response === true}
                         disabled={response === true}
-                    >
-                        {step < pageCount ? "Next" : "Submit"}
-                    </Button>
+                    />
                 </div>
 
-                {pageCount !== 1 && (
-                    <p>{step <= pageCount ? `${step}/${pageCount}` : ":—)"}</p>
-                )}
+                <StepIndicator />
             </StyledForm>
         </StyledCTAWrapper>
     );
