@@ -189,7 +189,7 @@ const HomePageCTA = () => (
             <div>
                 <h2>
                     We&#39;ve just launched First Mile, a program for the next
-                    generation on creative founders
+                    generation of creative founders
                 </h2>
                 <p>
                     Learn more <ForwardsArrow />

@@ -21,10 +21,10 @@ const StyledAboutPage = styled(MainWrapper)`
     }
 
     section:not(:first-child) {
-        margin-top: 90px;
+        margin-top: 100px;
 
         @media (max-width: 870px) {
-            margin-top: 60px;
+            margin-top: 70px;
         }
 
         @media (max-width: 700px) {
@@ -160,23 +160,13 @@ const TeamMember = styled.div`
 
 const AboutUstwoCopy = styled.div`
     grid-column: 7 / -1;
-    margin-top: 8vw;
-
-    @media (min-width: 1280px) {
-        margin-top: 110px;
-    }
 
     @media (max-width: 965px) {
         grid-column: 6 / -1;
     }
 
-    @media (max-width: 769px) {
-        margin-top: 4vw;
-    }
-
     @media (max-width: 680px) {
         grid-column: 3 / -1;
-        margin-top: 0;
     }
 
     @media (max-width: 570px) {
@@ -225,11 +215,11 @@ const Portfolio = () => (
 
             <p>
                 Since 2014, we’ve supported young businesses on their journeys.
-                From launching a company, to running a collaborative workspace,
-                to what we do today, Adventure is an expression of ustwo’s
-                values applied to the world of investment and company building.
-                We pride ourselves on working with companies and people that
-                enable creativity to thrive.
+                From launching our own ventures, to running a community
+                workspace, to the fund we are today, Adventure is an expression
+                of ustwo’s values applied to the world of investment and company
+                building. We pride ourselves on working with the companies and
+                people that enable creativity to thrive.
             </p>
         </IntroCopy>
 
@@ -237,8 +227,9 @@ const Portfolio = () => (
             <TeamAdventureCopy>
                 <h2>Team Adventure</h2>
                 <p>
-                    Adventure is a small team inside of ustwo, here to support
-                    you and connect you across our network.
+                    We&apos;re a small team inside of ustwo, working to support
+                    the people and companies in our portfolio, and finding the
+                    next teams to add to the community.
                 </p>
 
                 <p>

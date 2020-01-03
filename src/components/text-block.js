@@ -17,6 +17,10 @@ const TextBlock = styled.div`
         margin-bottom: ${props => (props.tight ? "1.7em" : "2.4em")};
     }
 
+    p:last-child {
+        margin-bottom: 0;
+    }
+
     @media (max-width: 1025px) {
         grid-column: 4 / 12;
     }

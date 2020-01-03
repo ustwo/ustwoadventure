@@ -91,7 +91,6 @@ const StyledButton = css`
 
     &[disabled] {
         pointer-events: none;
-        background-color: var(--nonWhite);
     }
 
     @media (max-width: 1025px) {

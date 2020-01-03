@@ -68,6 +68,7 @@ const StyledForm = styled.form`
 
     @media (max-width: 715px) {
         grid-column: 1 / -1;
+        margin-top: 25px;
     }
 `;
 

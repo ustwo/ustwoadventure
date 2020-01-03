@@ -21,26 +21,22 @@ const ApproachPage = styled(MainWrapper)`
 
     ${SectionWrapper} {
         margin: 60px 0;
-    }
 
-    @media (max-width: 880px) {
-        ${TextBlock} {
-            grid-column-start: 4;
-        }
-
-        ${SectionWrapper} {
+        @media (max-width: 880px) {
             margin: 40px 0;
         }
     }
 
-    @media (max-width: 769px) {
-        ${TextBlock} {
+    ${TextBlock} {
+        @media (max-width: 880px) {
+            grid-column-start: 4;
+        }
+
+        @media (max-width: 769px) {
             grid-column-start: 3;
         }
-    }
 
-    @media (max-width: 600px) {
-        ${TextBlock} {
+        @media (max-width: 600px) {
             grid-column-start: 1;
         }
     }
@@ -61,17 +57,25 @@ const MainIllustration = styled.img`
     }
 `;
 
-const IntroSection = styled(SectionWrapper)`
-    ${TextBlock} p:last-child {
-        margin-bottom: 0;
-    }
-`;
-
 const DetailsSection = styled(SectionWrapper)`
     img {
         grid-column: 1 / 5;
         width: 100%;
         margin-bottom: 50px;
+
+        @media (max-width: 769px) {
+            grid-column: 1 / 6;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 580px) {
+            grid-column: 1 / 8;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 500px) {
+            width: 66%;
+        }
     }
 
     ${TextBlock} {
@@ -114,26 +118,6 @@ const DetailsSection = styled(SectionWrapper)`
             row-gap: 1.2em;
         }
     }
-
-    @media (max-width: 769px) {
-        img {
-            grid-column: 1 / 6;
-            margin-bottom: 40px;
-        }
-    }
-
-    @media (max-width: 580px) {
-        img {
-            grid-column: 1 / 8;
-            margin-bottom: 30px;
-        }
-    }
-
-    @media (max-width: 500px) {
-        img {
-            width: 66%;
-        }
-    }
 `;
 
 const MoreInfoSection = styled(SectionWrapper)`
@@ -173,7 +157,7 @@ const Index = () => (
             alt="An illustration of a race start line, with various animals running together"
         />
 
-        <IntroSection>
+        <SectionWrapper>
             <TextBlock>
                 <h3>
                     A program for the next generation of founders who are
@@ -192,8 +176,10 @@ const Index = () => (
                     First Mile is a 12-month program for first-time founders,
                     we’ve designed it to focus on...
                 </p>
+
+                <p>Applications are currently open for our 2020 cohort.</p>
             </TextBlock>
-        </IntroSection>
+        </SectionWrapper>
 
         <DetailsSection>
             <img
