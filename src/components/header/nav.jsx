@@ -29,7 +29,7 @@ const StyledNav = styled.nav`
         @media (max-width: 830px) {
             --hitBoxPadding: 0.1em;
             display: block;
-            margin: -0.1em 0;
+            margin: -0.16em 0;
             text-align: right;
 
             &:last-child {

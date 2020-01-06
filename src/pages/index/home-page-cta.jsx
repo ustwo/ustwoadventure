@@ -23,7 +23,7 @@ const linkStyles = css`
             object-fit: cover;
             width: 24%;
             transform: scale(1.06);
-            margin-right: 2em;
+            margin-right: 2.3em;
             border-radius: 3px 0 0 3px;
         }
 
@@ -89,14 +89,15 @@ const linkStyles = css`
             align-items: flex-start;
             overflow: hidden;
             position: relative;
-            height: 210px;
+            height: 180px;
 
             img {
-                width: 40%;
+                width: 37%;
                 transform: scale(1);
                 position: absolute;
-                right: 0;
-                bottom: -40px;
+                margin-right: 0;
+                right: 1.5em;
+                bottom: -35px;
             }
         }
     }
@@ -105,17 +106,7 @@ const linkStyles = css`
         margin: 70px 0 40px 0;
 
         div.wrapper {
-            height: 190px;
-
-            div h2 {
-                font-size: 1.333em;
-            }
-        }
-    }
-
-    @media (max-width: 715px) {
-        div.wrapper {
-            height: 180px;
+            height: 24vw;
 
             div h2 {
                 font-size: 1.333em;
@@ -127,41 +118,34 @@ const linkStyles = css`
         grid-column: 1 / -1;
 
         div.wrapper {
-            height: 210px;
+            height: 28vw;
 
             img {
-                width: 45%;
+                width: 40%;
+                bottom: -45px;
             }
         }
     }
 
     @media (max-width: 585px) {
         div.wrapper {
-            height: 200px;
+            height: 32vw;
 
             img {
-                bottom: -30px;
+                bottom: -35px;
             }
         }
     }
 
     @media (max-width: 500px) {
         margin: 60px 0 30px 0;
-
-        div.wrapper {
-            height: 190px;
-        }
     }
 
-    @media (max-width: 410px) {
+    @media (max-width: 440px) {
         margin: 50px 0 20px 0;
 
         div.wrapper {
-            height: 170px;
-
-            img {
-                right: -30px;
-            }
+            padding: 1.2em 1.4em;
 
             div h2 {
                 font-size: 1.22em;
@@ -169,14 +153,18 @@ const linkStyles = css`
         }
     }
 
-    @media (max-width: 370px) {
+    @media (max-width: 420px) {
         div.wrapper {
-            height: 200px;
+            min-height: 150px;
 
             img {
-                width: 50%;
+                width: 42%;
                 bottom: -20px;
-                right: -40px;
+                right: 1em;
+            }
+
+            div h2 {
+                font-size: 1.18em;
             }
         }
     }

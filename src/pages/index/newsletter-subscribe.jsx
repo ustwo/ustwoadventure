@@ -38,7 +38,6 @@ const CopyWrapper = styled.div`
 
     @media (max-width: 715px) {
         margin-right: 0;
-        margin-bottom: 30px;
         grid-column: 1 / -1;
     }
 `;
@@ -68,6 +67,10 @@ const StyledForm = styled.form`
 
     @media (max-width: 715px) {
         grid-column: 1 / -1;
+        margin-top: 30px;
+    }
+
+    @media (max-width: 500px) {
         margin-top: 25px;
     }
 `;
@@ -80,12 +83,12 @@ const EmailInput = styled(Input)`
     }
 
     > input:not(:placeholder-shown) {
-        transform: scaleY(1) translateY(0);
+        transform: scaleY(0.95) translateY(0);
         padding: 0.86em;
         margin-bottom: 0;
 
         + label {
-            top: -1.78em;
+            top: -1.5em;
         }
     }
 `;

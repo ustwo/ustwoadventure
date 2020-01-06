@@ -66,23 +66,23 @@ const FaqStyledDetails = styled.details`
         color: #ffffff;
         font-size: 1.16em;
         padding: calc(var(--faqPadding) * 0.82) var(--faqPadding);
-        display: flex;
-        flex-wrap: nowrap; /* TODO: fix this on mobile (actual mobile, not devtools) */
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
 
         > p {
             cursor: pointer;
             margin-bottom: 0;
-        }
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
 
-        ::after {
-            content: url(${plus});
-            cursor: pointer;
-            width: 28.7px;
-            height: 28px;
-            transition: transform 160ms;
+            &::after {
+                content: url(${plus});
+                cursor: pointer;
+                width: 28.7px;
+                height: 28px;
+                transition: transform 160ms;
+            }
         }
 
         ::-webkit-details-marker {
@@ -94,8 +94,9 @@ const FaqStyledDetails = styled.details`
         }
     }
 
-    &[open] summary::after {
-        transform: rotate(45deg);
+    &[open] summary p::after {
+        transform: rotate(45deg); /* TODO: Get working consistently on mobile */
+        /* TODO: calculate heights to animate open & close */
     }
 
     > div {

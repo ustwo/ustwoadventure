@@ -10,7 +10,7 @@ const TextBlock = styled.div`
     > b {
         font-size: 1.1em;
         display: block;
-        margin-bottom: 0.84em;
+        margin-bottom: 0.6em;
     }
 
     p:not(:last-child) {
