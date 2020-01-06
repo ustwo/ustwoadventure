@@ -69,9 +69,9 @@ const InvestmentContactForm = () => {
     const [companyName, setCompanyName] = useState("");
     const [website, setWebsite] = useState("");
     const [companyDescription, setCompanyDescription] = useState("");
-    const [companyStage, setCompanyStage] = useState("");
-    const [companyRevenue, setCompanyRevenue] = useState("");
     const [roundSize, setRoundSize] = useState("");
+    const [productFeelings, setProductFeelings] = useState("");
+    const [companyRevenue, setCompanyRevenue] = useState("");
     const [contactName, setContactName] = useState("");
     const [contactEmail, setContactEmail] = useState("");
 
@@ -81,9 +81,9 @@ const InvestmentContactForm = () => {
         if (name === "companyName") setCompanyName(value);
         if (name === "website") setWebsite(value);
         if (name === "companyDescription") setCompanyDescription(value);
-        if (name === "companyStage") setCompanyStage(value);
-        if (name === "companyRevenue") setCompanyRevenue(value);
         if (name === "roundSize") setRoundSize(value);
+        if (name === "productFeelings") setProductFeelings(value);
+        if (name === "companyRevenue") setCompanyRevenue(value);
         if (name === "contactName") setContactName(value);
         if (name === "contactEmail") setContactEmail(value);
     };
@@ -95,7 +95,7 @@ const InvestmentContactForm = () => {
                 companyName,
                 website,
                 companyDescription,
-                companyStage,
+                productFeelings,
                 companyRevenue,
                 roundSize,
                 contactName,
@@ -117,7 +117,7 @@ const InvestmentContactForm = () => {
                         ? response === true
                             ? "Thanks! We'll read through what you've sent us and follow up via e-mail as soon as possible. Have a great day."
                             : errorCopy
-                        : "If you’d like to get in touch with us about an investment opportunity, fill out the form and we’ll get back to you as soon as possible. Please also make sure to read our FAQs below."}
+                        : "If you’d like to get in touch with us about an investment opportunity, please fill out the form and we’ll get back to you as soon as possible. Don't forget to also read our FAQs below."}
                 </p>
             </CopyWrapper>
 
@@ -156,8 +156,8 @@ const InvestmentContactForm = () => {
                     />
 
                     <Input
-                        label="What stage are you at?"
-                        name="companyStage"
+                        label="How much are you raising?"
+                        name="roundSize"
                         handleChange={handleChange}
                         required={currentStep === 1}
                     />
@@ -165,16 +165,16 @@ const InvestmentContactForm = () => {
 
                 <FormStep isActive={currentStep >= 2}>
                     <Input
-                        label="What are your revenue and user metrics?"
+                        label="What feelings do you want your product to evoke?"
                         type="textarea"
-                        name="companyRevenue"
+                        name="productFeelings"
                         handleChange={handleChange}
                         required={currentStep === 2}
                     />
 
                     <Input
-                        label="How much are you looking to raise?"
-                        name="roundSize"
+                        label="What revenue are you generating?"
+                        name="companyRevenue"
                         handleChange={handleChange}
                         required={currentStep === 2}
                     />

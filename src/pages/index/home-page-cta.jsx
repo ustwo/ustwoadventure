@@ -17,7 +17,7 @@ const linkStyles = css`
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1.4em 1.8em;
+        padding: 1.4em 2em;
 
         img {
             object-fit: cover;
@@ -56,10 +56,8 @@ const linkStyles = css`
     }
 
     @media (max-width: 1080px) {
-        div.wrapper {
-            img {
-                width: 27%;
-            }
+        div.wrapper img {
+            width: 27%;
         }
     }
 
@@ -76,10 +74,8 @@ const linkStyles = css`
     }
 
     @media (max-width: 870px) {
-        div.wrapper {
-            div h2 {
-                font-size: 1.2em;
-            }
+        div.wrapper div h2 {
+            font-size: 1.2em;
         }
     }
 
@@ -89,10 +85,10 @@ const linkStyles = css`
             align-items: flex-start;
             overflow: hidden;
             position: relative;
-            height: 180px;
+            height: 21vw;
 
             img {
-                width: 37%;
+                width: 35%;
                 transform: scale(1);
                 position: absolute;
                 margin-right: 0;
@@ -106,7 +102,7 @@ const linkStyles = css`
         margin: 70px 0 40px 0;
 
         div.wrapper {
-            height: 24vw;
+            height: 23vw;
 
             div h2 {
                 font-size: 1.333em;
@@ -121,18 +117,18 @@ const linkStyles = css`
             height: 28vw;
 
             img {
-                width: 40%;
-                bottom: -45px;
+                width: 38%;
+                bottom: -35px;
             }
         }
     }
 
     @media (max-width: 585px) {
         div.wrapper {
-            height: 32vw;
+            height: 31vw;
 
             img {
-                bottom: -35px;
+                bottom: -30px;
             }
         }
     }

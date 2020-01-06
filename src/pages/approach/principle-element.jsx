@@ -5,7 +5,7 @@ import { cx } from "linaria";
 const StyledLi = styled.li`
     width: 28%;
     position: relative;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
     counter-increment: step-counter;
 
     h2 {
@@ -41,7 +41,7 @@ const StyledLi = styled.li`
 
     p {
         margin-top: 5px;
-        font-size: 0.97em;
+        font-size: 0.96em;
     }
 
     &:hover,
@@ -101,10 +101,7 @@ const PrincipleElement = ({ title, copy, index }) => {
     useEffect(() => {
         let observer;
 
-        if (
-            window.innerWidth < 635 &&
-            window.matchMedia("(pointer: coarse)").matches
-        ) {
+        if (window.innerWidth < 635) {
             const options = {
                 rootMargin: "-25%",
                 threshold: 0.5

@@ -83,12 +83,20 @@ const EmailInput = styled(Input)`
     }
 
     > input:not(:placeholder-shown) {
-        transform: scaleY(0.95) translateY(0);
+        transform: translateY(0);
         padding: 0.86em;
         margin-bottom: 0;
 
         + label {
-            top: -1.5em;
+            top: -1.65em;
+        }
+
+        @media (max-width: 715px) {
+            transform: scaleY(0.95) translateY(2px);
+
+            + label {
+                top: -1.4em;
+            }
         }
     }
 `;

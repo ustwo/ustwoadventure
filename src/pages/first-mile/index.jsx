@@ -42,11 +42,20 @@ const ApproachPage = styled(MainWrapper)`
     }
 `;
 
-const MainIllustration = styled.img`
+const MainIllustration = styled.figure`
     grid-column: 3 / -1;
-    width: 100%;
     margin: 20px 0;
-    background-color: #7ea8d9;
+
+    img {
+        width: 100%;
+        background-color: #7ea8d9;
+    }
+
+    figcaption {
+        margin: -0.2em 0;
+        font-size: 0.88em;
+        color: var(--grey03);
+    }
 
     @media (max-width: 769px) {
         grid-column: 1 / -1;
@@ -152,10 +161,13 @@ const Index = () => (
 
         <h1>First Mile</h1>
 
-        <MainIllustration
-            src={mainIllustration}
-            alt="An illustration of a race start line, with various animals running together"
-        />
+        <MainIllustration>
+            <img
+                src={mainIllustration}
+                alt="An illustration of a race start line, with various animals running together"
+            />
+            <figcaption>Illustrations — Olf de Bruin</figcaption>
+        </MainIllustration>
 
         <SectionWrapper>
             <TextBlock>

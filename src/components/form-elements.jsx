@@ -69,58 +69,83 @@ const InputWrapper = styled.div`
     width: ${props => (props.halfWidth ? "47%" : "100%")};
     margin-bottom: 1.5em;
 
+    input,
+    textarea {
+        padding: 0.86em;
+        font-size: 16px;
+        color: #ffffff;
+        font-family: var(--pxGrotesk);
+        font-weight: 400;
+        line-height: 20px;
+        border: none;
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.2);
+        box-shadow: none;
+        transition: background-color 0.15s, transform 150ms, padding 150ms,
+            margin-bottom 150ms;
+        width: 100%;
+
+        ::placeholder {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.4;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.225);
+        }
+
+        &:focus {
+            outline: none;
+            background-color: rgba(0, 0, 0, 0.31);
+        }
+
+        &.invalid {
+            background-color: rgba(120, 0, 0, 0.2);
+        }
+    }
+
     label {
+        color: #ffffff;
+        font-family: var(--pxGrotesk);
         display: block;
         position: absolute;
         opacity: 0;
-        transition: opacity 100ms, top 200ms;
+        font-size: 0.92em;
+        transition: opacity 100ms, top 150ms;
         top: -0.8em;
         left: 2px;
     }
 
-    textarea + label {
-        top: -0.46em;
-    }
-
-    input:not(:placeholder-shown) + label,
-    textarea:not(:placeholder-shown) + label {
-        top: -0.97em;
-        z-index: 1;
-        opacity: 1;
-    }
-
-    textarea:not(:placeholder-shown) + label {
-        top: -0.63em;
-    }
-
     input:not(:placeholder-shown),
     textarea:not(:placeholder-shown) {
-        transform: scaleY(0.97) translateY(9px);
+        transform: translateY(9px);
         transform-origin: bottom;
-        padding: 0.7em 0.86em 0.7em 0.86em;
-        margin-bottom: 0.32em;
-    }
+        padding: 0.68em 0.86em 0.68em 0.86em;
+        margin-bottom: 0.38em;
 
-    textarea:not(:placeholder-shown) {
-        transform: scaleY(0.95) translateY(9px);
-        margin-bottom: 0;
-    }
-
-    input,
-    textarea {
-        transition: transform 200ms, padding 200ms, margin-bottom 200ms;
-        width: 100%;
-        box-sizing: border-box;
+        + label {
+            top: -1em;
+            z-index: 1;
+            opacity: 1;
+        }
     }
 
     textarea {
         height: 11em;
         resize: none;
-    }
 
-    input.invalid,
-    textarea.invalid {
-        background-color: rgba(120, 0, 0, 0.2);
+        + label {
+            top: -0.65em;
+        }
+
+        &:not(:placeholder-shown) {
+            transform: scaleY(0.97) translateY(7px);
+            margin-bottom: 0;
+
+            + label {
+                top: -0.85em;
+            }
+        }
     }
 
     @media (max-width: 960px) {
