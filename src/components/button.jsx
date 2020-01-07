@@ -15,16 +15,13 @@ const StyledButton = css`
     display: inline-block;
     margin-top: 5px;
     margin-right: 16px;
-
     padding: 9px 40px 9px 12px;
     box-sizing: border-box;
     border: 1px solid var(--nonBlack);
-
     font-size: 0.88em;
     text-transform: uppercase;
-
     background-repeat: no-repeat;
-    transition: background-position 90ms;
+    transition: background-position 90ms, opacity 150ms;
 
     &:hover {
         box-shadow: inset 0 0 0 0.5px var(--nonBlack);
@@ -42,18 +39,6 @@ const StyledButton = css`
         }
     }
 
-    &.back {
-        background-image: url(${backArrow});
-        background-size: 15px auto;
-        background-position: 14px 50%;
-        padding-right: 15px;
-        padding-left: 40px;
-
-        &:hover {
-            background-position: 11px 50%;
-        }
-    }
-
     &.external {
         background-image: url(${externalArrow});
         background-size: 13px auto;
@@ -64,6 +49,18 @@ const StyledButton = css`
             background-image: url(${externalArrowHover});
             background-size: 14px auto;
             background-position: calc(100% - 13px) 50%;
+        }
+    }
+
+    &.back {
+        background-image: url(${backArrow});
+        background-size: 15px auto;
+        background-position: 14px 50%;
+        padding-right: 15px;
+        padding-left: 40px;
+
+        &:hover {
+            background-position: 11px 50%;
         }
     }
 
@@ -89,8 +86,10 @@ const StyledButton = css`
         }
     }
 
-    &[disabled] {
+    &[disabled],
+    &.disabled {
         pointer-events: none;
+        opacity: 0.5;
     }
 
     @media (max-width: 1025px) {
@@ -116,7 +115,8 @@ const Button = ({
     success,
     next,
     white,
-    disabled
+    disabled,
+    onClick
 }) => {
     const classes = cx(
         StyledButton,
@@ -126,6 +126,7 @@ const Button = ({
         submit && "submit",
         next && "next",
         success && "success",
+        disabled && "disabled",
         white && "white"
     );
 
@@ -136,6 +137,7 @@ const Button = ({
             href={href}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={onClick}
         >
             {children}
         </a>
@@ -146,9 +148,10 @@ const Button = ({
             type="submit"
             value={children}
             disabled={disabled}
+            onClick={onClick}
         />
     ) : (
-        <Link className={classes} style={style} to={href}>
+        <Link className={classes} style={style} to={href} onClick={onClick}>
             {children}
         </Link>
     );

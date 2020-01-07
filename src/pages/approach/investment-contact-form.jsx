@@ -50,12 +50,10 @@ const InvestmentContactForm = () => {
     const formName = "investment-contact";
 
     const {
-        pageCount,
+        stepCount,
         currentStep,
         nextStep,
-        // BackButton, // TODO: back button
-        NextButton,
-        StepIndicator
+        SubmitButtons
     } = useMultiStepForm(2);
 
     const {
@@ -70,7 +68,7 @@ const InvestmentContactForm = () => {
     const [website, setWebsite] = useState("");
     const [companyDescription, setCompanyDescription] = useState("");
     const [roundSize, setRoundSize] = useState("");
-    const [productFeelings, setProductFeelings] = useState("");
+    const [productMotivations, setProductMotivations] = useState("");
     const [companyRevenue, setCompanyRevenue] = useState("");
     const [contactName, setContactName] = useState("");
     const [contactEmail, setContactEmail] = useState("");
@@ -82,30 +80,30 @@ const InvestmentContactForm = () => {
         if (name === "website") setWebsite(value);
         if (name === "companyDescription") setCompanyDescription(value);
         if (name === "roundSize") setRoundSize(value);
-        if (name === "productFeelings") setProductFeelings(value);
+        if (name === "productMotivations") setProductMotivations(value);
         if (name === "companyRevenue") setCompanyRevenue(value);
         if (name === "contactName") setContactName(value);
         if (name === "contactEmail") setContactEmail(value);
     };
 
     const handleSubmit = e => {
-        if (currentStep === pageCount) {
+        e.preventDefault();
+        if (currentStep === stepCount) {
             const data = {
                 "form-name": formName,
                 companyName,
                 website,
                 companyDescription,
-                productFeelings,
+                productMotivations,
                 companyRevenue,
                 roundSize,
                 contactName,
                 contactEmail
             };
-
             handleNetlifySubmit(data);
+        } else {
+            nextStep();
         }
-        nextStep();
-        e.preventDefault();
     };
 
     return (
@@ -122,6 +120,7 @@ const InvestmentContactForm = () => {
             </CopyWrapper>
 
             <StyledForm
+                noValidate
                 name={formName}
                 method="POST"
                 onSubmit={handleSubmit}
@@ -165,9 +164,9 @@ const InvestmentContactForm = () => {
 
                 <FormStep isActive={currentStep >= 2}>
                     <Input
-                        label="What feelings do you want your product to evoke?"
+                        label="What motivates you to build the product?"
                         type="textarea"
-                        name="productFeelings"
+                        name="productMotivations"
                         handleChange={handleChange}
                         required={currentStep === 2}
                     />
@@ -197,14 +196,7 @@ const InvestmentContactForm = () => {
                     />
                 </FormStep>
 
-                <div>
-                    <NextButton
-                        success={response === true}
-                        disabled={response === true}
-                    />
-                </div>
-
-                <StepIndicator />
+                <SubmitButtons success={response === true} />
             </StyledForm>
         </StyledCTAWrapper>
     );

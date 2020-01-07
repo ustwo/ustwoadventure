@@ -62,13 +62,13 @@ const FaqStyledDetails = styled.details`
     }
 
     summary {
+        cursor: default;
         background-color: var(--piglet);
         color: #ffffff;
         font-size: 1.16em;
         padding: calc(var(--faqPadding) * 0.82) var(--faqPadding);
 
         > p {
-            cursor: pointer;
             margin-bottom: 0;
             display: flex;
             flex-wrap: nowrap;
@@ -78,7 +78,6 @@ const FaqStyledDetails = styled.details`
 
             &::after {
                 content: url(${plus});
-                cursor: pointer;
                 width: 28.7px;
                 height: 28px;
                 transition: transform 160ms;

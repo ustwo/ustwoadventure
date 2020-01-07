@@ -1,36 +1,80 @@
 /* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
-import Button from "../components/button";
+import { css } from "linaria";
+import { styled } from "linaria/react";
 
-export default (pageCount = 1) => {
+import Button from "../components/button";
+import { backArrow } from "../assets/inline-icons";
+
+const ButtonContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+`;
+
+const smallBackButton = css`
+    &.back.external {
+        margin-top: 0;
+        padding: 20.5px;
+        transition: background-position 90ms;
+        min-width: initial;
+        background-position: 50% 50%;
+
+        &:hover {
+            background-image: url(${backArrow});
+            background-position: calc(50% - 2px) 50%;
+        }
+    }
+`;
+
+export default (stepCount = 1) => {
     const [currentStep, setCurrentStep] = useState(1);
     const nextStep = () => setCurrentStep(currentStep + 1);
-    const previousStep = () => setCurrentStep(currentStep - 1);
+    const previousStep = () =>
+        setCurrentStep(currentStep > 1 ? currentStep - 1 : currentStep);
 
-    const BackButton = () => <Button onClick={() => previousStep()} />;
+    const BackButton = () => (
+        <Button
+            white
+            back
+            external
+            className={smallBackButton}
+            disabled={currentStep === 1}
+            onClick={e => {
+                previousStep();
+                e.preventDefault();
+            }}
+        />
+    );
 
     const NextButton = ({ success, disabled }) => (
         <Button white submit success={success} disabled={disabled}>
-            {currentStep < pageCount ? "Next" : "Submit"}
+            {currentStep < stepCount ? "Next" : "Submit"}
         </Button>
     );
 
-    const StepIndicator = () =>
-        pageCount !== 1 && (
-            <p>
-                {currentStep <= pageCount
-                    ? `${currentStep}/${pageCount}`
-                    : ":—)"}
-            </p>
-        );
+    const SubmitButtons = ({ success }) => (
+        <>
+            <ButtonContainer>
+                <BackButton />
+                <NextButton
+                    success={success}
+                    disabled={success && currentStep >= stepCount}
+                />
+            </ButtonContainer>
+
+            {stepCount !== 1 && (
+                <p>{!success ? `${currentStep}/${stepCount}` : ":—)"}</p>
+            )}
+        </>
+    );
 
     return {
-        pageCount,
+        stepCount,
         currentStep,
         nextStep,
-        previousStep,
-        BackButton,
-        NextButton,
-        StepIndicator
+        SubmitButtons
     };
 };
