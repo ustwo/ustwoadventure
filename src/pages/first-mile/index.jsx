@@ -55,6 +55,14 @@ const MainIllustration = styled.figure`
         margin: -0.2em 0;
         font-size: 0.88em;
         color: var(--grey03);
+
+        a {
+            color: var(--grey03);
+
+            :hover {
+                font-style: italic;
+            }
+        }
     }
 
     @media (max-width: 769px) {
@@ -166,7 +174,16 @@ const Index = () => (
                 src={mainIllustration}
                 alt="An illustration of a race start line, with various animals running together"
             />
-            <figcaption>Illustrations — Olf de Bruin</figcaption>
+            <figcaption>
+                Illustrations —{" "}
+                <a
+                    href="https://www.olfdebruin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Olf de Bruin
+                </a>
+            </figcaption>
         </MainIllustration>
 
         <SectionWrapper>

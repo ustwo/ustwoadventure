@@ -131,7 +131,7 @@ const PortfolioItem = ({
     logo,
     hasArrows
 }) => {
-    // TODO: Fix name changes on refresh - happens only in production
+    // FIXME: Name changes on refresh - happens only in production
     // Problem is because of static html that's rendered (can see in page source)
     // but the image won't be replaced on refresh?
     // Maybe make adding to the dom an async or onLoad function?
