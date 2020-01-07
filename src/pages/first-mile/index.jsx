@@ -8,13 +8,14 @@ import TextBlock from "../../components/text-block";
 import FaqSection from "../../components/faqs";
 import faqContent from "../../data/first-mile-faqs";
 import FirstMileApplicationForm from "./first-mile-application-form";
+import { arrow } from "../../assets/inline-icons";
 
 import mainIllustration from "../../assets/first-mile/main.png";
 // import startIllustration from "../../assets/first-mile/start.png";
 import jumpIllustration from "../../assets/first-mile/jump.png";
 import batonIllustration from "../../assets/first-mile/baton.png";
 
-const ApproachPage = styled(MainWrapper)`
+const FirstMilePage = styled(MainWrapper)`
     h1 {
         grid-column: 1 / -1;
     }
@@ -52,15 +53,36 @@ const MainIllustration = styled.figure`
     }
 
     figcaption {
-        margin: -0.2em 0;
+        margin: -0.15em 0;
         font-size: 0.88em;
         color: var(--grey03);
 
         a {
             color: var(--grey03);
 
+            ::after {
+                content: "";
+                background-image: url(${arrow});
+                transform: rotate(-45deg);
+                transition: transform 100ms, opacity 70ms;
+                filter: grayscale(100%);
+                opacity: 0;
+
+                background-size: 0.73em;
+                background-repeat: no-repeat;
+                display: inline-block;
+                width: 0.8em;
+                height: 0.8em;
+                margin-left: 4px;
+            }
+
             :hover {
                 font-style: italic;
+
+                ::after {
+                    opacity: 0.7;
+                    transform: translate(1.5px, -1.5px) rotate(-45deg);
+                }
             }
         }
     }
@@ -160,7 +182,7 @@ const MoreInfoSection = styled(SectionWrapper)`
 `;
 
 const Index = () => (
-    <ApproachPage>
+    <FirstMilePage>
         <SEO
             title="First Mile"
             description="A program for the next generation of founders who are building businesses that have creativity and culture at their core."
@@ -270,7 +292,7 @@ const Index = () => (
         <FirstMileApplicationForm />
 
         <FaqSection faqArray={faqContent} />
-    </ApproachPage>
+    </FirstMilePage>
 );
 
 export default Index;

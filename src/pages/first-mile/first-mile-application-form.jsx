@@ -120,7 +120,6 @@ const InvestmentContactForm = () => {
             </CopyWrapper>
 
             <StyledForm
-                noValidate
                 name={formName}
                 method="POST"
                 onSubmit={handleSubmit}

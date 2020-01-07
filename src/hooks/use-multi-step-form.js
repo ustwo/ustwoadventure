@@ -25,6 +25,7 @@ const smallBackButton = css`
         &:hover {
             background-image: url(${backArrow});
             background-position: calc(50% - 2px) 50%;
+            background-size: 15px auto;
         }
     }
 `;

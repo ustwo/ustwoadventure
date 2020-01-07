@@ -28,6 +28,7 @@ const RightFooterWrapper = styled.div`
                     content: "";
                     background-image: url(${arrow});
                     transform: rotate(-45deg);
+                    transition: transform 0.07s;
 
                     background-size: 0.73em;
                     background-repeat: no-repeat;
@@ -39,7 +40,6 @@ const RightFooterWrapper = styled.div`
 
                 &:hover::after {
                     transform: translate(1px, -1px) rotate(-45deg);
-                    transition: transform 0.07s;
                 }
             }
         }

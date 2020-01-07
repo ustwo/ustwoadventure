@@ -87,6 +87,7 @@ const Index = () => (
             title="Approach"
             description="We invest in companies that prioritise sustainability, inclusivity and deep care, and founders with true heart and ambition."
         />
+
         <h1>Approach</h1>
 
         <SectionWrapper>

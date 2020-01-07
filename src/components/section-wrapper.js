@@ -1,7 +1,7 @@
 import { styled } from "linaria/react";
 
 const SectionWrapper = styled.section`
-    margin: 40px 0;
+    margin: 36px 0;
     display: subgrid;
 
     @media (max-width: 1025px) {
