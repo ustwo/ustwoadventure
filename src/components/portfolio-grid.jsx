@@ -1,6 +1,10 @@
+import React, { useRef, useEffect } from "react";
+import { render } from "react-dom";
 import { styled } from "linaria/react";
 
-export const PortfolioGridWrapper = styled.div`
+import PortfolioItem from "./portfolio-item";
+
+const PortfolioGridWrapper = styled.div`
     display: grid;
     grid-column: 1 / -1;
     grid-template-columns: repeat(4, 1fr);
@@ -87,3 +91,42 @@ export const PortfolioGridBackground = styled.div`
         max-width: 1320px;
     }
 `;
+
+const PortfolioGrid = ({ companies, Background, style, className }) => {
+    const portfolioContainerRef = useRef();
+
+    const PortfolioItems = () =>
+        companies.map(company => (
+            <PortfolioItem
+                key={company.name}
+                name={company.name}
+                oneLiner={company.oneLiner}
+                url={company.url}
+                tidyUrl={company.tidyurl}
+                description={company.copy}
+                image={company.image}
+                logo={company.logo}
+            />
+        ));
+
+    useEffect(() => {
+        const portfolioContainer = portfolioContainerRef.current;
+        render(
+            <>
+                <PortfolioItems />
+                <Background />
+            </>,
+            portfolioContainer
+        );
+    }, []);
+
+    return (
+        <PortfolioGridWrapper
+            style={style}
+            className={className}
+            ref={portfolioContainerRef}
+        />
+    );
+};
+
+export default PortfolioGrid;

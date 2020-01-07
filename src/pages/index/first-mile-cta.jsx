@@ -48,7 +48,7 @@ const linkStyles = css`
     }
 
     &:hover {
-        box-shadow: 0px 11px 28px rgba(0, 0, 0, 0.18);
+        box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.19);
 
         div svg {
             transform: translateX(2px);

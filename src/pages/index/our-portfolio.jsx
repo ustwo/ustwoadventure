@@ -5,11 +5,9 @@ import SectionWrapper from "../../components/section-wrapper";
 import Button from "../../components/button";
 import shuffle from "../../utils/shuffle";
 import portfolioArray, { PORTFOLIO_STATUS } from "../../data/portfolio-array";
-import {
-    PortfolioGridWrapper,
+import PortfolioGrid, {
     PortfolioGridBackground
 } from "../../components/portfolio-grid";
-import PortfolioItem from "../../components/portfolio-item";
 
 const OurPortfolioSection = styled(SectionWrapper)`
     margin-top: 0 !important; /* should be -100px without HomePageCTA visible */
@@ -36,9 +34,10 @@ const StyledPortfolioCopy = styled.div`
     max-width: 350px;
 `;
 
-const PortfolioPreviewGridWrapper = styled(PortfolioGridWrapper)`
+const PortfolioPreviewGrid = styled(PortfolioGrid)`
     margin-top: 15px;
     position: relative;
+    min-height: 700px;
 
     @media (max-width: 380px) {
         margin-top: 40px;
@@ -144,10 +143,6 @@ const livePortfolioMinusLatest = portfolioMinusLatest.filter(
 );
 const portfolioPreviewItems = shuffle(livePortfolioMinusLatest).slice(0, 5);
 
-// const alphabeticalPortfolioArray = portfolioArray.sort((a, b) =>
-//     a.name.localeCompare(b.name)
-// );
-
 const OurPortfolio = () => (
     <OurPortfolioSection subgrid>
         <StyledPortfolioCopy>
@@ -159,22 +154,10 @@ const OurPortfolio = () => (
             <Button href="/portfolio">See all</Button>
         </StyledPortfolioCopy>
 
-        <PortfolioPreviewGridWrapper>
-            {portfolioPreviewItems.map(company => (
-                <PortfolioItem
-                    key={company.name}
-                    name={company.name}
-                    oneLiner={company.oneLiner}
-                    url={company.url}
-                    tidyUrl={company.tidyurl}
-                    description={company.copy}
-                    image={company.image}
-                    logo={company.logo}
-                    hasArrows
-                />
-            ))}
-            <PortfolioPreviewBackground />
-        </PortfolioPreviewGridWrapper>
+        <PortfolioPreviewGrid
+            companies={portfolioPreviewItems}
+            Background={PortfolioPreviewBackground}
+        />
     </OurPortfolioSection>
 );
 

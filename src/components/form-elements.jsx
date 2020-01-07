@@ -79,7 +79,7 @@ const InputWrapper = styled.div`
         line-height: 20px;
         border: none;
         box-sizing: border-box;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.18);
         box-shadow: none;
         transition: background-color 0.15s, transform 150ms, padding 150ms,
             margin-bottom 150ms;
@@ -101,6 +101,14 @@ const InputWrapper = styled.div`
 
         &.invalid {
             background-color: rgba(120, 0, 0, 0.2);
+
+            :hover {
+                background-color: rgba(100, 0, 0, 0.225);
+            }
+
+            :focus {
+                background-color: rgba(80, 0, 0, 0.31);
+            }
         }
     }
 

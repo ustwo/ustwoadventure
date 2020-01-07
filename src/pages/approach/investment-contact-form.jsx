@@ -54,7 +54,7 @@ const InvestmentContactForm = () => {
         currentStep,
         nextStep,
         SubmitButtons
-    } = useMultiStepForm({ stepCount: 3 });
+    } = useMultiStepForm({ stepCount: 2 });
 
     const {
         sending,

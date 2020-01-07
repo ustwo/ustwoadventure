@@ -1,13 +1,13 @@
 import React from "react";
+// import { render } from "react-dom";
 import { styled } from "linaria/react";
 
 import SEO from "../components/seo";
 import MainWrapper from "../components/main-wrapper";
 import shuffle from "../utils/shuffle";
 import portfolioArray from "../data/portfolio-array";
-import PortfolioItem from "../components/portfolio-item";
-import {
-    PortfolioGridWrapper,
+// import PortfolioItem from "../components/portfolio-item";
+import PortfolioGrid, {
     PortfolioGridBackground
 } from "../components/portfolio-grid";
 
@@ -20,9 +20,10 @@ const PortfolioPageHeader = styled.h1`
     }
 `;
 
-const StyledPortfolioGridWrapper = styled(PortfolioGridWrapper)`
+const StyledPortfolioGrid = styled(PortfolioGrid)`
     margin-top: 20px;
     position: relative;
+    min-height: 100vh;
 `;
 
 const FullPortfolioGridBackground = styled(PortfolioGridBackground)`
@@ -44,37 +45,20 @@ const FullPortfolioGridBackground = styled(PortfolioGridBackground)`
 
 const shuffledPortfolioArrayCopy = shuffle(portfolioArray.slice());
 
-// const alphabeticalPortfolioArray = portfolioArray.sort((a, b) =>
-//     a.name.localeCompare(b.name)
-// );
+const Portfolio = () => (
+    <MainWrapper>
+        <SEO
+            title="Portfolio"
+            description="Our family of companies. ustwo Adventure invests in creative companies, differently."
+        />
 
-const Portfolio = () => {
-    return (
-        <MainWrapper>
-            <SEO
-                title="Portfolio"
-                description="Our family of companies. ustwo Adventure invests in creative companies, differently."
-            />
+        <PortfolioPageHeader>Our family of companies</PortfolioPageHeader>
 
-            <PortfolioPageHeader>Our family of companies</PortfolioPageHeader>
-
-            <StyledPortfolioGridWrapper>
-                {shuffledPortfolioArrayCopy.map(company => (
-                    <PortfolioItem
-                        key={company.name}
-                        name={company.name}
-                        oneLiner={company.oneLiner}
-                        url={company.url}
-                        tidyUrl={company.tidyurl}
-                        description={company.copy}
-                        image={company.image}
-                        logo={company.logo}
-                    />
-                ))}
-                <FullPortfolioGridBackground />
-            </StyledPortfolioGridWrapper>
-        </MainWrapper>
-    );
-};
+        <StyledPortfolioGrid
+            companies={shuffledPortfolioArrayCopy}
+            Background={FullPortfolioGridBackground}
+        />
+    </MainWrapper>
+);
 
 export default Portfolio;
