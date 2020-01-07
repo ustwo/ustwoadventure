@@ -81,7 +81,7 @@ const MainIllustration = styled.figure`
 
                 ::after {
                     opacity: 0.7;
-                    transform: translate(1.5px, -1.5px) rotate(-45deg);
+                    transform: translate(1.2px, -1.2px) rotate(-45deg);
                 }
             }
         }

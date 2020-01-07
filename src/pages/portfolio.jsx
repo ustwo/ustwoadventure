@@ -5,11 +5,11 @@ import SEO from "../components/seo";
 import MainWrapper from "../components/main-wrapper";
 import shuffle from "../utils/shuffle";
 import portfolioArray from "../data/portfolio-array";
+import PortfolioItem from "../components/portfolio-item";
 import {
     PortfolioGridWrapper,
     PortfolioGridBackground
 } from "../components/portfolio-grid";
-import PortfolioItem from "../components/portfolio-item";
 
 const PortfolioPageHeader = styled.h1`
     grid-column: 1 / -1;
@@ -43,6 +43,10 @@ const FullPortfolioGridBackground = styled(PortfolioGridBackground)`
 `;
 
 const shuffledPortfolioArrayCopy = shuffle(portfolioArray.slice());
+
+// const alphabeticalPortfolioArray = portfolioArray.sort((a, b) =>
+//     a.name.localeCompare(b.name)
+// );
 
 const Portfolio = () => {
     return (

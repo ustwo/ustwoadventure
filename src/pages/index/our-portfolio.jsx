@@ -144,6 +144,10 @@ const livePortfolioMinusLatest = portfolioMinusLatest.filter(
 );
 const portfolioPreviewItems = shuffle(livePortfolioMinusLatest).slice(0, 5);
 
+// const alphabeticalPortfolioArray = portfolioArray.sort((a, b) =>
+//     a.name.localeCompare(b.name)
+// );
+
 const OurPortfolio = () => (
     <OurPortfolioSection subgrid>
         <StyledPortfolioCopy>

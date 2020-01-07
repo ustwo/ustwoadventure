@@ -30,7 +30,7 @@ const smallBackButton = css`
     }
 `;
 
-export default (stepCount = 1) => {
+export default ({ stepCount = 1 }) => {
     const [currentStep, setCurrentStep] = useState(1);
     const nextStep = () => setCurrentStep(currentStep + 1);
     const previousStep = () =>
@@ -59,7 +59,7 @@ export default (stepCount = 1) => {
     const SubmitButtons = ({ success }) => (
         <>
             <ButtonContainer>
-                <BackButton />
+                {stepCount !== 1 && <BackButton />}
                 <NextButton
                     success={success}
                     disabled={success && currentStep >= stepCount}

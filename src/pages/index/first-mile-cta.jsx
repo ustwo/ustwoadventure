@@ -42,7 +42,7 @@ const linkStyles = css`
             svg {
                 width: 0.92em;
                 margin-left: 0.4em;
-                transition: transform 100ms;
+                transition: transform 140ms;
             }
         }
     }

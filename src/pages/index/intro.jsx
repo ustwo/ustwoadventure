@@ -4,7 +4,7 @@ import { styled } from "linaria/react";
 import SectionWrapper from "../../components/section-wrapper";
 import LatestInvestment from "./latest-investment";
 import Button from "../../components/button";
-import HomePageCTA from "./home-page-cta";
+import FirstMileCTA from "./first-mile-cta";
 
 const StyledIntroCopy = styled.div`
     grid-column: 1 / 7;
@@ -60,29 +60,27 @@ const LatestInvestmentElement = styled(LatestInvestment)`
     }
 `;
 
-const Intro = () => {
-    return (
-        <SectionWrapper style={{ marginTop: 0 }} subgrid>
-            <StyledIntroCopy>
-                <h2>Build something bigger than an exit</h2>
-                <p>
-                    When you combine long-term thinking with strong culture and
-                    design, you create amazing companies.
-                </p>
-                <p>
-                    Through capital, experience and belief, we help founders
-                    with true heart and ambition build businesses on top of
-                    these principles.
-                </p>
-                <Button href="/approach">Our approach</Button>
-                <Button href="/about">About us</Button>
-            </StyledIntroCopy>
+const Intro = () => (
+    <SectionWrapper style={{ marginTop: 0 }} subgrid>
+        <StyledIntroCopy>
+            <h2>Build something bigger than an exit</h2>
+            <p>
+                When you combine long-term thinking with strong culture and
+                design, you create amazing companies.
+            </p>
+            <p>
+                Through capital, experience and belief, we help founders with
+                true heart and ambition build businesses on top of these
+                principles.
+            </p>
+            <Button href="/approach">Our approach</Button>
+            <Button href="/about">About us</Button>
+        </StyledIntroCopy>
 
-            <LatestInvestmentElement />
+        <LatestInvestmentElement />
 
-            <HomePageCTA />
-        </SectionWrapper>
-    );
-};
+        <FirstMileCTA />
+    </SectionWrapper>
+);
 
 export default Intro;
