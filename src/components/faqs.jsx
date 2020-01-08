@@ -94,9 +94,7 @@ const FaqStyledDetails = styled.details`
     }
 
     &[open] summary p::after {
-        transform: rotate(
-            45deg
-        ); /* FIXME: Get working consistently on mobile */
+        transform: rotate(45deg);
     }
 
     > div {

@@ -243,7 +243,7 @@ export default [
         copy:
             "Stitch is reinventing the production process for brands & agencies, by organizing & automating the production workflow.",
         status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false // TODO: get new content
+        isInHomePageRotation: false
     },
     {
         name: "Uptree",

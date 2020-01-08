@@ -35,12 +35,15 @@ const muteToggleStyles = css`
     }
 
     &:hover {
-        filter: brightness(80%);
+        filter: brightness(85%);
     }
 `;
 
 const InlineVideo = ({ style, className, src, poster, hasSound, controls }) => {
     const [muted, setMute] = useState(true);
+
+    const hasMouse = matchMedia("(pointer: fine)").matches;
+    const isClickable = hasSound && hasMouse;
 
     const toggleMute = e => {
         setMute(!muted);
@@ -57,10 +60,10 @@ const InlineVideo = ({ style, className, src, poster, hasSound, controls }) => {
             playsInline
             loop
             muted={muted}
-            onClick={hasSound && toggleMute}
+            onClick={isClickable && toggleMute}
             src={src}
             poster={poster}
-            controls={!muted || controls}
+            controls={controls}
         />
     );
 };
