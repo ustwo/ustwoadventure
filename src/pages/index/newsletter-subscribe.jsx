@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { styled } from "linaria/react";
 import addToMailchimp from "gatsby-plugin-mailchimp";
 
@@ -22,18 +22,22 @@ const CopyWrapper = styled.div`
     grid-column: 2 / 7;
     margin-right: 15px;
 
-    p {
-        transition: all 180ms;
+    div {
+        transition: height 100ms;
 
-        &.transition {
-            opacity: 0;
-            transform: translateY(3px);
+        p {
+            transition: all 180ms;
+
+            &.transition {
+                opacity: 0;
+                transform: translateY(3px);
+            }
         }
-    }
 
-    a {
-        color: #ffffff;
-        text-decoration: underline;
+        a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
     }
 
     @media (max-width: 740px) {
@@ -105,13 +109,25 @@ const NewsletterSubscribe = () => {
     const [email, setEmail] = useState("");
     const [sending, setSending] = useState(false);
     const [response, setResponse] = useState();
+    const [height, setHeight] = useState();
+
+    const responseCopyRef = useRef();
+    const initialCopyRef = useRef();
+
+    useEffect(() => {
+        const initialCopyEl = initialCopyRef.current;
+        setHeight(initialCopyEl.clientHeight);
+    }, []);
 
     const handleSubmit = async e => {
         e.preventDefault();
         setSending(true);
         const serverResponse = await addToMailchimp(email);
+
         setTimeout(() => {
             setResponse(serverResponse);
+            const responseCopyEl = responseCopyRef.current;
+            setHeight(responseCopyEl.clientHeight);
             setSending(false);
         }, 180);
     };
@@ -120,17 +136,23 @@ const NewsletterSubscribe = () => {
         <StyledCTAWrapper className={response ? "response" : undefined}>
             <CopyWrapper>
                 <h2>We hope you like newsletters</h2>
-                {response ? (
-                    <p
-                        className={sending ? "transition" : undefined}
-                        dangerouslySetInnerHTML={{ __html: response.msg }}
-                    /> // TODO: Get animated height working or force static
-                ) : (
-                    <p className={sending ? "transition" : undefined}>
-                        Sign up for a monthly update from Adventure and our
-                        community of creative companies.
-                    </p>
-                )}
+                <div style={{ height }}>
+                    {response ? (
+                        <p
+                            ref={responseCopyRef}
+                            className={sending ? "transition" : undefined}
+                            dangerouslySetInnerHTML={{ __html: response.msg }}
+                        />
+                    ) : (
+                        <p
+                            ref={initialCopyRef}
+                            className={sending ? "transition" : undefined}
+                        >
+                            Sign up for a monthly update from Adventure and our
+                            community of creative companies.
+                        </p>
+                    )}
+                </div>
             </CopyWrapper>
 
             <StyledForm onSubmit={handleSubmit}>
