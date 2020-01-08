@@ -137,12 +137,13 @@ const PortfolioPreviewBackground = styled(PortfolioGridBackground)`
     }
 `;
 
-const portfolioMinusLatest = portfolioArray.slice(0, portfolioArray.length - 1);
-const livePortfolioMinusLatest = portfolioMinusLatest.filter(
-    obj => obj.status === PORTFOLIO_STATUS.LIVE
+const companiesInHomePageRotation = portfolioArray.filter(
+    (company, index) =>
+        index !== portfolioArray.length - 1 &&
+        company.status === PORTFOLIO_STATUS.LIVE &&
+        company.isInHomePageRotation === true
 );
-// TODO: favourites
-const portfolioPreviewItems = shuffle(livePortfolioMinusLatest).slice(0, 5);
+const portfolioPreviewItems = shuffle(companiesInHomePageRotation).slice(0, 5);
 
 const OurPortfolio = () => (
     <OurPortfolioSection subgrid>
@@ -156,6 +157,7 @@ const OurPortfolio = () => (
         </StyledPortfolioCopy>
 
         <PortfolioPreviewGrid
+            hasArrows
             companies={portfolioPreviewItems}
             Background={PortfolioPreviewBackground}
         />

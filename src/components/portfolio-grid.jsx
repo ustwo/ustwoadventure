@@ -92,12 +92,19 @@ export const PortfolioGridBackground = styled.div`
     }
 `;
 
-const PortfolioGrid = ({ companies, Background, style, className }) => {
+const PortfolioGrid = ({
+    companies,
+    Background,
+    style,
+    className,
+    hasArrows
+}) => {
     const portfolioContainerRef = useRef();
 
     const PortfolioItems = () =>
         companies.map(company => (
             <PortfolioItem
+                hasArrows={hasArrows}
                 key={company.name}
                 name={company.name}
                 oneLiner={company.oneLiner}
