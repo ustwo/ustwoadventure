@@ -159,6 +159,16 @@ const InputWrapper = styled.div`
     @media (max-width: 960px) {
         width: 100%;
     }
+
+    @media (max-width: 450px) {
+        input:not(:placeholder-shown) + label {
+            top: -0.9em;
+        }
+
+        textarea:not(:placeholder-shown) + label {
+            top: -0.75em;
+        }
+    }
 `;
 
 export const Input = ({

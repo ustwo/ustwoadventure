@@ -87,7 +87,11 @@ const DetailsSection = styled(SectionWrapper)`
 
         @media (max-width: 580px) {
             grid-column: 1 / 8;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 450px) {
+            margin-bottom: 10px;
         }
 
         @media (max-width: 500px) {
@@ -150,7 +154,11 @@ const MoreInfoSection = styled(SectionWrapper)`
 
         @media (max-width: 580px) {
             grid-column: 1 / 6;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 450px) {
+            margin-bottom: 20px;
         }
 
         @media (max-width: 500px) {

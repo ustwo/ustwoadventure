@@ -97,12 +97,12 @@ const FaqStyledDetails = styled.details`
         transform: rotate(
             45deg
         ); /* FIXME: Get working consistently on mobile */
-        /* TODO: calculate heights to animate open & close */
     }
 
     > div {
         background-color: var(--grey01);
         padding: calc(var(--faqPadding) * 0.8) var(--faqPadding);
+        transition: height 200ms;
 
         p:last-child {
             margin-bottom: 0;

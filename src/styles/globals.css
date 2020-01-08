@@ -78,6 +78,10 @@ img[data-src]::after {
     background-color: #eeeeee;
 }
 
+input, textarea {
+    border-radius: 0;
+}
+
 
 @media (max-width: 1025px) {
     h1 {
