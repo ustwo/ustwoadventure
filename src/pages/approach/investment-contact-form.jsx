@@ -35,7 +35,11 @@ const CopyWrapper = styled.div`
         margin-right: 40px;
     }
 
-    @media (max-width: 715px) {
+    @media (max-width: 860px) {
+        margin-right: 20px;
+    }
+
+    @media (max-width: 740px) {
         margin-right: 0;
         margin-bottom: 60px;
         grid-column: 1 / -1;

@@ -109,6 +109,11 @@ const PortfolioGrid = ({ companies, Background, style, className }) => {
             />
         ));
 
+    // Using render() due to the way Gatsby handles shuffling content was causing
+    // Name changes on refresh, only  in production
+    // Problem is because of static html that's rendered (can see in page source)
+    // https://github.com/gatsbyjs/gatsby/issues/8707
+    // https://stackoverflow.com/questions/52959147/gatsby-static-dynamic-hybrid-component
     useEffect(() => {
         const portfolioContainer = portfolioContainerRef.current;
         render(

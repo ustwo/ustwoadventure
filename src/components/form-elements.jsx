@@ -22,7 +22,7 @@ export const StyledForm = styled.form`
         }
     }
 
-    @media (max-width: 715px) {
+    @media (max-width: 740px) {
         grid-column: 1 / -1;
     }
 `;

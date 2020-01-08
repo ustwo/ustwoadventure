@@ -7,7 +7,7 @@ import ForwardsArrow from "../../assets/forwards-arrow";
 
 const linkStyles = css`
     grid-column: 2 / 12;
-    margin: 70px 0 60px 0;
+    margin: 60px 0 45px 0;
     background-color: var(--nonBlack);
     box-shadow: var(--card-shadow);
     border-radius: 3px;

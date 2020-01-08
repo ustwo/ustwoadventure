@@ -140,7 +140,7 @@ const PortfolioItem = ({
         >
             <p className="name">{name}</p>
             <div className="image-container">
-                <img className="image" src={image} alt={name} />
+                <img className="image" src={image} alt={name} loading="lazy" />
                 {hasArrows && <ForwardsArrow />}
             </div>
             <p className="copy">{oneLiner}</p>

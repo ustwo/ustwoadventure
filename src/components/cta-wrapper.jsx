@@ -13,7 +13,7 @@ const CTABackground = styled(SectionWrapper)`
     margin-right: var(--side-margin);
     padding: 65px 0; /* was calc(var(--side-margin) * -1) to keep inline with page grid, but didn't look good */
 
-    @media (max-width: 715px) {
+    @media (max-width: 740px) {
         --side-margin: 0;
         padding: 40px 32px;
         grid-template-columns: repeat(1, 1fr);
@@ -36,7 +36,7 @@ const CTAInner = styled.div`
         margin-bottom: 0;
     }
 
-    @media (max-width: 715px) {
+    @media (max-width: 740px) {
         text-align: center;
         width: 75%;
         margin-left: auto;

@@ -8,7 +8,6 @@ import TextBlock from "../../components/text-block";
 import FaqSection from "../../components/faqs";
 import faqContent from "../../data/first-mile-faqs";
 import FirstMileApplicationForm from "./first-mile-application-form";
-import { arrow } from "../../assets/inline-icons";
 
 import mainIllustration from "../../assets/first-mile/main.png";
 // import startIllustration from "../../assets/first-mile/start.png";
@@ -60,29 +59,8 @@ const MainIllustration = styled.figure`
         a {
             color: var(--grey03);
 
-            ::after {
-                content: "";
-                background-image: url(${arrow});
-                transform: rotate(-45deg);
-                transition: transform 100ms, opacity 70ms;
-                filter: grayscale(100%);
-                opacity: 0;
-
-                background-size: 0.73em;
-                background-repeat: no-repeat;
-                display: inline-block;
-                width: 0.8em;
-                height: 0.8em;
-                margin-left: 4px;
-            }
-
             :hover {
                 font-style: italic;
-
-                ::after {
-                    opacity: 0.7;
-                    transform: translate(1.2px, -1.2px) rotate(-45deg);
-                }
             }
         }
     }

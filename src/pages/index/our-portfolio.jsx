@@ -141,6 +141,7 @@ const portfolioMinusLatest = portfolioArray.slice(0, portfolioArray.length - 1);
 const livePortfolioMinusLatest = portfolioMinusLatest.filter(
     obj => obj.status === PORTFOLIO_STATUS.LIVE
 );
+// TODO: favourites
 const portfolioPreviewItems = shuffle(livePortfolioMinusLatest).slice(0, 5);
 
 const OurPortfolio = () => (

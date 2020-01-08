@@ -36,7 +36,7 @@ const CopyWrapper = styled.div`
         text-decoration: underline;
     }
 
-    @media (max-width: 715px) {
+    @media (max-width: 740px) {
         margin-right: 0;
         grid-column: 1 / -1;
     }
@@ -65,9 +65,9 @@ const StyledForm = styled.form`
         }
     }
 
-    @media (max-width: 715px) {
+    @media (max-width: 740px) {
         grid-column: 1 / -1;
-        margin-top: 30px;
+        margin: 20px 0;
     }
 
     @media (max-width: 500px) {
@@ -91,7 +91,7 @@ const EmailInput = styled(Input)`
             top: -1.65em;
         }
 
-        @media (max-width: 715px) {
+        @media (max-width: 740px) {
             transform: scaleY(0.95) translateY(2px);
 
             + label {

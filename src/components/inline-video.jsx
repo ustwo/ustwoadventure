@@ -17,11 +17,17 @@ const muteToggleStyles = css`
     &::after {
         content: "";
         position: absolute;
+        display: block;
         top: 50%;
         left: 50%;
+        z-index: 2;
         transform: translate(-50%, -50%);
         background-image: url(${tick});
-        z-index: 2;
+        ${"" /* width: 100%;
+        height: 100%;
+        background-size: 20px auto;
+        background-repeat: no-repeat;
+        background-position: 50% 50%; */}
 
         &:hover {
             filter: brightness(80%);
