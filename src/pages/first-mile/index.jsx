@@ -8,9 +8,8 @@ import TextBlock from "../../components/text-block";
 import FaqSection from "../../components/faqs";
 import faqContent from "../../data/first-mile-faqs";
 import FirstMileApplicationForm from "./application-form";
+import MainIllustration from "./main-illustration";
 
-import mainIllustration from "../../assets/first-mile/main.png";
-// import startIllustration from "../../assets/first-mile/start.png";
 import jumpIllustration from "../../assets/first-mile/jump.png";
 import batonIllustration from "../../assets/first-mile/baton.png";
 import OpenIndicator from "./open-indicator";
@@ -18,7 +17,10 @@ import OpenIndicator from "./open-indicator";
 const FirstMilePage = styled(MainWrapper)`
     h1 {
         grid-column: 1 / -1;
-        margin-bottom: 45px;
+
+        @media (min-width: 769px) {
+            margin-bottom: 45px;
+        }
     }
 
     ${SectionWrapper} {
@@ -41,41 +43,6 @@ const FirstMilePage = styled(MainWrapper)`
         @media (max-width: 600px) {
             grid-column-start: 1;
         }
-    }
-`;
-
-const MainIllustration = styled.figure`
-    grid-column: 3 / -1;
-    margin: 0 0 20px 0;
-    position: relative;
-
-    img {
-        width: 100%;
-        padding: 1em 20% 1em 40%;
-        margin-left: -40%;
-        background-color: #7ea8d9;
-    }
-
-    figcaption {
-        margin: -0.1em 0 0 0;
-        font-size: 0.88em;
-        color: var(--grey03);
-
-        a {
-            color: var(--grey03);
-
-            :hover {
-                font-style: italic;
-            }
-        }
-    }
-
-    @media (max-width: 769px) {
-        grid-column: 1 / -1;
-    }
-
-    @media (max-width: 680px) {
-        margin: 0;
     }
 `;
 
@@ -175,11 +142,8 @@ const FormContainer = styled.div`
 
 const Index = () => {
     const formRef = useRef();
-    const scrollToForm = e => {
-        e.preventDefault();
-        const form = formRef.current;
-        form.scrollIntoView({ behavior: "smooth" });
-    };
+    const scrollToForm = () =>
+        formRef.current.scrollIntoView({ behavior: "smooth" });
 
     return (
         <FirstMilePage>
@@ -191,25 +155,11 @@ const Index = () => {
 
             <h1>First Mile</h1>
 
-            <MainIllustration>
-                <img
-                    src={mainIllustration}
-                    alt="An illustration of a race start line, with various animals running together"
-                />
-                <figcaption>
-                    Illustrations —{" "}
-                    <a
-                        href="https://www.olfdebruin.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Olf de Bruin
-                    </a>
-                </figcaption>
-            </MainIllustration>
+            <MainIllustration />
 
             <SectionWrapper>
                 <OpenIndicator onClick={scrollToForm} />
+
                 <TextBlock>
                     <h3>
                         A program for the next generation of founders who are

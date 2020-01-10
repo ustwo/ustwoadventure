@@ -13,6 +13,7 @@ const StyledCTA = styled(CTAWrapper)`
     transition: box-shadow 200ms;
     cursor: ${props => (props.open ? "pointer" : "default")};
     background-color: ${props => (props.open ? "var(--blu)" : "var(--grey04)")};
+    box-shadow: var(--card-shadow);
 
     div {
         display: block;
@@ -43,7 +44,7 @@ const StyledCTA = styled(CTAWrapper)`
             props.open
                 ? `0px 10px
             28px rgba(0, 0, 0, 0.19)`
-                : "inherit"};
+                : "var(--card-shadow)"};
 
         div svg {
             transform: rotate(90deg) translateX(2px);
@@ -77,6 +78,9 @@ const OpenIndicator = ({ onClick }) => {
     const applicationsAreOpen = true;
     const deadline = "March 20th";
 
+    const havePlannedNextStart = true;
+    const nextStart = "Q2 2020";
+
     return (
         <StyledCTA
             open={applicationsAreOpen}
@@ -90,7 +94,9 @@ const OpenIndicator = ({ onClick }) => {
                 <p>
                     {applicationsAreOpen
                         ? `Deadline ${deadline} — Apply now `
-                        : "We'll announce our next programme next year"}
+                        : `We'll be announcing our next programme ${
+                              havePlannedNextStart ? `in ${nextStart}` : "soon"
+                          }`}
                     {applicationsAreOpen && <ForwardsArrow />}
                 </p>
             </div>
