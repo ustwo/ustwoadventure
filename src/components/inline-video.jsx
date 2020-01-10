@@ -42,7 +42,10 @@ const muteToggleStyles = css`
 const InlineVideo = ({ style, className, src, poster, hasSound, controls }) => {
     const [muted, setMute] = useState(true);
 
-    const hasMouse = matchMedia("(pointer: fine)").matches;
+    const hasMouse =
+        typeof window !== "undefined"
+            ? window.matchMedia("(pointer: fine)").matches
+            : null;
     const isClickable = hasSound && hasMouse;
 
     const toggleMute = e => {
