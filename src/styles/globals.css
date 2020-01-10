@@ -1,3 +1,7 @@
+:root {
+    overflow-x: hidden;
+}
+
 body {
     margin: auto;
     margin-top: 65px;

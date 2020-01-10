@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { styled } from "linaria/react";
 
 import SEO from "../../components/seo";
@@ -7,16 +7,18 @@ import MainWrapper from "../../components/main-wrapper";
 import TextBlock from "../../components/text-block";
 import FaqSection from "../../components/faqs";
 import faqContent from "../../data/first-mile-faqs";
-import FirstMileApplicationForm from "./first-mile-application-form";
+import FirstMileApplicationForm from "./application-form";
 
 import mainIllustration from "../../assets/first-mile/main.png";
 // import startIllustration from "../../assets/first-mile/start.png";
 import jumpIllustration from "../../assets/first-mile/jump.png";
 import batonIllustration from "../../assets/first-mile/baton.png";
+import OpenIndicator from "./open-indicator";
 
 const FirstMilePage = styled(MainWrapper)`
     h1 {
         grid-column: 1 / -1;
+        margin-bottom: 45px;
     }
 
     ${SectionWrapper} {
@@ -44,15 +46,18 @@ const FirstMilePage = styled(MainWrapper)`
 
 const MainIllustration = styled.figure`
     grid-column: 3 / -1;
-    margin: 20px 0;
+    margin: 0 0 20px 0;
+    position: relative;
 
     img {
         width: 100%;
+        padding: 1em 20% 1em 40%;
+        margin-left: -40%;
         background-color: #7ea8d9;
     }
 
     figcaption {
-        margin: -0.15em 0;
+        margin: -0.1em 0 0 0;
         font-size: 0.88em;
         color: var(--grey03);
 
@@ -87,15 +92,12 @@ const DetailsSection = styled(SectionWrapper)`
 
         @media (max-width: 580px) {
             grid-column: 1 / 8;
-            margin-bottom: 20px;
-        }
-
-        @media (max-width: 450px) {
             margin-bottom: 10px;
         }
 
         @media (max-width: 500px) {
-            width: 66%;
+            width: 70%;
+            margin-bottom: 0;
         }
     }
 
@@ -167,118 +169,133 @@ const MoreInfoSection = styled(SectionWrapper)`
     }
 `;
 
-const Index = () => (
-    <FirstMilePage>
-        <SEO
-            title="First Mile"
-            description="A program for the next generation of founders who are building businesses that have creativity and culture at their core."
-            image="https://adventure.ustwo.com/meta_first_mile_image.png"
-        />
+const FormContainer = styled.div`
+    display: subgrid;
+`;
 
-        <h1>First Mile</h1>
+const Index = () => {
+    const formRef = useRef();
+    const scrollToForm = e => {
+        e.preventDefault();
+        const form = formRef.current;
+        form.scrollIntoView({ behavior: "smooth" });
+    };
 
-        <MainIllustration>
-            <img
-                src={mainIllustration}
-                alt="An illustration of a race start line, with various animals running together"
-            />
-            <figcaption>
-                Illustrations —{" "}
-                <a
-                    href="https://www.olfdebruin.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Olf de Bruin
-                </a>
-            </figcaption>
-        </MainIllustration>
-
-        <SectionWrapper>
-            <TextBlock>
-                <h3>
-                    A program for the next generation of founders who are
-                    building businesses that have creativity and culture at
-                    their core.
-                </h3>
-
-                <p>
-                    We want to enable a new wave of leaders who understand the
-                    power of design, culture and long-term thinking, and equip
-                    them with the belief, network and resources to build the
-                    foundations of great businesses.
-                </p>
-
-                <p>
-                    First Mile is a 12-month program for first-time founders,
-                    we’ve designed it to focus on...
-                </p>
-
-                <p>Applications are currently open for our 2020 cohort.</p>
-            </TextBlock>
-        </SectionWrapper>
-
-        <DetailsSection>
-            <img
-                src={jumpIllustration}
-                alt="An illustration of a race start line, with various animals running together"
+    return (
+        <FirstMilePage>
+            <SEO
+                title="First Mile"
+                description="A program for the next generation of founders who are building businesses that have creativity and culture at their core."
+                image="https://adventure.ustwo.com/meta_first_mile_image.png"
             />
 
-            <TextBlock>
-                <h3>What you get</h3>
-                <ul>
-                    <li>12 months of guided support</li>
-                    <li>A £10,000 stipend</li>
-                    <li>An additional £5,000 of services</li>
-                    <li>Hotdesking space in our London studio</li>
-                    <li>A structured mentorship program</li>
-                    <li>More...</li>
-                </ul>
+            <h1>First Mile</h1>
 
-                <h3>The criteria</h3>
-                <ul>
-                    <li>First-time founder</li>
-                    <li>Have a limited company set up in the UK</li>
-                    <li>An additional £5,000 of services</li>
-                    <li>Hotdesking space in our London studio</li>
-                </ul>
-            </TextBlock>
-        </DetailsSection>
+            <MainIllustration>
+                <img
+                    src={mainIllustration}
+                    alt="An illustration of a race start line, with various animals running together"
+                />
+                <figcaption>
+                    Illustrations —{" "}
+                    <a
+                        href="https://www.olfdebruin.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Olf de Bruin
+                    </a>
+                </figcaption>
+            </MainIllustration>
 
-        <MoreInfoSection>
-            <img
-                src={batonIllustration}
-                alt="An illustration of a race start line, with various animals running together"
-            />
+            <SectionWrapper>
+                <OpenIndicator onClick={scrollToForm} />
+                <TextBlock>
+                    <h3>
+                        A program for the next generation of founders who are
+                        building businesses that have creativity and culture at
+                        their core.
+                    </h3>
 
-            <TextBlock>
-                <h3>
-                    A program for the next generation of founders with true
-                    heart and ambition, who are building businesses with
-                    creativity and culture at their core.
-                </h3>
+                    <p>
+                        We want to enable a new wave of leaders who understand
+                        the power of design, culture and long-term thinking, and
+                        equip them with the belief, network and resources to
+                        build the foundations of great businesses.
+                    </p>
 
-                <p>
-                    You may come for the capital, but we want you to stay for
-                    the belief. We offer the perspective and support to help you
-                    forge your path.
-                </p>
+                    <p>
+                        First Mile is a 12-month program for first-time
+                        founders, we’ve designed it to focus on...
+                    </p>
+                </TextBlock>
+            </SectionWrapper>
 
-                <p>
-                    At ustwo we celebrate difference, and the creativity that it
-                    generates. We are proud to offer equal opportunities
-                    regardless of race, religion, sex, nationality, sexual
-                    orientation, age, disability, gender identity, marital
-                    status, or other ways that people identify. We welcome
-                    applications for our First Mile programe from anywhere.
-                </p>
-            </TextBlock>
-        </MoreInfoSection>
+            <DetailsSection>
+                <img
+                    src={jumpIllustration}
+                    alt="An illustration of a race start line, with various animals running together"
+                />
 
-        <FirstMileApplicationForm />
+                <TextBlock>
+                    <h3>What you get</h3>
+                    <ul>
+                        <li>12 months of guided support</li>
+                        <li>A £10,000 stipend</li>
+                        <li>An additional £5,000 of services</li>
+                        <li>Hotdesking space in our London studio</li>
+                        <li>A structured mentorship program</li>
+                        <li>More...</li>
+                    </ul>
 
-        <FaqSection faqArray={faqContent} />
-    </FirstMilePage>
-);
+                    <h3>The criteria</h3>
+                    <ul>
+                        <li>First-time founder</li>
+                        <li>Have a limited company set up in the UK</li>
+                        <li>An additional £5,000 of services</li>
+                        <li>Hotdesking space in our London studio</li>
+                    </ul>
+                </TextBlock>
+            </DetailsSection>
+
+            <MoreInfoSection>
+                <img
+                    src={batonIllustration}
+                    alt="An illustration of a race start line, with various animals running together"
+                />
+
+                <TextBlock>
+                    <h3>
+                        A program for the next generation of founders with true
+                        heart and ambition, who are building businesses with
+                        creativity and culture at their core.
+                    </h3>
+
+                    <p>
+                        You may come for the capital, but we want you to stay
+                        for the belief. We offer the perspective and support to
+                        help you forge your path.
+                    </p>
+
+                    <p>
+                        At ustwo we celebrate difference, and the creativity
+                        that it generates. We are proud to offer equal
+                        opportunities regardless of race, religion, sex,
+                        nationality, sexual orientation, age, disability, gender
+                        identity, marital status, or other ways that people
+                        identify. We welcome applications for our First Mile
+                        programe from anywhere.
+                    </p>
+                </TextBlock>
+            </MoreInfoSection>
+
+            <FormContainer ref={formRef}>
+                <FirstMileApplicationForm />
+            </FormContainer>
+
+            <FaqSection faqArray={faqContent} />
+        </FirstMilePage>
+    );
+};
 
 export default Index;

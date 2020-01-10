@@ -1,7 +1,7 @@
 import { styled } from "linaria/react";
 
 const MainWrapper = styled.main`
-    margin-top: 170px;
+    margin-top: 160px;
     margin-bottom: 90px;
     display: subgrid;
 

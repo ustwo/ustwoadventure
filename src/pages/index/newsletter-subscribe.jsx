@@ -23,7 +23,7 @@ const CopyWrapper = styled.div`
     margin-right: 15px;
 
     div {
-        transition: height 100ms;
+        transition: height 100ms ease-in-out;
 
         p {
             transition: all 180ms;

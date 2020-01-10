@@ -52,8 +52,14 @@ const CTAInner = styled.div`
     }
 `;
 
-const CTAWrapper = ({ children, className, style }) => (
-    <CTABackground subgrid className={className} style={style}>
+const CTAWrapper = ({ as, children, className, style, onClick }) => (
+    <CTABackground
+        as={as}
+        subgrid
+        className={className}
+        style={style}
+        onClick={onClick}
+    >
         <CTAInner>{children}</CTAInner>
     </CTABackground>
 );
