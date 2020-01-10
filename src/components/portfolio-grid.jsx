@@ -119,6 +119,8 @@ const PortfolioGrid = ({
     // Using render() due to the way Gatsby handles shuffling content was causing
     // Name changes on refresh, only  in production
     // Problem is because of static html that's rendered (can see in page source)
+    // shuffling order css property also has same issue. Soe does Suspense and anything else I've tried
+    // No way to shuffle elements properly that are already in the DOM, it seems
     // https://github.com/gatsbyjs/gatsby/issues/8707
     // https://stackoverflow.com/questions/52959147/gatsby-static-dynamic-hybrid-component
     useEffect(() => {
