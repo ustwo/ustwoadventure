@@ -122,7 +122,9 @@ const FaqItem = ({ question, answer }) => (
             <p>{question}</p>
         </summary>
         <div>
-            <p>{answer}</p>
+            {answer.map(paragraph => (
+                <p>{paragraph}</p>
+            ))}
         </div>
     </FaqStyledDetails>
 );
