@@ -31,7 +31,7 @@ const createLoopLetterStyles = () => {
                 transform: translate(-50%, -50%)
                     rotate(${i * (360 / letterCount) - 360 / letterCount}deg)
                     translateY(var(--translateY)) rotateX(90deg);
-                animation: circle-orbit- ${i} var(--rotationDuration) linear
+                animation: circle-orbit-${i} var(--rotationDuration) linear
                     infinite;
             }
         `;
