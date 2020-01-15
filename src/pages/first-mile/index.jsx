@@ -32,6 +32,10 @@ const FirstMilePage = styled(MainWrapper)`
     }
 
     ${TextBlock} {
+        h3 {
+            margin-bottom: 40px;
+        }
+
         @media (max-width: 880px) {
             grid-column-start: 4;
         }

@@ -10,6 +10,7 @@ const StyledFigure = styled.figure`
 
     img {
         width: 100%;
+        min-height: 150px;
         padding: 1em 20% 1em 39%;
         margin-left: -40%;
         background-color: #7ea8d9;

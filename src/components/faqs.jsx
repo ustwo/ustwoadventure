@@ -61,6 +61,17 @@ const FaqStyledDetails = styled.details`
         margin-bottom: var(--column-gap);
     }
 
+    @keyframes sweepIn {
+        0% {
+            opacity: 0;
+            margin-left: -4px;
+        }
+        100% {
+            opacity: 1;
+            margin-left: 0px;
+        }
+    }
+
     summary {
         cursor: default;
         background-color: var(--piglet);
@@ -101,22 +112,13 @@ const FaqStyledDetails = styled.details`
     > div {
         background-color: var(--grey01);
         padding: calc(var(--faqPadding) * 0.8) var(--faqPadding);
-        animation: sweepOut .5s ease-in-out;
+        animation: sweepIn 200ms ease-in-out;
 
         p:last-child {
             margin-bottom: 0;
         }
     }
-    @keyframes sweepOut {
-        0% {
-            opacity: 0;
-            margin-left: -10px;
-        }
-        100% {
-            opacity: 1;
-            margin-left: 0px;
-        }
-    }
+
     @media (max-width: 769px) {
         width: 480px;
     }

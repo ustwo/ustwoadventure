@@ -1,56 +1,52 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/media-has-caption */
 import React, { useState } from "react";
-import { css, cx } from "linaria";
-import { tick } from "../assets/inline-icons";
+import { styled } from "linaria/react";
+import { cx, css } from "linaria";
 
-const noOutline = css`
-    &:focus {
-        outline: none;
-    }
+const VideoContainer = styled.div`
+    position: relative;
+    height: max-content;
+
     video {
         width: 100%;
         display: block;
+        transition: filter 150ms;
+
+        &:focus {
+            outline: none;
+        }
     }
 `;
 
 const muteToggleStyles = css`
-    transition: filter 150ms;
-    position: relative;
-
-    video {
-        width: 100%;
-        display: block;
-    }
-    .inline-video-container {
-        position: relative;
-    }
-    .inline-video-hover-background {
-        position: absolute;
+    p {
         display: none;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.3);
-    }
-    .inline-video-hover-icon {
-        content: "";
+        font-family: var(--futura);
+        font-size: 3em;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 0.8;
         position: absolute;
-        display: block;
         top: 50%;
         left: 50%;
-        width: 3em;
-        height: 3em;
-        z-index: 100;
-        background-size: cover;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        background-image: url(${tick});    
+        transform: translate(-50%, -40%);
+        color: #ffffff;
+
+        :hover {
+            cursor: pointer;
+            color: var(--piglet);
+        }
     }
 
-    .inline-video-container:hover .inline-video-hover-background {
-        display: block;
+    :hover {
+        video {
+            filter: brightness(75%);
+        }
+
+        p {
+            display: block;
+        }
     }
 `;
 
@@ -68,27 +64,31 @@ const InlineVideo = ({ style, className, src, poster, hasSound, controls }) => {
         e.preventDefault();
     };
 
-    const classes = cx(noOutline, className, hasSound && muteToggleStyles);
+    const handleKeyDown = e => e.key === "m" && setMute(!muted);
+
+    const classes = cx(className, hasSound && muteToggleStyles);
 
     return (
-        <div className={classes}>
-            <div className="inline-video-container">
-                <video
-                    style={style}
-                    autoPlay
-                    playsInline
-                    loop
-                    muted={muted}
+        <VideoContainer className={classes}>
+            <video
+                style={style}
+                autoPlay
+                playsInline
+                loop
+                muted={muted}
+                src={src}
+                poster={poster}
+                controls={controls}
+            />
+            {hasSound && (
+                <p
                     onClick={isClickable && toggleMute}
-                    src={src}
-                    poster={poster}
-                    controls={controls}
-                />
-                <div className="inline-video-hover-background">
-                    <div className="inline-video-hover-icon" />
-                </div>
-            </div>
-        </div>
+                    onKeyDown={handleKeyDown}
+                >
+                    {muted ? "UNMUTE" : "MUTE"}
+                </p>
+            )}
+        </VideoContainer>
     );
 };
 
