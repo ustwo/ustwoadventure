@@ -103,22 +103,19 @@ const FaqStyledDetails = styled.details`
         padding: calc(var(--faqPadding) * 0.8) var(--faqPadding);
         animation: sweepOut .5s ease-in-out;
 
-        @keyframes sweepOut {
-            0% {
-                opacity: 0;
-                margin-left: -10px;
-            }
-            100% {
-                opacity: 1;
-                margin-left: 0px;
-            }
-        }
-
-        /* TODO: ^get transition working */
-        /* https://github.com/facebook/react/issues/13108 */
-        /* https://stackoverflow.com/questions/1473584/need-to-find-height-of-hidden-div-on-page-set-to-displaynone */
         p:last-child {
             margin-bottom: 0;
+        }
+    }
+
+    @keyframes sweepOut {
+        0% {
+            opacity: 0;
+            margin-left: -10px;
+        }
+        100% {
+            opacity: 1;
+            margin-left: 0px;
         }
     }
 
