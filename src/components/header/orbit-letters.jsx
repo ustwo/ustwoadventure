@@ -26,17 +26,16 @@ const createLoopLetterStyles = () => {
     let LetterStyleString = "";
 
     for (let i = 0; i <= letterCount; i++) {
-        LetterStyleString += `
-                &:nth-child(${i}) {
-                    transform: translate(-50%, -50%)
-                        rotate(${i * (360 / letterCount) -
-                            360 / letterCount}deg)
-                        translateY(var(--translateY)) rotateX(90deg);
-                    animation: circle-orbit-${i} var(--rotationDuration) linear
-                        infinite;
-                }
-            `;
-        // TODO: steps to stop fading on webkit - instead of linear
+        LetterStyleString += css`
+            &:nth-child(${i}) {
+                transform: translate(-50%, -50%)
+                    rotate(${i * (360 / letterCount) - 360 / letterCount}deg)
+                    translateY(var(--translateY)) rotateX(90deg);
+                animation: circle-orbit- ${i} var(--rotationDuration) linear
+                    infinite;
+            }
+        `;
+        // TODO: steps to stop fading on webkit - instead of linear. could add step-animation-timing-function
         // https://stackoverflow.com/questions/4503195/css3-sprite-animation-without-tweening
     }
 
