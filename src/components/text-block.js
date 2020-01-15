@@ -4,7 +4,7 @@ const TextBlock = styled.div`
     grid-column: 5 / 12;
 
     h3 {
-        margin-bottom: ${props => (props.largeHeader ? "2.6em" : "50px")};
+        margin-bottom: ${props => (props.largeHeader ? "2.6em" : "45px")};
     }
 
     > b {

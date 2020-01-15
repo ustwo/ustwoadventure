@@ -23,6 +23,7 @@ const linkStyles = css`
             object-fit: cover;
             width: 24%;
             transform: scale(1.06);
+            transition: transform 140ms;
             margin-right: 2.3em;
             border-radius: 3px 0 0 3px;
         }
@@ -50,8 +51,14 @@ const linkStyles = css`
     &:hover {
         box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.19);
 
-        div svg {
-            transform: translateX(2px);
+        div.wrapper {
+            img {
+                transform: scale(1.068);
+            }
+
+            div svg {
+                transform: translateX(2px);
+            }
         }
     }
 

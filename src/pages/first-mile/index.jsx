@@ -72,7 +72,7 @@ const DetailsSection = styled(SectionWrapper)`
         grid-column-start: 6;
 
         h3 {
-            margin-bottom: 40px;
+            margin-bottom: 35px;
 
             &:not(:first-child) {
                 margin-top: 70px;
@@ -94,6 +94,8 @@ const DetailsSection = styled(SectionWrapper)`
     }
 
     ul {
+        list-style: initial;
+        list-style-type: "–  ";
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: var(--column-gap);
@@ -175,8 +177,20 @@ const Index = () => {
                     </p>
 
                     <p>
-                        First Mile is a 12-month program for first-time
-                        founders, we’ve designed it to focus on...
+                        First Mile is a 12-month programme for first-time
+                        founders that focusses on mentorship, personalised
+                        learning journeys, and deep care. Less about scale and
+                        more about care. Long-term over short-term. Open minds
+                        over singular-outcomes.
+                    </p>
+
+                    <p>
+                        Practically what that means is a cash injection (to
+                        cover costs and make the programme accessible) and a
+                        years worth of structured support in a variety of
+                        disciplines — from ustwobies and our Adventure community
+                        — with a pledge to pay it forwards and enable future
+                        participants to go on the journey, too.
                     </p>
                 </TextBlock>
             </SectionWrapper>
@@ -184,26 +198,19 @@ const Index = () => {
             <DetailsSection>
                 <img
                     src={jumpIllustration}
-                    alt="An illustration of a race start line, with various animals running together"
+                    alt="An illustration of a runner jumping over a log while smiling."
                 />
 
                 <TextBlock>
                     <h3>What you get</h3>
                     <ul>
-                        <li>12 months of guided support</li>
+                        <li>12 months of structured support</li>
                         <li>A £10,000 stipend</li>
-                        <li>An additional £5,000 of services</li>
                         <li>Hotdesking space in our London studio</li>
-                        <li>A structured mentorship program</li>
-                        <li>More...</li>
-                    </ul>
-
-                    <h3>The criteria</h3>
-                    <ul>
-                        <li>First-time founder</li>
-                        <li>Have a limited company set up in the UK</li>
-                        <li>An additional £5,000 of services</li>
-                        <li>Hotdesking space in our London studio</li>
+                        <li>A personalised learning journey</li>
+                        <li>Access to 40+ mentors across all disciplines</li>
+                        <li>A crafted workshop programme</li>
+                        <li>Regular community catchups and events</li>
                     </ul>
                 </TextBlock>
             </DetailsSection>
@@ -211,30 +218,34 @@ const Index = () => {
             <MoreInfoSection>
                 <img
                     src={batonIllustration}
-                    alt="An illustration of a race start line, with various animals running together"
+                    alt="An illustration of one hand passing a baton to the next"
                 />
 
                 <TextBlock>
-                    <h3>
-                        A program for the next generation of founders with true
-                        heart and ambition, who are building businesses with
-                        creativity and culture at their core.
-                    </h3>
-
+                    <h3>Paying it forwards</h3>
                     <p>
-                        You may come for the capital, but we want you to stay
-                        for the belief. We offer the perspective and support to
-                        help you forge your path.
+                        Every participant of the First Mile programme must sign
+                        a pledge to pay it forwards. Within 5 years, provided
+                        you are still working on your business, we ask that you
+                        pay back £20,000 pounds, which we recycle into the
+                        programme to support future participants. This way we
+                        can build a sustainable future for First Mile and the
+                        community.
                     </p>
 
+                    <h3>Criteria</h3>
                     <p>
-                        At ustwo we celebrate difference, and the creativity
-                        that it generates. We are proud to offer equal
-                        opportunities regardless of race, religion, sex,
-                        nationality, sexual orientation, age, disability, gender
-                        identity, marital status, or other ways that people
-                        identify. We welcome applications for our First Mile
-                        programe from anywhere.
+                        To be eligible for the programme, you must be a
+                        first-time founder, with a company entity set up.
+                    </p>
+                    <p style={{ fontStyle: "italic" }}>
+                        At ustwo we celebrate diversity, and the creativity that
+                        it generates. We are proud to offer equal opportunities
+                        regardless of race, religion, nationality, sexual
+                        orientation, age, disability, gender identity, family
+                        status, and any other ways that people identify. We
+                        welcome applications for our First Mile programe from
+                        any background.
                     </p>
                 </TextBlock>
             </MoreInfoSection>
