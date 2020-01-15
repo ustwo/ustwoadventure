@@ -8,6 +8,10 @@ const noOutline = css`
     &:focus {
         outline: none;
     }
+    video {
+        width: 100%;
+        display: block;
+    }
 `;
 
 const muteToggleStyles = css`
