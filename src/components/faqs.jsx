@@ -95,6 +95,7 @@ const FaqStyledDetails = styled.details`
 
     &[open] summary p::after {
         transform: rotate(45deg);
+        /* TODO: Get this working consistently on ~actual~ mobile devices */
     }
 
     > div {
