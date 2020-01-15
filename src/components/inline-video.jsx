@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/media-has-caption */
 import React, { useState } from "react";
 import { css, cx } from "linaria";
-/** tick icon is not working */
 import { tick } from "../assets/inline-icons";
 
 const noOutline = css`
