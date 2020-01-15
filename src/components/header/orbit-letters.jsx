@@ -26,7 +26,7 @@ const createLoopLetterStyles = () => {
     let LetterStyleString = "";
 
     for (let i = 0; i <= letterCount; i++) {
-        LetterStyleString += css`
+        LetterStyleString += `
             &:nth-child(${i}) {
                 transform: translate(-50%, -50%)
                     rotate(${i * (360 / letterCount) - 360 / letterCount}deg)
