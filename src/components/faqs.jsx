@@ -106,11 +106,11 @@ const FaqStyledDetails = styled.details`
         @keyframes sweepOut {
             0% {
                 opacity: 0;
-                margin-left: -10px
+                margin-left: -10px;
             }
             100% {
                 opacity: 1;
-                margin-left: 0px
+                margin-left: 0px;
             }
         }
 
