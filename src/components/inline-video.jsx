@@ -7,35 +7,50 @@ const noOutline = css`
     &:focus {
         outline: none;
     }
+    video {
+        width: 100%;
+        display: block;
+    }
 `;
 
 const muteToggleStyles = css`
     transition: filter 150ms;
     position: relative;
 
-    ${"" /* TODO: get sound icon working? */}
-    &::after {
+    video {
+        width: 100%;
+        display: block;
+    }
+    .inline-video-container {
+        position: relative;
+    }
+    .inline-video-hover-background {
+        position: absolute;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    .inline-video-hover-icon {
         content: "";
         position: absolute;
         display: block;
         top: 50%;
         left: 50%;
-        z-index: 2;
+        width: 3em;
+        height: 3em;
+        z-index: 100;
+        background-size: cover;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        background-image: url(${tick});
-        ${"" /* width: 100%;
-        height: 100%;
-        background-size: 20px auto;
-        background-repeat: no-repeat;
-        background-position: 50% 50%; */}
-
-        &:hover {
-            filter: brightness(80%);
-        }
+        background-image: url(${tick});    
     }
 
-    &:hover {
-        filter: brightness(85%);
+    .inline-video-container:hover .inline-video-hover-background {
+        display: block;
     }
 `;
 
@@ -56,18 +71,24 @@ const InlineVideo = ({ style, className, src, poster, hasSound, controls }) => {
     const classes = cx(noOutline, className, hasSound && muteToggleStyles);
 
     return (
-        <video
-            style={style}
-            className={classes}
-            autoPlay
-            playsInline
-            loop
-            muted={muted}
-            onClick={isClickable && toggleMute}
-            src={src}
-            poster={poster}
-            controls={controls}
-        />
+        <div className={classes}>
+            <div className="inline-video-container">
+                <video
+                    style={style}
+                    autoPlay
+                    playsInline
+                    loop
+                    muted={muted}
+                    onClick={isClickable && toggleMute}
+                    src={src}
+                    poster={poster}
+                    controls={controls}
+                />
+                <div className="inline-video-hover-background">
+                    <div className="inline-video-hover-icon" />
+                </div>
+            </div>
+        </div>
     );
 };
 
