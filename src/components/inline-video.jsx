@@ -21,17 +21,19 @@ const VideoContainer = styled.div`
 
 const muteToggleStyles = css`
     p {
-        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
         font-family: var(--futura);
         font-size: 3em;
         text-align: center;
         text-transform: uppercase;
         line-height: 0.8;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -40%);
+        margin-bottom: 0;
+        transform: translate(-50%, -33.33%);
         color: #ffffff;
+        opacity: 0;
+        transition: opacity 150ms;
 
         :hover {
             cursor: pointer;
@@ -45,7 +47,7 @@ const muteToggleStyles = css`
         }
 
         p {
-            display: block;
+            opacity: 1;
         }
     }
 `;
