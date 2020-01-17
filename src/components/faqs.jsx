@@ -64,7 +64,7 @@ const FaqStyledDetails = styled.details`
     @keyframes sweepIn {
         0% {
             opacity: 0;
-            margin-left: -4px;
+            margin-left: -5px;
         }
         100% {
             opacity: 1;
@@ -112,7 +112,7 @@ const FaqStyledDetails = styled.details`
     > div {
         background-color: var(--grey01);
         padding: calc(var(--faqPadding) * 0.8) var(--faqPadding);
-        animation: sweepIn 120ms ease-in-out;
+        animation: sweepIn 180ms ease-out;
 
         p:last-child {
             margin-bottom: 0;
