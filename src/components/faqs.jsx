@@ -112,7 +112,7 @@ const FaqStyledDetails = styled.details`
     > div {
         background-color: var(--grey01);
         padding: calc(var(--faqPadding) * 0.8) var(--faqPadding);
-        animation: sweepIn 200ms ease-in-out;
+        animation: sweepIn 120ms ease-in-out;
 
         p:last-child {
             margin-bottom: 0;
