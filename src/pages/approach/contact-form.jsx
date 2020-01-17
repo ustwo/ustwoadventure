@@ -175,7 +175,7 @@ const InvestmentContactForm = () => {
                     />
 
                     <Input
-                        label="What revenue are you generating?"
+                        label="How much revenue are you generating?"
                         name="companyRevenue"
                         handleChange={handleChange}
                         required={currentStep === 2}

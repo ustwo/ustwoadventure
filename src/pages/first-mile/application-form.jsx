@@ -71,9 +71,9 @@ const InvestmentContactForm = () => {
     const [companyName, setCompanyName] = useState("");
     const [website, setWebsite] = useState("");
     const [companyDescription, setCompanyDescription] = useState("");
-    const [roundSize, setRoundSize] = useState("");
-    const [productMotivations, setProductMotivations] = useState("");
-    const [companyRevenue, setCompanyRevenue] = useState("");
+    const [location, setLocation] = useState("");
+    const [typeOfCompany, setTypeOfCompany] = useState("");
+    const [neededSupport, setNeededSupport] = useState("");
     const [contactName, setContactName] = useState("");
     const [contactEmail, setContactEmail] = useState("");
 
@@ -83,9 +83,9 @@ const InvestmentContactForm = () => {
         if (name === "companyName") setCompanyName(value);
         if (name === "website") setWebsite(value);
         if (name === "companyDescription") setCompanyDescription(value);
-        if (name === "roundSize") setRoundSize(value);
-        if (name === "productMotivations") setProductMotivations(value);
-        if (name === "companyRevenue") setCompanyRevenue(value);
+        if (name === "location") setLocation(value);
+        if (name === "typeOfCompany") setTypeOfCompany(value);
+        if (name === "neededSupport") setNeededSupport(value);
         if (name === "contactName") setContactName(value);
         if (name === "contactEmail") setContactEmail(value);
     };
@@ -98,9 +98,9 @@ const InvestmentContactForm = () => {
                 companyName,
                 website,
                 companyDescription,
-                productMotivations,
-                companyRevenue,
-                roundSize,
+                typeOfCompany,
+                neededSupport,
+                location,
                 contactName,
                 contactEmail
             };
@@ -146,11 +146,11 @@ const InvestmentContactForm = () => {
                         label="Website"
                         name="website"
                         handleChange={handleChange}
-                        required={currentStep === 1}
+                        required={false}
                     />
 
                     <Input
-                        label="Tell us about the company"
+                        label="Tell us about you and the company"
                         type="textarea"
                         name="companyDescription"
                         handleChange={handleChange}
@@ -158,8 +158,8 @@ const InvestmentContactForm = () => {
                     />
 
                     <Input
-                        label="How much are you raising?"
-                        name="roundSize"
+                        label="Where are you based?"
+                        name="location"
                         handleChange={handleChange}
                         required={currentStep === 1}
                     />
@@ -167,16 +167,16 @@ const InvestmentContactForm = () => {
 
                 <FormStep isActive={currentStep >= 2}>
                     <Input
-                        label="What motivates you to build the product?"
+                        label="What kind of company do you want to build?"
                         type="textarea"
-                        name="productMotivations"
+                        name="typeOfCompany"
                         handleChange={handleChange}
                         required={currentStep === 2}
                     />
 
                     <Input
-                        label="What revenue are you generating?"
-                        name="companyRevenue"
+                        label="What do you most want support with?"
+                        name="neededSupport"
                         handleChange={handleChange}
                         required={currentStep === 2}
                     />
