@@ -13,7 +13,7 @@ const StyledCTA = styled(CTAWrapper)`
     transition: box-shadow 200ms;
     cursor: ${props => (props.open ? "pointer" : "default")};
     background-color: ${props => (props.open ? "var(--blu)" : "var(--grey04)")};
-    box-shadow: var(--card-shadow);
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.16);
 
     div {
         display: block;
@@ -42,9 +42,9 @@ const StyledCTA = styled(CTAWrapper)`
     &:hover {
         box-shadow: ${props =>
             props.open
-                ? `0px 10px
-            28px rgba(0, 0, 0, 0.19)`
-                : "var(--card-shadow)"};
+                ? `0px 8px
+            28px rgba(0, 0, 0, 0.18)`
+                : "0px 2px 20px rgba(0, 0, 0, 0.16);"};
 
         div svg {
             transform: rotate(90deg) translateX(2px);
