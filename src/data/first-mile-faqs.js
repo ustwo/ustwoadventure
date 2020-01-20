@@ -2,82 +2,87 @@ export default [
     {
         question: "Do I have to work from your office?",
         answer: [
-            "All participants have the option to work from our studio up to 3 days a week, but it's not required and we make all our support as remote-friednly as possible"
+            "It’s up to you. All participants have the option to come in and work from our London studio for up to three days each week. But it’s by no means compulsory. And we make all our support remote-friendly when it can be."
         ]
     },
     {
         question: "How different is this from an accelerator programme?",
         answer: [
-            "Very. Instead of broad support for a large(ish) number of businesses with a focus on raising capital and scaling, we've designed our programme to prioritise personal support over a longer period of time",
-            "We want to help all participants to deeply introspect deeply as to what kind of company they want to build, and then help them achieve that. If scale is what you want, we'll help you do that in a way that works for you. Equally if staying small is a goal for you, we're here to support. Thik of us almost as a decelerator.",
-            "We also don't take any equity in companies on the programme."
+            "Hugely. We’re not in it to help you raise vast sums of capital or create an industry-dominating business overnight. So if that’s what you’re after, First Mile probably isn’t the right programme for you. Instead, we want to help you develop the tools and knowledge you need to build a meaningful, lasting company.",
+            "In fact, we like to think of ourselves as more of a decelerator. From the get-go, we’ll spend a huge amount of time with you working out what kind of company you want to create. Then work closely with you to help achieve this. So if scale is what you’re after, we can help you work towards that. Equally, if staying small is a better approach for your business, we can suggest ways to make that happen too.",
+            "It’s also worth mentioning that we don’t take equity in any of the companies on the programme."
         ]
     },
     {
         question: "How many placements are available?",
-        answer: ["Every year we will take on up to 4 participants."]
+        answer: ["Each year we’ll take on a maximum of four participants."]
     },
     {
         question: "How much time will I get with mentors?",
         answer: [
-            "Every participant will have up to 3 'core mentors', who will be matched to you based on what you want to achieve during the programme. These mentors will spend a minimum of one hour a month with you over the course of the year.",
-            "As well as this, there will be over 40 'on-call' mentors who have agreed to meet with participants for up to 2 hours at a time to help you with specific problems. The Adventure team will act as the conduit and matchmaker for these mentors, but there will also be a live directory of these mentors, which you will have access to and that will include direct contact details."
+            "At the start of the programme, we’ll match you up with three key mentors, who will spend at least an hour a month with you. These are people with relevant skills or experience who can help you develop and strengthen your practice.",
+            "On top of this, you’ll have access to 40 ‘on call’ mentors. These are a hand-picked bunch of creatives who’ll meet with participants for up to two hours at a time to help with specific problems. The Adventure team will act as a kind of matchmaker for these mentors. But there’ll also be a directory available to everyone on the programme."
         ]
     },
     {
         question: "How soon will I have to pay back my pledge?",
         answer: [
-            "The pledge must be payed back within 5 years (so long as your company is still operating), but we will leave the exact time within those 5 years up to you unless certain milestones are hit.",
-            "These milestones are a sale of your company, raising over £500,000 in investment, or earning over £500,000 in revenue within a year. If any of these are hit, the pledge asks you to pay back the £20,000 in that year."
+            "As long as your company is still going then we ask you to pay back the pledge within five years. With a few exceptions, we’ll leave you to choose when you want to do this.",
+            "The exceptions are:",
+            "— Selling your company",
+            "— Raising over £500,000 of investment in a year",
+            "— Earning over £500,000 of revenue in a year",
+            "If you hit any of these milestones before the five years is up, we ask you to pay back £20,000 that same year."
         ]
     },
     {
         question: "What do you mean by creative company?",
         answer: [
-            "Creativity for us is in part a description of the output you have: if you're design-led, care about brand, or xxxxx, then you're a creative company. Creativity to us is also about the way you operate your business and your way of tackling problems."
+            "Creativity can be interpreted in lots of different ways. But for us it’s the way you go about doing things. Free-thinking, a thirst for design, a passion for brand. A creative company uses all or some of these traits to produce original and unusual ideas that break the mould and push boundaries."
         ]
     },
     {
         question: "What if I don't have a company formed yet?",
         answer: [
-            "You must have a limited company set up to be able to sign the pledge and recieve the stipend. If you haven't done this yet and are a fit for the programme, it is something we can help you with."
+            "You need to have a limited company set up to be able to sign the pledge and receive the stipend. But if you’re almost there, we can help you get it over the line."
         ]
     },
     {
         question: "Do I have to be based in London",
         answer: [
-            "No. We actively look to make this opportunity to be accessible to all first-time founders across the UK. All mentorship is available remotely, and our stipend is in part to cover travel costs to enable you to spend time with us."
+            "Absolutely not. Location isn’t important (lots of the mentoring can be done remotely and our stipend can be used to cover travel costs). Passion, enthusiasm and a great business idea is."
         ]
     },
     {
         question: "What is the stipend for?",
         answer: [
-            "Covering the travel costs associated with being on the programme, helping you invest in products, services and people, enabling you to spend more time focusing on the company. The stipend is for anything that you feel could meaningfully impact the way you run your business over the course of the year."
+            "The stipend has been designed to help with a number of things. First up, it’s for helping your business grow and develop over the year. So you might use it to invest in products, services or people, or to enable you to spend more time on the business than you currently are. It’s also there to cover any travel costs while on the programme."
         ]
     },
     {
         question: "Who are the mentors?",
         answer: [
-            "We have over 40 mentors from across the ustwo community. This includes ustwobies from our studio and games teams, founders and employees from other startups we have invested in, and individuals from our Adventure community. We welcome new mentors so if you know anyone who might be interested then ask them to reach out to us at hello.adv@ustwo.com."
+            "We’ve compiled an amazing mix of 40 mentors from across the ustwo network. This includes ustwobies from our studio and games teams, founders and employees from other successful start-ups we’ve invested in, as well as folks from the wider Adventure community.",
+            "We’re always on the lookout for new mentors to join us. So if you know anyone who might be interested, ask them to get in touch at hello.adventure@ustwo.com."
         ]
     },
     {
         question: "Why do I have to pay back the funds?",
         answer: [
-            "We want to build a sustainable programme of support for founders like you. This means paying your pledge forwards will enable more people to have the same experience.",
-            "We've chosen £20,000 as the payback to cover the stipend (£10,000), and the year of support from ustwo (which for the programme we also value at £10,000)."
+            "We want First Mile to be a fully sustainable programme. By asking you to pledge to pay it forwards it means we can help people, just like you, build great businesses for years to come.",
+            "The £20,000 you pay back is made up of two parts, divided equally between the stipend and the twelve-month programme."
         ]
     },
     {
         question: "Will you help me find investors?",
         answer: [
-            "If that's what you want help with during the programme, then yes. We welcome all styles of business regardless of the path they want to take, and will be helping you think about scaling and all the ways you could do it with a real focus on sustainability."
+            "We know first-hand that every business needs different things to help it succeed. If financial investment is what you’re after, then we can help you work out how best to achieve this in a sustainable way."
         ]
     },
     {
         question: "What happens after the programme is over?",
         answer: [
-            "Once your in our community you're always a part of it. After the programme is over you will still have access to us and your emntors and we will do everything we can to help you, but we will no longer have hard comittments on how much help or time with us you will get"
+            "Once you’re a part of the ustwo community, you always will be. So after the year is up, we’ll still be here to help, if you need us. However, you’ll no longer get a committed amount of time with anyone from First Mile."
         ]
     }
 ];

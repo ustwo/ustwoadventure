@@ -113,7 +113,7 @@ const InvestmentContactForm = () => {
     return (
         <StyledCTAWrapper>
             <CopyWrapper>
-                <h2>Do you want some money?</h2>
+                <h2>Sound like it&apos;s for you?</h2>
                 <p className={sending ? "transition" : undefined}>
                     {response
                         ? response === true

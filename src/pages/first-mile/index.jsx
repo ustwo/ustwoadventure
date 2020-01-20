@@ -24,7 +24,7 @@ const FirstMilePage = styled(MainWrapper)`
     }
 
     ${SectionWrapper} {
-        margin: 60px 0;
+        margin: 50px 0;
 
         @media (max-width: 880px) {
             margin: 40px 0;
@@ -33,7 +33,15 @@ const FirstMilePage = styled(MainWrapper)`
 
     ${TextBlock} {
         h3 {
-            margin-bottom: 40px;
+            margin-bottom: 35px;
+
+            :not(:first-of-type) {
+                margin-top: 45px;
+            }
+        }
+
+        :not(:first-of-type) {
+            margin-top: 35px;
         }
 
         @media (max-width: 880px) {
@@ -98,8 +106,8 @@ const DetailsSection = styled(SectionWrapper)`
     }
 
     ul {
-        list-style: initial;
-        list-style-type: "–  ";
+        /* list-style: initial;
+        list-style-type: "–  "; */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: var(--column-gap);
@@ -164,37 +172,49 @@ const Index = () => {
             <MainIllustration />
 
             <SectionWrapper>
+                {/* <OpenIndicator onClick={scrollToForm} /> */}
+
+                <TextBlock tight>
+                    <h3>
+                        A programme for first-time founders who are building
+                        businesses with creativity and values at their core.
+                    </h3>
+                    <p>
+                        For any creative business the first steps are often the
+                        hardest. We know because we’ve done it, and now we want
+                        to help the next generation of founders do the same.
+                    </p>
+                    <p>
+                        We’ll give you 12 months of mentorship and personal
+                        support from ustwobies and our Adventure community —
+                        with anything from tech troubleshooting to building a
+                        long-term strategy. As well as this we give a £10,000
+                        stipend to help cover costs.
+                    </p>
+                </TextBlock>
+            </SectionWrapper>
+
+            <SectionWrapper style={{ marginTop: "0" }}>
                 <OpenIndicator onClick={scrollToForm} />
 
-                <TextBlock>
-                    <h3>
-                        A program for the next generation of founders who are
-                        building businesses that have creativity and culture at
-                        their core.
-                    </h3>
-
+                <TextBlock tight>
+                    <h3>For dreamers and doers</h3>
                     <p>
-                        We want to enable a new wave of leaders who understand
-                        the power of design, culture and long-term thinking, and
-                        equip them with the belief, network and resources to
-                        build the foundations of great businesses.
+                        We want to help kick start a new wave of creative
+                        leaders — people who understand the value of design,
+                        culture and long-term thinking, and who want to create
+                        lasting impact.
                     </p>
-
                     <p>
-                        First Mile is a 12-month programme for first-time
-                        founders that focusses on mentorship, personalised
-                        learning journeys, and deep care. Less about scale and
-                        more about care. Long-term over short-term. Open minds
-                        over singular-outcomes.
+                        We don&apos;t want to rapidly scale you up to be the
+                        next digital unicorn. Instead, we&apos;d rather equip
+                        you with the belief, network and tools to build
+                        purposeful businesses, from the inside out.
                     </p>
-
                     <p>
-                        Practically what that means is a cash injection (to
-                        cover costs and make the programme accessible) and a
-                        years worth of structured support in a variety of
-                        disciplines — from ustwobies and our Adventure community
-                        — with a pledge to pay it forwards and enable future
-                        participants to go on the journey, too.
+                        In return, we’d like you to pledge to pay it forwards at
+                        some point within five years, to help future
+                        participants on their way.
                     </p>
                 </TextBlock>
             </SectionWrapper>
@@ -210,10 +230,18 @@ const Index = () => {
                     <ul>
                         <li>12 months of structured support</li>
                         <li>A £10,000 stipend</li>
+                        <li>
+                            Advice and expertise from over 40 mentors, with a
+                            variety of skills
+                        </li>
+                        <li>
+                            A personalised learning journey, built around your
+                            aims and ambitions
+                        </li>
                         <li>Hotdesking space in our London studio</li>
-                        <li>A personalised learning journey</li>
-                        <li>Access to 40+ mentors across all disciplines</li>
-                        <li>A crafted workshop programme</li>
+                        <li>
+                            A curated list of relevant and insightful workshops
+                        </li>
                         <li>Regular community catchups and events</li>
                     </ul>
                 </TextBlock>
@@ -225,22 +253,28 @@ const Index = () => {
                     alt="An illustration of one hand passing a baton to the next"
                 />
 
-                <TextBlock>
+                <TextBlock tight>
                     <h3>Paying it forwards</h3>
                     <p>
-                        Every participant of the First Mile programme must sign
-                        a pledge to pay it forwards. Within 5 years, provided
-                        you are still working on your business, we ask that you
-                        pay back £20,000 pounds, which we recycle into the
-                        programme to support future participants. This way we
-                        can build a sustainable future for First Mile and the
-                        community.
+                        When you come on board, we ask you to sign a pledge to
+                        pay it forwards. This means if your business is still
+                        going in five years, you donate £20,000 to the
+                        programme.
+                    </p>
+                    <p>
+                        We’ve worked this out as £10,000 for the stipend and
+                        £10,000 for the year of support, mentoring and
+                        workspace. To be clear, this money doesn’t come to us.
+                        It goes straight back into the First Mile programme to
+                        continue helping new businesses get off the ground.
                     </p>
 
                     <h3>Criteria</h3>
                     <p>
-                        To be eligible for the programme, you must be a
-                        first-time founder, with a company entity set up.
+                        To be eligible for the First Mile programme, it must be
+                        the first time you’ve founded a business. You also need
+                        to have a company entity already up and running. That’s
+                        it!
                     </p>
                     <p style={{ fontStyle: "italic" }}>
                         At ustwo we celebrate diversity, and the creativity that
@@ -248,8 +282,7 @@ const Index = () => {
                         regardless of race, religion, nationality, sexual
                         orientation, age, disability, gender identity, family
                         status, and any other ways that people identify. We
-                        welcome applications for our First Mile programe from
-                        any background.
+                        welcome applicants from any background.
                     </p>
                 </TextBlock>
             </MoreInfoSection>

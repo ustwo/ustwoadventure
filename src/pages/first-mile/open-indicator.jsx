@@ -8,7 +8,7 @@ const StyledCTA = styled(CTAWrapper)`
     border-radius: 2px;
     display: block;
     grid-column: 1 / 4;
-    margin: auto 0 0 0;
+    margin: 0 0 auto 0;
     padding: 1.2em 1.4em;
     transition: box-shadow 200ms;
     cursor: ${props => (props.open ? "pointer" : "default")};
@@ -52,9 +52,8 @@ const StyledCTA = styled(CTAWrapper)`
     }
 
     @media (max-width: 1025px) {
-        order: 2;
         grid-column: 4 / 12;
-        margin-top: 3em;
+        margin-bottom: 3em;
     }
 
     @media (max-width: 880px) {
@@ -63,6 +62,10 @@ const StyledCTA = styled(CTAWrapper)`
 
     @media (max-width: 769px) {
         grid-column: 3 / 12;
+
+        div h2 {
+            font-size: 1.5em;
+        }
     }
 
     @media (max-width: 660px) {
@@ -71,6 +74,10 @@ const StyledCTA = styled(CTAWrapper)`
 
     @media (max-width: 600px) {
         grid-column: 1 / -1;
+
+        div h2 {
+            font-size: 1.4em;
+        }
     }
 `;
 
