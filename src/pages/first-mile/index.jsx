@@ -172,8 +172,6 @@ const Index = () => {
             <MainIllustration />
 
             <SectionWrapper>
-                {/* <OpenIndicator onClick={scrollToForm} /> */}
-
                 <TextBlock tight>
                     <h3>
                         A programme for first-time founders who are building
@@ -188,8 +186,8 @@ const Index = () => {
                         We’ll give you 12 months of mentorship and personal
                         support from ustwobies and our Adventure community —
                         with anything from tech troubleshooting to building a
-                        long-term strategy. As well as this we give a £10,000
-                        stipend to help cover costs.
+                        long-term strategy. As well as this you&apos;ll get a
+                        £10,000 stipend to help cover costs.
                     </p>
                 </TextBlock>
             </SectionWrapper>
