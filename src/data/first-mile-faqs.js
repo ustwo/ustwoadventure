@@ -1,12 +1,6 @@
 export default [
     {
-        question: "Do I have to work from your office?",
-        answer: [
-            "It’s up to you. All participants have the option to come in and work from our London studio for up to three days each week. But it’s by no means compulsory. And we make all our support remote-friendly when it can be."
-        ]
-    },
-    {
-        question: "How different is this from an accelerator programme?",
+        question: "How different is this from an accelerator?",
         answer: [
             "Hugely. We’re not in it to help you raise vast sums of capital or create an industry-dominating business overnight. So if that’s what you’re after, First Mile probably isn’t the right programme for you. Instead, we want to help you develop the tools and knowledge you need to build a meaningful, lasting company.",
             "In fact, we like to think of ourselves as more of a decelerator. From the get-go, we’ll spend a huge amount of time with you working out what kind of company you want to create. Then work closely with you to help achieve this. So if scale is what you’re after, we can help you work towards that. Equally, if staying small is a better approach for your business, we can suggest ways to make that happen too.",
@@ -25,6 +19,26 @@ export default [
         ]
     },
     {
+        question: "Who are the mentors?",
+        answer: [
+            "We’ve compiled an amazing mix of 40 mentors from across the ustwo network. This includes ustwobies from our studio and games teams, founders and employees from other successful start-ups we’ve invested in, as well as folks from the wider Adventure community.",
+            "We’re always on the lookout for new mentors to join us. So if you know anyone who might be interested, ask them to get in touch at hello.adventure@ustwo.com."
+        ]
+    },
+    {
+        question: "What is the stipend for?",
+        answer: [
+            "The stipend has been designed to help with a number of things. First up, it’s for helping your business grow and develop over the year. So you might use it to invest in products, services or people, or to enable you to spend more time on the business than you currently are. It’s also there to cover any travel costs while on the programme."
+        ]
+    },
+    {
+        question: "Why do I have to pay the funds back?",
+        answer: [
+            "We want First Mile to be a fully sustainable programme. By asking you to pledge to pay it forwards it means we can help people, just like you, build great businesses for years to come.",
+            "The £20,000 you pay back is made up of two parts, divided equally between the stipend and the twelve-month programme."
+        ]
+    },
+    {
         question: "How soon will I have to pay back my pledge?",
         answer: [
             "As long as your company is still going then we ask you to pay back the pledge within five years. With a few exceptions, we’ll leave you to choose when you want to do this.",
@@ -32,7 +46,19 @@ export default [
             "— Selling your company",
             "— Raising over £500,000 of investment in a year",
             "— Earning over £500,000 of revenue in a year",
-            "If you hit any of these milestones before the five years is up, we ask you to pay back £20,000 that same year."
+            "If you hit any of these milestones before the five years is up, we ask you to pay back £20,000 at that time."
+        ]
+    },
+    {
+        question: "Do I have to work from your office?",
+        answer: [
+            "It’s up to you. All participants have the option to come in and work from our London studio for up to three days each week. But it’s by no means compulsory. And we make all our support remote-friendly when it can be."
+        ]
+    },
+    {
+        question: "Do I have to be based in London",
+        answer: [
+            "Absolutely not. Location isn’t important (lots of the mentoring can be done remotely and our stipend can be used to cover travel costs). Passion, enthusiasm and a great business idea is."
         ]
     },
     {
@@ -45,32 +71,6 @@ export default [
         question: "What if I don't have a company formed yet?",
         answer: [
             "You need to have a limited company set up to be able to sign the pledge and receive the stipend. But if you’re almost there, we can help you get it over the line."
-        ]
-    },
-    {
-        question: "Do I have to be based in London",
-        answer: [
-            "Absolutely not. Location isn’t important (lots of the mentoring can be done remotely and our stipend can be used to cover travel costs). Passion, enthusiasm and a great business idea is."
-        ]
-    },
-    {
-        question: "What is the stipend for?",
-        answer: [
-            "The stipend has been designed to help with a number of things. First up, it’s for helping your business grow and develop over the year. So you might use it to invest in products, services or people, or to enable you to spend more time on the business than you currently are. It’s also there to cover any travel costs while on the programme."
-        ]
-    },
-    {
-        question: "Who are the mentors?",
-        answer: [
-            "We’ve compiled an amazing mix of 40 mentors from across the ustwo network. This includes ustwobies from our studio and games teams, founders and employees from other successful start-ups we’ve invested in, as well as folks from the wider Adventure community.",
-            "We’re always on the lookout for new mentors to join us. So if you know anyone who might be interested, ask them to get in touch at hello.adventure@ustwo.com."
-        ]
-    },
-    {
-        question: "Why do I have to pay back the funds?",
-        answer: [
-            "We want First Mile to be a fully sustainable programme. By asking you to pledge to pay it forwards it means we can help people, just like you, build great businesses for years to come.",
-            "The £20,000 you pay back is made up of two parts, divided equally between the stipend and the twelve-month programme."
         ]
     },
     {
