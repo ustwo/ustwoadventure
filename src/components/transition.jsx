@@ -5,7 +5,7 @@ import {
     TransitionGroup
 } from "react-transition-group";
 
-const duration = 200;
+const duration = 160;
 
 const transitionStyles = {
     entering: {

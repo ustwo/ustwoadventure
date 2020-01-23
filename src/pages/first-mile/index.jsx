@@ -256,15 +256,15 @@ const Index = () => {
                     <p>
                         When you come on board, we ask you to sign a pledge to
                         pay it forwards. This means if your business is still
-                        going in five years, you give back £20,000 to the
+                        going in five years, you give back £12,500 to the
                         programme.
                     </p>
                     <p>
-                        We’ve worked this out as £10,000 for the stipend and
-                        £10,000 for the year of support, mentoring and
-                        workspace. To be clear, this money doesn’t come to us.
-                        It goes straight back into the First Mile programme to
-                        continue helping new businesses get off the ground.
+                        We’ve worked this out as £10,000 for the stipend, and
+                        £2,500 to help the programme be sustainable for future
+                        cohorts. To be clear, this money doesn’t come to us. All
+                        of it goes straight back into the First Mile programme
+                        to continue helping new businesses get off the ground.
                     </p>
 
                     <h3>Criteria</h3>
@@ -272,9 +272,9 @@ const Index = () => {
                         the hard criteria for being eligible for First Mile is
                         that it must be your first time starting a business. You
                         also need to have a company entity already up and
-                        running. Beyond this we&apos;ll be looking for
-                        participants that are authentic, comitted, and for who
-                        the programme will be a real help.
+                        running and be based in the UK. Beyond this, we&apos;ll
+                        be looking for participants that are authentic,
+                        comitted, and for who the programme will be a real help.
                     </p>
                     <p style={{ fontStyle: "italic" }}>
                         At ustwo we celebrate diversity, and the creativity that
