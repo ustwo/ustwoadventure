@@ -70,7 +70,7 @@ export default [
     {
         question: "What if I don't have a company formed yet?",
         answer: [
-            "You need to have a limited company set up to be able to sign the pledge and receive the stipend. But if you’re almost there, we can help you get it over the line."
+            "You need to have a limited company set up to be able to sign the pledge and receive the stipend. But if you’re almost there beforehand, we can help you get it over the line."
         ]
     },
     {

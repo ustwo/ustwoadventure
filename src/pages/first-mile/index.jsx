@@ -270,11 +270,12 @@ const Index = () => {
                     <h3>Criteria</h3>
                     <p>
                         the hard criteria for being eligible for First Mile is
-                        that it must be your first time starting a business. You
-                        also need to have a company entity already up and
-                        running and be based in the UK. Beyond this, we&apos;ll
-                        be looking for participants that are authentic,
-                        comitted, and for who the programme will be a real help.
+                        that it must be your first time starting a business and
+                        you must be based in the UK. You&apos;ll also need to
+                        have a company entity up and running before you start.
+                        Beyond this, we&apos;ll be looking for participants that
+                        are authentic, comitted, and for who the programme will
+                        be a real help.
                     </p>
                     <p style={{ fontStyle: "italic" }}>
                         At ustwo we celebrate diversity, and the creativity that
