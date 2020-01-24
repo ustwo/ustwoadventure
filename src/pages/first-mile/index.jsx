@@ -187,7 +187,8 @@ const Index = () => {
                         support from ustwobies and our Adventure community —
                         with anything from tech troubleshooting to building a
                         long-term strategy. As well as this you&apos;ll get a
-                        £10,000 stipend to help cover costs.
+                        £10,000 cash injection to help cover costs and part-time
+                        deskspace in our studio.
                     </p>
                 </TextBlock>
             </SectionWrapper>
@@ -263,8 +264,8 @@ const Index = () => {
                         We’ve worked this out as £10,000 for the stipend, and
                         £2,500 to help the programme be sustainable for future
                         cohorts. To be clear, this money doesn’t come to us. All
-                        of it goes straight back into the First Mile programme
-                        to continue helping new businesses get off the ground.
+                        of it goes straight back into the programme to continue
+                        helping new businesses get off the ground.
                     </p>
 
                     <h3>Criteria</h3>
@@ -283,7 +284,8 @@ const Index = () => {
                         regardless of race, religion, nationality, sexual
                         orientation, age, disability, gender identity, family
                         status, and any other ways that people identify. We
-                        welcome applicants from any background.
+                        welcome applicants from any background and any part of
+                        the UK.
                     </p>
                 </TextBlock>
             </MoreInfoSection>

@@ -1,54 +1,9 @@
 import React, { useState } from "react";
-import { styled } from "linaria/react";
 
-import CTAWrapper from "../../components/cta-wrapper";
+import FormWrapper from "../../components/form-wrapper";
 import { StyledForm, FormStep, Input } from "../../components/form-elements";
 import useNetlifySubmit from "../../hooks/use-netlify-submit";
 import useMultiStepForm from "../../hooks/use-multi-step-form";
-
-const StyledCTAWrapper = styled(CTAWrapper)`
-    margin-top: 50px;
-
-    @media (max-width: 769px) {
-        margin-top: 40px;
-    }
-
-    @media (max-width: 580px) {
-        margin-top: 30px;
-    }
-`;
-
-const CopyWrapper = styled.div`
-    grid-column: 2 / 6;
-
-    p {
-        transition: all 200ms;
-
-        &.transition {
-            opacity: 0;
-            transform: translateY(3px);
-        }
-    }
-
-    @media (max-width: 1080px) {
-        grid-column: 2 / 7;
-        margin-right: 40px;
-    }
-
-    @media (max-width: 860px) {
-        margin-right: 20px;
-    }
-
-    @media (max-width: 740px) {
-        margin-right: 0;
-        margin-bottom: 60px;
-        grid-column: 1 / -1;
-
-        h2 {
-            margin-bottom: 25px;
-        }
-    }
-`;
 
 const InvestmentContactForm = () => {
     const formName = "investment-contact";
@@ -111,9 +66,9 @@ const InvestmentContactForm = () => {
     };
 
     return (
-        <StyledCTAWrapper>
-            <CopyWrapper>
-                <h2>Do you want some money?</h2>
+        <FormWrapper
+            title="Do you want some money?"
+            copy={
                 <p className={sending ? "transition" : undefined}>
                     {response
                         ? response === true
@@ -121,8 +76,8 @@ const InvestmentContactForm = () => {
                             : errorCopy
                         : "If you’d like to get in touch with us about an investment opportunity, please fill out the form and we’ll get back to you as soon as possible. Don't forget to also read our FAQs below."}
                 </p>
-            </CopyWrapper>
-
+            }
+        >
             <StyledForm
                 name={formName}
                 method="POST"
@@ -201,7 +156,7 @@ const InvestmentContactForm = () => {
 
                 <SubmitButtons success={response === true} />
             </StyledForm>
-        </StyledCTAWrapper>
+        </FormWrapper>
     );
 };
 

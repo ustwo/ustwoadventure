@@ -9,7 +9,7 @@ export default [
     },
     {
         question: "How many placements are available?",
-        answer: ["Each year we’ll take on a maximum of four participants."]
+        answer: ["Each time we’ll take on a maximum of four participants."]
     },
     {
         question: "How much time will I get with mentors?",
@@ -64,7 +64,7 @@ export default [
     {
         question: "What do you mean by creative company?",
         answer: [
-            "Creativity can be interpreted in lots of different ways. But for us it’s the way you go about doing things. Free-thinking, a thirst for design, a passion for brand. A creative company uses all or some of these traits to produce original and unusual ideas that break the mould and push boundaries."
+            "Creativity can be interpreted in lots of different ways. For us, it’s the way you go about doing things. Free-thinking, a thirst for design, a passion for brand. A creative company uses all or some of these traits to produce original and unusual ideas that break the mould and push boundaries."
         ]
     },
     {
