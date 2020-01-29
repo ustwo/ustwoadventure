@@ -187,8 +187,8 @@ const Index = () => {
                         support from ustwobies and our Adventure community —
                         with anything from tech troubleshooting to building a
                         long-term strategy. As well as this you&apos;ll get a
-                        £10,000 cash injection to help cover costs and part-time
-                        deskspace in our studio.
+                        £10,000 cash injection to help cover costs, and
+                        part-time deskspace in our studio.
                     </p>
                 </TextBlock>
             </SectionWrapper>
@@ -212,7 +212,7 @@ const Index = () => {
                     </p>
                     <p>
                         In return, we’d like you to pledge to pay it forwards at
-                        some point within five years, to help future
+                        some point within three years, to help future
                         participants on their way.
                     </p>
                 </TextBlock>
@@ -257,15 +257,10 @@ const Index = () => {
                     <p>
                         When you come on board, we ask you to sign a pledge to
                         pay it forwards. This means if your business is still
-                        going in five years, you give back £12,500 to the
-                        programme.
-                    </p>
-                    <p>
-                        We’ve worked this out as £10,000 for the stipend, and
-                        £2,500 to help the programme be sustainable for future
-                        cohorts. To be clear, this money doesn’t come to us. All
-                        of it goes straight back into the programme to continue
-                        helping new businesses get off the ground.
+                        going in three years, you give back £10,000 to the
+                        programme. All of this money goes straight back into
+                        First Mile to continue helping new businesses get off
+                        the ground.
                     </p>
 
                     <h3>Criteria</h3>

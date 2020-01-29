@@ -29,7 +29,7 @@ export default [
         ]
     },
     {
-        question: "Do you invest in #{location}?",
+        question: "Do you invest in {location}?",
         answer: [
             "For the most part, we invest in the United Kingdom. However, we are open to investing in other places, particularly if we also have an ustwo presence (US, Australia, Sweden). As a relatively small investor, the main thing for us is understanding the legal jurisdiction."
         ]

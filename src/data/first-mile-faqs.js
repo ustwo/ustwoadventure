@@ -34,14 +34,13 @@ export default [
     {
         question: "Why do I have to pay the funds back?",
         answer: [
-            "We want First Mile to be a fully sustainable programme. By asking you to pledge to pay it forwards it means we can help people, just like you, build great businesses for years to come.",
-            "The £12,500 you pay back is made up of two parts. £10,000 is to pay back the stipend so we can give it to future founders. The extra £2,500 is our calculation to make the programme sustainable in the long-run, knowing that not every business will pay us back (and that's fine). It will also be given to future participants."
+            "We want First Mile to be a fully sustainable programme. By asking you to pledge to pay it forwards it means we can help people, just like you, build great businesses for years to come."
         ]
     },
     {
         question: "How soon will I have to pay back my pledge?",
         answer: [
-            "As long as your company is still going then we ask you to pay back the pledge within five years. With a few exceptions, we’ll leave you to choose when you want to do this.",
+            "As long as your company is still going then we ask you to pay back the pledge within three years. With a few exceptions, we’ll leave you to choose when you want to do this.",
             "The exceptions are:",
             "— Selling your company",
             "— Raising over £500,000 of investment in a year",
