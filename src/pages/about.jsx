@@ -215,7 +215,7 @@ const Portfolio = () => (
 
             <p>
                 Since 2014, we’ve supported young businesses on their journeys.
-                From launching our own ventures, to running a community
+                From launching our own companies, to running a community
                 workspace, to the fund we are today, Adventure is an expression
                 of ustwo’s values applied to the world of investment and company
                 building. We pride ourselves on working with the companies and
@@ -234,7 +234,7 @@ const Portfolio = () => (
 
                 <p>
                     Alongside our community of 250+ ustwobies, these are the
-                    people you’ll work with to build your business.
+                    people who&apos;ll work with you to support your business.
                 </p>
             </TeamAdventureCopy>
 

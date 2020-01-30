@@ -43,7 +43,7 @@ const Nav = () => (
     <StyledNav>
         <Link to="/approach">Approach</Link>
         <Link to="/portfolio">Portfolio</Link>
-        <Link to="/first-mile">First Mile</Link>
+        {/* TODO: readd <Link to="/first-mile">First Mile</Link> */}
         <Link to="/about">About</Link>
     </StyledNav>
 );

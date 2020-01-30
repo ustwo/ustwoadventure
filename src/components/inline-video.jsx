@@ -30,7 +30,7 @@ const muteToggleStyles = css`
         text-transform: uppercase;
         line-height: 0.8;
         margin-bottom: 0;
-        transform: translate(-50%, -33.33%);
+        transform: translate(-50%, -37%);
         color: #ffffff;
         opacity: 0;
         transition: opacity 150ms;

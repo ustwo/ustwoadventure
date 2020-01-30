@@ -92,7 +92,7 @@ const FooterLinks = () => (
                 <Link to="/portfolio">Portfolio</Link>
             </div>
             <div>
-                <Link to="/first-mile">First Mile</Link>
+                {/* TODO: readd <Link to="/first-mile">First Mile</Link> */}
                 <Link to="/about">About</Link>
                 <a
                     href="https://job.garden/b/ustwoadventure"

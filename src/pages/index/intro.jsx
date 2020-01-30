@@ -4,7 +4,7 @@ import { styled } from "linaria/react";
 import SectionWrapper from "../../components/section-wrapper";
 import LatestInvestment from "./latest-investment";
 import Button from "../../components/button";
-import FirstMileCTA from "./first-mile-cta";
+// import FirstMileCTA from "./first-mile-cta";
 
 const StyledIntroCopy = styled.div`
     grid-column: 1 / 7;
@@ -79,7 +79,7 @@ const Intro = () => (
 
         <LatestInvestmentElement />
 
-        <FirstMileCTA />
+        {/* TODO: readd <FirstMileCTA /> */}
     </SectionWrapper>
 );
 
