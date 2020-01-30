@@ -156,7 +156,7 @@ const InvestmentContactForm = () => {
 
                 <FormStep isActive={currentStep >= 3}>
                     <Input
-                        label="What support or investment has the company had to date (if any)?"
+                        label="What support or investment have you had (if any)?"
                         type="textarea"
                         name="supportToDate"
                         handleChange={handleChange}
