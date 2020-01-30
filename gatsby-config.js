@@ -1,9 +1,10 @@
 module.exports = {
     siteMetadata: {
         siteUrl: "https://adventure.ustwo.com",
-        siteTitle: "ustwo Adventure",
+        siteTitle:
+            "ustwo Adventure | Investing in creative companies, differently",
         siteDescription:
-            "Investing in creative companies, Differently — We help founders build businesses on top of strong culture, values and design.",
+            "We invest in and support founders who are building businesses on top of strong culture, values and design.",
         siteImage: "https://adventure.ustwo.com/meta_image.png",
         twitter: "@ustwoadventure",
         name: "ustwo Adventure"

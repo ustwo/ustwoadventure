@@ -13,7 +13,7 @@ const SEO = ({ title, description, image }) => {
         name
     } = useSiteMetadata();
 
-    const pageTitle = title ? `${title} — ${siteTitle}` : siteTitle;
+    const pageTitle = title ? `${title} — ${name}` : siteTitle;
     const pageDescription = description || siteDescription;
     const pageImage = image || siteImage;
 
