@@ -1,0 +1,7 @@
+.cache/
+.linaria-cache/
+public/
+coverage/
+node_modules/
+.env
+cypress/

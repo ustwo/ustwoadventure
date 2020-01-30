@@ -1,4 +1,6 @@
-[[redirects]]
-    from = "/*"
-    to = "/index.html"
-    status = 200
+[build]
+    publish = "public/"
+    command = "gatsby build"
+
+[build.processing]
+    skip_processing = true

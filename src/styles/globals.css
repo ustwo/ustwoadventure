@@ -1,0 +1,170 @@
+:root {
+    overflow-x: hidden;
+}
+
+body {
+    margin: auto;
+    margin-top: 65px;
+    padding: 0 45px;
+    max-width: 1100px;
+
+    font-family: var(--pxGrotesk);
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    line-height: 1.3;
+    color: var(--nonBlack);
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+h1 {
+    margin-bottom: 60px;
+    font-family: var(--futuraBold);
+    font-style: normal;
+    font-size: 3em;
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+    color: var(--piglet);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-family: var(--futura);
+    font-size: 2.111em;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    color: var(--piglet);
+}
+
+h3 {
+    margin-bottom: 36px;
+    font-size: 1.333em;
+    line-height: 150%;
+    color: var(--grey04);
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.333em;
+    line-height: 1.8;
+    text-align: center;
+    color: var(--grey04);
+}
+
+p {
+    letter-spacing: -0.2px;
+    line-height: 1.7;
+    margin-bottom: 0.92em;
+}
+
+b {
+    font-weight: 700;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: var(--nonBlack);
+}
+
+img[data-src]::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+}
+
+input, textarea {
+    border-radius: 0;
+}
+
+
+@media (max-width: 1025px) {
+    h1 {
+        margin-bottom: 50px;
+        font-size: 2.333em;
+    }
+
+    h2 {
+        font-size: 1.888em;
+    }
+
+    blockquote {
+        font-size: 1.555em;
+    }
+}
+
+
+@media (max-width: 769px) {
+    body {
+        margin-top: 50px;
+        padding: 0 40px;
+        font-size: 17px;
+    }
+
+    h1 {
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 580px) {
+    body {
+        overflow-x: hidden;
+        margin-top: 30px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    body {
+        margin-top: 25px;
+        padding: 0 25px;
+        font-size: 16px;
+    }
+
+    h1 {
+        margin-bottom: 25px;
+        font-size: 1.875em;
+    }
+
+    h2 {
+        font-size: 1.625em;
+    }
+
+    blockquote {
+        font-size: 1.437em;
+    }
+}
+
+
+@media (max-width: 350px) {
+    body {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 1.625em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
