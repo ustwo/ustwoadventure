@@ -75,7 +75,7 @@ const OrbitLogo = ({ is404 }) => {
     }, []);
 
     return (
-        <Link to="/">
+        <Link to="/" aria-label="Home">
             <LogoWrapper ref={logoRef}>
                 <UstwoLogo />
                 <OrbitLetters is404={is404} />
