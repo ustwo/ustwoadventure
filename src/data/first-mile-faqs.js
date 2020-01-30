@@ -45,7 +45,7 @@ export default [
             "— Selling your company",
             "— Raising over £500,000 of investment in a year",
             "— Earning over £250,000 of revenue in a year",
-            "If you hit any of these milestones before the five years is up, we ask you to pay back £12,500 at that time."
+            "If you hit any of these milestones before the five years is up, we ask you to pay back £10,000 at that time."
         ]
     },
     {
