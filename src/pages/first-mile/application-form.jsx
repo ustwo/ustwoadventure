@@ -6,7 +6,7 @@ import useNetlifySubmit from "../../hooks/use-netlify-submit";
 import useMultiStepForm from "../../hooks/use-multi-step-form";
 
 const InvestmentContactForm = () => {
-    const formName = "investment-contact";
+    const formName = "first-mile-application";
 
     const {
         stepCount,
