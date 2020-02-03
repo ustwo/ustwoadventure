@@ -158,6 +158,11 @@ const InputWrapper = styled.div`
 
     @media (max-width: 960px) {
         width: 100%;
+
+        input::placeholder,
+        textarea::placeholder {
+            font-size: 0.92em;
+        }
     }
 
     @media (max-width: 450px) {

@@ -10,7 +10,7 @@ import PortfolioGrid, {
 } from "../../components/portfolio-grid";
 
 const OurPortfolioSection = styled(SectionWrapper)`
-    margin-top: -100px; /* TODO: make '0 !important' /end/ should be -100px without HomePageCTA visible */
+    margin-top: 0 !important; /* should be -100px without HomePageCTA visible */
 
     @media (max-width: 925px) {
         margin-top: -80px;

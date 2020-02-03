@@ -8,6 +8,8 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
     "airbnb",
     "prettier"
   ],
@@ -24,6 +26,12 @@
         "allowForLoopAfterthoughts": true
       }
     ],
+    "import/order": [
+      "warn",
+      {
+        "newlines-between": "always",
+      }
+    ],
     "linebreak-style": "off",
     "no-underscore-dangle": "off",
     "no-nested-ternary": "off",
@@ -36,5 +44,5 @@
     "react/jsx-wrap-multilines": "off",
     "react/no-danger": "off"
   },
-  "plugins": ["prettier", "jsx-a11y"]
+  "plugins": ["prettier", "jsx-a11y", "import"]
 }

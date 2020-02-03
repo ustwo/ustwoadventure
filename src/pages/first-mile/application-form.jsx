@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import FormWrapper from "../../components/form-wrapper";
 import { StyledForm, FormStep, Input } from "../../components/form-elements";
-import useNetlifySubmit from "../../hooks/use-netlify-submit";
+import FormWrapper from "../../components/form-wrapper";
 import useMultiStepForm from "../../hooks/use-multi-step-form";
+import useNetlifySubmit from "../../hooks/use-netlify-submit";
 
 const InvestmentContactForm = () => {
     const formName = "first-mile-application";
@@ -30,7 +30,7 @@ const InvestmentContactForm = () => {
     const [likeToAchieve, setLikeToAchieve] = useState("");
     const [neededSupport, setNeededSupport] = useState("");
     const [location, setLocation] = useState("");
-    const [supportToDate, setSupportToDate] = useState("");
+    const [creativityRole, setCreativityRole] = useState("");
     const [referral, setReferral] = useState("");
     const [contactName, setContactName] = useState("");
     const [contactEmail, setContactEmail] = useState("");
@@ -45,7 +45,7 @@ const InvestmentContactForm = () => {
         if (name === "likeToAchieve") setLikeToAchieve(value);
         if (name === "neededSupport") setNeededSupport(value);
         if (name === "location") setLocation(value);
-        if (name === "supportToDate") setSupportToDate(value);
+        if (name === "creativityRole") setCreativityRole(value);
         if (name === "referral") setReferral(value);
         if (name === "contactName") setContactName(value);
         if (name === "contactEmail") setContactEmail(value);
@@ -63,7 +63,7 @@ const InvestmentContactForm = () => {
                 likeToAchieve,
                 neededSupport,
                 location,
-                supportToDate,
+                creativityRole,
                 referral,
                 contactName,
                 contactEmail
@@ -88,7 +88,6 @@ const InvestmentContactForm = () => {
             }
         >
             <StyledForm
-                noValidate
                 name={formName}
                 method="POST"
                 onSubmit={handleSubmit}
@@ -123,7 +122,7 @@ const InvestmentContactForm = () => {
                     />
 
                     <Input
-                        label="How long has the company been running?"
+                        label="How old is the company?"
                         name="companyDuration"
                         handleChange={handleChange}
                         required={currentStep === 2}
@@ -132,7 +131,7 @@ const InvestmentContactForm = () => {
 
                 <FormStep isActive={currentStep === 2}>
                     <Input
-                        label="Where you like the business to be in a year?"
+                        label="Where would you like the business to be in a year?"
                         type="textarea"
                         name="likeToAchieve"
                         handleChange={handleChange}
@@ -140,7 +139,7 @@ const InvestmentContactForm = () => {
                     />
 
                     <Input
-                        label="What do you most need support with?"
+                        label="What do you most need support for?"
                         name="neededSupport"
                         handleChange={handleChange}
                         required={currentStep === 2}
@@ -156,9 +155,9 @@ const InvestmentContactForm = () => {
 
                 <FormStep isActive={currentStep >= 3}>
                     <Input
-                        label="What support or investment have you had (if any)?"
+                        label="How does creativity play a role in your company?"
                         type="textarea"
-                        name="supportToDate"
+                        name="creativityRole"
                         handleChange={handleChange}
                         required={false}
                     />

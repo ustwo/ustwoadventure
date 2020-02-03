@@ -3,6 +3,7 @@ import { styled } from "linaria/react";
 import { Link } from "gatsby";
 
 import { arrow } from "../../assets/inline-icons";
+
 import CopyRight from "./copyright";
 
 const RightFooterWrapper = styled.div`
@@ -92,7 +93,7 @@ const FooterLinks = () => (
                 <Link to="/portfolio">Portfolio</Link>
             </div>
             <div>
-                {/* TODO: readd <Link to="/first-mile">First Mile</Link> */}
+                <Link to="/first-mile">First Mile</Link>
                 <Link to="/about">About</Link>
                 <a
                     href="https://job.garden/b/ustwoadventure"

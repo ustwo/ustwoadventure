@@ -201,8 +201,8 @@ const Index = () => {
                     <p>
                         We want to help kick start a new wave of creative
                         leaders — people who understand the value of design,
-                        culture and long-term thinking, and who want to create
-                        lasting impact.
+                        culture and long-term thinking, and who want to enable
+                        others to do the same.
                     </p>
                     <p>
                         We don&apos;t want to rapidly scale you up to be the
@@ -265,13 +265,12 @@ const Index = () => {
 
                     <h3>Criteria</h3>
                     <p>
-                        the hard criteria for being eligible for First Mile is
-                        that it must be your first time starting a business and
-                        you must be based in the UK. You&apos;ll also need to
-                        have a company entity up and running before you start.
-                        Beyond this, we&apos;ll be looking for participants that
-                        are authentic, comitted, and for who the programme will
-                        be a real help.
+                        To be eligible for First Mile, you need to be starting a
+                        business for the first time, which must be set up as an
+                        entity in the UK. We&apos;re looking for participants
+                        that care deeply about creativity and impact, who are
+                        authentic, and for who the programme will be a real
+                        help.
                     </p>
                     <p style={{ fontStyle: "italic" }}>
                         At ustwo we celebrate diversity, and the creativity that
