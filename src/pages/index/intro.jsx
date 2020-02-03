@@ -80,7 +80,7 @@ const Intro = () => (
 
         <LatestInvestmentElement />
 
-        <FirstMileCTA />
+        {/* TODO: <FirstMileCTA /> */}
     </SectionWrapper>
 );
 

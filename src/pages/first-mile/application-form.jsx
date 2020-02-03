@@ -135,7 +135,7 @@ const InvestmentContactForm = () => {
                         type="textarea"
                         name="likeToAchieve"
                         handleChange={handleChange}
-                        required={currentStep === 3}
+                        required={currentStep === 2}
                     />
 
                     <Input
@@ -149,7 +149,7 @@ const InvestmentContactForm = () => {
                         label="Where are you based?"
                         name="location"
                         handleChange={handleChange}
-                        required={currentStep === 1}
+                        required={currentStep === 2}
                     />
                 </FormStep>
 
