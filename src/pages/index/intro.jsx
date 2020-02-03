@@ -5,7 +5,7 @@ import SectionWrapper from "../../components/section-wrapper";
 import Button from "../../components/button";
 
 import LatestInvestment from "./latest-investment";
-import FirstMileCTA from "./first-mile-cta";
+// import FirstMileCTA from "./first-mile-cta";
 
 const StyledIntroCopy = styled.div`
     grid-column: 1 / 7;

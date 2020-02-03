@@ -307,6 +307,18 @@ export default [
         isInHomePageRotation: true
     },
     {
+        name: "Homerun",
+        url: "https://www.homerun.co/",
+        tidyurl: "homerun.co",
+        image: "/team_assets/homerun_image.jpg",
+        logo: "/team_assets/homerun_logo.png",
+        oneLiner: "Hire better from start to finish",
+        copy:
+            "We help creative companies attract talent and manage candidates with beautiful job posts and an easy-to-use and powerful hiring tool. As well as this we publish guides exploring culture, work/life balance and employer branding via our Art of Work platform.",
+        status: PORTFOLIO_STATUS.LIVE,
+        isInHomePageRotation: true
+    }, // TODO: place at end
+    {
         name: "1se",
         url: "https://1se.co/",
         tidyurl: "1se.co",
@@ -329,5 +341,5 @@ export default [
     //         "We enable general practices to virtually follow up patients with long-term conditions and their treatments - convenient, fast and effective.",
     //     status: PORTFOLIO_STATUS.LIVE,
     //     isInHomePageRotation: false
-    // }
+    // },
 ];
