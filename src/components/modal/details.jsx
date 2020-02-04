@@ -1,8 +1,9 @@
 import React from "react";
 import { styled } from "linaria/react";
 
-import CompanyLink from "./company-link";
 import { externalArrow, externalArrowHover } from "../../assets/inline-icons";
+
+import CompanyLink from "./company-link";
 
 const DetailsWrapper = styled.div`
     padding: 35px;

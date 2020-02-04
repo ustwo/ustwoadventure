@@ -3,6 +3,7 @@ import { styled } from "linaria/react";
 
 import SEO from "../../components/seo";
 import MainWrapper from "../../components/main-wrapper";
+
 import Intro from "./intro";
 import OurPortfolio from "./our-portfolio";
 import CollectiveGenius from "./collective-genius";

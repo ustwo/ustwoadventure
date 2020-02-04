@@ -5,11 +5,12 @@ import SEO from "../../components/seo";
 import SectionWrapper from "../../components/section-wrapper";
 import MainWrapper from "../../components/main-wrapper";
 import TextBlock from "../../components/text-block";
-import PrincipleElement from "./principle-element";
 import principleContent from "../../data/approach-principles";
-import InvestmentContactForm from "./contact-form";
 import FaqSection from "../../components/faqs";
 import faqContent from "../../data/approach-faqs";
+
+import PrincipleElement from "./principle-element";
+import InvestmentContactForm from "./contact-form";
 
 const ApproachPage = styled(MainWrapper)`
     h1 {

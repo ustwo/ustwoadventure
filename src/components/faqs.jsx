@@ -2,6 +2,7 @@ import React from "react";
 import { styled } from "linaria/react";
 
 import { plus } from "../assets/inline-icons";
+
 import SectionWrapper from "./section-wrapper";
 
 const StyledFaqSection = styled(SectionWrapper)`

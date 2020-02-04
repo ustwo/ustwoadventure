@@ -7,11 +7,11 @@ import MainWrapper from "../../components/main-wrapper";
 import TextBlock from "../../components/text-block";
 import FaqSection from "../../components/faqs";
 import faqContent from "../../data/first-mile-faqs";
-import FirstMileApplicationForm from "./application-form";
-import MainIllustration from "./main-illustration";
-
 import jumpIllustration from "../../assets/first-mile/jump.png";
 import batonIllustration from "../../assets/first-mile/baton.png";
+
+import FirstMileApplicationForm from "./application-form";
+import MainIllustration from "./main-illustration";
 import OpenIndicator from "./open-indicator";
 
 const FirstMilePage = styled(MainWrapper)`
@@ -115,6 +115,14 @@ const DetailsSection = styled(SectionWrapper)`
 
         li {
             line-height: 1.5;
+
+            a {
+                text-decoration: underline;
+
+                :hover {
+                    font-style: italic;
+                }
+            }
         }
 
         @media (max-width: 520px) {
@@ -186,7 +194,7 @@ const Index = () => {
                         We’ll give you 12 months of mentorship and personal
                         support from ustwobies and our Adventure community —
                         with anything from tech troubleshooting to building a
-                        long-term strategy. As well as this you&apos;ll get a
+                        long-term strategy to. As well as this you&apos;ll get a
                         £10,000 cash injection to help cover costs, and
                         part-time deskspace in our studio.
                     </p>
@@ -236,6 +244,17 @@ const Index = () => {
                         <li>
                             A personalised learning journey, built around your
                             aims and ambitions
+                        </li>
+                        <li>
+                            A framework for creating impact, informed by our{" "}
+                            <a
+                                href="https://www.ustwo.com/b-corp/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                B Corp
+                            </a>{" "}
+                            certification
                         </li>
                         <li>Hotdesking space in our London studio</li>
                         <li>

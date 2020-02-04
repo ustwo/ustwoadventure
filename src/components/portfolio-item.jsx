@@ -2,8 +2,9 @@ import React from "react";
 import { styled } from "linaria/react";
 
 import ForwardsArrow from "../assets/forwards-arrow";
-import Modal from "./modal";
 import useModal from "../hooks/use-modal";
+
+import Modal from "./modal";
 
 const PortfolioPreviewLink = styled.div`
     height: max-content;

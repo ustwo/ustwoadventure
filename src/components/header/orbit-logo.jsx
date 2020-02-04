@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import { styled } from "linaria/react";
 
 import UstwoLogo from "../../assets/ustwo-logo";
+
 import OrbitLetters from "./orbit-letters";
 
 const LogoWrapper = styled.div`

@@ -7,7 +7,6 @@ import TextBlock from "../components/text-block";
 import InlineVideo from "../components/inline-video";
 import SectionWrapper from "../components/section-wrapper";
 import Button from "../components/button";
-
 import justinPhoto from "../assets/about/justin.jpg";
 import neefPhoto from "../assets/about/neef.jpg";
 

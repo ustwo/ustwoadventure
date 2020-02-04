@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import { styled } from "linaria/react";
 
+import { plus } from "../../assets/inline-icons";
+import kebabCase from "../../utils/kebab-case";
+
 import ModalDetails from "./details";
 import ModalImage from "./image";
-import { plus } from "../../assets/inline-icons";
 import { ModalContainer, ModalBackground } from "./container";
-import kebabCase from "../../utils/kebab-case";
 
 const CloseModalButton = styled.a`
     position: absolute;
