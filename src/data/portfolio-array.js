@@ -234,14 +234,14 @@ export default [
         isInHomePageRotation: false
     },
     {
-        name: "Stitch",
-        url: "https://stitchapp.co/",
-        tidyurl: "stitchapp.co",
+        name: "Atellio",
+        url: "https://atellio.com/",
+        tidyurl: "atellio.com",
         image: "/team_assets/stitch_image.jpg",
         logo: "/team_assets/stitch_logo.png",
         oneLiner: "Creative production management",
         copy:
-            "Stitch is reinventing the production process for brands & agencies, by organizing & automating the production workflow.",
+            "Atellio is a creatively-focused and fully customisable product, built to streamline in-house production and strengthen collaboration.",
         status: PORTFOLIO_STATUS.LIVE,
         isInHomePageRotation: false
     },
