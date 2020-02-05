@@ -26,7 +26,7 @@ const InvestmentContactForm = () => {
     const [companyName, setCompanyName] = useState("");
     const [website, setWebsite] = useState("");
     const [companyDescription, setCompanyDescription] = useState("");
-    const [companyDuration, setCompanyDuration] = useState("");
+    const [companyDuration, setCompanyDuration] = useState();
     const [likeToAchieve, setLikeToAchieve] = useState("");
     const [neededSupport, setNeededSupport] = useState("");
     const [location, setLocation] = useState("");
@@ -124,7 +124,7 @@ const InvestmentContactForm = () => {
                     <Input
                         label="When did you start the company?"
                         type="month"
-                        value="2018-01"
+                        value={companyDuration || "2018-01"}
                         name="companyDuration"
                         handleChange={handleChange}
                         required={currentStep === 2}
