@@ -236,7 +236,7 @@ const Index = () => {
                     <h3>What you get</h3>
                     <ul>
                         <li>12 months of structured support</li>
-                        <li>A £10,000 stipend</li>
+                        <li>£10,000 to help you grow</li>
                         <li>
                             Advice and expertise from over 40 mentors, with a
                             variety of skills

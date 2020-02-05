@@ -26,15 +26,15 @@ export default [
         ]
     },
     {
-        question: "What is the stipend for?",
+        question: "What is the £10,000 for?",
         answer: [
-            "The stipend has been designed to help with a number of things. First up, it’s for helping your business grow and develop over the year. So you might use it to invest in products, services or people, or to enable you to spend more time on the business than you currently are. It’s also there to cover any travel costs while on the programme."
+            "We've included £10,000 as part of the programme to help with a number of things. First up, it’s for helping your business grow and develop over the year. So you might use it to invest in products, services or people, or to enable you to spend more time on the business than you currently are. It’s also there to cover any travel costs while on the programme."
         ]
     },
     {
         question: "Why do I have to pay the funds back?",
         answer: [
-            "We want First Mile to be a fully sustainable programme. By asking you to pledge to pay it forwards it means we can help people, just like you, build great businesses for years to come."
+            "We want First Mile to be a fully sustainable programme. By asking you to pledge to pay it forwards it means we can help people, just like you, build great businesses for years to come. Think of it as an interest-free loan to help get you started."
         ]
     },
     {
@@ -57,7 +57,7 @@ export default [
     {
         question: "Do I have to be based in London",
         answer: [
-            "Absolutely not. Location isn’t important (lots of the mentoring can be done remotely and our stipend can be used to cover travel costs). Passion, enthusiasm and a great business idea is."
+            "Absolutely not. Location isn’t important (lots of the mentoring can be done remotely and the £10,000 can be used to cover travel costs). Passion, enthusiasm and a great business idea is."
         ]
     },
     {
@@ -69,7 +69,7 @@ export default [
     {
         question: "What if I don't have a company formed yet?",
         answer: [
-            "You need to have a limited company set up to be able to sign the pledge and receive the stipend. But if you’re almost there beforehand, we can help you get it over the line."
+            "You need to have a limited company set up to be able to sign the pledge and receive the £10,000. But if you’re almost there beforehand, we can help you get it over the line."
         ]
     },
     {

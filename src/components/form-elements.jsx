@@ -183,6 +183,7 @@ export const Input = ({
     name,
     type = "text",
     required = true,
+    value,
     halfWidth,
     handleChange
 }) => {
@@ -219,6 +220,7 @@ export const Input = ({
                     type={type}
                     required={required}
                     placeholder={processedLabel}
+                    value={value}
                     onChange={handleChange}
                     onBlur={handleBlur}
                 />

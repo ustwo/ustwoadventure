@@ -114,7 +114,7 @@ const InvestmentContactForm = () => {
                     />
 
                     <Input
-                        label="Tell us about you and the company"
+                        label="Tell us about yourself and the company"
                         type="textarea"
                         name="companyDescription"
                         handleChange={handleChange}
@@ -122,7 +122,9 @@ const InvestmentContactForm = () => {
                     />
 
                     <Input
-                        label="How old is the company?"
+                        label="When did you start the company?"
+                        type="month"
+                        value="2018-01"
                         name="companyDuration"
                         handleChange={handleChange}
                         required={currentStep === 2}
@@ -139,14 +141,14 @@ const InvestmentContactForm = () => {
                     />
 
                     <Input
-                        label="What do you most need support for?"
+                        label="Where do you need the most support?"
                         name="neededSupport"
                         handleChange={handleChange}
                         required={currentStep === 2}
                     />
 
                     <Input
-                        label="Where are you based?"
+                        label="Where are you located?"
                         name="location"
                         handleChange={handleChange}
                         required={currentStep === 2}
@@ -159,7 +161,7 @@ const InvestmentContactForm = () => {
                         type="textarea"
                         name="creativityRole"
                         handleChange={handleChange}
-                        required={false}
+                        required={currentStep === 3}
                     />
 
                     <Input
