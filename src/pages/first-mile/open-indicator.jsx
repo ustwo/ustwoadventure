@@ -83,7 +83,7 @@ const StyledCTA = styled(CTAWrapper)`
 
 const OpenIndicator = ({ onClick }) => {
     const applicationsAreOpen = true;
-    const deadline = "March 27th";
+    const deadline = "April 6th";
 
     const havePlannedNextStart = true;
     const nextStart = "H2 2020";
