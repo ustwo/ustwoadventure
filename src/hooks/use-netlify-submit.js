@@ -15,7 +15,7 @@ export default () => {
 
     const handleNetlifySubmit = data => {
         setSending(true);
-        setTimeout(() => setSending(false), 240);
+        setTimeout(() => setSending(false), 300);
 
         fetch("/", {
             method: "POST",

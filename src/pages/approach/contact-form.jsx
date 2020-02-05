@@ -36,13 +36,13 @@ const InvestmentContactForm = () => {
         const { name, value } = e.target;
 
         if (name === "companyName") setCompanyName(value);
-        if (name === "website") setWebsite(value);
-        if (name === "companyDescription") setCompanyDescription(value);
-        if (name === "roundSize") setRoundSize(value);
-        if (name === "productMotivations") setProductMotivations(value);
-        if (name === "companyRevenue") setCompanyRevenue(value);
-        if (name === "contactName") setContactName(value);
-        if (name === "contactEmail") setContactEmail(value);
+        else if (name === "website") setWebsite(value);
+        else if (name === "companyDescription") setCompanyDescription(value);
+        else if (name === "roundSize") setRoundSize(value);
+        else if (name === "productMotivations") setProductMotivations(value);
+        else if (name === "companyRevenue") setCompanyRevenue(value);
+        else if (name === "contactName") setContactName(value);
+        else if (name === "contactEmail") setContactEmail(value);
     };
 
     const handleSubmit = e => {
