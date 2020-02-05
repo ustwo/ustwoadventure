@@ -26,7 +26,7 @@ const InvestmentContactForm = () => {
     const [companyName, setCompanyName] = useState("");
     const [website, setWebsite] = useState("");
     const [companyDescription, setCompanyDescription] = useState("");
-    const [companyDuration, setCompanyDuration] = useState();
+    const [companyDuration, setCompanyDuration] = useState("");
     const [likeToAchieve, setLikeToAchieve] = useState("");
     const [neededSupport, setNeededSupport] = useState("");
     const [location, setLocation] = useState("");
@@ -39,16 +39,16 @@ const InvestmentContactForm = () => {
         const { name, value } = e.target;
 
         if (name === "companyName") setCompanyName(value);
-        if (name === "website") setWebsite(value);
-        if (name === "companyDescription") setCompanyDescription(value);
-        if (name === "companyDuration") setCompanyDuration(value);
-        if (name === "likeToAchieve") setLikeToAchieve(value);
-        if (name === "neededSupport") setNeededSupport(value);
-        if (name === "location") setLocation(value);
-        if (name === "creativityRole") setCreativityRole(value);
-        if (name === "referral") setReferral(value);
-        if (name === "contactName") setContactName(value);
-        if (name === "contactEmail") setContactEmail(value);
+        else if (name === "website") setWebsite(value);
+        else if (name === "companyDescription") setCompanyDescription(value);
+        else if (name === "companyDuration") setCompanyDuration(value);
+        else if (name === "likeToAchieve") setLikeToAchieve(value);
+        else if (name === "neededSupport") setNeededSupport(value);
+        else if (name === "location") setLocation(value);
+        else if (name === "creativityRole") setCreativityRole(value);
+        else if (name === "referral") setReferral(value);
+        else if (name === "contactName") setContactName(value);
+        else if (name === "contactEmail") setContactEmail(value);
     };
 
     const handleSubmit = e => {
