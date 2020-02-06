@@ -329,6 +329,18 @@ export default [
             "Imagine a movie that includes every day of the rest of your life. We've built 1 Second Everyday - an app that enables anybody to easily and beautifully document their lives.",
         status: PORTFOLIO_STATUS.LIVE,
         isInHomePageRotation: true
+    },
+    {
+        name: "Courier",
+        url: "https://couriermedia.co/",
+        tidyurl: "couriermedia.co",
+        image: "/team_assets/courier_image.jpg",
+        logo: "/team_assets/courier_logo.png",
+        oneLiner: "Stories of modern business",
+        copy:
+            "Courier reports on modern business and startup culture from our headquarters in East London on topics from around the world. Launched in 2013, we sit at the heart of the new business revolution.",
+        status: PORTFOLIO_STATUS.LIVE,
+        isInHomePageRotation: true
     }
     // {
     //     name: "Suvera",

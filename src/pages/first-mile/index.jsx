@@ -280,8 +280,9 @@ const Index = () => {
                         When you come on board, we ask your business to give
                         back £10,000 to the programme within three years. All of
                         this money goes straight back into First Mile to
-                        continue helping new businesses get off the ground. We
-                        also ask you to be a mentor to these future companies.
+                        continue helping new businesses get off the ground.
+                        We&apos;ll also ask you to be a mentor to these future
+                        companies.
                     </p>
 
                     <h3>Criteria</h3>
