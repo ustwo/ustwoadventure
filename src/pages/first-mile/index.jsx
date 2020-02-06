@@ -196,7 +196,7 @@ const Index = () => {
                         with anything from tech troubleshooting to building a
                         long-term strategy to. As well as this you&apos;ll get a
                         £10,000 cash injection to help cover costs, and
-                        part-time deskspace in our studio.
+                        part-time deskspace in our studio, if you need it.
                     </p>
                 </TextBlock>
             </SectionWrapper>
@@ -256,11 +256,14 @@ const Index = () => {
                             </a>{" "}
                             certification
                         </li>
-                        <li>Hotdesking space in our London studio</li>
                         <li>
-                            A curated list of relevant and insightful workshops
+                            Hotdesking space in our London studio, if you need
+                            it
                         </li>
-                        <li>Regular community catchups and events</li>
+                        <li>
+                            Regular meetings with the Adventure team and ustwo
+                            founders
+                        </li>
                     </ul>
                 </TextBlock>
             </DetailsSection>

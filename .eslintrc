@@ -26,15 +26,15 @@
         "allowForLoopAfterthoughts": true
       }
     ],
+    "linebreak-style": "off",
+    "no-underscore-dangle": "off",
+    "no-nested-ternary": "off",
     "import/order": [
       "warn",
       {
         "newlines-between": "always",
       }
     ],
-    "linebreak-style": "off",
-    "no-underscore-dangle": "off",
-    "no-nested-ternary": "off",
     "prettier/prettier": "warn",
     "react/prop-types": "off",
     "react/display-name": "off",
