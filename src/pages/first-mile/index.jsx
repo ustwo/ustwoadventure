@@ -242,6 +242,10 @@ const Index = () => {
                             variety of skills
                         </li>
                         <li>
+                            Regular meetings with the Adventure team and ustwo
+                            founders
+                        </li>
+                        <li>
                             A personalised learning journey, built around your
                             aims and ambitions
                         </li>
@@ -259,10 +263,6 @@ const Index = () => {
                         <li>
                             Hotdesking space in our London studio, if you need
                             it
-                        </li>
-                        <li>
-                            Regular meetings with the Adventure team and ustwo
-                            founders
                         </li>
                     </ul>
                 </TextBlock>
