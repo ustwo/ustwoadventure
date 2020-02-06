@@ -194,9 +194,9 @@ const Index = () => {
                         We’ll give you 12 months of mentorship and personal
                         support from ustwobies and our Adventure community —
                         with anything from tech troubleshooting to building a
-                        long-term strategy to. As well as this you&apos;ll get a
-                        £10,000 cash injection to help cover costs, and
-                        part-time deskspace in our studio, if you need it.
+                        long-term strategy. You will also get a £10,000 cash
+                        injection to help cover costs, and part-time deskspace
+                        in our studio, if you need it.
                     </p>
                 </TextBlock>
             </SectionWrapper>
