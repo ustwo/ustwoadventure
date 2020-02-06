@@ -277,22 +277,21 @@ const Index = () => {
                 <TextBlock tight>
                     <h3>Paying it forwards</h3>
                     <p>
-                        When you come on board, we ask you to sign a pledge to
-                        pay it forwards. This means if your business is still
-                        going in three years, you give back £10,000 to the
-                        programme. All of this money goes straight back into
-                        First Mile to continue helping new businesses get off
-                        the ground.
+                        When you come on board, we ask your business to give
+                        back £10,000 to the programme within three years. All of
+                        this money goes straight back into First Mile to
+                        continue helping new businesses get off the ground. We
+                        also ask you to be a mentor to these future companies.
                     </p>
 
                     <h3>Criteria</h3>
                     <p>
                         To be eligible for First Mile, you need to be starting a
                         business for the first time, which must be set up as an
-                        entity in the UK. We&apos;re looking for participants
-                        that care deeply about creativity and impact, who are
-                        authentic, and for who the programme will be a real
-                        help.
+                        entity in the UK before the programme starts. We&apos;re
+                        looking for participants that care deeply about
+                        creativity and impact, who are authentic, and for who
+                        the programme will be a real help.
                     </p>
                     <p style={{ fontStyle: "italic" }}>
                         At ustwo we celebrate diversity, and the creativity that
