@@ -278,12 +278,13 @@ const Index = () => {
                 <TextBlock tight>
                     <h3>Paying it forwards</h3>
                     <p>
-                        When you come on board, we ask your business to give
-                        back £10,000 to the programme within three years. All of
-                        this money goes straight back into First Mile to
-                        continue helping new businesses get off the ground.
-                        We&apos;ll also ask you to be a mentor to these future
-                        companies.
+                        We won&apos;t take equity or a board seat in your
+                        company. Instead, when you come on board, we ask your
+                        business to give back £10,000 to the programme within
+                        three years. All of this money goes straight back into
+                        First Mile to continue helping new businesses get off
+                        the ground. We&apos;ll also ask you to be a mentor to
+                        these future companies.
                     </p>
 
                     <h3>Criteria</h3>

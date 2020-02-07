@@ -45,7 +45,7 @@ export default [
             "— Selling your company",
             "— Raising over £500,000 of investment in a year",
             "— Earning over £250,000 of revenue in a year",
-            "If you hit any of these milestones before the five years is up, we ask you to pay back £10,000 at that time."
+            "If you hit any of these milestones before the three years is up, we ask you to pay back £10,000 at that time."
         ]
     },
     {
@@ -55,7 +55,7 @@ export default [
         ]
     },
     {
-        question: "Do I have to be based in London",
+        question: "Do I have to be based in London?",
         answer: [
             "Absolutely not. Location isn’t important (lots of the mentoring can be done remotely and the £10,000 can be used to cover travel costs). Passion, enthusiasm and a great business idea is."
         ]
@@ -63,7 +63,7 @@ export default [
     {
         question: "What do you mean by creative company?",
         answer: [
-            "Creativity can be interpreted in lots of different ways. For us, it’s the way you go about doing things. Free-thinking, a thirst for design, a passion for brand. A creative company uses all or some of these traits to produce original and unusual ideas that break the mould and push boundaries."
+            "Creativity can be interpreted in lots of different ways. For us, it’s the way you go about doing things. Free-thinking, a thirst for design, a passion for brand. A creative company uses all or some of these traits to produce original and unusual ideas that break the mould and push boundaries. We're agnostic to the business-model you choose."
         ]
     },
     {
