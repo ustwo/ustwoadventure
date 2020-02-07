@@ -12,7 +12,6 @@ const PortfolioPreviewLink = styled.div`
 
     p.name {
         margin-bottom: 2px;
-        width: 100%;
         font-size: 1.08em;
         font-weight: 800;
         line-height: 1.7;
@@ -45,7 +44,6 @@ const PortfolioPreviewLink = styled.div`
     }
 
     p.copy {
-        width: 100%;
         margin-top: 5px;
         line-height: 1.6;
     }

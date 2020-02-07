@@ -12,6 +12,10 @@ import PortfolioGrid, {
 const OurPortfolioSection = styled(SectionWrapper)`
     margin-top: 0 !important; /* should be -100px without HomePageCTA visible */
 
+    @media (max-width: 965px) {
+        margin-bottom: -130px;
+    }
+
     @media (max-width: 925px) {
         margin-top: -80px;
     }
@@ -22,6 +26,10 @@ const OurPortfolioSection = styled(SectionWrapper)`
 
     @media (max-width: 740px) {
         margin-top: 40px;
+    }
+
+    @media (max-width: 710px) {
+        margin-bottom: 25px;
     }
 
     @media (max-width: 500px) {
@@ -60,7 +68,7 @@ const PortfolioPreviewGrid = styled(PortfolioGrid)`
             margin-top: -200px;
         }
 
-        @media (max-width: 1025px) {
+        @media (max-width: 980px) {
             &:nth-child(3) {
                 margin-top: 300px;
             }
@@ -118,8 +126,12 @@ const PortfolioPreviewGrid = styled(PortfolioGrid)`
 
 const PortfolioPreviewBackground = styled(PortfolioGridBackground)`
     @media (max-width: 965px) {
-        height: 68.3%;
+        height: 55.7%;
         top: 14%;
+    }
+
+    @media (max-width: 800px) {
+        top: 12%;
     }
 
     @media (max-width: 710px) {
