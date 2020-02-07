@@ -114,6 +114,15 @@ const InputWrapper = styled.div`
 
     input[type="month"] {
         -webkit-appearance: none;
+
+        :not(:placeholder-shown) {
+            padding: 0.62em 0.86em 0.62em 0.86em;
+            transform: translateY(12px);
+
+            + label {
+                top: -0.9em;
+            }
+        }
     }
 
     label {

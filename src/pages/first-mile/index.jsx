@@ -188,7 +188,8 @@ const Index = () => {
                     <p>
                         For any creative business the first steps are often the
                         hardest. We know because we’ve done it, and now we want
-                        to help the next generation of founders do the same.
+                        to help the next generation of founders in the UK do the
+                        same.
                     </p>
                     <p>
                         We’ll give you 12 months of mentorship and personal

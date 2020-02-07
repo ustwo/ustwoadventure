@@ -88,6 +88,7 @@ const InvestmentContactForm = () => {
             }
         >
             <StyledForm
+                noValidate
                 name={formName}
                 method="POST"
                 onSubmit={handleSubmit}
@@ -141,7 +142,7 @@ const InvestmentContactForm = () => {
                     />
 
                     <Input
-                        label="Where do you need the most support?"
+                        label="Where do you most need support?"
                         name="neededSupport"
                         handleChange={handleChange}
                         required={currentStep === 2}
