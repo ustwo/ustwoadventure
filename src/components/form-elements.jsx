@@ -112,6 +112,10 @@ const InputWrapper = styled.div`
         }
     }
 
+    input[type="month"] {
+        -webkit-appearance: none;
+    }
+
     label {
         color: #ffffff;
         font-family: var(--pxGrotesk);
@@ -122,6 +126,7 @@ const InputWrapper = styled.div`
         transition: opacity 100ms, top 150ms;
         top: -0.8em;
         left: 2px;
+        text-align: left;
     }
 
     input:not(:placeholder-shown),

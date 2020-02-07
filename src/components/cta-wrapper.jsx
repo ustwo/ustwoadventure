@@ -18,6 +18,12 @@ const CTABackground = styled(SectionWrapper)`
         padding: 40px 32px;
         grid-template-columns: repeat(1, 1fr);
     }
+
+    @media (max-width: 500px) {
+        --side-margin: 0;
+        padding: 32px 24px;
+        grid-template-columns: repeat(1, 1fr);
+    }
 `;
 
 const CTAInner = styled.div`
