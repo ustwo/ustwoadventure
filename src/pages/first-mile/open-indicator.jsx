@@ -84,6 +84,7 @@ const StyledCTA = styled(CTAWrapper)`
 const OpenIndicator = ({ onClick }) => {
     const applicationsAreOpen = true;
     const deadline = "April 6th";
+    const startDate = "April 20th";
 
     const havePlannedNextStart = true;
     const nextStart = "H2 2020";
@@ -98,14 +99,21 @@ const OpenIndicator = ({ onClick }) => {
                 <h2>
                     Applications now {applicationsAreOpen ? "open" : "closed"}
                 </h2>
-                <p>
-                    {applicationsAreOpen
-                        ? `Deadline ${deadline} — Apply now `
-                        : `We'll be announcing our next programme ${
-                              havePlannedNextStart ? `in ${nextStart}` : "soon"
-                          }`}
-                    {applicationsAreOpen && <ForwardsArrow />}
-                </p>
+                {applicationsAreOpen ? (
+                    <>
+                        <p>
+                            Deadline: {deadline} — Start: {startDate}
+                        </p>
+                        <p>
+                            <u>Apply now</u> <ForwardsArrow />
+                        </p>
+                    </>
+                ) : (
+                    <p>
+                        We&apos;ll be announcing our next programme{" "}
+                        {havePlannedNextStart ? `in ${nextStart}` : "soon"}
+                    </p>
+                )}
             </div>
         </StyledCTA>
     );
