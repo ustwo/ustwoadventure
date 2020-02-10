@@ -88,7 +88,6 @@ const InvestmentContactForm = () => {
             }
         >
             <StyledForm
-                noValidate
                 name={formName}
                 method="POST"
                 onSubmit={handleSubmit}

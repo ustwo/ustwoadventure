@@ -65,7 +65,7 @@ const FaqStyledDetails = styled.details`
     @keyframes sweepIn {
         0% {
             opacity: 0;
-            margin-left: -5px;
+            margin-left: -3px;
         }
         100% {
             opacity: 1;

@@ -14,14 +14,14 @@ export default [
     {
         question: "How much time will I get with mentors?",
         answer: [
-            "At the start of the programme, we’ll match you up with three key mentors, who will spend at least an hour a month with you. These are people with relevant skills or experience who can help you develop and strengthen your practice.",
-            "On top of this, you’ll have access to 40 ‘on call’ mentors. These are a hand-picked bunch of creatives who’ll meet with participants for up to two hours at a time to help with specific problems. The Adventure team will act as a kind of matchmaker for these mentors. But there’ll also be a directory available to everyone on the programme."
+            "At the start of the programme, we’ll match you with up to three key mentors, who will spend at least an hour a month with you. These are people with relevant skills or experience who can help you develop and strengthen your practice, and who will be setting goals with you over the course of the year.",
+            "On top of this, you’ll have access to 40 ‘on call’ mentors. These are a hand-picked bunch of creatives who you will support you in bursts to help with specific problems. The Adventure team will act as a kind of matchmaker for these mentors. But there’ll also be a directory available to everyone on the programme."
         ]
     },
     {
         question: "Who are the mentors?",
         answer: [
-            "We’ve compiled an amazing mix of 40 mentors from across the ustwo network. This includes ustwobies from our studio and games teams, founders and employees from other successful start-ups we’ve invested in, as well as folks from the wider Adventure community.",
+            "Our Adventure team of Justin, Mills and Neef will be your main points of support on First Mile. As well as this We’ve compiled an amazing mix of over 40 mentors from across the ustwo network. This includes ustwobies from our studio and games teams, founders and employees from other successful start-ups we’ve invested in, as well as folks from the wider Adventure community.",
             "We’re always on the lookout for new mentors to join us. So if you know anyone who might be interested, ask them to get in touch at hello.adventure@ustwo.com."
         ]
     },
