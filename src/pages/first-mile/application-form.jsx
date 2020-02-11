@@ -89,7 +89,7 @@ const InvestmentContactForm = () => {
             copy={
                 response
                     ? response === true
-                        ? `We'll take a read through what you've sent us and follow up via e-mail on between ${deadline} and ${startDate}. Have a great day!`
+                        ? `We'll take a read through what you've sent us and follow up with you via e-mail between ${deadline} and ${startDate}. Have a great day!`
                         : errorCopy
                     : "To apply to be a part of our First Mile programme, please fill out the form and we’ll get back to you shortly after the application deadline. Don't forget to also read our FAQs below."
             }
