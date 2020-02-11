@@ -9,6 +9,7 @@ import SectionWrapper from "../components/section-wrapper";
 import Button from "../components/button";
 import justinPhoto from "../assets/about/justin.jpg";
 import neefPhoto from "../assets/about/neef.jpg";
+import millsPhoto from "../assets/about/mills.jpg";
 
 const StyledAboutPage = styled(MainWrapper)`
     h1:first-of-type {
@@ -97,50 +98,36 @@ const TeamMemberWrapper = styled.div`
 
     @media (max-width: 870px) {
         margin-top: 15px;
-        grid-column: 6 / 12;
-    }
-
-    @media (max-width: 680px) {
-        margin-top: 0;
-        grid-column: 5 / 12;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    @media (max-width: 650px) {
-        margin-top: 5px;
-        grid-column: 5 / 13;
-    }
-
-    @media (max-width: 610px) {
-        margin-top: 10px;
-    }
-
-    @media (max-width: 570px) {
-        margin-top: 0;
         grid-column: 4 / -1;
+        grid-template-columns: repeat(9, 1fr);
+    }
+
+    @media (max-width: 590px) {
+        margin-top: 5px;
+        grid-column-start: 3;
+    }
+
+    @media (max-width: 525px) {
+        grid-column-start: 1;
     }
 
     @media (max-width: 500px) {
-        margin-top: 20px;
-        width: 77%;
-    }
-
-    @media (max-width: 420px) {
-        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 `;
 
 const TeamMember = styled.div`
-    grid-column: span 3;
+    grid-column: span 2;
 
     p:first-child {
-        font-size: 1.18em;
+        font-size: 1.1em;
         font-weight: 700;
         text-transform: uppercase;
         color: var(--piglet);
-        margin-bottom: 0.26em;
+        margin-bottom: 0.24em;
     }
 
     img {
@@ -148,12 +135,26 @@ const TeamMember = styled.div`
         width: 100%;
     }
 
-    @media (max-width: 680px) {
-        width: 46%;
+    p:last-child {
+        font-size: 0.96em;
+        line-height: 1.4;
+        margin-bottom: 0.5em;
+    }
 
-        p:first-child {
-            font-size: 1.1em;
-        }
+    @media (max-width: 960px) {
+        grid-column: span 3;
+    }
+
+    @media (max-width: 500px) {
+        width: 30%;
+    }
+
+    @media (max-width: 410px) {
+        width: 43%;
+    }
+
+    @media (max-width: 376px) {
+        width: 45%;
     }
 `;
 
@@ -248,6 +249,12 @@ const Portfolio = () => (
                     <p>Neef</p>
                     <img src={neefPhoto} alt="Neef Rehman headshot" />
                     <p>Designer & web developer</p>
+                </TeamMember>
+
+                <TeamMember>
+                    <p>Mills</p>
+                    <img src={millsPhoto} alt="Mills headshot" />
+                    <p>ustwo co-founder</p>
                 </TeamMember>
             </TeamMemberWrapper>
         </SectionWrapper>

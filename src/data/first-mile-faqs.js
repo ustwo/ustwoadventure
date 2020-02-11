@@ -1,15 +1,9 @@
 export default [
     {
-        question: "How different is this from an accelerator?",
-        answer: [
-            "Hugely. We’re not in it to help you raise vast sums of capital or create an industry-dominating business overnight. So if that’s what you’re after, First Mile probably isn’t the right programme for you. Instead, we want to help you develop the tools and knowledge you need to build a meaningful, lasting company.",
-            "In fact, we like to think of ourselves as more of a decelerator. From the get-go, we’ll spend a huge amount of time with you working out what kind of company you want to create. Then work closely with you to help achieve this. So if scale is what you’re after, we can help you work towards that. Equally, if staying small is a better approach for your business, we can suggest ways to make that happen too.",
-            "It’s also worth mentioning that we don’t take equity in any of the companies on the programme."
-        ]
-    },
-    {
         question: "How many placements are available?",
-        answer: ["Each time we’ll take on a maximum of four participants."]
+        answer: [
+            "Each First Mile cohort will take on a maximum of four participants."
+        ]
     },
     {
         question: "How much time will I get with mentors?",
@@ -52,6 +46,14 @@ export default [
         question: "Do I have to work from your office?",
         answer: [
             "It’s up to you. All participants have the option to come in and work from our London studio for up to three days each week. But it’s by no means compulsory. And we make all our support remote-friendly when it can be."
+        ]
+    },
+    {
+        question: "How different is this from an accelerator?",
+        answer: [
+            "Hugely. We’re not in it to help you raise vast sums of capital or create an industry-dominating business overnight. So if that’s what you’re after, First Mile probably isn’t the right programme for you. Instead, we want to help you develop the tools and knowledge you need to build a meaningful, lasting company.",
+            "In fact, we like to think of ourselves as more of a decelerator. From the get-go, we’ll spend a huge amount of time with you working out what kind of company you want to create. Then work closely with you to help achieve this. So if scale is what you’re after, we can help you work towards that. Equally, if staying small is a better approach for your business, we can suggest ways to make that happen too.",
+            "It’s also worth mentioning that we don’t take equity in any of the companies on the programme."
         ]
     },
     {
