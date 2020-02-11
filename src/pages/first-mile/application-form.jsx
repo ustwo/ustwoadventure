@@ -78,15 +78,20 @@ const InvestmentContactForm = () => {
 
     return (
         <FormWrapper
-            title="Sound like it's for you?"
+            sending={sending}
+            title={
+                response
+                    ? response === true
+                        ? "Thanks!"
+                        : "Error"
+                    : "Sound like it's for you?"
+            }
             copy={
-                <p className={sending ? "transition" : undefined}>
-                    {response
-                        ? response === true
-                            ? `Thanks! We'll take a read through what you've sent us and follow up via e-mail on between ${deadline} and ${startDate}. Have a great day.`
-                            : errorCopy
-                        : "To apply to be a part of our First Mile programme, please fill out the form and we’ll get back to you shortly after the application deadline. Don't forget to also read our FAQs below."}
-                </p>
+                response
+                    ? response === true
+                        ? `We'll take a read through what you've sent us and follow up via e-mail on between ${deadline} and ${startDate}. Have a great day!`
+                        : errorCopy
+                    : "To apply to be a part of our First Mile programme, please fill out the form and we’ll get back to you shortly after the application deadline. Don't forget to also read our FAQs below."
             }
         >
             <StyledForm

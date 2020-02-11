@@ -17,14 +17,11 @@ const StyledCTAWrapper = styled(CTAWrapper)`
 
 const CopyWrapper = styled.div`
     grid-column: 2 / 6;
+    transition: all 200ms;
 
-    p {
-        transition: all 200ms;
-
-        &.transition {
-            opacity: 0;
-            transform: translateY(3px);
-        }
+    &.transition {
+        opacity: 0;
+        transform: translateY(3px);
     }
 
     @media (max-width: 1080px) {
@@ -47,11 +44,11 @@ const CopyWrapper = styled.div`
     }
 `;
 
-const FormWrapper = ({ title, copy, children, className, style }) => (
+const FormWrapper = ({ title, copy, children, className, style, sending }) => (
     <StyledCTAWrapper subgrid className={className} style={style}>
-        <CopyWrapper>
+        <CopyWrapper className={sending ? "transition" : undefined}>
             <h2>{title}</h2>
-            {copy}
+            <p>{copy}</p>
         </CopyWrapper>
 
         {children}

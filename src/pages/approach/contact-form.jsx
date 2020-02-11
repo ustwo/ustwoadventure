@@ -67,15 +67,20 @@ const InvestmentContactForm = () => {
 
     return (
         <FormWrapper
-            title="Do you want some money?"
+            sending={sending}
+            title={
+                response
+                    ? response === true
+                        ? "Thanks!"
+                        : "Error"
+                    : "Do you want some money?"
+            }
             copy={
-                <p className={sending ? "transition" : undefined}>
-                    {response
-                        ? response === true
-                            ? "Thanks! We'll take a read through what you've sent us and follow up via e-mail as soon as possible. Have a great day."
-                            : errorCopy
-                        : "If you’d like to get in touch with us about an investment opportunity, please fill out the form and we’ll get back to you as soon as possible. Don't forget to also read our FAQs below."}
-                </p>
+                response
+                    ? response === true
+                        ? "Thanks! We'll take a read through what you've sent us and follow up via e-mail as soon as possible. Have a great day."
+                        : errorCopy
+                    : "If you’d like to get in touch with us about an investment opportunity, please fill out the form and we’ll get back to you as soon as possible. Don't forget to also read our FAQs below."
             }
         >
             <StyledForm
