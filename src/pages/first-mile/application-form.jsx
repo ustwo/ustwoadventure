@@ -5,6 +5,8 @@ import FormWrapper from "../../components/form-wrapper";
 import useMultiStepForm from "../../hooks/use-multi-step-form";
 import useNetlifySubmit from "../../hooks/use-netlify-submit";
 
+import { deadline, startDate } from "./open-indicator";
+
 const InvestmentContactForm = () => {
     const formName = "first-mile-application";
 
@@ -81,7 +83,7 @@ const InvestmentContactForm = () => {
                 <p className={sending ? "transition" : undefined}>
                     {response
                         ? response === true
-                            ? "Thanks! We'll take a read through what you've sent us and follow up via e-mail as soon as possible. Have a great day."
+                            ? `Thanks! We'll take a read through what you've sent us and follow up via e-mail on between ${deadline} and ${startDate}. Have a great day.`
                             : errorCopy
                         : "To apply to be a part of our First Mile programme, please fill out the form and we’ll get back to you shortly after the application deadline. Don't forget to also read our FAQs below."}
                 </p>

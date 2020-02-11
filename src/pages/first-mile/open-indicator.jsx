@@ -81,42 +81,38 @@ const StyledCTA = styled(CTAWrapper)`
     }
 `;
 
-const OpenIndicator = ({ onClick }) => {
-    const applicationsAreOpen = true;
-    const deadline = "April 6th";
-    const startDate = "April 20th";
+const applicationsAreOpen = true;
+export const deadline = "April 6th";
+export const startDate = "April 20th";
 
-    const havePlannedNextStart = true;
-    const nextStart = "H2 2020";
+const havePlannedNextStart = true;
+const nextStart = "H2 2020";
 
-    return (
-        <StyledCTA
-            open={applicationsAreOpen}
-            as="a"
-            onClick={applicationsAreOpen && onClick}
-        >
-            <div>
-                <h2>
-                    Applications now {applicationsAreOpen ? "open" : "closed"}
-                </h2>
-                {applicationsAreOpen ? (
-                    <>
-                        <p>
-                            Deadline: {deadline} — Start: {startDate}
-                        </p>
-                        <p>
-                            <u>Apply now</u> <ForwardsArrow />
-                        </p>
-                    </>
-                ) : (
+const OpenIndicator = ({ onClick }) => (
+    <StyledCTA
+        open={applicationsAreOpen}
+        as="a"
+        onClick={applicationsAreOpen && onClick}
+    >
+        <div>
+            <h2>Applications now {applicationsAreOpen ? "open" : "closed"}</h2>
+            {applicationsAreOpen ? (
+                <>
                     <p>
-                        We&apos;ll be announcing our next programme{" "}
-                        {havePlannedNextStart ? `in ${nextStart}` : "soon"}
+                        Deadline: {deadline} — Start: {startDate}
                     </p>
-                )}
-            </div>
-        </StyledCTA>
-    );
-};
+                    <p>
+                        <u>Apply now</u> <ForwardsArrow />
+                    </p>
+                </>
+            ) : (
+                <p>
+                    We&apos;ll be announcing our next programme{" "}
+                    {havePlannedNextStart ? `in ${nextStart}` : "soon"}
+                </p>
+            )}
+        </div>
+    </StyledCTA>
+);
 
 export default OpenIndicator;
