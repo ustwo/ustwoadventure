@@ -11,7 +11,7 @@ const VideoContainer = styled.div`
     video {
         width: 100%;
         display: block;
-        transition: filter 150ms;
+        transition: filter 200ms;
 
         &:focus {
             outline: none;
@@ -33,7 +33,7 @@ const muteToggleStyles = css`
         transform: translate(-50%, -37%);
         color: #ffffff;
         opacity: 0;
-        transition: opacity 150ms;
+        transition: opacity 200ms;
 
         :hover {
             cursor: pointer;
@@ -80,7 +80,7 @@ const InlineVideo = ({ style, className, src, poster, hasSound, controls }) => {
                 muted={muted}
                 src={src}
                 poster={poster}
-                controls={controls}
+                controls={controls || (hasSound && !muted)}
             />
             {hasSound && (
                 <p
