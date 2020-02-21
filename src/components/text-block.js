@@ -7,6 +7,14 @@ const TextBlock = styled.div`
         margin-bottom: ${props => (props.largeHeader ? "2.6em" : "45px")};
     }
 
+    p a {
+        text-decoration: underline;
+
+        &:hover {
+            font-style: italic;
+        }
+    }
+
     > b {
         font-size: 1.1em;
         display: block;

@@ -13,6 +13,7 @@ import batonIllustration from "../../assets/first-mile/baton.png";
 import FirstMileApplicationForm from "./application-form";
 import MainIllustration from "./main-illustration";
 import OpenIndicator from "./open-indicator";
+import { Link } from "gatsby";
 
 const FirstMilePage = styled(MainWrapper)`
     h1 {
@@ -106,8 +107,6 @@ const DetailsSection = styled(SectionWrapper)`
     }
 
     ul {
-        /* list-style: initial;
-        list-style-type: "–  "; */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: var(--column-gap);
@@ -193,8 +192,9 @@ const Index = () => {
                     </p>
                     <p>
                         We’ll give you 12 months of mentorship and personal
-                        support from ustwobies and our Adventure community —
-                        with anything from tech troubleshooting to building a
+                        support from ustwobies and our{" "}
+                        <Link to="/portfolio">Adventure community</Link> — with
+                        anything from tech troubleshooting to building a
                         long-term strategy. You will also get a £10,000 cash
                         injection to help cover costs, and part-time deskspace
                         in our studio, if you need it.
