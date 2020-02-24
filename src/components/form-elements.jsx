@@ -154,7 +154,7 @@ const InputWrapper = styled.div`
 
     textarea {
         height: 11em;
-        resize: none;
+        resize: vertical;
 
         + label {
             top: -0.65em;

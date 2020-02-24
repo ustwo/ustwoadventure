@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { Link } from "gatsby";
 import { styled } from "linaria/react";
 
 import SEO from "../../components/seo";
@@ -13,7 +14,6 @@ import batonIllustration from "../../assets/first-mile/baton.png";
 import FirstMileApplicationForm from "./application-form";
 import MainIllustration from "./main-illustration";
 import OpenIndicator from "./open-indicator";
-import { Link } from "gatsby";
 
 const FirstMilePage = styled(MainWrapper)`
     h1 {
