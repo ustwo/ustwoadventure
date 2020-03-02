@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 import { arrow } from "../../assets/inline-icons";
 
-import CopyRight from "./copyright";
+import CopyRight from "./appendix";
 
 const RightFooterWrapper = styled.div`
     grid-column: 4/-1;
