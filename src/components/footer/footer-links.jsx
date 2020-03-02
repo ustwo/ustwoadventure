@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 import { arrow } from "../../assets/inline-icons";
 
-import CopyRight from "./appendix";
+import Appendix from "./appendix";
 
 const RightFooterWrapper = styled.div`
     grid-column: 4/-1;
@@ -73,6 +73,7 @@ const RightFooterWrapper = styled.div`
 
     @media (max-width: 500px) {
         grid-column: 2/-1;
+        position: relative;
     }
 
     @media (max-width: 350px) {
@@ -143,7 +144,7 @@ const FooterLinks = () => (
                 </a>
             </div>
         </div>
-        <CopyRight />
+        <Appendix />
     </RightFooterWrapper>
 );
 

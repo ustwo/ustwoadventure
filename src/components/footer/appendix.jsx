@@ -24,12 +24,14 @@ const AppendixWrapper = styled.div`
 
     @media (max-width: 580px) {
         grid-column: 2 / -1;
+    }
 
+    @media (max-width: 410px) {
         > a {
             margin-right: 20px;
 
             img {
-                width: 40px;
+                width: 45px;
             }
         }
     }
