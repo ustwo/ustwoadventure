@@ -81,12 +81,12 @@ const StyledCTA = styled(CTAWrapper)`
     }
 `;
 
-const applicationsAreOpen = true;
+const applicationsAreOpen = false;
 export const deadline = "April 6th";
 export const startDate = "April 20th";
 
-const havePlannedNextStart = true;
-const nextStart = "H2 2020";
+// const havePlannedNextStart = false;
+// const nextStart = "H2 2020";
 
 const OpenIndicator = ({ onClick }) => (
     <StyledCTA
@@ -95,7 +95,8 @@ const OpenIndicator = ({ onClick }) => (
         onClick={applicationsAreOpen && onClick}
     >
         <div>
-            <h2>Applications now {applicationsAreOpen ? "open" : "closed"}</h2>
+            {/* <h2>Applications now {applicationsAreOpen ? "open" : "closed"}</h2> */}
+            <h2>Applications closed</h2>
             {applicationsAreOpen ? (
                 <>
                     <p>
@@ -107,8 +108,19 @@ const OpenIndicator = ({ onClick }) => (
                 </>
             ) : (
                 <p>
+                    {/* TODO: remove one C O R O N A V I R U S is over
                     We&apos;ll be announcing our next programme{" "}
-                    {havePlannedNextStart ? `in ${nextStart}` : "soon"}
+                    {havePlannedNextStart ? `in ${nextStart}` : "soon"} */}
+                    We have{" "}
+                    <a
+                        style={{ color: "#fff", textDecoration: "underline" }}
+                        href="https://twitter.com/ustwoadventure/status/1240307814104543232"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        postponed First Mile
+                    </a>{" "}
+                    until further notice
                 </p>
             )}
         </div>
