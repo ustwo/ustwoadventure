@@ -125,18 +125,18 @@ export default [
         status: PORTFOLIO_STATUS.LIVE,
         isInHomePageRotation: false
     },
-    {
-        name: "Pauseable",
-        url: "https://www.pauseable.com",
-        tidyurl: "pauseable.com",
-        image: "/team_assets/pauseable_image.jpg",
-        logo: "/team_assets/pauseable_logo.png",
-        oneLiner: "Mindfulness in motion",
-        copy:
-            "We’re creating tools to bring mindfulness to everyone everywhere, through interactive meditation, unlocking an oasis of calm via a series of simple movements.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
-    },
+    // {
+    //     name: "Pauseable",
+    //     url: "https://www.pauseable.com",
+    //     tidyurl: "pauseable.com",
+    //     image: "/team_assets/pauseable_image.jpg",
+    //     logo: "/team_assets/pauseable_logo.png",
+    //     oneLiner: "Mindfulness in motion",
+    //     copy:
+    //         "We’re creating tools to bring mindfulness to everyone everywhere, through interactive meditation, unlocking an oasis of calm via a series of simple movements.",
+    //     status: PORTFOLIO_STATUS.LIVE,
+    //     isInHomePageRotation: false
+    // },
     // {
     //     name: "Billogram",
     //     url: "https://billogram.com/",

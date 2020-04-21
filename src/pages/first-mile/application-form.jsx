@@ -99,8 +99,7 @@ const InvestmentContactForm = () => {
             }
         >
             <StyledForm
-                // TODO: remove style
-                style={{ pointerEvents: "none", opacity: "0.7" }}
+                style={{ pointerEvents: "none", opacity: "0.7" }} // TODO: remove style
                 name={formName}
                 method="POST"
                 onSubmit={handleSubmit}
