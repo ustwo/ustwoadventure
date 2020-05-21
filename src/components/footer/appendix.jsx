@@ -80,7 +80,7 @@ const CopyRight = () => (
             </p>
             <p>
                 <a
-                    href="https://www.iubenda.com/privacy-policy/50030836/cookie-policy"
+                    href="https://www.iubenda.com/privacy-policy/322454/cookie-policy"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
