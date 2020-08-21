@@ -73,17 +73,20 @@ const InvestmentContactForm = () => {
                     ? response === true
                         ? "Thanks!"
                         : "Error"
-                    : "Do you want some money?"
+                    : // : "Do you want some money?"
+                      "Currently: not investing"
             }
             copy={
                 response
                     ? response === true
                         ? "Thanks! We'll take a read through what you've sent us and follow up via e-mail as soon as possible. Have a great day."
                         : errorCopy
-                    : "If you’d like to get in touch with us about an investment opportunity, please fill out the form and we’ll get back to you as soon as possible. Don't forget to also read our FAQs below."
+                    : // : "If you’d like to get in touch with us about an investment opportunity, please fill out the form and we’ll get back to you as soon as possible. Don't forget to also read our FAQs below."
+                      "We're currently not looking for new investment opportunities. If you have any questions in the meantime, please reach out to us via the email address in the footer."
             }
         >
             <StyledForm
+                style={{ pointerEvents: "none", opacity: "0.7" }} // TODO: remove style
                 name={formName}
                 method="POST"
                 onSubmit={handleSubmit}
