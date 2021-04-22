@@ -28,7 +28,12 @@ module.exports = {
                 component: require.resolve("./src/components/layout.jsx")
             }
         },
-        "gatsby-plugin-netlify",
+        {
+            resolve: `gatsby-plugin-netlify`,
+            options: {
+                mergeSecurityHeaders: false,
+            },
+            },
         {
             resolve: "gatsby-plugin-google-analytics",
             options: {
