@@ -68,6 +68,14 @@ module.exports = {
                     require("postcss-subgrid")({ ieHack: false })
                 ]
             }
+        },
+        {
+            resolve: "gatsby-plugin-web-font-loader",
+            options: {
+                google: {
+                    families: ["DM Sans"]
+                }
+            }
         }
     ]
 };

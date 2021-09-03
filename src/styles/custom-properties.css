@@ -1,8 +1,7 @@
 :root {
   /* Fonts */
-  --futuraBold: "futura-pt", "futura", sans-serif;
-  --futura: "futura-pt-bold", "futura", sans-serif;
-  --pxGrotesk: "PxGroteskRegular", "Arial", sans-serif;
+  --dmsans: "DM Sans", "Arial", sans-serif;
+  --lanord: "La Nord", "Arial", sans-serif;
 
   /* Colours */
   --nonWhite: #F4F4F4;
@@ -11,7 +10,7 @@
   --grey03: #969696;
   --grey04: #646464;
   --nonBlack: #333333;
-  --piglet: #F32D94;
+  --piglet: #6978FF;
   /* --passion     : #E60C29;
   --ohra        : #FF5519;
   --honey       : #FFBF02;
