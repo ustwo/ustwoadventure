@@ -66,16 +66,16 @@ export default [
         isInHomePageRotation: false
     },
     {
-        name: "Brother Cycles",
-        url: "https://www.brothercycles.com/",
-        tidyurl: "brothercycles.com",
-        image: "/team_assets/brothercycles_image.jpg",
-        logo: "/team_assets/brothercycles_logo.png",
-        oneLiner: "Beautiful bikes, designed in London",
+        name: "Marvel",
+        url: "https://www.marvelapp.com",
+        tidyurl: "marvelapp.com",
+        image: "/team_assets/marvel_image.jpg",
+        logo: "/team_assets/marvel_logo.png",
+        oneLiner: "Making design simple for everyone",
         copy:
-            "Our frames are designed by us, are handmade by experienced frame builders out of the best materials, and can be ridden all day, whether in the city, on the track or out in the wild.",
+            "Marvel is a design and collaboration platform that empowers individuals and teams to bring their ideas to life. From wireframing to prototyping to code generation - Marvel is used to create the apps and sites you use everyday",
         status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
+        isInHomePageRotation: true
     },
     {
         name: "Tray",
@@ -90,30 +90,6 @@ export default [
         isInHomePageRotation: true
     },
     {
-        name: "Dice",
-        url: "https://www.dice.fm",
-        tidyurl: "dice.fm",
-        image: "/team_assets/dice_image.jpg",
-        logo: "/team_assets/dice_logo.png",
-        oneLiner: "Tickets to the best gigs and parties",
-        copy:
-            "Every feature on DICE is designed for discovery and to make going out easy. We bring you closer to the artists you love. Every event on the app is handpicked by our team, for the fans",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: true
-    },
-    {
-        name: "Marvel",
-        url: "https://www.marvelapp.com",
-        tidyurl: "marvelapp.com",
-        image: "/team_assets/marvel_image.jpg",
-        logo: "/team_assets/marvel_logo.png",
-        oneLiner: "Making design simple for everyone",
-        copy:
-            "Marvel is a design and collaboration platform that empowers individuals and teams to bring their ideas to life. From wireframing to prototyping to code generation - Marvel is used to create the apps and sites you use everyday",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: true
-    },
-    {
         name: "Twiik",
         url: "https://www.twiik.me/",
         tidyurl: "twiik.me",
@@ -125,6 +101,19 @@ export default [
         status: PORTFOLIO_STATUS.LIVE,
         isInHomePageRotation: false
     },
+    {
+        name: "Dice",
+        url: "https://www.dice.fm",
+        tidyurl: "dice.fm",
+        image: "/team_assets/dice_image.jpg",
+        logo: "/team_assets/dice_logo.png",
+        oneLiner: "Tickets to the best gigs and parties",
+        copy:
+            "Every feature on DICE is designed for discovery and to make going out easy. We bring you closer to the artists you love. Every event on the app is handpicked by our team, for the fans",
+        status: PORTFOLIO_STATUS.LIVE,
+        isInHomePageRotation: true
+    },
+
     // {
     //     name: "Pauseable",
     //     url: "https://www.pauseable.com",
@@ -186,17 +175,18 @@ export default [
         isInHomePageRotation: false
     },
     {
-        name: "Everpress",
-        url: "https://www.everpress.com",
-        tidyurl: "everpress.com",
-        image: "/team_assets/everpress_image.jpg",
-        logo: "/team_assets/everpress_logo.png",
-        oneLiner: "Design & sell beautiful merchandise, easily",
+        name: "Mayku",
+        url: "https://www.mayku.me",
+        tidyurl: "mayku.me",
+        image: "/team_assets/mayku_image.jpg",
+        logo: "/team_assets/mayku_logo.png",
+        oneLiner: "Make beautiful things with the FormBox",
         copy:
-            "The best way to create and share campaigns for clothing design, risk free and high quality. We’re enabling the newest wave of influencers to sell products to millions of consumers around the world.",
+            "Mayku are on a mission to give people the power of making. We're building a family of mini-machines that let you start a production line from your tabletop - as simply as baking a cake.",
         status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: true
+        isInHomePageRotation: false
     },
+
     {
         name: "Trinny London",
         url: "https://trinnylondon.com/",
@@ -209,18 +199,7 @@ export default [
         status: PORTFOLIO_STATUS.LIVE,
         isInHomePageRotation: false
     },
-    {
-        name: "Mayku",
-        url: "https://www.mayku.me",
-        tidyurl: "mayku.me",
-        image: "/team_assets/mayku_image.jpg",
-        logo: "/team_assets/mayku_logo.png",
-        oneLiner: "Make beautiful things with the FormBox",
-        copy:
-            "Mayku are on a mission to give people the power of making. We're building a family of mini-machines that let you start a production line from your tabletop - as simply as baking a cake.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
-    },
+
     {
         name: "Curiscope",
         url: "https://www.curiscope.com",
@@ -233,6 +212,7 @@ export default [
         status: PORTFOLIO_STATUS.LIVE,
         isInHomePageRotation: false
     },
+
     {
         name: "Atellio",
         url: "https://atellio.com/",
@@ -282,6 +262,18 @@ export default [
         isInHomePageRotation: false
     },
     {
+        name: "Brother Cycles",
+        url: "https://www.brothercycles.com/",
+        tidyurl: "brothercycles.com",
+        image: "/team_assets/brothercycles_image.jpg",
+        logo: "/team_assets/brothercycles_logo.png",
+        oneLiner: "Beautiful bikes, designed in London",
+        copy:
+            "Our frames are designed by us, are handmade by experienced frame builders out of the best materials, and can be ridden all day, whether in the city, on the track or out in the wild.",
+        status: PORTFOLIO_STATUS.LIVE,
+        isInHomePageRotation: false
+    },
+    {
         name: "Limbic",
         url: "https://limbic.ai/",
         tidyurl: "limbic.ai",
@@ -317,6 +309,18 @@ export default [
             "Courier reports on modern business and startup culture from our headquarters in East London on topics from around the world. Launched in 2013, we sit at the heart of the new business revolution.",
         status: PORTFOLIO_STATUS.LIVE,
         isInHomePageRotation: false
+    },
+    {
+        name: "Everpress",
+        url: "https://www.everpress.com",
+        tidyurl: "everpress.com",
+        image: "/team_assets/everpress_image.jpg",
+        logo: "/team_assets/everpress_logo.png",
+        oneLiner: "Design & sell beautiful merchandise, easily",
+        copy:
+            "The best way to create and share campaigns for clothing design, risk free and high quality. We’re enabling the newest wave of influencers to sell products to millions of consumers around the world.",
+        status: PORTFOLIO_STATUS.LIVE,
+        isInHomePageRotation: true
     },
     {
         name: "Homerun",
