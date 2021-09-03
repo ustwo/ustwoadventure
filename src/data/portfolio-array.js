@@ -17,30 +17,30 @@ export default [
     //     status: PORTFOLIO_STATUS.EXITED,
     //     isInHomePageRotation: false
     // },
-    {
-        name: "Sanctus",
-        url: "https://sanctus.io",
-        tidyurl: "sanctus.io",
-        image: "/team_assets/sanctus_image.jpg",
-        logo: "/team_assets/sanctus_logo.png",
-        oneLiner: "Creating space for mental health",
-        copy:
-            "We believe mental health should be viewed like physical health, and are on a mission to make it accessible. We work with businesses to help them create an open environment where mental health is cared for.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
-    },
-    {
-        name: "Amaliah",
-        url: "https://www.amaliah.com",
-        tidyurl: "amaliah.com",
-        image: "/team_assets/amaliah_image.jpg",
-        logo: "/team_assets/amaliah_logo.png",
-        oneLiner: "Amplifying the voices of muslim women",
-        copy:
-            "We create content that is culturally relevant to Muslim women across fashion, beauty, topical issues, lifestyle and more.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
-    },
+    // {
+    //     name: "Sanctus",
+    //     url: "https://sanctus.io",
+    //     tidyurl: "sanctus.io",
+    //     image: "/team_assets/sanctus_image.jpg",
+    //     logo: "/team_assets/sanctus_logo.png",
+    //     oneLiner: "Creating space for mental health",
+    //     copy:
+    //         "We believe mental health should be viewed like physical health, and are on a mission to make it accessible. We work with businesses to help them create an open environment where mental health is cared for.",
+    //     status: PORTFOLIO_STATUS.LIVE,
+    //     isInHomePageRotation: false
+    // },
+    // {
+    //     name: "Amaliah",
+    //     url: "https://www.amaliah.com",
+    //     tidyurl: "amaliah.com",
+    //     image: "/team_assets/amaliah_image.jpg",
+    //     logo: "/team_assets/amaliah_logo.png",
+    //     oneLiner: "Amplifying the voices of muslim women",
+    //     copy:
+    //         "We create content that is culturally relevant to Muslim women across fashion, beauty, topical issues, lifestyle and more.",
+    //     status: PORTFOLIO_STATUS.LIVE,
+    //     isInHomePageRotation: false
+    // },
     {
         name: "Over",
         url: "https://www.madewithover.com",
@@ -53,18 +53,18 @@ export default [
         status: PORTFOLIO_STATUS.LIVE,
         isInHomePageRotation: true
     },
-    {
-        name: "Run an Empire",
-        url: "http://www.runanempire.com",
-        tidyurl: "runanempire.com",
-        image: "/team_assets/runanempire_image.jpg",
-        logo: "/team_assets/runanempire_logo.png",
-        oneLiner: "A real world strategy running game",
-        copy:
-            "The most fun way to get on the road. Race against people in the real world to control territory in your area, and claim land in the name of your empire.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
-    },
+    // {
+    //     name: "Run an Empire",
+    //     url: "http://www.runanempire.com",
+    //     tidyurl: "runanempire.com",
+    //     image: "/team_assets/runanempire_image.jpg",
+    //     logo: "/team_assets/runanempire_logo.png",
+    //     oneLiner: "A real world strategy running game",
+    //     copy:
+    //         "The most fun way to get on the road. Race against people in the real world to control territory in your area, and claim land in the name of your empire.",
+    //     status: PORTFOLIO_STATUS.LIVE,
+    //     isInHomePageRotation: false
+    // },
     {
         name: "Marvel",
         url: "https://www.marvelapp.com",
@@ -89,18 +89,18 @@ export default [
         status: PORTFOLIO_STATUS.EXITED,
         isInHomePageRotation: true
     },
-    {
-        name: "Twiik",
-        url: "https://www.twiik.me/",
-        tidyurl: "twiik.me",
-        image: "/team_assets/twiik_image.jpg",
-        logo: "/team_assets/twiik_logo.png",
-        oneLiner: "Helping people build healthier lifestyles",
-        copy:
-            "The Twiik app enables professional coaches, trainers and influencers to connect with people who are on the lookout for that perfect training program, dietary course or health challenge.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
-    },
+    // {
+    //     name: "Twiik",
+    //     url: "https://www.twiik.me/",
+    //     tidyurl: "twiik.me",
+    //     image: "/team_assets/twiik_image.jpg",
+    //     logo: "/team_assets/twiik_logo.png",
+    //     oneLiner: "Helping people build healthier lifestyles",
+    //     copy:
+    //         "The Twiik app enables professional coaches, trainers and influencers to connect with people who are on the lookout for that perfect training program, dietary course or health challenge.",
+    //     status: PORTFOLIO_STATUS.LIVE,
+    //     isInHomePageRotation: false
+    // },
     {
         name: "Dice",
         url: "https://www.dice.fm",
@@ -150,18 +150,18 @@ export default [
     //     status: "PORTFOLIO_STATUS.SUCCAILED",
     //     isInHomePageRotation: false
     // },
-    {
-        name: "Hoop",
-        url: "https://www.hoop.co.uk",
-        tidyurl: "hoop.co.uk",
-        image: "/team_assets/hoop_image.jpg",
-        logo: "/team_assets/hoop_logo.png",
-        oneLiner: "Find the best things happening for kids",
-        copy:
-            "Hoop is on a mission to get families get out of house and help their children laugh, learn and make new friends.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
-    },
+    // {
+    //     name: "Hoop",
+    //     url: "https://www.hoop.co.uk",
+    //     tidyurl: "hoop.co.uk",
+    //     image: "/team_assets/hoop_image.jpg",
+    //     logo: "/team_assets/hoop_logo.png",
+    //     oneLiner: "Find the best things happening for kids",
+    //     copy:
+    //         "Hoop is on a mission to get families get out of house and help their children laugh, learn and make new friends.",
+    //     status: PORTFOLIO_STATUS.LIVE,
+    //     isInHomePageRotation: false
+    // },
     {
         name: "Tribe",
         url: "https://wearetribe.co/",
@@ -187,31 +187,31 @@ export default [
         isInHomePageRotation: false
     },
 
-    {
-        name: "Trinny London",
-        url: "https://trinnylondon.com/",
-        tidyurl: "trinnylondon.com",
-        image: "/team_assets/trinny_image.jpg",
-        logo: "/team_assets/trinny_logo.png",
-        oneLiner: "Changing the face of makeup",
-        copy:
-            "A portable, versatile range of makeup, with colours to suit every woman, and state-of-the-art technology to pinpoint which makeup truly suits you. Welcome to the ultimate easy, modern, do-it-everywhere makeup brand.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
-    },
+    // {
+    //     name: "Trinny London",
+    //     url: "https://trinnylondon.com/",
+    //     tidyurl: "trinnylondon.com",
+    //     image: "/team_assets/trinny_image.jpg",
+    //     logo: "/team_assets/trinny_logo.png",
+    //     oneLiner: "Changing the face of makeup",
+    //     copy:
+    //         "A portable, versatile range of makeup, with colours to suit every woman, and state-of-the-art technology to pinpoint which makeup truly suits you. Welcome to the ultimate easy, modern, do-it-everywhere makeup brand.",
+    //     status: PORTFOLIO_STATUS.LIVE,
+    //     isInHomePageRotation: false
+    // },
 
-    {
-        name: "Curiscope",
-        url: "https://www.curiscope.com",
-        tidyurl: "curiscope.com",
-        image: "/team_assets/curiscope_image.jpg",
-        logo: "/team_assets/curiscope_logo.png",
-        oneLiner: "Educational experiences for all",
-        copy:
-            "We’re creating products using immersive technology like 360° video and AR to let you explore the depths of the ocean or the human body, and unleash your curiosity.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
-    },
+    // {
+    //     name: "Curiscope",
+    //     url: "https://www.curiscope.com",
+    //     tidyurl: "curiscope.com",
+    //     image: "/team_assets/curiscope_image.jpg",
+    //     logo: "/team_assets/curiscope_logo.png",
+    //     oneLiner: "Educational experiences for all",
+    //     copy:
+    //         "We’re creating products using immersive technology like 360° video and AR to let you explore the depths of the ocean or the human body, and unleash your curiosity.",
+    //     status: PORTFOLIO_STATUS.LIVE,
+    //     isInHomePageRotation: false
+    // },
 
     {
         name: "Atellio",
@@ -261,18 +261,18 @@ export default [
         status: PORTFOLIO_STATUS.LIVE,
         isInHomePageRotation: false
     },
-    {
-        name: "Brother Cycles",
-        url: "https://www.brothercycles.com/",
-        tidyurl: "brothercycles.com",
-        image: "/team_assets/brothercycles_image.jpg",
-        logo: "/team_assets/brothercycles_logo.png",
-        oneLiner: "Beautiful bikes, designed in London",
-        copy:
-            "Our frames are designed by us, are handmade by experienced frame builders out of the best materials, and can be ridden all day, whether in the city, on the track or out in the wild.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
-    },
+    // {
+    //     name: "Brother Cycles",
+    //     url: "https://www.brothercycles.com/",
+    //     tidyurl: "brothercycles.com",
+    //     image: "/team_assets/brothercycles_image.jpg",
+    //     logo: "/team_assets/brothercycles_logo.png",
+    //     oneLiner: "Beautiful bikes, designed in London",
+    //     copy:
+    //         "Our frames are designed by us, are handmade by experienced frame builders out of the best materials, and can be ridden all day, whether in the city, on the track or out in the wild.",
+    //     status: PORTFOLIO_STATUS.LIVE,
+    //     isInHomePageRotation: false
+    // },
     {
         name: "Limbic",
         url: "https://limbic.ai/",
@@ -298,18 +298,18 @@ export default [
         status: PORTFOLIO_STATUS.LIVE,
         isInHomePageRotation: true
     },
-    {
-        name: "Courier",
-        url: "https://couriermedia.co/",
-        tidyurl: "couriermedia.co",
-        image: "/team_assets/courier_image.jpg",
-        logo: "/team_assets/courier_logo.png",
-        oneLiner: "Stories of modern business",
-        copy:
-            "Courier reports on modern business and startup culture from our headquarters in East London on topics from around the world. Launched in 2013, we sit at the heart of the new business revolution.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
-    },
+    // {
+    //     name: "Courier",
+    //     url: "https://couriermedia.co/",
+    //     tidyurl: "couriermedia.co",
+    //     image: "/team_assets/courier_image.jpg",
+    //     logo: "/team_assets/courier_logo.png",
+    //     oneLiner: "Stories of modern business",
+    //     copy:
+    //         "Courier reports on modern business and startup culture from our headquarters in East London on topics from around the world. Launched in 2013, we sit at the heart of the new business revolution.",
+    //     status: PORTFOLIO_STATUS.LIVE,
+    //     isInHomePageRotation: false
+    // },
     {
         name: "Everpress",
         url: "https://www.everpress.com",
