@@ -131,10 +131,10 @@ const Index = () => (
         </Shape2>
 
         <HomePageHeader>
-            We created <span style={{ color: "#F7E300" }}>ustwo Adventure</span>{" "}
-            to support early-stage initiatives grounded in creativity and the
-            desire to make a positive impact. The programme is now paused
-            indefinitely.
+            We created{" "}
+            <span style={{ color: "#F7E300" }}>ustwo Adventures</span> to
+            support early-stage initiatives grounded in creativity and the
+            desire to make a positive impact.
         </HomePageHeader>
 
         <p
@@ -148,13 +148,19 @@ const Index = () => (
             assistance to companies including:
         </p>
         <ItemsGrid>
-            {companiesInHomePageRotation.map(item => (
-                <Item>
-                    <a href={item.url}>
-                        <img src={item.logo} alt="" style={{ width: "100%" }} />
-                    </a>
-                </Item>
-            ))}
+            {companiesInHomePageRotation.map(item => {
+                const image = (
+                    <img src={item.logo} alt="" style={{ width: "100%" }} />
+                );
+                if (item.url) {
+                    return (
+                        <Item>
+                            <a href={item.url}>{image}</a>
+                        </Item>
+                    );
+                }
+                return <Item>{image}</Item>;
+            })}
         </ItemsGrid>
         <p
             style={{

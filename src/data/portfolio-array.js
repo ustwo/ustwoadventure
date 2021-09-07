@@ -43,7 +43,6 @@ export default [
     // },
     {
         name: "Over",
-        url: "https://www.madewithover.com",
         tidyurl: "madewithover.com",
         image: "/team_assets/over_image.jpg",
         logo: "/team_assets/over_logo.png",
