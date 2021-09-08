@@ -1,9 +1,6 @@
 import React from "react";
 import { styled } from "linaria/react";
 
-import FooterLinks from "./footer-links";
-import ADV from "./adv";
-
 const StyledFooter = styled.footer`
     margin-bottom: 40px;
     color: var(--grey04);
@@ -26,8 +23,7 @@ const StyledFooter = styled.footer`
 
 const Footer = () => (
     <StyledFooter>
-        <ADV />
-        <FooterLinks />
+        <p>social links</p>
     </StyledFooter>
 );
 

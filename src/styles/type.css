@@ -1,12 +1,8 @@
 @font-face {
-  font-family: PxGroteskRegular;
-  src: url(./px-grotesk/PxGrotesk-Regular.eot);
-  src: url(./px-grotesk/PxGrotesk-Regular.eot?#iefix) format('embedded-opentype'),
-       url(./px-grotesk/PxGrotesk-Regular.woff2) format('woff2'),
-       url(./px-grotesk/PxGrotesk-Regular.woff) format('woff'),
-       url(./px-grotesk/PxGrotesk-Regular.svg#PxGroteskRegular) format('svg');
+  font-family: La Nord;
+  src: url("../assets/fonts/LaNord-Medium.woff2") format('woff2'),
+       url("../assets/fonts/LaNord-Medium.woff") format('woff');
   font-style: normal;
-  font-weight: 400;
-  font-display: fallback;
-  text-rendering: optimizeLegibility;
+  font-weight: 600;
+  font-display: swap;
 }

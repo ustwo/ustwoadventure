@@ -17,90 +17,29 @@ export default [
     //     status: PORTFOLIO_STATUS.EXITED,
     //     isInHomePageRotation: false
     // },
-    {
-        name: "Sanctus",
-        url: "https://sanctus.io",
-        tidyurl: "sanctus.io",
-        image: "/team_assets/sanctus_image.jpg",
-        logo: "/team_assets/sanctus_logo.png",
-        oneLiner: "Creating space for mental health",
-        copy:
-            "We believe mental health should be viewed like physical health, and are on a mission to make it accessible. We work with businesses to help them create an open environment where mental health is cared for.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
-    },
-    {
-        name: "Amaliah",
-        url: "https://www.amaliah.com",
-        tidyurl: "amaliah.com",
-        image: "/team_assets/amaliah_image.jpg",
-        logo: "/team_assets/amaliah_logo.png",
-        oneLiner: "Amplifying the voices of muslim women",
-        copy:
-            "We create content that is culturally relevant to Muslim women across fashion, beauty, topical issues, lifestyle and more.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
-    },
-    {
-        name: "Over",
-        url: "https://www.madewithover.com",
-        tidyurl: "madewithover.com",
-        image: "/team_assets/over_image.jpg",
-        logo: "/team_assets/over_logo.png",
-        oneLiner: "Build your brand. Wow the world.",
-        copy:
-            "We’re on a mission to empower small businesses with the tools, knowledge, and ideas they need to create everything from social posts and digital ads to logos and flyers. Effortlessly. Instantly. Fun-fully.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: true
-    },
-    {
-        name: "Run an Empire",
-        url: "http://www.runanempire.com",
-        tidyurl: "runanempire.com",
-        image: "/team_assets/runanempire_image.jpg",
-        logo: "/team_assets/runanempire_logo.png",
-        oneLiner: "A real world strategy running game",
-        copy:
-            "The most fun way to get on the road. Race against people in the real world to control territory in your area, and claim land in the name of your empire.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
-    },
-    {
-        name: "Brother Cycles",
-        url: "https://www.brothercycles.com/",
-        tidyurl: "brothercycles.com",
-        image: "/team_assets/brothercycles_image.jpg",
-        logo: "/team_assets/brothercycles_logo.png",
-        oneLiner: "Beautiful bikes, designed in London",
-        copy:
-            "Our frames are designed by us, are handmade by experienced frame builders out of the best materials, and can be ridden all day, whether in the city, on the track or out in the wild.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
-    },
-    {
-        name: "Tray",
-        url: "https://www.tray.io",
-        tidyurl: "tray.io",
-        image: "/team_assets/tray_image.jpg",
-        logo: "/team_assets/tray_logo.png",
-        oneLiner: "The integration platform for citizen automators",
-        copy:
-            "We’ve made a secure and easy to use tool to let you automate any process across any cloud stack, without limits. From simple processes to multi step workflows with conditional logic, we’ve got you covered.",
-        status: PORTFOLIO_STATUS.EXITED,
-        isInHomePageRotation: true
-    },
-    {
-        name: "Dice",
-        url: "https://www.dice.fm",
-        tidyurl: "dice.fm",
-        image: "/team_assets/dice_image.jpg",
-        logo: "/team_assets/dice_logo.png",
-        oneLiner: "Tickets to the best gigs and parties",
-        copy:
-            "Every feature on DICE is designed for discovery and to make going out easy. We bring you closer to the artists you love. Every event on the app is handpicked by our team, for the fans",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: true
-    },
+    // {
+    //     name: "Over",
+    //     tidyurl: "madewithover.com",
+    //     image: "/team_assets/over_image.jpg",
+    //     logo: "/team_assets/over_logo.png",
+    //     oneLiner: "Build your brand. Wow the world.",
+    //     copy:
+    //         "We’re on a mission to empower small businesses with the tools, knowledge, and ideas they need to create everything from social posts and digital ads to logos and flyers. Effortlessly. Instantly. Fun-fully.",
+    //     status: PORTFOLIO_STATUS.LIVE,
+    //     isInHomePageRotation: true
+    // },
+    // {
+    //     name: "Run an Empire",
+    //     url: "http://www.runanempire.com",
+    //     tidyurl: "runanempire.com",
+    //     image: "/team_assets/runanempire_image.jpg",
+    //     logo: "/team_assets/runanempire_logo.png",
+    //     oneLiner: "A real world strategy running game",
+    //     copy:
+    //         "The most fun way to get on the road. Race against people in the real world to control territory in your area, and claim land in the name of your empire.",
+    //     status: PORTFOLIO_STATUS.LIVE,
+    //     isInHomePageRotation: false
+    // },
     {
         name: "Marvel",
         url: "https://www.marvelapp.com",
@@ -114,14 +53,50 @@ export default [
         isInHomePageRotation: true
     },
     {
-        name: "Twiik",
-        url: "https://www.twiik.me/",
-        tidyurl: "twiik.me",
-        image: "/team_assets/twiik_image.jpg",
-        logo: "/team_assets/twiik_logo.png",
-        oneLiner: "Helping people build healthier lifestyles",
+        name: "Tray",
+        url: "https://www.tray.io",
+        tidyurl: "tray.io",
+        image: "/team_assets/tray_image.jpg",
+        logo: "/team_assets/tray_logo.png",
+        oneLiner: "The integration platform for citizen automators",
         copy:
-            "The Twiik app enables professional coaches, trainers and influencers to connect with people who are on the lookout for that perfect training program, dietary course or health challenge.",
+            "We’ve made a secure and easy to use tool to let you automate any process across any cloud stack, without limits. From simple processes to multi step workflows with conditional logic, we’ve got you covered.",
+        status: PORTFOLIO_STATUS.EXITED,
+        isInHomePageRotation: true
+    },
+    // {
+    //     name: "Twiik",
+    //     url: "https://www.twiik.me/",
+    //     tidyurl: "twiik.me",
+    //     image: "/team_assets/twiik_image.jpg",
+    //     logo: "/team_assets/twiik_logo.png",
+    //     oneLiner: "Helping people build healthier lifestyles",
+    //     copy:
+    //         "The Twiik app enables professional coaches, trainers and influencers to connect with people who are on the lookout for that perfect training program, dietary course or health challenge.",
+    //     status: PORTFOLIO_STATUS.LIVE,
+    //     isInHomePageRotation: false
+    // },
+    {
+        name: "Dice",
+        url: "https://www.dice.fm",
+        tidyurl: "dice.fm",
+        image: "/team_assets/dice_image.jpg",
+        logo: "/team_assets/dice_logo.png",
+        oneLiner: "Tickets to the best gigs and parties",
+        copy:
+            "Every feature on DICE is designed for discovery and to make going out easy. We bring you closer to the artists you love. Every event on the app is handpicked by our team, for the fans",
+        status: PORTFOLIO_STATUS.LIVE,
+        isInHomePageRotation: true
+    },
+    {
+        name: "Sanctus",
+        url: "https://sanctus.io",
+        tidyurl: "sanctus.io",
+        image: "/team_assets/sanctus_image.jpg",
+        logo: "/team_assets/sanctus_logo.png",
+        oneLiner: "Creating space for mental health",
+        copy:
+            "We believe mental health should be viewed like physical health, and are on a mission to make it accessible. We work with businesses to help them create an open environment where mental health is cared for.",
         status: PORTFOLIO_STATUS.LIVE,
         isInHomePageRotation: false
     },
@@ -161,18 +136,18 @@ export default [
     //     status: "PORTFOLIO_STATUS.SUCCAILED",
     //     isInHomePageRotation: false
     // },
-    {
-        name: "Hoop",
-        url: "https://www.hoop.co.uk",
-        tidyurl: "hoop.co.uk",
-        image: "/team_assets/hoop_image.jpg",
-        logo: "/team_assets/hoop_logo.png",
-        oneLiner: "Find the best things happening for kids",
-        copy:
-            "Hoop is on a mission to get families get out of house and help their children laugh, learn and make new friends.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
-    },
+    // {
+    //     name: "Hoop",
+    //     url: "https://www.hoop.co.uk",
+    //     tidyurl: "hoop.co.uk",
+    //     image: "/team_assets/hoop_image.jpg",
+    //     logo: "/team_assets/hoop_logo.png",
+    //     oneLiner: "Find the best things happening for kids",
+    //     copy:
+    //         "Hoop is on a mission to get families get out of house and help their children laugh, learn and make new friends.",
+    //     status: PORTFOLIO_STATUS.LIVE,
+    //     isInHomePageRotation: false
+    // },
     {
         name: "Tribe",
         url: "https://wearetribe.co/",
@@ -182,30 +157,6 @@ export default [
         oneLiner: "The best natural sports nutrition",
         copy:
             "A community of 50,000+ athletes brought together by a love of nature and a spirit for adventure. Inspired by a 1,000 mile run across Europe to fight human trafficking, TRIBE is on a mission to change the world of sports nutrition.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
-    },
-    {
-        name: "Everpress",
-        url: "https://www.everpress.com",
-        tidyurl: "everpress.com",
-        image: "/team_assets/everpress_image.jpg",
-        logo: "/team_assets/everpress_logo.png",
-        oneLiner: "Design & sell beautiful merchandise, easily",
-        copy:
-            "The best way to create and share campaigns for clothing design, risk free and high quality. We’re enabling the newest wave of influencers to sell products to millions of consumers around the world.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: true
-    },
-    {
-        name: "Trinny London",
-        url: "https://trinnylondon.com/",
-        tidyurl: "trinnylondon.com",
-        image: "/team_assets/trinny_image.jpg",
-        logo: "/team_assets/trinny_logo.png",
-        oneLiner: "Changing the face of makeup",
-        copy:
-            "A portable, versatile range of makeup, with colours to suit every woman, and state-of-the-art technology to pinpoint which makeup truly suits you. Welcome to the ultimate easy, modern, do-it-everywhere makeup brand.",
         status: PORTFOLIO_STATUS.LIVE,
         isInHomePageRotation: false
     },
@@ -221,18 +172,33 @@ export default [
         status: PORTFOLIO_STATUS.LIVE,
         isInHomePageRotation: false
     },
-    {
-        name: "Curiscope",
-        url: "https://www.curiscope.com",
-        tidyurl: "curiscope.com",
-        image: "/team_assets/curiscope_image.jpg",
-        logo: "/team_assets/curiscope_logo.png",
-        oneLiner: "Educational experiences for all",
-        copy:
-            "We’re creating products using immersive technology like 360° video and AR to let you explore the depths of the ocean or the human body, and unleash your curiosity.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
-    },
+
+    // {
+    //     name: "Trinny London",
+    //     url: "https://trinnylondon.com/",
+    //     tidyurl: "trinnylondon.com",
+    //     image: "/team_assets/trinny_image.jpg",
+    //     logo: "/team_assets/trinny_logo.png",
+    //     oneLiner: "Changing the face of makeup",
+    //     copy:
+    //         "A portable, versatile range of makeup, with colours to suit every woman, and state-of-the-art technology to pinpoint which makeup truly suits you. Welcome to the ultimate easy, modern, do-it-everywhere makeup brand.",
+    //     status: PORTFOLIO_STATUS.LIVE,
+    //     isInHomePageRotation: false
+    // },
+
+    // {
+    //     name: "Curiscope",
+    //     url: "https://www.curiscope.com",
+    //     tidyurl: "curiscope.com",
+    //     image: "/team_assets/curiscope_image.jpg",
+    //     logo: "/team_assets/curiscope_logo.png",
+    //     oneLiner: "Educational experiences for all",
+    //     copy:
+    //         "We’re creating products using immersive technology like 360° video and AR to let you explore the depths of the ocean or the human body, and unleash your curiosity.",
+    //     status: PORTFOLIO_STATUS.LIVE,
+    //     isInHomePageRotation: false
+    // },
+
     {
         name: "Atellio",
         url: "https://atellio.com/",
@@ -242,6 +208,18 @@ export default [
         oneLiner: "Creative production management",
         copy:
             "Atellio is a creatively-focused and fully customisable product, built to streamline in-house production and strengthen collaboration.",
+        status: PORTFOLIO_STATUS.LIVE,
+        isInHomePageRotation: false
+    },
+    {
+        name: "Amaliah",
+        url: "https://www.amaliah.com",
+        tidyurl: "amaliah.com",
+        image: "/team_assets/amaliah_image.jpg",
+        logo: "/team_assets/amaliah_logo.png",
+        oneLiner: "Amplifying the voices of muslim women",
+        copy:
+            "We create content that is culturally relevant to Muslim women across fashion, beauty, topical issues, lifestyle and more.",
         status: PORTFOLIO_STATUS.LIVE,
         isInHomePageRotation: false
     },
@@ -281,6 +259,18 @@ export default [
         status: PORTFOLIO_STATUS.LIVE,
         isInHomePageRotation: false
     },
+    // {
+    //     name: "Brother Cycles",
+    //     url: "https://www.brothercycles.com/",
+    //     tidyurl: "brothercycles.com",
+    //     image: "/team_assets/brothercycles_image.jpg",
+    //     logo: "/team_assets/brothercycles_logo.png",
+    //     oneLiner: "Beautiful bikes, designed in London",
+    //     copy:
+    //         "Our frames are designed by us, are handmade by experienced frame builders out of the best materials, and can be ridden all day, whether in the city, on the track or out in the wild.",
+    //     status: PORTFOLIO_STATUS.LIVE,
+    //     isInHomePageRotation: false
+    // },
     {
         name: "Limbic",
         url: "https://limbic.ai/",
@@ -306,17 +296,29 @@ export default [
         status: PORTFOLIO_STATUS.LIVE,
         isInHomePageRotation: true
     },
+    // {
+    //     name: "Courier",
+    //     url: "https://couriermedia.co/",
+    //     tidyurl: "couriermedia.co",
+    //     image: "/team_assets/courier_image.jpg",
+    //     logo: "/team_assets/courier_logo.png",
+    //     oneLiner: "Stories of modern business",
+    //     copy:
+    //         "Courier reports on modern business and startup culture from our headquarters in East London on topics from around the world. Launched in 2013, we sit at the heart of the new business revolution.",
+    //     status: PORTFOLIO_STATUS.LIVE,
+    //     isInHomePageRotation: false
+    // },
     {
-        name: "Courier",
-        url: "https://couriermedia.co/",
-        tidyurl: "couriermedia.co",
-        image: "/team_assets/courier_image.jpg",
-        logo: "/team_assets/courier_logo.png",
-        oneLiner: "Stories of modern business",
+        name: "Everpress",
+        url: "https://www.everpress.com",
+        tidyurl: "everpress.com",
+        image: "/team_assets/everpress_image.jpg",
+        logo: "/team_assets/everpress_logo.png",
+        oneLiner: "Design & sell beautiful merchandise, easily",
         copy:
-            "Courier reports on modern business and startup culture from our headquarters in East London on topics from around the world. Launched in 2013, we sit at the heart of the new business revolution.",
+            "The best way to create and share campaigns for clothing design, risk free and high quality. We’re enabling the newest wave of influencers to sell products to millions of consumers around the world.",
         status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: false
+        isInHomePageRotation: true
     },
     {
         name: "Homerun",

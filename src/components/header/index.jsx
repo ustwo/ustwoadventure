@@ -1,23 +1,22 @@
 import React from "react";
 import { styled } from "linaria/react";
 
-import OrbitLogo from "./orbit-logo";
-import Nav from "./nav";
+import UstwoLogo from "../../assets/ustwo-logo";
 
 const StyledHeader = styled.header`
-    margin: 0;
-    grid-column: 1 / -1;
+    margin: 40px 0 0 0;
+    width: 160px;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    @media (min-width: 1023px) {
+        width: 220px;
+    }
 `;
 
-const Header = ({ is404 }) => (
+const Header = () => (
     <StyledHeader>
-        <OrbitLogo is404={is404} />
-        <Nav />
+        <a href="https://ustwo.com/">
+            <UstwoLogo />
+        </a>
     </StyledHeader>
 );
 
