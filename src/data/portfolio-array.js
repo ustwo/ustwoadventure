@@ -18,40 +18,16 @@ export default [
     //     isInHomePageRotation: false
     // },
     // {
-    //     name: "Sanctus",
-    //     url: "https://sanctus.io",
-    //     tidyurl: "sanctus.io",
-    //     image: "/team_assets/sanctus_image.jpg",
-    //     logo: "/team_assets/sanctus_logo.png",
-    //     oneLiner: "Creating space for mental health",
+    //     name: "Over",
+    //     tidyurl: "madewithover.com",
+    //     image: "/team_assets/over_image.jpg",
+    //     logo: "/team_assets/over_logo.png",
+    //     oneLiner: "Build your brand. Wow the world.",
     //     copy:
-    //         "We believe mental health should be viewed like physical health, and are on a mission to make it accessible. We work with businesses to help them create an open environment where mental health is cared for.",
+    //         "We’re on a mission to empower small businesses with the tools, knowledge, and ideas they need to create everything from social posts and digital ads to logos and flyers. Effortlessly. Instantly. Fun-fully.",
     //     status: PORTFOLIO_STATUS.LIVE,
-    //     isInHomePageRotation: false
+    //     isInHomePageRotation: true
     // },
-    // {
-    //     name: "Amaliah",
-    //     url: "https://www.amaliah.com",
-    //     tidyurl: "amaliah.com",
-    //     image: "/team_assets/amaliah_image.jpg",
-    //     logo: "/team_assets/amaliah_logo.png",
-    //     oneLiner: "Amplifying the voices of muslim women",
-    //     copy:
-    //         "We create content that is culturally relevant to Muslim women across fashion, beauty, topical issues, lifestyle and more.",
-    //     status: PORTFOLIO_STATUS.LIVE,
-    //     isInHomePageRotation: false
-    // },
-    {
-        name: "Over",
-        tidyurl: "madewithover.com",
-        image: "/team_assets/over_image.jpg",
-        logo: "/team_assets/over_logo.png",
-        oneLiner: "Build your brand. Wow the world.",
-        copy:
-            "We’re on a mission to empower small businesses with the tools, knowledge, and ideas they need to create everything from social posts and digital ads to logos and flyers. Effortlessly. Instantly. Fun-fully.",
-        status: PORTFOLIO_STATUS.LIVE,
-        isInHomePageRotation: true
-    },
     // {
     //     name: "Run an Empire",
     //     url: "http://www.runanempire.com",
@@ -112,7 +88,18 @@ export default [
         status: PORTFOLIO_STATUS.LIVE,
         isInHomePageRotation: true
     },
-
+    {
+        name: "Sanctus",
+        url: "https://sanctus.io",
+        tidyurl: "sanctus.io",
+        image: "/team_assets/sanctus_image.jpg",
+        logo: "/team_assets/sanctus_logo.png",
+        oneLiner: "Creating space for mental health",
+        copy:
+            "We believe mental health should be viewed like physical health, and are on a mission to make it accessible. We work with businesses to help them create an open environment where mental health is cared for.",
+        status: PORTFOLIO_STATUS.LIVE,
+        isInHomePageRotation: false
+    },
     // {
     //     name: "Pauseable",
     //     url: "https://www.pauseable.com",
@@ -221,6 +208,18 @@ export default [
         oneLiner: "Creative production management",
         copy:
             "Atellio is a creatively-focused and fully customisable product, built to streamline in-house production and strengthen collaboration.",
+        status: PORTFOLIO_STATUS.LIVE,
+        isInHomePageRotation: false
+    },
+    {
+        name: "Amaliah",
+        url: "https://www.amaliah.com",
+        tidyurl: "amaliah.com",
+        image: "/team_assets/amaliah_image.jpg",
+        logo: "/team_assets/amaliah_logo.png",
+        oneLiner: "Amplifying the voices of muslim women",
+        copy:
+            "We create content that is culturally relevant to Muslim women across fashion, beauty, topical issues, lifestyle and more.",
         status: PORTFOLIO_STATUS.LIVE,
         isInHomePageRotation: false
     },
