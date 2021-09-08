@@ -3,7 +3,7 @@ module.exports = {
         siteUrl: "https://adventure.ustwo.com",
         siteTitle: "ustwo Adventure",
         siteDescription:
-            "Investing in creative companies, differently — We work with and support founders who are building businesses on top of strong culture, values and design.",
+            "We created ustwo Adventures to support early-stage initiatives grounded in creativity and the desire to make a positive impact.",
         siteImage: "https://adventure.ustwo.com/meta_image.png",
         twitter: "@ustwoadventure",
         name: "ustwo Adventure"
