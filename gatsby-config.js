@@ -30,20 +30,6 @@ module.exports = {
         },
         "gatsby-plugin-netlify",
         {
-            resolve: "gatsby-plugin-google-analytics",
-            options: {
-                trackingId: "UA-110109355-1",
-                head: true,
-                anonymize: true
-            }
-        },
-        {
-            resolve: "gatsby-plugin-facebook-pixel",
-            options: {
-                pixelId: "619848095240629"
-            }
-        },
-        {
             resolve: "gatsby-plugin-mailchimp",
             options: {
                 endpoint:
