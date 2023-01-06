@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function onRenderBody({ setPostBodyComponents }) {
+export function onRenderBody({ setPostBodyComponents }) {
   setPostBodyComponents([
     <script
       async
