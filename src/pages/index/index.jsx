@@ -145,7 +145,7 @@ const Index = () => (
             }}
         >
             Between 2014 and 2020, we offered experience, advice and funding
-            assistance to companies including
+            assistance to companies including:
         </p>
         <ItemsGrid>
             {companiesInHomePageRotation.map(item => {
