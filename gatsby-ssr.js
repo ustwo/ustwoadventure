@@ -5,7 +5,9 @@ export function onRenderBody({ setPostBodyComponents }) {
     <script
       async
       defer
-      src="https://scripts.withcabin.com/hello.js"
+      src="https://app.rybbit.io/api/script.js"
+      data-site-id="1217"
+      key="rybbit-script"
     />,
   ]);
 };
