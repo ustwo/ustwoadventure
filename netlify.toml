@@ -3,5 +3,9 @@
     command = "gatsby build"
     node_version = "18.18.0"
 
+[build.environment]
+    NPM_FLAGS = "--legacy-peer-deps"
+    NODE_VERSION = "18.18.0"
+
 [build.processing]
     skip_processing = true
