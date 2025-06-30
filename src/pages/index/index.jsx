@@ -165,7 +165,7 @@ const Index = () => (
         <p
             style={{
                 margin: "0 0 50px 0",
-                maxWidth: "600px",
+                maxWidth: "700px",
                 position: "relative"
                 // textAlign: "center"
             }}
@@ -221,14 +221,6 @@ const Index = () => (
                     rel="noopener noreferrer"
                 >
                     certified B Corp
-                </a>
-                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-                <a
-                    href="https://www.iubenda.com/privacy-policy/322454/cookie-policy"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Cookie
                 </a>
                 &nbsp;&amp;&nbsp;
                 <a

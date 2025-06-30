@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable jsx-a11y/media-has-caption */
 import React, { useState } from "react";
 import { styled } from "linaria/react";
 import { cx, css } from "linaria";

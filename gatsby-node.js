@@ -9,7 +9,6 @@
 //         }
 //     });
 // };
-// TODO: implement with https://github.com/benmosher/eslint-plugin-import#resolvers
 
 exports.onCreatePage = ({ page, actions }) => {
     const { deletePage, createPage } = actions;

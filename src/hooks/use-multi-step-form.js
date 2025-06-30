@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
 import React, { useState } from "react";
 import { css } from "linaria";
 import { styled } from "linaria/react";
