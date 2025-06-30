@@ -36,7 +36,6 @@ module.exports = {
                     "https://ustwo.us15.list-manage.com/subscribe/post?u=01fc7ee99c29d28e16dc3776f&id=9e2f3ee259"
             }
         },
-        "gatsby-plugin-react-helmet",
         "gatsby-plugin-sharp",
         "gatsby-transformer-sharp",
         {
