@@ -1,6 +1,7 @@
 [build]
     publish = "public/"
     command = "gatsby build"
+    node_version = "18.18.0"
 
 [build.processing]
     skip_processing = true

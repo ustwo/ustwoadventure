@@ -39,8 +39,5 @@
     "clean": "rm -rf .cache/ && rm -rf public/",
     "start": "npm run develop",
     "format": "prettier --config ./.prettierrc --write src/**/*.js"
-  },
-  "engines": {
-    "node": ">=16.0.0"
   }
 }
